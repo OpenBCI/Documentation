@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "Getting Started with OpenBCI": [
+      "01GettingStarted/Welcome",
+      "01GettingStarted/CytonGS",
+      "01GettingStarted/DaisyGS",
+      "01GettingStarted/GanglionGS",
+      "01GettingStarted/WiFiGS"
+    ], "Cyton Board": [
+      "02Cyton/CytonLanding",
+      "02Cyton/CytonSpecs",
+      "02Cyton/CytonDataFormat",
+      "02Cyton/CytonSDK",
+      "02Cyton/CytonProgram",
+      "02Cyton/CytonRadios",
+      "02Cyton/CytonExternal",
+      "02Cyton/CytonSDCard"
+    ],
+    "Ganglion Board": ["doc3"],
+    "Third Party Hardware": ["doc3"],
+    "Board Add-Ons (Electrodes, Headwear)": ["doc3"],
+    "Compatible Software": ["doc3"]
+  },
+  "FAQ": {
+    "General FAQ": ["doc4"],
+    "How do the products go together?": ["doc4"],
+    "Hardware FAQ": ["doc4"],
+    "Payment FAQ": ["doc4"],
+    "Shipping FAQ": ["doc4"],
+    "Cookie Policy": ["doc4"],
+    "Privacy Policy": ["doc4"],
+    "Refund Policy": ["doc4"]
+  },
+  "Example Projects": {
+    "Arduino Focus Example": ["test/test"]
+  }
+}
