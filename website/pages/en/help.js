@@ -22,7 +22,7 @@ function Help(props) {
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
+        '01GettingStarted/Welcome.html',
       )})`,
       title: 'Browse Docs',
     },
@@ -43,7 +43,7 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>This project is maintained by a dedicated group of people. You can ask the OpenBCI Community by using the OpenBCI Forum or emailing OpenBCI at contact@openbci.com</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
