@@ -7,42 +7,28 @@
 
 const React = require('react');
 
-const CompLibrary = require('../../core/CompLibrary.js');
-
-const Container = CompLibrary.Container;
-
-class Users extends React.Component {
+class Citations extends React.Component {
   render() {
     const {config: siteConfig} = this.props;
-    if ((siteConfig.users || []).length === 0) {
-      return null;
-    }
 
     const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`;
-    const showcase = siteConfig.users.map(user => (
-      <a href={user.infoLink} key={user.infoLink}>
-        <img src={user.image} alt={user.caption} title={user.caption} />
-      </a>
-    ));
 
     return (
       <div className="mainContainer">
-        <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
               <h1>Who is Using This?</h1>
-              <p>This project is used by many folks</p>
+              <p>We compiled a list of research papers and articles that have used OpenBCI hardware and Software for their research</p>
             </div>
-            <div className="logos">{showcase}</div>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQpWB4OA38W_xK3uG7PwkF2mspHsiFSofnlVh7gqLfbesC33-fTxDe_TRoCXpfBGmcvPf5Z5SVMfn_b/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width='1000' height='500'></iframe>
             <p>Are you using this project?</p>
             <a href={editUrl} className="button">
-              Add your company
+              Let us know!!!
             </a>
           </div>
-        </Container>
       </div>
     );
   }
 }
 
-module.exports = Users;
+module.exports = Citations;
