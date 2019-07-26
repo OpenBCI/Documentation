@@ -2,8 +2,6 @@
 id: WiFiGS
 title: WiFi Shield Getting Started Guide
 ---
-# Wifi Getting Started Guide
-
 **[Suggest changes on this page](https://github.com/OpenBCI/Docs/edit/master/Tutorials/03-Wifi_Getting_Started_Guide.md)**
 
 ## Overview

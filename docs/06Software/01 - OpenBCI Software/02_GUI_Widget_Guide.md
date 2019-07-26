@@ -1,4 +1,7 @@
-# GUI Widget Guide
+---
+id: GUIWidgets
+title: GUI Widget Guide
+---
 ## What is a GUI Widget
 GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left hand corner of every widget there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
 
@@ -12,7 +15,7 @@ It measures the absolute amplitude of the signal in voltage, in units of μVrms 
 
 Each ultracortex comes with wires that are color coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
 
-### Hardware Settings: 
+### Hardware Settings:
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_HardwareSettings.png?raw=true" width="50%">
 
@@ -24,7 +27,7 @@ The Time Series widget opens a menu that allows you to fine tune the PGA Gain, B
 
 **View Settings**:
 
-*Vertical Scale* — Controls the range of μV displayed in the time series. 
+*Vertical Scale* — Controls the range of μV displayed in the time series.
 Note: Set to auto to avoid chopping off data and showing good peaks and troughs. Fine tune as necessary.
 
 *Window* — Shows the amount of time that is shown in the series.
@@ -75,7 +78,7 @@ Based off of 10-20 model
 \* P7 and P8 are the new terminology for nodes T5 and T6
 
 ### Polarity
-When compared to a reference, the pin inputs can produce a positive or negative value. Choosing "+/-" will display the true value as measured from the reference. So if the voltage is measured as lower than the reference, your value will appear negative (or blue), and if the voltage is measured to be higher the value will be positive. 
+When compared to a reference, the pin inputs can produce a positive or negative value. Choosing "+/-" will display the true value as measured from the reference. So if the voltage is measured as lower than the reference, your value will appear negative (or blue), and if the voltage is measured to be higher the value will be positive.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Headplot_both.jpg?raw=true" width="50%">
 
@@ -111,18 +114,18 @@ The band power widget shows the relative voltages of the various brain wave cate
 ## EMG
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_EMG.jpg?raw=true" width="50%">
 
-In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1. 
+In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1.
 
-The current EMG strength is a collection of raw voltage values averaged (or smoothed) over a known window of time. The bigger the window your averaging over, the smoother the data. We establish an upper threshold (the outer dark blue circle of the circular visualizer) and a lower threshold (the inner dark blue circle) for the constantly updating “comfortable EMG range.” Then we’re mapping the current EMG (the filled circle that matches the color of the channel) value between the upper and lower thresholds. 
+The current EMG strength is a collection of raw voltage values averaged (or smoothed) over a known window of time. The bigger the window your averaging over, the smoother the data. We establish an upper threshold (the outer dark blue circle of the circular visualizer) and a lower threshold (the inner dark blue circle) for the constantly updating “comfortable EMG range.” Then we’re mapping the current EMG (the filled circle that matches the color of the channel) value between the upper and lower thresholds.
 
-This pseudo-analog mapped value is represented more clearly in the bar graph off to the right of each channel’s circular visualizer. The upper threshold is constantly creeping downwards and lower threshold is constantly creeping upwards until they get the Min ΔμV away from one another. This ensures that the overall system never creates an upper/lower flex range that is too big to influence with a muscle flex. 
+This pseudo-analog mapped value is represented more clearly in the bar graph off to the right of each channel’s circular visualizer. The upper threshold is constantly creeping downwards and lower threshold is constantly creeping upwards until they get the Min ΔμV away from one another. This ensures that the overall system never creates an upper/lower flex range that is too big to influence with a muscle flex.
 
 ### Options
 The drop-downs of the widget are designed to allow you to tweak the various parameters of this relationship. There are 4 drop-downs giving us control over 4 parameters:
 
-**Smooth**: This is the size of the window. If we set this value at the smallest setting of 0.01 seconds (ie., lowering the smooth value), our data will be very jittery but responsive. Alternatively, if we increase the smooth and set our window to 2.0 seconds, the output will be very smooth but much less responsive. 
+**Smooth**: This is the size of the window. If we set this value at the smallest setting of 0.01 seconds (ie., lowering the smooth value), our data will be very jittery but responsive. Alternatively, if we increase the smooth and set our window to 2.0 seconds, the output will be very smooth but much less responsive.
 
-**μV Limit**: This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off, and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues. 
+**μV Limit**: This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off, and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues.
 
 **Creep**: This value indicates how quickly the upper μV limit creeps downward and how quickly the lower limit creeps upward. Notice that by adjusting this value, the upper threshold and lower threshold rings will approach each other more quickly. We generally recommend this to be slow. If this is too fast and we wait too long between muscle activations, the upper threshold will have crept very close to the lower threshold and the system will be hyper sensitive.
 

@@ -1,4 +1,7 @@
-# Ganglion Programming Tutorial
+---
+id: GanglionProgram
+title: Ganglion Programming Tutorial
+---
 
 This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device. If you want to compile the code in Arduino continue to the [Building From Source](http://docs.openbci.com/Hardware/09-Ganglion_Programming_Tutorial#ganglion-programming-tutorial-building-from-source) portion of the guide.
 

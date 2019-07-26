@@ -1,11 +1,14 @@
-#Ultracortex Mark III "Nova" & "Supernova" (REVISED)
+---
+id: MarkIII
+title: Ultracortex Mark IV
+---
 
 *Development Period: June 2016*
 
-![image](../assets/UCM3_Nova_Revised-image_assets/m3_upgrade_1000.jpg) 
+![image](../assets/UCM3_Nova_Revised-image_assets/m3_upgrade_1000.jpg)
 
 
-####Complete Ultracortex Mark 3 kits are not longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
+#### Complete Ultracortex Mark 3 kits are not longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
 
 The Ultracortex is an open-source, 3D-printable headset intended to work with the [OpenBCI system](http://openbci.com/). It is capable of recording research-grade brain activity (EEG), muscle activity (EMG), and heart activity (ECG). The Ultracortex is under constant iteration. If you print/assemble your own Ultracortex, we would love to hear your feedback. Send us an email at [contact@openbci.com](mailto:contact@openbci.com) or Tweet at us ([@Ultracortex](https://twitter.com/Ultracortex) & [@OpenBCI](https://twitter.com/OpenBCI))!
 
@@ -19,7 +22,7 @@ Designers & Engineers:
 
 **Note:** the part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit) (8 channels) or the [OpenBCI 16-channel R&D Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-16-channel-r-d-kit) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
-###3D-printed Parts:
+### 3D-printed Parts:
 
 * [FRAME](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_III_Nova_REVISED/STLs/FRAME) (head circumference: small = 50-55cm, medium = 55-60cm, large = 60-65cm)
 	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/small/SMALL_FRONT-M3_Nova_Revised.stl) / [medium](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/medium/MEDIUM_FRONT-M3_Nova_Revised.stl) / [large](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/large/LARGE_FRONT-M3_Nova_Revised.stl))
@@ -30,15 +33,15 @@ Designers & Engineers:
 	* [OCTARING](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTARING.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTARING.stl)
 	* [ELECTRODE_HOLDER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/E_HOLDER.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/E_HOLDER.stl)
 	* [QUADSTAR](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/QUADSTAR.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/QUADSTAR.stl)
-	* [Comfy Insert](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/Comfy_Insert.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/Comfy_Insert.stl)	
+	* [Comfy Insert](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/Comfy_Insert.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/Comfy_Insert.stl)
 * [BOARD_HOLDER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_HOLDER.stl) (**x1**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_HOLDER.stl)
 * BOARD_COVER (**x1**) — choose STANDARD or ADVANCED
 	* [STANDARD](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl)
 	* [ADVANCED](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_COVER_ADVANCED.stl) (for extra hardware accessibility / if you've soldered on your header rows) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_ADVANCED.stl)
 * OCTATOOL (**x1**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_3/STLs/MECH_PARTS/OCTATOOL.stl)
 
-###Non-printed Parts:
- 	
+### Non-printed Parts:
+
 * Additional Hardware:
 	* **Suggested Spring 1** listed below (**x21**)
 	* **Suggested Spring 2** listed below (**x5**)
@@ -58,9 +61,9 @@ Designers & Engineers:
 
 ## THE COMPLETE ULTRACORTEX (w/ PICTURES)
 
-###3D-printed Parts:
+### 3D-printed Parts:
 
-####(1x) FRAME
+#### (1x) FRAME
 
 * [FRAME](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_III_Nova_REVISED/STLs/FRAME) (head circumference: small = 50-55cm, medium = 55-60cm, large = 60-65cm)
 	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/small/SMALL_FRONT-M3_Nova_Revised.stl) / [medium](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/medium/MEDIUM_FRONT-M3_Nova_Revised.stl) / [large](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/large/LARGE_FRONT-M3_Nova_Revised.stl))
@@ -68,7 +71,7 @@ Designers & Engineers:
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/FRAME_parts.jpg)
 
-####(21x) MECH_PARTS
+#### (21x) MECH_PARTS
 
 * [MECH_PARTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS)
 	* [OCTANUT](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTANUT) (**x21**) — .STLs ([tight](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTANUT/OCTANUT-TIGHT.stl) / [normal](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTANUT/OCTANUT-NORMAL.stl) / [loose](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTANUT/OCTANUT-LOOSE.stl)) (Choose normal first / if it is too tight for the OCTABOLT, choose loose / if it is too loose for the OCTABOLT, choose tight)
@@ -76,28 +79,28 @@ Designers & Engineers:
 	* [OCTARING](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTARING.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/OCTARING.stl)
 	* [ELECTRODE_HOLDER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/E_HOLDER.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/E_HOLDER.stl)
 	* [QUADSTAR](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/QUADSTAR.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/QUADSTAR.stl)
-	* [Comfy Insert](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/Comfy_Insert.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/Comfy_Insert.stl)	
+	* [Comfy Insert](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/MECH_PARTS/Comfy_Insert.stl) (**x21**) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/MECH_PARTS/Comfy_Insert.stl)
 
 
 ####(1x) BOARD_HOLDER
 
-* [BOARD_HOLDER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_HOLDER.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl)	
-![image](../assets/UCM3_Nova_Revised-image_assets/BOARD_HOLDER.jpg) 
+* [BOARD_HOLDER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_HOLDER.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl)
+![image](../assets/UCM3_Nova_Revised-image_assets/BOARD_HOLDER.jpg)
 
-####(1x) BOARD_COVER
+#### (1x) BOARD_COVER
 
 * BOARD_COVER (**x1**) — choose STANDARD or ADVANCED
 	* [STANDARD](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl)
 	* [ADVANCED](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_COVER_ADVANCED.stl) (for extra hardware accessibility / if you've soldered on your header rows) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_ADVANCED.stl)
 
-![image](../assets/UCM3_Nova_Revised-image_assets/BOARD_COVER.jpg) 
+![image](../assets/UCM3_Nova_Revised-image_assets/BOARD_COVER.jpg)
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/printedParts.jpg)
 ![image](../assets/UCM3_Nova_Revised-image_assets/bolts_screws_springs_trodes.jpg)
 
-###Non-printed Parts:
+### Non-printed Parts:
 
-####Suggested springs: 
+#### Suggested springs:
 
 * Suggested Spring 1 (**x21**) — aka "Weak Spring" — [Century Spring Corp. Stock #: U-4](http://cad.centuryspring.com/db/service?domain=century&command=showProduct&category=compression&product=U-4) — this spring is not as strong as spring 2. We use it to mount the electrodes. The low "Rate" (1.3 lbs/in) makes it more forgiving and comfortable when holding the spikey electrode against your head. This process is described in more detail below (in the "Assembly Instructions" section).
 
@@ -108,7 +111,7 @@ Designers & Engineers:
 ![image](../assets/UCM3_Nova_Revised-image_assets/Spring_S-845.png)
 
 
-####Suggested nuts/bolts:
+#### Suggested nuts/bolts:
 
 We use small stainless steel screws and hex nuts to fasten the FRI electrodes (listed above) to the 3D-printed electrode mount components &  wiring that connects the electrodes back to the OpenBCI board. We used stripped [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) as the cabling, by removing the gold cup with a wire cutter and looping the exposed wire around the screw between the two tightened hex nuts (as seen in the picture below).
 
@@ -117,19 +120,19 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/NUT_AND_BOLT.jpg)
 
-####Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
+#### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 
 * (**8x**) [#4 Drive Screw](http://www.mcmaster.com/#90077a106/=yysd5f)
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/SHEET_METAL_SCREW.jpg)
 
-####Wiring
+#### Wiring
 
 * (**21x**) We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes)) or the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit).
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/WIRING.jpg)
 
-####Dry electrodes by Florida Research Instruments
+#### Dry electrodes by Florida Research Instruments
 
 * (**18x**) Dry (spikey) electrodes to be installed in Ultracortex nodes with hair: [Disposable / Reusable Dry EEG Electrode ($0.60 each at 50+ quantity purchase) ](http://fri-fl-shop.com/product/tde-200/)
 * (**3x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): [Disposable / Reusable Cup Wet/Dry EEG Electrode ($10.00 for 15) ](http://fri-fl-shop.com/product/disposable-reusable-dry-eeg-electrode-quantity-of-15-tde-200a1/)
@@ -137,11 +140,11 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/TRODES.jpg)
 
-####(1x) An [OpenBCI 32bit Board](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit) (8 electrode channels) or an [OpenBCI 16-channel R&D Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-16-channel-r-d-kit) (16 electrode channels)
+#### (1x) An [OpenBCI 32bit Board](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit) (8 electrode channels) or an [OpenBCI 16-channel R&D Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-16-channel-r-d-kit) (16 electrode channels)
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/OPENBCIs.jpg)
 
-####(**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
+#### (**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/BATTERY.jpg)
 
@@ -227,7 +230,7 @@ Use four #4 Drive Screws to mount the BOARD_HOLDER to the FRAME. Make sure that 
 
 ### Assemble the Comfort Nodes
 
-In order to fit the OCTANUT pieces into the frame, you will need the Comfort Nodes in order to securely glue the OCTANUTs in place. 
+In order to fit the OCTANUT pieces into the frame, you will need the Comfort Nodes in order to securely glue the OCTANUTs in place.
 
 You will need the following pieces:
 
@@ -281,7 +284,7 @@ Before creating your electrode mounts, it's a good idea to think about where you
 
 The Ultracortex node locations are based on the [10-20 system](https://goo.gl/gSwYw), which is the internationally accepted standard for electrode placement in the context of EEG.
 
-The images below indicates the default 10-20 electrode locations that the OpenBCI Graphical User Interface expects. This application is great for viewing/recording your EEG and can be found in our [OpenBCI_Processing](http://) repo. The blue nodes indicate the 8 default 10-20 locations (channels 1-8) of the 32bit Board. The red nodes indicate the default 10-20 locations of channels 9-16 when using the OpenBCI 16-channel R&D Kit. 
+The images below indicates the default 10-20 electrode locations that the OpenBCI Graphical User Interface expects. This application is great for viewing/recording your EEG and can be found in our [OpenBCI_Processing](http://) repo. The blue nodes indicate the 8 default 10-20 locations (channels 1-8) of the 32bit Board. The red nodes indicate the default 10-20 locations of channels 9-16 when using the OpenBCI 16-channel R&D Kit.
 
 For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (channels 1-8 of the OpenBCI default settings) will be used. The channel to 10-20 system correlations are as follows:
 
@@ -349,7 +352,7 @@ Next, twist the exposed metal of your wire so that it is tight and clean.
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/twistWire.JPG)
 
-This part is a little bit tricky! Wrap the exposed metal of your wire once around the remaining thread of the screw. You can use your finger nail to pinch the wire down against the nut, while wrapping. 
+This part is a little bit tricky! Wrap the exposed metal of your wire once around the remaining thread of the screw. You can use your finger nail to pinch the wire down against the nut, while wrapping.
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/twistWire3.jpg)
 ![image](../assets/UCM3_Nova_Revised-image_assets/twistWire4.jpg)
@@ -365,7 +368,7 @@ Slide a **Suggested Spring 1 (aka "Weak Spring")** and then the OCTABOLT around 
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/fullPart.jpg)
 
-Snap the full electrode unit together, guiding the semi-spherical protrusions on the outside of the SPRING_CASING into the relief cuts of the OCTABOLT. 
+Snap the full electrode unit together, guiding the semi-spherical protrusions on the outside of the SPRING_CASING into the relief cuts of the OCTABOLT.
 
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/completedPart.jpg)
@@ -457,7 +460,7 @@ Next, screw a comfort node into each of the 8 QUADSTARS.
 
 ### Adjust the Ultracortex for your head
 
-Put the Ultracortex Mark 3 onto your head and gradually tighten the electrode units until the electrodes are snuggly (but comfortably) against your scalp. If it is difficult to twist the OCTABOLT pieces by hand, you may need to use the OCTATOOL as seen in the gif below. 
+Put the Ultracortex Mark 3 onto your head and gradually tighten the electrode units until the electrodes are snuggly (but comfortably) against your scalp. If it is difficult to twist the OCTABOLT pieces by hand, you may need to use the OCTATOOL as seen in the gif below.
 
 **Be careful** not to strain the electrode wires when twisting the electrode unit with the OCTATOOL, or you may separate the wire from the electrode itself. Turn the OCTABOLT until the wire is nearly taught, then reposition the wire and tool and twist again, as demonstrated in the gif.
 
@@ -473,13 +476,10 @@ Now that you have your Ultracortex assembled and comfortably adjusted to your he
 
 Check out the [Getting Started w/ OpenBCI tutorial](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
 
-Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot. 
+Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
 
 ![image](../assets/UCM3_Nova_Revised-image_assets/GUI.jpg)
 
 ### Give Us Feedback!
 
 If you have questions, comments, or suggestions regarding the printing and/or assembly of the Ultracortex, we'd love to hear from you. Please submit issues to this repository or email us at [contact@openbci.com](mailto:contact@openbci.com). Or take some pictures of yourself wearing the Ultracortex and Tweet at us ([@OpenBCI](https://twitter.com/OpenBCI) & [@Ultracortex](https://twitter.com/Ultracortex))!
-
-
-

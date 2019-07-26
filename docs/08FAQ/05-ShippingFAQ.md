@@ -1,8 +1,11 @@
-#Shipping & Taxes
+---
+id: ShippingFAQ
+title: Shipping & Taxes
+---
 
 ##Where do you ship to?
 
-We ship worldwide! 
+We ship worldwide!
 
 ##What are the shipping rates?
 

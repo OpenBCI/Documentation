@@ -1,4 +1,7 @@
-# OpenBCI WiFi
+---
+id: WiFiLanding
+title: OpenBCI WiFi
+---
 
 ## [BUY IT!](https://shop.openbci.com/collections/frontpage/products/wifi-shield)
 

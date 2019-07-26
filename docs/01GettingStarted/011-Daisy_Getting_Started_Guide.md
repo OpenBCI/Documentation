@@ -1,4 +1,7 @@
-# Daisy Getting Started Guide
+---
+id: DaisyGS
+title: Daisy Getting Started Guide
+---
 
 This guide will walk you through getting 16-channel input on your Cyton+Daisy Module
 
@@ -7,7 +10,7 @@ This guide will walk you through getting 16-channel input on your Cyton+Daisy Mo
 Refer to the Cyton Tutorial page:
 [Cyton Getting Started Guide](http://docs.openbci.com/Tutorials/01-Cyton_Getting%20Started_Guide).
 
-Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI 
+Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI
 
 ## II. WHAT YOU NEED
 
@@ -21,7 +24,7 @@ Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI
 #### 2. Y-Splitter Cable
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Daisy%20Y-Splitter%20Image.jpg?raw=true" width="60%">
-	 
+
 #### 3. Electrode Cables with female header termination on one end
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Daisy%20Female%20Header%20Termination%20Image.jpg?raw=true" width="60%">
@@ -63,7 +66,7 @@ The Y-Splitter connects the bottom `SRB` pin of the Daisy Board to the bottom `S
 
 Use the 16 of the color coded cables that came with your Ultracortex MarkIV headset.
 
-Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. Color order does not matter. 
+Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. Color order does not matter.
 
 Refer to the Ultracortex Mark IV [tutorial](http://docs.openbci.com/Headware/01-Ultracortex-Mark-IV) to learn how to connect the male terminations of the color coded cables to the electrodes on the headset.
 

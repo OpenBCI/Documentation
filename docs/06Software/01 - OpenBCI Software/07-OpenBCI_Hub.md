@@ -1,4 +1,7 @@
-# OpenBCI Hub
+---
+id: Hub
+title: OpenBCI Hub
+---
 
 Middleware Software used to communicate with OpenBCI boards through TCP/IP command protocol. This Doc covers the OpenBCI Hub for Cyton, Ganglion, and WiFi Shield.
 

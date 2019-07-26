@@ -1,4 +1,8 @@
-# OpenBCI Ganglion SDK
+---
+id: GanglionSDK
+title: Ganglion SDK
+---
+
 The OpenBCI boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Ganglion. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, please send reset commands to your board to see what firmware you have if you're unsure!
 
 ## Ganglion Command Protocol Overview

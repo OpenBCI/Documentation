@@ -1,6 +1,9 @@
-# BrainBay
+---
+id: BrainBay
+title: BrainBay
+---
 
-From their OpenBCI tutorials page: BrainBay is an open-source visual programming language (VPL) for rapid prototyping of EEG digital signal processing steps (or data flows.) 
+From their OpenBCI tutorials page: BrainBay is an open-source visual programming language (VPL) for rapid prototyping of EEG digital signal processing steps (or data flows.)
 
 They recently added an OpenBCI driver to their software, making it easy to use BrainBay with OpenBCI products!
 
@@ -30,7 +33,7 @@ You're now ready to use BrainBay for EEG streaming and analysis!
 
 ## Importing data from OpenBCI to BrainBay
 
-BrainBay does have an "import data from file" option, but it is only compatible with archive (.arc) files. The OpenBCI GUI saves data as comma-delineated .txt files. So, unless you have another application that saves data from your OpenBCI board as .arc files, you need to stream data live to use BrainBay. 
+BrainBay does have an "import data from file" option, but it is only compatible with archive (.arc) files. The OpenBCI GUI saves data as comma-delineated .txt files. So, unless you have another application that saves data from your OpenBCI board as .arc files, you need to stream data live to use BrainBay.
 
 ## Live Stream from OpenBCI to BrainBay
 
@@ -38,15 +41,15 @@ To stream data live from your OpenBCI board within a BrainBay design, select Ins
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_select_openbci.png?raw=true" width="70%">
 
-After selecting your device, an EEG window will appear. Select your device's COM port. If you're using VirtualBox, our [VirtualBox tutorial](http://docs.openbci.com/Tutorials/12-Win7_VM_Installation) has a section on finding the COM port of a connected hardware device. 
+After selecting your device, an EEG window will appear. Select your device's COM port. If you're using VirtualBox, our [VirtualBox tutorial](http://docs.openbci.com/Tutorials/12-Win7_VM_Installation) has a section on finding the COM port of a connected hardware device.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_COM3_unchecked.png?raw=true" width="50%">
 
-Click "Connect/Disconnect". A checkmark should appear in the "connected:" box. 
+Click "Connect/Disconnect". A checkmark should appear in the "connected:" box.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_COM3_checked.png?raw=true" width="50%">
 
-Exit out of the device configuration window. A icon corresponding to your OpenBCI board should have appeared in your design window, like below. Re-open the configuration window at any time by right-clicking on the icon. 
+Exit out of the device configuration window. A icon corresponding to your OpenBCI board should have appeared in your design window, like below. Re-open the configuration window at any time by right-clicking on the icon.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_Cyton_connected.png?raw=true" width="50%">
 
@@ -62,15 +65,15 @@ Select Insert Element -> Target -> Oscilloscope from the toolbar.
 
 A icon representing the oscilloscope will appear in the "Design" window. Drag it off the icon representing your OpenBCI board if necessary.
 
-A second window will pop up behind your design window. This window will display the oscilloscope output. Reposition the Design and Oscilloscope windows so both are visible. 
+A second window will pop up behind your design window. This window will display the oscilloscope output. Reposition the Design and Oscilloscope windows so both are visible.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_oscilloscope_reposition.png?raw=true" width="70%">
 
-Click on the "Design" window. Click on the icon for the Cyton board, so that it's outlined in yellow. Decide which input channel (or which Cyton board pin) you want to display on the oscilloscope. Click and hold on the orange circle next to that channel. Drag the cursor to the yellow "chan1" circle on the oscilloscope icon. A red line should now connect the two circles. 
+Click on the "Design" window. Click on the icon for the Cyton board, so that it's outlined in yellow. Decide which input channel (or which Cyton board pin) you want to display on the oscilloscope. Click and hold on the orange circle next to that channel. Drag the cursor to the yellow "chan1" circle on the oscilloscope icon. A red line should now connect the two circles.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_link_channels.png?raw=true" width="40%">
 
-Press the "Play (F7)" button at the bottom of the BrainBay screen. A red LED on your Dongle should turn on. This means your board is streaming live data to your computer! 
+Press the "Play (F7)" button at the bottom of the BrainBay screen. A red LED on your Dongle should turn on. This means your board is streaming live data to your computer!
 
 Tap on the pins of your OpenBCI Cyton board. You should see a signal response in the oscilloscope window.
 
@@ -78,13 +81,10 @@ Tap on the pins of your OpenBCI Cyton board. You should see a signal response in
 
 You are now using BrainBay to view data streamed from your OpenBCI board! Feel free to connect one of the other OpenBCI channels to "chan2" on the oscilloscope icon to view signals from multiple pins at once. Once you're comfortable with the oscilloscope tool, explore BrainBay's other target and processing tools!
 
-Want to learn more about BrainBay's capabilities with OpenBCI hardware? Check out their [BrainBay & OpenBCI tutorials](https://sites.google.com/site/biofeedbackpages/brainbay-openbci) page. 
+Want to learn more about BrainBay's capabilities with OpenBCI hardware? Check out their [BrainBay & OpenBCI tutorials](https://sites.google.com/site/biofeedbackpages/brainbay-openbci) page.
 
 ## Documentation
 
 Documentation for the BrainBay software can be found here: (http://www.shifz.org/brainbay/)
 
 Did you use BrainBay and OpenBCI to build something new? Post about it on our [community page!](http://openbci.com/community/)
-
-
-

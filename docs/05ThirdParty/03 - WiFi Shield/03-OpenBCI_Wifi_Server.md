@@ -1,4 +1,7 @@
-# OpenBCI WiFi Shield API
+---
+id: WiFiAPI
+title: OpenBCI WiFi Shield API
+---
 
 **[Suggest Changes To This Page](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/03-OpenBCI_Wifi_Server.md)**
 
@@ -146,4 +149,4 @@ Suggested options for `POST` /tcp or `POST` /mqtt
   "timestamps": true // Include timestamps in each sample
 }
 
-Now when you start streaming data, you can simply look for `\r\n` in the incoming stream of data and each time you find it, you know you just got then end of packet and can parse everything before that `\r\n` as JSON. 
+Now when you start streaming data, you can simply look for `\r\n` in the incoming stream of data and each time you find it, you know you just got then end of packet and can parse everything before that `\r\n` as JSON.

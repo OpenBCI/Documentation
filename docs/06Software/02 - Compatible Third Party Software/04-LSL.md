@@ -1,4 +1,7 @@
-# Lab Streaming Layer (LSL)
+---
+id: LSL
+title: Lab Streaming Layer (LSL)
+---
 
 [Lab streaming layer](https://github.com/sccn/labstreaminglayer)  is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as Matlab (see our Matlab tutorial for using LSL in this context).
 

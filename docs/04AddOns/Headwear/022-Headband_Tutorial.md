@@ -1,4 +1,7 @@
-# OpenBCI EEG Headband Kit Guide
+---
+id: HeadBand
+title: OpenBCI EEG Headband Kit Guide
+---
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/headband-images/Headband_Front.JPG?raw=true" width="50%">
 
@@ -6,7 +9,7 @@
 
 When combined with our [Ganglion](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483) or [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) boards, the OpenBCI EEG Headband Kit is a low-cost tool for obtaining research-grade EEG data.
 
-This tutorial will guide you through setting up your EEG system with either board! Please read this tutorial in its entirety (ALL Ganglion and Cyton sections, even if you don't have both boards) before setting up the system. 
+This tutorial will guide you through setting up your EEG system with either board! Please read this tutorial in its entirety (ALL Ganglion and Cyton sections, even if you don't have both boards) before setting up the system.
 
 #### Each kit includes:
 1. Two Ear-clip electrodes (left example)
@@ -25,16 +28,16 @@ All electrode wires end in a female header termination compatible with OpenBCI b
 
 The headband allows three frontal cortex measurements (F7, AF7, Fp1, Fpz, Fp2, AF8, F8) via the 3 lead wires with flat EEG electrodes. The five leads with spikey electrodes will allow measurement at the FT7/FT8, T7/T8, TP7/TP8, P7/P8, PO7/PO8, O1/O2, and Oz nodes, depending where you insert the spikey electrodes. In total, this kit comes with EIGHT electrode leads.
 
-To attach the spikey electrodes to the standard lead wires: 
+To attach the spikey electrodes to the standard lead wires:
 1. Place spikey electrode spikes down on a table or hard surface.
 2. Insert electrode into desired headband location.
 3. Insert exposed metal into the groove of the electrode.
 4. Gently press down on the plastic part of the electrode wire to __snap__ the electrode into place.
 
 To remove spikey electrodes from the lead wires:
-1. Using your thumb, press on the electrode while slightly bending the electrode holder. 
+1. Using your thumb, press on the electrode while slightly bending the electrode holder.
 2. If that doesn't work, try using precision pliers. Carefully clamp the plastic end of the lead wire. _Using excessive force may break the plastic around the end of the lead wire._
-3. Carefully bend the electrode holder with pliers while pressing the electrode and it should pop out. 
+3. Carefully bend the electrode holder with pliers while pressing the electrode and it should pop out.
 
 ## Headband-Ganglion Tutorial
 
@@ -48,15 +51,15 @@ The Ganglion board supports four channels of EEG/EMG/EEG input and can stream da
 
 All OpenBCI boards ship with a free 2-pin standard JST compatible 4-AA battery holder. For the best user experience, we recommend purchasing the LiPo battery and charger linked below.
 
-1. [Lithium ion battery](https://www.adafruit.com/product/1578) and 
+1. [Lithium ion battery](https://www.adafruit.com/product/1578) and
 2. [USB charger](https://www.adafruit.com/product/1304)
 
 We recommend this battery for its long battery life, compact size, and compatibility with all OpenBCI boards.
 
 #### Hardware
 
-Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. Once you've peeled the protective layer off, and flipped the switches to **down** position, they should look like the image below. Because we are using the Ganglion to obtain EEG, this step is IMPORTANT. 
- 
+Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. Once you've peeled the protective layer off, and flipped the switches to **down** position, they should look like the image below. Because we are using the Ganglion to obtain EEG, this step is IMPORTANT.
+
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="50%">
 
 See the [Ganglion Hardware page](http://docs.openbci.com/Hardware/07-Ganglion#openbci-ganglion-openbci-ganglion-board-inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
@@ -65,7 +68,7 @@ See the [Ganglion Hardware page](http://docs.openbci.com/Hardware/07-Ganglion#op
 
 **Steps**
 1. Connect one earclip electrode to the top D_G (driven ground) pin, as shown above.
-2. Connect the second earclip electrode to the top REF pin, as shown above. 
+2. Connect the second earclip electrode to the top REF pin, as shown above.
 3. Connect the female terminations of the two flat snap electrodes and two spikey electrodes to top pins 1-4, shown above. (The order of pin connections is up to user preference.)
 4. Place the velcro headband between the clip end of a colored cable and a spikey electrode, making sure to align with the hole in the headband, then snap the spikey electrode into the clip
 5. Place the velcro headband between the flap snap electrode and the snap end of a colored cable, making sure to align with the hole in the headband, then snap the electrode into place.
@@ -101,7 +104,7 @@ Once you've downloaded the GUI zip file per tutorial instructions, fire up the G
 
 Notice the sharp peak-trough-peak wave behavior in the upper left time series window of the GUI. The first peak corresponds with the initiation of an eye blink, the trough immediately after shows a dip in alpha brain waves that syncs to the eye's closing for a fraction of a second! The peak immediately **after** the trough corresponds to the brain signals to the eyelid to reopen, thus concluding the blink cycle.
 
-The band power window in the lower right of the GUI shows the relative strengths of the user's alpha, beta, gamma, delta, and theta brain waves. The GUI and Ganglion work together to separate and categorize brain waves based on characteristics like frequency and amplitude. 
+The band power window in the lower right of the GUI shows the relative strengths of the user's alpha, beta, gamma, delta, and theta brain waves. The GUI and Ganglion work together to separate and categorize brain waves based on characteristics like frequency and amplitude.
 
 In the screenshot below, you'll see this analysis utilized in another built-in function, the Focus Widget! When the alpha waves are (relatively) high and beta waves are low, the GUI translates this to a focused state.
 
@@ -120,7 +123,7 @@ The Cyton board supports eight channels of EEG/EMG/EEG input and can stream data
 
 All OpenBCI boards ship with a free 2-pin standard JST compatible 4-AA battery holder. For the best user experience, we recommend purchasing the LiPo battery and charger linked below.
 
-1. [Lithium ion battery](https://www.adafruit.com/product/1578) and 
+1. [Lithium ion battery](https://www.adafruit.com/product/1578) and
 2. [USB charger](https://www.adafruit.com/product/1304)
 
 #### Hardware

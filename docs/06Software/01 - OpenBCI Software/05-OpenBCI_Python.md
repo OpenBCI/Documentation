@@ -1,4 +1,7 @@
-# OpenBCI Python
+---
+id: Python
+title: Python and OpenBCI
+---
 
 OpenBCI has a Python software library designed to work with OpenBCI hardware. To use it, download our OpenBCI Python github repository: https://github.com/OpenBCI/pyOpenBCI. This Python code is meant to be used by people familiar with Python and programming in general. Its purpose is to allow for programmers to interface with OpenBCI technology directly, both to acquire data and to write programs that can use that data in a live setting, using Python.The OpenBCI-Python repo is still live but it is not longer being mantained by OpenBCI.
 
@@ -220,36 +223,18 @@ The founder of the OpenBCI Python repository is Jermey Frey. The Python driver i
 
 The contributors to these repos are people using Python mainly for their data acquisition and analytics.
 
-
-### Get involved
-
-If you think you can help in any of the areas listed above (and we bet you can) or in any of the many areas that we haven't yet thought of (and here we're *sure* you can) then please check out our [contributors' guidelines](CONTRIBUTING.md) and our [roadmap](ROADMAP.md).
-
-Please note that it's very important to us that we maintain a positive and supportive environment for everyone who wants to participate. When you join us we ask that you follow our [code of conduct](CODE_OF_CONDUCT.md) in all interactions both on and offline.
-
 ### Contact us
 
-If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it. But you can also contact [AJ][link_aj_keller] by email (pushtheworldllc AT gmail DOT com) or on [twitter](https://twitter.com/aj-ptw).
+If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it.
 
-### Find out more
-
-You might be interested in:
-
-* Purchase a [Cyton][link_shop_cyton] | [Ganglion][link_shop_ganglion] | [WiFi Shield][link_shop_wifi_shield] from [OpenBCI][link_openbci]
-* Get taught how to use OpenBCI devices by [Push The World][link_ptw] BCI Consulting
-
-And of course, you'll want to know our:
-
-* [Contributors' guidelines](CONTRIBUTING.md)
-* [Roadmap](ROADMAP.md)
 
 ### Glossary
 
-OpenBCI boards are commonly referred to as _biosensors_. A biosensor converts biological data into digital data. 
+OpenBCI boards are commonly referred to as _biosensors_. A biosensor converts biological data into digital data.
 
 The [Ganglion][link_shop_ganglion] has 4 channels, meaning the Ganglion can take four simultaneous voltage readings.
- 
-The [Cyton][link_shop_cyton] has 8 channels and [Cyton with Daisy][link_shop_cyton_daisy] has 16 channels. 
+
+The [Cyton][link_shop_cyton] has 8 channels and [Cyton with Daisy][link_shop_cyton_daisy] has 16 channels.
 
 Generally speaking, the Cyton records at a high quality with less noise. Noise is anything that is not signal.
 

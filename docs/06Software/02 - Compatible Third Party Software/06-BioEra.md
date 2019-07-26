@@ -1,8 +1,11 @@
-# BioEra
+---
+id: BioEra
+title: BioEra
+---
 
 From the BioEra homepage: BioEra is a visual designer useful for analyzing signals in real time. It can be used with any device with ability to stream data to a computer.
 
-BioEra is used to create a design visually. A design represents data flow from input (e.g. biofeedback device) to output (e.g. visual or sound feedback). The flow can be customized with hundreds built-in objects (elements). For example an amplitude of alpha brainwaves can be filtered from input EEG signal, it can then trigger a MIDI, video or a computer task at a certain threshold level. 
+BioEra is used to create a design visually. A design represents data flow from input (e.g. biofeedback device) to output (e.g. visual or sound feedback). The flow can be customized with hundreds built-in objects (elements). For example an amplitude of alpha brainwaves can be filtered from input EEG signal, it can then trigger a MIDI, video or a computer task at a certain threshold level.
 
 ## Setting Up Your Environment
 
@@ -26,7 +29,7 @@ A PacMan demo will pop up automatically. Play around with the demo, or take a lo
 
 ## Streaming from OpenBCI within BioEra
 
-This section will show how to stream data live from your OpenBCI board within BioEra. We'll also show how to use the oscilloscope tool, as an introduction to BioEra's interface, as well as a way to verify your board is streaming data to BioEra. 
+This section will show how to stream data live from your OpenBCI board within BioEra. We'll also show how to use the oscilloscope tool, as an introduction to BioEra's interface, as well as a way to verify your board is streaming data to BioEra.
 
 Start BioEra. To start a new project, select System -> New Design from the toolbar of one of the windows.
 
@@ -68,7 +71,7 @@ Select the "View" button at the top of the design window. The oscilloscope scree
 
 Press the "play" button at the top of the design window. Data will start streaming from your board into BioEra (BioEra should automatically identify your board's serial port). A red light should appear on the OpenBCI Dongle; this means data is streaming from your OpenBCI board to your computer.
 
-Tap on the pins of your OpenBCI board. You should see the oscilloscope signal react accordingly. 
+Tap on the pins of your OpenBCI board. You should see the oscilloscope signal react accordingly.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BioEra_data_output.png?raw=ture" width="80%">
 

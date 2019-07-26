@@ -1,12 +1,15 @@
 {
   "docs": {
+    "Welcome to OpenBCI": ["Welcome"],
     "Getting Started with OpenBCI": [
-      "01GettingStarted/Welcome",
       "01GettingStarted/CytonGS",
       "01GettingStarted/DaisyGS",
       "01GettingStarted/GanglionGS",
-      "01GettingStarted/WiFiGS"
-    ], "Cyton Board": [
+      "01GettingStarted/WiFiGS",
+      "01GettingStarted/ECGSetup",
+      "01GettingStarted/EMGSetup",
+      "01GettingStarted/Community"],
+    "Cyton Board": [
       "02Cyton/CytonLanding",
       "02Cyton/CytonSpecs",
       "02Cyton/CytonDataFormat",
@@ -14,24 +17,86 @@
       "02Cyton/CytonProgram",
       "02Cyton/CytonRadios",
       "02Cyton/CytonExternal",
-      "02Cyton/CytonSDCard"
-    ],
-    "Ganglion Board": ["doc3"],
-    "Third Party Hardware": ["doc3"],
-    "Board Add-Ons (Electrodes, Headwear)": ["doc3"],
-    "Compatible Software": ["doc3"]
-  },
-  "FAQ": {
-    "General FAQ": ["doc4"],
-    "How do the products go together?": ["doc4"],
-    "Hardware FAQ": ["doc4"],
-    "Payment FAQ": ["doc4"],
-    "Shipping FAQ": ["doc4"],
-    "Cookie Policy": ["doc4"],
-    "Privacy Policy": ["doc4"],
-    "Refund Policy": ["doc4"]
-  },
-  "Example Projects": {
-    "Arduino Focus Example": ["test/test"]
+      "02Cyton/CytonSDCard"],
+    "Ganglion Board": [
+      "03Ganglion/GanglionLanding",
+      "03Ganglion/GanglionSpecs",
+      "03Ganglion/GanglionDataFormat",
+      "03Ganglion/GanglionSDK",
+      "03Ganglion/GanglionProgram"],
+    "Third Party Hardware": [
+      {
+        "type": "subcategory",
+        "label": "Myoware",
+        "ids": [
+          "05ThirdParty/01 - Myoware/MyoCyton",
+          "05ThirdParty/01 - Myoware/MyoGanglion"
+        ]
+        }, {
+        "type": "subcategory",
+        "label": "Pulse Sensor",
+        "ids": []
+        }, {
+        "type": "subcategory",
+        "label": "WiFi Shield",
+        "ids": [
+          "05ThirdParty/03 - WiFi Shield/WiFiLanding",
+          "05ThirdParty/03 - WiFi Shield/WiFiProgam",
+          "05ThirdParty/03 - WiFi Shield/WiFiAPI",
+          "05ThirdParty/03 - WiFi Shield/WiFiSDK"
+        ]
+        }],
+    "Board Add-Ons (Electrodes, Headwear)": [
+      {
+        "type": "subcategory",
+        "label": "Headwear",
+        "ids": [
+          "04AddOns/Headwear/MarkIV",
+          "04AddOns/Headwear/MarkIII",
+          "04AddOns/Headwear/HeadBand",
+          "04AddOns/Headwear/ElectrodeCap"
+        ]
+        }],
+    "Compatible Software": [
+      {
+        "type": "subcategory",
+        "label": "Developed By OpenBCI",
+        "ids": [
+          "06Software/01 - OpenBCI Software/GUIDocs",
+          "06Software/01 - OpenBCI Software/GUIWidgets",
+          "06Software/01 - OpenBCI Software/Python",
+          "06Software/01 - OpenBCI Software/Hub"
+        ]
+        }, {
+          "type": "subcategory",
+          "label": "Compatible Third Party Software",
+          "ids": [
+            "06Software/02 - Compatible Third Party Software/Matlab",
+            "06Software/02 - Compatible Third Party Software/Neuromore",
+            "06Software/02 - Compatible Third Party Software/OpenVibe",
+            "06Software/02 - Compatible Third Party Software/LSL",
+            "06Software/02 - Compatible Third Party Software/BrainBay",
+            "06Software/02 - Compatible Third Party Software/BioEra"
+          ]
+        }
+      ]
+    },
+    "FAQ": {
+      "Frequently Asked Questions": [
+        "08FAQ/FAQLanding",
+        "08FAQ/GenFAQ",
+        "08FAQ/HowProductsGoTogether",
+        "08FAQ/HardFAQ",
+        "08FAQ/PaymentFAQ",
+        "08FAQ/ShippingFAQ"
+      ],
+      "Policies": [
+        "08FAQ/Cookie",
+        "08FAQ/Privacy",
+        "08FAQ/Returns"
+      ]
+    },
+    "Example Projects": {
+      "Arduino Focus Example": ["test/test"]
+    }
   }
-}

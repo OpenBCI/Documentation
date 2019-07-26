@@ -1,4 +1,7 @@
-# Neuromore
+---
+id: Neuromore
+title: Neuromore
+---
 
 Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, it provides a visual designer that can be used to process signals real-time.
 
@@ -40,8 +43,8 @@ Neuromore is pretty awesome in terms of board connectivity. If you open up the s
 
 If it doesn't, try the following:
 
-1. Reset OBCI Board (Press Reset Button). 
-2. Turn OBCI Board OFF, disconnect dongle, reconnect dongle, turn board back ON. 
+1. Reset OBCI Board (Press Reset Button).
+2. Turn OBCI Board OFF, disconnect dongle, reconnect dongle, turn board back ON.
 3. Close neuromore and disconnect board and dongle. Connect Dongle and Board again and then open neuromore Studio.
 
 NOTE: If your board is connected properly, neuromore should have no trouble connecting to it.
@@ -80,23 +83,23 @@ In the example below, I selected the "Filtered Raw" node, and set the color to b
 
 Now you're able to view the signals from your output nodes in your Classifier!
 
-This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX]( https://en.wikipedia.org/wiki/Max_(software)/) for more general puroses and [OpenViBE](http://docs.openbci.com/research%20tools/OpenViBE) and of course neuromore for EEG specific processing. 
+This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX]( https://en.wikipedia.org/wiki/Max_(software)/) for more general puroses and [OpenViBE](http://docs.openbci.com/research%20tools/OpenViBE) and of course neuromore for EEG specific processing.
 
 The basic idea is that a stream of data that originates at the input device can then be mapped, processed and transformed into outputs that are useful, informative or just plain cool.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/alpha-detect-gs.png?raw=true" width="100%">
 
-The getting started example for OpenBCI in the neuromore Studio explores these areas and how to properly use the graphical programming interface. 
+The getting started example for OpenBCI in the neuromore Studio explores these areas and how to properly use the graphical programming interface.
 
 The best example within the classifier is perhaps the dynamic alpha detector.
 
 This alpha detector maintains a 30 sec average of the ratio between the alpha (8-12 Hz) and the background signal intensity. The detector itself reports an alpha reward that is dynamically changed by the average alpha/background ratio. This system is adaptive to lower or high alpha environments and makes alpha rewards harder when the average alpha ratio is high and vice-versa.
 
-By changing the "sensibility" parameter node you can then manually tune the relative "difficulty" that is necesary to attain an alpha detection. 
+By changing the "sensibility" parameter node you can then manually tune the relative "difficulty" that is necesary to attain an alpha detection.
 
 This system is flexible to different electrodes and electrode placement as it adjusts dynamically its expectations of what alpha "looks like".
 
-From this example we can see the power of statistics and simple logic that can easily be incorporated through visual programming into a complex and robust system. 
+From this example we can see the power of statistics and simple logic that can easily be incorporated through visual programming into a complex and robust system.
 
 ## Documentation and Resources
 
@@ -105,15 +108,3 @@ From this example we can see the power of statistics and simple logic that can e
 - [Grahical Programming](http://c2.com/cgi/wiki?GraphicalProgrammingLanguage)
 
 Did you use Neuromore and OpenBCI to build something new? Post about it on our [forum!](http://openbci.com/index.php/forum/)
-
-
-
-
-
-
-
-
-
-
-
-

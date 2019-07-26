@@ -1,9 +1,12 @@
-# Electrode Cap Getting Started Guide
+---
+id: ElectrodeCap
+title: Electrode Cap Getting Started Guide
+---
 
 
-This guide will walk you through setting up your OpenBCI Electrode Cap. Please consult the [Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap) 
+This guide will walk you through setting up your OpenBCI Electrode Cap. Please consult the [Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
 Product Page and review this guide in its entirety before starting.
-The Electrode Cap allows up to 21 channels of EEG data to be obtained using wet electrodes. 
+The Electrode Cap allows up to 21 channels of EEG data to be obtained using wet electrodes.
 You can pair the the Electrode Cap with the OpenBCI [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
 or a bioamplifier of your choice.
 
@@ -12,7 +15,7 @@ The placement of these electrodes is as shown in the image below:
 
 These electrodes map to labels on the electrodes. Please note that the cap uses older labelling, and that *T3, T4, T5, and T6* were updated to be *T7, T8, P7, and P8*, respectively. These placements are interchangeable, and while the labels on the cap use older naming, they correspond to nodes on the diagram.
 
-The Electrode Cap comes in two variants: 
+The Electrode Cap comes in two variants:
 
 * 21-channel electrode cap with Ag/AgCl coated electrodes
 * Premium 21-channel electrode cap with patented, sintered Ag/AgCl electrodes
@@ -20,8 +23,8 @@ The Electrode Cap comes in two variants:
 The set up is the same between the two cap variants. You can follow this tutorial for either one.
 ## Electrode Cap With CytonDaisy Tutorial
 
-When combined with the OpenBCI [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel), 
-the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels of EEG data. 
+When combined with the OpenBCI [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel),
+the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels of EEG data.
 
 ### What You'll Need
 1. [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
@@ -31,7 +34,7 @@ the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels o
 
 ### Connecting the Electrode Cap to the CytonDaisy
 
-Use the y-splitter cable that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head. 
+Use the y-splitter cable that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Cyton%2BDaisy%2BY-Splitter.JPG?raw=true" width="50%">
 
@@ -41,10 +44,10 @@ Connect a HPTA cable to the single end of the y-splitter cable, then connect the
 
 
 Connect bottom pins N1P through N8P on the Cyton to a set of HPTA cables, shown below. These pins will be channels 1-8 on the OpenBCI GUI.
-	
+
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_cyton_pins.png?raw=true" width="50%">
 
-Connect bottom pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16. 
+Connect bottom pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_cytondaisy_pins.png?raw=true" width="50%">
 
@@ -61,7 +64,7 @@ After the cables are all connected as shown above, place the cap on the subject'
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI-V4-Screenshot.jpg?raw=true" width="50%">
 
-Head over to the OpenBCI GUI [tutorial](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to set up your free live-streaming software! 
+Head over to the OpenBCI GUI [tutorial](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to set up your free live-streaming software!
 
 ### Use Cases for OpenBCI GUI
 * OpenBCI device owners want to visualize their brainwaves!
@@ -90,19 +93,18 @@ Head over to the OpenBCI GUI [tutorial](https://docs.openbci.com/OpenBCI%20Softw
 
 ## Electrode Cap With Third-Party Bioamplifier Tutorial
  The Electrode Cap comes with industry-standard touchproof terminations that can be plugged directly into most bioamplifers. The 10-20 locations are marked on the electrodes on the cap.
- 
+
 ### What You'll Need
 
 1. [Electrode Gel](https://shop.openbci.com/collections/frontpage/products/electrodegel)
-2. [Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap) 
+2. [Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
 3. Your own bioamplifier
- 
+
 ### The set-up
-1. Place the Electrode Cap on the subject's head and apply electrode gel with the included syringe. 
+1. Place the Electrode Cap on the subject's head and apply electrode gel with the included syringe.
 2. Connect the Electrode Cap to your bioamplifier using the marked guides on the cap. The electrodes on the cap are labeled "GND", "REF", "C3", etc.
 3. Follow the manufacturer's instructions for your bioamplifier
- 
+
 If you're using a third-party bioamplifier, you'll need the software that is compatible with that particular bioamplifier. The OpenBCI GUI is intended to be used with OpenBCI biosensing boards (Cyton, CytonDaisy, and Ganglion), not third-party bioamplifiers such as g.tec devices.
- 
+
 Find it all overwhelming? Don't know where to start? Questions, comments, suggestions? Email support@openbci.com
- 

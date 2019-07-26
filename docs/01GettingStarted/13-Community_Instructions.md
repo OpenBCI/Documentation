@@ -1,4 +1,7 @@
-#Welcome to the OpenBCI Community
+---
+id: Community
+title: Welcome to the OpenBCI Community
+---
 
 [openbci.com/community/](http://openbci.com/community/)
 
@@ -37,13 +40,10 @@ Our community page is based on the Wordpress platform. If you’ve used Wordpres
 
 The OpenBCI Community interface will be forever under development. We really want your feedback! If you have suggestions, please let us know (conor [at] openbci [dot] com).
 
-As we move forward, we want to improve the level of interactivity between community members and also provide incentives for posting cool projects and challenges. 
+As we move forward, we want to improve the level of interactivity between community members and also provide incentives for posting cool projects and challenges.
 
 In addition, we are thinking about ways to enable you to request and share biodata with other members of the OpenBCI Community. Of course the priority will always be that all data exchanged in this way belongs to the individual who generates the data (first and foremost) and will remain open for others access.
 
 ### Final Note
 
 The OpenBCI Community is only as strong as its members. We are calling upon you (!) to help us push the OpenBCI mission forward by collaborating with each other and going the extra step to share the work that you do. The more we all contribute and collaborate, the more the community benefits as a whole! **Let's see what we can build together!**
-
-
-

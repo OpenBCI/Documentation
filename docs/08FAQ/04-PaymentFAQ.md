@@ -1,4 +1,7 @@
-#Purchases & Payment Processing
+---
+id: PaymentFAQ
+title: Purchases & Payment Processing
+---
 
 ##How do I request a quotation or an invoice?
 

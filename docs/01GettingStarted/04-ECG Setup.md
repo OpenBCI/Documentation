@@ -1,4 +1,7 @@
-# Setting up for ECG 
+---
+id: ECGSetup
+title: Setting up for ECG
+---
 
 This tutorial will show you how to read ECG data (electrical signals from  the heart) using OpenBCI hardware and GUI.
 
@@ -9,7 +12,7 @@ This tutorial will show you how to read ECG data (electrical signals from  the h
 4. [OpenBCI GUI](https://openbci.com/index.php/downloads)
 
 ## 1. Connecting Electrodes to the OpenBCI Board
-1. Connect two snap electrodes to the top and bottom N1P pins. 
+1. Connect two snap electrodes to the top and bottom N1P pins.
 2. Connect the final pin to the AGND pin.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%">

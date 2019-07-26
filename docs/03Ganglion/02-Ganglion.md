@@ -1,4 +1,7 @@
-# OpenBCI Ganglion 
+---
+id: GanglionSpecs
+title: Ganglion Specs
+---
 
 ## [BUY IT!](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board)
 

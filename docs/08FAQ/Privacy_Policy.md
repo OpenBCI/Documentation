@@ -1,4 +1,7 @@
-# Privacy & Security
+---
+id: Privacy
+title: Privacy & Security
+---
 
 Effective June 26, 2018
 
@@ -8,14 +11,14 @@ We value the privacy and security of our customers. We NEVER sell, rent, or disc
 
 ### 1. WHO ARE WE?
 
-“OpenBCI” refers to OpenBCI, Inc a company incorporated in the USA with its registered office at 630 FLUSHING AVENUE, #867 BROOKLYN, NEW YORK, 11206. You can contact us via email at contact@openbci.com for any questions relating to our Privacy Policy. 
+“OpenBCI” refers to OpenBCI, Inc a company incorporated in the USA with its registered office at 630 FLUSHING AVENUE, #867 BROOKLYN, NEW YORK, 11206. You can contact us via email at contact@openbci.com for any questions relating to our Privacy Policy.
 
 
 ### 2. WHAT DOES THIS PRIVACY POLICY GOVERN?
 
-This Privacy Policy is where we explain what information is being collected when you use the OpenBCI website and products (our “Services”), and how that information is collected, utilized, stored and protected. This policy also explains your rights relating to the collection and use of your personal information ("Personal Information" means information which, on its own or in combination with other information, can be used to identify you). OpenBCI respects the privacy of its online visitors and customers of its products and services and complies with applicable laws for the protection of your privacy in the USA and elsewhere. 
+This Privacy Policy is where we explain what information is being collected when you use the OpenBCI website and products (our “Services”), and how that information is collected, utilized, stored and protected. This policy also explains your rights relating to the collection and use of your personal information ("Personal Information" means information which, on its own or in combination with other information, can be used to identify you). OpenBCI respects the privacy of its online visitors and customers of its products and services and complies with applicable laws for the protection of your privacy in the USA and elsewhere.
 
-Under European Union data protection legislation, OpenBCI is the “data controller” for personal information collected from our Services. OpenBCI works with several “Partners” and Third Parties (Google, Facebook, Shopify) who are “data processors” under GDPR. 
+Under European Union data protection legislation, OpenBCI is the “data controller” for personal information collected from our Services. OpenBCI works with several “Partners” and Third Parties (Google, Facebook, Shopify) who are “data processors” under GDPR.
 
 Please read the following carefully to get a clear understanding of how we collect, use, protect or otherwise handle any Personal Information collected from the use of our Services.
 
@@ -26,13 +29,13 @@ By clicking “I accept” on any Privacy Policy prompts, or by continuing to us
 
 ### 4. WHAT PERSONAL INFORMATION DO WE COLLECT?
 
-The Personal Information that OpenBCI collects varies depending on your use of our Services. Not all of the below items are required for all parts of our Services; for example, payment information and shipping address are only collected when making a purchase, and are not required to access other parts of our site. 
+The Personal Information that OpenBCI collects varies depending on your use of our Services. Not all of the below items are required for all parts of our Services; for example, payment information and shipping address are only collected when making a purchase, and are not required to access other parts of our site.
 
 When you use OpenBCI services we may collect the following information (how we use it is described later in this document):
 
 I. Contact Information: Name, Address, Phone Number, Email, Username and other basic information submitted when making a purchase, contacting us, or registering on our site.
-II. Linked social/external accounts: Github, personal website, or other personal social account names/URLS which you provide to us when registering for our Services, or communicating with us through social media. 
-III. Limited financial information: information you provide to us when making purchases from OpenBCI including credit card number, expiration date, verification code, or similar information from other connected payment services (Paypal, Google Pay, Apple Pay). 
+II. Linked social/external accounts: Github, personal website, or other personal social account names/URLS which you provide to us when registering for our Services, or communicating with us through social media.
+III. Limited financial information: information you provide to us when making purchases from OpenBCI including credit card number, expiration date, verification code, or similar information from other connected payment services (Paypal, Google Pay, Apple Pay).
 IV. ser Content: any information you include in posts or content shared while using our Services.
 V. Technical device information: information about the devices which you use to access OpenBCI services, including: Internet and/or network connection (including your IP address); mobile device identifiers; your operating system, browser type or other software; your hardware details; or other technical details provided by your web browser. This is technical data about our users and their actions and patterns, which does not provide personal information.
 VI. Support query information: any other personal information, or technical information provided in order to help you during any customer support communications.
@@ -48,9 +51,9 @@ III. Accesses or logs into our Services
 IV. Uploads or shares User Content either on our site or through connected social media platforms
 V. Communicates with us via all channels
 VI. Interacts with marketing content and advertisements from OpenBCI or our Partners
-VII. Through “Cookies” 
+VII. Through “Cookies”
 VIII. Completes surveys or other optional forms from our communications with users
-When submitting to OpenBCI any information about a third party, such as a friend, research subject, partner, or employee, you represent and warrant to OpenBCI that you have obtained the informed consent of that third party to provide this information to OpenBCI for use as outlined in this Policy. 
+When submitting to OpenBCI any information about a third party, such as a friend, research subject, partner, or employee, you represent and warrant to OpenBCI that you have obtained the informed consent of that third party to provide this information to OpenBCI for use as outlined in this Policy.
 
 
 ### 6. COOKIES AND OTHER THIRD PARTY TRACKING
@@ -73,7 +76,7 @@ We use the Personal Information that we collect to operate, improve, and persona
 I. to provide the Services to you;
 II. to improve and personalize the services we offer;
 III. to allow us to better respond to your customer service requests;
-IV. to communicate with you, either via email, telephone, or otherwise as authorized by you to inform you about our Services, 
+IV. to communicate with you, either via email, telephone, or otherwise as authorized by you to inform you about our Services,
 V. to better understand how users access and use the website and services, for the purposes of trying to improve the Website
 VI. to help us develop new products and improve our existing Services;
 VII. to provide users with more relevant marketing and promotional material;
@@ -97,7 +100,7 @@ VII. Corporate Changes. We may transfer information, including your Personal Dat
 
 ### 10. HOW DO WE STORE AND PROTECT YOUR INFORMATION?
 
-Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.  We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful access, destruction, theft, or accidental damage. 
+Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.  We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful access, destruction, theft, or accidental damage.
 
 We use regular malware scanning and your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.
 
@@ -108,7 +111,7 @@ As required by law, OpenBCI will notify you of any data breach that occurs where
 
 ### 11. TRANSFER TO COUNTRIES OUTSIDE EUROPE
 
-OpenBCI Services are accessible to users globally. Therefore, OpenBCI may transfer your Personal Data to countries outside the European Union and the European Economic Area. When we transfer any data to a country for which no adequacy decision of the European Commission exists, such transfer will be subject to the provisions of the (standard or other) clauses adopted by the European Commission, the EU-US Privacy Shield or other means approved by the EU’s security authorities. If you wish to know more about international transfers of your Personal Data, you may contact us at contact@openbci.com 
+OpenBCI Services are accessible to users globally. Therefore, OpenBCI may transfer your Personal Data to countries outside the European Union and the European Economic Area. When we transfer any data to a country for which no adequacy decision of the European Commission exists, such transfer will be subject to the provisions of the (standard or other) clauses adopted by the European Commission, the EU-US Privacy Shield or other means approved by the EU’s security authorities. If you wish to know more about international transfers of your Personal Data, you may contact us at contact@openbci.com
 
 ### 12. HOW LONG DO WE KEEP YOUR DATA?
 
@@ -139,20 +142,19 @@ VI. The right to data portability; a Data Subject has the right to ask for any d
 VII. The right to object; the Data Subject has the right to object to further processing of their data which is inconsistent with the primary purpose for which it was collected, including profiling, automation, and direct marketing.
 VIII. Rights in relation to automated decision making and profiling; Data Subjects have the right not to be subject to a decision based solely on automated processing.
 
-California residents have additional rights pursuant to Section 1798.83 of the California Civil Code. This law states that companies must inform consumers about the types of Personal Information that have been shared with third parties, who those third parties are, and examples of the types of services or products marketed by those third parties. To request a copy of the information disclosure contact@openbci.com 
+California residents have additional rights pursuant to Section 1798.83 of the California Civil Code. This law states that companies must inform consumers about the types of Personal Information that have been shared with third parties, who those third parties are, and examples of the types of services or products marketed by those third parties. To request a copy of the information disclosure contact@openbci.com
 
 
 ### 15. PROTECTING CHILDREN
 
-We do not and will not knowingly collect personal information from any child under the age of 16. If we learn that any user of the Services is under the age of 16, we will take necessary steps to remove information about that user from all systems. If you are a parent or guardian of a child under 16 who you believe has used our Services, please contact contact@openbci.com 
+We do not and will not knowingly collect personal information from any child under the age of 16. If we learn that any user of the Services is under the age of 16, we will take necessary steps to remove information about that user from all systems. If you are a parent or guardian of a child under 16 who you believe has used our Services, please contact contact@openbci.com
 
 
 ### 16. CONTACT INFO & ENFORCEMENT
 
-If you have any concerns or questions about how OpenBCI handles your personal information, please contact us first. If you feel we have not dealt with your concern you have the right to lodge a complaint with the relevant national supervisory authority or EU Member State. 
+If you have any concerns or questions about how OpenBCI handles your personal information, please contact us first. If you feel we have not dealt with your concern you have the right to lodge a complaint with the relevant national supervisory authority or EU Member State.
 
 
 ### 17. CHANGES TO THIS POLICY
 
 Our Privacy Statement applies to all users worldwide. OpenBCI reserves the right to make changes to this Policy at any time. In the event we do change our Policy you will find the updated version on our website, and users will be emailed to notify them of changes. You can find the current version on our website.
-

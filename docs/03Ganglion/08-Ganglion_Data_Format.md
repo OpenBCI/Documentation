@@ -1,5 +1,7 @@
-# Ganglion Data Format
-
+---
+id: GanglionDataFormat
+title: Ganglion Data Format
+---
 This discussion of the OpenBCI data format only applies to the OpenBCI Ganglion. The Ganglion contains a Simblee microcontroller that can both be programmed through the Arduino IDE or over-the-air (OTA). The Simblee has an on-board radio module. The format of the Ganglion data as seen on the PC is defined by a combination of the Arduino code on the Ganglion board and software on your computer. So, if you don't like the data format defined here, feel free to change it! In general, and believe us, we tried, you can't send more then 100 BLE packets per second. For more info on the byte stream parsing on the computer side, or for a working example, see the [NodeJS Ganglion Driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion).
 
 ## Standard Bluetooth 4.n BLE Setup
@@ -10,7 +12,7 @@ All BLE devices have specific _Service_, _Receive_, _Send_, and _Disconnect_, th
 
 Service | Value
 -----------|-----------
-**Service** | `fe84` 
+**Service** | `fe84`
 **Receive** | `2d30c082f39f4ce6923f3484ea480596`
 **Send** | `2d30c083f39f4ce6923f3484ea480596`
 **Disconnect** | `2d30c084f39f4ce6923f3484ea480596`
@@ -35,7 +37,7 @@ The Ganglion data samples are 24-bit signed (2's complement), MSB first. If we d
 ### 19bit Compression
 
 ![19bit Packet Map](../assets/images/ganglion_19bit-packet-map.png)
-  
+
 By default we use a 19-bit delta compression. See below for the story about 18bit delta compression description. It's easiest to grok this compression scheme if we step through the process. Assume that the Ganglion is connected to a computer, and the user wants to start streaming data. The user (or controlling software) sends a `b`, and when the Ganglion receives the `b`, it turns on the data acquisition hardware, starts taking samples, and sending data in 20 byte packets. The very first byte of each sample is the `Packet ID`, and the very first packet sent starts with an ID of `0x00`. The value `0x00` indicates to the controlling software that the packet contains **Uncompressed Data**, that is, there are 4 24bit values taking up the 12 bytes following the packet ID associated with channel 1-4 respectively. These values are legit Ganglion data, and are used to seed the decompression algorithm on the comptuer. The Ganglion stores the values in an array called `lastChannelData[]`.  
 **NOTE:** You can find all of this code in our [Ganglion Library](https://github.com/OpenBCI/OpenBCI_Ganglion_Library) repository.
 
@@ -86,13 +88,13 @@ void OpenBCI_Ganglion::compressData19() {
 
 **NOTE:** All delta compressions start with a raw uncompressed packet with Byte Id of `0x00`, that's 12 bytes of uncompressed 24-bit signed integer samples. The Ganglion uses a 2D buffer called `compression-ring` to hold the BLE packets. This buffer is 101 packets big, meaning that it can hold up to the last minute of data. We hope to add the future feature of being able to recall dropped packets.
 
-**IMPORTANT!** 18-bit and 19-bit compression store the signed bit in the `bit 0` or LSB position! Negative numbers always have a `1` in the LSB and positive numbers always have `0` in the LSB. If we kept the signed bit in the MSB, we would lose half of our dynamic range (bad), by placing it in the LSB, we lose a nominal rounding error. 
+**IMPORTANT!** 18-bit and 19-bit compression store the signed bit in the `bit 0` or LSB position! Negative numbers always have a `1` in the LSB and positive numbers always have `0` in the LSB. If we kept the signed bit in the MSB, we would lose half of our dynamic range (bad), by placing it in the LSB, we lose a nominal rounding error.
 
 ### 18bit Compression
 
 ![18bit Packet Map](../assets/images/ganglion_18bit-packet-map.png)
 
-19bit compression does not leave any room for additional data. If we want to send the on-board accelerometer data, we need to squeeze our compressor abit more. In the case of the 18bit compressor, we also use the `Packet ID` of `0x00` to send the raw uncompressed data. Each following packet uses `Packet ID` 1 to 100. This way, the controlling software that is running the decompression algorithm can decompress each packet without having to 'know' what state the system is in. 
+19bit compression does not leave any room for additional data. If we want to send the on-board accelerometer data, we need to squeeze our compressor abit more. In the case of the 18bit compressor, we also use the `Packet ID` of `0x00` to send the raw uncompressed data. Each following packet uses `Packet ID` 1 to 100. This way, the controlling software that is running the decompression algorithm can decompress each packet without having to 'know' what state the system is in.
 
 ```
 void OpenBCI_Ganglion::compressData18() {
@@ -162,17 +164,17 @@ We use the number associated with the `compression_ring` buffer position to tell
 **NOTE** An `n` ASCII command is used to turn on the Ganglion accelerometer. Use an `N` to turn off the accelerometer.
 
 ## Impedance Testing
-The Ganglion has hardware in place that allows for testing the impedance of the electrode/skin contact. In order to do this, the controlling software uses the ASCII control bytes `z` to start impedance test and `Z` to stop impedance test. During impedance testing, the data stream is turned off. The Ganglion will send impdance values of all the channels, 1 to 4, and the `REF` input in series over and over until it receives a `Z`. The `Packet ID` values are listed in the chart below. The impedance data is sent as an ASCII string representing the measured value in ohms. 
+The Ganglion has hardware in place that allows for testing the impedance of the electrode/skin contact. In order to do this, the controlling software uses the ASCII control bytes `z` to start impedance test and `Z` to stop impedance test. During impedance testing, the data stream is turned off. The Ganglion will send impdance values of all the channels, 1 to 4, and the `REF` input in series over and over until it receives a `Z`. The `Packet ID` values are listed in the chart below. The impedance data is sent as an ASCII string representing the measured value in ohms.
 
 ## Verbose Prints
-The Ganglion will sometimes send verbose data over the BLE connection. In this case, Ganglion can send from 1 to many packets of verbose ASCII data. The `Packet ID` for ASCII messaging will inform the computer if the message is not doen and it should expect another packet `206` or `0xCE`. When Ganglion is sending the last ASCII message packet, the `Packet ID` will be `207` or `0xCF`. 
+The Ganglion will sometimes send verbose data over the BLE connection. In this case, Ganglion can send from 1 to many packets of verbose ASCII data. The `Packet ID` for ASCII messaging will inform the computer if the message is not doen and it should expect another packet `206` or `0xCE`. When Ganglion is sending the last ASCII message packet, the `Packet ID` will be `207` or `0xCF`.
 
 ## Packet ID Cheat Sheet
 
 Byte ID Decimal | Byte ID HEX | Data Type | Description
 --------|--------|--------|--------
 `0` | `00` | `24bit` | Raw uncompressed
-`1`-`100` | `0x01`-`0x64` | `18bit` | 18-bit compression with Accelerometer 
+`1`-`100` | `0x01`-`0x64` | `18bit` | 18-bit compression with Accelerometer
 `101`-`200` | `0x65`-`0xC8` | `19bit` | 19-bit compression without Accelerometer
 `201` | `0xC9` | `impedance` | Impedance Channel 1
 `202` | `0xCA` | `impedance` | Impedance Channel 2
@@ -190,7 +192,7 @@ Raw uncompressed is always saved. If you get a Byte ID of `0`, you're going to w
 
 **18bit**
 
-Let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 18-bit delta compression strategy. 
+Let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 18-bit delta compression strategy.
 
     let buffer = new Buffer(
     [
@@ -226,7 +228,7 @@ Channel 2 - Sample 1 - `0b000000000000000010` - or `2` in decimal.
 The third compressed sample in sample two would be derived from the last four bits of byte 14, all of byte 15, and the first six bits of byte 16:
 Channel 3 - Sample 2 - `0b011100000000001010` - or `114698` in decimal.
 
-To get 10Hz 8-bit accelerometer data out of 18-bit packets you must modulus 10 the Byte ID: 
+To get 10Hz 8-bit accelerometer data out of 18-bit packets you must modulus 10 the Byte ID:
 If (Byte ID % 10) is 1, 2, and 3 then pull the last byte to get X, Y, and Z, respectably.
 
 In our example above, byte 19, the last byte, has a value of `14` or `0x0E` which would be stored as the X axis for this accelerometer sample.
@@ -258,18 +260,18 @@ Now let's look at some negative values!
       0b00000001  // 18
     ]);
     let expectedValue = [[-3, -5, -7, -11], [-262139, -198429, -262137, -4095]];
-    
+
 Keep in mind we look to the LSB for the sign of the 18-bit number!
-    
+
 The first compressed channel in sample one would be derived from the first two bytes plus the first **two** bits of the third byte for a total of 19-bits:
 Channel 1 - Sample 1 - `0b111111111111111101` - or `-3` in decimal.  
 
 The second compressed channel in sample two would be derived from the last six bits of byte 12, all of byte 13 and first four bits from byte 14:
 Channel 2 - Sample 2 - `0b001111100011100011` - or `-198429` in decimal. **The MSB is `0`, yet this is a negative number because of the `1` in the LSB**
- 
+
 **19Bit**
 
-Once again, let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 19-bit delta compression strategy. 
+Once again, let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 19-bit delta compression strategy.
 
     let buffer = new Buffer(
     [
@@ -330,9 +332,9 @@ Now let's look at some negative values!
       0b00000001  // 19
     ]);
     let expectedValue = [[-3, -5, -7, -11], [-262139, -198429, -262137, -4095]];
-    
+
 Keep in mind we look to the LSB for the sign of the 19-bit number!
-    
+
 The first compressed channel in sample one would be derived from the first two bytes plus the first **three** bits of the third byte:
 Channel 1 - Sample 1 - `0b1111111111111111101` - or `-3` in decimal.  
 
@@ -341,7 +343,7 @@ Channel 4 - Sample 2 - `0b001111100011100011` - or `-198429` in decimal. **The M
 
 **impedance**
 
-Impedance values are sent with Byte IDs and are in ASCII format ending with a `Z`. Parse from byte 1 till you hit the `Z`. 
+Impedance values are sent with Byte IDs and are in ASCII format ending with a `Z`. Parse from byte 1 till you hit the `Z`.
 
 ## 18-Bit Signed Data Values
 
@@ -359,12 +361,12 @@ For the compressed EEG data values, you will note that we are transferring the d
      */
     function convert18bitAsInt32 (threeByteBuffer) {
       let prefix = 0;
-    
+
       if (threeByteBuffer[2] & 0x01 > 0) {
         // console.log('\t\tNegative number')
         prefix = 0b11111111111111;
       }
-    
+
       return (prefix << 18) | (threeByteBuffer[0] << 16) | (threeByteBuffer[1] << 8) | threeByteBuffer[2];
     }
 
@@ -384,12 +386,12 @@ For the compressed EEG data values, you will note that we are transferring the d
      */
     function convert19bitAsInt32 (threeByteBuffer) {
       let prefix = 0;
-    
+
       if (threeByteBuffer[2] & 0x01 > 0) {
         // console.log('\t\tNegative number')
         prefix = 0b1111111111111;
       }
-    
+
       return (prefix << 19) | (threeByteBuffer[0] << 16) | (threeByteBuffer[1] << 8) | threeByteBuffer[2];
     }
 

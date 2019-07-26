@@ -1,4 +1,7 @@
-# The OpenBCI GUI
+---
+id: GUIDocs
+title: The OpenBCI GUI
+---
 
 [Suggest changes to this doc](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/01-OpenBCI_GUI.md)
 
@@ -34,7 +37,7 @@ There are no prerequisites for running the WiFi Shield with Cyton or Ganglion on
 <p>This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</p><br>
 
 <p><details><summary><i>Linux Users: Expand this dropdown for important details</i></summary><br>
-	
+
 Before trying to connect to any OpenBCI boards on Linux, you need to make sure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or similar. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [full explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br><br>
 
 1. First, verify if the user does belong to the "dialout" group using the “id” command.<br>
@@ -252,7 +255,7 @@ By default, the GUI stores all user data and raw EEG recordings in `Documents/Op
 
 ## Customize Your Layout
 
-The OpenBCI GUI displays up to six customizable windows in twelve layouts! You can choose what each window displays by clicking the dropdown menu at the upper left of each window. In the screengrab below, my GUI is showing Time Series, FFT Plot, and Accelerometer. 
+The OpenBCI GUI displays up to six customizable windows in twelve layouts! You can choose what each window displays by clicking the dropdown menu at the upper left of each window. In the screengrab below, my GUI is showing Time Series, FFT Plot, and Accelerometer.
 
 Also, you can see an impedance test has been started on Channel 1. See the next section "Impedance Testing" for more information.
 
@@ -281,7 +284,7 @@ __Click "Settings"-->"Default" to revert the GUI to default settings.__
 When in Live Mode, the GUI will load your settings automatically. Please allow 1-2 seconds to successfully apply settings to Cyton and Ganglion boards. _During this stage, the Dongle will blink red as it sends channel settings to the Cyton._ If loading takes more than a few seconds, there may be a connection issue with the board. An error should print at the bottom of the GUI if this happens.
 
 ## GUI Keyboard Shortcuts
-__Use the spacebar to start or stop the data stream!__ 
+__Use the spacebar to start or stop the data stream!__
 
 ### Expert Mode
 
@@ -293,7 +296,7 @@ Expert Mode Keyboard Shortcuts:
 
 - Other than spacebar, you can press 's' to stop data stream, and 'b' to begin, or start the data stream.
 
-- You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels. 
+- You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels.
 
 - __Press lowercase 'd' to set all channels settings to default.__
 
