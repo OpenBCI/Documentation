@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'Welcome', label: 'Documentation'},
     {doc: '08FAQ/FAQLanding', label: 'Shipping and other FAQ'},
-    {doc: 'test/test', label: 'Example Projects'},
+    {doc: '07Examples/FocusArduino', label: 'Example Projects'},
     {page: 'help', label: 'Help'},
     {search: true}
   ],

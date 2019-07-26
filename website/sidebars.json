@@ -97,6 +97,6 @@
       ]
     },
     "Example Projects": {
-      "Arduino Focus Example": ["test/test"]
+      "Arduino Focus Example": ["07Examples/FocusArduino"]
     }
   }

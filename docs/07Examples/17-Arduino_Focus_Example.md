@@ -1,4 +1,7 @@
-# Send Focus Data from GUI to Arduino
+---
+id: FocusArduino
+title: Send Focus Data from GUI to Arduino
+---
 
 This tutorial shows you how to get started streaming data from the OpenBCI_GUI's Focus Widget via Serial connection to an [Arduino UNO Rev3](https://store.arduino.cc/usa/arduino-uno-rev3).
 Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GUI-to-Arduino/) to find the OpenBCI/Arduino Focus Data tutorial in the updated Instructable format!
@@ -18,7 +21,7 @@ Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GU
 
 ### Step 1 - Load the Example in the Arduino IDE
 
-The [OpenBCI_GUI-FocusArduino.ino](https://github.com/OpenBCI/Docs/blob/master/assets/files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino) file is designed to serve as a simple starting point for creating your own Arduino project using data from the GUI over serial. 
+The [OpenBCI_GUI-FocusArduino.ino](https://github.com/OpenBCI/Docs/blob/master/assets/files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino) file is designed to serve as a simple starting point for creating your own Arduino project using data from the GUI over serial.
 
 You can copy/paste the code into the Arduino IDE or [download the Docs](https://github.com/OpenBCI/Docs/archive/master.zip) and navigate to the example `/assets/files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino`.
 
@@ -65,4 +68,3 @@ From here, you can add more to your new Arduino project to react to Focus data f
  - Make a second copy of your project and make it a two player game!
 
  - [Share what you've made in a community post!](https://openbci.com/community/)
-
