@@ -1,86 +1,86 @@
 {
   "docs": {
-    "Welcome to OpenBCI": ["Welcome"],
-    "Getting Started with OpenBCI": [
-      "01GettingStarted/CytonGS",
-      "01GettingStarted/DaisyGS",
-      "01GettingStarted/GanglionGS",
-      "01GettingStarted/WiFiGS",
-      "01GettingStarted/ECGSetup",
-      "01GettingStarted/EMGSetup",
-      "01GettingStarted/Community"],
-    "Cyton Board": [
-      "02Cyton/CytonLanding",
-      "02Cyton/CytonSpecs",
-      "02Cyton/CytonDataFormat",
-      "02Cyton/CytonSDK",
-      "02Cyton/CytonProgram",
-      "02Cyton/CytonRadios",
-      "02Cyton/CytonExternal",
-      "02Cyton/CytonSDCard"],
-    "Ganglion Board": [
-      "03Ganglion/GanglionLanding",
-      "03Ganglion/GanglionSpecs",
-      "03Ganglion/GanglionDataFormat",
-      "03Ganglion/GanglionSDK",
-      "03Ganglion/GanglionProgram"],
-    "Third Party Hardware": [
-      {
-        "type": "subcategory",
-        "label": "Myoware",
-        "ids": [
-          "05ThirdParty/01 - Myoware/MyoCyton",
-          "05ThirdParty/01 - Myoware/MyoGanglion"
-        ]
-        }, {
-        "type": "subcategory",
-        "label": "Pulse Sensor",
-        "ids": []
-        }, {
-        "type": "subcategory",
-        "label": "WiFi Shield",
-        "ids": [
-          "05ThirdParty/03 - WiFi Shield/WiFiLanding",
-          "05ThirdParty/03 - WiFi Shield/WiFiProgam",
-          "05ThirdParty/03 - WiFi Shield/WiFiAPI",
-          "05ThirdParty/03 - WiFi Shield/WiFiSDK"
-        ]
-        }],
-    "Board Add-Ons (Electrodes, Headwear)": [
-      {
-        "type": "subcategory",
-        "label": "Headwear",
-        "ids": [
-          "04AddOns/Headwear/MarkIV",
-          "04AddOns/Headwear/MarkIII",
-          "04AddOns/Headwear/HeadBand",
-          "04AddOns/Headwear/ElectrodeCap"
-        ]
-        }],
-    "Compatible Software": [
-      {
-        "type": "subcategory",
-        "label": "Developed By OpenBCI",
-        "ids": [
-          "06Software/01 - OpenBCI Software/GUIDocs",
-          "06Software/01 - OpenBCI Software/GUIWidgets",
-          "06Software/01 - OpenBCI Software/Python",
-          "06Software/01 - OpenBCI Software/Hub"
-        ]
-        }, {
+      "Welcome to OpenBCI": ["Welcome"],
+      "Getting Started with OpenBCI": [
+        "01GettingStarted/CytonGS",
+        "01GettingStarted/DaisyGS",
+        "01GettingStarted/GanglionGS",
+        "01GettingStarted/WiFiGS",
+        "01GettingStarted/ECGSetup",
+        "01GettingStarted/EMGSetup",
+        "01GettingStarted/Community"],
+      "Cyton Board": [
+        "02Cyton/CytonLanding",
+        "02Cyton/CytonSpecs",
+        "02Cyton/CytonDataFormat",
+        "02Cyton/CytonSDK",
+        "02Cyton/CytonProgram",
+        "02Cyton/CytonRadios",
+        "02Cyton/CytonExternal",
+        "02Cyton/CytonSDCard"],
+      "Ganglion Board": [
+        "03Ganglion/GanglionLanding",
+        "03Ganglion/GanglionSpecs",
+        "03Ganglion/GanglionDataFormat",
+        "03Ganglion/GanglionSDK",
+        "03Ganglion/GanglionProgram"],
+      "Third Party Hardware": [
+        {
           "type": "subcategory",
-          "label": "Compatible Third Party Software",
+          "label": "Myoware",
           "ids": [
-            "06Software/02 - Compatible Third Party Software/Matlab",
-            "06Software/02 - Compatible Third Party Software/Neuromore",
-            "06Software/02 - Compatible Third Party Software/OpenVibe",
-            "06Software/02 - Compatible Third Party Software/LSL",
-            "06Software/02 - Compatible Third Party Software/BrainBay",
-            "06Software/02 - Compatible Third Party Software/BioEra"
+            "05ThirdParty/01 - Myoware/MyoCyton",
+            "05ThirdParty/01 - Myoware/MyoGanglion"
           ]
-        }
-      ]
-    },
+          }, {
+          "type": "subcategory",
+          "label": "Pulse Sensor",
+          "ids": []
+          }, {
+          "type": "subcategory",
+          "label": "WiFi Shield",
+          "ids": [
+            "05ThirdParty/03 - WiFi Shield/WiFiLanding",
+            "05ThirdParty/03 - WiFi Shield/WiFiProgam",
+            "05ThirdParty/03 - WiFi Shield/WiFiAPI",
+            "05ThirdParty/03 - WiFi Shield/WiFiSDK"
+          ]
+          }],
+      "Board Add-Ons (Electrodes, Headwear)": [
+        {
+          "type": "subcategory",
+          "label": "Headwear",
+          "ids": [
+            "04AddOns/Headwear/MarkIV",
+            "04AddOns/Headwear/MarkIII",
+            "04AddOns/Headwear/HeadBand",
+            "04AddOns/Headwear/ElectrodeCap"
+          ]
+          }],
+      "Compatible Software": [
+        {
+          "type": "subcategory",
+          "label": "Developed By OpenBCI",
+          "ids": [
+            "06Software/01 - OpenBCI Software/GUIDocs",
+            "06Software/01 - OpenBCI Software/GUIWidgets",
+            "06Software/01 - OpenBCI Software/Python",
+            "06Software/01 - OpenBCI Software/Hub"
+          ]
+          }, {
+            "type": "subcategory",
+            "label": "Compatible Third Party Software",
+            "ids": [
+              "06Software/02 - Compatible Third Party Software/Matlab",
+              "06Software/02 - Compatible Third Party Software/Neuromore",
+              "06Software/02 - Compatible Third Party Software/OpenVibe",
+              "06Software/02 - Compatible Third Party Software/LSL",
+              "06Software/02 - Compatible Third Party Software/BrainBay",
+              "06Software/02 - Compatible Third Party Software/BioEra"
+            ]
+          }
+        ]
+      },
     "FAQ": {
       "Frequently Asked Questions": [
         "08FAQ/FAQLanding",
@@ -97,6 +97,8 @@
       ]
     },
     "Example Projects": {
-      "Arduino Focus Example": ["07Examples/FocusArduino"]
+      "Arduino Focus Example": [
+        "07Examples/FocusArduino"
+      ]
     }
   }
