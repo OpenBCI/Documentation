@@ -1,6 +1,6 @@
 ---
 id: MarkIII
-title: Ultracortex Mark IV
+title: Ultracortex Mark III
 ---
 
 *Development Period: June 2016*
