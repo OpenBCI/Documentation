@@ -28,26 +28,26 @@ You can copy/paste the code into the Arduino IDE or [download the Docs](https://
 
 ### Step 2 - Upload the Arduino sketch
 
-![Upload Arduino Sketch](../assets/images/gui_arduino_uploadArduinoSketchIDE.png)
+![Upload Arduino Sketch](/assets/ExamplesImages/gui_arduino_uploadArduinoSketchIDE.png)
 
 After uploading the sketch, you can close or minimize the Arduino IDE, but keep the Arduino connected to the computer. The sketch we just uploaded is running!
 
 ### Step 3 - Open OpenBCI_GUI in Synthetic Mode
-![Open GUI Synthetic Mode](../assets/images/gui_arduino_selectSyntheticMode.png)
+![Open GUI Synthetic Mode](/assets/ExamplesImages/gui_arduino_selectSyntheticMode.png)
 
 
 ### Step 4 - Start Streaming
 
 #### Open and Setup the Networking Widget
-![Setup Networking Widget](../assets/images/gui_arduino_setupNetworkingWidgetSerial.png)
+![Setup Networking Widget](/assets/ExamplesImages/gui_arduino_setupNetworkingWidgetSerial.png)
 
 #### Open the Focus Widget. Then, click "Start Data Stream" and then "Start" in the Networking Widget
 
-![OpenBCI Serial Not Focused](../assets/images/gui_arduino_serial_notFocused.png)
+![OpenBCI Serial Not Focused](/assets/ExamplesImages/gui_arduino_serial_notFocused.png)
 
 #### Next, turn off channel one to simulate Focused state.
 
-![OpenBCI Serial Focused](../assets/images/gui_arduino_serial_Focused.png)
+![OpenBCI Serial Focused](/assets/ExamplesImages/gui_arduino_serial_Focused.png)
 
 The Arduino's built-in LED should blink when the Focus Widget reads "focused!"
 
