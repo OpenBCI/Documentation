@@ -10,7 +10,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 ## What You Need
 
-![OpenBCI Contents](../assets/images/ganglion_what_you_need.png)
+![OpenBCI Contents](/assets/ganglion_what_you_need.png)
 
  1. OpenBCI Ganglion Board
  2. An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
