@@ -89,7 +89,7 @@ Developers looking to contribute or write custom firmware can clone the firmware
 
 If you followed the process in the previous link, and you will be able to select the _OpenBCI 32_ board from the Tools >> Board >> dropdown menu!
 
-![board_dropdown](../assets/images/OBCI32_Board_Dropdown.png)
+![board_dropdown](/assets/CytonImages/OBCI32_Board_Dropdown.png)
 
 ### Select DefaultBoard.ino from Examples
 
@@ -103,7 +103,7 @@ If you followed the process in the previous link, and you will be able to select
 
 Now is a good time to plug your Dongle in and power down the Board.
 
-![serial_port](../assets/images/PortSelect.png)
+![serial_port](/assets/CytonImages/PortSelect.png)
 
 * Select the correct serial port for your OpenBCI Dongle.
 
@@ -117,7 +117,7 @@ Now is a good time to plug your Dongle in and power down the Board.
 
 * When you are happy with the code, you will have to put the 32bit board into bootloader mode. We don't have a way to remotely reset the chipKIT compatible IC, so you have to do it manually with the procedure that follows:
 
-![reset_program](../assets/images/RST_PROG.png)
+![reset_program](/assets/CytonImages/RST_PROG.png)
 
   1. Power OFF the OpenBCI Board.
   2. Press down both RST and PROG buttons at the same time.
@@ -125,7 +125,7 @@ Now is a good time to plug your Dongle in and power down the Board.
   4. Release the RST button while still holding down the PROG button.
   5. Release the PROG button.
 
-![Upload32](../assets/images/Upload32.png)
+![Upload32](/assets/CytonImages/Upload32.png)
 
 * Verify that you see the blue LED on the 32bit board blinking pleasantly.
 
@@ -143,7 +143,7 @@ That's it! You will see some blinky lights on the Dongle, and after a short whil
 * OpenBCI Dongle connected to USB port
 * OpenBCI Cyton Board with battery power
 
-![OpenBCI Dongle](../assets/images/dongleConnection.png)
+![OpenBCI Dongle](/assets/CytonImages/dongleConnection.png)
 
 ***Note***: Always plug the Dongle into the PC before powering the Board because the Host (RFduino on the Dongle) must be powered before the Device (RFduino on the Board).
 
@@ -170,13 +170,13 @@ You will need to install the folders 'OpenBCI_32_Daisy' and 'OBCI_SD' from our L
 
 Before you can upload code correctly to the PIC32 with Arduino, you need to add the chipKIT-core board files to your Arduino IDE. The folks at chipKIT have put together instructions on how to [Auto Install via URL from within Arduino](http://chipkit.net/wiki/index.php?title=ChipKIT_core#1.29_Auto_install_via_URL_from_within_Arduino_IDE_.28latest_version_chipKIT-core_v1.3.1.29). Follow the process in the previous link, and you will be able to select the OpenBCI board from the Tools >> Board >> dropdown menu!
 
-![board_dropdown](../assets/images/OBCI32_Board_Dropdown.png)
+![board_dropdown](/assets/CytonImages/OBCI32_Board_Dropdown.png)
 
 Open the OpenBCI_32bit sketch from the File -> Sketchbook dropdown. Then select OpenBCI 32 from the Board drop-down menu.
 
 Make sure that the slide switch on the OpenBCI Dongle is switched to the GPIO6 selection (towards your computer). If it's on the other side, it will try to program the Dongle-mounted RFduino! Now is a good time to plug your Dongle in and power down the Cyton Board.
 
-![serial_port](../assets/images/PortSelect.png)
+![serial_port](/assets/CytonImages/PortSelect.png)
 
 Select the correct serial port for your OpenBCI Dongle.
 
@@ -194,7 +194,7 @@ When you are happy with the code, you will have to put the 32bit board into boot
 
 * Now, click OpenBCI_WiFi_Master and install v1.0.0 (or the latest version if there are newer versions).
 
-![reset_program](../assets/images/RST_PROG.png)
+![reset_program](/assets/CytonImages/RST_PROG.png)
 
 **Note:** we suggest that for the five steps below you use one thumb to press down both the RST and PROG buttons, while using your other thumb to toggle the switch between OFF and PC.
 
@@ -208,13 +208,13 @@ Now you should see the blue LED on the Cyton Board blinking pleasantly. Your Cyt
 
 * Press the upload button on the Arduino IDE (the circular button with the arrow pointing to the right). That's it! You will see some blinky lights on the Dongle, and after a short while, the Arduino IDE will tell you that it's done. Happy Hacking!
 
-![image](../assets/images/Upload32.png)
+![image](/assets/CytonImages/Upload32.png)
 
 ** Note: ** occasionally, you may see the error message in the screenshot below. You can ignore this. As long as
 `Program flash: ...................................#################################### done` appears, 99 out of 100 times your firmware uploaded correctly. If your board doesn't appear to be working in the GUI (or other software), simply try re-uploading the firmware.
 
 
-![Upload32](../assets/images/oddUploadError.png)
+![Upload32](/assets/CytonImages/oddUploadError.png)
 
 ## 8bit Upload How-To
 ### NOTE: The 8bit Hardware is no longer in production
@@ -224,7 +224,7 @@ Now you should see the blue LED on the Cyton Board blinking pleasantly. Your Cyt
 * OpenBCI Dongle connected to USB port
 * OpenBCI 8bit Board with battery power
 
-![OpenBCI Dongle](../assets/images/dongleConnection.png)
+![OpenBCI Dongle](/assets/CytonImages/dongleConnection.png)
 
 Make sure that the slide switch on the OpenBCI Dongle is switched to the GPIO6 selection. That way the DTR reset signal will get passed over-air to the ATmega328. If it's on the other side, it will try to program the Dongle-mounted RFduino!  
 You can find the latest firmware and libraries on our github repository
@@ -239,15 +239,15 @@ You will need to install these files from our repository into your Documents/ard
     * The OpenBCI 8bit Library
 
 
-![ArduinoIDE](../assets/images/Arduino_IDE.png)
+![ArduinoIDE](/assets/CytonImages/Arduino_IDE.png)
 
 Move the file OpenBCI_8bit_SD.ino into your Documents/arduino folder, and start up the Arduino IDE. you should then see the sketch in your Sketch folder.
 
-![selectBoardUno](../assets/images/BoardSelect.png)
+![selectBoardUno](/assets/CytonImages/BoardSelect.png)
 
 Select Arduino UNO from the Board drop-down menu.
 
-![selectSerialPort](../assets/images/SerialPortSelect.png)
+![selectSerialPort](/assets/CytonImages/SerialPortSelect.png)
 
 Select the correct serial port for your OpenBCI Dongle.
 
@@ -257,7 +257,7 @@ Select the correct serial port for your OpenBCI Dongle.
 
 * On Linux, it will be different.
 
-![Upload](../assets/images/Upload.png)
+![Upload](/assets/CytonImages/Upload.png)
 
 When you are happy with the code, simply press upload to program the OpenBCI 8bit target. That's it! You will see some blinky lights on the Dongle, and after a short while, the Arduino IDE will tell you that it's done.
 
