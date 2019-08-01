@@ -1,8 +1,7 @@
 ---
 id: DeprecatedLanding
-title: Deprecated Docs Landing
+title: Deprecated Docs
 ---
-# Deprecated Docs
 
 This directory houses all documentation that have been deprecated. These include:
-- [Spiderclaw](09Deprecated/02-Spiderclaw)
+- [Spiderclaw](09Deprecated/02-Spiderclaw.md)
