@@ -5,7 +5,7 @@ title: The OpenBCI GUI
 
 [Suggest changes to this doc](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/01-OpenBCI_GUI.md)
 
-![image](/assets/SoftwareImages/OpenBCI Software/GUI-V4-Screenshot.jpg)
+![image](assets/SoftwareImages/OpenBCI Software/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's default software tool for visualizing, recording, and streaming data from the OpenBCI Boards. It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
@@ -18,7 +18,7 @@ Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 ### Ganglion on macOS
 Turn on your computer's Bluetooth if not already.
 
-![Bluetooth On!](/assets/SoftwareImages/OpenBCI Software/ganglion_BLE-ON.png)  
+![Bluetooth On](assets/SoftwareImages/OpenBCI Software/ganglion_BLE-ON.png)  
 
 Alternatively, you can use a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).
 
