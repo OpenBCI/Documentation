@@ -6,11 +6,11 @@ title: Using SD Card with OpenBCI
 [Suggest changes to this tutorial](https://github.com/OpenBCI/Docs/edit/master/Tutorials/09-Using_SD_Card_with_OpenBCI.md)
 
 ##Overview
-There are many situations where logging biometric data to local storage may be desirable. You may be doing a sleep study, or out on the road with your OpenBCI, and the wireless connection to a PC may be tenuous. The amount of data you are producing may require more bandwidth than the BLE connection can handle. This tutorial will cover the basics of adding an SD card for local storage to OpenBCI, how the data is formatted on the card, and how to retrieve the data after you've logged it. 
+There are many situations where logging biometric data to local storage may be desirable. You may be doing a sleep study, or out on the road with your OpenBCI, and the wireless connection to a PC may be tenuous. The amount of data you are producing may require more bandwidth than the BLE connection can handle. This tutorial will cover the basics of adding an SD card for local storage to OpenBCI, how the data is formatted on the card, and how to retrieve the data after you've logged it.
 
 ##SD Card Basics
-![SD_Class](../assets/images/SDclass.jpg)
-![SD_Cards](../assets/images/MicroSDcards.jpg)
+![SD_Class](/assets/CytonImages/SDclass.jpg)
+![SD_Cards](/assets/CytonImages/MicroSDcards.jpg)
 
 First thing to know is that low-cost cards and slow speed cards are **not** recommended. When shopping for SD cards, make sure to look for high quality (Scan Disk, eg) and high speed (class 10 minimum). Look for the symbols to the right to know you are getting the right kind of card. You will also want to look for a card that has alot of memory. OpenBCI will generate about 1 mega bye of data per minute when it is recording 8 channels at the default rate of 250Hz. That's alot of data!
 
@@ -19,14 +19,14 @@ We've used these two cards in the OpenBCI lab, and they both work great.
 People have reported issues with _Transcend_ and _Samsung_ Class 10 cards.
 
 ###Formatting
-![DiskUtility](../assets/images/DiskUtil_Erase.jpg)
-![SecureErase](../assets/images/DiskUtil_eraseSecure.jpg)
+![DiskUtility](/assets/CytonImages/DiskUtil_Erase.jpg)
+![SecureErase](/assets/CytonImages/DiskUtil_eraseSecure.jpg)
 
 If you are using a new card, or one that you've had around, first thing you should do is format it to FAT32. We've found that the most successful formatting method is one that overwrites the card, not just 'erasing' it which can leave old data intact. The Mac OS provides this option in the Disk Utility. Click the Erase tab, open Security Options, and slide the slider to the 'single pass of zeros' option. There are more comprehensive secure erase options, but they take longer.
 
-![ScanDiskFormatterMAC](../assets/images/ScanDiskFormatter.jpg)
-![ScanDiskFormatterWin](../assets/images/SDformatterWin.jpg)
-![ScanDiskFormatterOverwriteWIN](../assets/images/SDformatterFullOverwrite.jpg)
+![ScanDiskFormatterMAC](/assets/CytonImages/ScanDiskFormatter.jpg)
+![ScanDiskFormatterWin](/assets/CytonImages/SDformatterWin.jpg)
+![ScanDiskFormatterOverwriteWIN](/assets/CytonImages/SDformatterFullOverwrite.jpg)
 
 Another, and some say better, option is to use the SD Association's own formatter software. [Download it here](https://www.sdcard.org/downloads/formatter_4/). (available for Windows and Mac). We recommend using it if you are on a Windows machine, because the Windows format option does not allow for overwriting the disk. Make sure to select OverWrite Format Type when using the SDFormatter tool on Windows or Mac.
 
@@ -102,11 +102,11 @@ You must run the OpenBCI_GUI Sketch in Processing for this to work.
 
 We don't currently have a way to recall the file contents from the OpenBCI board over the Radio link to the Dongle. You must remove the SD card from the OpenBCI board and access the files via your computer.
 
-![SelectFilePrompt](../assets/images/GUI_selectSDfile.jpg)
+![SelectFilePrompt](/assets/CytonImages/GUI_selectSDfile.jpg)
 
 On startup, the OpenBCI GUI will ask you for the data source you want to work with. Select **PLAYBACK(from file)** and click the **SELECT SD FILE** button.
 
-![SelectSDfile](../assets/images/GUI_selectSDfileWindow.jpg)
+![SelectSDfile](/assets/CytonImages/GUI_selectSDfileWindow.jpg)
 
 
 Navigate to the OpenBCI generated file, and click **OPEN**. The GUI will convert the file you selected. The resulting file will be placed inside a file called EEG_Data in the Processing OpenBCI GUI Sketch Folder. The file naming convention is **SDconverted-Year-Month-Day-Time.txt**. Example:

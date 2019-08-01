@@ -39,7 +39,7 @@ The following tutorials will get your computer and the Arduino IDE set up to cre
 * Wifi Master Library Firmware
 * Compiler Tools (for OTA)
 
-![Download Arduino Mac](../assets/images/ganglion_download-arduino-mac.png)
+![Download Arduino Mac](/assets/GanglionImages/ganglion_download-arduino-mac.png)
 
 If you don't already have the Arduino IDE software on your computer, go [here](https://www.arduino.cc/en/Main/Software) to download the latest version for macOS.
 
@@ -49,7 +49,7 @@ Deprecated: Then, follow the instructions in the Simblee Quick Start Guide(websi
 
 ### Modify The Simblee Board Files
 
-![Open Arduino Contents](../assets/images/ganglion_variant-file-mod.png)
+![Open Arduino Contents](/assets/GanglionImages/ganglion_variant-file-mod.png)
 
 In order to program the Simblee to communicate and control the Ganglion, we need to make a quick change to the `variants.h` file in the Simblee folder that you just loaded into Arduino. Naviage to the folder   `/Applications/Arduino.app/Contents/Java/portable/packages`  
 `/Simblee/hardware/Simblee/1.1.0/variants/Simblee`,  
@@ -116,7 +116,7 @@ If you followed the process in the previous link, and you will be able to select
 
 ## How to Create OTA File
 
-![Rename platform file](../assets/images/ganglion_platform-rename.png)
+![Rename platform file](/assets/GanglionImages/ganglion_platform-rename.png)
 
 In order to create a zip file with the appropriate components to do OTA, we need to further modify the Simblee board files in your `Arduino/Contents/Java/portable` folder. Navigate to the folder  
 `/Arduino.app/Contents/Java/portable/packages`  
@@ -124,7 +124,7 @@ In order to create a zip file with the appropriate components to do OTA, we need
 Then change the name of the file `platform.txt` to `platform_NORMAL.txt`.  
 We're doing this in case you ever want to revert to the original.  
 
-![Modified 1.1.0 Folder](../assets/images/ganglion_add-ota-tools.png)
+![Modified 1.1.0 Folder](/assets/GanglionImages/ganglion_add-ota-tools.png)
 
 Next, download the necessary files [here](https://github.com/biomurph/Ganglion_OTA_Tools). They are:  
 
@@ -134,11 +134,11 @@ Next, download the necessary files [here](https://github.com/biomurph/Ganglion_O
 
 Move the files called `mkdfuzip`, `nrfutil_macosx`, and `platform.txt` into your `Simblee/1.1.0` folder. **Restart or launch Arduino**.
 
-![Create OTA File](../assets/images/ganglion_export-compiled-binary.png)
+![Create OTA File](/assets/GanglionImages/ganglion_export-compiled-binary.png)
 
-![OTA File Created](../assets/images/ganglion_ota-zip-created.png)
+![OTA File Created](/assets/GanglionImages/ganglion_ota-zip-created.png)
 
-![Change Zip Name](../assets/images/ganglion_ota-zip-nameChange.png)
+![Change Zip Name](/assets/GanglionImages/ganglion_ota-zip-nameChange.png)
 
 Now you're ready to create custom Ganglion firmware that is packaged correctly for OTA programming! This walk through will use example code as an example.  
 **IMPORTANT NOTE:** Whenever you want to create or modify Ganglion firmware, You must **Always** put the line  
@@ -159,8 +159,8 @@ The Simblee is designed around a Nordic Semiconductor [nRF51822](http://www.nord
 * nRF Toolbox App
 * Lightblue Explorer App
 
-![nRF Toolbox appStore](../assets/images/ganglion_iphone-get-toolbox.png)
-![Lightblue Explorer AppStore](../assets/images/ganglion_iphone-get-lightblue.png)
+![nRF Toolbox appStore](/assets/GanglionImages/ganglion_iphone-get-toolbox.png)
+![Lightblue Explorer AppStore](/assets/GanglionImages/ganglion_iphone-get-lightblue.png)
 
 ### Install apps
 
@@ -168,12 +168,12 @@ Install the nRF Toolbox and Lightblue Explorer apps onto you device.
 
 ### Verify Ganglion Version
 
-![Lightblue Scan](../assets/images/ganglion_iphone-select-simblee-lightblue.png)
+![Lightblue Scan](/assets/GanglionImages/ganglion_iphone-select-simblee-lightblue.png)
 
 Turn on your Ganglion, and turn on your phone's bluetooth Then open the Lightblue app. The app will open and show you what Bluetooth Peripherals are nearby. The Ganglion will be listed as `Simblee`. Tap that peripheral, and Lightblue will connect to and interrogate it.  
 **NOTE: the Ganglion may also show up as DfuTarg**
 
-![Simblee Interrogation](../assets/images/ganglion_iphone-software-revision.png)
+![Simblee Interrogation](/assets/GanglionImages/ganglion_iphone-software-revision.png)
 
 In the Device Information, you will find the following:
 
@@ -192,8 +192,8 @@ You should see `openbci.com` as the Manufacturer, `Gagnlion` as the Model Number
 * nRF Toolbox App
 * nRF Connect App
 
-![nRF Toolbox PlayStore](../assets/images/ganglion_android-get-toolbox.png)
-![nRF Connect PlayStore](../assets/images/ganglion_android-get-connect.png)
+![nRF Toolbox PlayStore](/assets/GanglionImages/ganglion_android-get-toolbox.png)
+![nRF Connect PlayStore](/assets/GanglionImages/ganglion_android-get-connect.png)
 
 ### Install apps
 
@@ -201,12 +201,12 @@ Install the nRF Toolbox and nRF Connect Apps onto you device.
 
 ### Verify Ganglion Version
 
-![nRF Connect Scan](../assets/images/ganglion_android-connect-to-ganglion.png)
+![nRF Connect Scan](/assets/GanglionImages/ganglion_android-connect-to-ganglion.png)
 
 Turn on your Ganglion, and turn on your device's bluetooth then open the nRF Connect App. The app will open and show you what Bluetooth Peripherals are nearby. The Ganglion will be listed as `Ganglion-XXXX` where `XXXX` is the 4 character code specific to your Ganglion. Tap that peripheral, and nRF Connect will connect to and interrogate it.  
 
-![Ganglion Interrogation](../assets/images/ganglion_android-device-information.png)
-![Device Information](../assets/images/ganglion_android-software-revision.png)
+![Ganglion Interrogation](/assets/GanglionImages/ganglion_android-device-information.png)
+![Device Information](/assets/GanglionImages/ganglion_android-software-revision.png)
 
 Tap the `Device Information` service, and it will open up to show you the following information.  
 **NOTE:** You may need to tap the screen to read this data.
@@ -223,16 +223,16 @@ You should see `openbci.com` as the Manufacturer, `Gagnlion` as the Model Number
 
 ## Using Your Mobile Device To Do OTA Programming
 
-![Sharing Options](../assets/images/ganglion_iphone-share-download.png)
-![Import with nRF Toolbox](../assets/images/ganglion_iphone-import-download.png)
+![Sharing Options](/assets/GanglionImages/ganglion_iphone-share-download.png)
+![Import with nRF Toolbox](/assets/GanglionImages/ganglion_iphone-import-download.png)
 
 Now we need to get the `.zip` file from your Arduinn Sketch folder to your iPhone. In this example, I'm going to use email. Email the `.zip` file to yourself, and then open and download it on your iPhone. Tap the sharing options in the lower left corner and select the `Import with nRF Toolbox` option. Since you have already installed nRF Toolbox, the `DFU` tool will open with the downloaded file already selected.
 
-![DFU Tool](../assets/images/ganglion_iphone-select-dfu.png)
-![DFU Select File](../assets/images/ganglion_iphone-select-file-button.png)
-![DFU Select User Files](../assets/images/ganglion_iphone-select-user-files.png)
-![DFU Select Inbox](../assets/images/ganglion_iphone-select-inbox.png)
-![DFU Inbox](../assets/images/ganglion_iphone-select-file.png)
+![DFU Tool](/assets/GanglionImages/ganglion_iphone-select-dfu.png)
+![DFU Select File](/assets/GanglionImages/ganglion_iphone-select-file-button.png)
+![DFU Select User Files](/assets/GanglionImages/ganglion_iphone-select-user-files.png)
+![DFU Select Inbox](/assets/GanglionImages/ganglion_iphone-select-inbox.png)
+![DFU Inbox](/assets/GanglionImages/ganglion_iphone-select-file.png)
 
 If you ever want to re-upload a program that you already have on your phone, select the `DFU` tool after launching the nRF Toolbox app. Tap the `Select File` button, and on the next screen at the bottom you will see an option for `User Files`. Select that, and then `Inbox` on the next screen to choose from all of your nRF Imported files.
 
@@ -248,9 +248,9 @@ Older Ganglions (pre-2017) could only be programmed using hardware first, then o
 * Jumper Wires
 * Arduino IDE v
 
-![FTDI Breakout](../assets/images/FTDI_Friend.jpg)
-![Capacitor](../assets/images/caps.jpg)
-![Ganglion Pins Connection](../assets/images/ganglion_ftdi-connection.jpeg)
+![FTDI Breakout](/assets/ThirdPartyImages/FTDI_Friend.jpg)
+![Capacitor](/assets/GanglionImages/caps.jpg)
+![Ganglion Pins Connection](/assets/GanglionImages/ganglion_ftdi-connection.jpeg)
 
 
 For this tutorial, I will use the [Adafruit FTDI Friend](https://www.adafruit.com/products/284). You can use any FTDI breakout, as long as it uses **only 3V for logic levels**. If you go to Adafruit to purchase one, you can also pick up some [jumper wires](https://www.adafruit.com/products/758), and [0.1uF Capacitors](https://www.adafruit.com/products/753) as well.  
@@ -269,7 +269,7 @@ Select Simblee from menu bar `Tools > Board` and open the `DefaultGanglion` exam
 
 Now is a good time to plug your Dongle in and power up the Ganglion.
 
-![serial_port](../assets/images/PortSelect.png)
+![serial_port](/assets/GanglionImages/PortSelect.png)
 
 * Select the correct serial port from the `Tools > Port` menu for your OpenBCI Dongle or FTDI friend.
 
