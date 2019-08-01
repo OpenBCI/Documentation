@@ -164,7 +164,7 @@ Now, click the `AUTOSCAN` button. It may take a few seconds for the Dongle to sc
 #### Edit the Playback file name
 
 
-![File Name](../assets/images/ble112_ganglion_fileName.png)
+![File Name](/assets/GettingStartedImages/ble112_ganglion_fileName.png)
 
 
 In the DATA LOG FIlE section of the LIVE (from Cyton) sub-panel you can specify the name of your playback file. This file name is automatically defaulted to:
@@ -180,7 +180,7 @@ After creating a Playback file, it can be replayed by running Playback File data
 #### Select your SD setting
 
 
-![WRITE TO SD](../assets/images/writeToSD.png)
+![WRITE TO SD](/assets/GettingStartedImages/writeToSD.png)
 
 
 If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE TO SD (Y/N)? sub-panel section you can select the maximum recording time of the file. This setting is defaulted to "Do not write to SD…" and will automatically switch to this if you do not have a MicroSD card properly inserted into your Cyton board.
@@ -191,11 +191,11 @@ If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE
 
 ### 7. Press "START SYSTEM"
 
-![START SYSTEM](../assets/images/serial_cyton_start_system.png)
+![START SYSTEM](/assets/GettingStartedImages/serial_cyton_start_system.png)
 
 Now you're ready to start the system! Press the START SYSTEM button and wait for the OpenBCI GUI to establish a connection with your Cyton board. This usually takes ~5 seconds.
 
-![Initializing](../assets/images/serial_cyton_initializing_gui.png)
+![Initializing](/assets/GettingStartedImages/serial_cyton_initializing_gui.png)
 
 During this time, the help line at the bottom of the OpenBCI GUI should be blinking the words: "Attempting to establish a connection with your OpenBCI Board..."
 
@@ -214,15 +214,15 @@ If the initialization fails, try the following steps in order:
 
 Now that the OpenBCI_GUI is connected to your Cyton you may press `Start Data Stream` in the upper left hand corner.
 
-![cyton serial data stream start](../assets/images/serial_cyton_data_stream_start.png)
+![cyton serial data stream start](/assets/GettingStartedImages/serial_cyton_data_stream_start.png)
 
 You should see data streaming into the GUI, try running your fingers along the electrode pins at the top of your board.
 
-![Touch](../assets/images/touch.JPG)
+![Touch](/assets/GettingStartedImages/touch.JPG)
 
 You should see the 8 (or 16 if you're using a Daisy module) channels on the _Time Series_ widget behave chaotically in response to you touching the pins and all the traces of the FFT graph on the upper right should instantly shift upwards.
 
-![cyton serial chaos](../assets/images/serial_cyton_chaos.png)
+![cyton serial chaos](/assets/GettingStartedImages/serial_cyton_chaos.png)
 
 If this is the case, congratulations; you are now connected to your Cyton board. It's time to see some brain waves!
 
@@ -239,7 +239,7 @@ For more information on these three signals, refer to wikipedia:
 
 ### 1. What you need
 
-![What You Need](../assets/images/whatYouNeed.JPG)
+![What You Need](/assets/GettingStartedImages/whatYouNeed.JPG)
 
 #### Necessary:
 
@@ -263,7 +263,7 @@ For more information on these three signals, refer to wikipedia:
 
 Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well.
 
-![Electrode Connections 1](../assets/images/electrodeConnections1.JPG)
+![Electrode Connections 1](/assets/GettingStartedImages/electrodeConnections1.JPG)
 
 | Electrode Wire Color | Cyton Board Pin |
 |---|---|
@@ -280,47 +280,47 @@ The white and black electrodes must always connect to the SRB2 pin and the botto
 
 Below is a perspective view of the electrode inputs that we are working with in this tutorial:
 
-![Electrode Connections 2](../assets/images/electrodeConnections2.JPG)
+![Electrode Connections 2](/assets/GettingStartedImages/electrodeConnections2.JPG)
 
 The bottom pins are (N) inputs, and the top pins are (P) inputs. The default board settings look at all N channels in reference to SRB2 (the bottom SRB pin). SRB1 (the top SRB pin) can also be used as a reference, but when it is activated, it is activated for ALL channels. If using SRB1 as the reference electrode, P inputs (the top pin inputs) must be used as the other input of the potential difference measurement. On the contrary, individual channels can be removed from SRB2. If a channel is removed from SRB2, it can be examined as a unique voltage potential, between the N and P pins of that channel. We will be doing this for the heart measurement in this tutorial, while examining 2 EEG channels in reference to SRB2, using the channel 2 and 7 N pins. For more information on this, refer to page 16 of the [ADS1299 datasheet](http://www.ti.com/lit/ds/symlink/ads1299.pdf). The ADS1299 chip is the analog front-end at the core of the Cyton board.
 
 ### 3. Connect your electrodes to your head and body
 
-![Electrode Paste](../assets/images/electrodePaste.png)
+![Electrode Paste](/assets/GettingStartedImages/electrodePaste.png)
 
 a) We're going to start with the electrodes on your head. Begin by scooping Ten20 electrode paste into your white gold cup electrode. This is going to be your reference (or SRB2) electrode for the other electrodes on your head. Fill the electrode so there is a little extra electrode paste spilling over the top of the gold cup, as seen in the picture to the right.
 
 **Note:** Use a paper towl or napkin to remove excess electrode paste as you are applying your electrodes.
 
-![SRB2](../assets/images/earlobe.JPG)
+![SRB2](/assets/GettingStartedImages/earlobe.JPG)
 
 b) Now apply this electrode to either one of your earlobes (either A1 or A2 as seen on the 10-20 system image  below). You can use some medical tape (or electric tape!) to give this electrode some extra stability, ensuring that it does not fall off. This electrode is the reference that all of the EEG electrodes on your head will be measured in comparison to. The uV reading that will appear in the GUI's EEG DATA montage is a measure of the potential difference between each electrode and this reference electrode (SRB2). SRB1 (the top SRB pin) can also be used as a reference pin, but we won't discuss that here. Check out the other docs on how to maximize the usage of the other pins!
 
-![Fp2](../assets/images/Fp2.JPG)
+![Fp2](/assets/GettingStartedImages/Fp2.JPG)
 
 c) Follow the same procedure for the purple electrode and apply it to your forehead 1 inch above your left eyebrow (as if you were looking at yourself) and an inch to the left of your forehead's centerline.
 
-![1020](../assets/images/1020.jpg)
+![1020](/assets/GettingStartedImages/1020.jpg)
 
 This electrode location is Fp2 on the [10-20 System](http://en.wikipedia.org/wiki/10-20_system_%28EEG%29). The 10-20 System international standard for electrode placement in the context of EEG. Fp indicates the a "frontal polar" site.
 
-![O1](../assets/images/O1.JPG)
+![O1](/assets/GettingStartedImages/O1.JPG)
 
 d) Now follow the same procedure for the red electrode and place it on the back of your head, 1 inch above the inion (as seen on the 10-20 system), and 1 inch to the left. This electrode location is O1 on the 10-20 system. The 'O' stands for occiptal, meaning above your occipital lobe (or visual cortex).
 
 **Note:** to do this, pull your hair aside and make sure the electrode is nested as deeply as possible, with the electrode paste making a definitive conductive connection between your scalp and the gold cup.
 
-![headband](../assets/images/headband.JPG)
+![headband](/assets/GettingStartedImages/headband.JPG)
 
 e) Now follow the same procedure as step 2 above to apply the black electrode to your other earlobe (either A1 or A2 from the 10-20 system). The black electrode is connected to the BIAS pin, which is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in!
 
 You're now done connecting electrodes to your noggin! I like to use a cheap cotton hairband to add extra stability to all of the electrodes connected to my head, by placing it gently on top of all of the electrodes.
 
-![forearm](../assets/images/forearm.JPG)
+![forearm](/assets/GettingStartedImages/forearm.JPG)
 
 f) Now connect the green electrode to your right forearm, somewhere on top of a muscle that you can flex easily. With this electrode we will be looking at both heart activity and muscle activity. I also like to use tape to hold this electrode in place. That's going to hurt a little bit to take off. Hopefully your arms aren't as hairy as mine...
 
-![wrist](../assets/images/wrist.JPG)
+![wrist](/assets/GettingStartedImages/wrist.JPG)
 
 g) Finally, connect the blue electrode to your wrist on the opposite arm with the green electrode. The blue electrode will serve as the reference electrode for the green electrode. If you noticed, the blue electrode is on the pin above the green electrode. We will be removing pin 4 from SRB2 so that it is not included in the same reference signal being used to measure brain waves. The main reason for this is because the microvolt (uV) values produced by your heart and muscles are much stronger than the signals we can detect from your brain, so we don't want these signals to interfere. I'll go into more detail about this later on, when it comes time to adjust the channel settings in the GUI.
 
@@ -333,11 +333,11 @@ If you're using the Daisy Cyton board, still set the Channel Count to 8, even th
 
 b) Click START DATA STREAM to begin streaming data from your board. You should see live data from your body (and the unattached channels) streaming into the `Time Series` montage on the left side of the GUI.
 
-![Power Down](../assets/images/Cyton_Starting_Guide/CytonGS_pic1.png)
+![Power Down](/assets/GettingStartedImages/CytonGS_pic1.png)
 
 c) Now we are going to power down the channels we aren't using. Do this by clicking the circular channel number buttons outside of the left side of the `Time Series` montage. Each time you power down a channel, the channel will show a burst of signal and then settle at 0 mV.
 
-![Signals At Start](../assets/images/Cyton_Starting_Guide/CytonGS_pic2.png)
+![Signals At Start](/assets/GettingStartedImages/Cyton_Starting_Guide/CytonGS_pic2.png)
 
 We are only using channels 2, 4, and 7, so power down every other channel. You can also power down the channels with keyboard shortcuts (1-8). Power them back up with [SHIFT] + 1-8. If you are working with a daisy module, channels 9-16 can be powered down with q, w, e, r, t, y, u, i, respectively. You can power those channels back up with [SHIFT] + the same key.
 
@@ -345,7 +345,7 @@ Don't bother with the ohm symbols to the right of the buttons with numbers; they
 
 e) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage:
 
-![Adjust Channel Settings](../assets/images/Cyton_Starting_Guide/CytonGS_pic3.png)
+![Adjust Channel Settings](/assets/images/CytonGS_pic3.png)
 
 These buttons indicate the current settings of the ADS1299 registers on your Cyton board. For more information on these settings, refer to pages 39-47 of the [ADS1299 datasheet](http://www.ti.com/lit/ds/symlink/ads1299.pdf).
 
@@ -355,7 +355,7 @@ By deactivating channels 1, 3, 5, 6, and 8, those channels were automatically re
 
 f) After updating these settings, click the `Time Series` button again, and your `Time Series` montage should now appear similar to the image below:
 
-![TIME SERIES DATA AFTER ADJUSTING SETTINGS](../assets/images/Cyton_Starting_Guide/cytonGS_pic5cropped.png)
+![TIME SERIES DATA AFTER ADJUSTING SETTINGS](/assets/GettingStartedImages/cytonGS_pic5cropped.png)
 
 Notice that you no longer see the heart beat artifacts in channels 2 and 7. Additionally, the heart beat signal in channel 4 should be more steady, looking more like a typical EKG signal.
 
@@ -365,13 +365,13 @@ Notice that you no longer see the heart beat artifacts in channels 2 and 7. Addi
 
 So there's a good chance your current setup isn't showing clean data like the screenshots above. There are a number of possible reasons for this. We'll go through troubleshooting them here.
 
-![Notch Filter](../assets/images/Cyton_Starting_Guide/notch_bar.png)
+![Notch Filter](/assets/GettingStartedImages/Cyton_Starting_Guide/notch_bar.png)
 
 #### Get rid of AC noise
 
 Get rid of 60 Hz (or 50 Hz if you're in Europe or any country that operates on a 50 Hz power grid). The OpenBCI has a built-in notch filter, that does a decent job at eliminating 60 Hz noise. You can adjust the notch filter to 50 Hz by clicking the "Notch 60 Hz" button. Additionally, if your Cyton board is on a table with any power chords or devices that are plugged into a wall outlet, move it to a location away from any electronic devices plugged into the wall. This will drastically reduce the alternating current (AC) influence on your signal.
 
-![Stabilize Your Cables w/ Tape](../assets/images/secureCables.JPG)
+![Stabilize Your Cables w/ Tape](/assets/GettingStartedImages/secureCables.JPG)
 
 #### Stabilize your electrodes
 
@@ -397,17 +397,17 @@ Congratulations! If you've made it this far, it's finally time to check out your
 
 ### 1. Check out your heart activity (EKG)
 
-![Heart Beat](../assets/images/Cyton_Starting_Guide/cytonGS_heartbeat.png)
+![Heart Beat](/assets/GettingStartedImages/cytonGS_heartbeat.png)
 
 Channel 4 in the GUI should now be producing a nice steady succession of uV spikes. This is your heart beating! Try taking slow, deep breaths and watch how it influences your heart rate. If you look carefully, you may notice your heart beat more rapidly as your inhaling, and more slowly as you're exhaling.
 
-![Analyzing EKG](../assets/images/EKG.png)
+![Analyzing EKG](/assets/GettingStartedImages/EKG.png)
 
 For more information on how to analyze an electrocardiography (EKG) signal, or on how to set up a full EKG (with 10 electrodes), check out the [wikipedia page on EKG](http://en.wikipedia.org/wiki/Electrocardiography). The image to the right (pulled from the Wikipedia page) shows the various segments of a single heart beat.
 
 ### 2. Watch your muscles flex (EMG)
 
-![Forearm Flex](../assets/images/Cyton_Starting_Guide/cyton_EKG_EMG.png)
+![Forearm Flex](/assets/GettingStartedImages/cyton_EKG_EMG.png)
 
 Now, try flexing your forearm or whatever muscle you placed the green electrode on top of. You should see a high-amplitude, high-frequency signal introduced into channel 4. This is the electric potential created by you activating your muscle!
 
@@ -420,7 +420,7 @@ Now blink your eyes a few times. Each time you blink you should see a strong spi
 
 Now try clenching your jaw. You should see a big uV spike in both channels 2 and 7. Each time you clench your jaw, you are introducing a strong EMG artifact into any electrodes on your scalp. If you put your fingers on the side of your head (above your ear) and clench your teeth, you should be able to feel the muscles in your head flexing.
 
-![Eye Blink & Jaw Clench EMG Artifacts](../assets/images/Cyton_Starting_Guide/cytonGS_pic8_edited.png)
+![Eye Blink & Jaw Clench EMG Artifacts](/assets/GettingStartedImages/cytonGS_pic8_edited.png)
 
 In the photo above, you can see what these signals look like the green highlighted region shows a single eye blink. The two blue sections show an extended period of jaw clenching.
 
@@ -429,7 +429,7 @@ It's interesting to note that these signals are not picked up in channel 4. This
 
 ### 4. Alpha brain waves (EEG)
 
-![Alpha Brain Waves!](../assets/images/Cyton_Starting_Guide/cytonGS_fft_alpha_spike.png)
+![Alpha Brain Waves!](/assets/GettingStartedImages/cytonGS_fft_alpha_spike.png)
 
 Now, for what we've all been waiting for... let's check out some brain waves!
 

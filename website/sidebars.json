@@ -78,7 +78,10 @@
               "06Software/02 - Compatible Third Party Software/BrainBay",
               "06Software/02 - Compatible Third Party Software/BioEra"
             ]
-          }
+          }],
+        "Deprecated": [
+            "09Deprecated/DeprecatedLanding",
+            "09Deprecated/SpiderclawDep"
         ]
       },
     "FAQ": {
