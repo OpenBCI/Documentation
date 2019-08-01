@@ -3,7 +3,7 @@ id: HowProductsGoTogether
 title: How OpenBCI products go together?
 ---
 
-![image](../assets/images/How_products_go_together.png)
+![image](/assets/GettingStartedImages/How_products_go_together.png)
 
 ## What products should I get?
 
