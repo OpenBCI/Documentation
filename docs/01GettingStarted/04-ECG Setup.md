@@ -17,7 +17,7 @@ This tutorial will show you how to read ECG data (electrical signals from  the h
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%">
 
-After making these connec tions, connect the Skintact sticky electrodes to the snap electrodes **prior to applying to the skin**.
+After making these connections, connect the Skintact sticky electrodes to the snap electrodes **prior to applying to the skin**.
 
 ## 2. Connect the electrodes to your muscles
 
