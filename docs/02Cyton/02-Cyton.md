@@ -53,15 +53,15 @@ Swtiching either BLE or PC will produce the same result. The option is available
 
 ### OpenBCI Cyton Board Circuit Schematic
 
-![OpenBCI 32bit Schematic](/assets/CytonImages/OBCI_V3_32bit-Schematic.jpg)
+![OpenBCI 32bit Schematic](assets/CytonImages/OBCI_V3_32bit-Schematic.jpg)
 
 
 ### Cyton Board PCB Layer Images
 
-![32bit LayerTop](/assets/CytonImages/OBCI_32bit_layerTop.jpg)
-![32bit Layer2](/assets/CytonImages/OBCI_32bit_layerTwo.jpg)
-![32bit Layer3](/assets/CytonImages/OBCI_32bit_layerThree.jpg)
-![32bit LayerBottom](/assets/CytonImages/OBCI_32bit_layerBottom_noMirror.jpg)
+![32bit LayerTop](assets/CytonImages/OBCI_32bit_layerTop.jpg)
+![32bit Layer2](assets/CytonImages/OBCI_32bit_layerTwo.jpg)
+![32bit Layer3](assets/CytonImages/OBCI_32bit_layerThree.jpg)
+![32bit LayerBottom](assets/CytonImages/OBCI_32bit_layerBottom_noMirror.jpg)
 
 
 
@@ -84,13 +84,13 @@ RFduio pins are broken out in the same order and layout as the RFduino radio and
 The slide switch on the Dongle has two positions (noted on the bottom  silkscreen). When the switch is on the GPIO6 side, the FTDI DTR pin is routed to RFduino pin 6 and it is ready to pass data to-from the Cyton board. This configuration is 'normal' mode, and also allows for programming the Cyton board over air. When the switch is on the RESET side, the FTDI DTR pin is routed to the RFduino RESET pin. This mode allows for re-programming the RFduino on the Dongle.
 ### OpenBCI Dongle Circuit Schematic
 
-![OpenBCI Dongle Schematic](/assets/CytonImages/OBCI_DONGLE-Schematic.jpg)
+![OpenBCI Dongle Schematic](assets/CytonImages/OBCI_DONGLE-Schematic.jpg)
 
 
 ### Dongle PCB Layer Images
 
-![Dongle LayerTop](/assets/CytonImages/OBCI_DONGLE_layerTop.jpg)
-![Dongle LayerBottom](/assets/CytonImages/OBCI_DONGLE_layerBottom.jpg)
+![Dongle LayerTop](assets/CytonImages/OBCI_DONGLE_layerTop.jpg)
+![Dongle LayerBottom](assets/CytonImages/OBCI_DONGLE_layerBottom.jpg)
 
 
 
@@ -119,11 +119,11 @@ The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Boa
 **NOTE** This design contains an error [documented here](http://openbci.com/community/daisy-module-re-work/). If you intend to use these designs, be aware that you will have to make the change to the PCB file.
 
 ### OpenBCI Daisy Module Circuit Schematic
-![OpenBCI Dongle Schematic](/assets/CytonImages/OBCI_V3_Daisy-Schematic.jpg)
+![OpenBCI Dongle Schematic](assets/CytonImages/OBCI_V3_Daisy-Schematic.jpg)
 ### Daisy Module PCB Layer Images
-![Daisy LayerTop](/assets/CytonImages/OBCI_DaisyModule_layerTop.jpg)
-![Daisy Layer2](/assets/CytonImages/OBCI_DaisyModule_layerTwo.jpg)
-![Daisy Layer3](/assets/CytonImages/OBCI_DaisyModule_layerThree.jpg)
-![Daisy LayerBottom](/assets/CytonImages/OBCI_DaisyModule_layerBottom_noMirror.jpg)
+![Daisy LayerTop](assets/CytonImages/OBCI_DaisyModule_layerTop.jpg)
+![Daisy Layer2](assets/CytonImages/OBCI_DaisyModule_layerTwo.jpg)
+![Daisy Layer3](assets/CytonImages/OBCI_DaisyModule_layerThree.jpg)
+![Daisy LayerBottom](assets/CytonImages/OBCI_DaisyModule_layerBottom_noMirror.jpg)
 ### Daisy Module PCB Files
 [OpenBCI Daisy Module gerber & BOM (532K zip)](http://ultracortex.com/downloads/hardware/OpenBCI_DaisyModule.zip)

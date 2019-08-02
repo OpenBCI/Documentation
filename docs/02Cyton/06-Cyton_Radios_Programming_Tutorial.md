@@ -110,7 +110,7 @@ Again, there is a small difference between the 8-bit and Cyton boards, explained
 
 The idea here is to use the FTDI chip on the Dongle to bridge USB to Serial for the upload process. There is a bit of prep, and a special program for the Dongle radio so that it doesn't get in the way.
 
-![dongleWithHeaders](/assets/CytonImages/dongleHeaders.jpg)
+![dongleWithHeaders](assets/CytonImages/dongleHeaders.jpg)
 
 First, solder the headers that came with your OpenBCI Dongle. Then, move the switch to the RESET position, and upload some dummy code to the Dongle radio so that it doesn't interfere with the Serial upload process.
 
@@ -119,11 +119,11 @@ First, solder the headers that came with your OpenBCI Dongle. Then, move the swi
 Go to the Arduino IDE 1.5.8 and do `File-->Examples-->OpenBCI_Radios-->RadioPassThru32bit`. Make sure to select `RFDuino` from `Tools -> Board -> RFDuino`.
 
 
-![0.1uF capacitors](/assets/CytonImages/caps.jpg)
+![0.1uF capacitors](assets/CytonImages/caps.jpg)
 
 Next you need a breadboard, 8 jumpers and a 0.1uF capacitor. 0.1uF capacitors are small and lentil-shaped, and have the number 104 printed on one side. You can order them online from Amazon, eBay, or hobby electronics store. If you have blue buttons on your board you do not need the 0.1uF capacitor because it is already on the board. The 0.1uF capacitor needs to be in series between the Dongle GPIO6 pin and the OpenBCI Board RESET pin.
 
-![Dongle Lash Up](/assets/CytonImages/DonglePassThruLashup.jpg)
+![Dongle Lash Up](assets/CytonImages/DonglePassThruLashup.jpg)
 
 Here's a picture of the connections that you need to make. Power the OpenBCI board with the battery pack it came with, and so you only need these four connections to do the upload. You could also power the OpenBCI board with 3V from the Dongle, but that makes the next step a bit trickier. In any case, these are the basic pin connections that you need to make when powering the board with a battery pack:
 
@@ -132,11 +132,11 @@ Here's a picture of the connections that you need to make. Power the OpenBCI boa
 * GPIO6	-->	0.1uF Cap	-->	RF RST
 * GND	-->	GND
 
-![8-bitDeviceConnection](/assets/CytonImages/8bitDeviceConnection.jpg)
+![8-bitDeviceConnection](assets/CytonImages/8bitDeviceConnection.jpg)
 
 On The **8-bit Board**, the pins you need to connect to are accessed from the TOP of the board. Insert the jumpers into the holes in the correct position, and press them tightly agains the sides of the holes to make a strong connection. Now, you can upload Device code to the RFduino on the OpenBCI 8-bit Board!
 
-![Cyton Device Connection](/assets/CytonImages/32bitDeviceConnection.jpg)
+![Cyton Device Connection](assets/CytonImages/32bitDeviceConnection.jpg)
 
 On the **Cyton Board** the pins you need to connect to are accessed from the BOTTOM of the board. Connect the jumper wires to the *center* of the pads as shown and press tightly while uploading to the Device.
 Helpful tips:
@@ -152,19 +152,19 @@ There is a trick to it, it may take you a couple tries to get good at it. On Mac
 There are many, many FTDI chip breakouts and cables out there that you can use. Here are a couple examples of popular devices.
 
 ### RFduino
-![RFduinoUSBshield](/assets/CytonImages/RFduinoUSBshield.jpg)
+![RFduinoUSBshield](assets/CytonImages/RFduinoUSBshield.jpg)
 
 RFduino makes a small board that they call a [USB Shield](http://www.rfduino.com/product/rfd22121-usb-shield-for-rfduino/index.html). The form-factor and pinout of the OpenBCI Dongle matches exactly the pinout of the RFduino USB Shield. It's almost like we planned it that way ;) The only thing to change, is that the GPIO6 is not the same as the OpenBCI Dongle. Connect the OpenBCI pin RF RST to the RFduino USB Shield pin RESET. And, you don't need to provide a 0.1uF cap, because **the USB Shield comes with the 0.1uF capacitor already installed!**
 
 ### FTDI Friend
-![FTDI Friend](/assets/CytonImages/FTDI_Friend.jpg)
-![FTDI Friend Back](/assets/images/FTDI_FriendBack.jpg)
+![FTDI Friend](assets/CytonImages/FTDI_Friend.jpg)
+![FTDI Friend Back](assets/images/FTDI_FriendBack.jpg)
 
 Another example would be the [FTDI Friend](http://www.adafruit.com/products/284) from Adafruit. In this case, the pin labled 'RTS' is the one you want to connect to the RF RST on the OpenBCI board. We need to ensure that the 'RTS' pin is behaving correctly and that we're sending 3V logic out! Note the image of the back of the FTDI Friend. I have jumped the pads marked DTR, and also the 3V pads on VCC out. The Signal Logic Level already has the 3V pads jumped. I cut the trace on the RTS and 5V pads as well. These are the correct settings for uploading to RFduino using FTDI Friend. The 'RTS' pin jump to OpenBCI RF RST connection will also need a 0.1uF series capacitor. These breakouts are awesome, but they can be alittle advanced.
 
 ### FTDI Basic Breakout
-![FTDI BasicFront](/assets/images/FTDI_BASICfront.jpg)
-![FTDI BasicBack](/assets/images/FTDI_BASICback.jpg)
+![FTDI BasicFront](assets/images/FTDI_BASICfront.jpg)
+![FTDI BasicBack](assets/images/FTDI_BASICback.jpg)
 
 Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] The Basic Breakout isn't as fancy as the FTDI Friend, but you do need to put a 0.1uF capacitor between the DTR pin and the RF RST pin. Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!  
 
@@ -172,7 +172,7 @@ Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5
 
 ### Overview
 
-![DongleBack](/assets/images/dongleBack_switch.jpg)
+![DongleBack](assets/images/dongleBack_switch.jpg)
 
 This process does not require 3rd party hardware. Before you begin, note that there is a switch on the dongle that allows for selection between **RESET** and **GPIO6**. This switch routes the DTR pin from the FTDI chip to either RESET or GPIO6 pin on the RFduino module. When the switch is in the GPIO6 position, the Dongle is ready for general communication, code upload, and streamingData mode to the OpenBCI Board. When the switch is in the RESET position, it is possible to upload code to the RFduino right there on the Dongle.
 
