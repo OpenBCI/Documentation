@@ -5,7 +5,7 @@ title: Ultracortex Mark IV
 
 *Development Period: January 2016 Through the Present*
 
-![image](../assets/MarkIV/Photos/UCM4-Product-2.JPG)
+![image](assets/HeadwareImages/UCM4-Product-2.JPG)
 
 
 #### Complete Ultracortex Mark 4 kits are [available for sale](http://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) in the OpenBCI Online Store!
@@ -83,7 +83,7 @@ The Ultracortex Mark IV frame is designed to be printed one half at a time (fron
 The image below shows the correct 3-D printing orientation of the Ultracortex Mark IV frame halves. Please note how the flat sides (halved nodes) sit on the light gray build plate. The halved nodes are completely flat on the edge, so they are properly supported when in contact with the build plate.
 The model must be positioned correctly in the 3D print preparation software. The flat side of the model should face downward, on the platform. If it does not fit, view it from below and move/rotate the model. The model must be printed with support and a brim or raft. The headset is designed to be printed using FDM extrusion.
 
-![image](../assets/MarkIV/Photos/M4_Orientation_render.png)
+![image](assets/HeadwareImages/M4_Orientation_render.png)
 
 #### (21x) MECH_PARTS
 
@@ -95,16 +95,16 @@ The model must be positioned correctly in the 3D print preparation software. The
 * [BOARD_MOUNT](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
 
 
-![image](../assets//MarkIV/Photos/Board_Mount.JPG)
+![image](assets/HeadwareImages/Board_Mount.JPG)
 
 #### (1x) BOARD_COVER
 
 * [BOARD COVER](**x1**)
 	* [BOARD COVER](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
 
-![image](../assets//MarkIV/Photos/Board_Cover.JPG)
+![image](assets/HeadwareImages/Board_Cover.JPG)
 
-![image](../assets//MarkIV/Photos/3D_printed_Parts3.JPG)
+![image](assets/HeadwareImages/3D_printed_Parts3.JPG)
 
 * [WIRE CLIPS](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (lips will be used to hold wire in place) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
 
@@ -116,40 +116,40 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 * (**2x**)* [#4 Screws for Brittle Plastic](https://www.mcmaster.com/#97349A100)
 
-![image](../assets//MarkIV/Photos/Screw.JPG)
+![image](assets/HeadwareImages/Screw.JPG)
 
 * Cables (**x3**)
 	* We strip apart the Cables in your kit (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
 
-![image](../assets//MarkIV/Photos/Cables.JPG)
+![image](assets/HeadwareImages/Cables.JPG)
 
 * Spikey units
 	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
 
-![image](../assets//MarkIV/Photos/SpikeyUnits8chan.JPG)
+![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
 
 * Flat units
 	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
 
-![image](../assets//MarkIV/Photos/FlatUnits.JPG)
+![image](assets/HeadwareImages/FlatUnits.JPG)
 
 * Comfort units
 	* (**5x**) Comfort units used for relieving weight reuse of headset: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
 
-![image](../assets//MarkIV/Photos/ComfortUnits.JPG)
+![image](assets/HeadwareImages/ComfortUnits.JPG)
 
 * Ear Clips
 	* (**2x**) Ear Clip electrode: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/Earclips.JPG)
 
-![image](../assets//MarkIV/Photos/EarClips.JPG)
+![image](assets/HeadwareImages/EarClips.JPG)
 
 #### (1x) An [OpenBCI Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) (8 electrode channels) or an [OpenBCI CytonDaisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (16 electrode channels)
 
-![image](../assets/UCM3_Nova_Revised-image_assets/OPENBCIs.jpg)
+![image](assets/HeadwareImages/OPENBCIs.jpg)
 
 ####(**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
 
-![image](../assets/UCM3_Nova_Revised-image_assets/BATTERY.jpg)
+![image](assets/HeadwareImages/BATTERY.jpg)
 
 
 
@@ -193,7 +193,7 @@ If you're 3D-printing your Mark IV yourself, here are the print settings we reco
 7. needle-nose pliers
 8. snippers
 
-![image](../assets/UCM3_Nova_Revised-image_assets/TOOLS.jpg)
+![image](assets/HeadwareImages/TOOLS.jpg)
 
 
 ## ASSEMBLY INSTRUCTIONS
@@ -202,62 +202,62 @@ If you're 3D-printing your Mark IV yourself, here are the print settings we reco
 
 Use sand paper, a file, and snippers to clean your FRAME and other 3D-printed parts. The most important part of this process is that you thoroughly clean out the frames nodes where you will place your INSERTS pieces.
 
-![image](../assets//MarkIV/Photos/Assembly_Clean2.JPG)
-![image](../assets//MarkIV/Photos/Assembly_Clean4.JPG)
+![image](assets/HeadwareImages/Assembly_Clean2.JPG)
+![image](assets/HeadwareImages/Assembly_Clean4.JPG)
 
 ### Glue the FRAME together
 
 Carefully, glue the FRONT FRAME and BACK FRAME together with your Cyanoacrylate super glue. The best way to do this is to place both halves of the frame on a level surface and carefully bring them together. Be sure to be precise; it's VERY difficult to pull the pieces apart once you've put them together.
 
-![image](../assets//MarkIV/Photos/Assembly_Glue.JPG)
+![image](assets/HeadwareImages/Assembly_Glue.JPG)
 
 ### Mount the OpenBCI BOARD_MOUNT
 
 Use two screws to mount the Mark IV Board_Mount to the back (the more rounded half) of the Frame. Make sure that the orientation of the BOARD_HOLDER matches that of the pictures below:
 
-![image](../assets//MarkIV/Photos/Assembly_Board_Mount.JPG)
+![image](assets/HeadwareImages/Assembly_Board_Mount.JPG)
 
 ### Insert INSERTS pieces (x35) into frame
 
 Before glueing the INSERTS into the frame, ensure that they fit properly into the frame without glue. INSERTs should be inserted from the inside of the frame outwards, so that they lie flush with the frame.
 
-![image](../assets//MarkIV/Photos/Assembly_Insert.JPG)
+![image](assets/HeadwareImages/Assembly_Insert.JPG)
 
 For each INSERT, line the inner rim of the frame with glue. Then insert the INSERT so that it is flush with the frame.
 
-![image](../assets//MarkIV/Photos/Assembly_Insert2.JPG)
+![image](assets/HeadwareImages/Assembly_Insert2.JPG)
 
 Screw 5 COMFORT UNITS into the frame as shown below. Your Ultracortex should now look like this:
 
-![image](../assets//MarkIV/Photos/Assembly_Comfort.JPG)
+![image](assets/HeadwareImages/Assembly_Comfort.JPG)
 
 ### Embed OpenBCI into the Ultracortex
 
 Connect your ~500 mAh lithium ion rechargeable batter to the back of your Cyton OpenBCI Board:
 
-![image](../assets/UCM3_Nova_Revised-image_assets/embed_OpenBCI.jpg)
+![image](assets/HeadwareImages/embed_OpenBCI.jpg)
 
 Fold the battery and its wires neatly behind the board before inserting the board into the BOARD_MOUNT:
 
-![image](../assets/images/MarkIV/MarkIV_cyton_cover_1.JPG)
+![image](assets/HeadwareImages/MarkIV_cyton_cover_1.JPG)
 
 Snap your Cyton board onto the four pegs on the outside of the BOARD_MOUNT:
 
-![image](../assets/images/MarkIV/MarkIV_cyton_cover_2.JPG)
+![image](assets/HeadwareImages/MarkIV_cyton_cover_2.JPG)
 
 You can then secure the OpenBCI Board to the BOARD_MOUNT by clipping BOARD_COVER over top.
 
-![image](../assets/images/MarkIV/MarkIV_cyton_cover_3.JPG)
+![image](assets/HeadwareImages/MarkIV_cyton_cover_3.JPG)
 
 The pins and female headers should fit neatly into the BOARD_COVER holes as shown.
 
 Only have a black battery pack with AA batteries? Tape the pack to your Mark IV in the location shown. As long as you use an 8-channel setup, the battery pack won't overlap with any of the electrode locations. Thread the battery pack wire through the hole in the BOARD_MOUNT as shown.
 
-![image](../assets/images/MarkIV/MarkIV_battery_pack_1.JPG)
+![image](assets/HeadwareImages/MarkIV_battery_pack_1.JPG)
 
 Connect your OpenBCI board to the battery pack, place it on the BOARD_MOUNT and snap the BOARD_COVER into place. Your Mark IV should look like the image below.
 
-![image](../assets/images/MarkIV/MarkIV_battery_pack_2.JPG)
+![image](assets/HeadwareImages/MarkIV_battery_pack_2.JPG)
 
 
 
@@ -280,33 +280,33 @@ For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (
 * Channel 7(N7P) - O1
 * Channel 8(N8P) - O2
 
-![image](../assets/UCM3_Nova_Revised-image_assets/1020.jpg)
+![image](assets/HeadwareImages/1020.jpg)
 
 ### Placement of electrodes
 
 First screw your two FLAT ELECTRODE UNITS in the front two nodes of the frame.
 
-![image](../assets/MarkIV/Photos/Assembly_Flat2.JPG)
+![image](assets/HeadwareImages/Assembly_Flat2.JPG)
 <!-- ![image](../assets//MarkIV/Photos/Assembly_Comfort_Flat.JPG) -->
 
 Then screw 6 SPIKEY ELECTRODE UNITS in the following nodes of the frame.
 
 <!-- ![image](../assets/images/MarkIV/MarkIV_spiky_units.JPG) -->
-![image](../assets//MarkIV/Photos/Assembly_CFS.JPG)
+![image](assets/HeadwareImages/Assembly_CFS.JPG)
 
 ### Connect wiring to OpenBCI
 
 It's time to connect the electrodes to your OpenBCI Cyton board with jumper cables. You will find 3 ribbon cables in your kit as seen below.
 
-![image](../assets//MarkIV/Photos/Cables.JPG)
+![image](assets/HeadwareImages/Cables.JPG)
 
 Peel off the GRAY and PURPLE from the 12" set and the BLUE, GREEN, ORANGE and YELLOW from the 8" set and the RED and BROWN from the 4" Set as seen below.
 
-![image](../assets//MarkIV/Photos/Assembly_8Chan_Cables.JPG)
+![image](assets/HeadwareImages/Assembly_8Chan_Cables.JPG)
 
 Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location. To follow along with this tutorial, attach each electrode to the wire color listed in the table below.
 
-![image](../assets/images/MarkIV/MarkIV_electrode_map.png)
+![image](assets/HeadwareImages/MarkIV_electrode_map.png)
 
 | Electrode | Wire Color |
 |---|---|
@@ -321,12 +321,12 @@ Now connect the jumper cables to the electrodes. The map below assigns names to 
 
 To connect wires to electrodes, plug the male end in to the header cable on the NODES as shown:
 
-![image](../assets//MarkIV/Photos/Assembly_Node_Plug.JPG)
+![image](assets/HeadwareImages/Assembly_Node_Plug.JPG)
 
 After connecting wires to electrodes, run wires along the frame to the top of the OpenBCI BOARD_MOUNT. Use the included plastic clips to hold wires on the frame, like shown:
 
-![image](../assets//MarkIV/Photos/Assembly_Wire_Clip.JPG)
-![image](../assets//MarkIV/Photos/Assembly_Wire_Clip2.JPG)
+![image](assets/HeadwareImages/Assembly_Wire_Clip.JPG)
+![image](assets/HeadwareImages/Assembly_Wire_Clip2.JPG)
 
 #### Ear Clips
 
@@ -336,7 +336,7 @@ To use your Mark IV headset, you'll also need two ear clip electrodes, which com
 
 Connect an OpenBCI Cyton board to the Mark IV as shown below:
 
-![image](../assets/images/MarkIV/cyton_wired_nocover_FIXED.jpg)
+![image](assets/HeadwareImages/cyton_wired_nocover_FIXED.jpg)
 
 Here's a table with the correct electrode, wire color, and Cyton board pin pairings. By bottom pin, we mean the pin CLOSEST to the OpenBCI board:
 
@@ -357,7 +357,7 @@ The electrodes (FP1 through O2) can be connected to any N1P, N2P, etc, channel. 
 
 Replace the cover, as shown below:
 
-![image](../assets/images/MarkIV/cyton_wired_cover_FIXED.jpg)
+![image](assets/HeadwareImages/cyton_wired_cover_FIXED.jpg)
 
 Your Cyton board is ready to use with your Mark IV headset!
 
@@ -366,7 +366,7 @@ Your Cyton board is ready to use with your Mark IV headset!
 
 Connect an OpenBCI Ganglion board to the Mark IV as shown below (with cover removed for clarity). We placed 8 electrodes on our Mark IV headset, but the Ganglion board can only take 4 inputs. So, we can only connect 4 of our electrodes to the board - we chose FP1, FP2,O1, and O2 for this tutorial.
 
-![image](../assets/images/MarkIV/MarkIV_ganglion_connects.JPG)
+![image](assets/HeadwareImages/MarkIV_ganglion_connects.JPG)
 
 Here's a table with the correct electrode, wire color, and Ganglion board pin pairings:
 
@@ -381,11 +381,11 @@ Here's a table with the correct electrode, wire color, and Ganglion board pin pa
 
 Next, make sure the switches on your Ganglion board are in the bottom configuration as shown below:
 
-![Switches DOWN](../assets/images/ganglion_SW_DOWN.png)
+![Switches DOWN](assets/HeadwareImages/ganglion_SW_DOWN.png)
 
 Replace the cover, like below:
 
-![image](../assets/images/MarkIV/MarkIV_ganglion_connects_cover.JPG)
+![image](assets/HeadwareImages/MarkIV_ganglion_connects_cover.JPG)
 
 Your Ganglion board is now ready to use with your Mark IV headset!
 
@@ -393,9 +393,9 @@ Your Ganglion board is now ready to use with your Mark IV headset!
 
 Your 8 channel headset is finished! To expand to a 16 channel headset (for use with Cyton Daisy), see the next section.
 
-![image](../assets//MarkIV/Photos/Assembly_8Chan_Finished.JPG)
-![image](../assets//MarkIV/Photos/Assembly_8Chan_Finished2.JPG)
-![image](../assets//MarkIV/Photos/Assembly_8Chan_Finished3.JPG)
+![image](assets/HeadwareImages/Assembly_8Chan_Finished.JPG)
+![image](assets/HeadwareImages/Assembly_8Chan_Finished2.JPG)
+![image](assets/HeadwareImages/Assembly_8Chan_Finished3.JPG)
 
 
 ## 16 Channel Add-Ons
@@ -406,33 +406,33 @@ If you have a Cyton Daisy extension, you can expand your headset from 8 electrod
 
 From the front of the frame remove the following two Comfort Nodes.
 
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Remove_Node.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Remove_Node.JPG)
 
 Replace the old Comfort Nodes with spiky electrodes:
 
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Replace_Node2.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Replace_Node2.JPG)
 
 Add 6 more spiky electrode units in the locations shown below:.
 
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Node_Placment.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Node_Placment.JPG)
 
 ### Wiring Electrodes
 
 Take out your rest of your Ribbon Cables and separate the GRAY and PURPLE 8" & 4" cables, the BLUE, GREEN, ORANGE and YELLOW 8", and the RED & BROWN 4" cables.
 
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Cables.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Cables.JPG)
 
 Plug the male end of the 8" GRAY and PURPLE to the 4" GRAY and PURPLE. These two extra-long wires will help you reach all the electrodes.
 
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Cables2.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Cables2.JPG)
 
 As shown below, connect one female end of the white Y-Splitter Cable to the bottom SRB pin of the Cyton. Connect the male end of the white Y-Splitter Cable to the female end of one black ear clip electrode. The other black ear clip electrode should be connected to the bottom BIAS pin of the Cyton. Bottom pins N1P through N8P of the Cyton should be connected to colored wires in the order shown below. Then, attach the Daisy extension to the outside of the Cyton board as shown below. You will plug all of the new electrodes into the Daisy board pins in the next step.
 
-![image](../assets/images/MarkIV/Cyton_Daisy_unconnected.JPG)
+![image](assets/HeadwareImages/Cyton_Daisy_unconnected.JPG)
 
 Connect each of the new electrodes to corresponding Daisy pins as shown below. You may have to use a different color scheme, depending on what wires you have available. Just make sure to keep track of which electrodes are connected to which Daisy pins.
 
-![image](../assets/images/MarkIV/MarkIV_16_channel_map.png)
+![image](assets/HeadwareImages/MarkIV_16_channel_map.png)
 
 The electrode and Daisy pin pairings are below:
 
@@ -449,16 +449,16 @@ The electrode and Daisy pin pairings are below:
 
 The other female end of the white Y-Splitter Cable should be connected to the bottom SRB pin of the Daisy. The pins connected to the Daisy board should look like this:
 
-![image](../assets/images/MarkIV/Cyton_Daisy_Setup.JPG)
+![image](assets/HeadwareImages/Cyton_Daisy_Setup.JPG)
 
 Like for the first 8 electrodes, use the plastic clips to secure wires in place:
 
-![image](../assets//MarkIV/Photos/Assembly_Wire_Clip.JPG)
+![image](assets/HeadwareImages/Assembly_Wire_Clip.JPG)
 
 Your Mark IV is now ready to use 16 channels! It should look like the images below.
 
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Finished.JPG)
-![image](../assets//MarkIV/Photos/Assembly_16Chan_Finished2.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Finished.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Finished2.JPG)
 
 
 ### Adjust the Ultracortex for your head
@@ -474,13 +474,13 @@ Place your UltraCortex on your head so that the back center node is roughly the 
 
 Now that you have your Ultracortex assembled and comfortably adjusted to your head size and shape, it's brain wave time!
 
-![image](../assets//MarkIV/Photos/UCM4-Product-2.JPG)
+![image](assets/HeadwareImages/UCM4-Product-2.JPG)
 
 Check out the [Getting Started w/ OpenBCI tutorial](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to get up-and-running with the [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI).
 
 Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
 
-![image](../assets/images/MarkIV/MarkIV_screenshot.png)
+![image](assets/HeadwareImages/MarkIV_screenshot.png)
 
 The OpenBCI GUI has a widget for visualizing signal strength at each electrode. To view it, click on the "FFT Plot" drop-down menu in the top right corner. Select "Head Plot".
 
@@ -488,7 +488,7 @@ The OpenBCI GUI has a widget for visualizing signal strength at each electrode. 
 
 You should now see a visual map of signal strength in the top right corner.
 
-![image](../assets/images/MarkIV/MarkIV_head_plot.png)
+![image](assets/HeadwareImages/MarkIV_head_plot.png)
 
 
 ### Give Us Feedback!
