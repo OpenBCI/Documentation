@@ -3,7 +3,7 @@ id: ECGSetup
 title: Setting up for ECG
 ---
 
-This tutorial will show you how to read ECG data (electrical signals from  the heart) using OpenBCI hardware and GUI.
+This document will show you how to read ECG data (electrical signals from  the heart) using OpenBCI hardware and GUI.
 
 ## Materials Needed
 1. OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483)

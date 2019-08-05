@@ -3,7 +3,7 @@ id: EMGSetup
 title: Setting up for EMG
 ---
 
-This tutorial will show you how to read EMG data (electrical signals from muscles) using OpenBCI hardware and GUI.
+This document will show you how to read EMG data (electrical signals from muscles) using OpenBCI hardware and GUI.
 
 ## Materials Needed
 
