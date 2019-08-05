@@ -136,7 +136,7 @@ There is a Radio Configuration tab that you can use to check the status of your 
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cyton_radio-status.png?raw=true" width="50%">
 
-Click on the `STATUS` button to check the status of your Cyton system. This may take a few seconds to report, as it reaches out to your Dongle and Cyton board to verify that they are talking to eachother. If they are, you will see the message `Success: System is Up`. If not, you will see `Falure: System is Down`.
+Click on the `STATUS` button to check the status of your Cyton system. This may take a few seconds to report, as it reaches out to your Dongle and Cyton board to verify that they are talking to each other. If they are, you will see the message `Success: System is Up`. If not, you will see `Failure: System is Down`.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cyton_radio-get-channel.png?raw=true" width="50%">
 
@@ -232,8 +232,8 @@ In this quick demo, we'll be showing you how to set up 3 channels of electrophys
 
 For more information on these three signals, refer to wikipedia:
 
- * [Heart Acitivity - Electrocardiography (EKG or ECG)](http://en.wikipedia.org/wiki/Electrocardiography)
- * [Muscle Acitivity - Electromyography (EMG)](http://en.wikipedia.org/wiki/Electromyography)
+ * [Heart Activity - Electrocardiography (EKG or ECG)](http://en.wikipedia.org/wiki/Electrocardiography)
+ * [Muscle Activity - Electromyography (EMG)](http://en.wikipedia.org/wiki/Electromyography)
  * [Brain Activity - Electroencephalography (EEG)](http://en.wikipedia.org/wiki/Electroencephalography)
 
 
