@@ -15,6 +15,7 @@
               "type": "subcategory",
               "label": "Bionsensing Setups",
               "ids": [
+                  "01GettingStarted/02-Biosensing-Setups/EEGSetup",
                   "01GettingStarted/02-Biosensing-Setups/ECGSetup",
                   "01GettingStarted/02-Biosensing-Setups/EMGSetup"
               ]
@@ -107,6 +108,9 @@
             "09Deprecated/FTDI_Driver_Fix",
             "09Deprecated/VirtualBox"
 
+        ],
+        "Troubleshooting": [
+            "10Troubleshooting/minimizingNoise"
         ]
       },
     "FAQ": {
