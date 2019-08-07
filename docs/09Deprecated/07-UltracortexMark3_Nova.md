@@ -1,4 +1,7 @@
-06-UltracortexMark3.md
+---
+id: UltracortexMark3_NovaDep
+title: UltracortexMark3_Nova
+---
 
 #Ultracortex Mark III "Nova" & "Supernova" (REVISED)
 
