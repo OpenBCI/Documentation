@@ -33,3 +33,7 @@ Once you have the GUI open, turn off all channels that are not connected to musc
 *Note: This is because ordinarily SRB2 is the reference point from which potentials are measured, however we are now having muscles reference themselves, so we do not want it to look at this pin.*
 
 Once all of your settings have been altered, press begin data stream.
+
+### Improving Signal Quality
+
+For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/minimizingNoise)

@@ -58,3 +58,7 @@ The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on
 Each circle and box represents a channel. The circle and box fill up as the intensity of the signal on that channel increases.
 
 Look at the <media> gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](https://docs.openbci.com/OpenBCI%20Software/02_GUI_Widget_Guide) for more information.
+
+### Improving Signal Quality
+
+For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/minimizingNoise)

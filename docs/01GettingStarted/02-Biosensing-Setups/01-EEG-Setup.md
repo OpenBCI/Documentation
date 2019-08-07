@@ -118,4 +118,4 @@ You'll notice that the strongest alpha wave signals should be appearing in chann
 
 ### Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EEG signals, check out [this document](docs/10Troubleshooting/minimizingNoise)
+For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/minimizingNoise)
