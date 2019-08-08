@@ -41,12 +41,12 @@ Connect the electrode wires to your Cyton board as shown below. The proper wire 
 
 ![eegGoldCupSetup](assets/GettingStartedImages/eeg_cytonSetup.JPG)
 
-| Electrode Wire Color | Cyton Board Pin |
-|---|---|
-| white | SRB2 (bottom SRB pin) |
-| black | bottom BIAS pin |
-| purple | 2N (bottom N2P pin) |
-| red | 7N (bottom N7P pin) |
+| Electrode Wire Color | Cyton Board Pin | Ganglion Board Pin |
+|---|---|---|
+| white | SRB2 (bottom SRB pin) | SRB2 (bottom SRB pin) |
+| black | bottom BIAS pin | SRB2 (bottom SRB pin) |
+| purple | 2N (bottom N2P pin) | 2P (top N2P pin) |
+| red | 7N (bottom N7P pin) | 7P (top N7P pin) |
 
 The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels. We decided to use channels 2 and 7 for this tutorial.
 
