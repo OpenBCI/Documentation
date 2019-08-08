@@ -13,10 +13,11 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 * [Electrode Cap](assets/04Headware/ElectrodeCap)
 
 ## What you will need
-#### Necessary:
 
+
+#### Necessary:
 * [Ten20 conductive electrode paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198) (or other conductive electrode gel)
-* [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
+* [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483)
 * x4 AA batteries
 * x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
@@ -35,7 +36,7 @@ If you are using an OpenBCI electrode starter kit, use the following electrodes 
 * Medical tape (or other tape) for adding extra stability to electrodes
 * Ear swabs for cleaning paste from electrodes, once you're finished
 
-### 2. Connect your electrodes to OpenBCI
+## 1. Connect your electrodes to OpenBCI
 
 Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well.
 
@@ -50,7 +51,7 @@ Connect the electrode wires to your Cyton board as shown below. The proper wire 
 
 The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or N4P in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
 
-### 3. Connect your electrodes to your head and body
+## 2. Connect your electrodes to your head and body
 
 ![Electrode Paste](assets/GettingStartedImages/electrodePaste.png)
 
@@ -82,7 +83,7 @@ e) Now follow the same procedure as step 2 above to apply the black electrode to
 
 You're now done connecting electrodes to your noggin! I like to use a cheap cotton hairband to add extra stability to all of the electrodes connected to my head, by placing it gently on top of all of the electrodes.
 
-### 4. Launch the GUI and adjust your channel settings
+## 3. Launch the GUI and adjust your channel settings
 
 a) If your OpenBCI GUI is not already running, relaunch it and configure the DATA SOURCE mode to LIVE (from Cyton) and Serial (from Dongle). Select your Cyton board from the list of devices, set the Channel Count to 8, and click START SYSTEM. Refer to **section IV** of this guide for more information on this process.
 
@@ -96,11 +97,11 @@ c) Now we are going to power down the channels we aren't using. Do this by click
 
 ![Signals At Start](assets/GettingStartedImages/CytonGS_pic2.png)
 
-We are only using channels 2, 4, and 7, so power down every other channel. You can also power down the channels with keyboard shortcuts (1-8). Power them back up with [SHIFT] + 1-8. If you are working with a daisy module, channels 9-16 can be powered down with q, w, e, r, t, y, u, i, respectively. You can power those channels back up with [SHIFT] + the same key.
+We are only using channels 2 and 7, so power down every other channel. You can also power down the channels with keyboard shortcuts (1-8). Power them back up with [SHIFT] + 1-8. If you are working with a daisy module, channels 9-16 can be powered down with q, w, e, r, t, y, u, i, respectively. You can power those channels back up with [SHIFT] + the same key.
 
 Don't bother with the ohm symbols to the right of the buttons with numbers; they are used for impedance measuring, but we won't go into that now.
 
-### 5. Alpha brain waves (EEG)
+## 4. Alpha brain waves (EEG)
 
 ![Alpha Brain Waves!](assets/GettingStartedImages/cytonGS_fft_alpha_spike.png)
 
@@ -116,6 +117,6 @@ After you've taken a few good screenshots, open up the .JPGs and take a look. **
 
 You'll notice that the strongest alpha wave signals should be appearing in channel 7, the O2 (O standing for occipital) electrode on the back of your head. Count the number of waves in a single 1-second time period on channel 7 of the EEG DATA montage. The number of waves should correspond x-axis position of the spike on the FFT graph. If you've identified your alpha waves, congratulations! You've now seen your first brain waves with OpenBCI!
 
-### Improving Signal Quality
+## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/minimizingNoise)
+For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)

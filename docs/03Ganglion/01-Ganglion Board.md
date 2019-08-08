@@ -3,7 +3,7 @@ id: GanglionLanding
 title: Ganglion Board
 ---
 
-###[Buy it!](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483)
+### [Buy it!](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483)
 
 This set of tutorials will show you everything you need to know about the OpenBCI 4-channel Ganglion Biosensing Board.
 
