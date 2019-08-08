@@ -10,12 +10,12 @@ Some of the software compatible with OpenBCI products requires a Windows operati
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/ova-set.jpg?raw=true" width="75%">
 
 1. Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-2. Go to <http://dev.modern.ie/tools/vms/> and download a Windows 7 virtual machine (I used IE8) image for your appropriate host on the "Choose your OS" tab. (The OS that your computer runs natively). Choosing Virtual Box as the platform.
+2. Go to <https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/> and download a Windows 7 virtual machine (I used IE8) image for your appropriate host on the "Choose your OS" tab. (The OS that your computer runs natively). Choosing Virtual Box as the platform.
 3. Extract and double click on the .OVA file resulting from the extraction. This should start Virtual Box and set up your VM's configurations.
 4. Some EEG processing software uses a lot of RAM (OpenViBE aquisition server for example). In fact, some will take up one entire core, if they can. Because of this, I would advise that you configure your VM to have multiple cores and as much RAM as you deem reasonable.
 5. Import the VM, go through all the configs and start it.
-6. For more detailed instructions/tutorials and troubleshooting see the [Windows Manual](http://modernievirt.blob.core.windows.net/vhd/release_notes_license_terms_1_5_15.pdf). (If you selected a different distribution other than Win 7, see the respective manual in the Windows page.)
-7. Follow the [OBCI on Windows](http://docs.openbci.com/Tutorials/11-OpenBCI_on_Windows) tutorial to properly connect your OBCI board on Windows.
+6. For more detailed instructions/tutorials and troubleshooting see the [Windows Manual](https://az792536.vo.msecnd.net/vms/release_notes_license_terms_8_1_15.pdf). (If you selected a different distribution other than Win 7, see the respective manual in the Windows page.)
+7. Follow the [OpenBCI on Windows](09Deprecated/08-OpenBCI_on_Windows.md) tutorial to properly connect your OBCI board on Windows.
 
 NOTE: Make sure that Guest Additions are installed correctly on your VM. With the image used, they should be automatically installed.
 
@@ -28,7 +28,7 @@ If you have files on your regular OS that you'd like to access through VirtualBo
 3. Click the icon for "Add new shared folder", and select the file path to a folder you'd like to share.
 4. Start your virtual machine.
 5. Open a file explorer window and navigate to the "Network" location.
-6. You may need to select "Turn on netowrk and file sharing" as an administrator. Then, a computer called "VBOXSVR" will appear.
+6. You may need to select "Turn on network and file sharing" as an administrator. Then, a computer called "VBOXSVR" will appear.
 7. Double click on that computer and you should see your shared folder.
 
 You're all set! For more information, look at the [VirtualBox documentation.](https://www.virtualbox.org/wiki/Documentation)
@@ -39,7 +39,7 @@ While using 3rd party software, you might want to stream data from your OpenBCI 
 
 **OpenBCI Cyton Board**
 
-1. Make sure you're comfortable using your Cyton board and Dongle with your host computer and the OpenBCI GUI. To do so, check out our [Cyton Getting Started Guide](http://docs.openbci.com/Tutorials/01-Cyton_Getting%20Started_Guide).
+1. Make sure you're comfortable using your Cyton board and Dongle with your host computer and the OpenBCI GUI. To do so, check out our [Cyton Getting Started Guide](01GettingStarted/01-Boards/01-Cyton_Getting Started_Guide.md).
 2. Plug in your Dongle and turn on your Cyton board. Both should display a blue light.
 3. Start VirtualBox. When the "Oracle VM VirtualBox Manager" window appears, select your virtual machine (so that it's highlighted in blue). Make sure your virtual machine is in the "powered off" mode, and not the "saved state" mode.
 4. Click Settings and then the Ports tab.

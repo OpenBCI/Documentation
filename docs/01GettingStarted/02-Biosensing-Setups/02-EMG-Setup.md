@@ -18,10 +18,6 @@ To determine the number of electrodes you will need, add up:
 
 The electrode pairs for each muscle group will serve as the positive and negative terminals across which a potential difference can be detected.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 79b3615b7b77b9322b5a4cb4f1d8cdea5ed4d017
 ## 1. Connecting Electrodes to the OpenBCI Board
 
 Connect each electrode pair (for each muscle group) to the top and bottom pins of each row N(x)P, where x is any of the numbers corresponding to a GUI channel. *Note: On the Cyton board, there are 8 channels available, and on the Ganglion board there are 4 channels available.*
