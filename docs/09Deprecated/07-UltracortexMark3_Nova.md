@@ -1,6 +1,6 @@
 ---
 id: UltracortexMark3_NovaDep
-title: Ultracortex Mark III "Nova" & "Supernova" (REVISED
+title: Ultracortex Mark III "Nova" & "Supernova" (REVISED)
 ---
 
 *Development Period: June 2016*
@@ -8,7 +8,7 @@ title: Ultracortex Mark III "Nova" & "Supernova" (REVISED
 ![image](assets/DepImages/m3_upgrade_1000.jpg)
 
 
-####Complete Ultracortex Mark 3 kits are not longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
+#### Complete Ultracortex Mark 3 kits are not longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
 
 The Ultracortex is an open-source, 3D-printable headset intended to work with the [OpenBCI system](http://openbci.com/). It is capable of recording research-grade brain activity (EEG), muscle activity (EMG), and heart activity (ECG). The Ultracortex is under constant iteration. If you print/assemble your own Ultracortex, we would love to hear your feedback. Send us an email at [contact@openbci.com](mailto:contact@openbci.com) or Tweet at us ([@Ultracortex](https://twitter.com/Ultracortex) & [@OpenBCI](https://twitter.com/OpenBCI))!
 
