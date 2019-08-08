@@ -42,13 +42,32 @@
         "03Ganglion/GanglionDataFormat",
         "03Ganglion/GanglionSDK",
         "03Ganglion/GanglionProgram"],
+      "Headwear & Electrodes": [
+        "04AddOns/00-AddOnLanding",
+        {
+          "type": "subcategory",
+          "label": "Headwear",
+          "ids": [
+            "04AddOns/01-Headwear/MarkIV",
+            "04AddOns/01-Headwear/MarkIII",
+            "04AddOns/01-Headwear/HeadBand",
+            "04AddOns/01-Headwear/ElectrodeCap"
+          ]
+      },
+        {
+          "type": "subcategory",
+          "label": "Electrodes",
+          "ids": [
+            "04AddOns/02-Electrodes/ElectrodesLanding"
+          ]
+        }],
       "Third Party Hardware": [
         {
           "type": "subcategory",
           "label": "Myoware",
           "ids": [
-            "05ThirdParty/01 - Myoware/MyoCyton",
-            "05ThirdParty/01 - Myoware/MyoGanglion"
+            "05ThirdParty/01-Myoware/MyoCyton",
+            "05ThirdParty/01-Myoware/MyoGanglion"
           ]
           }, {
           "type": "subcategory",
@@ -58,21 +77,10 @@
           "type": "subcategory",
           "label": "WiFi Shield",
           "ids": [
-            "05ThirdParty/03 - WiFi Shield/WiFiLanding",
-            "05ThirdParty/03 - WiFi Shield/WiFiProgam",
-            "05ThirdParty/03 - WiFi Shield/WiFiAPI",
-            "05ThirdParty/03 - WiFi Shield/WiFiSDK"
-          ]
-          }],
-      "Headwear & Electrodes": [
-        {
-          "type": "subcategory",
-          "label": "Headwear",
-          "ids": [
-            "04AddOns/Headwear/MarkIV",
-            "04AddOns/Headwear/MarkIII",
-            "04AddOns/Headwear/HeadBand",
-            "04AddOns/Headwear/ElectrodeCap"
+            "05ThirdParty/03-WiFiShield/WiFiLanding",
+            "05ThirdParty/03-WiFiShield/WiFiProgam",
+            "05ThirdParty/03-WiFiShield/WiFiAPI",
+            "05ThirdParty/03-WiFiShield/WiFiSDK"
           ]
           }],
       "Compatible Software": [
@@ -80,21 +88,21 @@
           "type": "subcategory",
           "label": "Developed By OpenBCI",
           "ids": [
-            "06Software/01 - OpenBCI Software/GUIDocs",
-            "06Software/01 - OpenBCI Software/GUIWidgets",
-            "06Software/01 - OpenBCI Software/Python",
-            "06Software/01 - OpenBCI Software/Hub"
+            "06Software/01-OpenBCI Software/GUIDocs",
+            "06Software/01-OpenBCI Software/GUIWidgets",
+            "06Software/01-OpenBCI Software/Python",
+            "06Software/01-OpenBCI Software/Hub"
           ]
           }, {
             "type": "subcategory",
             "label": "Compatible Third Party Software",
             "ids": [
-              "06Software/02 - Compatible Third Party Software/Matlab",
-              "06Software/02 - Compatible Third Party Software/Neuromore",
-              "06Software/02 - Compatible Third Party Software/OpenVibe",
-              "06Software/02 - Compatible Third Party Software/LSL",
-              "06Software/02 - Compatible Third Party Software/BrainBay",
-              "06Software/02 - Compatible Third Party Software/BioEra"
+              "06Software/02-Compatible Third Party Software/Matlab",
+              "06Software/02-Compatible Third Party Software/Neuromore",
+              "06Software/02-Compatible Third Party Software/OpenVibe",
+              "06Software/02-Compatible Third Party Software/LSL",
+              "06Software/02-Compatible Third Party Software/BrainBay",
+              "06Software/02-Compatible Third Party Software/BioEra"
             ]
           }],
         "Deprecated Documents": [

@@ -57,8 +57,4 @@ Check out the <media> gif above to see how this widget behaves when flexing and 
 
 ## Improving Signal Quality
 
-<<<<<<< HEAD
 For help minimizing noise and improving the quality of your EMG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
-=======
-For help minimizing noise and improving the quality of your EEG signals, check out [this document.](10Troubleshooting/minimizingNoise)
->>>>>>> d6c347fb5ab410e3e3accd0beee5d693695f66c1
