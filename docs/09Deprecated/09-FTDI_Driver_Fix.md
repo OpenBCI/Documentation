@@ -1,9 +1,7 @@
 ---
 id: FTDI_Driver_FixDep
-title: FTDI_Driver_Fix
+title: Fixing FTDI InBufferSize for OS X
 ---
-
-#Fixing FTDI InBufferSize for OS X
 
 ### Summary
 

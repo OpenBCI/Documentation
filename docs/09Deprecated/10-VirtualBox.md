@@ -1,9 +1,7 @@
 ---
 id: VirtualBoxDep
-title: VirtualBox
+title: VirtualBox Windows 7 Guide
 ---
-
-# VirtualBox Windows 7 Guide
 
 Some of the software compatible with OpenBCI products requires a Windows operating system. If you have a non-windows computer, you can still use this software through a Windows virtual machine on VirtualBox.
 

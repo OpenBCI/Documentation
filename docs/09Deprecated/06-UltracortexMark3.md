@@ -1,9 +1,8 @@
 ---
 id: UltracortexMark3Dep
-title: UltracortexMark3
+title: Ultracortex Mark 3
 ---
 
-#Ultracortex Mark 3
 *Development Period: July 2015 — September 2015*
 
 ![image](assets/DepImages/Mark3_2.jpg)

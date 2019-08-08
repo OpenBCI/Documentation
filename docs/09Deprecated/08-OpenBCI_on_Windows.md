@@ -1,9 +1,8 @@
 ---
 id: OpenBCI_on_WindowsDep
-title: OpenBCI_on_Windows
+title: OpenBCI on Windows
 ---
 
-#OpenBCI on Windows
 Tested on:
 
 - Windows 7

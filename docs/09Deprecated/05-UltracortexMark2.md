@@ -1,9 +1,7 @@
 ---
 id: UltracortexMark2Dep
-title: UltracortexMark2
+title: Ultracortex Mark 2
 ---
-
-# Ultracortex Mark 2
 
 ![image](assets/DepImages/UC_back.JPG)
 
