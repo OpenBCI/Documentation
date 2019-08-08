@@ -7,9 +7,10 @@ Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of gu
 
 ##### The Learning Pages are separated into the following sections:
 
-* [Cyton Board](http://docs.openbci.com/Tutorials) - Explanations, tutorials and examples for working with the Cyton board and Cyton+Daisy board.
-* [Ganglion Board](http://docs.openbci.com/Tutorials) - Explanations, tutorials and examples for working with the Ganglion board.
-* [Board Add-Ons](http://docs.openbci.com/Hardware) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
+* [GettingStarted](01GettingStarted/00-GettingStartedLanding.md) — Everything you need to know to setup your OpenBCI Equipment for the first time.
+* [Cyton Board](02Cyton/01-CytonBoard.md) - Explanations, tutorials and examples for working with the Cyton board and Cyton+Daisy board.
+* [Ganglion Board](03Ganglion/01-GanglionBoard.md) - Explanations, tutorials and examples for working with the Ganglion board.
+* [Board Add-Ons](04AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
 * [3rd-Party Hardware](http://docs.openbci.com/Headware) - Here you will find information about the OpenBCI-compatible accessories.
 * [3rd-Party Software](http://docs.openbci.com/3rd%20Party%20Software) - This section includes guides on how to connect the OpenBCI hardware and software to commonly used 3rd-Party Software such as Matlab, OpenVIBE, and more!
 * [OpenBCI Software](http://docs.openbci.com/OpenBCI%20Software) - This section details the various OpenBCI-specific software and SDKs. Included here are guides on how to use the OpenBCI GUI, as well as information about developing for OpenBCI with common languages like Python, Java, Node.js, and more!

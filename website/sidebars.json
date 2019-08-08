@@ -2,6 +2,7 @@
   "docs": {
       "Welcome to OpenBCI": ["Welcome"],
       "Getting Started with OpenBCI": [
+            "01GettingStarted/GettingStartedLanding",
             {
               "type": "subcategory",
               "label": "Boards",
