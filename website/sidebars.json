@@ -1,4 +1,4 @@
-OpenBCISoftware{
+{
   "docs": {
       "Welcome to OpenBCI": ["Welcome"],
       "Getting Started with OpenBCI": [
@@ -97,7 +97,7 @@ OpenBCISoftware{
           ]
           }, {
             "type": "subcategory",
-            "label": "CompatibleThirdPartySoftware",
+            "label": "Compatible Third Party Software",
             "ids": [
               "06Software/02-CompatibleThirdPartySoftware/Matlab",
               "06Software/02-CompatibleThirdPartySoftware/Neuromore",
