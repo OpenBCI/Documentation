@@ -34,6 +34,6 @@ Once you have the GUI open, turn off all channels that are not connected to musc
 
 Once all of your settings have been altered, press begin data stream.
 
-### Improving Signal Quality
+## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/minimizingNoise)
+For help minimizing noise and improving the quality of your ECG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)

@@ -55,6 +55,10 @@ Each circle and box represents a channel. The circle and box fill up as the inte
 
 Check out the <media> gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](https://docs.openbci.com/OpenBCI%20Software/02_GUI_Widget_Guide) for more information.
 
-### Improving Signal Quality
+## Improving Signal Quality
 
+<<<<<<< HEAD
+For help minimizing noise and improving the quality of your EMG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
+=======
 For help minimizing noise and improving the quality of your EEG signals, check out [this document.](10Troubleshooting/minimizingNoise)
+>>>>>>> d6c347fb5ab410e3e3accd0beee5d693695f66c1
