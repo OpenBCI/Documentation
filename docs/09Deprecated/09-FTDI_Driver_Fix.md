@@ -21,8 +21,6 @@ This tutorial has been verified to work with the following macOS versions:
 
 ### Step 1: open Terminal
 
-![image](assets/DepImages/Terminal.png)
-
 To open Terminal, go to:
 
 /Applications/Utilities/Terminal
@@ -37,7 +35,7 @@ If you are new to Terminal, it is best to simply copy and paste the lines of cod
 
 ### Step 2: Remove any existing FTDI drivers & reboot
 
-Remove the FTDI [kernel extension](http://forums.macnn.com/79/developer-center/81624/what-is-a-kext-file/) (.kext) from your machine. You might not have it installed already. If you do not, skip this step.
+Remove the FTDI [kernel extension](http://www.macbreaker.com/2012/01/what-are-kexts.html) (.kext) from your machine. You might not have it installed already. If you do not, skip this step.
 
 ```
 sudo rm /System/Library/Extensions/FTDIUSBSerialDriver.kext
@@ -275,7 +273,7 @@ Open the OpenBCI Processing GUI (or other software), connect to your device, and
 
 ### Helpful Resources
 
-- [Marion's original fix (thank you)!](http://ebrain.io/openbci-ftdi-driver/)
+- [Marion's original fix (thank you)!](https://marion.ai/koac/)
 - [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm)
-- [What is a .kext file?](http://forums.macnn.com/79/developer-center/81624/what-is-a-kext-file/)
+- [What is a .kext file?](http://www.macbreaker.com/2012/01/what-are-kexts.html)
 - [FTDI Driver Installation Guide for macOS](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)
