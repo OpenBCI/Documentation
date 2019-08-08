@@ -39,7 +39,7 @@ While using 3rd party software, you might want to stream data from your OpenBCI 
 
 **OpenBCI Cyton Board**
 
-1. Make sure you're comfortable using your Cyton board and Dongle with your host computer and the OpenBCI GUI. To do so, check out our [Cyton Getting Started Guide](01GettingStarted/01-Boards/01-Cyton_Getting Started_Guide.md).
+1. Make sure you're comfortable using your Cyton board and Dongle with your host computer and the OpenBCI GUI. To do so, check out our [Cyton Getting Started Guide](01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md).
 2. Plug in your Dongle and turn on your Cyton board. Both should display a blue light.
 3. Start VirtualBox. When the "Oracle VM VirtualBox Manager" window appears, select your virtual machine (so that it's highlighted in blue). Make sure your virtual machine is in the "powered off" mode, and not the "saved state" mode.
 4. Click Settings and then the Ports tab.
