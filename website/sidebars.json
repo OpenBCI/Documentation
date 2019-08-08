@@ -42,6 +42,25 @@
         "03Ganglion/GanglionDataFormat",
         "03Ganglion/GanglionSDK",
         "03Ganglion/GanglionProgram"],
+      "Headwear & Electrodes": [
+        "04AddOns/00-AddOnLanding",
+        {
+          "type": "subcategory",
+          "label": "Headwear",
+          "ids": [
+            "04AddOns/01-Headwear/MarkIV",
+            "04AddOns/01-Headwear/MarkIII",
+            "04AddOns/01-Headwear/HeadBand",
+            "04AddOns/01-Headwear/ElectrodeCap"
+          ]
+        }
+        {
+          "type": "subcategory",
+          "label": "Electrodes",
+          "ids": [
+            "04AddOns/02-Electrodes/ElectrodesLanding"
+          ]
+        }],
       "Third Party Hardware": [
         {
           "type": "subcategory",
@@ -62,17 +81,6 @@
             "05ThirdParty/03 - WiFi Shield/WiFiProgam",
             "05ThirdParty/03 - WiFi Shield/WiFiAPI",
             "05ThirdParty/03 - WiFi Shield/WiFiSDK"
-          ]
-          }],
-      "Headwear & Electrodes": [
-        {
-          "type": "subcategory",
-          "label": "Headwear",
-          "ids": [
-            "04AddOns/Headwear/MarkIV",
-            "04AddOns/Headwear/MarkIII",
-            "04AddOns/Headwear/HeadBand",
-            "04AddOns/Headwear/ElectrodeCap"
           ]
           }],
       "Compatible Software": [
