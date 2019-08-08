@@ -48,7 +48,7 @@ Connect the electrode wires to your Cyton board as shown below. The proper wire 
 | purple | 2N (bottom N2P pin) | 2P (top N2P pin) |
 | red | 7N (bottom N7P pin) | 4P (top N4P pin) |
 
-The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels. We decided to use channels 2 and 7 for this tutorial.
+The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or N4P in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
 
 ### 3. Connect your electrodes to your head and body
 
