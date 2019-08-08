@@ -3,7 +3,7 @@ id: CytonLanding
 title: Cyton Board
 ---
 
-###[Buy it!](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
+### [Buy it!](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 
 This set of tutorials will show you everything you need to know about the OpenBCI 8-channel Cyton Biosensing Board.
 
