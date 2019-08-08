@@ -23,15 +23,15 @@
 const siteConfig = {
   title: 'OpenBCI Documentation', // Title for your website.
   tagline: 'A website for testing',
-  url: 'https://andreaortuno.github.io', // Your website URL
-  baseUrl: '/Documentation-website-OpenBCI/', // Base URL for your project */
+  url: 'https://openbci.github.io', // Your website URL
+  baseUrl: '/Documentation/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'Documentation-website-OpenBCI',
-  organizationName: 'andreaortuno',
+  projectName: 'Documentation',
+  organizationName: 'OpenBCI',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -39,8 +39,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Welcome', label: 'Documentation'},
-    {doc: '08FAQ/FAQLanding', label: 'Shipping and other FAQ'},
-    {doc: '07Examples/FocusArduino', label: 'Example Projects'},
+    {doc: '08FAQ/FAQLanding', label: 'FAQ'},
+    {doc: '07Examples/FocusArduino', label: 'Examples'},
     {page: 'citations', label:'Citations'},
     {page: 'help', label: 'Help'},
     {search: true}

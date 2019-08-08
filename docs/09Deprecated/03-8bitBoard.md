@@ -1,6 +1,6 @@
 ---
 id: 8bitBoardDep
-title: 8bitBoard
+title: 8-bit Board
 ---
 
 # OpenBCI 8bit Board (no longer in production)

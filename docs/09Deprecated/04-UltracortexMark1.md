@@ -1,9 +1,7 @@
 ---
 id: UltracortexMark1Dep
-title: UltracortexMark1
+title: Ultracortex Mark 1
 ---
-
-# Ultracortex Mark 1
 
 Files related to the ultracortex, the 3D-printable EEG headset compatible with OpenBCI (currently under development).
 

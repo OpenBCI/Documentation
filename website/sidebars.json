@@ -99,14 +99,14 @@
         "Deprecated Documents": [
             "09Deprecated/DeprecatedLanding",
             "09Deprecated/SpiderclawDep",
-            "09Deprecated/8bitBoard",
-            "09Deprecated/UltracortexMark1",
-            "09Deprecated/UltracortexMark2",
-            "09Deprecated/UltracortexMark3",
-            "09Deprecated/UltracortexMark3_Nova",
-            "09Deprecated/OpenBCI_on_Windows",
-            "09Deprecated/FTDI_Driver_Fix",
-            "09Deprecated/VirtualBox"
+            "09Deprecated/8bitBoardDep",
+            "09Deprecated/UltracortexMark1Dep",
+            "09Deprecated/UltracortexMark2Dep",
+            "09Deprecated/UltracortexMark2Dep",
+            "09Deprecated/UltracortexMark3_NovaDep",
+            "09Deprecated/OpenBCI_on_WindowsDep",
+            "09Deprecated/FTDI_Driver_FixDep",
+            "09Deprecated/VirtualBoxDep"
 
         ],
         "Troubleshooting": [
