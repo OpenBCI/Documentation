@@ -136,7 +136,7 @@ Response: on success
 Response: on failure when channel setting sync is already in progress
 `{"type":"channelSettings", "action": "start", "code": 422, "message": "Sync in progress"}`
 
-Response: on success for each channel, see the [Response Set](http://docs.openbci.com/OpenBCI%20Software/07-OpenBCI_Hub#openbci-electron-hub-response-set) below for _Channel Settings_.
+Response: on success for each channel, see the Response Set below for _Channel Settings_.
 
 #### `action` - `set`
 
@@ -443,7 +443,7 @@ As of `v2.0.0`
 
 The currently supported protocols are `ble`, `bled112`, `serial`, and `wifi`.
 
-Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. [Tutorial found on docs.openbci.com](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-hardwaredriver-setup-for-openbci_gui-and-openbcihub-ganglion-on-windows). When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md).
+Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md).
 
 Example of `ble` or `bled112` for Ganglion:
 `{"type":"protocol", "action": "start", "protocol": "ble"}`
@@ -454,7 +454,7 @@ Response: on success for Ganglion:
 Response: on failure to start ganglion ble driver
 `{"type":"impedance", "action": "start", "code": 419, "message": "failed to start driver"}`
 
-Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. [Tutorial found on docs.openbci.com](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-hardwaredriver-setup-for-openbci_gui-and-openbcihub-ganglion-on-windows). When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md). This is not necessary for the BLED112 dongle.
+Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md). This is not necessary for the BLED112 dongle.
 
 Example of `serial` for Cyton:
 `{"type":"protocol", "action": "start", "protocol": "serial"}`
