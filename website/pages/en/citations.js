@@ -15,7 +15,7 @@ class Citations extends React.Component {
 
     return (
       <div className="mainContainer">
-          <div className="citationSection">
+          <div className="showcaseSection">
             <div className="prose">
               <h1>OpenBCI Citation List</h1>
               <p>Here is a list of research papers and articles that have used OpenBCI hardware and software for their research</p>
