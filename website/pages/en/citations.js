@@ -20,11 +20,12 @@ class Citations extends React.Component {
               <h1>OpenBCI Citation List</h1>
               <p>Here is a list of research papers and articles that have used OpenBCI hardware and software for their research</p>
             </div>
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3k7GrXAZDcGHLbT979YeCQH0HcfpkHCrlmIfgrY2snD5arry17GG_nHxopxnapZHrEeB4eeazdbXh/pubhtml?widget=true&amp;headers=false" width='100%' height='1000'></iframe>
             <p>Are you using OpenBCI for research?</p>
             <a href={editUrl} className="button">
               Let us know!
             </a>
+            <p>      </p>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3k7GrXAZDcGHLbT979YeCQH0HcfpkHCrlmIfgrY2snD5arry17GG_nHxopxnapZHrEeB4eeazdbXh/pubhtml?widget=true&amp;headers=false" width='100%' height='1000'></iframe>
           </div>
       </div>
     );
