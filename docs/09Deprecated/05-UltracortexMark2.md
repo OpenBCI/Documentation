@@ -74,7 +74,7 @@ Ear Clip electrode (for reference)
 
 ## Nuts & Bolts for Connecting Electrodes
 
-We use small stainless steel screws and hex nuts to fasten the FRI electrodes (listed above) to the 3D-printed electrode mount components &  wiring that connects the electrodes back to the OpenBCI board. We used stripped [Electrode Starter Kit (ESK)](https://openbci.myshopify.com/collections/frontpage/products/openbci-electrode-starter-kit) electrodes as the cabling, by removing the gold cup with a wire cutter and looping the exposed wire around the screw between the two tightened hex nuts (as seen in the picture below).
+We use small stainless steel screws and hex nuts to fasten the FRI electrodes (listed above) to the 3D-printed electrode mount components &  wiring that connects the electrodes back to the OpenBCI board. We used stripped [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) electrodes as the cabling, by removing the gold cup with a wire cutter and looping the exposed wire around the screw between the two tightened hex nuts (as seen in the picture below).
 
 * [Stainless Steel Pan Head Phillips Machine Screw, 2-56 Thread, 3/8" Length ($5.70 per pack of 50)](http://www.mcmaster.com/#91735a017/=xzahfj)
 * [Stainless Steel Hex Nut, 2-56 Thread Size, 3/16" Wide, 1/16" High](http://www.mcmaster.com/#91841a003/=xzahv0)
@@ -87,7 +87,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 	* super glue
 	* sandpaper
 	* coarse flat & circular files
-	* some sort of flexible wiring (terminating in a female header) to connect the electrodes back to the OpenBCI board. We used stripped [ESK](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) electrodes & stripped touch-proof connector cabling from the [OpenBCI Board Kit](02Cyton/01-CytonBoard.md).
+	* some sort of flexible wiring (terminating in a female header) to connect the electrodes back to the OpenBCI board. We used stripped [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) electrodes & stripped touch-proof connector cabling from the [OpenBCI Board Kit](02Cyton/01-CytonBoard.md).
 	* an exacto/razor blade
 	* wirecutters
 	* needle-nose pliers
