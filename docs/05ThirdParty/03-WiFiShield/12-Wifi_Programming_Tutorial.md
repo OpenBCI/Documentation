@@ -7,7 +7,7 @@ title: Wifi Shield Programming Tutorial
 
 ## Overview
 
-The easiest way to update your OpenBCI Wifi Shield Firmware is Over-The-Air (OTA). You can also update firmware through a direct connection to the serial port on the WiFi Shield itself. For the wired programming, you can use the USB dongle that comes with the Cyton as a pass through or you can use a standard [FTDI UART to USB Breakout board](http://docs.openbci.com/Hardware/12-Wifi_Programming_Tutorial#wifi-shield-programming-tutorial-program-openbci-wifi-with-ftdi-boards).
+The easiest way to update your OpenBCI Wifi Shield Firmware is Over-The-Air (OTA). You can also update firmware through a direct connection to the serial port on the WiFi Shield itself. For the wired programming, you can use the USB dongle that comes with the Cyton as a pass through or you can use a standard [FTDI UART to USB Breakout board](#program-openbci-wifi-with-ftdi-boards).
 
 ## Program WiFi Shield Over The Air
 
@@ -29,15 +29,15 @@ Plug a battery into the WiFi Shield and power the Shield by turning the power sw
 
 ### Get WiFi Shield on Your Wireless Network
 
-Then get your WiFi Shield on your local wireless network if it's not already. A the tutorial to [get your WiFi Shield on your wireless network](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-get-the-wifi-shield-on-your-wireless-network) if located in the [WiFi Shield Getting Started Guide](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-overview).
+Then [get your WiFi Shield on your local wireless network](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-the-wifi-shield-on-your-wireless-network) if it's not already.
 
 ### Get Address of WiFi Shield
 
-Find the IP Address of your WiFi Sheild by clicking the '>' button in the WiFi section of the Control Panel, and then clicking the IP Address button, as shown in the image below:
+Find the IP Address of your WiFi Shield by clicking the '>' button in the WiFi section of the Control Panel, and then clicking the IP Address button, as shown in the image below:
 
 ![image](assets/ThirdPartyImages/IPfind.png)
 
-If you're having issues with that step, here's a more in-depth tutorial on using the OpenBCI_GUI to get [your shields ip address](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-get-wifi-shield-ip-mac-address-firmware-version-and-more-get-wifi-shield-ip-address).
+If you're having issues with that step, here's a more in-depth tutorial on using the OpenBCI_GUI to get [your shields ip address](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address).
 
 ### Go to /update Page of WiFi Shield
 
@@ -93,7 +93,7 @@ Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5
 
 ### OpenBCI Cyton Dongle
 
-The OpenBCI Dongle can be used to upload firmware to ESP8266. [See the section](http://docs.openbci.com/Hardware/06-Cyton_Radios_Programming_Tutorial#cyton-radios-programming-tutorial-uploading-device-firmware-to-cyton-board-upload-pass-thru-radio-firmware-version-2xx-fall-2016) on how to [pass through the code](http://docs.openbci.com/Hardware/06-Cyton_Radios_Programming_Tutorial#cyton-radios-programming-tutorial-uploading-device-firmware-to-cyton-board-program-device-radio-with-openbci-dongle) in the [Cyton Radio Programming Guide](http://docs.openbci.com/Hardware/06-Cyton_Radios_Programming_Tutorial).
+The OpenBCI Dongle can be used to upload firmware to ESP8266. [See the section](02Cyton/06-Cyton_Radios_Programming_Tutorial.md#upload-pass-thru-radio-firmware-version-2xx-fall-2016) on how to [pass through the code](02Cyton/06-Cyton_Radios_Programming_Tutorial#program-device-radio-with-openbci-dongle) in the [Cyton Radio Programming Guide](02Cyton/06-Cyton_Radios_Programming_Tutorial.md).
 
 ## Download Compiled Binary for Upload
 
