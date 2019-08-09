@@ -9,9 +9,9 @@ Please direct any questions, suggestions and bug reports to the [github repo](ht
 
 # pyOpenBCI
 
-<p align="center" href="">
-  Provide a stable Python driver for all OpenBCI Biosensors
-</p>
+
+## Provide a stable Python driver for all OpenBCI Biosensors
+
 
 This repo has been designed to be a more beginner friendly version of the [OpenBCI-Python](https://github.com/OpenBCI/OpenBCI_Python) repo. If there is anything you think we should add please open an issue.
 
@@ -97,7 +97,7 @@ board = OpenBCIWifi(shield_name='OpenBCI-2254', sample_rate=200)
 
 ### Sending commands
 
-Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](https://docs.openbci.com/OpenBCI%20Software/06-OpenBCI_Ganglion_SDK), [Cyton](https://docs.openbci.com/OpenBCI%20Software/04-OpenBCI_Cyton_SDK), [Wifi Shield](https://docs.openbci.com/OpenBCI%20Software/08-OpenBCI_Wifi_SDK)) to send commands to the board using python (make sure your commands are strings).
+Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](03Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](02Cyton/04-OpenBCI_Cyton_SDK.md), [Wifi Shield](05ThirdParty/03-WifiShield/08-OpenBCI_Wifi_SDK.md)) to send commands to the board using python (make sure your commands are strings).
 
 ```python
 # Write commands to the board

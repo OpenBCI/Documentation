@@ -67,7 +67,7 @@ To disconnect from the serial port, type /exit
 Remember to use /exit to disconnect the board as you end the program, to ensure that the serial port is safely closed.
 
 ### Configuring the board from the command line interface
-You also configure board settings from this interface. For full information regarding board settings and commands, see the [Cyton board programming tutorial](http://docs.openbci.com/Hardware/05-Cyton_Board_Programming_Tutorial#cyton-board-programming-tutorial-firmware-versions-2xx-3xx-fall-2016-present).
+You also configure board settings from this interface. For full information regarding board settings and commands, see the [Cyton board programming tutorial](02Cyton/05-Cyton_Board_Programming_Tutorial.md).
 
 To enter Channel Settings mode, you would need to enter an "x", followed by certain channel settings, followed by an "X". For example:
 
@@ -115,7 +115,7 @@ Note: Many issues with board connectivity can simply be resolved by restarting t
 ## Next Steps
 Once you have the Lab Streaming Layer set up with your OpenBCI board, check out these other tutorials to view the stream in a variety of different programs:
 
-[Matlab tutorial](http://docs.openbci.com/3rd%20Party%20Software/01-Matlab)
+[Matlab tutorial](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md)
 
 ## Credit
 Thanks to Winslow Strong for posting the original tutorial on the OpenBCI forums!
