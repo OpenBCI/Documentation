@@ -20,7 +20,7 @@ class Citations extends React.Component {
               <h1>Who is Using This?</h1>
               <p>We compiled a list of research papers and articles that have used OpenBCI hardware and Software for their research</p>
             </div>
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQpWB4OA38W_xK3uG7PwkF2mspHsiFSofnlVh7gqLfbesC33-fTxDe_TRoCXpfBGmcvPf5Z5SVMfn_b/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width='1000' height='500'></iframe>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS3k7GrXAZDcGHLbT979YeCQH0HcfpkHCrlmIfgrY2snD5arry17GG_nHxopxnapZHrEeB4eeazdbXh/pubhtml?widget=true&amp;headers=false" width='100%' height='500'></iframe>
             <p>Are you using this project?</p>
             <a href={editUrl} className="button">
               Let us know!!!
