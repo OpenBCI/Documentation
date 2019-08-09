@@ -132,7 +132,7 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 **Min ΔμV**: This value sets the minimum voltage range between the upper threshold and lower threshold. The upper threshold and lower threshold cannot get any closer than this. By making this value bigger, you will have to flex harder to go from 0 to 100% flex, after the thresholds have crept as close as they will get to one another (aka Min ΔμV).
 
 ## Networking
-The networking widget allows the streaming of data to other apps. It offers four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Third Party Software page](https://docs.openbci.com/3rd%20Party%20Software/00-3rdPartySoftware).
+The networking widget allows the streaming of data to other apps. It offers four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](06Software/00-SoftwareLanding.md).
 
 ### Serial
 
@@ -155,7 +155,7 @@ User Datagram Protocol is used primarily for establishing low-latency and loss-t
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_LSL.png?raw=true" width="70%">
 
-Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](https://docs.openbci.com/3rd%20Party%20Software/01-Matlab).
+Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md).
 
 ### OSC
 
