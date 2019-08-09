@@ -1,0 +1,8 @@
+#!/bin/bash
+
+chmod 755 $PWD/hardware/arduino/RFduino/RFDLoader*
+chmod 755 $PWD/hardware/arduino/RFduino/size*
+
+ln -s ~/.wine/dosdevices/dev/ttyUSB0 com1
+
+/usr/bin/wine $PWD/hardware/arduino/RFduino/RFDLoader.exe $1 com1 $3

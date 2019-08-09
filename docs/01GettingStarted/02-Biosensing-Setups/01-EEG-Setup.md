@@ -14,6 +14,7 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 
 ## What you will need
 
+![What You Need](assets/GettingStartedImages/whatYouNeed.JPG)
 
 #### Necessary:
 * [Ten20 conductive electrode paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198) (or other conductive electrode gel)
