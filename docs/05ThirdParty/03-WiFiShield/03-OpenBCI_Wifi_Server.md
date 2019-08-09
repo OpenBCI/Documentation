@@ -13,7 +13,7 @@ One of the coolest parts of the WiFi Shield is its HTTP web server. For develope
 
 ## Prerequisites
 
-Follow the [WiFi Getting Started Guide](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-prerequisites) to get your WiFi Shield on your Wireless Network.
+Follow the [WiFi Getting Started Guide](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-prerequisites) to get your WiFi Shield on your Wireless Network.
 
 ## Get Wifi Shield on Local Wireless Network
 

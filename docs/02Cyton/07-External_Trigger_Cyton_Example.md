@@ -9,7 +9,7 @@ This tutorial will cover a couple of ways to add an external trigger to the Open
 
 **Note:** As of 3.x.x Cyton firmware, the Cyton is able to switch board modes, now you don't have to upload new code to the board just to read from an input!
 
-##External Triggering The Easy Way (Firmware 3.x.x)
+## External Triggering The Easy Way (Firmware 3.x.x)
 
 ### Using the OpenBCI GUI
 
@@ -17,11 +17,11 @@ Follow the official [OpenBCI GUI guide](06Software/01-OpenBCISoftware/01-OpenBCI
 
 Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](02Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
 
-Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci_gui) (remember to [run your OpenBCIHub application](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci_gui-running-on-windows) first windows users!).
+Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui) (remember to [run your OpenBCIHub application](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-on-windows) first windows users!).
 
-Once the GUI has launched, follow the guide to [connect to your Cyton from the OpenBCI GUI](http://docs.openbci.com/Tutorials/01-Cyton_Getting%20Started_Guide#cyton-getting-started-guide-iv-connect-to-your-cyton-board-from-the-gui).
+Once the GUI has launched, follow the guide to [connect to your Cyton from the OpenBCI GUI](01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
 
-Once you have connected, you may selected the "Digital Read" for one of your widgets. Then select start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your cyton. Note that the accelerometer will no long be turned on because the trigger data is now sent instead.
+Once you have connected, you may selected the "Digital Read" for one of your widgets. Then select start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your Cyton. Note that the accelerometer will no long be turned on because the trigger data is now sent instead.
 
 You can verify the digital read widget is working by pressing the "PROG" button which is hooked up to the D17 pin.
 
@@ -32,7 +32,7 @@ When you use a Cyton over [WiFi Shield](https://shop.openbci.com/collections/fro
 ### Programmatically Setting Board Mode
 Firmware 3.x.x brings a long requested out-of-the-box ability to read from analog or digital inputs with the default firmware. Allowing you to simply read from the analog input (sending `/2`) or digital input (sending `/3`) with the type of two ascii commands. The default board is activated by default, and can always be achieved again by sending a `/0`.
 
-Learn more about board modes in the [Cyton SDK](http://docs.openbci.com/OpenBCI%20Software/04-OpenBCI_Cyton_SDK#openbci-cyton-sdk-firmware-v300-new-commands-board-mode).
+Learn more about board modes in the [Cyton SDK](02Cyton/04-OpenBCI_Cyton_SDK.md#firmware-v300-new-commands-board-mode).
 
 ##External Triggering The Easy Way (Firmware 2.x.x)
 
@@ -41,7 +41,7 @@ Update to firmware version 3.x.x using the tutorial [**here**](02Cyton/05-Cyton_
 ##External Triggering The Easy Way (Firmware 1.x.x)
 
 ### Sample Code Links
-The code used in this example is located [**here**](https://github.com/OpenBCI/OpenBCI_Button_Trigger) for those of you who want to play along at home. There's a tutorial for how to program the 32bit Board [**here**](http://docs.openbci.com/Hardware/05-Cyton_Board_Programming_Tutorial)
+The code used in this example is located [**here**](https://github.com/OpenBCI/OpenBCI_Button_Trigger) for those of you who want to play along at home. There's a tutorial for how to program the 32bit Board [**here**](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
 
 ### Utilize the on device push button
 The OpenBCI 32bit Board comes with a user accessible pushbutton switch already on the board, wired right to the PIC32 microcontroller. Brilliant! It is the PROG button, and it is used by to put the PIC into bootloader mode when uploading new firmware. When it's not doing that it's attached to pin D17 with a 470K pulldown resistor, so when you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgement of a stimulus (for example) into the data stream. You will likely want to note the rising edge (pushed state) of the button press, so that's the example code that we'll work with.
@@ -68,7 +68,7 @@ In the setup function, we set the pin direction and prime the button variables. 
 		// more stuff...
 	}
 
-Then, in the loop, we want to check for the rising edge of the button press, make note of it in the auxData array, and set the write-to-SD flag (if you like). Finally, we want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](http://docs.openbci.com/Hardware/03-Cyton_Data_Format) for data packet anatomy) There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
+Then, in the loop, we want to check for the rising edge of the button press, make note of it in the auxData array, and set the write-to-SD flag (if you like). Finally, we want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](02Cyton/03-Cyton_Data_Format) for data packet anatomy) There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
 
 	pushButtonValue = digitalRead(pushButton);    // feel the PROG button
 	if (pushButtonValue != lastPushButtonValue){  // if it's changed,

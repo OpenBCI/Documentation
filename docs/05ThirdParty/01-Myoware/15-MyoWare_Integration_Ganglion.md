@@ -4,7 +4,7 @@ title: MyoWare OpenBCI Integration (Ganglion Board)
 ---
 
 ### Overview
-This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Ganglion board, and the OpenBCI GUI. If you have a Cyton board instead, check out our [Cyton board MyoWare integration tutorial!](http://docs.openbci.com/Tutorials/14-MyoWare_Integration)
+This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Ganglion board, and the OpenBCI GUI. If you have a Cyton board instead, check out our [Cyton board MyoWare integration tutorial!](05ThirdParty/01-Myoware/14-MyoWare_Integration.md)
 
 ![MyoWare + Ganglion supplies](assets/ThirdPartyImages/flatlay_myoware_ganglion.JPG)
 
@@ -54,7 +54,7 @@ The wires should be connected like this:
 
 R, "+", and "-" must always go to the pins shown above. E and M can also be connected to 2+ and 2- (the top and bottom "2" pins), or 3+ and 3-, or 4+ and 4-.
 
-When you have everything wired up, set the power switch on the MyoWare board to "on". Turn on the OpenBCI Ganglion board, turn on your computer's Bluetooth feature, and start the OpenBCI GUI software. If you're new to using a Ganglion board with your computer, take a look at the Ganglion Getting Started Guide (http://docs.openbci.com/Tutorials/02-Ganglion_Getting%20Started_Guide).
+When you have everything wired up, set the power switch on the MyoWare board to "on". Turn on the OpenBCI Ganglion board, turn on your computer's Bluetooth feature, and start the OpenBCI GUI software. If you're new to using a Ganglion board with your computer, take a look at the [Ganglion Getting Started Guide](01GettingStarted/01-Boards/02-Ganglion_Getting_Started_Guide.md).
 
 ### 4. Streaming EMG Data with the OpenBCI GUI
 

@@ -84,7 +84,7 @@
             "05ThirdParty/03-WiFiShield/WiFiSDK"
           ]
           }],
-      "Compatible Software": [
+      "Software": [
           "06Software/SoftwareLanding",
         {
           "type": "subcategory",
