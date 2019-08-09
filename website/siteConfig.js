@@ -43,6 +43,7 @@ const siteConfig = {
     {href: 'https://openbci.com/index.php/forum/', label: 'Forum'},
     {doc: '08FAQ/FAQLanding', label: 'FAQ'},
     {href: 'https://github.com/OpenBCI', label: 'Github'},
+    {page: 'citations', label: 'Citations'},
     {search: true}
   ],
 

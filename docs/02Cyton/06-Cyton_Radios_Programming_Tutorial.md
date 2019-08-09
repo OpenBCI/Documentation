@@ -5,7 +5,7 @@ title: Cyton Radios Programming Tutorial
 
 ## Overview
 
-**Note, you do not need to do any radio module programming if you want to use the Cyton out-of-the-box. All OpenBCI boards and dongles ship already programmed, i.e. with firmware already uploaded.** If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to the [software page.](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI)
+**Note, you do not need to do any radio module programming if you want to use the Cyton out-of-the-box. All OpenBCI boards and dongles ship already programmed, i.e. with firmware already uploaded.** If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to the [software page.](06Software/00-SoftwareLanding.md)
 
 The OpenBCI Cyton Boards come with a USB dongle that allows for communication between the Board and your computer. There is a BLE radio module (actually an [RFduino 22301](http://www.rfduino.com/product/rfd22301-rfduino-ble-smt/index.html)) on the Dongle and Board that make the communication happen. Here's some terms that are important to note:
 
@@ -158,13 +158,13 @@ RFduino makes a small board that they call a [USB Shield](http://www.rfduino.com
 
 ### FTDI Friend
 ![FTDI Friend](assets/CytonImages/FTDI_Friend.jpg)
-![FTDI Friend Back](assets/images/FTDI_FriendBack.jpg)
+![FTDI Friend Back](assets/CytonImages/FTDI_FriendBack.jpg)
 
 Another example would be the [FTDI Friend](http://www.adafruit.com/products/284) from Adafruit. In this case, the pin labled 'RTS' is the one you want to connect to the RF RST on the OpenBCI board. We need to ensure that the 'RTS' pin is behaving correctly and that we're sending 3V logic out! Note the image of the back of the FTDI Friend. I have jumped the pads marked DTR, and also the 3V pads on VCC out. The Signal Logic Level already has the 3V pads jumped. I cut the trace on the RTS and 5V pads as well. These are the correct settings for uploading to RFduino using FTDI Friend. The 'RTS' pin jump to OpenBCI RF RST connection will also need a 0.1uF series capacitor. These breakouts are awesome, but they can be alittle advanced.
 
 ### FTDI Basic Breakout
-![FTDI BasicFront](assets/images/FTDI_BASICfront.jpg)
-![FTDI BasicBack](assets/images/FTDI_BASICback.jpg)
+![FTDI BasicFront](assets/CytonImages/FTDI_BASICfront.jpg)
+![FTDI BasicBack](assets/CytonImages/FTDI_BASICback.jpg)
 
 Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] The Basic Breakout isn't as fancy as the FTDI Friend, but you do need to put a 0.1uF capacitor between the DTR pin and the RF RST pin. Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!  
 
