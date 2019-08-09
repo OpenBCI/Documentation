@@ -5,7 +5,7 @@ title: The OpenBCI GUI
 
 [Suggest changes to this doc](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/01-OpenBCI_GUI.md)
 
-![image](assets/SoftwareImages/OpenBCI Software/GUI-V4-Screenshot.jpg)
+![image](assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's default software tool for visualizing, recording, and streaming data from the OpenBCI Boards. It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
@@ -13,12 +13,12 @@ The OpenBCI GUI is OpenBCI's default software tool for visualizing, recording, a
 
 Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 
-![image](assets/SoftwareImages/OpenBCI Software/labelledBoards.jpg)
+![image](assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
 ### Ganglion on macOS
 Turn on your computer's Bluetooth if not already.
 
-![Bluetooth On](assets/SoftwareImages/OpenBCI Software/ganglion_BLE-ON.png)  
+![Bluetooth On](assets/SoftwareImages/OpenBCISoftware/ganglion_BLE-ON.png)  
 
 Alternatively, you can use a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).
 
@@ -57,13 +57,13 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 
 The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the [Downloads](http://openbci.com/donation) page of the OpenBCI website, and click the download link that correlates to your OS and machine.
 
-![image](assets/SoftwareImages/OpenBCI Software/Downloads.JPG)
+![image](assets/SoftwareImages/OpenBCISoftware/Downloads.JPG)
 
 ### Install OpenBCI_GUI On macOS
 
 Drag and drop the `OpenBCI_GUI` application to you `Applications` folder.
 
-![Drag and drop application](assets/SoftwareImages/OpenBCI Software/gui_drag_and_drop.png)
+![Drag and drop application](assets/SoftwareImages/OpenBCISoftware/gui_drag_and_drop.png)
 
 ### Install OpenBCI_GUI On Windows
 

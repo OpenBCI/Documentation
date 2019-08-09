@@ -32,7 +32,7 @@ Don't know what the _Library Manager_ is? Skim over the [Official Arduino Guide]
 
 Open the _Library Manager_ and search for _OpenBCI_ and install the latest version for `OpenBCI_32bit_Library`, `OpenBCI_32bit_SD` and `OpenBCI_Wifi_Master`.
 
-Now jump down to the section [install ChipKit Core](02Cyton/CytonProgram#install-chipkit-core-firmware)
+Now jump down to the section [install ChipKit Core](#install-chipkit-core-firmware)
 
 ### Manual Installation of Cyton Firmware
 

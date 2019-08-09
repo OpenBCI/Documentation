@@ -13,9 +13,9 @@ This tutorial will cover a couple of ways to add an external trigger to the Open
 
 ### Using the OpenBCI GUI
 
-Follow the official [OpenBCI GUI guide](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-installing-the-openbci-gui-as-a-standalone-application) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
+Follow the official [OpenBCI GUI guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
 
-Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](http://docs.openbci.com/Hardware/05-Cyton_Board_Programming_Tutorial)! May all your troubles disappear!
+Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](02Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
 
 Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci_gui) (remember to [run your OpenBCIHub application](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci_gui-running-on-windows) first windows users!).
 
@@ -25,7 +25,7 @@ Once you have connected, you may selected the "Digital Read" for one of your wid
 
 You can verify the digital read widget is working by pressing the "PROG" button which is hooked up to the D17 pin.
 
-When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](http://docs.openbci.com/Tutorials/11-OpenBCI_on_Windows) and [macOS](http://docs.openbci.com/Tutorials/10-Mac_FTDI_Driver_Fix), for Linux, we still need a guide and this could be a good first contribution for a community member!
+When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](09Deprecated/08-OpenBCI_on_Windows.md) and [macOS](09Deprecated/09-FTDI_Driver_Fix.md), for Linux, we still need a guide and this could be a good first contribution for a community member!
 
 When you use a Cyton over [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550), you get up to 3 digital IO pins to read from: D11, D12 and D17! There should be no noticeable delay from when you touch the button and when the digital read widget in the GUI shows the button pressed.
 
@@ -36,7 +36,7 @@ Learn more about board modes in the [Cyton SDK](http://docs.openbci.com/OpenBCI%
 
 ##External Triggering The Easy Way (Firmware 2.x.x)
 
-Update to firmware version 3.x.x using the tutorial [**here**](http://docs.openbci.com/Hardware/05-Cyton_Board_Programming_Tutorial)! May all your troubles disappear!  
+Update to firmware version 3.x.x using the tutorial [**here**](02Cyton/05-Cyton_Board_Programming_Tutorial)! May all your troubles disappear!  
 
 ##External Triggering The Easy Way (Firmware 1.x.x)
 
