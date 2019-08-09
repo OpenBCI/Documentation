@@ -27,8 +27,8 @@ The WiFi Shield requires your Cyton to run the [latest Cyton firmware](https://g
 
 #### You must update your firmware before getting started. If you purchased your board mid-2018 or later, you won't need to update firmware and can skip down to General Overview.
 
-* [Updating Cyton Firmware Tutorial](http://docs.openbci.com/Hardware/05-Cyton_Board_Programming_Tutorial)
-* [Updating Ganglion Firmware](http://docs.openbci.com/Hardware/09-Ganglion_Programming_Tutorial)
+* [Updating Cyton Firmware Tutorial](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
+* [Updating Ganglion Firmware](03Ganglion/09-Ganglion_Programming_Tutorial.md)
 
 This guide will walk you through setting up your WiFi Shield, connecting it to your computer, and then connecting it to yourself. The first tutorial is for the Cyton and the second is for the Ganglion.
 
@@ -42,7 +42,7 @@ This guide will walk you through setting up your WiFi Shield, connecting it to y
 ### What you need
 
  1. [OpenBCI WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550)
- 2. OpenBCI Cyton Board **Must have at least [v3.1.0 Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases) or newer!** Here is the guide for [uploading new firmware to your Cyton Board](http://docs.openbci.com/Hardware/05-Cyton_Board_Programming_Tutorial).
+ 2. OpenBCI Cyton Board **Must have at least [v3.1.0 Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases) or newer!** Here is the guide for [uploading new firmware to your Cyton Board](02Cyton/05-Cyton_Board_Programming_Tutorial.md).
  3. One LiPo battery or 6V AA battery pack & (x4) AA batteries (batteries not included)
     - You only need one battery when using the Cyton with the WiFi Shield. The Cyton takes power from the WiFi Shield. When the Cyton is powered by the WiFi Shield, you'll find the power switch on the Cyton becomes useless.
 
@@ -170,7 +170,7 @@ Follow this section if you want to put the WiFi Shield into WiFi Station mode. T
 
 **For the rest of this tutorial, the WiFi needs to be powered independently, with Ganglion, WiFi Shield shall be disconnected, with Cyton, the `EXT PWR` shall be in the off position**
 
-If you power the the WiFi Shield up and D2 LED does **4 blinks in 2 seconds** followed within 10 seconds by **2 blinks in 2 seconds**, then your WiFi Shield is on your local network. Feel free to head to skip a head to [connecting with the OpenBCI GUI](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-connecting-with-the-openbci-gui). If you want the WiFi Shield to join a different wireless network, continue reading and pay attention when it comes time to bring up the WiFi Manager.
+If you power the the WiFi Shield up and D2 LED does **4 blinks in 2 seconds** followed within 10 seconds by **2 blinks in 2 seconds**, then your WiFi Shield is on your local network. Feel free to head to skip a head to [connecting with the OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application). If you want the WiFi Shield to join a different wireless network, continue reading and pay attention when it comes time to bring up the WiFi Manager.
 
 Before the WiFi Shield has joined a network, the Shield acts as a WiFi hotspot, where the D2 LED blinks **10 times in 2 seconds** and will have a name such as "OpenBCI-A4AD" where the last four digits are hexadecimal and are unique to your WiFi Shield.
 
@@ -236,10 +236,10 @@ You must erase the stored credentials or else the WiFi Shield will spend 10 seco
 
 There is a multitude of ways to erase stored wireless network configurations:
 
-1. Press "ERASE CREDENTIALS" of the WiFi Shield from the WIFI SHIELDS configuration inside the OpenBCI GUI. Make sure your WiFi Shield is not connected to an OpenBCI Board, or if Cyton, `EXT PWR` is OFF). [Tutorial link here](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-get-wifi-shield-ip-mac-address-firmware-version-and-more-erase-wifi-credentials).
+1. Press "ERASE CREDENTIALS" of the WiFi Shield from the WIFI SHIELDS configuration inside the OpenBCI GUI. Make sure your WiFi Shield is not connected to an OpenBCI Board, or if Cyton, `EXT PWR` is OFF). [Tutorial link here](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#erase-stored-credentials).
 2. On macOS/iPhone, go to your WiFi Shields home page in a web browser such as http://OpenBCI-A4AD.local (`OpenBCI-A4AD` is the name of the WiFi Shield) and tap "Click to Erase WiFi Credentials".
 3. On macOS/iOS, in a web browser go to http://OpenBCI-A4AD.local/wifi/delete (`OpenBCI-A4AD` is the name of the WiFi Shield).
-4. In any web browser on any device you can use the IP Address ([OpenBCI GUI tutorial to get IP address](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-get-wifi-shield-ip-mac-address-firmware-version-and-more-get-wifi-shield-ip-address)) of the WiFi Shield and navigate to http://192.168.1.100/wifi/delete where the `192.168.1.100` is substituted for the WiFi Shield's IP Address to trigger the erase.
+4. In any web browser on any device you can use the IP Address ([OpenBCI GUI tutorial to get IP address](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address)) of the WiFi Shield and navigate to http://192.168.1.100/wifi/delete where the `192.168.1.100` is substituted for the WiFi Shield's IP Address to trigger the erase.
 * Send an HTTP DELETE request to `192.168.1.100/wifi` where the `192.168.1.100` is the WiFi Shield's IP Address
 
 If you erase the WiFi Shield's stored credentials, the WiFi Shield will immediately startup in WiFi Direct mode and that's indicated with **10 blinks in 2 seconds**.
@@ -325,7 +325,7 @@ Although the WiFi Shield can be connected to any internet connected device, the 
 
 The OpenBCI GUI gained WiFi Shield support as of `v3.0.0` or later.
 
-Please [follow the step by step guide](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to install the OpenBCI_GUI as a standalone application. WiFi has no prerequisites other then installing the OpenBCI Hub on Windows, on mac and linux, the hub is built into the standalone app.
+Please [follow the step by step guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application. WiFi has no prerequisites other then installing the OpenBCI Hub on Windows, on mac and linux, the hub is built into the standalone app.
 
 Come back to this guide when your GUI is running!
 
@@ -500,7 +500,7 @@ The GUI will automatically detach from the WiFi Shield. Your WiFi Shield should 
 
 Before we jump into setting up your WiFi Shield, here are some helpful links:
 
- * [Learn to update your WiFi Shield](http://docs.openbci.com/Hardware/12-Wifi_Programming_Tutorial) to the [latest firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
- * Learn about the physical hardware on the WiFi Shield checkout the [OpenBCI Wifi Hardware docs](http://docs.openbci.com/Hardware/11-Wifi)
+ * [Learn to update your WiFi Shield](05ThirdParty/03-WifiShield/12-Wifi_Programming_Tutorial.md) to the [latest firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
+ * Learn about the physical hardware on the WiFi Shield checkout the [OpenBCI Wifi Hardware docs](05ThirdParty/03-WifiShield/01-Wifi.md)
  * Lookup the commands for the HTTP rest server on the WiFi Shield at the [swaggerhub.io](https://app.swaggerhub.com/apis/pushtheworld/openbci-wifi-server/1.3.0)
  * Checkout the firmware that powers the WiFi Shield at [on Github](http://github.com/OpenBCI/OpenBCI_WIFI)

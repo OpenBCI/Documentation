@@ -8,7 +8,7 @@ This guide will walk you through getting 16-channel input on your Cyton+Daisy Mo
 ## I. SET UP YOUR CYTON BOARD
 
 Refer to the Cyton Tutorial page:
-[Cyton Getting Started Guide](http://docs.openbci.com/Tutorials/01-Cyton_Getting%20Started_Guide).
+[Cyton Getting Started Guide](01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md).
 
 Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI
 

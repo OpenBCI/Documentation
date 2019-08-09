@@ -24,7 +24,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 ![OpenBCI 8-bit Top](assets/GettingStartedImages/ganglion_head_shot.jpg)
 
-The battery connector on the back can accept 3V to 12V DC power input. The pushbutton is a reset button. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion](http://docs.openbci.com/Hardware/07-Ganglion) page in the Hardware section.
+The battery connector on the back can accept 3V to 12V DC power input. The pushbutton is a reset button. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion](03Ganglion/01-GanglionBoard.md) page in the Hardware section.
 
 ### 2. OpenBCI Ganglion Dongle
 
@@ -59,7 +59,7 @@ If you plan to work with your own electrodes, the [Touch-Proof Adapter](http://s
 
 ## Download/Install/Run the OpenBCI GUI
 
-Please [follow the step by step guide](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to install the OpenBCI_GUI as a standalone application.
+Please [follow the step by step guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application.
 
 Come back to this guide when your GUI is running!
 
@@ -93,7 +93,7 @@ The GUI will automatically generate a recording to a file. You have an option at
 
 ### Navigating the GUI
 
-When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI](http://docs.openbci.com/OpenBCI%20Software/00-OpenBCISoftware) doc. For the purposes of this introductory tutorial, You should follow the following steps to setup the GUI.  
+When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) doc. For the purposes of this introductory tutorial, You should follow the following steps to setup the GUI.  
 
 ![Start Data Stream](assets/GettingStartedImages/ganglion_connected-idle-GUIv4.png)
 

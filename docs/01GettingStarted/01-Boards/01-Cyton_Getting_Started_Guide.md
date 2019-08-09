@@ -56,7 +56,7 @@ Your Cyton kit comes with 4 plastic feet that can be snapped into the holes of y
 
 ## II. Download/Install/Run the OpenBCI GUI
 
-Please [follow the step by step guide](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to install the OpenBCI_GUI as a standalone application. Keep an eye out for specific Cyton requirements such as installing the FTDI VCP driver.
+Please [follow the step by step guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to install the OpenBCI_GUI as a standalone application. Keep an eye out for specific Cyton requirements such as installing the FTDI VCP driver.
 
 Come back to this guide when your GUI is running!
 
@@ -95,7 +95,7 @@ In order to connect to your Cyton, you must specify the data source to be `LIVE 
 
 ### 2. Select Serial Transfer Protocol
 
-Next select `Serial (from Dongle)`. If you want to use the WiFi Shield, please see the [WiFi Getting Started Guide](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-overview)
+Next select `Serial (from Dongle)`. If you want to use the WiFi Shield, please see the [WiFi Getting Started Guide](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md)
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/serial_cyton_select_serial.png?raw=true" width="50%">
 
