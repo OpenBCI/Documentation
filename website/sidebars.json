@@ -122,33 +122,38 @@
         ],
         "Troubleshooting": [
             "10Troubleshooting/minimizingNoise"
-        ]
-      },
-    "FAQ": {
-      "Frequently Asked Questions": [
-        "08FAQ/FAQLanding",
-        "08FAQ/GenFAQ",
-        "08FAQ/HowProductsGoTogether",
-        "08FAQ/HardFAQ",
-        "08FAQ/PaymentFAQ",
-        "08FAQ/ShippingFAQ"
-      ],
-      "Policies": [
-        "08FAQ/Cookie",
-        "08FAQ/Privacy",
-        "08FAQ/Returns"
-      ]
-    },
-    "Example Projects": {
-      "Examples": [
-        "07Examples/ExamplesLanding",
-        {
-          "type": "subcategory",
-          "label": "Arduino Focus Example",
-          "ids": [
-            "07Examples/FocusArduino"
-          ]
+        ],
+        "Example Projects": [
+          "07Examples/ExamplesLanding",
+          {
+            "type": "subcategory",
+            "label": "Arduino Focus Example",
+            "ids": [
+              "07Examples/FocusArduino"
+            ]
           }
-      ]
-    }
+        ],
+        "FAQ": [
+          {
+            "type": "subcategory",
+            "label": "FAQ",
+            "ids": [
+                "08FAQ/FAQLanding",
+                "08FAQ/GenFAQ",
+                "08FAQ/HowProductsGoTogether",
+                "08FAQ/HardFAQ",
+                "08FAQ/PaymentFAQ",
+                "08FAQ/ShippingFAQ"
+            ]
+          }, {
+            "type": "subcategory",
+            "label": "Policies",
+            "ids": [
+                "08FAQ/Cookie",
+                "08FAQ/Privacy",
+                "08FAQ/Returns"
+            ]
+          }
+        ]
+      }
   }

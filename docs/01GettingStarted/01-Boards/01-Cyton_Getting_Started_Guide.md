@@ -228,6 +228,6 @@ If this is the case, congratulations; you are now connected to your Cyton board.
 
 ## V. Connect yourself to OpenBCI
 To learn how to connect yourself to OpenBCI using your newly set up board, see the following tutorials:
-* [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup)
-* [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup)
-* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup)
+* [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)
+* [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md)
+* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md)

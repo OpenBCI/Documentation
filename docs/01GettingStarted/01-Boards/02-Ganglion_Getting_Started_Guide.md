@@ -28,7 +28,7 @@ The battery connector on the back can accept 3V to 12V DC power input. The pushb
 
 ### 2. OpenBCI Ganglion Dongle
 
-![Ganglion Dongle](assets/GettingStartedImages/Ganglion_dongle.JPG)
+![Ganglion Dongle](assets/GettingStartedImages/Ganglion_dongle.jpeg)
 
 Plug the OpenBCI Ganglion Dongle into your computer before launching the GUI. Additional dongles can be found in the [OpenBCI Shop](https://shop.openbci.com/products/ganglion-dongle).
 
@@ -124,6 +124,6 @@ Now that you've got your computer connected to the Ganglion, it's time to connec
 
 ## Connect yourself to OpenBCI
 To learn how to connect yourself to OpenBCI using your newly set up board, see the following tutorials:
-* [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup)
-* [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup)
-* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup)
+* [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)
+* [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md)
+* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md)
