@@ -16,7 +16,7 @@ Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GU
 
 * [Arduino Basics](https://www.arduino.cc/en/Guide/HomePage)
 * Knowledge of [Arduino](https://www.arduino.cc/reference/en/) or C-based programming
-* Experience running the OpenBCI GUI [from the Processing IDE](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci-gui-from-the-processing-ide) *(Optional)*
+* Experience running the OpenBCI GUI [from the Processing IDE](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) *(Optional)*
 
 
 ### Step 1 - Load the Example in the Arduino IDE
