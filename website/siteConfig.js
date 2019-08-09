@@ -39,10 +39,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Welcome', label: 'Documentation'},
+    {href: 'https://shop.openbci.com', label: 'Shop'},
+    {href: 'https://openbci.com/index.php/forum/', label: 'Forum'},
     {doc: '08FAQ/FAQLanding', label: 'FAQ'},
-    {doc: '07Examples/FocusArduino', label: 'Examples'},
-    {page: 'citations', label:'Citations'},
-    {page: 'help', label: 'Help'},
+    {href: 'https://github.com/OpenBCI', label: 'Github'},
     {search: true}
   ],
 
