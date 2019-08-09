@@ -11,7 +11,7 @@ They recently added an OpenBCI driver to their software, making it easy to use B
 
 **Windows:** BrainBay only works with the Windows operating system.
 
-**MacOS and Linux:** If you have Mac OS or Linux, you can use BrainBay through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](http://docs.openbci.com/Tutorials/12-Win7_VM_Installation)
+**MacOS and Linux:** If you have Mac OS or Linux, you can use BrainBay through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](09Deprecated/10-VirtualBox.md)
 
 ## Installation
 
@@ -41,7 +41,7 @@ To stream data live from your OpenBCI board within a BrainBay design, select Ins
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_select_openbci.png?raw=true" width="70%">
 
-After selecting your device, an EEG window will appear. Select your device's COM port. If you're using VirtualBox, our [VirtualBox tutorial](http://docs.openbci.com/Tutorials/12-Win7_VM_Installation) has a section on finding the COM port of a connected hardware device.
+After selecting your device, an EEG window will appear. Select your device's COM port. If you're using VirtualBox, our [VirtualBox tutorial](09Deprecated/10-VirtualBox.md) has a section on finding the COM port of a connected hardware device.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Third_party_software/BrainBay_COM3_unchecked.png?raw=true" width="50%">
 
