@@ -65,5 +65,5 @@ void OpenBCI_32bit_Library::sendChannelDataWifi(void)  {
 }
 ~~~  
 
-This code writes 32 bytes of data in the correct format and therefore as soon as it arrives at the WiFi Shield. The WiFi Shield will convert the 32 byte packet to the standard 33 byte [binary format](http://docs.openbci.com/Hardware/03-Cyton_Data_Format#cyton-data-format-binary-format) by moving the control byte `0xCn`, where `n` is `0-F` (hex), to the stop position and add add `0xA0` to the start position. This allows for a seamless integration with the tried and tested parsing systems already built for the Cyton.
+This code writes 32 bytes of data in the correct format and therefore as soon as it arrives at the WiFi Shield. The WiFi Shield will convert the 32 byte packet to the standard 33 byte [binary format](02Cyton/03-Cyton_Data_Format#binary-format) by moving the control byte `0xCn`, where `n` is `0-F` (hex), to the stop position and add add `0xA0` to the start position. This allows for a seamless integration with the tried and tested parsing systems already built for the Cyton.
 **Important** if you want to only send `20` bytes of data per packet, you still must send this `32` bytes with the proper start and stop bytes.

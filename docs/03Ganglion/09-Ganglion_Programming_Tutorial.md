@@ -3,9 +3,9 @@ id: GanglionProgram
 title: Ganglion Programming Tutorial
 ---
 
-This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device. If you want to compile the code in Arduino continue to the [Building From Source](http://docs.openbci.com/Hardware/09-Ganglion_Programming_Tutorial#ganglion-programming-tutorial-building-from-source) portion of the guide.
+This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device. If you want to compile the code in Arduino continue to the [Building From Source](#ganglion-programming-tutorial-building-from-source) portion of the guide.
 
-To program the Ganglion over the air, keep reading. To program using hardware, scroll all the way down to the [last section.](https://docs.openbci.com/Hardware/09-Ganglion_Programming_Tutorial#ganglion-programming-tutorial-setting-up-to-program-ganglion-using-hardware)
+To program the Ganglion over the air, keep reading. To program using hardware, scroll all the way down to the [last section.](#ganglion-programming-tutorial-setting-up-to-program-ganglion-using-hardware)
 
 **Please note, you do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.**
 
@@ -14,7 +14,7 @@ To program the Ganglion over the air, keep reading. To program using hardware, s
 
 [v2.0.0 Direct Download](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v2.0.0/DefaultGanglion.ino.Simblee.zip)
 
-You can read the release notes and more at the [on Github](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/latest) or jump down to [setup your mobile device for OTA programming](http://docs.openbci.com/Hardware/09-Ganglion_Programming_Tutorial#ganglion-programming-tutorial-setup-mobile-device-for-ota-programming) to continue
+You can read the release notes and more at the [on Github](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/latest) or jump down to [setup your mobile device for OTA programming](#ganglion-programming-tutorial-setup-mobile-device-for-ota-programming) to continue
 
 ## Building From source
 
@@ -259,7 +259,7 @@ The 0.1uF capacitor needs to be in between the `RESET` pin of the Ganglion and t
 
 ### Set Up Arduino to Program Your Ganglion
 
-Follow the guide at the top of this page called [Build From Source](http://docs.openbci.com/Hardware/09-Ganglion_Programming_Tutorial#ganglion-programming-tutorial-building-from-source) all that way down till _How To Create an OTA File_, then come back here.
+Follow the guide at the top of this page called [Build From Source](#ganglion-programming-tutorial-building-from-source) all that way down till _How To Create an OTA File_, then come back here.
 
 ### 'Simblee' selected and 'DefaultGanglion' open
 

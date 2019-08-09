@@ -13,7 +13,7 @@ One of the coolest parts of the WiFi Shield is its HTTP web server. For develope
 
 ## Prerequisites
 
-Follow the [WiFi Getting Started Guide](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-prerequisites) to get your WiFi Shield on your Wireless Network.
+Follow the [WiFi Getting Started Guide](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-prerequisites) to get your WiFi Shield on your Wireless Network.
 
 ## Get Wifi Shield on Local Wireless Network
 
@@ -41,7 +41,7 @@ To programmatically discover WiFi Shields on your local network use [Simple Serv
 
 [Python OpenBCI WiFi Driver](https://github.com/OpenBCI/OpenBCI_Python/pull/54) will implement SSDP for you.
 
-Use the [OpenBCI WiFi GUI](http://docs.openbci.com/Tutorials/03-Wifi_Getting_Started_Guide#wifi-getting-started-guide-get-wifi-shield-ip-mac-address-firmware-version-and-more-get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](http://docs.openbci.com/OpenBCI%20Software/07-OpenBCI_Hub#openbci-electron-hub-command-set-scan) to find WiFi Shields IP Address.
+Use the [OpenBCI WiFi GUI](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](06Software/01-OpenBCISoftware/07-OpenBCI_Hub.md#scan) to find WiFi Shields IP Address.
 
 Use a graphical user interface [Mac - Lan Scan](https://itunes.apple.com/us/app/lanscan/id472226235?mt=12)
 
@@ -53,7 +53,7 @@ In order to get low latency high-reliability wireless data transmission we will 
 
 ### Raw Output Mode
 
-In `raw` output mode the data format follows the OpenBCI [33byte Binary Data Format](http://docs.openbci.com/Hardware/03-Cyton_Data_Format#cyton-data-format-binary-format). Even the Ganglion over WiFi Shield will send in the 33byte with the first four channels containing data and the upper four channels are all zeros.
+In `raw` output mode the data format follows the OpenBCI [33byte Binary Data Format](02Cyton/03-Cyton_Data_Format.md#binary-format). Even the Ganglion over WiFi Shield will send in the 33byte with the first four channels containing data and the upper four channels are all zeros.
 
 ### JSON Output Mode
 
@@ -133,7 +133,7 @@ void OpenBCI_32bit_Library::sendChannelDataWifi(void)  {
 }
 ~~~  
 
-This code writes 32 bytes of data in the correct format and therefore as soon as it arrives at the Wifi shield. The Wifi shield will convert the 32 byte packet to the standard 33 byte [binary format](http://docs.openbci.com/Hardware/03-Cyton_Data_Format#cyton-data-format-binary-format) by moving the control byte `0xCn`, where `n` is `0-F` (hex), to the stop position and add add `0xA0` to the start position. This allows for a seamless integration with the tried and tested parsing systems already built for the Cyton.
+This code writes 32 bytes of data in the correct format and therefore as soon as it arrives at the Wifi shield. The Wifi shield will convert the 32 byte packet to the standard 33 byte [binary format](02Cyton/03-Cyton_Data_Format.md#binary-format) by moving the control byte `0xCn`, where `n` is `0-F` (hex), to the stop position and add add `0xA0` to the start position. This allows for a seamless integration with the tried and tested parsing systems already built for the Cyton.
 **Important** if you want to only send `20` bytes of data per packet, you still must send this `32` bytes with the proper start and stop bytes.
 
 ### JSON format
