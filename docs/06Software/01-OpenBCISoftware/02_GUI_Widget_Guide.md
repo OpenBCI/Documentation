@@ -178,7 +178,7 @@ This tutorial shows you how to create your own custom widgets for the [OpenBCI G
 #### Helpful Background Skills
 
 * Knowledge of [Processing](https://processing.org/) or Java-based programming
-* Experience with [running the OpenBCI GUI from the Processing IDE](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-running-the-openbci-gui-from-the-processing-ide)
+* Experience with [running the OpenBCI GUI from the Processing IDE](06Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
 * [Developer Setup using Visual Studio Code or Processing](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup)
 * Alternatively, you can edit using [Atom with Processing packages](https://atom.io)
 

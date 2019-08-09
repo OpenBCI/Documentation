@@ -55,7 +55,7 @@ Connect a leftover HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin 
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%">
 
-For WHY these connections are recommended, see [sections five and six](https://docs.openbci.com/Tutorials/01-Cyton_Getting%20Started_Guide#cyton-getting-started-guide-v-connect-yourself-to-openbci) of the Cyton Getting Started Guide.
+For WHY these connections are recommended, see [sections five and six](01GettingStarted/01-Boards/01-Cyton_Getting%_Started_Guide#v-connect-yourself-to-openbci.md) of the Cyton Getting Started Guide.
 
 After the cables are all connected as shown above, place the cap on the subject's head and inject a small amount of electrode gel using the included syringe. After each data recording session, be sure to clean the gel off the cap!
 
@@ -64,7 +64,7 @@ After the cables are all connected as shown above, place the cap on the subject'
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI-V4-Screenshot.jpg?raw=true" width="50%">
 
-Head over to the OpenBCI GUI [tutorial](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to set up your free live-streaming software!
+Head over to the OpenBCI GUI [tutorial](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to set up your free live-streaming software!
 
 ### Use Cases for OpenBCI GUI
 * OpenBCI device owners want to visualize their brainwaves!
@@ -81,14 +81,14 @@ Head over to the OpenBCI GUI [tutorial](https://docs.openbci.com/OpenBCI%20Softw
 * Run as a native application on macOS, Windows, and Linux.
 * Apply filters and other data processing tools to quickly clean raw data in real time
 * Use the GUI as a networking system to move data out of GUI into other apps over UDP, OSC, [LSL](https://github.com/OpenBCI/OpenBCI_LSL), and Serial.
-* Send data to [MATLAB](https://docs.openbci.com/3rd%20Party%20Software/01-Matlab), Neuropype (using LSL), and other [third-party softwares.](https://docs.openbci.com/3rd%20Party%20Software/00-3rdPartySoftware)
+* Send data to [MATLAB](06Software/02-CompatibleThirdPartySoftware/01-Matlab), Neuropype (using LSL), and other [third-party softwares.](06Software/00-SoftwareLanding.md#compatible-third-party-software)
 * Analyze data with Python. Links [HERE](https://github.com/OpenBCI/OpenBCI_Python) and [HERE.](https://github.com/OpenBCI/pyOpenBCI)
-* [Create a widget framework](https://docs.openbci.com/Tutorials/16-Custom_Widgets) that allows users to create their own experiments.
+* [Create a widget framework](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 * Output data into a saved file for later offline processing.
-* [Customize the layout](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI#the-openbci-gui-customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
+* [Customize the layout](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
 * Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
 
- **If you just want to visualize EEG, EMG, ECG data (and do some basic analysis) and save the data to start with, download the standalone OpenBCI [GUI](https://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) and connect it to an OpenBCI Cyton, CytonDaisy, or Ganglion!**
+ **If you just want to visualize EEG, EMG, ECG data (and do some basic analysis) and save the data to start with, download the standalone OpenBCI [GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) and connect it to an OpenBCI Cyton, CytonDaisy, or Ganglion!**
 
 
 ## Electrode Cap With Third-Party Bioamplifier Tutorial
