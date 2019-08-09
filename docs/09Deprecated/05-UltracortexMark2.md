@@ -87,8 +87,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 	* super glue
 	* sandpaper
 	* coarse flat & circular files
-	* some sort of flexible wiring (terminating in a female header) to connect the electrodes back to the
-	* OpenBCI board. We used stripped [ESK](https://openbci.myshopify.com/collections/frontpage/products/	openbci-electrode-starter-kit) electrodes & stripped touch-proof connector cabling from the [OpenBCI Board Kit](https://openbci.myshopify.com/collections/frontpage/products/openbci-8-bit-board-kit).
+	* some sort of flexible wiring (terminating in a female header) to connect the electrodes back to the OpenBCI board. We used stripped [ESK](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) electrodes & stripped touch-proof connector cabling from the [OpenBCI Board Kit](02Cyton/01-CytonBoard.md).
 	* an exacto/razor blade
 	* wirecutters
 	* needle-nose pliers

@@ -20,7 +20,7 @@ Designers & Engineers:
 
 ## THE COMPLETE ULTRACORTEX
 
-**Note:** the part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit) (8 channels) or the [OpenBCI 16-channel R&D Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-16-channel-r-d-kit) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
+**Note:** the part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](02Cyton/01-CytonBoard.md) (8 channels) or the [OpenBCI 16-channel R&D Kit](01GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
 ###3D-printed Parts:
 
@@ -49,12 +49,12 @@ Designers & Engineers:
 	* **Suggested Bolts** listed below (**x21**)
 	* 1/4" #4 Drive Screw listed below (**x8**) for mounting the BOARD_HOLDER and OpenBCI Board
 * Wiring (**x21**)
-	* We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) or from the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit).
+	* We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) or from the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](02Cyton/01-CytonBoard.md).
 * Dry electrodes by Florida Research Instruments
 	* (**18x**) Dry (spikey) electrodes to be installed in Ultracortex nodes with hair: [Disposable / Reusable Dry EEG Electrode ($0.60 each at 50+ quantity purchase) ](http://fri-fl-shop.com/product/tde-200/)
 	* (**3x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): [Disposable / Reusable Cup Wet/Dry EEG Electrode ($10.00 for 15) ](http://fri-fl-shop.com/product/disposable-reusable-dry-eeg-electrode-quantity-of-15-tde-200a1/)
 	* (**2x**) Ear Clip electrode (for reference): [TDI-430 Silver-Silver Chloride Ear Clip Electrode ($19.95 each)](http://fri-fl-shop.com/product/td-430-silver-disc-electrode-ear-clip/)
-* (**1x**) An [OpenBCI 32bit Board](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit) or an [OpenBCI 16-channel R&D Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-16-channel-r-d-kit)
+* (**1x**) An [OpenBCI 32bit Board](02Cyton/01-CytonBoard.md) or an [OpenBCI 16-channel R&D Kit](01GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md)
 * (**1x**) Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)
 * (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
 * (**~10x**) [Zip tie](http://www.amazon.com/Black-Zip-Tie-100-Bag/dp/B0001IMMJI)
@@ -128,7 +128,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 ####Wiring
 
-* (**21x**) We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes)) or the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit).
+* (**21x**) We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes)) or the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](02Cyton/01-CytonBoard.md).
 
 ![image](assets/DepImages/WIRING.jpg)
 
@@ -140,7 +140,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 ![image](assets/DepImages/TRODES.jpg)
 
-####(1x) An [OpenBCI 32bit Board](http://openbci.myshopify.com/collections/frontpage/products/openbci-32-bit-board-kit) (8 electrode channels) or an [OpenBCI 16-channel R&D Kit](http://openbci.myshopify.com/collections/frontpage/products/openbci-16-channel-r-d-kit) (16 electrode channels)
+####(1x) An [OpenBCI 32bit Board](02Cyton/01-CytonBoard.md) (8 electrode channels) or an [OpenBCI 16-channel R&D Kit](01GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md) (16 electrode channels)
 
 ![image](assets/DepImages/OPENBCIs.jpg)
 
@@ -284,7 +284,7 @@ Before creating your electrode mounts, it's a good idea to think about where you
 
 The Ultracortex node locations are based on the [10-20 system](https://goo.gl/gSwYw), which is the internationally accepted standard for electrode placement in the context of EEG.
 
-The images below indicates the default 10-20 electrode locations that the OpenBCI Graphical User Interface expects. This application is great for viewing/recording your EEG and can be found in our [OpenBCI_Processing](http://) repo. The blue nodes indicate the 8 default 10-20 locations (channels 1-8) of the 32bit Board. The red nodes indicate the default 10-20 locations of channels 9-16 when using the OpenBCI 16-channel R&D Kit.
+The images below indicates the default 10-20 electrode locations that the OpenBCI Graphical User Interface expects. This application is great for viewing/recording your EEG and can be found in our [OpenBCI_Processing](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/OpenBCI_GUI) repo. The blue nodes indicate the 8 default 10-20 locations (channels 1-8) of the 32bit Board. The red nodes indicate the default 10-20 locations of channels 9-16 when using the OpenBCI 16-channel R&D Kit.
 
 For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (channels 1-8 of the OpenBCI default settings) will be used. The channel to 10-20 system correlations are as follows:
 
@@ -474,7 +474,7 @@ Now that you have your Ultracortex assembled and comfortably adjusted to your he
 
 ![image](assets/DepImages/WEARING_IT2.jpg)
 
-Check out the [Getting Started w/ OpenBCI tutorial](http://docs.openbci.com/OpenBCI%20Software/01-OpenBCI_GUI) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
+Check out the [Getting Started w/ OpenBCI tutorial](01GettingStarted/00-GettingStartedLanding.md) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
 
 Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
 

@@ -1,6 +1,6 @@
 ---
 id: DeprecatedLanding
-title: DeprecatedDocs
+title: Deprecated Docs
 ---
 
 This directory houses all documentation that have been deprecated. These include:
