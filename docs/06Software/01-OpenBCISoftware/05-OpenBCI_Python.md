@@ -9,9 +9,9 @@ Please direct any questions, suggestions and bug reports to the [github repo](ht
 
 # pyOpenBCI
 
-<p align="center" href="">
-  Provide a stable Python driver for all OpenBCI Biosensors
-</p>
+
+## Provide a stable Python driver for all OpenBCI Biosensors
+
 
 This repo has been designed to be a more beginner friendly version of the [OpenBCI-Python](https://github.com/OpenBCI/OpenBCI_Python) repo. If there is anything you think we should add please open an issue.
 
