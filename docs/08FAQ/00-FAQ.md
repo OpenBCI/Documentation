@@ -5,11 +5,11 @@ title: Frequently Asked Questions
 
 Welcome to our **Frequently Asked Questions (FAQ)**! Select the appropriate question category to proceed:
 
-* [General](http://docs.openbci.com/FAQ/01-GeneralFrequentlyAskedQuestions)
-* [How do OpenBCI products go together?](http://docs.openbci.com/FAQ/02-HowProductsGoTogether)
-* [Hardware & Software](http://docs.openbci.com/FAQ/03-HardwareFAQ)
-* [Purchases & Payment Processing](http://docs.openbci.com/FAQ/04-PaymentFAQ)
-* [Shipping & Taxes](http://docs.openbci.com/FAQ/05-ShippingFAQ)
+* [General](08FAQ/01-GeneralFrequentlyAskedQuestions.md)
+* [How do OpenBCI products go together?](08FAQ/02-HowProductsGoTogether.md)
+* [Hardware & Software](08FAQ/03-HardwareFAQ.md)
+* [Purchases & Payment Processing](08FAQ/04-PaymentFAQ.md)
+* [Shipping & Taxes](08FAQ/05-ShippingFAQ.md)
 
 
 Our open-source, low-cost, and [research-grade](https://arxiv.org/pdf/1606.02438.pdf) hardware lowers the cost to entry. By creating these biosensing tools, we enable lower-budget institutions, academic researchers, DIY scientists, and a global population of makers to participate in this emerging field.
