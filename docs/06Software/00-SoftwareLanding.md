@@ -9,8 +9,8 @@ This section details the various OpenBCI-specific software and SDKs. Included he
 
  * [The OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
  * [GUI Widget Guide](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide)
- * [Python and OpenBCI](06Software/01-OpenBCISoftware/03-OpenBCI_Python.md)
- * [OpenBCI Hub](06Software/01-OpenBCISoftware/04-OpenBCI_HUB.md)
+ * [Python and OpenBCI](06Software/01-OpenBCISoftware/05-OpenBCI_Python.md)
+ * [OpenBCI Hub](06Software/01-OpenBCISoftware/07-OpenBCI_Hub.md)
 
 ## Compatible Third-Party Software
 

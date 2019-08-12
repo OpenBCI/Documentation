@@ -41,7 +41,7 @@ const siteConfig = {
     {href: 'https://openbci.com', label: 'Main Site'},
     {href: 'https://shop.openbci.com', label: 'Shop'},
     {href: 'https://openbci.com/index.php/forum/', label: 'Forum'},
-    {doc: 'docs/Welcome', label: 'Documentation'},
+    {doc: 'Welcome', label: 'Documentation'},
     {href: 'https://github.com/OpenBCI', label: 'Github'},
     {page: 'citations', label: 'Citations'},
     {search: true}

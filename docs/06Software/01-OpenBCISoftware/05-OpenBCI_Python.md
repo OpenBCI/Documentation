@@ -242,7 +242,7 @@ Generally speaking, the Cyton records at a high quality with less noise. Noise i
 
 Thank you so much (Danke schön! Merci beaucoup!) for visiting the project and we do hope that you'll join us on this amazing journey to make programming with OpenBCI fun and easy.
 
-### <a name="license"></a> License:
+### License
 
 MIT
 
