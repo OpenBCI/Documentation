@@ -27,7 +27,7 @@ For those who want to modify the headset design and need CAD files, go to the [U
 
 **Note:** the part quantities listed below assume you are making an electrode holder for all 35 nodes of the Ultracortex Mark 4. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) (8 channels) or the [OpenBCI CytonDaisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (16 channels). In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
-###3D-printed Parts:
+### 3D-printed Parts:
 The following parts are included in the Unassembled version of the Mark IV:
 
 * [FRAME](https://github.com/OpenBCI/Docs/tree/master/assets/MarkIV/STL_Directory) (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
@@ -73,7 +73,7 @@ The following parts are not included with the purchase of any configuration of t
 
 #### (1x) FRAME
 
-The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Becausing printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html), with build area of at least 200 mm square.
+The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html), with build area of at least 200 mm square.
 
 * FRAME (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
 	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
@@ -88,9 +88,9 @@ The model must be positioned correctly in the 3D print preparation software. The
 #### (21x) MECH_PARTS
 
 * [MECH_PARTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL)
-	* [INCERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
+	* [INSERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
 
-####(1x) BOARD_HOLDER
+#### (1x) BOARD_HOLDER
 
 * [BOARD_MOUNT](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
 
@@ -147,7 +147,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 ![image](assets/HeadwareImages/OPENBCIs.jpg)
 
-####(**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
+#### (**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
 
 ![image](assets/HeadwareImages/BATTERY.jpg)
 
@@ -239,25 +239,25 @@ Connect your ~500 mAh lithium ion rechargeable batter to the back of your Cyton 
 
 Fold the battery and its wires neatly behind the board before inserting the board into the BOARD_MOUNT:
 
-![image](assets/HeadwareImages/MarkIV_cyton_cover_1.JPG)
+![image](assets/HeadwareImages/MarkIV_cyton_cover_1.jpeg)
 
 Snap your Cyton board onto the four pegs on the outside of the BOARD_MOUNT:
 
-![image](assets/HeadwareImages/MarkIV_cyton_cover_2.JPG)
+![image](assets/HeadwareImages/MarkIV_cyton_cover_2.jpeg)
 
 You can then secure the OpenBCI Board to the BOARD_MOUNT by clipping BOARD_COVER over top.
 
-![image](assets/HeadwareImages/MarkIV_cyton_cover_3.JPG)
+![image](assets/HeadwareImages/MarkIV_cyton_cover_3.jpeg)
 
 The pins and female headers should fit neatly into the BOARD_COVER holes as shown.
 
 Only have a black battery pack with AA batteries? Tape the pack to your Mark IV in the location shown. As long as you use an 8-channel setup, the battery pack won't overlap with any of the electrode locations. Thread the battery pack wire through the hole in the BOARD_MOUNT as shown.
 
-![image](assets/HeadwareImages/MarkIV_battery_pack_1.JPG)
+![image](assets/HeadwareImages/MarkIV_battery_pack_1.jpeg)
 
 Connect your OpenBCI board to the battery pack, place it on the BOARD_MOUNT and snap the BOARD_COVER into place. Your Mark IV should look like the image below.
 
-![image](assets/HeadwareImages/MarkIV_battery_pack_2.JPG)
+![image](assets/HeadwareImages/MarkIV_battery_pack_2.jpeg)
 
 
 
@@ -291,8 +291,8 @@ First screw your two FLAT ELECTRODE UNITS in the front two nodes of the frame.
 
 Then screw 6 SPIKEY ELECTRODE UNITS in the following nodes of the frame.
 
-<!-- ![image](../assets/images/MarkIV/MarkIV_spiky_units.JPG) -->
 ![image](assets/HeadwareImages/Assembly_CFS.JPG)
+<!-- ![image](../assets/images/MarkIV/MarkIV_spiky_units.JPG) -->
 
 ### Connect wiring to OpenBCI
 
