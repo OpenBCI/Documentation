@@ -117,7 +117,7 @@ The Ganglion Signal window in the lower left of the GUI is one of the many other
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/headband-images/Headband_Cyton_Front.JPG?raw=true" width="50%">
 
-The Cyton board supports eight channels of EEG/EMG/EEG input and can stream data over [bluetooth](02Cyton/03-Cyton_Data_Format.md) or [wifi](01GettingStarted/01-Boards//03-Wifi_Getting_Started_Guide.md). In this tutorial we will show you how to obtain three frontal lobe measurements and five temporal lobe measurements and stream the data over bluetooth!
+The Cyton board supports eight channels of EEG/EMG/EEG input and can stream data over [bluetooth](02Cyton/03-Cyton_Data_Format.md) or [wifi](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md). In this tutorial we will show you how to obtain three frontal lobe measurements and five temporal lobe measurements and stream the data over bluetooth!
 
 #### Battery
 
