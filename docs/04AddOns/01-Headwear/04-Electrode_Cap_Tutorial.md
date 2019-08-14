@@ -55,7 +55,7 @@ Connect a leftover HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin 
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%">
 
-For WHY these connections are recommended, see [sections five and six](01GettingStarted/01-Boards/01-Cyton_Getting%_Started_Guide#v-connect-yourself-to-openbci.md) of the Cyton Getting Started Guide.
+For WHY these connections are recommended, see [sections five and six](01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide#v-connect-yourself-to-openbci.md) of the Cyton Getting Started Guide.
 
 After the cables are all connected as shown above, place the cap on the subject's head and inject a small amount of electrode gel using the included syringe. After each data recording session, be sure to clean the gel off the cap!
 
