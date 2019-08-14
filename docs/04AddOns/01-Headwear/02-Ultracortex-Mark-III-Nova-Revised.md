@@ -474,7 +474,7 @@ Now that you have your Ultracortex assembled and comfortably adjusted to your he
 
 ![image](assets/HeadwareImages/WEARING_IT2.jpg)
 
-Check out the [Getting Started w/ OpenBCI tutorial](06Software/01-OpenBCI_GUI.md) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
+Check out the [Getting Started w/ OpenBCI tutorial](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
 
 Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
 
