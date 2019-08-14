@@ -64,6 +64,13 @@
       "Third-Party Hardware": [
           "05ThirdParty/ThirdPartyLanding",
         {
+
+          "type": "subcategory",
+          "label": "EmotiBit",
+          "ids": [
+            "05ThirdParty/00-EmotiBit/EmotiBit_Guide"
+          ]
+          }, {
           "type": "subcategory",
           "label": "Myoware",
           "ids": [
@@ -73,7 +80,9 @@
           }, {
           "type": "subcategory",
           "label": "Pulse Sensor",
-          "ids": []
+          "ids": [
+            "05ThirdParty/02-Pulse_Sensor/Pulse_Sensor_Landing"
+          ]
           }, {
           "type": "subcategory",
           "label": "WiFi Shield",
