@@ -5,6 +5,14 @@ title: Third-Party Hardware
 
 This directory contains documents to explain the integration between OpenBCI and compatible third-party hardware.
 
+## EmotiBit
+
+Designed by our good friend Sean Montgomery and his team, [EmotiBit](emotibit.com) can stream 16+ signals from the body (EDA, 3-wavelength PPG, high-res body temperature, humidity and a 9-axis IMU). We think it's the perfect complement to add emotional, physiological and movement data to your EEG recordings! 
+
+EmotiBit is a wearable sensor module for capturing high-quality emotional, physiological, and movement data. Easy-to-use and scientifically-validated sensing lets you enjoy wireless data streaming to any platform or direct data recording to the built-in SD card. Customize the Arduino-compatible hardware and fully open-source software to meet any project needs!
+
+**Tutorial Coming Soon!**
+
 ## MyoWare
 
 ![myoware](assets/ThirdPartyImages/myoware.jpg)

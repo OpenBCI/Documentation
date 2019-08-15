@@ -5,14 +5,14 @@ title: EmotiBit Guide
 ### Overview
 This is the draft for the EmotiBit guide.
 ![EmotiBit](assets/ThirdPartyImages/Emotibit.png)
-[Ganglion section](03Ganglion/02-Ganglion.md#push-button)
+
 
 ### Materials Needed
 1.
 2.
 
 ### How to use it
-![EmotiBit_setup](assets/ThirdPartyImages/EmotiBit_setup.png)
+![EmotiBit_setup](../../assets/ThirdPartyImages/Emotibit_setup.PNG)
 ### 1. Stack
 Stack EmotiBit with any Adafruit Feather module, insert an SD card, and plug in a battery.
 
