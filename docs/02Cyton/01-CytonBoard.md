@@ -17,5 +17,5 @@ Included will be:
 * [**OpenBCI Cyton SDK**](02Cyton/04-OpenBCI_Cyton_SDK.md) — Goes over the byte string command protocol that is compatible for use with the OpenBCI Cyton Board.
 * [**OpenBCI Board Programming Tutorial**](02Cyton/05-Cyton_Board_Programming_Tutorial.md) — Tutorial explaining how to reprogram the OpenBCI Cyton Board using the OpenBCI Dongle and your PC, allowing you to update firmware or hope to customize the board. *Not needed if you wish to use the board out-of-box*
 * [**OpenBCI Radio Programming Tutorial**](02Cyton/06-Cyton_Radios_Programming_Tutorial.md) — Learn how to manually program the Radios on the Cyton and Dongle. *Not needed if you wish to use the board out-of-box*
-* [**External Trigger on OpenBCI Cyton Board**](02Cyton/06-External_Trigger_Cyton_Example.md) — Shows how to add an external trigger to the OpenBCI data stream to allow for precise timing between external events and the data stream.
+* [**External Trigger on OpenBCI Cyton Board**](02Cyton/07-External_Trigger_Cyton_Example.md) — Shows how to add an external trigger to the OpenBCI data stream to allow for precise timing between external events and the data stream.
 * [**Using SD Card with OpenBCI**](02Cyton/09-Using_SD_Card_with_OpenBCI.md) — Covers how to add an SD card for local storage to OpenBCI.
