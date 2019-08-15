@@ -134,11 +134,18 @@
         ],
         "Example Projects": [
           "07Examples/ExamplesLanding",
+
           {
             "type": "subcategory",
             "label": "Arduino Focus Example",
             "ids": [
               "07Examples/FocusArduino"
+            ]
+          },{
+              "type": "subcategory",
+            "label": "Community Page Projects",
+            "ids": [
+              "07Examples/CommunityPageProjects"
             ]
           }
         ],
