@@ -48,7 +48,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 &nbsp;&nbsp;&nbsp;&nbsp;- Example: `sudo usermod -a -G dialout susieQ`<br>
 3. Restart Ubuntu<br>
 4. Try "id" command again<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Repeart step one<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Repeat step one<br>
 </details></p>
 
 ## Installing the OpenBCI GUI as a "Standalone" Application

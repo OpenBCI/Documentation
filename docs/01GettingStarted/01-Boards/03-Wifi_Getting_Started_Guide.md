@@ -198,7 +198,7 @@ Launch your web browser and navigate to http://192.168.4.1/wifi to start the WiF
 
 A success page will load with a hyperlink to the WiFi Manager.
 
-![iPhone wifi manager start request](assets/GettingStartedImages/wifi_manager_started.PNG)
+![iPhone wifi manager start request](../../assets/GettingStartedImages/wifi_manager_start.PNG)
 
 You will be rerouted to the now started WiFi Manager.
 
@@ -353,19 +353,19 @@ The Cyton will default to a sample rate of 1000Hz with a latency of 10ms. For th
 
 Press `START SYSTEM` when you're ready to begin streaming.
 
-![wifi cyton start system](assets/images/wifi_cyton_start_system.png)
+![wifi cyton start system](../../assets/images/wifi_cyton_start_system.png)
 
 Press `Start Data Stream` to begin streaming!
 
-![cyton wifi starting data stream](assets/images/wifi_cyton_data_stream_start.png)
+![cyton wifi starting data stream](../../assets/images/wifi_cyton_data_stream_start.png)
 
 When you are finished recording, you may press `Stop Data Stream`
 
-![cyton wifi stopping data stream](assets/images/wifi_cyton_data_stream_stop.png)
+![cyton wifi stopping data stream](../../assets/images/wifi_cyton_data_stream_stop.png)
 
 Then end your session by pressing `STOP SYSTEM` from the `System Control Panel` drop down.
 
-![cyton wifi stop system](assets/images/wifi_cyton_stop_system.png)
+![cyton wifi stop system](../../assets/images/wifi_cyton_stop_system.png)
 
 If you are unable to connect to the board
 
