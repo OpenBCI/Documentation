@@ -8,9 +8,9 @@ This is the draft for the EmotiBit guide.
 
 
 ### Materials Needed
-1.
-2.
-3.
+- 
+- 
+- 
 
 ### How to use it
 ![EmotiBit_setup](../../assets/ThirdPartyImages/Emotibit_setup.PNG)
