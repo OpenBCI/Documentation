@@ -6,6 +6,7 @@ title: EmotiBit Guide
 This is the draft for the EmotiBit guide.
 ![EmotiBit](assets/ThirdPartyImages/Emotibit.png)
 
+EmotiBit is a wearable sensor module for capturing high-quality emotional, physiological, and movement data. Easy-to-use and scientifically-validated sensing lets you enjoy wireless data streaming to any platform or direct data recording to the built-in SD card.
 
 ### Materials Needed
 - 
