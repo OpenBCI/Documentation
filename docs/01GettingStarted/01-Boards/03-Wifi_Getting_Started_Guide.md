@@ -176,13 +176,13 @@ Before the WiFi Shield has joined a network, the Shield acts as a WiFi hotspot, 
 
 To connect your WiFi shield to your local WiFi network (or any other WiFi network), use any WiFi-enabled device to connect to the WiFi shield hotspot. Once connected to the WiFi Shield's network go to http://192.168.4.1/wifi. A link to go to the WiFi manager should then be clicked and you will be taken to the WiFi Manager page. Then you can scan for wireless networks and save your wireless network credentials. A captive touch portal as shown in the screenshots below may appear after hitting the http://192.168.4.1/wifi endpoint, if so, continue on either page.
 
-Follow the below example that goes through the steps of connecting the WiFi Shield to a local WiFi networked called _MeerketManor_. **Note:** in your case the network will not be called _MeerketManor_ but will instead be the name of whatever WiFi network you wish to connect your WiFi Shield to and share data across.
+Follow the below example that goes through the steps of connecting the WiFi Shield to a local WiFi networked called _MeerkatManor_. **Note:** in your case the network will not be called _MeerkatManor_ but will instead be the name of whatever WiFi network you wish to connect your WiFi Shield to and share data across.
 
 ### WiFi Station Example
 
-Your local WiFi network is called _MeerketManor_ and it is password protected. You turn on the WiFi on your smartphone and search for WiFi network options. Additionally, your WiFi Shield is connected to a battery and powered on (and not connected to an OpenBCI Board, or if Cyton, `EXT PWR` is OFF). Note what the D2 light does at start-up, if your In your iPhone's WiFi network options, you see _MeerketManor_ and "OpenBCI-A4AD" (the last 4 characters will be different in your case).
+Your local WiFi network is called _MeerkatManor_ and it is password protected. You turn on the WiFi on your smartphone and search for WiFi network options. Additionally, your WiFi Shield is connected to a battery and powered on (and not connected to an OpenBCI Board, or if Cyton, `EXT PWR` is OFF). Note what the D2 light does at start-up, if your In your iPhone's WiFi network options, you see _MeerkatManor_ and "OpenBCI-A4AD" (the last 4 characters will be different in your case).
 
-![iPhone Connected to MeerketManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
+![iPhone Connected to MeerkatManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
 
 You click "OpenBCI-A4AD", in an attempt to connect to the WiFi Shield's hotspot.
 
@@ -208,11 +208,11 @@ Click _Configure WiFi_ to scan for nearby wireless networks or click _Configure 
 
 ![Captive touch portal first screen](assets/GettingStartedImages/wifi_captive_touch_first_screen.PNG)
 
-On the next screen, see that _MeerketManor_ is listed as a possible network for the WiFi Shield to join. Select _MeerketManor_ and enter the password for the network and press _save_.
+On the next screen, see that _MeerkatManor_ is listed as a possible network for the WiFi Shield to join. Select _MeerkatManor_ and enter the password for the network and press _save_.
 
 ![Captive touch portal second screen](assets/GettingStartedImages/wifi_captive_touch_second_screen.PNG)
 
-If the _MeerketManor_ password was entered correctly, then the WiFi Shield will join _MeerketManor_ after a quick reboot and every time the network is within range. Have fun streaming your brain waves over WiFi!
+If the _MeerkatManor_ password was entered correctly, then the WiFi Shield will join _MeerkatManor_ after a quick reboot and every time the network is within range. Have fun streaming your brain waves over WiFi!
 
 **Note:** the OpenBCI WiFi shield cannot be paired with multiple WiFi networks. However, if the WiFi Shield is out of range of the network it is currently paired with, it will reappear as a hotspot again, you'll see the D2 light flash **10 times in 2 seconds**. At this point, if you reconnect to the hotspot and then connect the WiFi Shield to a different WiFi network. The previous network credentials will be overwritten by the new ones.
 
@@ -250,7 +250,7 @@ You want to directly connect your computer with the WiFi Shield. Your WiFi Shiel
 
 Connect your computer or phone to the WiFi Shield by joining the hotspot (a.k.a. wireless network, soft access point) broadcasted by the WiFi Shield.
 
-![iPhone Connected to MeerketManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
+![iPhone Connected to MeerkatManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
 
 Click "OpenBCI-A4AD", where your WiFi Shield is some other name such as OpenBCI-E318, in an attempt to connect to the WiFi Shield's hotspot.
 
@@ -287,13 +287,13 @@ To connect your WiFi shield to your local WiFi network (or any other WiFi networ
 * Once you connect your WiFi shield to a network, it will no longer appear in your WiFi options with its "OpenBCI-XXXX" unique ID. To make it reappear, you must first "ERASE CREDENTIALS" of the WiFi Shield from the WIFI SHIELDS configuration inside the OpenBCI GUI
 * The WiFi shield does not work for Enterprise level security. Use your cellphone as a hot spot or set up your own wifi network if this is an issue. Update to firmware v2.0.0 or later to use WiFi Direct as another alternative.
 
-Follow the below example that goes through the steps of connecting the WiFi Shield to a local WiFi networked called _MeerketManor_. **Note:** in your case the network will not be called _MeerketManor_ but will instead be the name of whatever WiFi network you wish to connect your WiFi Shield to and share data across.
+Follow the below example that goes through the steps of connecting the WiFi Shield to a local WiFi networked called _MeerkatManor_. **Note:** in your case the network will not be called _MeerkatManor_ but will instead be the name of whatever WiFi network you wish to connect your WiFi Shield to and share data across.
 
 ### Example
 
-Your local WiFi network is called _MeerketManor_ and it is password protected. You turn on the WiFi on your smartphone and search for WiFi network options. Additionally, your WiFi Shield is connected to a battery and powered on (and not connected to an OpenBCI Board!). In your iPhone's WiFi network options, you see _MeerketManor_ and "OpenBCI-A4AD" (the last 4 characters will be different in your case).
+Your local WiFi network is called _MeerkatManor_ and it is password protected. You turn on the WiFi on your smartphone and search for WiFi network options. Additionally, your WiFi Shield is connected to a battery and powered on (and not connected to an OpenBCI Board!). In your iPhone's WiFi network options, you see _MeerkatManor_ and "OpenBCI-A4AD" (the last 4 characters will be different in your case).
 
-![iPhone Connected to MeerketManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
+![iPhone Connected to MeerkatManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
 
 You click "OpenBCI-A4AD", in an attempt to launch the captive touch portal.
 
@@ -305,11 +305,11 @@ After a couple seconds a captive touch portal will appear on the computer, phone
 
 ![Captive touch portal first screen](assets/GettingStartedImages/wifi_captive_touch_first_screen.PNG)
 
-On the next screen, see that _MeerketManor_ is listed as a possible network for the WiFi Shield to join. Select _MeerketManor_ and enter the password for the network and press _save_.
+On the next screen, see that _MeerkatManor_ is listed as a possible network for the WiFi Shield to join. Select _MeerkatManor_ and enter the password for the network and press _save_.
 
 ![Captive touch portal second screen](assets/GettingStartedImages/wifi_captive_touch_second_screen.PNG)
 
-If the _MeerketManor_ password was entered correctly, then the WiFi Shield will join _MeerketManor_ after a quick reboot and every time the network is within range. Have fun streaming your brain waves over WiFi!
+If the _MeerkatManor_ password was entered correctly, then the WiFi Shield will join _MeerkatManor_ after a quick reboot and every time the network is within range. Have fun streaming your brain waves over WiFi!
 
 **Note:** the OpenBCI WiFi shield cannot be paired with multiple WiFi networks. However, if the WiFi Shield is out of range of the network it is currently paired with, it will reappear as a hotspot again. At this point, if you reconnect to the hotspot and then connect the WiFi Shield to a different WiFi network. The previous network credentials will be overwritten by the new ones.
 
@@ -353,19 +353,19 @@ The Cyton will default to a sample rate of 1000Hz with a latency of 10ms. For th
 
 Press `START SYSTEM` when you're ready to begin streaming.
 
-![wifi cyton start system](../../assets/images/wifi_cyton_start_system.png)
+![wifi cyton start system](../../assets/GettingStartedImages/wifi_cyton_start_system.png)
 
 Press `Start Data Stream` to begin streaming!
 
-![cyton wifi starting data stream](../../assets/images/wifi_cyton_data_stream_start.png)
+![cyton wifi starting data stream](../../assets/GettingStartedImages/wifi_cyton_data_stream_start.png)
 
 When you are finished recording, you may press `Stop Data Stream`
 
-![cyton wifi stopping data stream](../../assets/images/wifi_cyton_data_stream_stop.png)
+![cyton wifi stopping data stream](../../assets/GettingStartedImages/wifi_cyton_data_stream_stop.png)
 
 Then end your session by pressing `STOP SYSTEM` from the `System Control Panel` drop down.
 
-![cyton wifi stop system](../../assets/images/wifi_cyton_stop_system.png)
+![cyton wifi stop system](../../assets/GettingStartedImages/wifi_cyton_stop_system.png)
 
 If you are unable to connect to the board
 
