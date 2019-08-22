@@ -77,15 +77,15 @@ Move the `OpenBCI_GUI` directory anywhere you like.
 
 2. Next, right click on `OpenBCI_GUI.exe` and select `Properties`. The following window should pop up:<br>
 
-![gui windows properties menu](assets/SoftwareImages/OpenBCI Software/GUI-WindowsProperties.PNG)<br>
+![gui windows properties menu](../../assets/SoftwareImages/OpenBCISoftware/GUI-WindowsProperties.png)<br>
 
 3. Select the `Compatibility` tab at the top of this window, and then click `Change high DPI settings`.<br>
 
-![gui windows properties compatibility](assets/SoftwareImages/OpenBCI Software/GUI_WindowsProperties_Compatibility.PNG)<br>
+![gui windows properties compatibility](../../assets/SoftwareImages/OpenBCISoftware/GUI_WindowsProperties_Compatibility.png)<br>
 
 4. In the section labeled `High DPI scaling override`, check the box `Override high DPI scaling behavior` and change from `Application` to `System (Enhanced)`.<br>
 
-![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/GUI_Windows_OverrideHighDPI.PNG)<br>
+![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/GUI_Windows_OverrideHighDPI.png)<br>
 
 5. That's it! Once the settings have been changed, restart the GUI!
 
