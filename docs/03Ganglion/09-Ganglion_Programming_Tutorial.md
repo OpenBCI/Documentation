@@ -134,14 +134,14 @@ Next, download the necessary files [here](https://github.com/biomurph/Ganglion_O
 
 Move the files called `mkdfuzip`, `nrfutil_macosx`, and `platform.txt` into your `Simblee/1.1.0` folder. **Restart or launch Arduino**.
 
-![Create OTA File](assets/GanglionImages/ganglion_export-compiled-binary.png)
-
+![Create OTA File](../assets/GanglionImages/ganglion_export-compiled-binary.png)
+<br>
 ![OTA File Created](assets/GanglionImages/ganglion_ota-zip-created.png)
-
+<br><br>
 ![Change Zip Name](assets/GanglionImages/ganglion_ota-zip-nameChange.png)
-
+<br>
 Now you're ready to create custom Ganglion firmware that is packaged correctly for OTA programming! This walk through will use example code as an example.  
-**IMPORTANT NOTE:** Whenever you want to create or modify Ganglion firmware, You must **Always** put the line  
+**IMPORTANT NOTE:** Whenever you want to create or modify Ganglion firmware, You must **xAlways** put the line  
 `#include <OpenBCI_Ganglion_Library.h>`  
 at the top of your code!  
 To create the OTA files, simply select `Export compiled Binary` from the `Sketch` menu. The Arduino IDE will take a few moments, and the tools you just installed will create the `.zip` file you need for OTA ***right in the sketch folder*** right beside your sketch! Cool! Go ahead and change the name of the file to remove the `.ino.Simblee` and you are good to go.
@@ -259,7 +259,7 @@ The 0.1uF capacitor needs to be in between the `RESET` pin of the Ganglion and t
 
 ### Set Up Arduino to Program Your Ganglion
 
-Follow the guide at the top of this page called [Build From Source](#ganglion-programming-tutorial-building-from-source) all that way down till _How To Create an OTA File_, then come back here.
+Follow the guide at the top of this page called _Build From Source_ all the way down till _How To Create an OTA File_, then come back here.
 
 ### 'Simblee' selected and 'DefaultGanglion' open
 

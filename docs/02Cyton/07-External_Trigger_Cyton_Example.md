@@ -34,11 +34,9 @@ Firmware 3.x.x brings a long requested out-of-the-box ability to read from analo
 
 Learn more about board modes in the [Cyton SDK](02Cyton/04-OpenBCI_Cyton_SDK.md#firmware-v300-new-commands-board-mode).
 
-##External Triggering The Easy Way (Firmware 2.x.x)
+### External Triggering The Easy Way (Firmware 2.x.x)
 
 Update to firmware version 3.x.x using the tutorial [**here**](02Cyton/05-Cyton_Board_Programming_Tutorial)! May all your troubles disappear!  
-
-##External Triggering The Easy Way (Firmware 1.x.x)
 
 ### Sample Code Links
 The code used in this example is located [**here**](https://github.com/OpenBCI/OpenBCI_Button_Trigger) for those of you who want to play along at home. There's a tutorial for how to program the 32bit Board [**here**](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
@@ -68,7 +66,7 @@ In the setup function, we set the pin direction and prime the button variables. 
 		// more stuff...
 	}
 
-Then, in the loop, we want to check for the rising edge of the button press, make note of it in the auxData array, and set the write-to-SD flag (if you like). Finally, we want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](02Cyton/03-Cyton_Data_Format) for data packet anatomy) There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
+Then, in the loop, we want to check for the rising edge of the button press, make note of it in the auxData array, and set the write-to-SD flag (if you like). Finally, we want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet anatomy) There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
 
 	pushButtonValue = digitalRead(pushButton);    // feel the PROG button
 	if (pushButtonValue != lastPushButtonValue){  // if it's changed,
@@ -105,11 +103,11 @@ And here's an example of what the data looks like after it's been logged to the 
 	DF,FFFCDE,FFFC00,FFFC49,FFFAC3,FFFBD0,FFFC91,FFFB03,FFFCB0
 
 
-##External Triggering The Harder Way (Firmware 1.x.x)
+### External Triggering The Harder Way (Firmware 1.x.x)
 Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the OpenBCI 32bit Board with the external signal generating system using a few low-cost components.
 Our goal with the OpenBCI board is to make biosensing safe and fun. The biggest part of the safety part is making sure that you can't plug yourself accidentally into the mains electrical supply (yikes!). If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
 
-###Optoisolation
+### Optoisolation
 
 
 ![Optoisolator Schematic](assets/CytonImages/ExternalTriggerCNY17.jpg)

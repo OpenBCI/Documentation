@@ -465,7 +465,7 @@ Your Mark IV is now ready to use 16 channels! It should look like the images bel
 
 Put the Ultracortex Mark IV onto your head and gradually tighten the electrode units until the electrodes are snugly (but comfortably) against your scalp. Tighten the electrodes and comfort units by turning them clockwise, and loosen them by turning counterclockwise.
 
-**Be careful** not to strain the electrode wires when twisting the electrode units, or you may separate the wire from the electrode itself.
+**Be careful** not to strain the electrode wires when twisting the electrode units, or you may separate the wire from the electrode itself. You **must** disconnect a blue electrode mount from its colored wire before turning it.
 
 
 ### Examine your brain waves!

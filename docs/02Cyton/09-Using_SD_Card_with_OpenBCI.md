@@ -5,20 +5,20 @@ title: Using SD Card with OpenBCI
 
 [Suggest changes to this tutorial](https://github.com/OpenBCI/Docs/edit/master/Tutorials/09-Using_SD_Card_with_OpenBCI.md)
 
-##Overview
+## Overview
 There are many situations where logging biometric data to local storage may be desirable. You may be doing a sleep study, or out on the road with your OpenBCI, and the wireless connection to a PC may be tenuous. The amount of data you are producing may require more bandwidth than the BLE connection can handle. This tutorial will cover the basics of adding an SD card for local storage to OpenBCI, how the data is formatted on the card, and how to retrieve the data after you've logged it.
 
-##SD Card Basics
+## SD Card Basics
 ![SD_Class](assets/CytonImages/SDclass.jpg)
 ![SD_Cards](assets/CytonImages/MicroSDcards.jpg)
 
-First thing to know is that low-cost cards and slow speed cards are **not** recommended. When shopping for SD cards, make sure to look for high quality (Scan Disk, eg) and high speed (class 10 minimum). Look for the symbols to the right to know you are getting the right kind of card. You will also want to look for a card that has alot of memory. OpenBCI will generate about 1 mega bye of data per minute when it is recording 8 channels at the default rate of 250Hz. That's alot of data!
+First thing to know is that low-cost cards and slow speed cards are **not** recommended. When shopping for SD cards, make sure to look for high quality (Scan Disk, eg) and high speed (class 10 minimum). Look for the symbols to the right to know you are getting the right kind of card. You will also want to look for a card that has a lot of memory. OpenBCI will generate about 1 mega bye of data per minute when it is recording 8 channels at the default rate of 250Hz. That's a lot of data!
 
 We've used these two cards in the OpenBCI lab, and they both work great.
 
 People have reported issues with _Transcend_ and _Samsung_ Class 10 cards.
 
-###Formatting
+### Formatting
 ![DiskUtility](assets/CytonImages/DiskUtil_Erase.jpg)
 ![SecureErase](assets/CytonImages/DiskUtil_eraseSecure.jpg)
 
@@ -32,8 +32,8 @@ Another, and some say better, option is to use the SD Association's own formatte
 
 In our experience, it's best not to have any sort of file structure on the SD card. All files that OpenBCI boards create will be saved in the root.
 
-###Block Writing
-In order to write OpenBCI data to the SD card in a timely fasion, we are using a block writing technique in Arduino and chipKIT. Blocks are 512 bytes. That means that OpenBCI will collect bytes as they come in from the sensors, and when a block is complete (512 bytes) it is written to the file on SD card. First, of course, the file needs to be created, and memory on the card allocated. OpenBCI uses ASCII commands to control the creation of a file. The following key commands allocate different amounts of SD card memory
+### Block Writing
+In order to write OpenBCI data to the SD card in a timely fashion, we are using a block writing technique in Arduino and chipKIT. Blocks are 512 bytes. That means that OpenBCI will collect bytes as they come in from the sensors, and when a block is complete (512 bytes) it is written to the file on SD card. First, of course, the file needs to be created, and memory on the card allocated. OpenBCI uses ASCII commands to control the creation of a file. The following key commands allocate different amounts of SD card memory
 
     'A': BLOCK_COUNT = BLOCK_5MIN	= 5.6Mb
     'S': BLOCK_COUNT = BLOCK_15MIN	= 17Mb
@@ -47,15 +47,15 @@ In order to write OpenBCI data to the SD card in a timely fasion, we are using a
 
 The OpenBCI Processing sketch allows for selecting recording blocks from 'A' to 'L'. The small 'a' block allocation is for testing. You can use it if you like. Make sure the card is installed correctly on the OpenBCI board before you send the command to create the file. If you don't have the card installed, all is not lost! The program will hang until a valid card is installed and the file created. One of the nice things about writing the data in blocks is that once the block is written, it is on the card. In other words, if you create a file that allocates 30 minutes of record time and then stop your recording after only 15 minutes (by resetting the uC, or powering down the board, or pulling out the card) all of the data that was written will still be on the card!
 
-##OpenBCI Formatting
-###File Naming
-We are using the SDFat library, which limits our file name to the old 8.3 format (8 charcter file name, three character file type extension). OpenBCI automatically creates SD files with an incrementing counter as part of the file name. For example, the first file that you ever make with your OpenBCI board will be called OBCI_01.TXT and the next one will be called OBCI_02.TXT. The numbering counts up in Hexadecimal until you get to file OBCI_FF.TXT, the next file will be OBCI_00.TXT. So, you have up to 256 discreet files that you can make on the SD card before you overwrite anything. The file name counter values are saved in the Arduino and chipKIT EEPROM, and incremented every time you create a file.
+### OpenBCI Formatting
+#### File Naming
+We are using the SDFat library, which limits our file name to the old 8.3 format (8 character file name, three character file type extension). OpenBCI automatically creates SD files with an incrementing counter as part of the file name. For example, the first file that you ever make with your OpenBCI board will be called OBCI_01.TXT and the next one will be called OBCI_02.TXT. The numbering counts up in Hexadecimal until you get to file OBCI_FF.TXT, the next file will be OBCI_00.TXT. So, you have up to 256 discreet files that you can make on the SD card before you overwrite anything. The file name counter values are saved in the Arduino and chipKIT EEPROM, and incremented every time you create a file.
 
-###Data Logging Format
-We tried to make it as easy as possible to log the data, given the 512 block limitation. (A sample of a saved file is to the right) Because it's difficult to manage signed decimal values in a timely fasion, we are writing all of the data in hexadecimal. That also makes it easier to anticipate file size and record time. In the example you can see that each ADS channel value is a 24bit number separated by a comma. The Accelerometer/Aux values are 16bit, and only written when they get updated or are used (activated). In this example, the Accelerometer is sampling at 50Hz, while the ADS1299 is sampling at 250Hz.
+### Data Logging Format
+We tried to make it as easy as possible to log the data, given the 512 block limitation. (A sample of a saved file is to the right) Because it's difficult to manage signed decimal values in a timely fashion, we are writing all of the data in hexadecimal. That also makes it easier to anticipate file size and record time. In the example you can see that each ADS channel value is a 24bit number separated by a comma. The Accelerometer/Aux values are 16bit, and only written when they get updated or are used (activated). In this example, the Accelerometer is sampling at 50Hz, while the ADS1299 is sampling at 250Hz.
 
 
-	Sample#, 8 ADS Channel Values, 3 Accellerometer/Aux Values
+	Sample#, 8 ADS Channel Values, 3 Accelerometer/Aux Values
 
 	8B,028A3C,028A0E,028A86,028A04,0288FB,028AB7,028962,028A42
 	8C,028A3D,028A09,028A89,028A08,0288FE,028AC5,028960,028A3C
@@ -69,7 +69,7 @@ We tried to make it as easy as possible to log the data, given the 512 block lim
 	94,028A40,028A11,028A76,028A03,0288E4,028ABD,028953,028A38
 
 
-The saved file aslo contains meta-data at the beginning and end. Lines of text start with a **%** symbol, so that conversion software will know they are just text. The first line time-stamps with the time in milliseconds ***since the board was turned on***. If for any reason the streaming data is stopped during a recording session, The stop time will be insterted, and if re-started, there will be another start time stamp. At the end of the file there is a record of the total write time in milliseconds, and information about the block write performance: min block write and max block write in microseconds, as well as record of any blocks that took more than two milliseconds to write. Examples of the meta-data at right.
+The saved file also contains meta-data at the beginning and end. Lines of text start with a **%** symbol, so that conversion software will know they are just text. The first line time-stamps with the time in milliseconds ***since the board was turned on***. If for any reason the streaming data is stopped during a recording session, The stop time will be inserted, and if re-started, there will be another start time stamp. At the end of the file there is a record of the total write time in milliseconds, and information about the block write performance: min block write and max block write in microseconds, as well as record of any blocks that took more than two milliseconds to write. Examples of the meta-data at right.
 
 	%START AT
 	00001C70
@@ -96,7 +96,7 @@ The saved file aslo contains meta-data at the beginning and end. Lines of text s
 
 The OpenBCI Processing Sketch has the functionality to read and convert these hexadecimal files to 'normal' data files.
 
-###Converting Hex files in OpenBCI GIU
+### Converting Hex files in OpenBCI GIU
 **Note: SD file conversion is not supported by the OpenBCI GUI stand-alone application**
 You must run the OpenBCI_GUI Sketch in Processing for this to work.
 

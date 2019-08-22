@@ -10,7 +10,7 @@ This set of tutorials will show you everything you need to know about the OpenBC
 <img src="https://i.ibb.co/x5PpvCc/Screen-Shot-2019-07-23-at-1-30-32-PM.png" border="0" width="50%"></a><br/>
 
 
-####Included will be:
+#### Included will be:
 
 * [**Spec Overview**](03Ganglion/02-Ganglion.md) — The specs of the board, including explanations of the components and circuit schematics.
 * [**Data Sheet**](03Ganglion/08-Ganglion_Data_Format.md) — A rundown of the defined data format for the Ganglion.

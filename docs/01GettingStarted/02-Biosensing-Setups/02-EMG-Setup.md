@@ -26,7 +26,7 @@ Additionally, connect the ground pin to the AGND pin.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="50%">
 
-In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md).
+In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
 
 After making these pin connections, connect the sticky electrodes to the snap electrodes **prior to applying to the skin.** If you are using gold cup electrodes, ensure that the cups are properly adhered to the skin with conductive paste.
 
@@ -53,7 +53,7 @@ The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on
 <insert image>
 Each circle and box represents a channel. The circle and box fill up as the intensity of the signal on that channel increases.
 
-Check out the <media> gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md) for more information.
+Check out the <media> gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information.
 
 ## Improving Signal Quality
 
