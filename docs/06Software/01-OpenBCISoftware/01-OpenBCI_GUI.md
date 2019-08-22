@@ -120,7 +120,7 @@ Navigate to your `OpenBCI_GUI` directory, double click `OpenBCI_GUI.exe`.
 
 If prompted, check both boxes:
 
-![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.PNG)
+![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.png)
 
 **As of GUI v4, the GUI will auto-launch the Hub on Windows.**
 
@@ -169,7 +169,7 @@ The OpenBCI GUI code repository is located on github [here](https://github.com/O
 
 After the download completes and the file extracts itself, you will see the folder called `OpenBCI_GUI-master`. Change the name of this file to `OpenBCI_GUI`. If you don't change it, it won't work! You can move the folder `OpenBCI_GUI` and it's entire contents to your Sketch folder, or put it wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
 
-![libraries folder../../assets/SoftwareImages/OpenBCISoftware/ganglion_libraries-folder.png)
+![libraries folder](../../assets/SoftwareImages/OpenBCISoftware/ganglion_libraries-folder.png)
 
 Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. Theses are the 3rd party libraries that the OpenBCI GUI uses to work it's magic. You need to **copy** all of these folders into:
 
@@ -214,7 +214,7 @@ Enter the new OpenBCIHub folder and right click on the executable -> properties 
 
 Then double click the executable to run it for the first time. You must check both check boxes when prompted.
 
-![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.PNG)
+![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.png)
 
 Then quit the HUB: click the tray icon, and then press the quit button.
 
@@ -247,7 +247,7 @@ If you are encountering issues launching the GUI at this point, please head to t
 
 ### Using the OpenBCI GUI
 
-![use gui](../../assets/SoftwareImages/OpenBCISoftware/USE-GUI.JPG)
+![use gui](../../assets/SoftwareImages/OpenBCISoftware/USE-GUI.jpg)
 
 Check out this [Youtube video](https://www.youtube.com/watch?v=agV1B2l-QLw) on how to use the OpenBCI GUI. Note: Uses an older version of the GUI.
 
