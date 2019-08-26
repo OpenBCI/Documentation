@@ -80,7 +80,7 @@ Cyton boards have specific input voltage ranges. These input voltage ranges can 
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/PowerUpBoard.JPG?raw=true" width="70%">
 
-Make sure to move the small switch on the right side of the board from "OFF" to "PC". As soon as you do, you should see a blue LED turn on. If you don't, press the reset (RST) button just to the left of the switch. If the LED still does not turn on, make sure you have full battery. If you're sure your batteries are fully charged, consult the [hardware section](http://openbci.com/index.php/forum/#/categories/hardware) of our Forum.
+Make sure to move the small switch on the right side of the board from "OFF" to "PC". As soon as you do, you should see a blue LED turn on. If you don't, press the reset (RST) button just to the left of the switch. If the LED still does not turn on, make sure you have full battery. If you're sure your batteries are fully charged, consult the [hardware section](https://openbci.com/forum/index.php?p=/categories/cyton) of our Forum.
 
 **Note:** it's important to plug in your Dongle before you turn on your Cyton board. Sometimes, if the data stream seems broken, you may need to unplug your USB Dongle and power down your Cyton board. Make sure to plug your USB Dongle in first, then power up your board afterwards.
 
@@ -116,7 +116,7 @@ Your USB Dongle's port name will likely be at the top of the list. If you don't 
 1. Make sure your dongle is plugged in and switched to GPIO 6 (not RESET)
 2. Click the REFRESH LIST button in the SERIAL/COM PORT section of the sub-panel
 
-If you're still having trouble finding your USB Dongle's port name, refer to the [Forum](http://openbci.com/index.php/forum/) about debugging your hardware connection.
+If you're still having trouble finding your USB Dongle's port name, refer to the [Forum](https://openbci.com/forum/index.php?p=/categories/cyton) about debugging your hardware connection.
 
 ### 4. Select your channel count (8 or 16)
 
@@ -208,7 +208,7 @@ If the initialization fails, try the following steps in order:
 3. If this does not work, try relaunching the OpenBCI GUI application and redo step 2 above. Then reconfigure the SYSTEM CONTROL PANEL settings, and retry START SYSTEM.
 4. Make sure that your batteries are fully charged and then retry the steps above.
 5. If the channel number is not being displayed, select "AUTOSCAN" from the RADIO CONFIGURATION settings.
-6. If you are still having troubles connecting to your Cyton board, refer to the [Forum](http://openbci.com/index.php/forum) for extra troubleshooting advice.
+6. If you are still having troubles connecting to your Cyton board, refer to the [Forum](https://openbci.com/forum/index.php?p=/categories/cyton) for extra troubleshooting advice.
 
 ### 8. Your Cyton is now live!
 

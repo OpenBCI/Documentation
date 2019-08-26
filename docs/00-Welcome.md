@@ -3,7 +3,7 @@ id: Welcome
 title: Welcome to the OpenBCI Community
 ---
 
-Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of guides and tutorials that are intended to teach you how to use your OpenBCI gear. If you run into issues or have additional questions, head to our [Forum](http://openbci.com/index.php/forum/) with daily active users. Check out the [Community Page](http://openbci.com/community) for project ideas!
+Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of guides and tutorials that are intended to teach you how to use your OpenBCI gear. If you run into issues or have additional questions, head to our [Forum](https://openbci.com/forum/) with daily active users. Check out the [Community Page](http://openbci.com/community) for project ideas!
 
 ##### The Learning Pages are separated into the following sections:
 

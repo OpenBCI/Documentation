@@ -30,14 +30,14 @@ Connect your OpenBCI board and make sure it is recognized as a COM port and its 
 
 Start the OpenViBE Signal Acquisition Server (SAS). **C: > Program Files > openvibe > openvibe-acquisition-server** (normally shows up when searching “openvibe” in start menu).
 
-![COM Selection](assets/SoftwareImages/Compatible Third Party Software Images/com-select.jpg)
+![COM Selection](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/com-select.jpg)
 
 1. In the SAS select the OpenBCI (unstable means not throughly tested) option from the drop down list.
 1. Then open **Driver Properties**. In the Device option, select the COM port number your OBCI board was connected to.
 1. In the SAS Preference menu, change the drift tolerance from 2ms (default) to 10ms.
 1. Press Connect. If error, troubleshoot:
 	- Look at the terminal window that the SAS opens up. It has a verbose report on the SAS's condition.
-	- Often, pressing the restart button on the OBCI board, or Disconnecting/Conneting the Dongle will fix any connection issues.
+	- Often, pressing the restart button on the OBCI board, or Disconnecting/Connecting the Dongle will fix any connection issues.
 	- If the error reports that it cannot open the selected port, make sure the COM port selected in the driver options is the same as your board.
 
 ## Streaming from OpenBCI to OpenViBE
