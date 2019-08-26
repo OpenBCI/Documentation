@@ -44,23 +44,21 @@ Start the OpenViBE Signal Acquisition Server (SAS). **C: > Program Files > openv
 
 Open the OpenViBE designer GUI. A blank page should open like below:
 
-![image](assets/SoftwareImages/Compatible Third Party Software Images/OpenViBE_designer.JPG)
+![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_designer.JPG)
 
 In the toolbar on the right, expand the "Acquisition and IO" folder and select "Acquisition client." This object represents the input stream from the OpenBCI board. Click and drag the Acquisition client into the design space.
 
-![image](assets/SoftwareImages/Compatible Third Party Software Images/OpenViBE_acquision_client.JPG)
+![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_acquision_client.JPG)
 
 From the same toolbar, expand the "Visualization" folder, then the "Basic" folder, and select "Signal display." Click and drag the Signal display box into the design space. Connect the similarly-colored triangles of the two boxes.
 
-![image](assets/SoftwareImages/Compatible Third Party Software Images/OpenViBE_signal_display.JPG)
+![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_signal_display.JPG)
 
 You're ready to stream data from your board! Return to the OpenViBE Acquisition Server GUI and select "Play."
 
-![image](assets/SoftwareImages/Compatible Third Party Software Images/OpenViBE_streaming_live.JPG)
-
 Return to the OpenViBE designer GUI. Click the play button from the top toolbar. A signal display window should pop up, displaying data as it streams from your OpenBCI board.
 
-![image](assets/SoftwareImages/Compatible Third Party Software Images/OpenViBE_signal_live.JPG)
+![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_signal_live.JPG)
 
 You're now streaming data from your OpenBCI board to OpenViBE! Feel free to explore the other tools OpenViBE has to offer.
 

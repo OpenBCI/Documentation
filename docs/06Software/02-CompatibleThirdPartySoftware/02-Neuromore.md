@@ -27,7 +27,7 @@ Open the Neuromore Studio application. A demo will begin playing that displays e
 
 First, connect your OpenBCI board to your computer. Make sure to take the following steps:
 
-**Windows**: Mke sure your board is recognized as a COM port and that its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial](09Deprecated/08-OpenBCI_on_Windows.md).
+**Windows**: Make sure your board is recognized as a COM port and that its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial](09Deprecated/08-OpenBCI_on_Windows.md).
 
 **OS X**: Make sure your board is connected and visible as a device. To check you can type `ls /dev/tty.*` on your terminal. An example connected OBCI board should like like this:
 
@@ -83,7 +83,7 @@ In the example below, I selected the "Filtered Raw" node, and set the color to b
 
 Now you're able to view the signals from your output nodes in your Classifier!
 
-This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX]( https://en.wikipedia.org/wiki/Max_(software)/) for more general puroses and [OpenViBE](06Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md) and of course neuromore for EEG specific processing.
+This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX]( https://en.wikipedia.org/wiki/Max_(software)/) for more general purposes and [OpenViBE](06Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md) and of course neuromore for EEG specific processing.
 
 The basic idea is that a stream of data that originates at the input device can then be mapped, processed and transformed into outputs that are useful, informative or just plain cool.
 
@@ -105,6 +105,6 @@ From this example we can see the power of statistics and simple logic that can e
 
 - [neuromore.com](http://www.neuromore.com/)
 - [Video tutorials](https://www.youtube.com/channel/UCAOU6SsvwCwC30hJaFLhWgw)
-- [Grahical Programming](http://c2.com/cgi/wiki?GraphicalProgrammingLanguage)
+- [Graphical Programming](http://c2.com/cgi/wiki?GraphicalProgrammingLanguage)
 
-Did you use Neuromore and OpenBCI to build something new? Post about it on our [forum!](http://openbci.com/index.php/forum/)
+Did you use Neuromore and OpenBCI to build something new? Post about it on our [forum!](https://openbci.com/forum/)

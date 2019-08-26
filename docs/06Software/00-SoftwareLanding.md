@@ -8,7 +8,7 @@ title: Compatible Software
 This section details the various OpenBCI-specific software and SDKs. Included here are guides on how to use the OpenBCI GUI, as well as information about developing for OpenBCI with common languages like Python, Java, Node.js, and more!
 
  * [The OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
- * [GUI Widget Guide](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide)
+ * [GUI Widget Guide](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md)
  * [Python and OpenBCI](06Software/01-OpenBCISoftware/05-OpenBCI_Python.md)
  * [OpenBCI Hub](06Software/01-OpenBCISoftware/07-OpenBCI_Hub.md)
 
