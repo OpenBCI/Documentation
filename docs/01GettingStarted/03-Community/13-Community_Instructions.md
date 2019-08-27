@@ -38,7 +38,7 @@ Our community page is based on the Wordpress platform. If you’ve used Wordpres
 
 ### On The Horizon
 
-The OpenBCI Community interface will be forever under development. We really want your feedback! If you have suggestions, please let us know (conor [at] openbci [dot] com).
+The OpenBCI Community interface will be forever under development. We really want your feedback! If you have suggestions, please email contact@openbci.com.
 
 As we move forward, we want to improve the level of interactivity between community members and also provide incentives for posting cool projects and challenges.
 

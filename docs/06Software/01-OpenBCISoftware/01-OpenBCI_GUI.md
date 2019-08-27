@@ -16,7 +16,7 @@ Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 ![image](assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
 ### Ganglion on macOS
-Turn on your computer's Bluetooth if not already.
+Turn on your computer's Bluetooth.
 
 ![Bluetooth On](assets/SoftwareImages/OpenBCISoftware/ganglion_BLE-ON.png)  
 
@@ -48,7 +48,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 &nbsp;&nbsp;&nbsp;&nbsp;- Example: `sudo usermod -a -G dialout susieQ`<br>
 3. Restart Ubuntu<br>
 4. Try "id" command again<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Repeart step one<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Repeat step one<br>
 </details></p>
 
 ## Installing the OpenBCI GUI as a "Standalone" Application
@@ -57,7 +57,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 
 The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the [Downloads](http://openbci.com/donation) page of the OpenBCI website, and click the download link that correlates to your OS and machine.
 
-![image](assets/SoftwareImages/OpenBCISoftware/Downloads.JPG)
+![image](../../assets/SoftwareImages/OpenBCISoftware/DownloadsUpdated.png)
 
 ### Install OpenBCI_GUI On macOS
 
@@ -77,15 +77,15 @@ Move the `OpenBCI_GUI` directory anywhere you like.
 
 2. Next, right click on `OpenBCI_GUI.exe` and select `Properties`. The following window should pop up:<br>
 
-![gui windows properties menu](assets/SoftwareImages/OpenBCI Software/GUI-WindowsProperties.PNG)<br>
+![gui windows properties menu](../../assets/SoftwareImages/OpenBCISoftware/GUI-WindowsProperties.png)<br>
 
 3. Select the `Compatibility` tab at the top of this window, and then click `Change high DPI settings`.<br>
 
-![gui windows properties compatibility](assets/SoftwareImages/OpenBCI Software/GUI_WindowsProperties_Compatibility.PNG)<br>
+![gui windows properties compatibility](../../assets/SoftwareImages/OpenBCISoftware/GUI_WindowsProperties_Compatibility.png)<br>
 
 4. In the section labeled `High DPI scaling override`, check the box `Override high DPI scaling behavior` and change from `Application` to `System (Enhanced)`.<br>
 
-![gui windows override high dpi scaling](assets/images/GUI_Windows_OverrideHighDPI.PNG)<br>
+![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/GUI_Windows_OverrideHighDPI.png)<br>
 
 5. That's it! Once the settings have been changed, restart the GUI!
 
@@ -106,13 +106,13 @@ On Linux, there is no way to force scaling. However, here is a <a href ="https:/
 **Important Notes:**
 
  * In some cases, there may be issues with the way your machine handles the BLE application that enables communication with the Ganglion Board.
- * If you run into additional issues, please visit the [OpenBCI_GUI Section](http://openbci.com/index.php/forum/#/categories/openbci_gui) of our Forum
+ * If you run into additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum
 
 ### Running on macOS
 
 Navigate to your `Applications` folder and double click the `OpenBCI_GUI` You may see a message pop up asking you if you're sure you want to open it. Click Open and the app will launch.
 
-![allow GUI to run](assets/SoftwareImages/OpenBCI Software/ganglion_permissions.png)
+![allow GUI to run](../../assets/SoftwareImages/OpenBCISoftware/ganglion_permissions.png)
 
 ### Running on Windows
 
@@ -120,7 +120,7 @@ Navigate to your `OpenBCI_GUI` directory, double click `OpenBCI_GUI.exe`.
 
 If prompted, check both boxes:
 
-![accept networking](assets/SoftwareImages/OpenBCI Software/gui_windows_accept_networking.PNG)
+![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.png)
 
 **As of GUI v4, the GUI will auto-launch the Hub on Windows.**
 
@@ -163,13 +163,13 @@ Go ahead and move it to your `Applications` folder, and launch the application. 
  On Windows `C:\Users\<user-name>\Documents\Processing`  
  On Linux `/home/<user-name>/sketchbook`  
 
-![GUI repo](assets/SoftwareImages/OpenBCI Software/ganglion_GUI-repo.png)
+![GUI repo](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-repo.png)
 
 The OpenBCI GUI code repository is located on github [here](https://github.com/OpenBCI/OpenBCI_GUI). click on the `Clone or download` button in green on the right, and select `Download ZIP`. If you are a advanced GitHub user, go ahead and clone it, or fork it if you like.
 
 After the download completes and the file extracts itself, you will see the folder called `OpenBCI_GUI-master`. Change the name of this file to `OpenBCI_GUI`. If you don't change it, it won't work! You can move the folder `OpenBCI_GUI` and it's entire contents to your Sketch folder, or put it wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
 
-![libraries folder](assets/SoftwareImages/OpenBCI Software/ganglion_libraries-folder.png)
+![libraries folder](../../assets/SoftwareImages/OpenBCISoftware/ganglion_libraries-folder.png)
 
 Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. Theses are the 3rd party libraries that the OpenBCI GUI uses to work it's magic. You need to **copy** all of these folders into:
 
@@ -181,14 +181,14 @@ If there is no folder called `libraries` in that location, go ahead and make one
 
 ### Install OpenBCI Hub on Mac/Linux/Windows
 
-![OBCI Electron github](assets/SoftwareImages/OpenBCI Software/hub-github-release.png)   
+![OBCI Electron github](../../assets/SoftwareImages/OpenBCISoftware/hub-github-release.png)   
 
 There is a piece of software which is necessary to make the connection between the GUI and your computer's Bluetooth hardware.
 We call this the OpenBCI Electron Hub. Go to our github repository for the [Hub](https://github.com/OpenBCI/OpenBCI_Hub/releases/latest), and click on the link for your Operating System.  
 
-![electron hub download](assets/SoftwareImages/OpenBCI Software/hub-unzipped-windows.png)
+![electron hub download](../../assets/SoftwareImages/OpenBCISoftware/hub-unzipped-windows.png)
 
-After downloading and uppacking, your Downloads folder will look like this on Windows/Linux. On Mac, you'll just have an OpenBCIHub.app file.
+After downloading and un-packing, your Downloads folder will look like this on Windows/Linux. On Mac, you'll just have an OpenBCIHub.app file.
 
 #### On Mac, move the `OpenBCIHub.app` to:
 
@@ -206,48 +206,48 @@ Rename the directory you just unpacked to `OpenBCIHub` and move it to:
 
 `C:\users\<user-name>\Documents\Processing\OpenBCI_GUI\OpenBCI_GUI\data\`
 
-![Hub Home](assets/SoftwareImages/OpenBCI Software/hub-installed-processing.png)
+![Hub Home](../../assets/SoftwareImages/OpenBCISoftware/hub-installed-processing.png)
 
 Enter the new OpenBCIHub folder and right click on the executable -> properties -> compatibility -> tick "Run this program as an administrator".
 
-![set to run as admin always](assets/SoftwareImages/OpenBCI Software/gui_windows_properties_run_as_admin_hub.png)
+![set to run as admin always](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_properties_run_as_admin_hub.png)
 
 Then double click the executable to run it for the first time. You must check both check boxes when prompted.
 
-![accept networking](assets/SoftwareImages/OpenBCI Software/gui_windows_accept_networking.PNG)
+![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.png)
 
 Then quit the HUB: click the tray icon, and then press the quit button.
 
-![quit the hub](assets/SoftwareImages/OpenBCI Software/gui_windows_openbci_hub_quit.png)
+![quit the hub](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_openbci_hub_quit.png)
 
 As of GUI v4.0.3, the GUI will auto-launch the Hub on Windows.
 
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
-![processing startup](assets/SoftwareImages/OpenBCI Software/ganglion_processing-launch.png)
+![processing startup](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-launch.png)
 
 **If you are on Windows, set Processing to 'Run this program as an administrator'.**
 
 When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment).
 
-![Select Sketchbook](assets/SoftwareImages/OpenBCI Software/ganglion_file-sketchbook.png)
-![Select OpenBCI GUI from Sketchbook](assets/SoftwareImages/OpenBCI Software/ganglion_sketchbook-window.png)
+![Select Sketchbook](../../assets/SoftwareImages/OpenBCISoftware/ganglion_file-sketchbook.png)
+![Select OpenBCI GUI from Sketchbook](../../assets/SoftwareImages/OpenBCISoftware/ganglion_sketchbook-window.png)
 
 Select `File > Sketchbook` and you will open a window where you should see the option to select `OpenBCI GUI`. When you get that far, select `OpenBCI GUI` and the Processing will open up yet another window, that contains all the code to successfully run the OpenBCI GUI.  
 
-![GUI code window](assets/SoftwareImages/OpenBCI Software/ganglion_GUI-code-window.png)
+![GUI code window](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-code-window.png)
 
 If you don't know anything about coding, don't edit these files. If you like to dig in to the meat of what makes things work, by all means. have at it. You are looking at the program code that makes the OpenBCI GUI work it's magic. Now, it's time to run it!
 
-![Processing RUN](assets/SoftwareImages/OpenBCI Software/ganglion_processing-RUN.png)
+![Processing RUN](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-RUN.png)
 
 Press the `play` button on the upper left of the IDE, and the sketch will try to launch in all it's glory. If this is your first time running the sketch, you will get a message from the Mac OS that will ask you if you will allow permission for an unsigned app to run. The app in question is the Electron Hub. If you've enabled apps to run from Anywhere, you can just give permission to run the app. However, it is likely that the GUI will not function, because timing is everything. You will need to quit the sketch (press `command+q` or click the `x` button on the upper left of the GUI). Then, relaunch the sketch by pressing the `play` button as above. This time you won't get the alert from the Mac OS, and the GUI will launch in all it's glory!  
 
-If you are encountering issues launching the GUI at this point, please head to the [OpenBCI_GUI section](http://openbci.com/index.php/forum/#/categories/openbci_gui) of our Forum and look for help or post a question.
+If you are encountering issues launching the GUI at this point, please head to the [OpenBCI_GUI section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum and look for help or post a question.
 
 ### Using the OpenBCI GUI
 
-![use gui](assets/SoftwareImages/OpenBCI Software/USE-GUI.JPG)
+![use gui](../../assets/SoftwareImages/OpenBCISoftware/USE-GUI.jpg)
 
 Check out this [Youtube video](https://www.youtube.com/watch?v=agV1B2l-QLw) on how to use the OpenBCI GUI. Note: Uses an older version of the GUI.
 
@@ -271,7 +271,7 @@ To test impedance for Ganglion, use the Ganglion Signal Widget.
 ## Decrease Setup Time by Saving/Loading Settings
 Starting with GUI V3, you can save and load a snapshot of nearly every setting in the GUI (ex. Layout, Time Series Channel Settings, Networking Settings, etc.) by using a dropdown menu (pictured below) or keyboard shortcuts. If you change anything during a session, save your settings or click "Stop System" before exiting. __Save with lowercase 'n'__ and __Load with capital 'N'__ on your keyboard to and from */Documents/OpenBCI_GUI/Settings/*.
 
-![Config Button](assets/SoftwareImages/OpenBCI Software/GUI_Config_Button_ScreenshotRev3.png)
+![Config Button](../../assets/SoftwareImages/OpenBCISoftware/GUI_Config_Button_ScreenshotRev3.png)
 
 Start the system first. Then, arrange the GUI to suit your needs and __click "Settings"-->"Save"__. A dialog box will open to confirm file name and path _(e.g. GanglionUserSettings.json)_. After, you will see a message saying "Settings Saved!" When you click "Stop System", all settings will be auto-saved.
 
@@ -290,7 +290,7 @@ __Use the spacebar to start or stop the data stream!__
 
 __To enable all keyboard shortcuts, set "Expert Mode On" in the settings dropdown.__
 
-![Expert Mode Button](assets/SoftwareImages/OpenBCI Software/expertModeToggleHelpText.png)
+![Expert Mode Button](../../assets/SoftwareImages/OpenBCISoftware/expertModeToggleHelpText.png)
 
 Expert Mode Keyboard Shortcuts:
 

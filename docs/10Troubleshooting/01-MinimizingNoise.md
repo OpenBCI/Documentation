@@ -29,4 +29,4 @@ Power down your Cyton board and unplug your USB Dongle. Then, plug back in your 
 
 #### Further troubleshooting
 
-If you're still having issues, refer to the [Forum](http://openbci.com/index.php/forum/) for further troubleshooting techniques.
+If you're still having issues, refer to the [Forum](https://openbci.com/forum/) for further troubleshooting techniques.

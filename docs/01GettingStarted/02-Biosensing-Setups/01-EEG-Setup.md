@@ -7,10 +7,10 @@ This page will explain the most basic setup to process EEG Data using your OpenB
 ## Related Headware
 To learn more about specific OpenBCI Headware and how to set them up for EEG, follow the links below.
 
-* [Headband kit](assets/04Headware/HeadBand)
-* [Ultracortex Mark IV](assets/04Headware/MarkIV)
-* [Ultracortex Mark III](assets/04Headware/MarkIII)
-* [Electrode Cap](assets/04Headware/ElectrodeCap)
+* [Headband kit](../../04AddOns/01-Headwear/03-Headband_Tutorial.md)
+* [Ultracortex Mark IV](../../04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
+* [Ultracortex Mark III](../../04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+* [Electrode Cap](../../04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md)
 
 ## What you will need
 

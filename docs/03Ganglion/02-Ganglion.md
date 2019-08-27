@@ -78,11 +78,11 @@ When you move the switch **DOWN**, that associated channel's `-` input is connec
 
 ### Ganglion Board PCB Layer Images  
 
-Top Layer  
+*Top Layer*  
 ![Ganglion Top Layer](assets/GanglionImages/ganglion_top.png)  
-Inner Layer 1  
+*Inner Layer 1*  
 ![Ganglion Layer 1](assets/GanglionImages/ganglion_layer1.png)  
-Inner Layer 2  
+*Inner Layer 2*  
 ![Ganglion Layer 2](assets/GanglionImages/ganglion_layer2.png)  
-Bottom Layer  
+*Bottom Layer*  
 ![Ganglion Bottom Layer](assets/GanglionImages/ganglion_bottom.png)  

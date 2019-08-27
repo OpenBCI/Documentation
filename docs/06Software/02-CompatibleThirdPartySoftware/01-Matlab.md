@@ -178,7 +178,7 @@ Next time your launch EEGLAB, the ERPLAB menu should appear in the EEGLAB GUI:
 To use ERPLAB for analyzing EEG datasets, import your data set as seen in the [Using EEGLAB Section](#Using EEGLAB). After the EEG data is imported into EEGLAB, you can then use ERPLAB functions to analyze your data. [Read more on using ERPLAB on their website](http://erpinfo.org/erplab/erplab-documentation/manual_4/)
 
 ### FieldTrip
-From the [FieldTrip hopmepage](http://www.fieldtriptoolbox.org/development/realtime): "The toolbox offers advanced analysis methods of MEG, EEG, and invasive electrophysiological data, such as time-frequency analysis, source reconstruction using dipoles, distributed sources and beamformers and non-parametric statistical testing."
+From the [FieldTrip homepage](http://www.fieldtriptoolbox.org/development/realtime): "The toolbox offers advanced analysis methods of MEG, EEG, and invasive electrophysiological data, such as time-frequency analysis, source reconstruction using dipoles, distributed sources and beamformers and non-parametric statistical testing."
 
 #### Setup
 [Download](http://www.fieldtriptoolbox.org/download) the latest version of FieldTrip from the download page (you will have to provide an email address and descriptiption of research).

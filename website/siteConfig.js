@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     {href: 'https://openbci.com', label: 'Main Site'},
     {href: 'https://shop.openbci.com', label: 'Shop'},
-    {href: 'https://openbci.com/index.php/forum/', label: 'Forum'},
+    {href: 'https://openbci.com/forum/', label: 'Forum'},
     {doc: 'Welcome', label: 'Documentation'},
     {href: 'https://github.com/OpenBCI', label: 'Github'},
     {page: 'citations', label: 'Citations'},

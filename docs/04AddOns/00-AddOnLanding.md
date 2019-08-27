@@ -13,4 +13,4 @@ Our OpenBCI Headwear is designed to make it easy to receive good EEG Data. The f
 * [Electrode Cap](04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md) — Our research-grade electrode cap for wet electrode EEG measurement.
 
 ## Electrodes
-OpenBCI Offers a wide range of electrodes serving various purposes. See the documents below to learn more about them:
+OpenBCI offers a wide range of electrodes serving various purposes. See the [Electrode Guide](02-Electrodes/00-ElectrodesLanding.md) to learn more about them.

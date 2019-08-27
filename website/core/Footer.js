@@ -69,7 +69,7 @@ class Footer extends React.Component {
             <h5>More</h5>
             <a href="https://github.com/OpenBCI">GitHub</a>
             <a href="https://openbci.com/community/">Community</a>
-            <a href="https://openbci.com/index.php/forum/">Forum</a>
+            <a href="https://openbci.com/forum/">Forum</a>
             <a href="https://openbci.com/index.php/contact">Contact</a>
           </div>
         </section>
