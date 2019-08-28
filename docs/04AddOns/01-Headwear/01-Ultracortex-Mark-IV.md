@@ -282,6 +282,8 @@ For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (
 
 ![image](assets/HeadwareImages/1020.jpg)
 
+Please open the image above in new tap to better recognize the position.
+
 ### Placement of electrodes
 
 First screw your two FLAT ELECTRODE UNITS in the front two nodes of the frame.
