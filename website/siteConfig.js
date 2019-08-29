@@ -111,8 +111,8 @@ const siteConfig = {
 
   //search bar enabled
   algolia: {
-    apiKey: 'my-api-key',
-    indexName: 'my-index-name',
+    apiKey: '19411ba246745c95db0bff87cfed97b0',
+    indexName: 'openbci',
     placeholder: 'Search Docs',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
