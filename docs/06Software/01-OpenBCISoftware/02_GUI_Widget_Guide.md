@@ -173,6 +173,9 @@ OSC works with MaxMSP, PureData, and Resolume.
 
 This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
 
+## Pulse Widget
+This widget will only show for Cyton in Live mode. It uses the Analog Read mode to get data from the pin marked D11 on the Cyton. Using this data, the widget will calculate the Beats per minute (BPM) and the Interbeat Interval (IBI). When using the Networking widget, this data type will send: BPM, Raw Signal, and IBI.
+
 ____
 
 ## Custom Widget
