@@ -2,7 +2,7 @@
 id: GUIWidgets
 title: GUI Widget Guide
 ---
-## What is a GUI Widget
+## What is a GUI Widget?
 GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left hand corner of every widget there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
 
 
@@ -15,13 +15,13 @@ It measures the absolute amplitude of the signal in voltage, in units of μVrms 
 
 Each ultracortex comes with wires that are color coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
 
-### Hardware Settings:
+#### Hardware Settings
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_HardwareSettings.png?raw=true" width="50%">
 
-The Time Series widget opens a menu that allows you to fine tune the PGA Gain, Bias, and other hardware settings for each channel.
+For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine tune the PGA Gain, Bias, and other hardware settings for each channel.
 
-### Other Settings:
+#### Other Settings
 
 **Channel Buttons**: These buttons represent each connected electrode channel. You can toggle them on/off to control whether or not you want to collect data from that electrode.
 
@@ -30,12 +30,12 @@ The Time Series widget opens a menu that allows you to fine tune the PGA Gain, B
 *Vertical Scale* — Controls the range of μV displayed in the time series.
 Note: Set to auto to avoid chopping off data and showing good peaks and troughs. Fine tune as necessary.
 
-*Window* — Shows the amount of time that is shown in the series.
+*Window* — Controls the amount of time that is shown in the series.
 
 **Railed/Near Railed Warnings**:
 These warnings show that there is no or poor signal, and that you need to check the electrodes to ensure that they are making good contact with your body.
 
-**Impedance Check**
+**Impedance Check**:
 Sends a test current down the pin to check impedance. Information is given in kΩ.
 Note: Data will stop streaming automatically for the duration of the check.
 
@@ -172,6 +172,8 @@ OSC works with MaxMSP, PureData, and Resolume.
 ?raw=true" width="70%">
 
 This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
+
+____
 
 ## Custom Widget
 
