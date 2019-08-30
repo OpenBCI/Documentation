@@ -134,6 +134,8 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 ## Networking
 The networking widget allows the streaming of data to other apps. It offers four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](06Software/00-SoftwareLanding.md).
 
+**Full details of all possible outputs can be found at the [GUI Networking Guide](https://docs.google.com/document/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub).**
+
 ### Serial
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Serial.png?raw=true" width="70%">
