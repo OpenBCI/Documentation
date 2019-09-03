@@ -73,7 +73,7 @@ The following parts are not included with the purchase of any configuration of t
 
 #### (1x) FRAME
 
-The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html), with build area of at least 200 mm square.
+The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html), with build area of at least 125 mm by 150 mm square (minimum area needed to print the frame in quarters).
 
 * FRAME (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
 	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
