@@ -173,6 +173,8 @@ OSC works with MaxMSP, PureData, and Resolume.
 
 The newest widget, SSVEP, is now in beta mode, for testing. It is included with [GUI v.4.1.5-beta.3](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
+It offers up to four channels of SSVEP with a range of frequencies (see screenshot above).
+
 For research applications of SSVEP, head to examples [here](https://link.springer.com/chapter/10.1007/978-3-642-21683-1_41) and [here.](https://www.nature.com/articles/s41598-018-32283-8)
 
 ## Playback Widget
