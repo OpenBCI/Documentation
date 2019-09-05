@@ -7,7 +7,7 @@ This directory contains documents to explain the integration between OpenBCI and
 
 ## EmotiBit
 
-![EmotiBit](../assets/ThirdPartyImages/EmotiBit.png)
+![EmotiBit](../assets/ThirdPartyImages/Emotibit.png)
 
 Designed by our good friend Sean Montgomery and his team, [EmotiBit](emotibit.com) can stream 16+ signals from the body (EDA, 3-wavelength PPG, high-res body temperature, humidity and a 9-axis IMU). We think it's the perfect complement to add emotional, physiological and movement data to your EEG recordings!
 
@@ -35,7 +35,7 @@ It can be connected to the [Ganglion](https://shop.openbci.com/collections/front
 ## Wifi Shield
 
 ![wifi shield](../assets/ThirdPartyImages/wifi_shield.jpg)
-The Wifi Shield is an add-on module that allows you to connect an OpenBCI Board to the GUI and send data over Wifi rather than Radio/BLE. 
+The Wifi Shield is an add-on module that allows you to connect an OpenBCI Board to the GUI and send data over Wifi rather than Radio/BLE.
 To learn more about it, see these documents:
 
 * [Wifi Shield](05ThirdParty/03-WiFiShield/01-Wifi.md)
