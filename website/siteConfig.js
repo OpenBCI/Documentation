@@ -24,8 +24,8 @@ const siteConfig = {
   title: 'OpenBCI Documentation', // Title for your website.
   tagline: 'A website for testing',
   url: 'https://openbci.github.io', // Your website URL
-  baseUrl: '/Documentation/', // Base URL for your project */
-  //cname: 'docs.openbci.com',
+  baseUrl: '/', // Base URL for your project */
+  cname: 'docs.openbci.com',
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
