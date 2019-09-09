@@ -26,6 +26,6 @@ We have recently updated the Docs website! You may be seeing this page if you ha
 
 ### Contributing
 
-If you are interested in contributing to the OpenBCI Learning Pages, feel free to create your own Markdown file and submit a pull request to relevant sub-directory of the [Docs repo](https://github.com/openbci/docs) on our Github! If you notice any mistakes in these guides, you can also submit issues there.
+If you are interested in contributing to the OpenBCI Learning Pages, feel free to create your own Markdown file and submit a pull request to relevant sub-directory of the [Docs repo](https://github.com/openbci/Documentation) on our Github! If you notice any mistakes in these guides, you can also submit issues there.
 
 #### Video of the OpenBCI GUI posted on [Youtube](https://www.youtube.com/watch?v=XktF8OhHH4A), showing the [8-channel Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) Board paired with a 5-channel [EEG Headband Kit](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit).
