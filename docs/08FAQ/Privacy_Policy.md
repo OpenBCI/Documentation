@@ -11,7 +11,7 @@ We value the privacy and security of our customers. We NEVER sell, rent, or disc
 
 ### 1. WHO ARE WE?
 
-“OpenBCI” refers to OpenBCI, Inc a company incorporated in the USA with its registered office at 630 FLUSHING AVENUE, #867 BROOKLYN, NEW YORK, 11206. You can contact us via email at contact@openbci.com for any questions relating to our Privacy Policy.
+“OpenBCI” refers to OpenBCI, Inc a company incorporated in the USA with its registered office at 19 Morris Ave, BROOKLYN, NEW YORK, 11205. You can contact us via email at contact@openbci.com for any questions relating to our Privacy Policy.
 
 
 ### 2. WHAT DOES THIS PRIVACY POLICY GOVERN?
