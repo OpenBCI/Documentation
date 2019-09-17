@@ -108,3 +108,57 @@ Head over to the OpenBCI GUI [tutorial](06Software/01-OpenBCISoftware/01-OpenBCI
 If you're using a third-party bioamplifier, you'll need the software that is compatible with that particular bioamplifier. The OpenBCI GUI is intended to be used with OpenBCI biosensing boards (Cyton, CytonDaisy, and Ganglion), not third-party bioamplifiers such as g.tec devices.
 
 Find it all overwhelming? Don't know where to start? Questions, comments, suggestions? Email support@openbci.com
+
+## Electrode Cap Care and Cleaning Guide
+
+A routine schedule for cleaning and disinfecting the Electrode
+Cap helps assure accurate EEG signals and the reuse of
+electrodes between different participants. Furthermore, you will
+preserve the excellent characteristics of your electrodes and will
+ensure a long product life.
+
+#### Cleaning Method:
+1. Clean the residual gel off the Sintered Ag-AgCl Electrodes in the
+cap softly immediately after use.
+
+2. Soak the cap for about 15 minutes in warm water (up to 50
+degrees Celsius), so that the remaining gel can dissolves off
+quickly into the water. Use a cotton ball for removing gel residues
+from the electrodes only if absolutely necessary.
+
+3. In case the gel stays on the surface of the electrodes or the cap
+shell, then soak the cap into diluted detergent for a few hours.
+
+4. Rinse the cap in tap water afterwards for several times. Dry the
+cap softly, Store the cap in a dark dry place.
+
+Cleaning frequency-after each use.
+
+#### Disinfecting Method:
+1. Clean the residual gel off the Sintered Ag-AgCl Electrodes in the
+cap softly immediately after use.
+
+2. Soak the cap for about 15 minutes in warm water (up to 50
+degrees Celsius), so that the remaining gel can dissolves off
+quickly into the water. Use a cotton ball for removing gel residues
+from the electrodes only if absolutely necessary.
+
+3. Then soak the cap for up to 30 minutes in 1% diluted bleach solution
+(100 ppm sodium hypochlorite).
+Household bleach has a concentration of 52,500ppm of available
+chlorine (5.25% Sodium Hypochlorite). A 1:500 dilution of household
+bleach provides the 100ppm concentration required)
+
+4. Rinse the cap in tap water afterwards for several times. Dry the
+cap softly, Store the cap in a dark dry place.
+
+Disinfecting frequency-every two weeks.
+
+Caution:
+1. Be gentle with the connection point where the electrodes
+attach to the lead wire.
+2. Don’t touch other metals.
+3. Don’t left residual gel on any part of the electrodes or wire.
+4. Keep the electrodes and the wire away from any corrosive
+liquid.
+5. Keep the connector away from water.
