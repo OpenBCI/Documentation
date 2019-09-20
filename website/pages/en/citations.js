@@ -11,7 +11,7 @@ class Citations extends React.Component {
   render() {
     const {config: siteConfig} = this.props;
 
-    const editUrl = `${siteConfig.repoUrl}/edit/master/website/siteConfig.js`;
+    const editUrl = `mailto:contact@openbci.com`;
 
     return (
       <div className="mainContainer">
