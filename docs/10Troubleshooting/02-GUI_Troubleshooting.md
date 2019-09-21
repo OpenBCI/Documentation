@@ -17,7 +17,7 @@ title: GUI Troubleshooting
 
 ## Issues Connecting & Starting Session
 1. If you receive an error in red at the bottom of the GUI while trying to connect to an OpenBCI board, try turning the board Off and back On.
-1. Also, unplug and plug the USB dongle for Cyton or BLED112.
+1. Also, unplug and plug the USB dongle for Cyton or BLED112 for Ganglion.
 1. Try to start a session again.
     - Cyton: If you still can't connect, try pressing the "AUTOSCAN" button once or twice.
     - Cyton+WiFi: Go through the [WiFi Getting Started Guide](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md). If this doesn't help, check the Forums or [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) and make a new issue if one doesn't already exist. There are a number of issues that are currently being worked on.
