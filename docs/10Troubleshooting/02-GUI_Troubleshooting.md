@@ -4,7 +4,6 @@ title: GUI Troubleshooting
 ---
 
 ## The GUI Console Log
-
 ![gui troubleshooting console window](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogWindow.png)<br>
 
 - Want to know what's happening "under the hood" in the GUI?
@@ -25,7 +24,7 @@ title: GUI Troubleshooting
 1. If your Cyton firmware is older than v3.0.0, you will need to [update the firmware as outlined here](02Cyton/05-Cyton_Board_Programming_Tutorial.md#overview). The latest Cyton firmware as of 2019 is v3.1.2.
 1. If nothing in the Docs, GitHub, or Forums are helpful, it's a good idea to email support@openbci.com or make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new).
 
-## Something doesn't look right
+## Something Doesn't Look Right...
 1. Take a screenshot using tools provided by your operating system. Alternatively, you can turn on Expert Mode in the GUI and take a screenshot by pressing 'm' on your keyboard.
 1. Restart the GUI. If the same problem happens again, please make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new).
 
