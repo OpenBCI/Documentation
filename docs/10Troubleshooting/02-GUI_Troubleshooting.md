@@ -4,8 +4,6 @@ title: GUI Troubleshooting
 ---
 
 ## The GUI Console Log
-![gui troubleshooting console window](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogWindow.png)<br>
-
 - Want to know what's happening "under the hood" in the GUI?
     - Click the Console Log button in the top right (pictured below).
     ![gui console log button](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogButton.png)<br>
@@ -13,6 +11,9 @@ title: GUI Troubleshooting
     - [Run GUI from Processing IDE](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide) or [Visual Studio Code (Preferred)](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup).
     - Go to Debugging.pde and change `boolean isVerbose = false;` to `boolean isVerbose = true;`.
 - You can share the Console Log as text or a file on the Forums or GitHub. This is typically a requirement for new issues on GitHub.
+- You can use keyboard shortcuts within the Console Window to Open Log as Text(`f`), Copy Full Log Text(`c`), Copy Last Line (`l`), Jump to Last Line(`j`), Scroll Down(`Down Key`), and Scroll Up(`Up Key`).
+
+![gui troubleshooting console window](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogWindow.png)<br>
 
 ## Issues Connecting & Starting Session
 1. If you receive an error in red at the bottom of the GUI while trying to connect to an OpenBCI board, try turning the board Off and back On.
