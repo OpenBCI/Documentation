@@ -45,7 +45,8 @@ const siteConfig = {
     {doc: 'Welcome', label: 'Documentation'},
     {href: 'https://github.com/OpenBCI', label: 'Github'},
     {page: 'citations', label: 'Citations'},
-    {search: true}
+    {search: true},
+    {languages: true}
   ],
 
   // If you have users set above, you add it here:
