@@ -1,9 +1,9 @@
 from os import walk
 from pathlib import Path
 import locale
+
 locale.setlocale(locale.LC_ALL, '')  # Use '' for auto, or force e.g. to 'en_US.UTF-8'
 
-from pathlib import Path
 result = list(Path("./docs/").rglob("*.[mD][dD]"))
 #print('[%s]' % ', '.join(map(str, result)))
 
