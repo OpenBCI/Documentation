@@ -45,8 +45,8 @@ const siteConfig = {
     {doc: 'Welcome', label: 'Documentation'},
     {href: 'https://github.com/OpenBCI', label: 'Github'},
     {page: 'citations', label: 'Citations'},
-    {search: true},
-    {languages: true}
+    {languages: true},
+    {search: true}
   ],
 
   // If you have users set above, you add it here:
@@ -62,6 +62,8 @@ const siteConfig = {
     primaryColor: '#1f456e',
     secondaryColor: '#DDDDDC',
   },
+
+  translationRecruitingLink: 'https://crowdin.com/project/openbci-docs',
 
   /* Custom fonts for website */
   /*
@@ -116,7 +118,9 @@ const siteConfig = {
     apiKey: '19411ba246745c95db0bff87cfed97b0',
     indexName: 'openbci',
     placeholder: 'Search Docs',
-    algoliaOptions: {} // Optional, if provided by Algolia
+    algoliaOptions: {
+      facetFilters: ['language:LANGUAGE', 'version:VERSION'],
+    }, // Optional, if provided by Algolia
   },
 };
 
