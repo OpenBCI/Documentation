@@ -23,11 +23,11 @@ title: GUI Troubleshooting
     - Cyton+WiFi: Go through the [WiFi Getting Started Guide](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md). If this doesn't help, check the Forums or [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) and make a new issue if one doesn't already exist. There are a number of issues that are currently being worked on.
     - Ganglion: The Ganglion board usually has fewer issues. If you can't get the Ganglion to connect to the GUI after trying the previous steps, you can email us at support@openbci.com or check [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues).
 1. If your Cyton firmware is older than v3.0.0, you will need to [update the firmware as outlined here](02Cyton/05-Cyton_Board_Programming_Tutorial.md#overview). The latest Cyton firmware as of 2019 is v3.1.2.
-1. If nothing in the Docs, GitHub, or Forums are helpful, it's a good idea to email support@openbci.com or make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new).
+1. If nothing in the Docs, GitHub, or Forums are helpful, it's a good idea to email support@openbci.com or make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
 
 ## Something Doesn't Look Right...
 1. Take a screenshot using tools provided by your operating system. Alternatively, you can turn on Expert Mode in the GUI and take a screenshot by pressing 'm' on your keyboard.
-1. Restart the GUI. If the same problem happens again, please make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new).
+1. Restart the GUI. If the same problem happens again, please make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
 
 ## High DPI Scaling
 - [On Windows](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-windows)
