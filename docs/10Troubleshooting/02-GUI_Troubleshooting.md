@@ -36,4 +36,4 @@ title: GUI Troubleshooting
 
 #### Further troubleshooting
 
-If you're still having problems, search through the [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new).
+If you're still having problems, search through the [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
