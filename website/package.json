@@ -9,7 +9,8 @@
     "rename-version": "docusaurus-rename-version",
     "crowdin-upload": "crowdin --config ../crowdin.yaml upload sources --auto-update -b master",
     "crowdin-download": "crowdin --config ../crowdin.yaml download -b master",
-    "crowdin-push": "crowdin --config ../crowdin.yaml push -b master"
+    "crowdin-push": "crowdin --config ../crowdin.yaml push -b master",
+    "crowdin-pull": "crowdin --config ../crowdin.yaml pull -b master"
   },
   "devDependencies": {
     "docusaurus": "^1.12.0"
