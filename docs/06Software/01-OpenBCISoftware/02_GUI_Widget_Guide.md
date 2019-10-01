@@ -161,6 +161,13 @@ Lab Streaming Layer is a system for synchronizing streaming data for live analys
 
 FFT data can now be sent over LSL, starting with [GUI v.4.1.5-beta.3.](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
+
+For certain data types, it helps to change the `# Chan` to match the data type. Example: Focus is a single number output, so just set `# Chan` to 1. Here's a screenshot streaming 3 data types to Python: 
+
+![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/gui_lslStreaming_Example.png)<br>
+
+You can find the [example Python script here](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/Networking-Test-Kit). Note: You will need to do `pip install pylsl` if the dependency is not already installed.
+
 ### OSC
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_OSC.png?raw=true" width="70%">
 
