@@ -282,7 +282,7 @@ For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (
 
 ![image](assets/HeadwareImages/1020.jpg)
 
-Please open the image above in new tap to better recognize the position.
+Please open the image above in new tab to better recognize the position.
 
 ### Placement of electrodes
 
