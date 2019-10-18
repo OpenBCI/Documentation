@@ -14,7 +14,7 @@ const languages = [
   {
     enabled: true,
     name: '日本語',
-    tag: 'ja',
+    tag: 'ja-JP',
   },
   {
     enabled: false,
@@ -44,7 +44,7 @@ const languages = [
   {
     enabled: true,
     name: 'Deutsch',
-    tag: 'de',
+    tag: 'de-DE',
   },
   {
     enabled: false,
@@ -69,7 +69,7 @@ const languages = [
   {
     enabled: true,
     name: 'Français',
-    tag: 'fr',
+    tag: 'fr-FR',
   },
   {
     enabled: false,
@@ -99,7 +99,7 @@ const languages = [
   {
     enabled: true,
     name: '한국어',
-    tag: 'ko',
+    tag: 'ko-KR',
   },
   {
     enabled: false,
