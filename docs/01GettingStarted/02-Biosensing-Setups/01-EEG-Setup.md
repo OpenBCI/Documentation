@@ -42,7 +42,7 @@ If you are using an OpenBCI electrode starter kit, use the following electrodes 
 Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well. You can see in the image below pins N1P through N8P on the Cyton. These correspond to the 8 channels available for data.
 
 On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to *'DOWN'* for EEG.
-See [here](../../03Ganglion/02-Ganglion.md#inverting-input-select-switches) for more info before proceeding with EEG-Ganglion set up.
+Explanation in detail [here](../../03Ganglion/02-Ganglion.md#inverting-input-select-switches).
 
 ![eegGoldCupSetup](assets/GettingStartedImages/eeg_cytonSetup.JPG)
 
