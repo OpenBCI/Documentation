@@ -24,6 +24,14 @@ Connect each electrode pair (for each muscle group) to the top and bottom pins o
 
 Additionally, connect the ground pin to the AGND pin.
 
+**If using the _Ganglion_, please check your set-up with these three points:**
+
+A) Your ground electrode should be connected to the D_G (driven ground pin).
+
+B) The four switches on the Ganglion should be in the default **UP** position.
+
+C) Each muscle should have two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four muscles to the input channels 1 through 4.
+
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="50%">
 
 In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).

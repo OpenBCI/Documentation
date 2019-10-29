@@ -39,18 +39,21 @@ If you are using an OpenBCI electrode starter kit, use the following electrodes 
 
 ## 1. Connect your electrodes to OpenBCI
 
-Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well.
+Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well. You can see in the image below pins N1P through N8P on the Cyton. These correspond to the 8 channels available for data.
+
+On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to *'DOWN'* for EEG.
+See [here](../../03Ganglion/02-Ganglion.md#inverting-input-select-switches) for more info before proceeding with EEG-Ganglion set up.
 
 ![eegGoldCupSetup](assets/GettingStartedImages/eeg_cytonSetup.JPG)
 
-| Electrode Wire Color | Cyton Board Pin | Ganglion Board Pin |
-|---|---|---|
-| white | SRB2 (bottom SRB pin) | SRB2 (top/bottom SRB pin) |
-| black | bottom BIAS pin | SRB2 (top/bottom SRB pin) |
-| purple | 2N (bottom N2P pin) | 2P (top N2P pin) |
-| red | 7N (bottom N7P pin) | 4P (top N4P pin) |
+| Electrode Wire Color | Cyton Board Pin | Ganglion Board Pin | Function |
+|---|---|---|---|
+| white | SRB2 (bottom SRB pin) | REF (top OR bottom pin) | Reference Pin |
+| black | bottom BIAS pin | D_G (top OR bottom pin) | Noise-cancelling Pin |
+| purple | 2N (bottom N2P pin) | +2 (on top row) | Analog input |
+| red | 7N (bottom N7P pin) | +4 (on top row) | Analog input |
 
-The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or N4P in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
+The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or pins 1 through 4 in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
 
 ## 2. Connect your electrodes to your head and body
 
@@ -58,7 +61,7 @@ The white and black electrodes must always connect to the SRB2 pin and the botto
 
 a) We're going to start with the electrodes on your head. Begin by scooping Ten20 electrode paste into your white gold cup electrode. This is going to be your reference (or SRB2) electrode for the other electrodes on your head. Fill the electrode so there is a little extra electrode paste spilling over the top of the gold cup, as seen in the picture to the right.
 
-**Note:** Use a paper towl or napkin to remove excess electrode paste as you are applying your electrodes.
+**Note:** Use a paper towel or napkin to remove excess electrode paste as you are applying your electrodes.
 
 ![SRB2](assets/GettingStartedImages/earlobe.JPG)
 

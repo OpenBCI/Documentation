@@ -9,7 +9,7 @@ title: OpenBCI EEG Headband Kit Guide
 
 When combined with our [Ganglion](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483) or [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) boards, the OpenBCI EEG Headband Kit is a low-cost tool for obtaining research-grade EEG data.
 
-This tutorial will guide you through setting up your EEG system with either board! Please read this tutorial in its entirety (ALL Ganglion and Cyton sections, even if you don't have both boards) before setting up the system.
+This tutorial will guide you through setting up your EEG system with either board! Please read this tutorial in its entirety (ALL Ganglion and Cyton sections, even if you have one of these boards) before setting up the system.
 
 #### Each kit includes:
 1. Two Ear-clip electrodes (left example)
