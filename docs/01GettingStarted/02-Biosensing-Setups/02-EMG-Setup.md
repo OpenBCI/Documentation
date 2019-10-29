@@ -26,7 +26,7 @@ Additionally, connect the ground pin to the AGND pin.
 
 **If using the _Ganglion_, please check your set-up with these three points:**
 
-A) Your ground electrode should be connected to the D_G (driven ground pin).
+A) Your ground electrode should be connected to the bottom D_G (Driven Ground pin).
 
 B) The four switches on the Ganglion should be in the default **UP** position.
 

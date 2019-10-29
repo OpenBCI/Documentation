@@ -48,8 +48,8 @@ Explanation in detail [here](../../03Ganglion/02-Ganglion.md#inverting-input-sel
 
 | Electrode Wire Color | Cyton Board Pin | Ganglion Board Pin | Function |
 |---|---|---|---|
-| white | SRB2 (bottom SRB pin) | REF (top OR bottom pin) | Reference Pin |
-| black | bottom BIAS pin | D_G (top OR bottom pin) | Noise-cancelling Pin |
+| white | SRB2 (bottom SRB pin) | REF (top pin) | Reference Pin |
+| black | bottom BIAS pin | D_G (top pin) | Noise-cancelling Pin |
 | purple | 2N (bottom N2P pin) | +2 (on top row) | Analog input |
 | red | 7N (bottom N7P pin) | +4 (on top row) | Analog input |
 
