@@ -9,11 +9,11 @@ GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes
 ## Time Series
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%">
 
-The time series is the most basic widget to record biosensing data. It processes and displays the electrophysiological signal in real time, with each line representing the voltage detected at one point in time by an electrode.
+The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real time, with each graph representing the voltage detected at one point in time by an electrode.
 
 It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared).
 
-Each ultracortex comes with wires that are color coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
+Each Ultracortex comes with wires that are color coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
 
 #### Hardware Settings
 
@@ -162,7 +162,7 @@ Lab Streaming Layer is a system for synchronizing streaming data for live analys
 FFT data can now be sent over LSL, starting with [GUI v.4.1.5-beta.3.](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
 
-For certain data types, it helps to change the `# Chan` to match the data type. Example: Focus is a single number output, so just set `# Chan` to 1. Here's a screenshot streaming 3 data types to Python: 
+For certain data types, it helps to change the `# Chan` to match the data type. Example: Focus is a single number output, so just set `# Chan` to 1. Here's a screenshot streaming 3 data types to Python:
 
 ![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/gui_lslStreaming_Example.png)<br>
 
