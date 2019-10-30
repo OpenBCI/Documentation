@@ -20,17 +20,18 @@ The electrode pairs for each muscle group will serve as the positive and negativ
 
 ## 1. Connecting Electrodes to the OpenBCI Board
 
-Connect each electrode pair (for each muscle group) to the top and bottom pins of each row N(x)P, where x is any of the numbers corresponding to a GUI channel. *Note: On the Cyton board, there are 8 channels available, and on the Ganglion board there are 4 channels available.*
+Connect each electrode pair (for each muscle group) to the top and bottom pins of each row N(x)P, where x is any of the numbers corresponding to a GUI channel. *Note: On the Cyton board, there are 8 channels available.*
 
-Additionally, connect the ground pin to the AGND pin.
+Additionally, connect the ground electrode pin to the Cyton bottom AGND pin.
 
-**If using the _Ganglion_, please check your set-up with these three points:**
+**If using the _Ganglion_, please check your set-up with these following steps, noting that on the Ganglion board there are 4 channels available.**
 
-A) Your ground electrode should be connected to the bottom D_G (Driven Ground pin).
+A) The four switches on the Ganglion should be in the default **UP** position.
 
-B) The four switches on the Ganglion should be in the default **UP** position.
+B) Your ground electrode should be connected to the bottom D_G pin (Driven Ground).
 
-C) Each muscle should have two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four muscles to the input channels 1 through 4.
+C) Each muscle should have two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four muscles to the input channels 1 through 4. Thus, nine cables, including the ground electrode in step B, are needed to use all four channels of the Ganglion board to obtain EMG.
+
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="50%">
 

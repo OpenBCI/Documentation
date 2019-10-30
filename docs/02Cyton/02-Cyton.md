@@ -14,7 +14,7 @@ The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture progr
 ### Cyton Board Specs:
 
  * Power with 3-6V DC Battery ONLY
- * PIC32MX250F128B Micrcontroller with chipKIT UDB32-MX2-DIP bootloader
+ * PIC32MX250F128B Microcontroller with chipKIT UDB32-MX2-DIP bootloader
  * ADS1299 Analog Front End
  * LIS3DH 3 axis Accelerometer
  * RFduino BLE radio
