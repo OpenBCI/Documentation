@@ -1,6 +1,6 @@
 ---
 id: OpenBCI_on_Windows
-title: OpenBCI Latency Fix on Windows
+title: Windows - FTDI Latency Fix
 ---
 
 Tested on:
