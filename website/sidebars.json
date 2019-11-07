@@ -131,8 +131,9 @@
         ],
         "Troubleshooting": [
             "10Troubleshooting/minimizingNoise",
-            "10Troubleshooting/GUI_Troubleshooting"
-            "10Troubleshooting/FTDI_Driver_Fix"
+            "10Troubleshooting/GUI_Troubleshooting",
+            "10Troubleshooting/FTDI_Driver_Fix",
+            "10Troubleshooting/OpenBCI_on_Windows"
         ],
         "Example Projects": [
           "07Examples/ExamplesLanding",
