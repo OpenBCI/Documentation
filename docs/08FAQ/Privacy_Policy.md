@@ -89,7 +89,7 @@ By continuing to use the OpenBCI services, you are consenting to our use of your
 
 We may disclose aggregated information about our users, and information that does not identify any individual, without restriction.
 We may disclose personal information that we collect or you provide as described in this privacy policy:
-I. To our affiliates.
+I. To our affiliates, product partners, and manufacturers of products that users purchase through OpenBCI, Inc.
 II. To contractors, service providers, and other third parties we use to support our business and who are bound by contractual obligations to keep personal data confidential and use it only for the purposes for which we disclose it to them.
 III. To fulfill the purpose for which you provide it.
 IV. For any other purpose disclosed by us when you provide the information.
@@ -115,7 +115,7 @@ OpenBCI Services are accessible to users globally. Therefore, OpenBCI may transf
 
 ### 12. HOW LONG DO WE KEEP YOUR DATA?
 
-We will retain your personal information only for as long as we will be required in order to fulfil the purposes outlined in this Privacy Policy. In certain special cases, longer retention period might be required by law for tax, accounting purposes or other legal requirements and obligations. As soon as we no longer require your personal data to provide our services for other purposes mentioned above, we will promptly delete or anonymize it.
+We will retain your personal information only for as long as we will be required in order to fulfill the purposes outlined in this Privacy Policy. In certain special cases, longer retention period might be required by law for tax, accounting purposes or other legal requirements and obligations. As soon as we no longer require your personal data to provide our services for other purposes mentioned above, we will promptly delete or anonymize it.
 
 
 ### 13. THIRD-PARTY LINKS AND SERVICES
