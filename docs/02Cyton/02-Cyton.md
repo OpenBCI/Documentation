@@ -19,7 +19,7 @@ The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture progr
  * LIS3DH 3 axis Accelerometer
  * RFduino BLE radio
  * Micro SD card slot
- * Voltage Regulation (3V3, +2.5V, -2.5V)
+ * Voltage Regulation (3.3V, +2.5V, -2.5V)
  * Board Dimensions 2.41" x 2.41" (octogon has 1" edges)
  * Mount holes are 1/16" ID, 0.8" x 2.166" on center
 
