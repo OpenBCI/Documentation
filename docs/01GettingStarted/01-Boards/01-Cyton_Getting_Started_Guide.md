@@ -48,6 +48,9 @@ It will convert any electrode that terminates in the industry-standard touch-pro
 
 Cyton boards have specific input voltage ranges. These input voltage ranges can be found on the back-side of the board, next to the power supply. **BE VERY CAREFUL** to not supply your board with voltages above these ranges, or else you will damage your board's power supply. For this reason, we recommend that you always use the battery pack that came with your OpenBCI kit.
 
+**Important note**
+If you are using a non-OpenBCI battery holder, please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
+
 ### 5. (x4) Plastic Feet
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/8bitboard_wPlasticFeet.png?raw=true" width="70%">

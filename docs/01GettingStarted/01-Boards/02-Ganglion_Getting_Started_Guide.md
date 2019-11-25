@@ -38,6 +38,9 @@ Install 4 AA batteries in your battery pack, plug in your Ganglion board and tur
 
 ![Battery Connection](assets/GettingStartedImages/ganglion_batteryConnection.png)
 
+**Important note**
+If you are using a non-OpenBCI battery holder, please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
+
 ### 4. (x4) Plastic Feet
 
 ![Plastic Feet](assets/GettingStartedImages/ganglion_wPlasticFeet.png)
