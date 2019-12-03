@@ -32,7 +32,7 @@ Region/State/Province:
 
 Postal/zip code*:
 
-Tax ID or VAT (if purchasing on behalf of a tax-exempt institution):
+Tax ID or VAT:
 
 ## When will my credit card be charged?
 
