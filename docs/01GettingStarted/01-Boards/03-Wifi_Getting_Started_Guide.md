@@ -17,13 +17,13 @@ The WiFi Shield increases the sample rate by transmitting the data via WiFi as o
 * The Ganglion can stream data at 200Hz, 400Hz, 800Hz, 1600Hz, 3200Hz, 6400Hz, and 12800Hz
 
 
-**IMPORTANT NOTE:** This product is in beta mode. The WiFi shield is known to have reliability issues across different computer configurations. Using it effectively requires advanced technical skills and programming knowledge. Please proceed at your own risk. OpenBCI cannot guarantee that the device will work with your configuration.
+**IMPORTANT NOTE:** This product is in beta mode. The WiFi shield is known to have reliability issues ([packet loss](https://github.com/OpenBCI/OpenBCI_WIFI/issues/82) and [cyclical noise spikes](https://github.com/OpenBCI/OpenBCI_GUI/issues/231)) when used with Cyton and CytonDaisy boards. Using it effectively requires advanced technical skills and programming knowledge. Please proceed at your own risk. OpenBCI cannot guarantee that the device will work with your configuration.
 
 When connecting to Cyton+WiFi or Cyton+Daisy+WiFi using the OpenBCI GUI, you have the option of using TCP, UDP, or UDPx3. __We recommend trying to connect using UDPx3 protocol.__
 
 ## Prerequisites
 
-The WiFi Shield requires your Cyton to run the [latest Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/latest)  and your Ganglion to the [latest Ganglion firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/latest) firmware.
+The WiFi Shield requires your Cyton to run the [latest Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/latest)  and your Ganglion to the [latest Ganglion firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/latest) firmware. PLEASE NOTE IF YOU PURCHASED YOUR OPENBCI BOARD **MID-2018** OR LATER, YOU DO NOT NEED TO UPDATE ITS FIRMWARE.
 
 #### You must update your firmware before getting started. If you purchased your board mid-2018 or later, you won't need to update firmware and can skip down to General Overview.
 
