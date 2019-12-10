@@ -5,11 +5,11 @@ title: OpenViBE
 
 ## Overview
 
-There are two primary methods of connecting from OpenBCI tech to OpenVibe.
+__There are two primary methods of connecting from OpenBCI tech to OpenViBE:__
 
-1. You can connect the Cyton and Cyton+Daisy using an OpenVibe driver. This method is described below.
+1. You can connect the Cyton and Cyton+Daisy using an OpenViBE driver. This method is described below.
 
-2. Connect any OpenBCI Board to the OpenBCI GUI, then use the Networking Widget to stream data using LSL protocol to OpenVibe Acquisition Server. Start streaming from the GUI first. Select LSL in OpenVibe Acquisition Server. You should see an option in Driver Properties to select the data stream from the GUI, its typically auto-detected.
+2. Connect any OpenBCI Board to the OpenBCI GUI, then use the Networking Widget to stream data using LSL protocol to OpenViBE Acquisition Server. Start streaming from the GUI first. Select LSL in OpenViBE Acquisition Server. You should see an option in Driver Properties to select the data stream from the GUI, its typically auto-detected.
 
 ## Setting Up Your Environment
 
@@ -21,10 +21,12 @@ There are two primary methods of connecting from OpenBCI tech to OpenVibe.
 
 ## Installation
 
-Make sure you have a running Windows 7 Machine (be it either a VM or native).
+Make sure you have a running Windows 7, 8.1, or 10 Machine (be it either a VM or native).
 Download the latest OpenViBE software from their [website](http://openvibe.inria.fr/downloads/).
 
-## Getting Started
+## Method 1: Connect Directly to Cyton or Cyton+Daisy using Dongle
+
+### Getting Started
 
 Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial.](09Deprecated/08-OpenBCI_on_Windows.md)
 
@@ -40,9 +42,11 @@ Start the OpenViBE Signal Acquisition Server (SAS). **C: > Program Files > openv
 	- Often, pressing the restart button on the OBCI board, or Disconnecting/Connecting the Dongle will fix any connection issues.
 	- If the error reports that it cannot open the selected port, make sure the COM port selected in the driver options is the same as your board.
 
-## Streaming from OpenBCI to OpenViBE
+### Configure OpenViBE Designer
 
-Open the OpenViBE designer GUI. A blank page should open like below:
+__[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/OpenBCI/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
+
+Open the OpenViBE Designer GUI. If you are not using the example xml file, a blank page should open like below:
 
 ![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_designer.JPG)
 
@@ -61,6 +65,29 @@ Return to the OpenViBE designer GUI. Click the play button from the top toolbar.
 ![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_signal_live.JPG)
 
 You're now streaming data from your OpenBCI board to OpenViBE! Feel free to explore the other tools OpenViBE has to offer.
+
+## Method 2: Stream from the OpenBCI GUI to OpenViBE
+
+Please, refer to the following screenshot, YouTube video and/or steps below. For example, you can stream Ganglion+WiFi at 1600Hz from the OpenBCI GUI to OpenVibe, as seen in the screenshot. __Here is a [YouTube Video to document this method in detail.](https://www.youtube.com/watch?v=97rNewfbTKA)__
+
+__[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/OpenBCI/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions. 
+
+As you can see in the YouTube Video, we need to make a few modifications to the OpenBCI-OpenViBE XML for this to work with Ganglion sent over LSL. Change the number of channels at the top left, and sever the connection to the Aux data processing, since we will be sending just TimeSeries data over LSL.
+
+1. Open the OpenBCI GUI.
+1. Start a session with any data mode.
+1. Open the Networking Widget and set Protocol to LSL from the dropdown in the top right of the widget.
+1. Select desired data type to stream.
+1. __IMPORTANT: In the OpenViBE Acquisition Server, select the Driver as LabStreamingLayer(LSL).__
+1. Click __Start__ in the OpenBCI GUI Networking Widget.
+1. Click Connect and Play in the OpenViBE Acquisition Server.
+1. Click the Play button in the OpenViBE Designer GUI.
+
+![OpenBCI GUI to OpenViBE Screenshot](assets/SoftwareImages/CompatibleThirdPartySoftwareImages/Ganglion-Wifi-LSL-OpenVibe_screenshot.png)
+
+Here is what the Acquisition Server Console Log should read when successfully connected:
+![OpenBCI GUI to OpenViBE LSL Successful Connection](assets/SoftwareImages/CompatibleThirdPartySoftwareImages/Ganglion-Wifi-LSL-OpenVibe_successMessage.png)
+
 
 **Enjoy OpenBCI in OpenViBE!**
 
