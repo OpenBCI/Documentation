@@ -46,6 +46,8 @@ title: GUI Troubleshooting
 
  - The current GUI now features packet loss interpolation. This makes filtered data much smoother and minimizes artefacts that would appear.
 
+ ![GUI Cyton Manual Radio Configuration](assets/SoftwareImages/OpenBCISoftware/gui_cyton_manual_radioconfig.png)
+
 ### Ganglion
 
  Ganglion connections using the [BLED 112 Dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768) are usually very stable with low noise. If you experience packet loss, there may be an excess of BLE devices in the immediate area. Otherwise, try moving the Ganglion and Dongle closer together with a USB extension cable.
