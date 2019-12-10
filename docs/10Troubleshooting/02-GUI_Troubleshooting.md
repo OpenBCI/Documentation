@@ -33,7 +33,23 @@ title: GUI Troubleshooting
 - [On Windows](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-windows)
 - [On Linux](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-linux)
 
+## Troubleshooting Packet Loss
 
-#### Further troubleshooting
+### Cyton
+
+ Please, be advised that packet loss can occur in noisy environments, especially in university lab environments with multiple Cytons running. If you think you are experiencing packet loss, you can open the [Console Log Window](GUI_Troubleshooting#the_gui_console_log) to confirm or deny packet loss and assess severity. Also, boards with low battery power may show packet loss and excessive noise.
+
+ To fix this:
+ - Use a USB extension cable or hub to make sure Cyton and Dongle are closer together.
+
+ - Go to Manual Radio Configuration and try `CHANGE CHAN.` or `AUTOSCAN` as shown in the picture below. You can hover over these buttons with your mouse for a brief description. The Auto Connect button is disabled when using Manual Radio Config.
+
+ - The current GUI now features packet loss interpolation. This makes filtered data much smoother and minimizes artefacts that would appear.
+
+### Ganglion
+
+ Ganglion connections using the [BLED 112 Dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768) are usually very stable with low noise. If you experience packet loss, there may be an excess of BLE devices in the immediate area. Otherwise, try moving the Ganglion and Dongle closer together with a USB extension cable.
+
+## Further troubleshooting
 
 If you're still having problems, search through the [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
