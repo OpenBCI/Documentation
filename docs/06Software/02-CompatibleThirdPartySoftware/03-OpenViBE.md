@@ -72,7 +72,9 @@ Please, refer to the following screenshot, YouTube video and/or steps below. For
 
 __[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/OpenBCI/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions. 
 
-As you can see in the YouTube Video, we need to make a few modifications to the OpenBCI-OpenViBE XML for this to work with Ganglion sent over LSL. Change the number of channels at the top left, and sever the connection to the Aux data processing, since we will be sending just four channels TimeSeries data over LSL.
+_We do not need the objects on the right to handle AUX channels. Sever the connection to the Aux data processing, since we will be sending just four channels TimeSeries data over LSL._
+
+As you can see in the YouTube Video, we need to make a few modifications to the OpenBCI-OpenViBE XML for this to work with Ganglion sent over LSL. Refer to the comments in the example.
 
 1. Open the OpenBCI GUI.
 1. Start a session with any data mode.
