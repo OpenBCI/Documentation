@@ -30,7 +30,7 @@ If you are interested in contributing to the OpenBCI Learning Pages, feel free t
 
 ### Real-time EEG data with OpenBCI GUI
 
-Most recent [GUI release](https://github.com/OpenBCI/OpenBCI_GUI/releases), version 4.1.5, showing data obtained with the Ultracortex Mark IV EEG Headset 8 channel
+[GUI release](https://github.com/OpenBCI/OpenBCI_GUI/releases), version 4.1.5, showing data obtained with the Ultracortex Mark IV EEG Headset 8 channel
 ![GUI v4.1.5](https://media.giphy.com/media/KyAYyrf3lkE6dsTKej/giphy.gif)
 
 Head to the [Software section](06Software/00-SoftwareLanding.md) for how-tos!
