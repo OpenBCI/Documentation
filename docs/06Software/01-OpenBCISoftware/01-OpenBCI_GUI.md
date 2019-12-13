@@ -313,4 +313,10 @@ Expert Mode Keyboard Shortcuts:
 
 - __Enter presentation mode using Enter (Win), or Return (Mac).__
 
-- To change to the alternate color scheme, use '{' .
+- To change to the alternate color scheme, use '{'.
+
+## Converting Large SD Card Recordings
+
+In order to convert large SD card recordings made using Cyton or Cyton+Daisy, you will need to run the GUI from Processing, as described here in the docs. As mentioned in the screenshot below, open Processing preferences and increase max available memory to at least 9GB to convert a 12 hour SD recording.
+
+![GUI Screenshot convert large SD recording](assets/SoftwareImages/OpenBCISoftware/gui_convert_large_SD_recordings_scrnshot.png)
