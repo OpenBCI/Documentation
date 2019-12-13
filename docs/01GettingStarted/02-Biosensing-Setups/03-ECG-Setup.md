@@ -25,7 +25,7 @@ B) Your ground electrode should be connected to the bottom D_G pin (Driven Groun
 
 C) Each channel needs two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four sampling locations on the chest to the input channels 1 through 4. Thus, nine cables, including the ground electrode in step B, are needed to use all four channels of the Ganglion board to obtain ECG.
 
-After making these connections, connect the Skintact sticky electrodes to the snap electrodes **prior to applying to the skin**.
+After making these connections, snap the Skintact sticky electrodes into the snap electrode. Then, remove the backing tape and apply the electrode to the skin. **For safety reasons, make sure to attach the electrode to the cable before applying to the skin.**
 
 ## 2. Connect the electrodes to your body
 
