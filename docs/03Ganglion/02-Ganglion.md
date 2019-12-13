@@ -58,6 +58,8 @@ The Ganglion Board is a 4 channel biosensing board. There is a 16 pin Right Angl
 	* Power Supply: 3.0 Volts Connects to the top and bottom pin  
 
 
+[Both the schematic and layer diagrams](assets/GanglionImages/ganglion_schematic.png) show that top and bottom pins of D_G and REF are connected together with traces. So makes no difference which you use.
+
 ### Inverting Input Select Switches
 Each input channel is buffered by an [AD8237](http://www.analog.com/media/en/technical-documentation/data-sheets/AD8237.pdf) Instrumentation Amplifier with a differential input impedance of 100 MΩ. There are 4 small slide switches (SW1, SW2, SW3, SW4) which can be set to connect the `-` inputs from the InAmps either to their associated `-` pin, or to the `REF` pin.  
 
