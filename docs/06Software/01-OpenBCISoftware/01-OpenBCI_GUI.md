@@ -317,6 +317,6 @@ Expert Mode Keyboard Shortcuts:
 
 ## Converting Large SD Card Recordings
 
-In order to convert large SD card recordings made using Cyton or Cyton+Daisy, you will need to run the GUI from Processing, as described here in the docs. As mentioned in the screenshot below, open Processing preferences and increase max available memory to at least 9GB to convert a 12 hour SD recording.
+In order to convert large SD card recordings made using Cyton or Cyton+Daisy, you will need to run the GUI from Processing, but we need to change one crucial setting in Processing's Preferences. As mentioned in the screenshot below, open Processing preferences and increase max available memory to at least 9GB to convert a 12 hour SD recording. Click OK to save these preferences, restart Processing to make sure the changes take effect, and re-launch the GUI.
 
 ![GUI Screenshot convert large SD recording](assets/SoftwareImages/OpenBCISoftware/gui_convert_large_SD_recordings_scrnshot.png)
