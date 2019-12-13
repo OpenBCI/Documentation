@@ -17,23 +17,35 @@ This document will show you how to read ECG data (electrical signals from  the h
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%">
 
-After making these connections, connect the Skintact sticky electrodes to the snap electrodes **prior to applying to the skin**.
+If using the **Ganglion board**, please check your set-up with these following steps, noting that on the Ganglion board there are 4 channels available.
 
-## 2. Connect the electrodes to your muscles
+A) The four switches on the Ganglion should be in the default UP position.
 
-1. Connect the ground electrode to any bony part of your body, such as your elbow.
-2. Connect each of the other electrodes to opposite sides of your body. For example, place them on either bicep.
+B) Your ground electrode should be connected to the bottom D_G pin (Driven Ground). The bottom row of pins is closer to the flat surface on which your Ganglion is placed.
+
+C) Each channel needs two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four sampling locations on the chest to the input channels 1 through 4. Thus, nine cables, including the ground electrode in step B, are needed to use all four channels of the Ganglion board to obtain ECG.
+
+After making these connections, snap the Skintact sticky electrodes into the snap electrode. Then, remove the backing tape and apply the electrode to the skin. **For safety reasons, make sure to attach the electrode to the cable before applying to the skin.**
+
+## 2. Connect the electrodes to your body
+
+1. Connect the ground electrode to a bony part of the chest, such as the sternum.
+2. Connect top and bottom N1P pin on the Cyton (+1 and -1 pins on the Ganglion) to opposite sides of your chest.
 
 By doing this, we are instructing the data to measure the electric potential difference across your chest, which will in turn display your heart signals.
 
-## 3. Streaming EMG Data with the OpenBCI GUI
+The Cyton board has pins N1P through N8P, which allows up to 8 channels of data. 
 
-Once you have the GUI open, turn off all channels that are not connected to muscle sensors. Then, go to hardware settings and turn off SRB2 for all of the channels that you are streaming data from.
+## 3. Streaming ECG Data with the OpenBCI GUI
 
-*Note: This is because ordinarily SRB2 is the reference point from which potentials are measured, however we are now having muscles reference themselves, so we do not want it to look at this pin.*
+Once you have the GUI open, turn off all channels that are not connected to electrodes. Then, go to hardware settings and turn SRB2 **OFF** for all of the channels that you are streaming data from.
 
-Once all of your settings have been altered, press begin data stream.
+*Note: This is because ordinarily SRB2 is the reference point from which potentials are measured, however we are now having cardiac locations reference themselves, so we do not want it to look at this pin.*
+
+Once all of your settings have been adjusted, press 'begin data stream.'
+
+In the Cyton image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the Time Series Widget. If you are using the Ganglion, channels 1-4 on the GUI Time Series widget will correspond to pins 1-4 on the Ganglion.
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your ECG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
+For help minimizing noise and improving ECG signal quality, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
