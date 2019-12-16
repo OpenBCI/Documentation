@@ -62,6 +62,7 @@ const siteConfig = {
     secondaryColor: '#DDDDDC',
   },
 
+  editUrl: 'https://github.com/OpenBCI/Documentation/edit/master/docs/',
   /* Custom fonts for website */
   /*
   fonts: {
