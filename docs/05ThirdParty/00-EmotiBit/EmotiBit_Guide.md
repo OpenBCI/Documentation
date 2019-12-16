@@ -22,5 +22,5 @@ Stack EmotiBit with any Adafruit Feather module, insert an SD card, and plug in 
 ### 2. Sense
 Place EmotiBit almost anywhere on the body and launch the visualizer to start viewing physiological data.
 
-### 3.Steam
+### 3.Stream
 Save data to an SD card, stream via LSL, OSC, TCP, etc, or open up the code and do anything you want!
