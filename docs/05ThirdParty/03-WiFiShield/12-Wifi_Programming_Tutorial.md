@@ -281,7 +281,7 @@ Developers looking to contribute or write custom firmware can clone the firmware
 
 ### Install ESP8266 Core Firmware
 
-Follow the instructions for downloading the [Arduino ESP8266 core from Boards Manager](https://github.com/esp8266/Arduino). **NOTE** because `SPISlave.h` is newly added to the official SDK, be sure to use 2.4.0 or newer!
+Follow the instructions for downloading the [Arduino ESP8266 core from Boards Manager](https://github.com/esp8266/Arduino). The `SPISlave.h` is newly added to the official SDK. **NOTE: Per a comment in the forums: "the GUI only works if the binary is compiled using Arduino ESP library version 2.5.0".**
 
 ### Select 'Adafruit Huzzah ESP8266 as Board
 
