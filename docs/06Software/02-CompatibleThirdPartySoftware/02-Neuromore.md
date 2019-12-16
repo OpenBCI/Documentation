@@ -11,7 +11,7 @@ Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, i
 
 **OS X**: Neuromore Studio is available for MacOS, but see the [FTDI OS X fix](10Troubleshooting/05-FTDI_Driver_Fix_Mac.md) before using it.
 
-**Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](10Troubleshooting/06-VirtualBox.md)
+**Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md)
 
 ## Installation
 

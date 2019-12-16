@@ -113,7 +113,8 @@
               "06Software/02-CompatibleThirdPartySoftware/OpenVibe",
               "06Software/02-CompatibleThirdPartySoftware/LSL",
               "06Software/02-CompatibleThirdPartySoftware/BrainBay",
-              "06Software/02-CompatibleThirdPartySoftware/BioEra"
+              "06Software/02-CompatibleThirdPartySoftware/BioEra",
+              "06Software/02-CompatibleThirdPartySoftware/VirtualBox"
             ]
           }],
         "Deprecated Documents": [
@@ -129,8 +130,7 @@
             "10Troubleshooting/minimizingNoise",
             "10Troubleshooting/GUI_Troubleshooting",
             "10Troubleshooting/FTDI_Fix_Mac",
-            "10Troubleshooting/OpenBCI_on_Windows",
-            "10Troubleshooting/VirtualBox"
+            "10Troubleshooting/OpenBCI_on_Windows"
         ],
         "Example Projects": [
           "07Examples/ExamplesLanding",
