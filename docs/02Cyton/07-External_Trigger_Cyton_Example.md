@@ -25,7 +25,7 @@ Once you have connected, you may selected the "Digital Read" for one of your wid
 
 You can verify the digital read widget is working by pressing the "PROG" button which is hooked up to the D17 pin.
 
-When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](09Deprecated/08-OpenBCI_on_Windows.md) and [macOS](09Deprecated/09-FTDI_Driver_Fix.md), for Linux, we still need a guide and this could be a good first contribution for a community member!
+When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](10Troubleshooting/04-OpenBCI_on_Windows.md) and [macOS](10Troubleshooting/05-FTDI_Driver_Fix_Mac.md), for Linux, we still need a guide and this could be a good first contribution for a community member!
 
 When you use a Cyton over [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550), you get up to 3 digital IO pins to read from: D11, D12 and D17! There should be no noticeable delay from when you touch the button and when the digital read widget in the GUI shows the button pressed.
 

@@ -238,9 +238,9 @@ To learn how to connect yourself to OpenBCI using your newly set up board, see t
 ## VI. Fixing FTDI Buffering on Mac OS
 On some Macs, you may have noticed that the data coming from your Cyton board is very choppy.
 
-This is a result of the FTDI virtual com port (VCP) driver's default settings for macOS. Head over to the [FTDI Driver Fix Guide](../../09Deprecated/09-FTDI_Driver_Fix.md) to see how to adjust the settings.
+This is a result of the FTDI virtual com port (VCP) driver's default settings for macOS. Head over to the [FTDI Driver Fix Guide](../../10Troubleshooting/05-FTDI_Driver_Fix_Mac.md) to see how to adjust the settings.
 
 ## VII. Fixing FTDI Buffering on Windows
 
 The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if its accumulating packets for about a full second before releasing them all at the same time into the serial stream.
- Head over to the [FTDI Driver Fix Guide for Windows](../../09Deprecated/08-OpenBCI_on_Windows.md) to see how to adjust the settings.
+ Head over to the [FTDI Driver Fix Guide for Windows](../../10Troubleshooting/04-OpenBCI_on_Windows.md) to see how to adjust the settings.

@@ -13,9 +13,9 @@ __There are two primary methods of connecting from OpenBCI tech to OpenViBE:__
 
 ## Setting Up Your Environment
 
-**Windows**: Follow [OBCI on Windows](09Deprecated/08-OpenBCI_on_Windows.md) tutorial to properly connect your OBCI board on Windows. Then, continue this tutorial.
+**Windows**: Follow [OBCI on Windows](10Troubleshooting/04-OpenBCI_on_Windows.md) tutorial to properly connect your OBCI board on Windows. Then, continue this tutorial.
 
-**OS X**: Visit the [Win7 Virtual Box installation tutorial](09Deprecated/10-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
+**OS X**: Visit the [Windows Virtual Box installation tutorial](10Troubleshooting/06-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
 
 **Linux**: [Linux builds](http://openvibe.inria.fr/downloads/) of OpenViBE also work. Some linux users might find this guide useful but keep in mind it is meant primarily for mac + win7.
 
@@ -28,7 +28,7 @@ Download the latest OpenViBE software from their [website](http://openvibe.inria
 
 ### Getting Started
 
-Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial.](09Deprecated/08-OpenBCI_on_Windows.md)
+Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial.](10Troubleshooting/04-OpenBCI_on_Windows.md)
 
 Start the OpenViBE Signal Acquisition Server (SAS). **C: > Program Files > openvibe > openvibe-acquisition-server** (normally shows up when searching “openvibe” in start menu).
 

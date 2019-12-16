@@ -1,6 +1,6 @@
 ---
-id: VirtualBoxDep
-title: VirtualBox Windows 7 Guide
+id: VirtualBox
+title: VirtualBox Windows Guide
 ---
 
 Some of the software compatible with OpenBCI products requires a Windows operating system. If you have a non-windows computer, you can still use this software through a Windows virtual machine on VirtualBox.
@@ -15,7 +15,7 @@ Some of the software compatible with OpenBCI products requires a Windows operati
 4. Some EEG processing software uses a lot of RAM (OpenViBE aquisition server for example). In fact, some will take up one entire core, if they can. Because of this, I would advise that you configure your VM to have multiple cores and as much RAM as you deem reasonable.
 5. Import the VM, go through all the configs and start it.
 6. For more detailed instructions/tutorials and troubleshooting see the [Windows Manual](https://az792536.vo.msecnd.net/vms/release_notes_license_terms_8_1_15.pdf). (If you selected a different distribution other than Win 7, see the respective manual in the Windows page.)
-7. Follow the [OpenBCI on Windows](09Deprecated/08-OpenBCI_on_Windows.md) tutorial to properly connect your OBCI board on Windows.
+7. Follow the [OpenBCI on Windows](10Troubleshooting/04-OpenBCI_on_Windows.md) tutorial to properly connect your OBCI board on Windows.
 
 NOTE: Make sure that Guest Additions are installed correctly on your VM. With the image used, they should be automatically installed.
 

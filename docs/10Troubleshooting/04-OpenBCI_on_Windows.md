@@ -1,12 +1,13 @@
 ---
 id: OpenBCI_on_Windows
-title: Windows - FTDI Latency Fix
+title: FTDI Buffer Fix on Windows
 ---
 
 Tested on:
 
 - Windows 7
 - Windows XP
+- Windows 10
 
 ### I. Connecting the Board
 
