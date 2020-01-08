@@ -47,7 +47,7 @@ Connect bottom pins N1P through N8P on the Cyton to a set of HPTA cables, shown 
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_cyton_pins.png?raw=true" width="50%">
 
-Connect bottom pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
+Connect top pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_cytondaisy_pins.png?raw=true" width="50%">
 
