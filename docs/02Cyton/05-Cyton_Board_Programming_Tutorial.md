@@ -3,7 +3,7 @@ id: CytonProgram
 title: Cyton Board Programming Tutorial
 ---
 
-# **Note, you do not need to do any board programming if you want to use the Cyton out-of-the-box.** All OpenBCI boards ship already programmed, i.e. with firmware already uploaded. If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to the [software page.](06Software/00-SoftwareLanding.md) 
+# **Note, you do not need to do any board programming if you want to use the Cyton out-of-the-box.** All OpenBCI boards ship already programmed, i.e. with firmware already uploaded. If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding) 
 
 ## Overview
 
