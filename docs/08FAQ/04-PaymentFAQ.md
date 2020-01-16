@@ -3,7 +3,7 @@ id: PaymentFAQ
 title: Purchases & Payment Processing
 ---
 
-Please note all orders ship **after** full payment
+Please note all orders ship **after** full payment. Orders cannot be split between multiple shipments. To make a change to your order, please email support@openbci.com ASAP. We cannot guarantee that we can satisfy the request, but we will do our best if contacted in a timely fashion.
 
 ## How do I request a quotation or an invoice?
 
