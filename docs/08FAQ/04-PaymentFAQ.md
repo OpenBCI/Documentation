@@ -3,6 +3,8 @@ id: PaymentFAQ
 title: Purchases & Payment Processing
 ---
 
+Please note all orders ship **after** full payment
+
 ## How do I request a quotation or an invoice?
 
 There are two methods of getting a quotation. The first and faster method is to make a customer account. Go to shop.openbci.com and fill your cart with the desired products, and make an account with your email and shipping address. Then, email sales@openbci.com and alert customer service to your account details. We will then quickly follow up with a PDF quote.
