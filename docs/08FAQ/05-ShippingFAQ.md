@@ -5,7 +5,7 @@ title: Shipping & Taxes
 
 ## Where do you ship to?
 
-We ship worldwide!
+**ALL** OpenBCI orders ship from the US. We ship worldwide!
 
 ## What are the shipping rates?
 
@@ -15,7 +15,7 @@ Generally, shipping to US addresses takes less than one week. For international 
 
 ## Are duties and customs included in the shipping rate?
 
-Countries outside the United States may be subject to import duties and customs taxes per the laws of your country of residence. As the customer, you are responsible for these charges.
+Countries outside the United States may be subject to import duties and customs taxes per the laws of your country of residence. As the customer, you are responsible for these charges. 
 
 We will not intervene with customs procedures, per the import laws of your country of residence.
 
@@ -23,6 +23,6 @@ Please be advised that product prices do not include customs fees, import taxes,
 
 If shipping to Europe, please expect the import tax to be about 25% of the product price. If shipping to other countries, it is about 10-20%. 
 
-**ALL** OpenBCI orders ship from the US. We ship worldwide!
+The import cost will be calculated by your customs office at the time of delivery and passed onto you.
+Due to the nature of international trade, OpenBCI has no control over these charges, and can give only a rough estimate from historical purchase data. Because of varied customs policies, we are unable to provide exact predictions. Please contact your local customs office if you need exact import cost information.
 
-Have questions about shipping internationally? Email sales@openbci.com
