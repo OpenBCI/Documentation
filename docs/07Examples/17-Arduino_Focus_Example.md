@@ -59,7 +59,7 @@ How can this be used to *make* something? [Here's an example!](https://openbci.c
 
 From here, you can add more to your new Arduino project to react to Focus data from the OpenBCI_GUI:
 
-  - Use Live Data from a [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483)
+  - Use Live Data from a [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 
  - Try controlling even more LEDs using the Arduino
 
