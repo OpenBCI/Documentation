@@ -18,7 +18,7 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 
 #### Necessary:
 * [Ten20 conductive electrode paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198) (or other conductive electrode gel)
-* [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board?variant=13461804483)
+* [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 * x4 AA batteries
 * x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
