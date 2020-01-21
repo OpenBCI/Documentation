@@ -8,7 +8,7 @@ title: RETURNS & REFUNDS
 Before returning any items,
 you must contact us at sales@openbci.com. Refunds and exchanges can be requested within 30 days of the delivery date.
 
-Please note, all returns are contingent on the resale-able condition of the items. You are responsible for the cost of return shipping.
+Please note, all returns are contingent on the resale-able condition of the items. The customer is responsible for the cost of return shipping.
 
 
 #### Order Issues
@@ -34,6 +34,6 @@ Brooklyn, NY 11205
 
 #### If You’re Requesting a Refund
 
-When the returned item is received, the value of your returned item will be credited back as soon as we have completed processing your return (usually within 2 weeks).
+When the returned item is received, a 5% restocking fee will be subtracted from the value of your returned item. Your original method of payment will be credited, minus 5% restocking fee, as soon as we have completed processing your return (usually within 2 weeks).
 
 For questions or assistance with your return, please contact us at sales@openbci.com.
