@@ -3,11 +3,11 @@ id: GanglionProgram
 title: Ganglion Programming Tutorial
 ---
 
+**Please note, you do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.**
+
 This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device. If you want to compile the code in Arduino continue to the [Building From Source](#ganglion-programming-tutorial-building-from-source) portion of the guide.
 
 To program the Ganglion over the air, keep reading. To program using hardware, scroll all the way down to the [last section.](#ganglion-programming-tutorial-setting-up-to-program-ganglion-using-hardware)
-
-**Please note, you do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.**
 
 
 ## Download The Latest Firmware Build
