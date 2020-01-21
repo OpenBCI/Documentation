@@ -247,7 +247,7 @@ Thank you so much (Danke schön! Merci beaucoup!) for visiting the project and w
 MIT
 
 [link_shop_wifi_shield]: https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550
-[link_shop_ganglion]: https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board
+[link_shop_ganglion]: https://shop.openbci.com/collections/frontpage/products/ganglion-board
 [link_shop_cyton]: https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel
 [link_shop_cyton_daisy]: https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel
 [link_nodejs_cyton]: https://github.com/openbci/openbci_nodejs_cyton
