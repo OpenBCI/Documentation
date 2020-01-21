@@ -12,7 +12,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 ![OpenBCI Contents](assets/GettingStartedImages/ganglion_what_you_need.png)
 
- 1. OpenBCI Ganglion Board
+ 1. OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
  2. An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
  3. 6V AA battery pack & (x4) AA batteries (batteries not included)
  4. (x4) plastic feet for board stabilization
