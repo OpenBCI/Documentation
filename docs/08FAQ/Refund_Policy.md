@@ -34,6 +34,6 @@ Brooklyn, NY 11205
 
 #### If You’re Requesting a Refund
 
-When the returned item is received, a 5% restocking fee will be subtracted from the value of your returned item. Your original method of payment will be credited, minus 5% restocking fee, as soon as we have completed processing your return (usually within 2 weeks).
+When the returned item is received, your original method of payment will be credited as soon as we have completed processing your return (usually within 2 weeks).
 
 For questions or assistance with your return, please contact us at sales@openbci.com.
