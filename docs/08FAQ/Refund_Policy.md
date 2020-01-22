@@ -18,21 +18,16 @@ If you have received the wrong or a damaged item, we will take care of return sh
 
 #### How to Return or Exchange Items in 3 Simple Steps
 
-Contact us at sales@openbci.com indicating the issue or reason for return.
+Contact us at sales@openbci.com indicating the issue or reason for return. We will provide the return shipping address.
 Send us the items in the original box (or a different box, as long as it's unmarked) to the address below. We suggest you use USPS Priority Mail or a carrier that provides tracking. OpenBCI, Inc. is not responsible for lost shipments.
 
 Include a note that indicates your name and contact information, the order number, and reason for return.
 
 
-#### Where to Send Returns/Exchanges
-
-OpenBCI, Inc.
-Attn. Returns Department
-19 Morris Ave, Building 128
-Brooklyn, NY 11205
-
 
 #### If You’re Requesting a Refund
+
+We will assess a fee based on the condition of the product(s)and the logistics cost of refurbishing and restocking. The fee will be at minimum 10% of the product price and will subtracted from the amount of the refund. Shipping costs are not refunded.
 
 When the returned item is received, your original method of payment will be credited as soon as we have completed processing your return (usually within 2 weeks).
 

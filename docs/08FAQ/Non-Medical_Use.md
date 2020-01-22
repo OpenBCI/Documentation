@@ -2,7 +2,7 @@
 id: NonMedicalUse
 title: OpenBCI Non-Medical Use
 ---
-OpenBCI, Inc. provides the enclosed product(s) under the following conditions: This evaluation board/kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY and is not considered by OpenBCI, Inc. to be a finished end-product fit for general consumer use.
+OpenBCI, Inc. provides the OpenBCI-trademarked products under the following conditions: This evaluation board/kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY and is not considered by OpenBCI, Inc. to be a finished end-product fit for general consumer use.
 
 Persons handling the product(s) must have electronics training and observe good engineering practice standards. As such, the goods being provided are not intended to be complete in terms of required design­, marketing­, and/or manufacturing ­related protective considerations, including product safety and environmental measures typically found in end products that incorporate such semiconductor components or circuit boards. This evaluation board/kit does not fall within the scope of the European Union directives regarding electromagnetic compatibility, restricted substances (RoHS), recycling (WEEE), FCC, CE or UL, and therefore may not meet the technical requirements of these directives or other related directives.
 
