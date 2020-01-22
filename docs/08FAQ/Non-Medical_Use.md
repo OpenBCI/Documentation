@@ -1,5 +1,5 @@
 ---
-id: Nonmedical_Use
+id: NonMedicalUse
 title: OpenBCI Non-Medical Use
 ---
 OpenBCI, Inc. provides the enclosed product(s) under the following conditions: This evaluation board/kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY and is not considered by OpenBCI, Inc. to be a finished end-product fit for general consumer use.
