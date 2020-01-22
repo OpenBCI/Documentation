@@ -9,13 +9,13 @@ To get started, all you need is an [OpenBCI Board](http://shop.openbci.com/colle
 
 ## Can I use OpenBCI with other hardware & software?
 
-Yes! OpenBCI is designed to be easily interfaced by other hardware and software. They OpenBCI hardware is software agnostic, meaning it works with OpenBCI-specific software, as well as any other 3rd-Party Software that has an OpenBCI driver. Check out the [Tutorials Section](01GettingStarted/00-GettingStartedLanding.md) to find guides that detail connecting OpenBCI to other tools.
+Yes! OpenBCI is designed to be easily interfaced by other hardware and software. The OpenBCI hardware is software agnostic, meaning it works with OpenBCI-specific software, as well as any other 3rd-Party Software that has an OpenBCI driver. Check out the [Tutorials Section](01GettingStarted/00-GettingStartedLanding.md) to find guides that detail connecting OpenBCI to other tools.
 
 ## What is the difference between the [Ganglion](03Ganglion/01-GanglionBoard.md), the [Cyton Board](02Cyton/01-CytonBoard.md), and the [Cyton + Daisy Boards](01GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md)?
 
-The Cyton Board is an 8 channel biosensing amplifier that can measure ECG, EMG, and EEG. It connects to your computer wirelessly with an included USB Dongle. Data is sampled at 250Hz.
+The Cyton Board is an 8 channel bio-sensing amplifier that can measure ECG, EMG, and EEG. It connects to your computer wirelessly with an included USB Dongle. Data is sampled at 250Hz.
 The Cyton + Daisy is the same as the Cyton Board, but it also includes an expansion module to increase the channel count to 16. Data is sampled at 125Hz.
-The Ganglion is a 4 channel biosensing amplifier that can measure ECG, EMG, and EEG. It connects to your computer via BLE. Data is sampled at 200Hz.
+The Ganglion is a 4 channel bio-sensing amplifier that can measure ECG, EMG, and EEG. It connects to your computer via BLE. Data is sampled at 200Hz.
 
 The boards sample rate is limited by the bluetooth bandwidth. In order to increase the sample rate, you can purchase the [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550). The WiFi Shield increases the sample rate by transmitting the data via WiFi as opposed to Bluetooth. The WiFi Shield can be controlled through HTTP requests and can send JSON objects with data in nano volts.
 
