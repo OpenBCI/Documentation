@@ -117,6 +117,11 @@
               "06Software/02-CompatibleThirdPartySoftware/VirtualBox"
             ]
           }],
+        "For Developers": [
+            "11ForDevelopers/ForDevelopersLanding",
+            "11ForDevelopers/SoftwareDevelopment",
+            "11ForDevelopers/FirmwareDevelopment",
+            "11ForDevelopers/HardwareDevelopment"],
         "Deprecated Documents": [
             "09Deprecated/DeprecatedLanding",
             "09Deprecated/SpiderclawDep",
