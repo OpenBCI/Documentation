@@ -3,7 +3,7 @@ id: ForDevelopersLanding
 title: For Developers
 ---
 
-This directory will help you get started developing with OpenBCI technology.
+The information in this directory will help you start developing with OpenBCI technology.
 
 ## Development Options
 
