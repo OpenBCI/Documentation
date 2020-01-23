@@ -97,8 +97,8 @@ The saved file also contains meta-data at the beginning and end. Lines of text s
 The OpenBCI Processing Sketch has the functionality to read and convert these hexadecimal files to 'normal' data files.
 
 ### Converting Hex files in OpenBCI GUI
-SD file conversion is now supported by the OpenBCI GUI stand-alone application!
-*Note: To convert very large recordings, you must run the OpenBCI_GUI Sketch in Processing after changing "Increase Maximum Available Memory to: " at least 9000 MB aka 9GB.
+**SD file conversion is now supported by the OpenBCI GUI stand-alone application!**
+*Note: To convert very large recordings, you must run the OpenBCI_GUI Sketch in Processing after changing "Increase Maximum Available Memory to: " at least 9000 MB aka 9GB.*
 
 We don't currently have a way to recall the file contents from the OpenBCI board over the Radio link to the Dongle. You must remove the SD card from the OpenBCI board and access the files via your computer.
 
