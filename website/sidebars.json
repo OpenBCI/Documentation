@@ -101,7 +101,6 @@
           "ids": [
             "06Software/01-OpenBCISoftware/GUIDocs",
             "06Software/01-OpenBCISoftware/GUIWidgets",
-            "06Software/01-OpenBCISoftware/Python",
             "06Software/01-OpenBCISoftware/Hub"
           ]
           }, {
@@ -129,7 +128,8 @@
             "09Deprecated/UltracortexMark1Dep",
             "09Deprecated/UltracortexMark2Dep",
             "09Deprecated/UltracortexMark2Dep",
-            "09Deprecated/UltracortexMark3_NovaDep"
+            "09Deprecated/UltracortexMark3_NovaDep",
+            "09Deprecated/Python"
         ],
         "Troubleshooting": [
             "10Troubleshooting/minimizingNoise",

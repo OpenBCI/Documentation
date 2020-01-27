@@ -45,4 +45,4 @@ The Ganglion board is currently compatible with:
 
 Currently new drivers are being developed to add OpenBCI compatibility to Bioexplorer (tbd), BCI2000 (tbd), etc.
 
-In addition, if you are really comfortable with programming you can use [MatLab](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md) or [Python](06Software/01-OpenBCISoftware/05-OpenBCI_Python.md) tools to analyze the raw data of your OpenBCI boards.
+In addition, if you are really comfortable with programming you can use [MatLab](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md) or Python tools to analyze the raw data of your OpenBCI boards. For more info, head over to the [For Developers Section](11ForDevelopers/00-ForDevelopersLanding.md).
