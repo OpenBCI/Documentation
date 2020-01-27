@@ -4,7 +4,7 @@ title: Python and OpenBCI
 ---
 
 
-**THIS DOCUMENT HAS BEEN DEPRECATED. PLEASE REFER TO "FOR DEVELOPERS" SECTION FOR INFORMATION ON [BRAINFLOW-PYTHON](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#python).**
+**THIS DOCUMENT HAS BEEN DEPRECATED. PLEASE REFER TO ["FOR DEVELOPERS"](11ForDevelopers/01-SoftwareDevelopment.md) SECTION FOR INFORMATION ON [BRAINFLOW-PYTHON](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#python).**
 
 
 OpenBCI has a Python software library designed to work with OpenBCI hardware. To use it, download our OpenBCI Python github repository: https://github.com/OpenBCI/pyOpenBCI. This Python code is meant to be used by people familiar with Python and programming in general. Its purpose is to allow for programmers to interface with OpenBCI technology directly, both to acquire data and to write programs that can use that data in a live setting, using Python.The OpenBCI-Python repo is still live but it is not longer being mantained by OpenBCI.
