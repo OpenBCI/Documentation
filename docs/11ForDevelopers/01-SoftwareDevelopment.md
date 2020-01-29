@@ -15,7 +15,7 @@ Brainflow is written in C++ and then exported to a handful of languages. This cu
 
 ## Initial Setups and Testing
 
-GUI v5.0+ uses the Brainflow-Java package. When starting a new project with OpenBCI hardware for the first time, it is important to check that you can connect the hardware properly, [depending on your biosensing setup](11ForDevelopers/ForDevelopersLanding#biosensing-setups). 
+GUI v5.0+ uses the Brainflow-Java package. When starting a new project with OpenBCI hardware for the first time, it is important to check that you can connect the hardware properly, [depending on your biosensing setup](ForDevelopersLanding#biosensing-setups). 
 
 We recommend using the GUI to start your project and check signals before moving towards full integration. Furthermore, we recommend using the GUI's Networking Widget to stream live data for proof-of-concept via UDP, LSL, OSC, or Serial. This allows you to visualize real-time and playback data in the GUI while modifying your application in a separate IDE.
 
@@ -60,7 +60,7 @@ ___
 ## OpenBCI GUI Overview
 
 - [GUI How-to and Installation](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
-- The [GUI Widget Guide] provides details on each "widget" within the GUI, such as the [Time Series Widget](06Software/01-OpenBCISoftware/GUIWidgets#time-series) and the [Networking Widget](06Software/01-OpenBCISoftware/GUIWidgets#networking)
+- The [GUI Widget Guide](06Software/01-OpenBCISoftware/GUIWidgets) provides details on each "widget" within the GUI, such as the [Time Series Widget](06Software/01-OpenBCISoftware/GUIWidgets#time-series) and the [Networking Widget](06Software/01-OpenBCISoftware/GUIWidgets#networking)
 - [GUI Changelog](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/CHANGELOG.md)
 
 ## Brainflow Java Binding and OpenBCI GUI
