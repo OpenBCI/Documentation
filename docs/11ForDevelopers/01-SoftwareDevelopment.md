@@ -13,6 +13,8 @@ Prior to version 5.0, the OpenBCI GUI relied on a Node.js Electron app to handle
 
 Brainflow is written in C++ and then exported to a handful of languages. This cuts down on development time, and provides a centralized repository for OpenBCI drivers that are more accessible and accommodating.
 
+[Brainflow Documentation](https://brainflow.readthedocs.io/en/stable/index.html)!
+
 ## Initial Setups and Testing
 
 GUI v5.0+ uses the Brainflow-Java package. When starting a new project with OpenBCI hardware for the first time, it is important to check that you can connect the hardware properly, [depending on your biosensing setup](ForDevelopersLanding#biosensing-setups). 
