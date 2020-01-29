@@ -9,7 +9,7 @@ Welcome all Software Developers! In this document, we will go over the tools ava
 
 ## Introducing Brainflow
 
-Prior to version 5.0, the OpenBCI GUI relied on a Node.js Electron app to handle communications as middleware via TCP/IP on Mac, Linux, and Windows machines. This required users to allow a separate app to run in the background. At the same time, there are many users who just want to use OpenBCI hardware with Python, C++, or even Unity. The OpenBCI Community needed a solution, and we found one: Brainflow!
+Prior to version 5.0, the OpenBCI GUI relied on a Node.js Electron app to handle communications as middleware via TCP/IP on Mac, Linux, and Windows machines. This required users to allow a separate app to run in the background. At the same time, there are many users who just want to use OpenBCI hardware with Python, C++, or C#. The OpenBCI Community needed a solution, and we found one: Brainflow!
 
 Brainflow is written in C++ and then exported to a handful of languages. This cuts down on development time, and provides a centralized repository for OpenBCI drivers that are more accessible and accommodating.
 
@@ -31,7 +31,7 @@ We recommend using the GUI to start your project and check signals before moving
 - [Python API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#python-api-reference)
 - [Python Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#python)
 
-## Brainflow - C# and Unity
+## Brainflow - C#
 
 - [Install C# Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#c)
 - [C# API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#id1)
