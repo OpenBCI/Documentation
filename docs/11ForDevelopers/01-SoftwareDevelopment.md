@@ -19,6 +19,10 @@ GUI v5.0+ uses the Brainflow-Java package. When starting a new project with Open
 
 We recommend using the GUI to start your project and check signals before moving towards full integration. Furthermore, we recommend using the GUI's Networking Widget to stream live data for proof-of-concept via UDP, LSL, OSC, or Serial. This allows you to visualize real-time and playback data in the GUI while modifying your application in a separate IDE.
 
+## Supported Boards
+
+- [Supported Boards and Parameters](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#supported-boards)
+
 ## Brainflow - C++
 
 - [Compilation of Core Brainflow Module and C++ Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#compilation-of-core-module-and-c-binding)
