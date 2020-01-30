@@ -19,7 +19,7 @@ Brainflow is written in C++ and then exported to a handful of languages. This cu
 
 GUI v5.0+ uses the Brainflow-Java package. When starting a new project with OpenBCI hardware for the first time, it is important to check that you can connect the hardware properly, [depending on your biosensing setup](ForDevelopersLanding#biosensing-setups). 
 
-We recommend using the GUI to start your project and check signals before moving towards full integration. Furthermore, we recommend using the GUI's Networking Widget to stream live data for proof-of-concept via UDP, LSL, OSC, or Serial. This allows you to visualize real-time and playback data in the GUI while modifying your application in a separate IDE.
+We recommend using the GUI to start your project and check signals before moving towards full integration. Furthermore, we recommend using the GUI's Networking Widget to stream data for proof-of-concept via UDP, LSL, OSC, or Serial. This allows you to visualize real-time and playback data in the GUI while modifying your application in a separate IDE.
 
 ## Supported Boards
 
