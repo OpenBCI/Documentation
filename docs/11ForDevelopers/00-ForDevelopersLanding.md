@@ -7,7 +7,7 @@ The information in this directory will help you start developing with OpenBCI te
 
 ## Development Options
 
-OpenBCI provides a range of open-source materials under an MIT license. Pages in this section include:
+OpenBCI provides a range of open-source materials under the [MIT license](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/LICENSE). Pages in this section include:
 
 * [Software Development](11ForDevelopers/01-SoftwareDevelopment.md)
 * [Firmware Development](11ForDevelopers/02-FirmwareDevelopment.md)
