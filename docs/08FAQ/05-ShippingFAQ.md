@@ -15,7 +15,7 @@ Generally, shipping to US addresses takes less than one week. For international 
 
 ## Sales Tax
 
-For customers in the United States, your purchase may be sales tax-free if made on behalf of a tax-exempt organization. Ask your purchasing department for the tax-exempt certificate before placing an order.
+For customers in the United States, your purchase may be sales tax-free if made on behalf of a tax-exempt organization. Ask your purchasing department for the tax-exempt certificate before placing an order, and send to contact@openbci.com
 For other customers, the sales tax will be calculated automatically per the laws of the state you reside in.
 
 ## Are duties and customs included in the shipping rate?
