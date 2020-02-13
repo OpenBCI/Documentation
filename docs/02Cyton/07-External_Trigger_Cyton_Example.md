@@ -5,7 +5,7 @@ title: External Trigger on OpenBCI Cyton Board
 
 Sometimes, when studying EEG or other biopotential signals, you will want to have precise timing between external events or stimulus and the data stream. For example, if you are working with P300 waves it is necessary to know the exact time that the signal was presented to the subject in order to look for the tell-tale brain wave that happens about 300mS after the stimulus.
 
-This tutorial will cover a couple of ways to add an external trigger to the OpenBCI data stream on our 32bit Board. Please read this entire page before jaunting off into hardware hacking.
+This tutorial will cover a couple of ways to add an external trigger to the OpenBCI data stream on our 32bit Board. Normally, the Cyton board reads from the Accelerometer at 25 Hz. When we change board mode to `Analog` or `Digital` mode, we read from the external pins at same rate as the signal pins (e.g. 250 Hz)! This is what allows for the precise timing needed for external triggers.
 
 **Note:** As of 3.x.x Cyton firmware, the Cyton is able to switch board modes, now you don't have to upload new code to the board just to read from an input!
 
