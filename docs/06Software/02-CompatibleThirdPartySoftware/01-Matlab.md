@@ -191,6 +191,6 @@ Add the FieldTrip directory to your MATLAB path and check out FieldTrip's [getti
 
 [BCILAB Wiki](http://sccn.ucsd.edu/wiki/BCILAB)
 
-[ERPLAB Homepage](http://erpinfo.org/erplab)
+[ERPLAB Homepage](http://erpinfo.org/erplab) and [ERPLAB Original Publication](https://www.frontiersin.org/articles/10.3389/fnhum.2014.00213/full) in Frontiers in Human Neuroscience.
 
 [FieldTrip Homepage](http://www.fieldtriptoolbox.org/)

@@ -1,6 +1,6 @@
 ---
 id: TroubleshootingLanding
-title: Troubleshooting Guides
+title: Troubleshooting Landing
 ---
 
 The guides below offer tips on common hardware and software issues and how to fix them.
