@@ -14,7 +14,7 @@
               ]
             }, {
               "type": "subcategory",
-              "label": "Bionsensing Setups",
+              "label": "Biosensing Setups",
               "ids": [
                   "01GettingStarted/02-Biosensing-Setups/EEGSetup",
                   "01GettingStarted/02-Biosensing-Setups/ECGSetup",
