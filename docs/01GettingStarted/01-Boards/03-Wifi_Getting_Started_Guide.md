@@ -94,7 +94,7 @@ Observe that light D4 turns off. This is normal. In order for the LED to turn on
 ### What you need
 
  1. OpenBCI WiFi Shield
- 2. OpenBCI Ganglion Board 
+ 2. OpenBCI Ganglion Board
  3. Two batteries, 3.7V or 4.2V LiPo or 6V AA battery will work (batteries not included)
 
 ### General Overview
@@ -130,7 +130,7 @@ With two batteries, always power the WiFi Shield before the Ganglion.
 
 ## WiFi Configuration for Firmware 2.0 and later
 
-WiFi Shields got powerful in firmware 2.0.0, we learned a lot and iterated continuously, we love the new features on the WiFi Shield, where we is a world wide community of empowered hackers and researchers alike.
+WiFi Shields got powerful in firmware 2.0.0, we learned a lot and iterated continuously, we love the new features on the WiFi Shield, by "we" meaning a worldwide community of empowered hackers and researchers alike.
 
 ### WiFi Shield Mode of Operations
 
