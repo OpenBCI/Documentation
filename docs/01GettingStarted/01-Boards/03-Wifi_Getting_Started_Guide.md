@@ -42,7 +42,7 @@ This guide will walk you through setting up your WiFi Shield, connecting it to y
 ### What you need
 
  1. [OpenBCI WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550)
- 2. OpenBCI Cyton Board **Must have at least [v3.1.0 Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases) or newer!** Here is the guide for [uploading new firmware to your Cyton Board](02Cyton/05-Cyton_Board_Programming_Tutorial.md).
+ 2. OpenBCI Cyton Board
  3. One LiPo battery or 6V AA battery pack & (x4) AA batteries (batteries not included)
     - You only need one battery when using the Cyton with the WiFi Shield. The Cyton takes power from the WiFi Shield. When the Cyton is powered by the WiFi Shield, you'll find the power switch on the Cyton becomes useless.
 
@@ -94,7 +94,7 @@ Observe that light D4 turns off. This is normal. In order for the LED to turn on
 ### What you need
 
  1. OpenBCI WiFi Shield
- 2. OpenBCI Ganglion Board **IMPORTANT: Must have at least v2.0.0 Ganglion firmware or newer!**
+ 2. OpenBCI Ganglion Board 
  3. Two batteries, 3.7V or 4.2V LiPo or 6V AA battery will work (batteries not included)
 
 ### General Overview
