@@ -26,7 +26,7 @@ We will not intervene with customs procedures, per the import laws of your count
 
 Please be advised that product prices do not include customs fees, taxes, brokerage fees, or any customs clearance fees. This is the responsibility of the customer.
 
-If shipping to Europe, please expect the **total** import cost to be about 25% of the product price. For other countries, it is about 10-20%.
+If shipping to European countries, please expect the **total** import cost to be about 30% of the product price. For other countries, it is up to 15-25%.
 
 The import cost will be calculated by your customs office at the time of delivery and passed onto you.
 Due to the nature of international trade, OpenBCI has no control over these charges, and can give only a rough estimate from historical purchase data. Because of varied customs policies, we are unable to provide exact predictions. Please contact your local customs office if you need exact import cost information.
