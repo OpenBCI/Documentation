@@ -25,12 +25,12 @@ When connecting to Cyton+WiFi or Cyton+Daisy+WiFi using the OpenBCI GUI, you hav
 
 The WiFi Shield requires your Cyton to run the [latest Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/latest)  and your Ganglion to the [latest Ganglion firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/latest) firmware. PLEASE NOTE IF YOU PURCHASED YOUR OPENBCI BOARD **MID-2018** OR LATER, YOU DO NOT NEED TO UPDATE ITS FIRMWARE.
 
-#### You must update your firmware before getting started. If you purchased your board mid-2018 or later, you won't need to update firmware and can skip down to General Overview.
-
 * [Updating Cyton Firmware Tutorial](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
 * [Updating Ganglion Firmware](03Ganglion/09-Ganglion_Programming_Tutorial.md)
 
 This guide will walk you through setting up your WiFi Shield, connecting it to your computer, and then connecting it to yourself. The first tutorial is for the Cyton and the second is for the Ganglion.
+
+When setting up the WiFi Shield to connect to a local network or hotspot, the WiFi needs to be powered independently. **Please make sure the WiFi shield is unplugged from a Ganglion or Cyton during setup, otherwise it may not work.**
 
 ## Cyton with WiFi Shield
 
@@ -168,7 +168,7 @@ The WiFi Manager, the tool used to store wireless network credentials onto the W
 
 Follow this section if you want to put the WiFi Shield into WiFi Station mode. The WiFi Shield must be on the same wireless network as your computer, smart phone, or whatever other internet connected device you wish to talk to the WiFi Shield with. For example, in order to stream data into the OpenBCI GUI using your WiFi Shield in WiFi Station mode of operation, you must first make sure that your WiFi shield and computer that is running the OpenBCI GUI are on the same WiFi network.
 
-**For the rest of this tutorial, the WiFi needs to be powered independently, with Ganglion, WiFi Shield shall be disconnected, with Cyton, the `EXT PWR` shall be in the off position**
+**For the rest of this tutorial, the WiFi needs to be powered independently, with Ganglion, WiFi Shield shall be disconnected, with Cyton, the `EXT PWR` shall be in the off position.**
 
 If you power the the WiFi Shield up and D2 LED does **4 blinks in 2 seconds** followed within 10 seconds by **2 blinks in 2 seconds**, then your WiFi Shield is on your local network. Feel free to head to skip a head to [connecting with the OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application). If you want the WiFi Shield to join a different wireless network, continue reading and pay attention when it comes time to bring up the WiFi Manager.
 
