@@ -69,7 +69,7 @@ Come back to this guide when your GUI is running!
 
 <img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/dongleConnection.png?raw=true" width="70%">
 
-Plug this in (facing upwards!) and you should see a blue LED light up.
+Plug this in (facing upwards!) and you should see a blue LED light up and stay on, as well as a red LED **blink**.
 
 **Note:** make sure your USB Dongle is switched to GPIO 6 and not RESET. The switch should be set closer to your computer as seen in the picture to the right.
 
