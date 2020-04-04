@@ -23,7 +23,7 @@ We recommend using the GUI to start your project and check signals before moving
 
 ## Supported Boards
 
-- [Supported Boards and Parameters](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#supported-boards)
+- [Supported Boards and Parameters](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#supported-boards) (*important*)
 
 ## Brainflow - C++
 
