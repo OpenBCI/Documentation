@@ -39,8 +39,6 @@ To programmatically discover WiFi Shields on your local network use [Simple Serv
 
 [Node.js OpenBCI WiFi Driver](https://github.com/aj-ptw/OpenBCI_NodeJS/blob/wifi/examples/getStreamingWifi/getStreamingWifi.js) will implement SSDP for you.
 
-[Python OpenBCI WiFi Driver](https://github.com/OpenBCI/OpenBCI_Python/pull/54) will implement SSDP for you.
-
 Use the [OpenBCI WiFi GUI](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](06Software/01-OpenBCISoftware/07-OpenBCI_Hub.md#scan) to find WiFi Shields IP Address.
 
 Use a graphical user interface [Mac - Lan Scan](https://itunes.apple.com/us/app/lanscan/id472226235?mt=12)

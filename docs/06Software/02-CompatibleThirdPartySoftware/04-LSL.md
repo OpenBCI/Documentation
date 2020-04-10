@@ -9,7 +9,7 @@ This tutorial will show you how to set up LSL using the OpenBCI Python API and t
 
 ## Setup
 
-1. **Download or clone the [OpenBCI_LSL](https://github.com/OpenBCI/OpenBCI_LSL) repo from Github.**
+1. **Download or clone the [OpenBCI_LSL](https://github.com/openbci-archive/OpenBCI_LSL) repo from Github.**
 2. **Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3).**
 Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed.
 3. **Install Python requirements**
