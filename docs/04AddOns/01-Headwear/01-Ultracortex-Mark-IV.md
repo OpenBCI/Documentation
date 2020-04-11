@@ -30,35 +30,35 @@ For those who want to modify the headset design and need CAD files, go to the [U
 ### 3D-printed Parts:
 The following parts are included in the Unassembled version of the Mark IV:
 
-* [FRAME](https://github.com/OpenBCI/Docs/tree/master/assets/MarkIV/STL_Directory) (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
-	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl))
-	* FRAME_BACK (**x1**) — .STLs ([small](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
-	* You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/OpenBCI/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
+* [FRAME](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory) (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
+	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl))
+	* FRAME_BACK (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
+	* You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
 * MECH_PARTS
-	* INSERT (**x35**) — .STLs ([tight](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
-* [BOARD_MOUNT](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
+	* INSERT (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
+* [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
 * BOARD_COVER (**x1**)
-	* [BOARD COVER](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
+	* [BOARD COVER](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
 * WIRE_CLIPS (**x30**)
-	* [WIRE CLIPS](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (Clips will be used to hold wire in place) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
+	* [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (Clips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
 
 ### Non-printed Parts:
 
-**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/OpenBCI/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
+**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
 * (**2x**)* [No.4 Screws for Brittle Plastic](https://www.mcmaster.com/#97349A100)
 * Cables (**x3**)
-	* We strip apart the Cables in your kit (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
+	* We strip apart the Cables in your kit (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
 * Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
+	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
 * Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
+	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
 * Comfort units
-	* (**5x**) Comfort units used for distributing weight of headset: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
+	* (**5x**) Comfort units used for distributing weight of headset: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
 * Ear Clips
-	* (**2x**) Ear Clip electrode: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/EarClips.JPG)
+	* (**2x**) Ear Clip electrode: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/EarClips.JPG)
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
@@ -76,9 +76,9 @@ The following parts are not included with the purchase of any configuration of t
 The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html) with a build area of 250 mm by 250 mm. The absolute minimum build area needed to print the frame in halves is 130 mm by 210 mm square.
 
 * FRAME (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
-	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
-	* FRAME_BACK (**x1**) — .STLs ([small](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
-	* You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/OpenBCI/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
+	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
+	* FRAME_BACK (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
+	* You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
 
 The image below shows the correct 3-D printing orientation of the Ultracortex Mark IV frame halves. Please note how the flat sides (halved nodes) sit on the light gray build plate. The halved nodes are completely flat on the edge, so they are properly supported when in contact with the build plate.
 The model must be positioned correctly in the 3D print preparation software. The flat side of the model should face downward, on the platform. If it does not fit, view it from below and move/rotate the model. The model must be printed with support and a brim or raft. The headset is designed to be printed using FDM extrusion.
@@ -88,11 +88,11 @@ The model must be positioned correctly in the 3D print preparation software. The
 #### (21x) MECH_PARTS
 
 * [MECH_PARTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL)
-	* [INSERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
+	* [INSERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
 
 #### (1x) BOARD_HOLDER
 
-* [BOARD_MOUNT](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
+* [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
 
 
 ![image](assets/HeadwareImages/Board_Mount.JPG)
@@ -100,17 +100,17 @@ The model must be positioned correctly in the 3D print preparation software. The
 #### (1x) BOARD_COVER
 
 * [BOARD COVER](**x1**)
-	* [BOARD COVER](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
+	* [BOARD COVER](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
 
 ![image](assets/HeadwareImages/Board_Cover.JPG)
 
 ![image](assets/HeadwareImages/3D_printed_Parts3.JPG)
 
-* [WIRE CLIPS](https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (lips will be used to hold wire in place) — [.STL download link](https://github.com/OpenBCI/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
+* [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (lips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
 
 ### Non-printed Parts:
 
-**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/OpenBCI/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
+**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
 
 #### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 
@@ -119,27 +119,27 @@ The model must be positioned correctly in the 3D print preparation software. The
 ![image](assets/HeadwareImages/Screw.JPG)
 
 * Cables (**x3**)
-	* We strip apart the Cables in your kit (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
+	* We strip apart the Cables in your kit (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
 
 ![image](assets/HeadwareImages/Cables.JPG)
 
 * Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
+	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
 
 ![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
 
 * Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
+	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
 
 ![image](assets/HeadwareImages/FlatUnits.JPG)
 
 * Comfort units
-	* (**5x**) Comfort units used for relieving weight reuse of headset: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
+	* (**5x**) Comfort units used for relieving weight reuse of headset: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
 
 ![image](assets/HeadwareImages/ComfortUnits.JPG)
 
 * Ear Clips
-	* (**2x**) Ear Clip electrode: (https://github.com/OpenBCI/Docs/blob/master/assets/MarkIV/Photos/Earclips.JPG)
+	* (**2x**) Ear Clip electrode: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/Earclips.JPG)
 
 ![image](assets/HeadwareImages/EarClips.JPG)
 
@@ -486,7 +486,7 @@ Below is a screenshot of what the GUI looks like when you've got your OpenBCI + 
 
 The OpenBCI GUI has a widget for visualizing signal strength at each electrode. To view it, click on the "FFT Plot" drop-down menu in the top right corner. Select "Head Plot".
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/MarkIV/head_plot_menu.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/MarkIV/head_plot_menu.png?raw=true" width="50%">
 
 You should now see a visual map of signal strength in the top right corner.
 

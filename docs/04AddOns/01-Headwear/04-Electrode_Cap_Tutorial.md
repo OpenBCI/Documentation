@@ -11,7 +11,7 @@ You can pair the the Electrode Cap with the OpenBCI [CytonDaisy 16-channel Biose
 or a bioamplifier of your choice.
 
 The placement of these electrodes is as shown in the image below:
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/electrode%20cap%20nodes_1.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/electrode%20cap%20nodes_1.png?raw=true" width="50%">
 
 These electrodes map to labels on the electrodes. Please note that the cap uses older labelling, and that *T3, T4, T5, and T6* were updated to be *T7, T8, P7, and P8*, respectively. These placements are interchangeable, and while the labels on the cap use older naming, they correspond to nodes on the diagram.
 
@@ -36,24 +36,24 @@ the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels o
 
 Use the y-splitter cable that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Cyton%2BDaisy%2BY-Splitter.JPG?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Cyton%2BDaisy%2BY-Splitter.JPG?raw=true" width="50%">
 
 Connect a HPTA cable to the single end of the y-splitter cable, then connect the its blue termination to the REF electrode of the cap, shown below.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_ref_pin.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_ref_pin.png?raw=true" width="50%">
 
 
 Connect bottom pins N1P through N8P on the Cyton to a set of HPTA cables, shown below. These pins will be channels 1-8 on the OpenBCI GUI.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_cyton_pins.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_cyton_pins.png?raw=true" width="50%">
 
 Connect top pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_cytondaisy_pins.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_cytondaisy_pins.png?raw=true" width="50%">
 
 Connect a leftover HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in! Connect the blue termination of this HPTA cable to the GND cap electrode, shown below.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%">
 
 For WHY these connections are recommended, see the [EEG explanation](../../01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)page.
 
@@ -62,7 +62,7 @@ After the cables are all connected as shown above, place the cap on the subject'
 ### Software
 
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI-V4-Screenshot.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI-V4-Screenshot.jpg?raw=true" width="50%">
 
 Head over to the OpenBCI GUI [tutorial](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to set up your free live-streaming software!
 

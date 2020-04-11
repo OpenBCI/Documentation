@@ -51,7 +51,7 @@ In order to run this .exe, do the following:
 
   1. Navigate to the /hardware/arduino/RFduino folder
   2. Rename RFDLoader to RFDLoader.old (just in case)
-  3. Replace RFDLoader with a script that uses wine to call RFDLoader.exe, forwarding the serial port.  A possible script is at https://github.com/OpenBCI/Docs/issues/73#issuecomment-288889646
+  3. Replace RFDLoader with a script that uses wine to call RFDLoader.exe, forwarding the serial port.  A possible script is at https://github.com/openbci-archive/Docs/issues/73#issuecomment-288889646
   4. Drag RFDLoader to the RFduino folder
 
 That's it! As long as `wine` is installed normally the script should take care of any issues you may have when uploading.

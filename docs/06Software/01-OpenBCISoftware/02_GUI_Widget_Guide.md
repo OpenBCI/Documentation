@@ -7,7 +7,7 @@ GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes
 
 
 ## Time Series
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%">
 
 The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real time, with each graph representing the voltage detected at one point in time by an electrode.
 
@@ -17,7 +17,7 @@ Each Ultracortex comes with wires that are color coded to match the GUI, which c
 
 #### Hardware Settings
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_HardwareSettings.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_HardwareSettings.png?raw=true" width="50%">
 
 For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine tune the PGA Gain, Bias, and other hardware settings for each channel.
 
@@ -40,14 +40,14 @@ Sends a test current down the pin to check impedance. Information is given in k�
 Note: Data will stop streaming automatically for the duration of the check.
 
 ## FFT Plot
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_FTT.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_FTT.jpg?raw=true" width="50%">
 
 This is a standard data visualization feature of biosensing tools. The x axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV.  These amplitudes are displayed logarithmically by default — a reccommended setting — but you can alter this in the log/ln dropdown.
 
 *Note: Each color in the FFT Plot is color coded to match the channels in the time series.*
 
 ## Accelerometer
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Accel.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Accel.jpg?raw=true" width="50%">
 
 Each OpenBCI board is fitted with a three-axis accelerometer, the data from which is streamed to this widget. This accelerometer measures the acceleration of the board itself on an xyz-axis.
 
@@ -80,16 +80,16 @@ Based off of 10-20 model
 ### Polarity
 When compared to a reference, the pin inputs can produce a positive or negative value. Choosing "+/-" will display the true value as measured from the reference. So if the voltage is measured as lower than the reference, your value will appear negative (or blue), and if the voltage is measured to be higher the value will be positive.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Headplot_both.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_both.jpg?raw=true" width="50%">
 
 Alterntively, "+" will display only an absolute value, without regard to whether the signal was positive or negative.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Headplot_pos.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_pos.jpg?raw=true" width="50%">
 
 ## Focus Widget
 The widget recognizes a focused mental state by looking at alpha and beta wave levels on channel 1 & 2. It is based on research supporting focused states aligning with alpha levels between 0.7-2.0 μV, and the beta levels between 0.0-0.7 μV. If your data is outside of this ratio, the algorithm states that you are not focused.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Focus.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Focus.jpg?raw=true" width="50%">
 
 *For best results, try setting smooth to 0.98 in the FFT plot.
 
@@ -98,7 +98,7 @@ The widget recognizes a focused mental state by looking at alpha and beta wave l
 **W_Focus Folder**: This folder contains the original data the focus widget was based on, and materials (including an example and instructions) regarding Arduino output.
 
 ## Band Power
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_BandPower.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_BandPower.jpg?raw=true" width="50%">
 
 The band power widget shows the relative voltages of the various brain wave categories. Each type of brain wave represents a subset of frequencies, which represent different states of activity. The widget is a great "at-a-glance" look into your brain’s activity.
 
@@ -112,7 +112,7 @@ The band power widget shows the relative voltages of the various brain wave cate
 | Delta | 0.5-4     |Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.
 
 ## EMG
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_EMG.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_EMG.jpg?raw=true" width="50%">
 
 In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1.
 
@@ -138,7 +138,7 @@ The networking widget allows the streaming of data to other apps. Keep scrolling
 
 ### Serial
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Serial.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Serial.png?raw=true" width="70%">
 
 Offers streaming of one data type. The data is sent sequentially, bit by bit, in consecutive packets. Serial is the main networking protocol that can be used when using OpenBCI with Arduino.
 
@@ -148,14 +148,14 @@ Offers streaming of one data type. The data is sent sequentially, bit by bit, in
 
 ### UDP
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_UDP.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_UDP.png?raw=true" width="70%">
 
 User Datagram Protocol is used primarily for establishing low-latency and loss-tolerating connections between applications on the internet. The UDP protocol allows for up to three different data sets to be sent to three different applications.
 
 
 ### LSL
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_LSL.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_LSL.png?raw=true" width="70%">
 
 Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md).
 
@@ -169,14 +169,14 @@ For certain data types, it helps to change the `# Chan` to match the data type. 
 You can find the [example Python script here](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/Networking-Test-Kit). Note: You will need to do `pip install pylsl` if the dependency is not already installed.
 
 ### OSC
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_OSC.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_OSC.png?raw=true" width="70%">
 
 Open Sound Control is a protocol for networking sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control. OSC's advantages include interoperability, accuracy, flexibility and enhanced organization and documentation.
 
 OSC works with MaxMSP, PureData, and Resolume.
 
 ## SSVEP
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_SSVEP.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_SSVEP.png?raw=true" width="70%">
 
 The newest widget, SSVEP, is now in beta mode, for testing. It is included with [GUI v.4.1.5-beta.3](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
@@ -185,7 +185,7 @@ It offers up to four channels of SSVEP with a range of frequencies (see screensh
 For research applications of SSVEP, head to examples [here](https://link.springer.com/chapter/10.1007/978-3-642-21683-1_41) and [here.](https://www.nature.com/articles/s41598-018-32283-8)
 
 ## Playback Widget
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_PlaybackHistory.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_PlaybackHistory.png?raw=true" width="70%">
 
 This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
 

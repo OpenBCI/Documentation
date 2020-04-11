@@ -3,8 +3,6 @@ id: CytonSDK
 title: Cyton Board SDK
 ---
 
-**[Suggest an edit to this page](https://github.com/OpenBCI/Documentation/edit/master/docs/02Cyton/04-OpenBCI_Cyton_SDK.md)**
-
 The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Cyton and 8bit boards. Some of the commands are board specific, where noted. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, the 8bit board runs `v0`, while the Cyton runs `v1` and Boards shipped as of Fall 2016 run `v2.0.0`. `v3.0.0` will begin shipping with boards in August of 2017.
 
 ## Cyton Command Protocol Overview

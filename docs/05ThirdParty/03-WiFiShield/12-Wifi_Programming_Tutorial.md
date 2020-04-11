@@ -3,8 +3,6 @@ id: WiFiProgam
 title: Wifi Shield Programming Tutorial
 ---
 
-**[Suggest changes to this page](https://github.com/OpenBCI/Docs/edit/master/Hardware/12-Wifi_Programming_Tutorial.md)**
-
 ## Overview
 
 The easiest way to update your OpenBCI Wifi Shield Firmware is Over-The-Air (OTA). You can also update firmware through a direct connection to the serial port on the WiFi Shield itself. For the wired programming, you can use the USB dongle that comes with the Cyton as a pass through or you can use a standard [FTDI UART to USB Breakout board](#program-openbci-wifi-with-ftdi-boards).

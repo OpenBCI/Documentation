@@ -3,8 +3,6 @@ id: WiFiSDK
 title: OpenBCI Wifi SDK
 ---
 
-**These docs are open source, if you see a typo [please open an issue](https://github.com/OpenBCI/Docs/issues/new).**
-
 The purpose of this doc is to describe what's required to interface another micro-controller with the WiFi Shield.
 
 ## Prerequisites

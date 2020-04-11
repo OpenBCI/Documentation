@@ -3,8 +3,6 @@ id: CytonSDCard
 title: Using SD Card with OpenBCI
 ---
 
-[Suggest changes to this tutorial](https://github.com/OpenBCI/Docs/edit/master/Tutorials/09-Using_SD_Card_with_OpenBCI.md)
-
 ## Overview
 There are many situations where logging biometric data to local storage may be desirable. You may be doing a sleep study, or out on the road with your OpenBCI, and the wireless connection to a PC may be tenuous. The amount of data you are producing may require more bandwidth than the BLE connection can handle. This tutorial will cover the basics of adding an SD card for local storage to OpenBCI, how the data is formatted on the card, and how to retrieve the data after you've logged it.
 

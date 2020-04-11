@@ -443,7 +443,7 @@ As of `v2.0.0`
 
 The currently supported protocols are `ble`, `bled112`, `serial`, and `wifi`.
 
-Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md).
+Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md).
 
 Example of `ble` or `bled112` for Ganglion:
 `{"type":"protocol", "action": "start", "protocol": "ble"}`
@@ -454,7 +454,7 @@ Response: on success for Ganglion:
 Response: on failure to start ganglion ble driver
 `{"type":"impedance", "action": "start", "code": 419, "message": "failed to start driver"}`
 
-Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md). This is not necessary for the BLED112 dongle.
+Only the Ganglion uses the `ble` and `bled112` as of today. Paired, with `start`, the `ble` will start a ble attempt to start the bluetooth low energy drivers. When using CSR Dongle on Windows, it's very important for you to use Zadig tool as described in the [deprecated tutorial](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md). This is not necessary for the BLED112 dongle.
 
 Example of `serial` for Cyton:
 `{"type":"protocol", "action": "start", "protocol": "serial"}`

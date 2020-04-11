@@ -2,7 +2,6 @@
 id: WiFiGS
 title: WiFi Shield Getting Started Guide
 ---
-**[Suggest changes on this page](https://github.com/OpenBCI/Docs/edit/master/Tutorials/03-Wifi_Getting_Started_Guide.md)**
 
 ## Overview
 
@@ -85,7 +84,7 @@ Observe that light D4 turns off. This is normal. In order for the LED to turn on
 
 ## Ganglion with WiFi Shield
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/Wifi%2BGanglion.JPG?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Wifi%2BGanglion.JPG?raw=true" width="70%">
 
 <details>
   <summary>Expand this section for Ganglion + WiFi Shield instructions</summary>

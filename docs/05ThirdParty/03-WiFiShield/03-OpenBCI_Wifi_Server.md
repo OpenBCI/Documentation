@@ -3,8 +3,6 @@ id: WiFiAPI
 title: OpenBCI WiFi Shield API
 ---
 
-**[Suggest Changes To This Page](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/03-OpenBCI_Wifi_Server.md)**
-
 The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.
 
 ## Overview
