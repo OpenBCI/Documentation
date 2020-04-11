@@ -251,7 +251,7 @@ MIT
 [link_shop_cyton]: https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel
 [link_shop_cyton_daisy]: https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel
 [link_nodejs_cyton]: https://github.com/openbci/openbci_nodejs_cyton
-[link_nodejs_ganglion]: https://github.com/openbci/openbci_nodejs_ganglion
+[link_nodejs_ganglion]: https://github.com/openbci-archive/OpenBCI_NodeJS_Ganglion
 [link_nodejs_wifi]: https://github.com/openbci/openbci_nodejs_wifi
 [link_javascript_utilities]: https://github.com/OpenBCI/OpenBCI_JavaScript_Utilities
 [link_openbci]: http://www.openbci.com

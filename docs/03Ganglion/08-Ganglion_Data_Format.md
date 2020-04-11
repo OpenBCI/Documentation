@@ -2,7 +2,7 @@
 id: GanglionDataFormat
 title: Ganglion Data Format
 ---
-This discussion of the OpenBCI data format only applies to the OpenBCI Ganglion. The Ganglion contains a Simblee microcontroller that can both be programmed through the Arduino IDE or over-the-air (OTA). The Simblee has an on-board radio module. The format of the Ganglion data as seen on the PC is defined by a combination of the Arduino code on the Ganglion board and software on your computer. So, if you don't like the data format defined here, feel free to change it! In general, and believe us, we tried, you can't send more then 100 BLE packets per second. For more info on the byte stream parsing on the computer side, or for a working example, see the [NodeJS Ganglion Driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion).
+This discussion of the OpenBCI data format only applies to the OpenBCI Ganglion. The Ganglion contains a Simblee microcontroller that can both be programmed through the Arduino IDE or over-the-air (OTA). The Simblee has an on-board radio module. The format of the Ganglion data as seen on the PC is defined by a combination of the Arduino code on the Ganglion board and software on your computer. So, if you don't like the data format defined here, feel free to change it! In general, and believe us, we tried, you can't send more then 100 BLE packets per second. For more info on the byte stream parsing on the computer side, or for a working example, see the [NodeJS Ganglion Driver](https://github.com/openbci-archive/OpenBCI_NodeJS_Ganglion).
 
 ## Standard Bluetooth 4.n BLE Setup
 
@@ -192,7 +192,7 @@ Raw uncompressed is always saved. If you get a Byte ID of `0`, you're going to w
 
 **18bit**
 
-Let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 18-bit delta compression strategy.
+Let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/openbci-archive/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 18-bit delta compression strategy.
 
     let buffer = new Buffer(
     [
@@ -271,7 +271,7 @@ Channel 2 - Sample 2 - `0b001111100011100011` - or `-198429` in decimal. **The M
 
 **19Bit**
 
-Once again, let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/OpenBCI/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 19-bit delta compression strategy.
+Once again, let's take a practical example by looking at the automated test used in the [Ganglion NodeJS driver](https://github.com/openbci-archive/OpenBCI_NodeJS_Ganglion/blob/master/test/openBCIGanglionSample-test.js) to approach explaining 19-bit delta compression strategy.
 
     let buffer = new Buffer(
     [
