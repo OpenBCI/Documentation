@@ -3,8 +3,6 @@ id: GUIDocs
 title: The OpenBCI GUI
 ---
 
-[Suggest changes to this doc](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/01-OpenBCI_GUI.md)
-
 ![image](assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party softwares such as MATLAB. 
@@ -27,7 +25,7 @@ Alternatively, you can use a [small USB Dongle](https://shop.openbci.com/product
 
 **The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0) and in order to use the Ganglion, you need a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
 
-*Deprecated:* The [CSR Dongle](https://github.com/OpenBCI/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported. We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
+*Deprecated:* The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported. We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
 
 ### WiFi Shield
 
@@ -260,14 +258,14 @@ The OpenBCI GUI displays up to six customizable windows in twelve layouts! You c
 
 Also, you can see an impedance test has been started on Channel 1. See the next section "Impedance Testing" for more information.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%">
 
 ## Impedance Testing
 When using Cyton, you can display the impedance of individual channels by toggling the small Ohm icon to the right of each color coded channel number in the Time Series Widget. When the Ohm icon is toggled on, the board sends a small current through the selected channel to obtain the impedance value. **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously.**
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/ganglion_signal_widget-impedance_check.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/ganglion_signal_widget-impedance_check.png?raw=true" width="50%">
 
 ## Decrease Setup Time by Saving/Loading Settings
 Starting with GUI V3, you can save and load a snapshot of nearly every setting in the GUI (ex. Layout, Time Series Channel Settings, Networking Settings, etc.) by using a dropdown menu (pictured below) or keyboard shortcuts. If you change anything during a session, save your settings or click "Stop System" before exiting. __Save with lowercase 'n'__ and __Load with capital 'N'__ on your keyboard to and from */Documents/OpenBCI_GUI/Settings/*.

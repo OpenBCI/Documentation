@@ -44,7 +44,7 @@ Start the OpenViBE Signal Acquisition Server (SAS). **C: > Program Files > openv
 
 ### Configure OpenViBE Designer
 
-__[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/OpenBCI/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
+__[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/openbci-archive/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
 
 Open the OpenViBE Designer GUI. If you are not using the example xml file, a blank page should open like below:
 
@@ -70,7 +70,7 @@ You're now streaming data from your OpenBCI board to OpenViBE! Feel free to expl
 
 Please, refer to the following screenshot, YouTube video and/or steps below. For example, you can stream Ganglion+WiFi at 1600Hz from the OpenBCI GUI to OpenVibe, as seen in the screenshot. __Here is a [YouTube Video to document this method in detail.](https://www.youtube.com/watch?v=97rNewfbTKA)__
 
-__[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/OpenBCI/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions. 
+__[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/openbci-archive/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)__ This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions. 
 
 _We do not need the objects on the right to handle AUX channels. Sever the connection to the Aux data processing, since we will be sending just four channels TimeSeries data over LSL._
 
@@ -96,7 +96,7 @@ Here is what the Acquisition Server Console Log should read when successfully co
 ## Documentation and Resources
 For more advanced tutorials using OpenBCI and OpenViBE, check out [Jeremy Frey's blog](http://blog.jfrey.info/). He has done both a [P300 Speller](http://blog.jfrey.info/2015/02/04/openbci-p300-coadapt/) and a [Motor Imagery Classifier](http://blog.jfrey.info/2015/03/03/openbci-motor-imagery/).
 
-For an example of a more advanced OpenViBE setup with OpenBCI, open the attached [xml file](https://github.com/OpenBCI/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml) in the OpenViBE designer GUI. This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
+For an example of a more advanced OpenViBE setup with OpenBCI, open the attached [xml file](https://github.com/openbci-archive/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml) in the OpenViBE designer GUI. This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
 
 To learn more about OpenViBE, take a look at their documentation [here.](http://openvibe.inria.fr/documentation-index/)
 

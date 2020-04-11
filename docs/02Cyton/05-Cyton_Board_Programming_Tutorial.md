@@ -230,7 +230,7 @@ Now you should see the blue LED on the Cyton Board blinking pleasantly. Your Cyt
 Make sure that the slide switch on the OpenBCI Dongle is switched to the GPIO6 selection. That way the DTR reset signal will get passed over-air to the ATmega328. If it's on the other side, it will try to program the Dongle-mounted RFduino!  
 You can find the latest firmware and libraries on our github repository
 
-https://github.com/OpenBCI/OpenBCI_8bit
+https://github.com/openbci-archive/OpenBCI_8bit - ** DEPRECATED **
 
 You will need to install these files from our repository into your Documents/arduino/libraries folder
 

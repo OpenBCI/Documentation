@@ -18,6 +18,7 @@ This tutorial has been verified to work with the following macOS versions:
 - 10.11
 - 10.13
 - 10.14
+- 10.15
 
 ### Step 1: open Terminal
 

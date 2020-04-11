@@ -21,9 +21,9 @@ Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GU
 
 ### Step 1 - Load the Example in the Arduino IDE
 
-The [OpenBCI_GUI-FocusArduino.ino](https://github.com/OpenBCI/Docs/blob/master/assets/files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino) file is designed to serve as a simple starting point for creating your own Arduino project using data from the GUI over serial.
+The [OpenBCI_GUI-FocusArduino.ino](https://github.com/OpenBCI/Documentation/blob/master/OpenBCI_files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino) file is designed to serve as a simple starting point for creating your own Arduino project using data from the GUI over serial.
 
-You can copy/paste the code into the Arduino IDE or [download the Docs](https://github.com/OpenBCI/Docs/archive/master.zip) and navigate to the example `/assets/files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino`.
+You can copy/paste the code from Github into the Arduino IDE or [download the Docs](https://github.com/OpenBCI/Documentation/archive/master.zip) and navigate to the example `/OpenBCI_files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino`.
 
 
 ### Step 2 - Upload the Arduino sketch

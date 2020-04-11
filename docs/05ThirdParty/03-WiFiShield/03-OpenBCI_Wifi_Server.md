@@ -3,8 +3,6 @@ id: WiFiAPI
 title: OpenBCI WiFi Shield API
 ---
 
-**[Suggest Changes To This Page](https://github.com/OpenBCI/Docs/edit/master/OpenBCI%20Software/03-OpenBCI_Wifi_Server.md)**
-
 The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.
 
 ## Overview
@@ -38,8 +36,6 @@ The steps for connecting to the Wifi Shield and streaming over MQTT:
 To programmatically discover WiFi Shields on your local network use [Simple Service Discovery Protocol](https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol) (SSDP) to find the device on your local network.
 
 [Node.js OpenBCI WiFi Driver](https://github.com/aj-ptw/OpenBCI_NodeJS/blob/wifi/examples/getStreamingWifi/getStreamingWifi.js) will implement SSDP for you.
-
-[Python OpenBCI WiFi Driver](https://github.com/OpenBCI/OpenBCI_Python/pull/54) will implement SSDP for you.
 
 Use the [OpenBCI WiFi GUI](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](06Software/01-OpenBCISoftware/07-OpenBCI_Hub.md#scan) to find WiFi Shields IP Address.
 

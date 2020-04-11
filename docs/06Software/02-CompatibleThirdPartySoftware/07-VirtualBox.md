@@ -7,7 +7,7 @@ Some of the software compatible with OpenBCI products requires a Windows operati
 
 ## Installing Windows 7 VM in VirtualBox
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/ova-set.jpg?raw=true" width="75%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/ova-set.jpg?raw=true" width="75%">
 
 1. Download [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 2. Go to <https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/> and download a Windows 7 virtual machine (I used IE8) image for your appropriate host on the "Choose your OS" tab. (The OS that your computer runs natively). Choosing Virtual Box as the platform.
@@ -47,23 +47,23 @@ While using 3rd party software, you might want to stream data from your OpenBCI 
 6. Check "Enable USB Controller" and select "USB 2.0 (EHCL) Controller".
 7. Under USB Device Filters, click the "Add USB" icon with the green plus sign. The FTDI Driver used by the OpenBCI Dongle should appear in a drop down menu. Select it. It should now appear under "USB Device Filters".
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/VM_tutorial/VirtualBox_enable_usb.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/VM_tutorial/VirtualBox_enable_usb.png?raw=true" width="70%">
 
 8. Click "OK" to save these settings. Make sure no other program that connects to your Dongle (like the OpenBCI GUI) is currently running. Start your virtual machine.
 9. From within your virtual machine, open the control panel, then navigate to Hardware and Sound -> Device Manager.
 10. You should see the FT USB driver under "Other devices". It may have a warning indicator next to it. Double-click the driver name.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/VM_tutorial/VM_deviceManager_beforeinstallation.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/VM_tutorial/VM_deviceManager_beforeinstallation.png?raw=true" width="70%">
 
 11. Doing so should open a "Properties" page. Go to the "General" tab and select "Update Driver..."
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/VM_tutorial/VM_FT23_driver_properties.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/VM_tutorial/VM_FT23_driver_properties.png?raw=true" width="50%">
 
 12. Select "Search automatically for updated driver software" when prompted.
 13. Wait for your your VM OS to search for and download the driver software. You will be prompted when the driver software is downloaded successfully.
 14. Now, in the Device Manager, there should be an object under "Universal Serial Bus controllers" called "USB Serial Converter". There should also be a "Ports" tab with at least one device.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/VM_tutorial/VM_tutorial_COM_port.png?raw=true" width="70%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/VM_tutorial/VM_tutorial_COM_port.png?raw=true" width="70%">
 
 15. The device listed under "Ports" is your OpenBCI Dongle, and the address in parenthesis is its COM Port. In the example above, the OpenBCI Dongle is on COM Port 3.
 

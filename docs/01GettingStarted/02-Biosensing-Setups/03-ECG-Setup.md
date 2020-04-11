@@ -15,7 +15,7 @@ This document will show you how to read ECG data (electrical signals from  the h
 1. Connect two snap electrodes to the top and bottom N1P pins.
 2. Connect the final pin to the AGND pin.
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%">
 
 If using the **Ganglion board**, please check your set-up with these following steps, noting that on the Ganglion board there are 4 channels available.
 

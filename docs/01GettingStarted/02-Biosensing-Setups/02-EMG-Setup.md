@@ -33,7 +33,7 @@ B) Your ground electrode should be connected to the bottom D_G pin (Driven Groun
 C) Each muscle should have two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four muscles to the input channels 1 through 4. Thus, nine cables, including the ground electrode in step B, are needed to use all four channels of the Ganglion board to obtain EMG.
 
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="50%">
 
 In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
 
@@ -43,7 +43,7 @@ After making these pin connections, connect the sticky electrodes to the snap el
 
 Choose muscle groups that can be flexed and relaxed easily. Place one electrode at the base of the muscle, and the other electrode at the tip of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the ground electrode on a bony part of the body with as few muscles as possible (e.g. elbow, kneecap).
 
-<img src="https://github.com/OpenBCI/Docs/blob/master/assets/images/EMG_Electrode_Placement.jpg?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Electrode_Placement.jpg?raw=true" width="50%">
 
 ## 3. Streaming EMG Data with the OpenBCI GUI
 
