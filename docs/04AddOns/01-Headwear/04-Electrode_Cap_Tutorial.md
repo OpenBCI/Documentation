@@ -129,8 +129,7 @@ from the electrodes only if absolutely necessary.
 3. In case the gel stays on the surface of the electrodes or the cap
 shell, then soak the cap into diluted detergent for a few hours.
 
-4. Rinse the cap in tap water afterwards for several times. Dry the
-cap softly, Store the cap in a dark dry place.
+4. Rinse the cap in tap water thoroughly. Finish rinsing with deionized water or distilled water, if available. Air dry the cap and store the cap in a dark dry place.
 
 Cleaning frequency-after each use.
 
@@ -149,16 +148,14 @@ Household bleach has a concentration of 52,500ppm of available
 chlorine (5.25% Sodium Hypochlorite). A 1:500 dilution of household
 bleach provides the 100ppm concentration required)
 
-4. Rinse the cap in tap water afterwards for several times. Dry the
-cap softly, Store the cap in a dark dry place.
+4. Rinse the cap in tap water thoroughly. Finish rinsing with deionized water or distilled water, if available. Air dry the cap and store the cap in a dark dry place.
 
 Disinfecting frequency-every two weeks.
 
 Caution:
-1. Be gentle with the connection point where the electrodes
-attach to the lead wire.
+1. Gently handle the connection point where the electrodes attach to the lead wire.
 2. Don’t touch other metals.
 3. Don’t left residual gel on any part of the electrodes or wire.
 4. Keep the electrodes and the wire away from any corrosive
 liquid.
-5. Keep the connector away from water.
+5. Keep the touch-proof adapter ends away from water.
