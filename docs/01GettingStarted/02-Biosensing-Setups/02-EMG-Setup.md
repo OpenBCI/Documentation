@@ -112,4 +112,4 @@ Check out the gif above to see how this widget behaves when flexing and relaxing
 
 For help minimizing noise and improving the quality of your EMG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
 
-For troubleshooting or technical support, please visit the [OpenBCI Technical Forum.](openbci.com/forum)
+For troubleshooting or technical support, please visit the [OpenBCI Technical Forum.](https://www.openbci.com/forum)
