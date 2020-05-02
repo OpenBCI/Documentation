@@ -40,7 +40,7 @@ After making these pin connections, connect the sticky electrodes (or the IDUN D
 
 **2. Electrode-Muscle Connection**
 
-Choose muscle groups that can be flexed and relaxed easily. Place one electrode at the base of the muscle, and the other electrode at the tip of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the ground electrode on a bony part of the body with as few muscles as possible (e.g. elbow, kneecap).
+Choose muscle groups that can be flexed and relaxed easily. Place one electrode at the base of the muscle, and the other electrode at the other end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the ground electrode on a bony part of the body with as few muscles as possible (e.g. elbow, kneecap).
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Electrode_Placement.jpg?raw=true" width="50%">
 
@@ -83,7 +83,7 @@ After making these pin connections, connect one sticky electrode (or the IDUN Dr
 
 **2. Electrode-Muscle Connection**
 
-Choose muscle groups that can be flexed and relaxed easily. Place one electrode at the base of the muscle, and the other electrode at the tip of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the ground electrode on a bony part of the body with as few muscles as possible (e.g. elbow, kneecap).
+Choose muscle groups that can be flexed and relaxed easily. Place one sticky electrode or (IDUN Dryode) at the base of the muscle, and the other electrode at the other end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the reference electrode on a bony part of the body with as few muscles as possible (e.g. elbow, kneecap).
 
 Each muscle should have two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four muscles to the analog input channels 1 through 4. Thus, nine cables, including the ground electrode in step B, are needed to get 4 channels of EMG data with the Ganglion Board.
 
