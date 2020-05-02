@@ -92,7 +92,14 @@
             "05ThirdParty/03-WiFiShield/WiFiAPI",
             "05ThirdParty/03-WiFiShield/WiFiSDK"
           ]
-          }],
+          }, {
+
+            "type": "subcategory",
+            "label": "IDUN Dryode",
+            "ids": [
+              "05ThirdParty/04-IDUN_Dryode/Dryode"
+            ]
+            }],
       "Software": [
           "06Software/SoftwareLanding",
         {
