@@ -85,7 +85,7 @@ After making these pin connections, connect one sticky electrode (or the IDUN Dr
 
 Choose muscle groups that can be flexed and relaxed easily. Place one sticky electrode or (IDUN Dryode) at the base of the muscle, and the other electrode at the opposite end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the reference electrode on a bony part of the body with as few muscles as possible (e.g. elbow, kneecap).
 
-Each muscle should have two electrodes - one connected to the top pin, the other to the bottom pin. You can connect up to four muscles to the analog input channels 1 through 4. Thus, nine cables, including the ground electrode in step B, are needed to get 4 channels of EMG data with the Ganglion Board.
+Each muscle should have two electrodes - one electrode connected to the Ganglion top pin, one electrode to the Ganglion bottom pin. You can connect up to four muscles to the analog input channels 1 through 4. Thus, nine cables, including the reference electrode, are needed to get 4 channels of EMG data with the Ganglion Board.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Electrode_Placement.jpg?raw=true" width="50%">
 
@@ -93,7 +93,7 @@ Each muscle should have two electrodes - one connected to the top pin, the other
 
 Once you have the GUI open, turn off any channels that you have not connected to muscle sensors, toggling the number next to the channel, in the Time Series widget.
 
-When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
+When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series). Data from N2P pins will be displayed on Channel 2, and so on and so forth.
 
 Once you are happy with your software and hardware settings, press "BEGIN DATA STREAM."
 Here is an example of what your data stream should look like as you flex and relax your muscle:
