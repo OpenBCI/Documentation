@@ -3,7 +3,9 @@ id: HEGduino
 title: HEGduino How-to
 ---
 
-Get set-up with the [Quick Start Guide](https://github.com/moothyknight/HEG_ESP32/blob/master/Guides/HEG%20Training%20Quick%20Start%20Guide.pdf).
+The open-source, extensively documented HEGduino Kit is now available at the [OpenBCI Shop](https://shop.openbci.com/products/hegduino-kit).
+
+Learn how to get started with the [Quick Guide](https://github.com/moothyknight/HEG_ESP32/blob/master/Guides/HEG%20Training%20Quick%20Start%20Guide.pdf).
 
 ### Your Data, Now
 
