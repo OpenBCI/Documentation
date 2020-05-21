@@ -82,7 +82,7 @@ Head over to the OpenBCI GUI [tutorial](06Software/01-OpenBCISoftware/01-OpenBCI
 * Run as a native application on macOS, Windows, and Linux.
 * Apply filters and other data processing tools to quickly clean raw data in real time
 * Use the GUI as a networking system to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
-* Send data to [MATLAB](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](06Software/00-SoftwareLanding.md)
+* Send data to [MATLAB](../../06Software/02-CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](../../06Software/00-SoftwareLanding.md)
 * Analyze data with [Python and Brainflow](11ForDevelopers/SoftwareDevelopment.md#brainflow---python)
 * [Create a widget framework](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 * Output data into a saved file for later offline processing.
@@ -200,24 +200,22 @@ The electrode gel is water-based and can easily be washed off with shampoo.
 The EEG headband is a starter kit for those new to EEG. It has not been tested for applications like sleep studies. The EEG electrode cap is a more suitable product.
 
 13. We want to be able to use the EEG data for sleep scoring, and I was wondering whether the output file can be saved in edf format, so that is readable with some sleep scoring softwares such as RemLogic?
-The files are saved to .csv or bdf format. For information on the software, head to https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets
+The files are saved to .csv or bdf format. For information on the software, head to the [GUI Widget Guide](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets).
 
 14. Since we want to record data during sleep (~8-9 hours), I wanted to know the power consumption of the system, and how long the battery can last.
-If you buy a Lithium battery with high capacitance, such as this one with 2500 mAh, the system should operate overnight:
-https://www.digikey.com/products/en?mpart=328&v=1528
+If you buy a Lithium battery with high capacitance, such as [this one](https://www.digikey.com/products/en?mpart=328&v=1528) with 2500 mAh, the system should operate overnight:
+
 
 15. What is the difference between coated and sintered electrode and which one you think would be better for us?
-You can find details on the difference between the two here:
-https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap
+You can find details on the difference between the two at the electrode cap product [page](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap).
 The sintered cap lasts longer and offers more consistent signal due to the unique manufacturing process.
 
 
 16. I also would like to capture the EOG signal. Can I modify the amplification factor of the biosensing board for each different type of signals? Do you also suggest the best filter specifications for EEG/EOG/EMG recording?
 By pairing electrodes to the OpenBCI Cytondaisy, you can obtain up to 16 channels from different data sources simultaneously.
-You can modify the gain on each channel. Please refer to the hardware settings section of the GUI widget guide:
-https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#time-series
+You can modify the gain on each channel. Please refer to the [hardware settings section](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#time-series) of the GUI widget guide:
+
 Using the gold cup electrodes plus ten20 paste, with the CytonDaisy, you can capture EOG signals. You can connect the gold cup electrodes to the CytonDaisy at the same time as you connect the electrode cap to the CytonDaisy.
 
 17. Can I buy multiple caps (for different head sizes) with this kit?
-The electrode cap kits come in different sizes. Choose from small, medium, and large.
-https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap-kit?variant=16456863776840
+The electrode cap kits come in different sizes. Choose from small, medium, and large in the [product page](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap-kit?variant=16456863776840).
