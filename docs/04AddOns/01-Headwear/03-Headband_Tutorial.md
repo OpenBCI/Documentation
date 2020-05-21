@@ -194,7 +194,7 @@ For cool project ideas, head over to this [**Instructables**](https://www.instru
 * Apply filters and other data processing tools to quickly clean raw data in real time
 * Use the GUI as a networking system to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
 * Send data to [MATLAB](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](06Software/00-SoftwareLanding.md)
-* Analyze data with [Python and Brainflow](11ForDevelopers/SoftwareDevelopment#brainflow---python)
+* Analyze data with [Python and Brainflow](11ForDevelopers/SoftwareDevelopment.md#brainflow---python)
 * [Create a widget framework](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 * Output data into a saved file for later offline processing.
 * [Customize the layout](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
