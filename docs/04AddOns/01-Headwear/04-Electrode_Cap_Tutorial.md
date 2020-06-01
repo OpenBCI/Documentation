@@ -6,7 +6,7 @@ title: Electrode Cap Getting Started Guide
 
 This is a guide to setting up and cleaning your OpenBCI Electrode Cap. Please consult the [Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
 Product Page and review this guide in its entirety before starting.
-The Electrode Cap allows up to 21 channels of EEG data to be obtained using wet electrodes.
+The Electrode Cap allows up to 19 channels of EEG data to be obtained using wet electrodes.
 You can pair the the Electrode Cap with the OpenBCI [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
 or a bioamplifier of your choice.
 
@@ -17,8 +17,8 @@ These electrodes map to labels on the electrodes. Please note that the cap uses 
 
 The Electrode Cap comes in two variants:
 
-* 21-channel electrode cap with Ag/AgCl coated electrodes
-* Premium 21-channel electrode cap with patented, sintered Ag/AgCl electrodes
+* 19-channel electrode cap with Ag/AgCl coated electrodes
+* Premium 19-channel electrode cap with patented, sintered Ag/AgCl electrodes
 
 The set up is the same between the two cap variants. You can follow this tutorial for either one.
 ## Electrode Cap With CytonDaisy Tutorial
