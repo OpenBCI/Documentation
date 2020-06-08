@@ -8,34 +8,29 @@ title: The OpenBCI GUI
 The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party softwares such as MATLAB. 
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
-## Hardware/Driver Setup for OpenBCI_GUI and OpenBCIHub
+## Hardware/Driver Setup for OpenBCI_GUI
 
 Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 
 ![image](assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
-### Ganglion on macOS
-Turn on your computer's Bluetooth.
+### Cyton and Cyton+Daisy on macOS/Windows/Linux
+If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system. This installation is required to establish a clean connection with the OpenBCI Cyton and Cyton+Daisy hardware. 
 
-![Bluetooth On](assets/SoftwareImages/OpenBCISoftware/ganglion_BLE-ON.png)  
 
-Alternatively, you can use a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).
+### Ganglion on macOS/Windows/Linux
 
-### Ganglion on Windows/Linux
+**The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0). In order to use the Ganglion, you need a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
 
-**The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0) and in order to use the Ganglion, you need a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
-
-*Deprecated:* The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported. We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
+*Note: The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported.* We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
 
 ### WiFi Shield
 
 There are no prerequisites for running the WiFi Shield with Cyton or Ganglion on macOS/Windows/Linux, move on to the installation section below.
 
-### Fix Linux Serial Port Permissions
+### Linux Users: Serial Port Permissions
 
-<p>This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</p><br>
-
-<p><details><summary><i>Linux Users: Expand this dropdown for important details</i></summary><br>
+<p><details><summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</b></i></summary><br>
 
 Before trying to connect to any OpenBCI boards on Linux, you need to make sure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or similar. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [full explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br><br>
 
@@ -117,14 +112,6 @@ Navigate to your `Applications` folder and double click the `OpenBCI_GUI` You ma
 
 Navigate to your `OpenBCI_GUI` directory, double click `OpenBCI_GUI.exe`.
 
-If prompted, check both boxes:
-
-![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.png)
-
-**As of GUI v4, the GUI will auto-launch the Hub on Windows.**
-
-After launching the GUI, you can verify the Hub is running in your Windows tool tray.
-
 ### Running on Linux
 
 Open a terminal application and navigate to the directory (with `cd`) of the unzipped application.
@@ -139,9 +126,9 @@ or
 $ sudo ./OpenBCI_GUI
 ```
 
-This will launch the OpenBCI_GUI and OpenBCIHub.
+This will launch the OpenBCI_GUI. **If you experience issues, try running with or without `sudo`.**
 
-## Running the OpenBCI GUI From The Processing IDE
+## Running the OpenBCI GUI from the Processing IDE
 
 **Most users should start by running the standalone OpenBCI GUI (see previous section). The Processing IDE is for adding features or modifying existing code.**
 
@@ -152,7 +139,6 @@ The things you will need to run the OpenBCI GUI in Processing are:
 
  * [Processing App](https://processing.org/download/?processing)
  * [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
- * [OpenBCI Electron HUB](https://github.com/OpenBCI/OpenBCI_Ganglion_Electron/releases)
 
 First, go to processing.org and download the latest version of Processing. [Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
 
@@ -176,50 +162,11 @@ On a Mac `Users/<user-name>/Documents/Processing/libraries`
 On Windows `C:\Users\Username\Documents\Processing\libraries`  
 On Linux `/home/<user-name>/sketchbook/libraries`
 
-If there is no folder called `libraries` in that location, go ahead and make one. Once you have done that, close the Processing app and reopen it. If you get an error saying "Duplicate Packages", you may need to remove the `jna` package from the `Processing\libraries` folder. _The next big step is to add the OpenBCI Hub (backend communication) in the data directory._
+If there is no folder called `libraries` in that location, go ahead and make one. Once you have done that, close the Processing app and reopen it. If you get an error saying "Duplicate Packages", you may need to remove the `jna` package from the `Processing\libraries` folder.
 
-### Install OpenBCI Hub on Mac/Linux/Windows
+### OpenBCI Hub has been Deprecated
 
-![OBCI Electron github](../../assets/SoftwareImages/OpenBCISoftware/hub-github-release.png)   
-
-There is a piece of software which is necessary to make the connection between the GUI and your computer's Bluetooth hardware.
-We call this the OpenBCI Electron Hub. Go to our github repository for the [Hub](https://github.com/OpenBCI/OpenBCI_Hub/releases/latest), and click on the link for your Operating System.  
-
-![electron hub download](../../assets/SoftwareImages/OpenBCISoftware/hub-unzipped-windows.png)
-
-After downloading and un-packing, your Downloads folder will look like this on Windows/Linux. On Mac, you'll just have an OpenBCIHub.app file.
-
-#### On Mac, move the `OpenBCIHub.app` to:
-
-`/users/<user-name>/Documents/Processing/OpenBCI_GUI/OpenBCI_GUI/data/OpenBCIHub.app`
-
-#### On Linux:
-
-Rename the directory you just unpacked to `OpenBCIHub` and move it to:
-
-`<path-to-processing>/Processing/OpenBCI_GUI/OpenBCI_GUI/data/`
-
-#### On Windows:
-
-Rename the directory you just unpacked to `OpenBCIHub` and move it to:
-
-`C:\users\<user-name>\Documents\Processing\OpenBCI_GUI\OpenBCI_GUI\data\`
-
-![Hub Home](../../assets/SoftwareImages/OpenBCISoftware/hub-installed-processing.png)
-
-Enter the new OpenBCIHub folder and right click on the executable -> properties -> compatibility -> tick "Run this program as an administrator".
-
-![set to run as admin always](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_properties_run_as_admin_hub.png)
-
-Then double click the executable to run it for the first time. You must check both check boxes when prompted.
-
-![accept networking](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_accept_networking.png)
-
-Then quit the HUB: click the tray icon, and then press the quit button.
-
-![quit the hub](../../assets/SoftwareImages/OpenBCISoftware/gui_windows_openbci_hub_quit.png)
-
-As of GUI v4.0.3, the GUI will auto-launch the Hub on Windows.
+Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware using the included [BrainFlow Java library](http://docs.openbci.com/docs/11ForDevelopers/SoftwareDevelopment#brainflow---java)!
 
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
@@ -240,7 +187,7 @@ If you don't know anything about coding, don't edit these files. If you like to 
 
 ![Processing RUN](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-RUN.png)
 
-Press the `play` button on the upper left of the IDE, and the sketch will try to launch in all it's glory. If this is your first time running the sketch, you will get a message from the Mac OS that will ask you if you will allow permission for an unsigned app to run. The app in question is the Electron Hub. If you've enabled apps to run from Anywhere, you can just give permission to run the app. However, it is likely that the GUI will not function, because timing is everything. You will need to quit the sketch (press `command+q` or click the `x` button on the upper left of the GUI). Then, relaunch the sketch by pressing the `play` button as above. This time you won't get the alert from the Mac OS, and the GUI will launch in all it's glory!  
+Press the `play` button on the upper left of the IDE, and the sketch will try to launch! 
 
 If you are encountering issues launching the GUI at this point, please head to the [OpenBCI_GUI section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum and look for help or post a question.
 
@@ -280,7 +227,7 @@ To load settings, just __click "Settings"-->"Load"__. Select a settings file fro
 
 __Click "Settings"-->"Default" to revert the GUI to default settings.__
 
-When in Live Mode, the GUI will load your settings automatically. Please allow 1-2 seconds to successfully apply settings to Cyton and Ganglion boards. _During this stage, the Dongle will blink red as it sends channel settings to the Cyton._ If loading takes more than a few seconds, there may be a connection issue with the board. An error should print at the bottom of the GUI if this happens.
+For all data modes, the GUI will load all GUI-related settings automatically. After starting a session, hardware settings (channel on/off, gain, etc.) will need to be set by the user manually.
 
 ## GUI Keyboard Shortcuts
 __Use the spacebar to start or stop the data stream!__
