@@ -99,7 +99,13 @@
             "ids": [
               "05ThirdParty/04-IDUN_Dryode/Dryode"
             ]
-            }],
+            }, {
+              "type": "subcategory",
+              "label": "HEGduino Kit",
+              "ids": [
+                "05ThirdParty/05-HEGduino Kit/HEGduino"
+              ]
+              }],
       "Software": [
           "06Software/SoftwareLanding",
         {
