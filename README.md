@@ -1,5 +1,3 @@
 # Documentation
 
-This is the current repo for OpenBCI Documentation.
-
-This branch focuses on GUI v5 changes.
+This is the current repository for the official OpenBCI Documentation!
