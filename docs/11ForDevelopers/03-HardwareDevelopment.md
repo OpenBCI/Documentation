@@ -18,7 +18,7 @@ ___
 - [External Trigger on OpenBCI Cyton Board](02Cyton/07-External_Trigger_Cyton_Example.md)
 
 ### Cyton Dongle (RFDuino)
-- [OpenBCI USB Dongle](02/Cyton/02-Cyton.md#openbci-usb-dongle)
+- [OpenBCI USB Dongle](02Cyton/02-Cyton.md#openbci-usb-dongle)
 - [OpenBCI USB Dongle Schematic](02Cyton/02-Cyton.md#openbci-dongle-circuit-schematic)
 
 
