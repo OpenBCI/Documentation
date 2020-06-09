@@ -142,7 +142,8 @@
             "09Deprecated/UltracortexMark2Dep",
             "09Deprecated/UltracortexMark2Dep",
             "09Deprecated/UltracortexMark3_NovaDep",
-            "09Deprecated/Python"
+            "09Deprecated/Python",
+            "09Deprecated/Hub"
         ],
         "Troubleshooting": [
             "10Troubleshooting/TroubleshootingLanding",

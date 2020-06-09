@@ -164,9 +164,9 @@ On Linux `/home/<user-name>/sketchbook/libraries`
 
 If there is no folder called `libraries` in that location, go ahead and make one. Once you have done that, close the Processing app and reopen it. If you get an error saying "Duplicate Packages", you may need to remove the `jna` package from the `Processing\libraries` folder.
 
-### OpenBCI Hub has been Deprecated
+### BrainFlow Java Library
 
-Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware using the included [BrainFlow Java library](http://docs.openbci.com/docs/11ForDevelopers/SoftwareDevelopment#brainflow---java)!
+**Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware!** In the background, we are using the included [BrainFlow Java library](http://docs.openbci.com/docs/11ForDevelopers/SoftwareDevelopment#brainflow---java) to handle communications with the boards.
 
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
