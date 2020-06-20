@@ -87,7 +87,7 @@ Head over to the OpenBCI GUI [tutorial](06Software/01-OpenBCISoftware/01-OpenBCI
 * [Create a widget framework](06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 * Output data into a saved file for later offline processing.
 * [Customize the layout](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
-* Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
+* Access built-in widgets such as Band Power, Spectrogram, Accelerometer, EEG Head Plot, and MUCH more
 
  **If you just want to visualize EEG, EMG, ECG data (and do some basic analysis) and save the data to start with, download the standalone [OpenBCI GUI](https://openbci.com/index.php/downloads) and connect it to an OpenBCI Cyton, CytonDaisy, or Ganglion!**
 

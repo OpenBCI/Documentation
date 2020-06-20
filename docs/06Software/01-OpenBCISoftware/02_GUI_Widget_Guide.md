@@ -87,7 +87,7 @@ Alternatively, "+" will display only an absolute value, without regard to whethe
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_pos.jpg?raw=true" width="50%">
 
 ## Focus Widget (Temporarily Deprecated)
-**Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run GUI v4.2.0.**
+**Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run [GUI v4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).**
 
 The widget recognizes a focused mental state by looking at alpha and beta wave levels on channels 1 & 2. It is based on research supporting focused states aligning with alpha levels between 0.7-2.0 μV, and the beta levels between 0.0-0.7 μV. If your data is outside of this ratio, the algorithm states that you are not focused.
 

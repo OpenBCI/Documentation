@@ -3,6 +3,8 @@ id: FocusArduino
 title: Send Focus Data from GUI to Arduino
 ---
 
+**Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run [GUI v4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).**
+
 This tutorial shows you how to get started streaming data from the OpenBCI_GUI's Focus Widget via Serial connection to an [Arduino UNO Rev3](https://store.arduino.cc/usa/arduino-uno-rev3).
 Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GUI-to-Arduino/) to find the OpenBCI/Arduino Focus Data tutorial in the updated Instructable format!
 
