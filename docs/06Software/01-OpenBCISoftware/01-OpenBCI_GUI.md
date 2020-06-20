@@ -5,7 +5,7 @@ title: The OpenBCI GUI
 
 ![image](assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
-The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party softwares such as MATLAB. 
+The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party software such as MATLAB. 
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
 ## Hardware/Driver Setup for OpenBCI_GUI and OpenBCIHub
