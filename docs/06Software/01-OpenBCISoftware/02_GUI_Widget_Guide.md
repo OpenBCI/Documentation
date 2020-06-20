@@ -3,23 +3,23 @@ id: GUIWidgets
 title: GUI Widget Guide
 ---
 ## What is a GUI Widget?
-GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left hand corner of every widget there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
+GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left-hand corner of every widget, there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
 
 
 ## Time Series
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%">
 
-The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real time, with each graph representing the voltage detected at one point in time by an electrode.
+The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real-time, with each graph representing the voltage detected at one point in time by an electrode.
 
 It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared).
 
-Each Ultracortex comes with wires that are color coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
+Each Ultracortex comes with wires that are color-coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
 
 #### Hardware Settings
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_HardwareSettings.png?raw=true" width="50%">
 
-For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine tune the PGA Gain, Bias, and other hardware settings for each channel.
+For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel.
 
 #### Other Settings
 
@@ -28,12 +28,12 @@ For Cyton users, clicking the Hardware Settings button opens a menu that allows 
 **View Settings**:
 
 *Vertical Scale* — Controls the range of μV displayed in the time series.
-Note: Set to auto to avoid chopping off data and showing good peaks and troughs. Fine tune as necessary.
+Note: Set to auto to avoid chopping off data and showing good peaks and troughs. Fine-tune as necessary.
 
 *Window* — Controls the amount of time that is shown in the series.
 
 **Railed/Near Railed Warnings**:
-These warnings show that there is no or poor signal, and that you need to check the electrodes to ensure that they are making good contact with your body.
+These warnings show that there is no or poor signal and that you need to check the electrodes to ensure that they are making good contact with your body.
 
 **Impedance Check**:
 Sends a test current down the pin to check impedance. Information is given in kΩ.
@@ -42,23 +42,23 @@ Note: Data will stop streaming automatically for the duration of the check.
 ## FFT Plot
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_FTT.jpg?raw=true" width="50%">
 
-This is a standard data visualization feature of biosensing tools. The x axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV.  These amplitudes are displayed logarithmically by default — a reccommended setting — but you can alter this in the log/ln dropdown.
+This is a standard data visualization feature of biosensing tools. The x-axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV. These amplitudes are displayed logarithmically by default — a recommended setting — but you can alter this in the log/ln dropdown.
 
-*Note: Each color in the FFT Plot is color coded to match the channels in the time series.*
+*Note: Each color in the FFT Plot is color-coded to match the channels in the time series.*
 
 ## Accelerometer
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Accel.jpg?raw=true" width="50%">
 
-Each OpenBCI board is fitted with a three-axis accelerometer, the data from which is streamed to this widget. This accelerometer measures the acceleration of the board itself on an xyz-axis.
+Each OpenBCI board is fitted with a three-axis accelerometer, the data from which is streamed to this widget. This accelerometer measures the acceleration of the board itself on an XYZ-axis.
 
-**Axis Graph**: Displays relative xyz-acceleration at the current moment visually on a graph
+**Axis Graph**: Displays relative XYZ-acceleration at the current moment visually on a graph
 
-**Timeline**: Displays relative xyz accelerations over time, color coded by axis.
+**Timeline**: Displays relative XYZ accelerations over time, color-coded by axis.
 
 ## Head Plot
-The head plot displays which regions of the head are experiencing the most activity. The deeper the red in a region, the more brain activity there is occuring in that region.  Contour lines are also shown in order to connect various regions of similar activity levels.
+The head plot displays which regions of the head are experiencing the most activity. The deeper the red in a region, the more brain activity there is occurring in that region. Contour lines are also shown to connect various regions of similar activity levels.
 
-Each number on the digram corresponds to an electrode channel displayed in the time series widget. These numbers  correspond with the suggested assembly for the Ultracortex Mark IV, however each can be dragged to different locations for custom configurations.
+Each number on the diagram corresponds to an electrode channel displayed in the time series widget. These numbers correspond with the suggested assembly for the Ultracortex Mark IV. However, each can be dragged to different locations for custom configurations.
 
 ### Default Node Placement
 Based off of 10-20 model
@@ -75,19 +75,21 @@ Based off of 10-20 model
 | 8 | O2         |
 
 
-\* P7 and P8 are the new terminology for nodes T5 and T6
+\* P7 and P8 are the new terminologies for nodes T5 and T6
 
 ### Polarity
 When compared to a reference, the pin inputs can produce a positive or negative value. Choosing "+/-" will display the true value as measured from the reference. So if the voltage is measured as lower than the reference, your value will appear negative (or blue), and if the voltage is measured to be higher the value will be positive.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_both.jpg?raw=true" width="50%">
 
-Alterntively, "+" will display only an absolute value, without regard to whether the signal was positive or negative.
+Alternatively, "+" will display only an absolute value, without regard to whether the signal was positive or negative.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_pos.jpg?raw=true" width="50%">
 
-## Focus Widget
-The widget recognizes a focused mental state by looking at alpha and beta wave levels on channel 1 & 2. It is based on research supporting focused states aligning with alpha levels between 0.7-2.0 μV, and the beta levels between 0.0-0.7 μV. If your data is outside of this ratio, the algorithm states that you are not focused.
+## Focus Widget (Temporarily Deprecated)
+**Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run GUI v4.2.0.**
+
+The widget recognizes a focused mental state by looking at alpha and beta wave levels on channels 1 & 2. It is based on research supporting focused states aligning with alpha levels between 0.7-2.0 μV, and the beta levels between 0.0-0.7 μV. If your data is outside of this ratio, the algorithm states that you are not focused.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Focus.jpg?raw=true" width="50%">
 
@@ -95,7 +97,7 @@ The widget recognizes a focused mental state by looking at alpha and beta wave l
 
 **Key Press**: When KeyPress is on, you can perform tasks and whenever you are focused, either your UP arrow or SPACE key will be pressed. Otherwise, it will be released.
 
-**W_Focus Folder**: This folder contains the original data the focus widget was based on, and materials (including an example and instructions) regarding Arduino output.
+**W_Focus Folder**: This folder contains the original data the focus widget was based on and materials (including an example and instructions) regarding Arduino output.
 
 ## Band Power
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_BandPower.jpg?raw=true" width="50%">
@@ -116,20 +118,20 @@ The band power widget shows the relative voltages of the various brain wave cate
 
 In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1.
 
-The current EMG strength is a collection of raw voltage values averaged (or smoothed) over a known window of time. The bigger the window your averaging over, the smoother the data. We establish an upper threshold (the outer dark blue circle of the circular visualizer) and a lower threshold (the inner dark blue circle) for the constantly updating “comfortable EMG range.” Then we’re mapping the current EMG (the filled circle that matches the color of the channel) value between the upper and lower thresholds.
+The current EMG strength is a collection of raw voltage values averaged (or smoothed) over a known window of time. The bigger the window you are averaging over, the smoother the data. We establish an upper threshold (the outer dark blue circle of the circular visualizer) and a lower threshold (the inner dark blue circle) for the constantly updating “comfortable EMG range.” Then we’re mapping the current EMG (the filled circle that matches the color of the channel) value between the upper and lower thresholds.
 
-This pseudo-analog mapped value is represented more clearly in the bar graph off to the right of each channel’s circular visualizer. The upper threshold is constantly creeping downwards and lower threshold is constantly creeping upwards until they get the Min ΔμV away from one another. This ensures that the overall system never creates an upper/lower flex range that is too big to influence with a muscle flex.
+This pseudo-analog mapped value is represented more clearly in the bar graph off to the right of each channel’s circular visualizer. The upper threshold is constantly creeping downwards and the lower threshold is constantly creeping upwards until they get the Min ΔμV away from one another. This ensures that the overall system never creates an upper/lower flex range that is too big to influence with a muscle flex.
 
 ### Options
-The drop-downs of the widget are designed to allow you to tweak the various parameters of this relationship. There are 4 drop-downs giving us control over 4 parameters:
+The drop-downs of the widget are designed to allow you to tweak the various parameters of this relationship. There are 4 dropdowns used to control certain parameters:
 
 **Smooth**: This is the size of the window. If we set this value at the smallest setting of 0.01 seconds (ie., lowering the smooth value), our data will be very jittery but responsive. Alternatively, if we increase the smooth and set our window to 2.0 seconds, the output will be very smooth but much less responsive.
 
-**μV Limit**: This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off, and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues.
+**μV Limit**: This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues.
 
-**Creep**: This value indicates how quickly the upper μV limit creeps downward and how quickly the lower limit creeps upward. Notice that by adjusting this value, the upper threshold and lower threshold rings will approach each other more quickly. We generally recommend this to be slow. If this is too fast and we wait too long between muscle activations, the upper threshold will have crept very close to the lower threshold and the system will be hyper sensitive.
+**Creep**: This value indicates how quickly the upper μV limit creeps downward and how quickly the lower limit creeps upward. Notice that by adjusting this value, the upper threshold and lower threshold rings will approach each other more quickly. We generally recommend this to be slow. If this is too fast and we wait too long between muscle activations, the upper threshold will have crept closer to the lower threshold and the system will be hypersensitive.
 
-**Min ΔμV**: This value sets the minimum voltage range between the upper threshold and lower threshold. The upper threshold and lower threshold cannot get any closer than this. By making this value bigger, you will have to flex harder to go from 0 to 100% flex, after the thresholds have crept as close as they will get to one another (aka Min ΔμV).
+**Min ΔμV**: This value sets the minimum voltage range between the upper threshold and the lower threshold. The upper threshold and lower threshold cannot get any closer than this. By making this value bigger, you will have to flex harder to go from 0 to 100% flex, after the thresholds have crept as close as they will get to one another (aka Min ΔμV).
 
 ## Networking
 The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](06Software/00-SoftwareLanding.md).
@@ -140,11 +142,11 @@ The networking widget allows the streaming of data to other apps. Keep scrolling
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Serial.png?raw=true" width="70%">
 
-Offers streaming of one data type. The data is sent sequentially, bit by bit, in consecutive packets. Serial is the main networking protocol that can be used when using OpenBCI with Arduino.
+Able to stream one data type. The data is sent sequentially, bit by bit, in consecutive packets. Serial is the main networking protocol that can be used when using OpenBCI with Arduino.
 
 **Baud Rate**: The rate of data transfer in bits per second. This should correspond with the chosen baud rate for the receiving application.
 
-**Port**: The port of the receiving device. For Arduino, for example, this will likely be "usbmodem" with a serial number attached.
+**Port**: The port of the receiving device. For Arduino, for example, this will likely be a "USB modem" with a serial number attached.
 
 ### UDP
 
@@ -171,18 +173,9 @@ You can find the [example Python script here](https://github.com/OpenBCI/OpenBCI
 ### OSC
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_OSC.png?raw=true" width="70%">
 
-Open Sound Control is a protocol for networking sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control. OSC's advantages include interoperability, accuracy, flexibility and enhanced organization and documentation.
+Open Sound Control is a protocol for networking sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control. OSC's advantages include interoperability, accuracy, flexibility, and enhanced organization and documentation.
 
 OSC works with MaxMSP, PureData, and Resolume.
-
-## SSVEP
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_SSVEP.png?raw=true" width="70%">
-
-The newest widget, SSVEP, is now in beta mode, for testing. It is included with [GUI v.4.1.5-beta.3](https://github.com/OpenBCI/OpenBCI_GUI/releases)
-
-It offers up to four channels of SSVEP with a range of frequencies (see screenshot above). Each channel in the widget has a dropdown menu to select frequency.
-
-For research applications of SSVEP, head to examples [here](https://link.springer.com/chapter/10.1007/978-3-642-21683-1_41) and [here.](https://www.nature.com/articles/s41598-018-32283-8)
 
 ## Playback Widget
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_PlaybackHistory.png?raw=true" width="70%">
@@ -190,13 +183,13 @@ For research applications of SSVEP, head to examples [here](https://link.springe
 This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
 
 ## Pulse Widget
-This widget will only show for Cyton in Live mode. It uses the Analog Read mode to get data from the pin marked D11 on the Cyton. Using this data, the widget will calculate the Beats per minute (BPM) and the Interbeat Interval (IBI). When using the Networking widget, this data type will send: BPM, Raw Signal, and IBI.
+This widget will only show for Cyton in Live mode. It uses the Analog Read mode to get data from the pin marked D11 on the Cyton. Using this data, the widget will calculate the Beats per minute (BPM) and the Interbeat Interval (IBI). When using the Networking widget, this data type will send BPM, Raw Signal, and IBI.
 
 ____
 
 ## Custom Widget
 
-This tutorial shows you how to create your own custom widgets for the [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI). In just a few easy steps you can have your own mini applications added to the dropdown menus of the OpenBCI GUI for running specialized applications in real-time. These widgets can tap directly into the main data structure of the OpenBCI GUI, so you can experiment with brain waves and other bio data right in the GUI.
+This tutorial shows you how to create custom widgets for the [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI). In just a few easy steps, you can have your mini-applications added to the dropdown menus of the OpenBCI GUI for running specialized applications in real-time. These widgets can tap directly into the main data structure of the OpenBCI GUI, so you can experiment with brain waves and other biodata right in the GUI.
 
 #### Helpful Background Skills
 
@@ -208,9 +201,9 @@ This tutorial shows you how to create your own custom widgets for the [OpenBCI G
 
 ### Step 1 - Duplicate the W_template.pde file & rename
 
-The [W_template.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/W_Template.pde) file is designed to serve as a simple starting point for creating your own widgets. You'll want to start by duplicating this file and renaming it to something like W_myNewWidget.pde, where "myNewWidget" is something relevant to the purpose of your new widget! Try to adhere to the naming convention and put **W_** in front to make sure that all of your widgets end up next to one another in your project directory.
+The [W_template.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/W_Template.pde) file is designed to serve as a simple starting point for creating your widgets. You'll want to start by duplicating this file and renaming it to something like W_myNewWidget.pde, where "myNewWidget" is something relevant to the purpose of your new widget! Try to adhere to the naming convention and put **W_** in front to make sure that all of your widgets end up next to one another in your project directory.
 
-You need to remember to rename the class to make sure that it is a unique and not the same class as W_template.pde. The first uncommented line of your file should read:
+You need to remember to rename the class to make sure that it is unique and not the same class as W_template.pde. The first uncommented line of your file should read:
 
 ```
 class W_myNewWidget extends Widget {
@@ -218,7 +211,7 @@ class W_myNewWidget extends Widget {
 
 ### Step 2 - Add your new widget to the widgetManager.pde file
 
-Before adding any fancy code that grabs ahold of local data structures, make sure you add your new widget to the [widgetManager.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/WidgetManager.pde) file. By doing this, you make sure your new widget is added to the dropdown menu of each widget. This is helpful because now you can see what your doing as you add graphics to your widget as you continue to develop it.
+Before adding any fancy code that grabs ahold of local data structures, make sure you add your new widget to the [widgetManager.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/WidgetManager.pde) file. By doing this, you make sure your new widget is added to the dropdown menu of each widget. This is helpful because now you can see what you are doing as you add graphics to your widget as you continue to develop it.
 
 Follow the protocol instantiating your widget globally by adding it here:
 
@@ -239,7 +232,7 @@ W_PulseSensor w_pulsesensor;
 W_myNewWidget w_myNewWidget;
 ```
 
-Then, make sure to "setup" your widget and add it to the array of all widgets by mimicing the setup code lines
+Then, make sure to "setup" your widget and add it to the array of all widgets by mimicking the setup code lines
 
 ```
   ...
@@ -261,7 +254,7 @@ Then, make sure to "setup" your widget and add it to the array of all widgets by
 
 ### Step 3 - Add dropdowns to control your widget, if needed
 
-**Note:** before you can compile the GUI, you'll need to rename the global functions at the bottom of your W_myNewWidget.pde file so that they are different from the global functions at the bottom of W_template.pde. While running the GUI, these functions are automatically activated when the corresponding dropdown is activated in the nav of your widget. Make sure that string (ex: "Dropdown1") in the addDropdown function of the constructor is the exact same string as the name of your corresponding global function at the bottom of your .pde file. The index of the menu item selected is what is passed into the function (ie "int n").
+**Note:** Before you can compile the GUI, you'll need to rename the global functions at the bottom of your W_myNewWidget.pde file so that they are different from the global functions at the bottom of W_template.pde. While running the GUI, these functions are automatically activated when the corresponding dropdown is activated in the nav of your widget. Make sure that string (ex: "Dropdown1") in the `addDropdown()` function of the constructor is the same string as the name of your corresponding global function at the bottom of your .pde file. The index of the menu item selected is what is passed into the function (ie "int n").
 
 ```
 //These functions need to be global! These functions are activated when an item from the corresponding dropdown is selected
@@ -293,31 +286,38 @@ Run the GUI, and make sure you can see your new widget in the widget dropdown me
 
 ### Step 4 - Design your custom widget
 
-Explore how the  existing widgets are accessing data structures internal to the GUI, and see if you can make something cool!
+Explore how the existing widgets are accessing data structures internal to the GUI, and see if you can make something cool!
 
 **Some cool things to know:**
 
-* Every widget has `x, y, w, h` variables that corresponds to the left edge of the widget (horizontal pixel location), the top edge of the widget (vertical pixel location), the # of pixels wide, and the # of pixels tall, respectively. These variables update automatically when the screen is resized or when the widgets are cycled through the layout containers. When adding graphics to your widget, do everything based off of these variables to ensure responsiveness.
+* Every widget has `x, y, w, h` variables that correspond to the left edge of the widget (horizontal pixel location), the top edge of the widget (vertical pixel location), the # of pixels wide, and the # of pixels tall, respectively. These variables update automatically when the screen is resized or when the widgets are cycled through the layout containers. When adding graphics to your widget, do everything based on these variables to ensure responsiveness.
 * Aside from setting up your widget in the widgetManager.pde file, all of your code can live inside of the W_myNewWidget.pde file (if done correctly).
 * To see how to access global data structures like FFT data and Time Series data, check out how the [other widgets](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/OpenBCI_GUI) are accessing data in their `update()` functions
 * One way that we add features such as dropdowns and radio buttons to our widgets is the [ControlP5 Library](https://github.com/sojamo/controlp5).
 * To learn more about how widgets work, look at the [widget.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/Widget.pde) file. That said, I don't recommend changing anything!
 
 ### Step 5 - Add any dropdown settings to SoftwareSettings.pde
-As of GUI v4, the app attemps to auto-save and auto-load user settings. Otherwise, users would need to reconfigure the GUI every time! So, if you use dropdowns in your new widget, you need to include those settings in SoftwareSettings.pde in save() and load().
+As of GUI v4, the app attempts to auto-save and auto-load user settings. Otherwise, users would need to reconfigure the GUI every time! So, if you use dropdowns in your new widget, you need to include those settings in SoftwareSettings.pde in save() and load().
 
 There are a few details at the top of SoftwareSettings.pde that should be helpful. Just follow the style that is already in place to save and load from [JSON](https://en.wikipedia.org/wiki/JSON). Skim through the code in save() or load(), you will see settings from some of your favorite widgets. Use this as your example!
 
 ### Step 6 - Initial Testing
 *Debugging*
-If you've added any `println()` or `verbosePrint()`in your widget, you can use the Console Log feature to see these messages, or just look at the console in your favorite IDE.
+If you've added any `println()` or `verbosePrint()` in your widget, you can use the Console Log feature to see these messages, or just look at the console in your favorite IDE.
 
 *Screen Resized*
-Some objects may need to be resized, or re-positioned, when the user changes the GUI screen size. This is why the widget class has the `screenResized()` method. Something not displaying right after resize? This is where you need to add code. Typically, object x, y, width, and height are declared when the widget is instantiated, and again in `screenResized()` using relative positioning.
+Some objects may need to be resized or re-positioned when the user changes the GUI screen size. This is why the widget class has the `screenResized()` method. Something not displaying right after the GUI is resized? This is where you need to add code. Typically, object x, y, width, and height are declared when the widget is instantiated, and again in `screenResized()` using relative positioning.
 
 *Settings*
 To test that everything is working, you should see the data in a settings JSON file for each data mode in the `Documents/OpenBCI_GUI/Settings/` folder. JSON files can be viewed as text. Confirm that your new JSON object and data are being written to file. Finally, confirm that the settings work properly when configuring the widget, saving, and loading.
 
+*GUI Crash*
+One of the most common ways to crash the GUI with a new widget is drawing `null` data, or some other error related to `draw()`. Another common crash is an `Exception`, which will print to the console of Atom, VSCode, or Processing IDE.
+
+
+### Step 7 - Share your custom widget with the world!
+
+If you make a functional widget that you think others could benefit from, please share it with the world by submitting a pull request to the [OpenBCI_GUI repo](https://github.com/OpenBCI/OpenBCI_GUI)!
 *GUI Crash*
 One of the most common ways to crash the GUI with a new widget is drawing `null` data, or some other error related to `draw()`. Another common crash is an `Exception`, which will print to the console of Atom, VSCode, or Processing IDE.
 
