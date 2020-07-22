@@ -324,7 +324,7 @@ Although the WiFi Shield can be connected to any internet connected device, the 
 
 The OpenBCI GUI gained WiFi Shield support as of `v3.0.0` or later.
 
-Please [follow the step by step guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application. WiFi has no prerequisites other then installing the OpenBCI Hub on Windows, on mac and linux, the hub is built into the standalone app.
+Please [follow the step by step guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application. WiFi has no other prerequisites.
 
 Come back to this guide when your GUI is running!
 

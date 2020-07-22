@@ -11,7 +11,7 @@ Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, i
 
 **OS X**: Neuromore Studio is available for MacOS, but see the [FTDI OS X fix](10Troubleshooting/05-FTDI_Driver_Fix_Mac.md) before using it.
 
-**Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md)
+**Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md) See [FTDI Linux Fix](10Troubleshooting/03-FTDI_Fix_Linux.md).
 
 ## Installation
 
@@ -27,7 +27,7 @@ Open the Neuromore Studio application. A demo will begin playing that displays e
 
 First, connect your OpenBCI board to your computer. Make sure to take the following steps:
 
-**Windows**: Make sure your board is recognized as a COM port and that its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial](10Troubleshooting/04-OpenBCI_on_Windows.md).
+**Windows**: Make sure your board is recognized as a COM port and that its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial](10Troubleshooting/04-FTDI_Fix_Windows.md).
 
 **OS X**: Make sure your board is connected and visible as a device. To check you can type `ls /dev/tty.*` on your terminal. An example connected OBCI board should like like this:
 

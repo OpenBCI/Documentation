@@ -1,5 +1,5 @@
 ---
-id: OpenBCI_on_Windows
+id: FTDI_Fix_Windows
 title: FTDI Buffer Fix on Windows
 ---
 

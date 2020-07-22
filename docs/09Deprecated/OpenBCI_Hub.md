@@ -3,10 +3,16 @@ id: Hub
 title: OpenBCI Hub
 ---
 
+**THIS SOFTWARE HAS BEEN DEPRECATED AND IS NO LONGER IN ACTIVE DEVELOPMENT.**
+
 Middleware Software used to communicate with OpenBCI boards through TCP/IP command protocol. This Doc covers the OpenBCI Hub for Cyton, Ganglion, and WiFi Shield.
 
+Last used with GUI v4.2.0 from January 2020.
+
 ## Version
-Version `v2.0.0` released September 2018
+Version `v2.1.0` last used January 2020.
+
+Version `v2.0.0` released September 2018.
 
 Version `v1.0.0` released January 3rd, 2017.
 

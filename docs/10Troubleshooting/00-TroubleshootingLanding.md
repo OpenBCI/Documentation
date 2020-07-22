@@ -9,6 +9,8 @@ The guides below offer tips on common hardware and software issues and how to fi
 
 * [GUI Troubleshooting](10Troubleshooting/02-GUI_Troubleshooting.md)
 
+* [FTDI Buffer Fix on Linux](10Troubleshooting/03-FTDI_Fix_Linux.md)
+
 * [FTDI Buffer Fix on OS X](10Troubleshooting/05-FTDI_Driver_Fix_Mac.md)
 
-* [FTDI Buffer Fix on Windows](10Troubleshooting/04-OpenBCI_on_Windows.md)
+* [FTDI Buffer Fix on Windows](10Troubleshooting/04-FTDI_Fix_Windows.md)

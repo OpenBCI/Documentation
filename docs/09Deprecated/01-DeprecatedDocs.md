@@ -15,3 +15,4 @@ Deprecated Hardware:
 
 Deprecated Software:
 - [Python and OpenBCI](09Deprecated/08-OpenBCI_Python.md)
+- [OpenBCI Hub](09Deprecated/OpenBCI_Hub.md)
