@@ -136,7 +136,7 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 ## Networking
 The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](06Software/00-SoftwareLanding.md).
 
-**Full details of all possible outputs can be found at the [GUI Networking Guide](https://docs.google.com/document/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub).**
+With the networking widget you can send Time Series, FFT, EMG, Band Power, Accel/Aux and Pulse data. The Accel/Aux option allows you to send Accelerometer, Analog Read or Digital Read data. Make sure to keep the widgets that correspond to the data you are sending open. **Full details of all possible outputs can be found at the [GUI Networking Guide](https://docs.google.com/document/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub).**
 
 ### Serial
 
