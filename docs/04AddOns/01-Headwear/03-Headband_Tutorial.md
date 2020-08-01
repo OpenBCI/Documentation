@@ -157,7 +157,7 @@ As shown above:
 | 5 | TP8 | Bottom N5P pin | Spikey |
 | 6 | P7 | Bottom N6P pin | Spikey |
 | 7 | P8 | Bottom N7P pin | Spikey |
-| 8 | Oz | TBottom N8P pin | Spikey |
+| 8 | Oz | Bottom N8P pin | Spikey |
 | - | A1 | Bottom SRB pin | Ear clip |
 | - | A2 | Bottom BIAS pin| Ear clip |
 
