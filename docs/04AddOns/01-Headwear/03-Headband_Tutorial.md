@@ -73,9 +73,19 @@ See the [Ganglion Hardware page](03Ganglion/02-Ganglion.md#inverting-input-selec
 4. Place the velcro headband between the clip end of a colored cable and a spikey electrode, making sure to align with the hole in the headband, then snap the spikey electrode into the clip
 5. Place the velcro headband between the flap snap electrode and the snap end of a colored cable, making sure to align with the hole in the headband, then snap the electrode into place.
 
+| GUI Channel | Electrode | Ganglion Board Pin | Electrode Type |
+|---|---|---|--|
+| 1 | Fp1 | Top +1 pin | Flat snap |
+| 2 | Fp2 | Top +2 pin | Flat snap |
+| 3 | TP7 | Top +3 pin | Spikey |
+| 4 | TP8 | Top +4 pin | Spikey |
+| - | A1 | Top D_G pin | Ear clip |
+| - | A2 | Top REF pin| Ear clip |
+
 **Assembling the Headband**
 
 The placement of nodes on the headband is best represented in the following image:
+
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Ganglion.png?raw=true" width="50%">
 
 In this diagram, the red circles represent areas where flat electrodes can be placed, and the blue circles represent areas where spiky electrodes can be placed. This placement is ultimately up to you, and the areas that you wish to record. However, a general suggestion for standard electrode placement is outlined in yellow.
@@ -137,6 +147,19 @@ As shown above:
 4. Connect the female terminations of up to five spikey electrodes to bottom pins 4-8 (labeled N4P through N8P). (The order of pin connections is up to user preference.)
 5. Place the velcro headband between the clip end of a colored cable and a spikey electrode, making sure to align with the hole in the headband, then snap the spikey electrode into the clip
 6. Place the velcro headband between the flap snap electrode and the snap end of a colored cable, making sure to align with the hole in the headband, then snap the electrode into place.
+
+| GUI Channel | Electrode | Cyton Board Pin | Electrode Type
+|---|---|---|---|
+| 1 | Fp1 | Bottom N1P pin | Flat snap |
+| 2 | Fp2 | Bottom N2P pin | Flat snap |
+| 3 | Fpz | Bottom N3P pin | Flat snap |
+| 4 | TP7 | Bottom N4P pin | Spikey |
+| 5 | TP8 | Bottom N5P pin | Spikey |
+| 6 | P7 | Bottom N6P pin | Spikey |
+| 7 | P8 | Bottom N7P pin | Spikey |
+| 8 | Oz | TBottom N8P pin | Spikey |
+| - | A1 | Bottom SRB pin | Ear clip |
+| - | A2 | Bottom BIAS pin| Ear clip |
 
 **Assembling the Headband**
 
