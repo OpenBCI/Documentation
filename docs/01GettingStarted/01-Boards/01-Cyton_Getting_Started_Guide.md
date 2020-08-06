@@ -229,6 +229,8 @@ You should see the 8 (or 16 if you're using a Daisy module) channels on the _Tim
 
 If this is the case, congratulations; you are now connected to your Cyton board. It's time to see some brain waves!
 
+Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file. Refer to the Cyton Data Format [guide](https://docs.openbci.com/docs/02Cyton/CytonDataFormat#binary-format) to learn how to interpret the raw data.
+
 ## V. Connect yourself to OpenBCI
 To learn how to connect yourself to OpenBCI using your newly set up board, see the following tutorials:
 * [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)

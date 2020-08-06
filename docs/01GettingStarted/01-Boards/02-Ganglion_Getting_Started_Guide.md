@@ -114,13 +114,20 @@ If the Accelerometer is off, turn on the Accelerometer by clicking the `Turn Acc
 ![Start Data Stream](assets/GettingStartedImages/ganglion_Start.png)
 ![First Live Ganglion Data](assets/GettingStartedImages/ganglion_first-data.jpg)  
 
-You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.  
+You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.
+Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file. Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/03Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
 
 ![Accel Moving](assets/GettingStartedImages/ganglion_moving-accelerometer.jpg)
 
 Pick up your board, and move it around. You should see the data in the `Accelerometer` window also move around, and if you're touching the input pin header, you will see some noise in the other windows. Nice!  
 
-**NOTE: If you're having trouble, check out the troubleshooting section at the bottom of this tutorial.**
+**NOTE: If you're having connection issues, refer to the troubleshooting tips below.**
+
+- check that you have fresh batteries
+- move the Ganglion board closer to its dongle
+- hit 'AUTOSCAN' a couple of times
+- exit the GUI and restart the computer to reboot your USB port
+
 
 Now that you've got your computer connected to the Ganglion, it's time to connect your *self!*
 
