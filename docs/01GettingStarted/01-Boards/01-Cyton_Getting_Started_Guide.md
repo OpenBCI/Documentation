@@ -228,6 +228,7 @@ You should see the 8 (or 16 if you're using a Daisy module) channels on the _Tim
 ![cyton serial chaos](assets/GettingStartedImages/serial_cyton_chaos.png)
 
 If this is the case, congratulations; you are now connected to your Cyton board. It's time to see some brain waves!
+Learn about the _Time Series_ and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets)
 
 Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file. Refer to the Cyton Data Format [guide](https://docs.openbci.com/docs/02Cyton/CytonDataFormat#binary-format) to learn how to interpret the raw data.
 

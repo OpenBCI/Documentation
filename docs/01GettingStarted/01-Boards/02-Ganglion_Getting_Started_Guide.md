@@ -115,7 +115,8 @@ If the Accelerometer is off, turn on the Accelerometer by clicking the `Turn Acc
 ![First Live Ganglion Data](assets/GettingStartedImages/ganglion_first-data.jpg)  
 
 You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.
-Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file. Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/03Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
+Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file.
+Learn about the `Time Series` and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets) Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/03Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
 
 ![Accel Moving](assets/GettingStartedImages/ganglion_moving-accelerometer.jpg)
 
