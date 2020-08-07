@@ -223,3 +223,8 @@ For cool project ideas, head over to this [**Instructables**](https://www.instru
 * Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
 
 As always, don't hesitate to email us at support@openbci.com for assistance!
+
+## Signal Troubleshooting
+
+- Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
+- The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
