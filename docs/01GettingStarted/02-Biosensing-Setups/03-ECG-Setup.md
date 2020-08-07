@@ -17,7 +17,7 @@ This document will show you how to read ECG data (electrical signals from  the h
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%">
 
-If using the **Ganglion board**, please check your set-up with these following steps, noting that on the Ganglion board there are 4 channels available.
+If using the **Ganglion board**, please check your set-up with these following steps A to C, noting that on the Ganglion board there are 4 channels available.
 
 A) The four switches on the Ganglion should be in the default UP position.
 
@@ -34,7 +34,7 @@ After making these connections, snap the Skintact sticky electrodes into the sna
 
 By doing this, we are instructing the data to measure the electric potential difference across your chest, which will in turn display your heart signals.
 
-The Cyton board has pins N1P through N8P, which allows up to 8 channels of data. 
+The Cyton board has pins N1P through N8P, which allows up to 8 channels of data.
 
 ## 3. Streaming ECG Data with the OpenBCI GUI
 
