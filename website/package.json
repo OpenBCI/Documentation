@@ -9,7 +9,6 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "@babel/helper-compilation-targets": "^7.10.4",
     "docusaurus": "^1.14.4"
   }
 }
