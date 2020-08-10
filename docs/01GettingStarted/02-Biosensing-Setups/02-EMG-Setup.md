@@ -135,4 +135,4 @@ For troubleshooting or technical support, please visit the [OpenBCI Technical Fo
 
 ## Additional Tutorials
 
-Ready for more advanced set-ups that will allow you to scroll, control music and lights, and more? Head to [Example Projects!](../../07Examples/18-EMG_Projects.md)
+Ready for more advanced eye, facial, and body EMG set-ups that will allow you to scroll, control music and lights, and much more? Head to [Example Projects!](../../07Examples/00-ExamplesLanding.md)
