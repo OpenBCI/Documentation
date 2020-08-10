@@ -78,7 +78,7 @@ The standard placement of leads for a 5-lead ECG is shown below:
 
 
 <br><br>
-For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram below, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the (diagonal) line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**.
+For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram *below*, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the (diagonal) line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**.
 IN3N LA means you connect bottom N3P pin to Left Arm location.
 
 ![5_Leads](../../assets/TutorialImages/5_lead_ECG_Cyton.png)
