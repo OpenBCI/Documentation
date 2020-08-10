@@ -170,9 +170,12 @@
             ]
           },{
             "type": "subcategory",
-            "label": "EMG Projects",
+            "label": "EMG Projects and Tutorials",
             "ids": [
-              "07Examples/EMGProjectsLanding"
+              "07Examples/18-EMGProjects/EMGscrolling",
+              "07Examples/18-EMGProjects/EMGmusic",
+              "07Examples/18-EMGProjects/EMGslideshow",
+              "07Examples/18-EMGProjects/EMG_LED",
             ]
           }
         ],

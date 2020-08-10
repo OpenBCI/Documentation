@@ -135,4 +135,4 @@ For troubleshooting or technical support, please visit the [OpenBCI Technical Fo
 
 ## Additional Tutorials
 
-Ready for more advanced set-ups that will allow you to scroll, control music and lights, and more? head to Example Projects!
+Ready for more advanced set-ups that will allow you to scroll, control music and lights, and more? Head to [Example Projects!](../../07Examples/18-EMG_Projects.md)
