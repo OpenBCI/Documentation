@@ -57,11 +57,12 @@ In the Cyton image above, note how the positive and negative terminals (yellow a
 
 ## 5-Lead ECG with Cyton Board
 This step by step 5-Lead ECG guide will show you how to get 4 channels of live ECG data.
-It builds on the above guide to 3-Lead ECG and adds only a few additional steps, so be sure to review this page in its entirety before getting started on the 5-Lead ECG.
+It builds on the above guide to 3-Lead ECG and adds only a few additional steps, so be sure to review the above sections in their entirety before getting started on the 5-Lead ECG.
 
 
 ### Connect the Electrodes to the OpenBCI Board and to your Body
-The standard placement of leads for a 5-lead ECG is shown below in
+The standard placement of leads for a 5-lead ECG is shown below:
+
 
 ![5_Lead_ECG](../../assets/TutorialImages/ECG-5-lead-electrode-ECG.png)
 
@@ -76,7 +77,8 @@ The standard placement of leads for a 5-lead ECG is shown below in
 | RL | Right Leg |
 
 
-For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram below, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**.
+<br><br>
+For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram below, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the (diagonal) line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**.
 IN3N LA means you connect bottom N3P pin to Left Arm location.
 
 ![5_Leads](../../assets/TutorialImages/5_lead_ECG_Cyton.png)
@@ -86,23 +88,23 @@ The last electrode cable connects the bottom AGND pin on the Cyton to RL (not pi
 
 <br><br>
 ![ECG_Cyton_No_V](../../assets/TutorialImages/ECG_Cyton_No_V.jpg)
-Connections for 5-lead ECG without V electrode, shown above
+**Connections for 5-lead ECG without V electrode, shown above**
 
 ![ECG_Cyton_V](../../assets/TutorialImages/ECG_Cyton_V.jpg)
-Connections for 5-lead ECG with V electrode, shown above.
+**Connections for 5-lead ECG with V electrode, shown above**
 
-If you want to sample electrode V, it will require two additional electrodes, one plugged into the N4P bottom pin (corresponding to Channel 4) and the other one plugged into the bottom pin SRB2.
+If you want to sample electrode V, it will require two additional electrodes, one plugged into the N4P bottom pin of the Cyton (corresponding to Channel 4) and the other one plugged into the bottom pin SRB2 of the Cyton.
 
 ### Streaming and Visualizing ECG Data with the GUI
 
-Once you have the GUI open, turn off all channels that are not connected to electrodes by toggling the numbered channels in the Time Series widget. Then, go to hardware settings (located above the Time Series widget) and turn SRB2 **OFF** for Channels 1, 2 and 3. Leave SRB2 ON for Channel 4.
+Once you have the GUI open, turn off all channels that are not connected to electrodes by toggling the numbered channels in the Time Series widget. Then, go to hardware settings (located above the Time Series widget) and turn SRB2 **OFF** for Channels 1, 2 and 3. Leave SRB2 **ON** for Channel 4.
 Once your settings have been adjusted, press 'Start Data Stream’.' You should see graphs similar to the ones below. The first screenshot doesn’t include electrode V and the second one does.
 
 ![ECG_GUI_No_V](../../assets/TutorialImages/ECG_Gui_No_V.png)
-Data streaming not including V electrode.
+**Data streaming not including V electrode, shown above**
 
 ![ECG_GUI_V](../../assets/TutorialImages/ECG_GUI_V.png)
-Data streaming including V electrode.
+**Data streaming including V electrode, shown above**
 
 
 
