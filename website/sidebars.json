@@ -176,7 +176,8 @@
               "07Examples/18-EMGProjects/EMGslideshow",
               "07Examples/18-EMGProjects/EMG_LED",
             ]
-          }],
+          }
+        ],
         "FAQ": [
           {
             "type": "subcategory",
