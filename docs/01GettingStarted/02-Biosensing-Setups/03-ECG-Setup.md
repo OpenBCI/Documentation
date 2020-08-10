@@ -8,7 +8,7 @@ This document will show you how to read ECG data (electrical signals from  the h
 ## Materials Needed
 1. OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 2. [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
-3. Three [EMG/ECG Snap Electrodes](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) — one ground and two sensors.
+3. Three [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) — one ground and two sensors.
 4. [OpenBCI GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ## 3-Lead ECG with Cyton or Ganglion Boards
@@ -48,15 +48,26 @@ Once all of your settings have been adjusted, press 'begin data stream.'
 
 In the Cyton image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, raw data from N1P pin will be displayed on Channel 1 within the Time Series Widget. If you are using the Ganglion, Channel 1 will show raw data from Pin 1 on the Ganglion.
 
+
+## Materials Needed
+1. OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
+2. [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
+3. [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) — up to nine individual cables
+4. [OpenBCI GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+
 ## 5-Lead ECG with Cyton Board
 This step by step 5-Lead ECG guide will show you how to get 4 channels of live ECG data.
 It builds on the above guide to 3-Lead ECG and adds only a few additional steps, so be sure to review this page in its entirety before getting started on the 5-Lead ECG.
 
+
 ### Connect the Electrodes to the OpenBCI Board and to your Body
 The standard placement of leads for a 5-lead ECG is shown below in
 
-<img src="https://litfl.com/ecg-lead-positioning.jpg?raw=true" width="60%">
+![5_Lead_ECG](../../assets/TutorialImages/ECG-5-lead-electrode-ECG.png)
 
+<br>
+
+| Diagram | Body |
 |---|---|
 | LA | Left Arm |
 | RA | Right Arm |
@@ -65,19 +76,20 @@ The standard placement of leads for a 5-lead ECG is shown below in
 | RL | Right Leg |
 
 
-For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram below, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**
+For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram below, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**.
 IN3N LA means you connect bottom N3P pin to Left Arm location.
 
-<img src="https://openbci.com/forum/index.php?p=/discussion/2098/5-lead-ecg.jpg?raw=true" width="60%">
+![5_Leads](../../assets/TutorialImages/5_lead_ECG_Cyton.png)
+
 
 The last electrode cable connects the bottom AGND pin on the Cyton to RL (not pictured above).
 
-
+<br><br>
 ![ECG_Cyton_No_V](../../assets/TutorialImages/ECG_Cyton_No_V.jpg)
-Connections for 5-lead ECG without V electrode.
+Connections for 5-lead ECG without V electrode, shown above
 
 ![ECG_Cyton_V](../../assets/TutorialImages/ECG_Cyton_V.jpg)
-Connections for 5-lead ECG with V electrode.
+Connections for 5-lead ECG with V electrode, shown above.
 
 If you want to sample electrode V, it will require two additional electrodes, one plugged into the N4P bottom pin (corresponding to Channel 4) and the other one plugged into the bottom pin SRB2.
 
