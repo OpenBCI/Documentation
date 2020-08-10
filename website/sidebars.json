@@ -162,7 +162,7 @@
               "07Examples/FocusArduino"
             ]
           },{
-              "type": "subcategory",
+            "type": "subcategory",
             "label": "Community Page Projects",
             "ids": [
               "07Examples/CommunityPageProjects"
