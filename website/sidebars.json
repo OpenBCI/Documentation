@@ -168,6 +168,12 @@
             "ids": [
               "07Examples/CommunityPageProjects"
             ]
+          },{
+            "type": "subcategory",
+            "label": "EMG Projects",
+            "ids": [
+              "07Examples/EMGProjectsLanding"
+            ]
           }
         ],
         "FAQ": [
