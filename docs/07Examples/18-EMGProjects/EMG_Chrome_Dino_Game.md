@@ -1,5 +1,5 @@
 ---
-id: EMGChromeDinoGame
+id: EMG_Chrome_Dino_Game
 title: EMG Chrome Dino Game
 ---
 
