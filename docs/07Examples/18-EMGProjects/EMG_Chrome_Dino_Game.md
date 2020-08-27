@@ -35,13 +35,13 @@ Install Python version 2 or 3. [Here](https://www.geeksforgeeks.org/how-to-downl
 
 ## Step 3: Download and Run the Script.
 
-The Python script will set up the Cyton board and read data from it. It will denoise and analyze the data to detect any spikes that correspond to muscle flexing. If a flex is detected and 100 milliseconds have passed since the last one, it will press the space bar, which will make the dinosaur jump. The threshold for the time between flexes can be modified as needed to avoid debouncing.
+The Python script will set up the Cyton board, read data from it, and analyze it to detect any spikes that correspond to muscle flexing. If a flex is detected and 100 milliseconds have passed since the last one, it will press the space bar, which will make the dinosaur jump. The threshold for the time between flexes can be modified as needed to avoid debouncing.
 
-In this tutorial, we provide two alternative ways of processing the data to detect the peaks and encourage you to think of your own ways to do it. Get either the ```chrome_dino_v1.py``` or the ```chrome_dino_v2.py``` Python script from [here](https://github.com/evaesteban/brainflow/blob/master/games/) by cloning the repository or copying the individual code file to a .py script by clicking on ‘Raw’. Once your board is connected, open a terminal and launch the script by running `python <script name> --serial-port /dev/ttyUSB0 --board-id 0` from the folder its stored in.
+In this tutorial, we provide two alternative ways of processing the data to detect the peaks and encourage you to think of your own ways to do it. Get either the ```chrome_dino_v1.py``` or the ```chrome_dino_v2.py``` Python script from [here](https://github.com/evaesteban/brainflow/blob/master/games/) by cloning the repository or copying the individual code file to a .py script. Once your board is connected, open a terminal and launch the script by running `python <script name> --serial-port /dev/ttyUSB0 --board-id 0` from the folder its stored in.
 
 **Important:** If you are using a serial port other than /dev/ttyUSB0, replace it in the above command. 
 
-Once the script has launched, follow the instructions on the terminal. The script ```chrome_dino_v1.py``` removes the noise from the signal, squares it, and sets a threshold to detect the peaks. The script ```chrome_dino_v2.py``` denoises the data and then uses a rolling window with normalization to detect the peaks.
+Once the script has launched, follow the instructions on the terminal. The script ```chrome_dino_v1.py``` removes the noise from the signal, squares it, and sets a threshold to detect the peaks. The script ```chrome_dino_v2.py``` denoises the signal and then uses a rolling window with normalization to detect the peaks.
 
 **Important**: If you are using ```chrome_dino_v1.py``` and the mean value printed out is negative, swap the N and P electrode cables and repeat calibration to get a positive mean. 
 
