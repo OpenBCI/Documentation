@@ -163,6 +163,12 @@
             ]
           },{
             "type": "subcategory",
+            "label": "Experiments",
+            "ids": [
+              "07Examples/VideoExperiment"
+            ]
+          },{
+            "type": "subcategory",
             "label": "Community Page Projects",
             "ids": [
               "07Examples/CommunityPageProjects"
