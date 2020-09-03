@@ -24,3 +24,7 @@ We added all-new tutorials for facial, ocular, and limb EMG, as well as expand
 ### EMG-controlled LED
 
 [Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMG_LED) for facial EMG-controlled LEDs
+
+### EMG-controlled Chrome Browser Dinosaur Game
+
+[Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMG_Chrome_Dino_Game) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG
