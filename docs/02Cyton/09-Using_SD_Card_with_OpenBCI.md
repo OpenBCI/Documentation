@@ -95,18 +95,28 @@ The saved file also contains meta-data at the beginning and end. Lines of text s
 The OpenBCI Processing Sketch has the functionality to read and convert these hexadecimal files to 'normal' data files.
 
 ### Converting Hex files in OpenBCI GUI
-**SD file conversion is now supported by the OpenBCI GUI stand-alone application!**
-*Note: To convert very large recordings, you must run the OpenBCI_GUI Sketch in Processing after changing "Increase Maximum Available Memory to: " at least 9000 MB aka 9GB.*
-
-We don't currently have a way to recall the file contents from the OpenBCI board over the Radio link to the Dongle. You must remove the SD card from the OpenBCI board and access the files via your computer.
-
-![SelectFilePrompt](assets/CytonImages/GUI_selectSDfile.jpg)
-
-On startup, the OpenBCI GUI will ask you for the data source you want to work with. Select **PLAYBACK(from file)** and click the **SELECT SD FILE** button.
-
-![SelectSDfile](assets/CytonImages/GUI_selectSDfileWindow.jpg)
+## SD file conversion is no longer necessary in GUI v5. Simply select an SD card file from the Cyton or Cyton+Daisy and it will load for playback!
 
 
-Navigate to the OpenBCI generated file, and click **OPEN**. The GUI will convert the file you selected. The resulting file will be placed inside a file called EEG_Data in the Processing OpenBCI GUI Sketch Folder. The file naming convention is **SDconverted-Year-Month-Day-Time.txt**. Example:
+<details><summary><b>DEPRECATED -- Expand this dropdown for instructions to convert SD files using GUI v4.2.0</b></summary>
 
-*/Documents/OpenBCI_GUI/SDconverted-2015-01-14_13-35-54.txt*
+<br>Note: To convert very large recordings, you must run the OpenBCI_GUI Sketch in Processing after changing "Increase Maximum Available Memory to: " at least 9000 MB aka 9GB.<br>
+
+We don't currently have a way to recall the file contents from the OpenBCI board over the Radio link to the Dongle. You must remove the SD card from the OpenBCI board and access the files via your computer.<br>
+
+![SelectFilePrompt](assets/CytonImages/GUI_selectSDfile.jpg)<br>
+
+On startup, the OpenBCI GUI will ask you for the data source you want to work with. Select **PLAYBACK(from file)** and click the **SELECT SD FILE** button.<br>
+
+![SelectSDfile](assets/CytonImages/GUI_selectSDfileWindow.jpg)<br>
+
+
+Navigate to the OpenBCI generated file, and click **OPEN**. The GUI will convert the file you selected. The resulting file will be placed inside a file called EEG_Data in the Processing OpenBCI GUI Sketch Folder. The file naming convention is **SDconverted-Year-Month-Day-Time.txt**. Example:<br>
+
+*/Documents/OpenBCI_GUI/SDconverted-2015-01-14_13-35-54.txt*<br>
+
+</details>
+
+
+
+
