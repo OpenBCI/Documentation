@@ -22,7 +22,7 @@ Below are the instructions on how to do it. The full information on this experim
 2. [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v5.0.0)
 3. Breadboard:
 
-The breadboard includes a photocell circuit for the trigger, and a button circuit for user feedback. The components needed for both are:
+The breadboard includes a photocell circuit for the trigger and a button circuit for user feedback. The components needed for both are:
 
 - [1x Breadboard](https://www.amazon.com/DEYUE-breadboard-Set-Prototype-Board/dp/B07LFD4LT6/ref=sr_1_5?dchild=1&keywords=breadboard&qid=1591125068&sr=8-5)
 - [1x Photoresistor](https://www.amazon.com/gp/product/B01N7V536K/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=)
@@ -33,7 +33,7 @@ The breadboard includes a photocell circuit for the trigger, and a button circui
 
 ## Step 1: Headwear, Board and Software Setup
 
-First, connect the headwear to yourself and to the Cyton board, and read from it using the GUI. If you are using the Ultracortex, follow [this tutorial](https://docs.openbci.com/docs/04AddOns/01-Headwear/MarkIV). If you're using the gold cup electrodes, follow [this guide](https://docs.openbci.com/docs/01GettingStarted/02-Biosensing-Setups/EEGSetup) to learn how to connect each electrode, and connect them in the positions you'd like to measure EEG from. A good guide to the 8 positions commonly used can be found in the Ultracortex tutorial. If you're using an electrode cap, follow [this tutorial](https://docs.openbci.com/docs/04AddOns/01-Headwear/ElectrodeCap) to connect it.
+First, connect the headwear to yourself and the Cyton board, and read from it using the GUI. If you are using the Ultracortex, follow [this tutorial](https://docs.openbci.com/docs/04AddOns/01-Headwear/MarkIV). If you're using the gold cup electrodes, follow [this guide](https://docs.openbci.com/docs/01GettingStarted/02-Biosensing-Setups/EEGSetup) to learn how to connect each electrode, and connect them in the positions you would like to measure EEG from. A good guide to the 8 positions commonly used can be found in the Ultracortex tutorial. If you're using an electrode cap, follow [this tutorial](https://docs.openbci.com/docs/04AddOns/01-Headwear/ElectrodeCap) to connect it.
 
 ## Step 2: Breadboard Setup
 
@@ -48,13 +48,13 @@ Using the components listed above, assemble the breadboard. You can find an exam
 <img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/ExamplesImages/Breadboard_Setup.jpeg?raw=true" width="70%">
 
 
-Next, connect the breadboard to the Cyton board as shown below. Place the breadboard beside your computer such that the photocell points to the lower left corner of your screen, which is where the video trigger will be located.
+Next, connect the breadboard to the Cyton board as shown below. Place the breadboard beside your computer such that the photocell points to the lower-left corner of your screen, which is where the video trigger will be located.
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/ExamplesImages/connect.jpeg?raw=true" width="70%">
 
 ## Step 4: Run Experiment
 
-Download [this video](https://github.com/evaesteban/OpenBCI_Experiment/blob/master/video.mp4). Once you're ready to start, press ```Start Data Stream``` in the GUI,open the video, and make it Full-Screen. Every time a puppy appears in the video, press the button. The video is around 3 minutes long. You're now ready to press play!
+Download [this video](https://github.com/evaesteban/OpenBCI_Experiment/blob/master/video.mp4). Once you're ready to start, press ```Start Data Stream``` in the GUI. Then, open the video and make it Full-Screen. Every time a puppy appears in the video, press the button. The video is around 3 minutes long. You're now ready to press play!
 
 ## Step 5: Retrieve Data
 
