@@ -325,6 +325,3 @@ One of the most common ways to crash the GUI with a new widget is drawing `null`
 ### Step 7 - Share your custom widget with the world!
 
 If you make a functional widget that you think others could benefit from, please share it with the world by submitting a pull request to the [OpenBCI_GUI repo](https://github.com/OpenBCI/OpenBCI_GUI)!
-
-_____
-Test Travis Change! Success!
