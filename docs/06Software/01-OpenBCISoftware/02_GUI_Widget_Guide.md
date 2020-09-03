@@ -296,10 +296,10 @@ Explore how the existing widgets are accessing data structures internal to the G
 * One way that we add features such as dropdowns and radio buttons to our widgets is the [ControlP5 Library](https://github.com/sojamo/controlp5).
 * To learn more about how widgets work, look at the [widget.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/Widget.pde) file. That said, I don't recommend changing anything!
 
-### Step 5 - Add any dropdown settings to SoftwareSettings.pde
+### Step 5 - Add any dropdown settings to SessionSettings.pde
 As of GUI v4, the app attempts to auto-save and auto-load user settings. Otherwise, users would need to reconfigure the GUI every time! So, if you use dropdowns in your new widget, you need to include those settings in SoftwareSettings.pde in save() and load().
 
-There are a few details at the top of SoftwareSettings.pde that should be helpful. Just follow the style that is already in place to save and load from [JSON](https://en.wikipedia.org/wiki/JSON). Skim through the code in save() or load(), you will see settings from some of your favorite widgets. Use this as your example!
+There are a few details at the top of SessionSettings.pde that should be helpful. Just follow the style that is already in place to save and load from [JSON](https://en.wikipedia.org/wiki/JSON). Skim through the code in save() or load(), you will see settings from some of your favorite widgets. Use this as your example!
 
 ### Step 6 - Initial Testing
 *Debugging*
