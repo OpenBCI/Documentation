@@ -102,6 +102,8 @@ Before starting the session, expand the dropdown in the "Write to SD Card?" sect
 ### Loading SD Card files for Playback using OpenBCI GUI
 **SD file conversion is no longer necessary in GUI v5. Simply select an SD card file from the Cyton or Cyton+Daisy and it will load for playback!**
 
+![LoadSDCardPlaybackScreenshot](assets/CytonImages/GUI_V5-Cyton_LoadSDCardPlayback_Screenshot.png)
+
 ### Converting Hex files in OpenBCI GUI 
 <details><summary><b>DEPRECATED -- Expand this dropdown for instructions to convert SD files using GUI v4.2.0</b></summary>
 
