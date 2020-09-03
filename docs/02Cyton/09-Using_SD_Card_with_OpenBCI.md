@@ -94,10 +94,15 @@ The saved file also contains meta-data at the beginning and end. Lines of text s
 
 The OpenBCI Processing Sketch has the functionality to read and convert these hexadecimal files to 'normal' data files.
 
-### Converting Hex files in OpenBCI GUI
+### Writing to SD Card using the OpenBCI GUI
+Before starting the session, expand the dropdown in the "Write to SD Card?" section of the Control Panel with Cyton as the Data Source. Select the maximum file size in minutes. Note that the dropdown can scroll to show more options.
+
+![WriteToSDGUIScreenshot](assets/CytonImages/GUI_V5-Cyton_WriteToSDCard_Screenshot.png)
+
+### Loading SD Card files for Playback using OpenBCI GUI
 ## SD file conversion is no longer necessary in GUI v5. Simply select an SD card file from the Cyton or Cyton+Daisy and it will load for playback!
 
-
+### Converting Hex files in OpenBCI GUI 
 <details><summary><b>DEPRECATED -- Expand this dropdown for instructions to convert SD files using GUI v4.2.0</b></summary>
 
 <br>Note: To convert very large recordings, you must run the OpenBCI_GUI Sketch in Processing after changing "Increase Maximum Available Memory to: " at least 9000 MB aka 9GB.<br>
