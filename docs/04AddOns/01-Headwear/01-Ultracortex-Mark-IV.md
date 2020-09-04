@@ -27,6 +27,9 @@ For those who want to modify the headset design and need CAD files, go to the [U
 
 **Note:** the part quantities listed below assume you are making an electrode holder for all 35 nodes of the Ultracortex Mark 4. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) (8 channels) or the [OpenBCI CytonDaisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (16 channels). In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
+*IMPORTANT PRODUCT USE NOTE*  - Please note before adjusting/twisting the blue electrode mounts, you must disconnect them from their colored cable.
+Before turning the blue electrode mount in the Ultracortex printed frame, it is NECESSARY to ensure that the white cable end of the electrode mount is free, i.e. not connected to anything. Otherwise, a broken wire is almost guaranteed after repeated turn adjustments. This is not covered by warranty.
+
 ### 3D-printed Parts:
 The following parts are included in the Unassembled version of the Mark IV:
 
