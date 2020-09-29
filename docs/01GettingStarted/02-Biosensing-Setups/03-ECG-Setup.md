@@ -64,7 +64,7 @@ It builds on the above guide to 3-Lead ECG and adds only a few additional steps,
 The standard placement of leads for a 5-lead ECG is shown below:
 
 
-![5_Lead_ECG](../../assets/TutorialImages/ECG-5-lead-electrode-ECG.png)
+![5_Lead_ECG](../../assets/TutorialImages/5-lead-electrode-ECG.png)
 
 <br>
 
@@ -78,34 +78,28 @@ The standard placement of leads for a 5-lead ECG is shown below:
 
 
 <br><br>
-For a 5-Lead ECG with the Cyton board, you will need seven Sticky Electrodes with one Snap Electrode Cable each. Follow the diagram below to connect the first six Sticky Electrodes. On the diagram *below*, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the (diagonal) line connecting **IN1P LA to IN3N LA**? That means you'll be measuring the potential difference between **IN1P LA to IN3N LA**.
-IN3N LA means you connect bottom N3P pin to Left Arm location.
+For a 5-Lead ECG with the Cyton board, you will need 4 Sticky Electrodes with one Snap Electrode Cable each. You'll also need to make 3 Y-cables. These cables will have 2 female header connectors spliced to 1 male header connector. The wire length can be short just a couple inches. These ribbon packages can be separated and cut, then spliced and wrapped with tape or shrink tube. An example of the jumper wires to use can be found [here](https://www.adafruit.com/product/1954).
+
+Follow the diagram below to connect the first 3 Sticky Electrodes. On the diagram, the ‘P’ means the top row of Cyton pins, and the ‘N’ the bottom row of pins. Once the cables have been connected to the board, connect the electrodes to your body following the same diagram. For example, IN1P LA means you connect top N1P pin on the Cyton to the Left Arm location shown on chest diagram above. Do you see the (diagonal) line connecting **IN1P LA to IN3N LA**? That means those two pins are connected via a Y-cable that goes to a single electrode on the Left Arm (LA) location. The V electrode is generally not used.
 
 ![5_Leads](../../assets/TutorialImages/5_lead_ECG_Cyton.png)
 
-
-The last electrode cable connects the bottom AGND pin on the Cyton to RL (not pictured above).
+The last electrode cable connects the bottom BIAS pin on the Cyton to RL.
 
 <br><br>
 ![ECG_Cyton_No_V](../../assets/TutorialImages/ECG_Cyton_No_V.jpg)
-**Connections for 5-lead ECG without V electrode, shown above**
 
-![ECG_Cyton_V](../../assets/TutorialImages/ECG_Cyton_V.jpg)
-**Connections for 5-lead ECG with V electrode, shown above**
-
-If you want to sample electrode V, it will require two additional electrodes, one plugged into the N4P bottom pin of the Cyton (corresponding to Channel 4) and the other one plugged into the bottom pin SRB2 of the Cyton.
+**Connections for 5-lead ECG, shown above**
 
 ### Streaming and Visualizing ECG Data with the GUI
 
-Once you have the GUI open, turn off all channels that are not connected to electrodes by toggling the numbered channels in the Time Series widget. Then, go to hardware settings (located above the Time Series widget) and turn SRB2 **OFF** for Channels 1, 2 and 3. Leave SRB2 **ON** for Channel 4.
-Once your settings have been adjusted, press 'Start Data Stream’.' You should see graphs similar to the ones below. The first screenshot doesn’t include electrode V and the second one does.
+Once you have the GUI open, turn off all channels that are not connected to electrodes by toggling the numbered channels in the Time Series widget. Then, go to hardware settings (located above the Time Series widget) and turn SRB2 **OFF** for Channels 1, 2 and 3. Turn OFF every other channel.
 
-![ECG_GUI_No_V](../../assets/TutorialImages/ECG_Gui_No_V.png)
-**Data streaming not including V electrode, shown above**
+Once your settings have been adjusted, press 'Start Data Stream’.' You should see graphs similar to the ones below.
 
-![ECG_GUI_V](../../assets/TutorialImages/ECG_GUI_V.png)
-**Data streaming including V electrode, shown above**
+![ECG_GUI_No_V](../../assets/TutorialImages/ECG_Gui_No_V.jpg)
 
+**Data streaming, shown above**
 
 
 ## Improving Signal Quality
