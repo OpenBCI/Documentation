@@ -305,9 +305,7 @@ It's time to connect the electrodes to your OpenBCI Cyton board with jumper cabl
 
 ![image](assets/HeadwareImages/Cables.JPG)
 
-Peel off the GRAY and PURPLE from the 12" set and the BLUE, GREEN, ORANGE and YELLOW from the 8" set and the RED and BROWN from the 4" Set as seen below.
-
-![image](assets/HeadwareImages/Assembly_8Chan_Cables.JPG)
+Peel off the GRAY and PURPLE from the 12" set and the BLUE, GREEN, ORANGE and YELLOW from the 8" set and the RED and BROWN from the 4" set.
 
 Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location. To follow along with this tutorial, attach each electrode to the wire color listed in the table below.
 
@@ -315,14 +313,14 @@ Now connect the jumper cables to the electrodes. The map below assigns names to 
 
 | Electrode | Wire Color |
 |---|---|
-| FP2 | Grey |
-| FP1 | Purple |
-| C4 | Blue |
-| C3 | Green |
-| P8 | Yellow |
-| P7 | Orange |
-| O2 | Brown |
+| FP1 | Grey |
+| FP2 | Purple |
+| C3 | Blue |
+| C4 | Green |
+| P7 | Yellow |
+| P8 | Orange |
 | O1 | Red |
+| O2 | Brown |
 
 To connect wires to electrodes, plug the male end in to the header cable on the NODES as shown:
 
@@ -348,12 +346,12 @@ Here's a table with the correct electrode, wire color, and Cyton board pin pairi
 | Electrode | Wire Color | Cyton Board Pin |
 |---|---|---|
 | Ear Clip | Black | Bottom SRB pin (SRB2) |
-| FP1 | Purple | Bottom N1P pin |
-| FP2 | Grey | Bottom N2P pin |
-| C3 | Green | Bottom N3P pin |
-| C4 | Blue | Bottom N4P pin |
-| P7 | Orange | Bottom N5P pin |
-| P8 | Yellow | Bottom N6P pin |
+| FP1 | Grey | Bottom N1P pin |
+| FP2 | Purple | Bottom N2P pin |
+| C3 | Blue | Bottom N3P pin |
+| C4 | Green | Bottom N4P pin |
+| P7 | Yellow | Bottom N5P pin |
+| P8 | Orange | Bottom N6P pin |
 | O1 | Red | Bottom N7P pin |
 | O2 | Brown | Bottom N8P pin |
 | Ear Clip | Black | Bottom BIAS pin |
@@ -369,7 +367,7 @@ Your Cyton board is ready to use with your Mark IV headset!
 
 #### Ganglion Board Setup
 
-Connect an OpenBCI Ganglion board to the Mark IV as shown below (with cover removed for clarity). We placed 8 electrodes on our Mark IV headset, but the Ganglion board can only take 4 inputs. So, we can only connect 4 of our electrodes to the board - we chose FP1, FP2,O1, and O2 for this tutorial.
+Connect an OpenBCI Ganglion board to the Mark IV as shown below (with cover removed for clarity). We placed 8 electrodes on our Mark IV headset, but the Ganglion board can only take 4 inputs. So, we can only connect 4 of our electrodes to the board - we chose FP1, FP2, O1, and O2 for this tutorial.
 
 ![image](assets/HeadwareImages/MarkIV_ganglion_connects.JPG)
 
@@ -377,10 +375,10 @@ Here's a table with the correct electrode, wire color, and Ganglion board pin pa
 
 | Electrode | Wire Color | Cyton Board Pin |
 |---|---|---|
-| FP2 | Grey | +4 (Top 4 pin) |
-| FP1 | Purple | +3 (Top 3 pin) |
-| O2 | Brown | +2 (Top 2 pin) |
+| FP1 | Grey | +4 (Top 4 pin) |
+| FP2 | Purple | +3 (Top 3 pin) |
 | O1 | Red | +1 (Top 1 pin) |
+| O2 | Brown | +2 (Top 2 pin) |
 | Ear Clip | Black | Top D_G pin |
 | Ear Clip | Black | Top REF pin |
 
@@ -388,11 +386,7 @@ Next, make sure the switches on your Ganglion board are in the bottom configurat
 
 ![Switches DOWN](assets/HeadwareImages/ganglion_SW_DOWN.png)
 
-Replace the cover, like below:
-
-![image](assets/HeadwareImages/MarkIV_ganglion_connects_cover.JPG)
-
-Your Ganglion board is now ready to use with your Mark IV headset!
+Replace the cover. Your Ganglion board is now ready to use with your Mark IV headset!
 
 ### Completed 8 Channel Mark IV Setup
 
@@ -401,6 +395,7 @@ Your 8 channel headset is finished! To expand to a 16 channel headset (for use w
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished.JPG)
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished2.JPG)
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished3.JPG)
+![image](assets/HeadwareImages/Assembly_8Chan_Finished4.JPG)
 
 
 ## 16 Channel Add-Ons
@@ -409,31 +404,17 @@ If you have a Cyton Daisy extension, you can expand your headset from 8 electrod
 
 ### Adding extra electrodes
 
-From the front of the frame remove the following two Comfort Nodes.
+From the front of the frame remove the two Comfort Nodes and replace them with spiky electrodes. Add 6 more spiky electrode units in the locations shown below:.
 
-![image](assets/HeadwareImages/Assembly_16Chan_Remove_Node.JPG)
-
-Replace the old Comfort Nodes with spiky electrodes:
-
-![image](assets/HeadwareImages/Assembly_16Chan_Replace_Node2.JPG)
-
-Add 6 more spiky electrode units in the locations shown below:.
-
-![image](assets/HeadwareImages/Assembly_16Chan_Node_Placment.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Node_Placement.JPG)
 
 ### Wiring Electrodes
 
-Take out your rest of your Ribbon Cables and separate the GRAY and PURPLE 8" & 4" cables, the BLUE, GREEN, ORANGE and YELLOW 8", and the RED & BROWN 4" cables.
-
-![image](assets/HeadwareImages/Assembly_16Chan_Cables.JPG)
-
-Plug the male end of the 8" GRAY and PURPLE to the 4" GRAY and PURPLE. These two extra-long wires will help you reach all the electrodes.
+Take out your rest of your Ribbon Cables and separate the GRAY and PURPLE 8" & 4" cables, the BLUE, GREEN, ORANGE and YELLOW 8", and the RED & BROWN 8" cables. Plug the male end of the 8" GRAY and PURPLE to the 4" GRAY and PURPLE. These two extra-long wires will help you reach all the electrodes.
 
 ![image](assets/HeadwareImages/Assembly_16Chan_Cables2.JPG)
 
-As shown below, connect one female end of the white Y-Splitter Cable to the bottom SRB pin of the Cyton. Connect the male end of the white Y-Splitter Cable to the female end of one black ear clip electrode. The other black ear clip electrode should be connected to the bottom BIAS pin of the Cyton. Bottom pins N1P through N8P of the Cyton should be connected to colored wires in the order shown below. Then, attach the Daisy extension to the outside of the Cyton board as shown below. You will plug all of the new electrodes into the Daisy board pins in the next step.
-
-![image](assets/HeadwareImages/Cyton_Daisy_unconnected.JPG)
+Next, connect one female end of the white Y-Splitter Cable to the bottom SRB pin of the Cyton. Connect the male end of the white Y-Splitter Cable to the female end of one black ear clip electrode. The other black ear clip electrode should be connected to the bottom BIAS pin of the Cyton. Bottom pins N1P through N8P of the Cyton should be connected to colored wires in the order shown below. Then, attach the Daisy extension to the outside of the Cyton board as shown below. You will plug all of the new electrodes into the Daisy board pins in the next step.
 
 Connect each of the new electrodes to corresponding Daisy pins as shown below. You may have to use a different color scheme, depending on what wires you have available. Just make sure to keep track of which electrodes are connected to which Daisy pins.
 
@@ -443,14 +424,14 @@ The electrode and Daisy pin pairings are below:
 
 | Electrode | Wire Color | Daisy Pin |
 |---|---|---|
-| F7 | Purple | Bottom N1P pin |
-| F8 | Grey | Bottom N2P pin |
-| F3 | White | Bottom N3P pin |
+| F7 | Grey | Bottom N1P pin |
+| F8 | Purple | Bottom N2P pin |
+| F3 | Blue | Bottom N3P pin |
 | F4 | Green | Bottom N4P pin |
-| T7 | Brown | Bottom N5P pin |
-| T8 | Red | Bottom N6P pin |
-| P3 | Yellow | Bottom N7P pin |
-| P4 | Orange | Bottom N8P pin |
+| T7 | Yellow | Bottom N5P pin |
+| T8 | Orange | Bottom N6P pin |
+| P3 | Red | Bottom N7P pin |
+| P4 | Brown | Bottom N8P pin |
 
 The other female end of the white Y-Splitter Cable should be connected to the bottom SRB pin of the Daisy. The pins connected to the Daisy board should look like this:
 
@@ -464,7 +445,8 @@ Your Mark IV is now ready to use 16 channels! It should look like the images bel
 
 ![image](assets/HeadwareImages/Assembly_16Chan_Finished.JPG)
 ![image](assets/HeadwareImages/Assembly_16Chan_Finished2.JPG)
-
+![image](assets/HeadwareImages/Assembly_16Chan_Finished3.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Finished4.JPG)
 
 ### Adjust the Ultracortex for your head
 
