@@ -196,7 +196,7 @@ Play around with the vertical scale, filter, frequency range to see the effect o
 
 For more details on the various GUI functions, scroll up to the OpenBCI Software section of the Headband-Ganglion Tutorial above.
 
-For cool project ideas, head over to this [**Instructables**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GUI-to-Arduino/) Page!
+For cool project ideas, head over to the [**Example Projects**](https://docs.openbci.com/docs/07Examples/ExamplesLanding) Directory!
 
 **Use Cases for OpenBCI GUI**
 
@@ -224,7 +224,10 @@ For cool project ideas, head over to this [**Instructables**](https://www.instru
 
 As always, don't hesitate to email us at support@openbci.com for assistance!
 
-## Signal Troubleshooting
+## Headband Tips and Signal Troubleshooting
 
 - Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
-- The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
+- The flat and snap electrodes can be used with [electrode gel.](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
+- The electrodes can be difficult to remove from their cables. To release the spikey electrodes, press the side of your finger between the black plastic and the electrode. The black side will pop up and then you can pull it off. To put it back on, put the gold wire into the ridge on the neck of the electrode, and press down the black plastic side. To release the Ag/AgCl snap electrode, press down on the velcro and pull the snap off at an angle. 
+- We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver or butter knife, being careful not to cut yourself.
+
