@@ -86,6 +86,18 @@ Alternatively, "+" will display only an absolute value, without regard to whethe
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_pos.jpg?raw=true" width="50%">
 
+## Spectrogram Widget
+
+![GUI v5 Screenshot with Spectrogram Labeled](assets/SoftwareImages/OpenBCISoftware/GUIv5_SpectrogramScreenshot_Labeled.png)
+
+This widget contains a dual spectrogram display which allows users to see changes in FFT data over time. In the above screenshot, you can see GUI synthetic data being plotted in the Spectrogram widget, and this can be confirmed by counting the "peaks" in the TimeSeries data for each channel. Also, you can see the FFT widget is open and has been labeled. This allows us to see and confirm the data that is in the dual spectrogram display. 
+
+The channel selector in this widget has two rows. The top row selects channels to include in the top spectrogram, and the bottom row selects channels for the lower spectrogram. 
+
+The "Max Freq." dropdown controls the maximum frequency to display. The "Samples" dropdown controls how fast data is fed to the graph (1Hz == Once per second). The "Log/Lin" dropdown toggles the color gradient to use on both spectrograms. On the right of the Spectrogram widget, you will see a thick line to display the current color gradient.
+
+*Important: The data/graphs displayed in this widget are an approximation, and should not be used in any serious contexts or diagnosis.*
+
 ## Focus Widget (Temporarily Deprecated)
 **Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run [GUI v4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).**
 
