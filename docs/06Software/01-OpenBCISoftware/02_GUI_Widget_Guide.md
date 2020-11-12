@@ -92,7 +92,7 @@ Alternatively, "+" will display only an absolute value, without regard to whethe
 
 This widget contains a dual spectrogram display which allows users to see changes in FFT data over time. In the above screenshot, you can see GUI synthetic data being plotted in the Spectrogram widget, and this can be confirmed by counting the "peaks" in the TimeSeries data for each channel. Also, you can see the FFT widget is open and has been labeled. This allows us to see and confirm the data that is in the dual spectrogram display. 
 
-The channel selector in this widget has two rows. The top row selects channels to include in the top spectrogram, and the bottom row selects channels for the lower spectrogram. 
+The channel selector in this widget has two rows. The top row selects channels to include in the top spectrogram, and the bottom row selects channels for the lower spectrogram. By default, this widget will be setup to compare Left hemisphere vs Right hemisphere.
 
 The "Max Freq." dropdown controls the maximum frequency to display. The "Samples" dropdown controls how fast data is fed to the graph (1Hz == Once per second). The "Log/Lin" dropdown toggles the color gradient to use on both spectrograms. On the right of the Spectrogram widget, you will see a thick line to display the current color gradient.
 
