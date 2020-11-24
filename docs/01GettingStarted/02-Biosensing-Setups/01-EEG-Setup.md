@@ -105,7 +105,7 @@ We are only using channels 2 and 7, so power down every other channel. You can a
 
 Don't bother with the ohm symbols to the right of the buttons with numbers; they are used for impedance measuring, but we won't go into that now.
 
-d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage:
+d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage. The `Hardware Settings` that are configured when you first open the GUI set every channel to EEG mode (Included in BIAS with SRB2 On) with a Gain of 24.
 
 ![Hardware Settings](assets/GettingStartedImages/CytonGS_pic3.png)
 
