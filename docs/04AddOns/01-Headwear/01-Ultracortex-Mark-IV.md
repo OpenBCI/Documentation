@@ -184,6 +184,15 @@ If you're 3D-printing your Mark IV yourself, here are the print settings we reco
 	- Number of Shells: 3
 	- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
 
+#### ADDITIONAL TIPS FOR A SUCCESSFUL PRINT
+
+The Ultracortex frame is detailed and can be challenging to print, so we strongly recommended that the operator be experienced enough to determine how settings need to be changed for their machine. That being said, here are some good general tips:
+
+1) Print a tall test model such as a figurine with overhanging features (limbs) to ensure your machine is working properly.
+2) Don't use too much support. Default settings in CURA usually work, but Prusa is heavy on support and makes the headset hard to remove without breaking.
+3) Print the headset in two halves with the flat sides on the printer bed, as mentioned previously in this document. Use a brim around the edges if your printer has peeling problems. The brim takes extra work to remove but increases likelihood of success. The parts are designed to print at this orientation with least support.
+4) Print slowly, about 50% of normal speed, and run the extrusion hotter than normal. 220 degrees is recommended.
+
 
 ## RECOMMENDED ASSEMBLY TOOLS
 
