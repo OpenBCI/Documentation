@@ -26,13 +26,13 @@ Upon registering, you should have received an email with your Login/Password. If
 
 **Note**: your profile will not appear on the People Page until you have a first name, last name, and photo. All other info is optional (but encouraged)!
 
-If your profile is still not showing up on the People Page, reach out to me (conor [at] openbci [dot] com). I’ll make sure your profile is active and set up as a contributor.
+If your profile is still not showing up on the People Page, reach out to contact@openbci.com. We’ll make sure your profile is active and set up as a contributor.
 
 ### Making Posts
 
 Making a post is a great way to share a cool project, tutorial, or research study that you’ve completed. In general, a post should be something finished (a hack, a lesson, a research study with findings, etc.).
 
-Our community page is based on the Wordpress platform. If you’ve used Wordpress before, you’ll feel right at home. If not, no worries—it’s easy! Check out [this Youtube video on posting with Wordpress](https://www.youtube.com/watch?v=vX0DMAjtZZg). Log in the same way you would to edit your profile (as described above) and start sharing your work!
+Our community page is based on the Wordpress platform. If you’ve used Wordpress before, you’ll feel right at home. If not, no worries—it’s easy! Log in the same way you would to edit your profile. When you log in, the Wordpress admin page should appear with an option to see the Posts section. Click on it and select Add New from the menu. Next, follow [this great tutorial](https://www.wpbeginner.com/beginners-guide/how-to-add-a-new-post-in-wordpress-and-utilize-all-the-features/) on how to write a Wordpress post. You are now ready to start sharing your work!
 
 **If you have your own blog/website** where you’ll be posting content related to OpenBCI, create an “OpenBCI” tag that you can assign to your posts, and then send us your blog’s URL. We can then add your RSS/tag/OpenBCI feed to our community page. Your posts will then automatically appear in our Community Feed and redirect back to your blog!
 
