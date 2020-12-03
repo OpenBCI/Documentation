@@ -105,6 +105,18 @@ We are only using channels 2 and 7, so power down every other channel. You can a
 
 Don't bother with the ohm symbols to the right of the buttons with numbers; they are used for impedance measuring, but we won't go into that now.
 
+d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage. The `Hardware Settings` that are configured when you first open the GUI set every channel to EEG mode (Included in BIAS with SRB2 On) with a Gain of 24. 
+
+![Hardware Settings](assets/GettingStartedImages/CytonGS_pic3.jpg)
+
+The buttons inside the `Hardware Settings` controller indicate the current settings of the ADS1299 registers on your Cyton board. For more information on these settings, refer to pages 39-47 of the [ADS1299 datasheet](https://www.ti.com/lit/ds/symlink/ads1299.pdf).
+
+We have simplified the interface through the OpenBCI firmware and OpenBCI GUI to allow easy, real-time interaction with these registers. For more information on this, please refer to our doc page regarding the ADS1299 interface.
+
+By deactivating channels 1, 3, 5, 6, and 8, those channels were automatically removed from the BIAS and SRB2, so as not to interfere with the signal. 
+
+e) After updating these settings, click `Send` to send the updated settings to the board. Then click the `Time Series` button again to view the data.
+
 ## 4. Alpha brain waves (EEG)
 
 ![Alpha Brain Waves!](assets/GettingStartedImages/cytonGS_fft_alpha_spike.png)
