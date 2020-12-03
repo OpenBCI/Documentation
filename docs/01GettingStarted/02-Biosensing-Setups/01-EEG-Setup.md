@@ -113,7 +113,7 @@ The buttons inside the `Hardware Settings` controller indicate the current setti
 
 We have simplified the interface through the OpenBCI firmware and OpenBCI GUI to allow easy, real-time interaction with these registers. For more information on this, please refer to our doc page regarding the ADS1299 interface.
 
-By deactivating channels 1, 3, 5, 6, and 8, those channels were automatically removed from the BIAS and SRB2, so as not to interfere with the signal. 
+By deactivating channels 1, 3, 4, 5, 6, and 8, those channels were automatically removed from the BIAS and SRB2, so as not to interfere with the signal. 
 
 e) After updating these settings, click `Send` to send the updated settings to the board. Then click the `Time Series` button again to view the data.
 
