@@ -71,6 +71,19 @@
             "05ThirdParty/00-EmotiBit/EmotiBit_Guide"
           ]
           }, {
+              "type": "subcategory",
+              "label": "HEGduino Kit",
+              "ids": [
+                "05ThirdParty/05-HEGduino Kit/HEGduino"
+              ]
+          }, {
+
+            "type": "subcategory",
+            "label": "IDUN Dryode",
+            "ids": [
+              "05ThirdParty/04-IDUN_Dryode/Dryode"
+            ]
+          }, {
           "type": "subcategory",
           "label": "Myoware",
           "ids": [
@@ -84,6 +97,12 @@
             "05ThirdParty/02-Pulse_Sensor/Pulse_Sensor_Landing"
           ]
           }, {
+         "type": "subcategory",
+         "label": "ThinkPulse™",
+         "ids": [
+           "05ThirdParty/06-ThinkPulse/ThinkPulse_Getting_Started.md"
+         ]
+         }, {
           "type": "subcategory",
           "label": "WiFi Shield",
           "ids": [
@@ -92,20 +111,7 @@
             "05ThirdParty/03-WiFiShield/WiFiAPI",
             "05ThirdParty/03-WiFiShield/WiFiSDK"
           ]
-          }, {
-
-            "type": "subcategory",
-            "label": "IDUN Dryode",
-            "ids": [
-              "05ThirdParty/04-IDUN_Dryode/Dryode"
-            ]
-            }, {
-              "type": "subcategory",
-              "label": "HEGduino Kit",
-              "ids": [
-                "05ThirdParty/05-HEGduino Kit/HEGduino"
-              ]
-              }],
+          }],
       "Software": [
           "06Software/SoftwareLanding",
         {
