@@ -13,34 +13,44 @@ ThinkPulse™ is a product of Conscious Labs (France). Patents issued and pendin
 
 The ThinkPulse™ system is an *add-on* to the [Ultracortex EEG Headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) plus [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
 This kit has been designed and its compatibility tested for the 8 channel UltraCortex with OpenBCI Cyton board only. Compatibility with the Ultracortex 16-channel and CytonDaisy is not currently available but we hope to have an update for you soon. For more compatibility and customization options as well as general product questions, please contact us support@openbci.com.
-
+<br/>
+<br/>
 
 ## ThinkPulse Starter Kit $299.99 Contents
 
-![ThinkPulse contents](../assets/ThirdPartyImages/ThinkPulse_starter_kit_contents.png)
+<br/>
+![ThinkPulse contents](../../assets/ThirdPartyImages/ThinkPulse_starter_kit_contents.png)
 
+<br/>
 Note, the replacement electrode set $99.99 is just for those who want extra electrodes on-hand. The Starter Kit $299.99 includes electrodes.
+<br/>
+<br/>
 
 ## How to Use the ThinkPulse Starter Kit with the Ultracortex Headset
 Below is the step-by-step tutorial by Conscious Labs on how to install the ThinkPulse Starter Kit on the Ultracortex. If you are doing this for the first time, allow yourself 20 minutes to put it together. You will briefly need a soldering iron and soldering wire at Step 3.
 
-#### Step 1: Prep Your Ultracortex Mark IV EEG Headset
+### Step 1: Prep Your Ultracortex Mark IV EEG Headset
 
-[![Ultracortex prep](../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
+[![Ultracortex prep](../../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
 
 
-#### Step 2: Install the ThinkPulse™ sensors on the Ultracortex
 
-[![install sensors](../assets/ThirdPartyImages/ThinkPulse_assembly_step2.png)](https://youtu.be/KNyI0c5DYu8)
+### Step 2: Install the ThinkPulse™ sensors on the Ultracortex
 
-#### Step 3: Assemble the ThinkPulse™ Power Supply Board
+[![install sensors](../../assets/ThirdPartyImages/ThinkPulse_assembly_step2.png)](https://youtu.be/KNyI0c5DYu8)
 
-[![assemble power supply](../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/Icuqx6eHbhs)
 
-#### Step 4: Connect and organize the cables
+### Step 3: Assemble the ThinkPulse™ Power Supply Board
 
-[![cable management](../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/GtcfUNvZlZ0)
+[![assemble power supply](../../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/Icuqx6eHbhs)
 
+
+### Step 4: Connect and organize the cables
+
+[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/GtcfUNvZlZ0)
+
+<br/>
+<br/>
 
 ## Technical Specs and Data Sheet
 
