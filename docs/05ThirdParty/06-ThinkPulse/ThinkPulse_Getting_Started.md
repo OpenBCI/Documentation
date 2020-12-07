@@ -7,12 +7,14 @@ Available exclusively worldwide only on the [OpenBCI® store](https://shop.openb
 
 ## About Conscious Labs
 
+Conscious Labs has been working since 2014 on taking neuroscience out of the lab and into the wild. They bring the technology, the team and the expertise to integrate EEG sensors into head wearables and hearables.
+
 We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry electrode EEG sensors at an unprecedented price point and comfort level.
-Conscious Labs has been working since 2014 on taking neuroscience out of the lab, focusing on the sensors. Conscious Labs offers the technology, the team and the expertise to integrate EEG sensors into head wearables and hearables.
+
 ThinkPulse™ is a product of Conscious Labs (France). Patents issued and pending. Made in France.
 
 The ThinkPulse™ system is an *add-on* to the [Ultracortex EEG Headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) plus [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
-This kit has been designed and its compatibility tested for the 8 channel UltraCortex with OpenBCI Cyton board only. Compatibility with the Ultracortex 16-channel and CytonDaisy is not currently available but we hope to have an update for you soon. For more compatibility and customization options as well as general product questions, please contact us support@openbci.com.
+This kit has been designed and its compatibility tested for the 8 channel Ultracortex with OpenBCI Cyton board only. Compatibility with the Ultracortex 16-channel and CytonDaisy is not currently available but we hope to have an update for you soon. For more compatibility and customization options as well as general product questions, please contact us support@openbci.com.
 <br/>
 <br/>
 
