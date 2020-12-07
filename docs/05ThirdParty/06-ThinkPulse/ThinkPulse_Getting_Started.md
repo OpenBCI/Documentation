@@ -1,5 +1,5 @@
 ---
-id: ThinkPulse™
+id: ThinkPulse
 title: ThinkPulse™ Getting Started Guide
 ---
 
