@@ -56,6 +56,8 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 
 ## Technical Specs and Data Sheet
 
+**[Full Technical Information](https://drive.google.com/file/d/1Ri2UPmPH2SrTjYQ8Mj046ciWLGzRxCSl/view?usp=sharing)**
+<br/>
 | Parameters | Specs |
 |---|---|
 | Electrode Height | 7 mm |
@@ -69,6 +71,6 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 | Electrode Noise | <10nV |
 | Bandwidth | >10KHz |
 
-**[Full Technical Information](https://drive.google.com/file/d/1Ri2UPmPH2SrTjYQ8Mj046ciWLGzRxCSl/view?usp=sharing)**
+<br/>
 
 The ThinkPulse™ Starter Kit and the ThinkPulse™ Electrode Set are not a medical device nor are intended for medical diagnosis and are provided to you "as is." OpenBCI, Inc. provides the above product under the following conditions: This evaluation kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY.
