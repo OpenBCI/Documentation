@@ -69,6 +69,6 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 | Electrode Noise | <10nV |
 | Bandwidth | >10KHz |
 
-**[Full Data Sheet](https://drive.google.com/file/d/1Ri2UPmPH2SrTjYQ8Mj046ciWLGzRxCSl/view?usp=sharing)**
+**[Full Technical Information](https://drive.google.com/file/d/1Ri2UPmPH2SrTjYQ8Mj046ciWLGzRxCSl/view?usp=sharing)**
 
 The ThinkPulse™ Starter Kit and the ThinkPulse™ Electrode Set are not a medical device nor are intended for medical diagnosis and are provided to you "as is." OpenBCI, Inc. provides the above product under the following conditions: This evaluation kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY.
