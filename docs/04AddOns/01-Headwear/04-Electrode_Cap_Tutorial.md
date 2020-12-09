@@ -23,7 +23,7 @@ The Electrode Cap comes in two variants:
 The set up is the same between the two cap variants. You can follow this tutorial for either one.
 ## Electrode Cap With CytonDaisy Tutorial
 
-When combined with the OpenBCI [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel),
+When combined with the OpenBCI [CytonDaisy 16-channel Biosensing Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel),
 the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels of EEG data.
 
 ### What You'll Need
@@ -34,9 +34,9 @@ the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels o
 
 ### Connecting the Electrode Cap to the CytonDaisy
 
-Use the y-splitter cable that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head.
+Use the [y-splitter cable](../../01GettingStarted/01-Boards/DaisyGS#2-y-splitter-cable) that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Cyton%2BDaisy%2BY-Splitter.JPG?raw=true" width="50%">
+<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/GettingStartedImages/cytonDaisy_ySplitter_on_SRBpins.jpg?raw=true" width="50%">
 
 Connect a HPTA cable to the single end of the y-splitter cable, then connect the its blue termination to the REF electrode of the cap, shown below.
 
