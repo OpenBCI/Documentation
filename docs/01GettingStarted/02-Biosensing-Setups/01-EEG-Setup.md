@@ -107,9 +107,9 @@ Don't bother with the ohm symbols to the right of the buttons with numbers; they
 
 d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage. The `Hardware Settings` that are configured when you first open the GUI set every channel to EEG mode (Included in BIAS with SRB2 On) with a Gain of 24. 
 
-![Hardware Settings](assets/GettingStartedImages/CytonGS_pic3.jpg)
+![Hardware Settings](assets/GettingStartedImages/CytonGS_pic3_GUI-5.0.2_HardwareSettings.png)
 
-The buttons inside the `Hardware Settings` controller indicate the current settings of the ADS1299 registers on your Cyton board. For more information on these settings, refer to pages 39-47 of the [ADS1299 datasheet](https://www.ti.com/lit/ds/symlink/ads1299.pdf).
+The dropdowns inside the `Hardware Settings` controller indicate the current settings of the ADS1299 registers on your Cyton board. For more information on these settings, refer to pages 39-47 of the [ADS1299 datasheet](https://www.ti.com/lit/ds/symlink/ads1299.pdf).
 
 We have simplified the interface through the OpenBCI firmware and OpenBCI GUI to allow easy, real-time interaction with these registers. For more information on this, please refer to our doc page regarding the ADS1299 interface.
 
