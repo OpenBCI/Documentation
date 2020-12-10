@@ -9,7 +9,7 @@ Available exclusively worldwide only on the [OpenBCI® store](https://shop.openb
 
 Conscious Labs has been working since 2014 on taking neuroscience out of the lab and into the wild. They bring the technology, the team and the expertise to integrate EEG sensors into head wearables and hearables.
 
-We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry electrode EEG sensors at an unprecedented price point and comfort level.
+We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry AND active electrode EEG sensors at an unprecedented price point and comfort level.
 
 ThinkPulse™ is a product of Conscious Labs (France). Patents issued and pending. Made in France.
 
