@@ -29,7 +29,7 @@ Note, the replacement electrode set $99.99 is just for those who want extra elec
 <br/>
 
 ## How to Use the ThinkPulse Starter Kit with the Ultracortex Headset
-Below is the step-by-step tutorial by Conscious Labs on how to install the ThinkPulse Starter Kit on the Ultracortex. If you are doing this for the first time, allow yourself 20 minutes to put it together. You will briefly need a soldering iron and soldering wire at Step 3.
+Below is the step-by-step tutorial by Conscious Labs on how to install the ThinkPulse Starter Kit on the Ultracortex. If you are doing this for the first time, allow yourself 20 minutes to put it together. You will briefly need a soldering iron and soldering wire at Step 3. If you do not have a soldering iron, you can still assemble the ThinkPulse! Keep reading for the solder-free option.
 
 ### Step 1: Prep Your Ultracortex Mark IV EEG Headset
 
@@ -46,6 +46,11 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 
 [![assemble power supply](../../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/Icuqx6eHbhs)
 
+Note, the assembly video uses an older version of the Cyton Board. If you purchased your Cyton Board
+post-2018, there is one additional step before Step 3. Use the soldering iron on the underside of the Cyton to **carefully** remove the AVSS and AVDD female header pins, making certain to steer clear of the D2 and D7 capacitors.
+If you do not have a soldering iron, you'll need two 2x double-headed male pins. A pack of breakaway pins such as these [Sparkfun ones](https://www.sparkfun.com/products/12693) will more than suffice.
+
+[![Cyton solder](../../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
 
 ### Step 4: Connect and organize the cables
 
