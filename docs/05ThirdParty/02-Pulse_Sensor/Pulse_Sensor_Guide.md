@@ -35,14 +35,13 @@ The connections are circled above.
 |---|---|---|
 | red | DVDD | power |
 | black | GNDA | ground |
-| purple | A3 | Analog input (signal) |
+| purple | pin 1,2,3, or 4 | input (signal) |
 
-Red pulse sensor cable goes to DVDD on the Ganglion, black to GNDA (right next to DVDD), and purple to any single analog pin A3, A4, or A6.
+Red pulse sensor cable goes to DVDD on the Ganglion, black to GNDA (right next to DVDD), and purple to any single pin 1,2,3, or 4. The single-channel data will show up in the GUI's Time Series Widget.
 
 After you have set up your hardware and software using the above steps,
 Please scroll through the [general guide](https://www.generationrobots.com/media/DetecteurDePoulsAmplifie/PulseSensorAmpedGettingStartedGuide.pdf) to learn how to secure the pulse sensor to your finger.
-
-When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog inputs A3, A4, and A6. Since you connected the purple wire of the pulse sensor to the A3 header, the data will show up in the A3 channel of the Analog Read Widget.
+<!--- When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog inputs A3, A4, and A6. Since you connected the purple wire of the pulse sensor to the A3 header, the data will show up in the A3 channel of the Analog Read Widget.--->
 
 
 ## Cyton Pulse Sensor
