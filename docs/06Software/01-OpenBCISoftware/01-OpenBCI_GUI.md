@@ -201,14 +201,17 @@ By default, the GUI stores all user data and raw EEG recordings in `Documents/Op
 
 ## Customize Your Layout
 
-The OpenBCI GUI displays up to six customizable windows in twelve layouts! You can choose what each window displays by clicking the dropdown menu at the upper left of each window. In the screengrab below, my GUI is showing Time Series, FFT Plot, and Accelerometer. The bottom row of layouts work best on higher resolution monitors.
+The OpenBCI GUI displays up to six customizable windows in twelve layouts! You can choose what each window displays by clicking the dropdown menu at the upper left of each window. The bottom row of layouts work best on higher resolution monitors.
 
-Also, you can see an impedance test has been started on Channel 1. See the next section "Impedance Testing" for more information.
+![GUI Layout Dropdown Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUIv5_LayoutSelector_Highlighted.png)
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%">
 
 ## Impedance Testing
 When using Cyton, you can display the impedance of individual channels by toggling the small Ohm icon to the right of each color coded channel number in the Time Series Widget. When the Ohm icon is toggled on, the board sends a small current through the selected channel to obtain the impedance value. **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously.**
+
+In the screengrab below, the GUI is showing Time Series, FFT Plot, and Accelerometer. Also, you can see an impedance test has been started on Channel 1.
+
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%">
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
 
