@@ -201,7 +201,7 @@ By default, the GUI stores all user data and raw EEG recordings in `Documents/Op
 
 ## Customize Your Layout
 
-The OpenBCI GUI displays up to six customizable windows in twelve layouts! You can choose what each window displays by clicking the dropdown menu at the upper left of each window. In the screengrab below, my GUI is showing Time Series, FFT Plot, and Accelerometer.
+The OpenBCI GUI displays up to six customizable windows in twelve layouts! You can choose what each window displays by clicking the dropdown menu at the upper left of each window. In the screengrab below, my GUI is showing Time Series, FFT Plot, and Accelerometer. The bottom row of layouts work best on higher resolution monitors.
 
 Also, you can see an impedance test has been started on Channel 1. See the next section "Impedance Testing" for more information.
 
