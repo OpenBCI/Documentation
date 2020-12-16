@@ -50,7 +50,6 @@ The assembly video shows how to install the power supply board to a post-2018 Cy
 
 If you have a newer Cyton (purchased after 2018), you just need a pair of pliers, no soldering iron needed!
 
-[![Cyton solder](../../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
 
 ### Step 4: Connect and organize the cables
 
