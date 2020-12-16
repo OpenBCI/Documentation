@@ -44,11 +44,11 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 
 ### Step 3: Assemble the ThinkPulse™ Power Supply Board
 
-[![assemble power supply](../../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/Icuqx6eHbhs)
+[![assemble power supply](../../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/hHzGfZXWLo8)
 
-Note, the assembly video uses an older version of the Cyton Board. If you purchased your Cyton Board
-post-2018, there is one additional step before Step 3. Use the soldering iron on the underside of the Cyton to **carefully** remove the AVSS and AVDD female header pins, making certain to steer clear of the D2 and D7 capacitors.
-If you do not have a soldering iron, you'll need two 2x double-headed male pins. A pack of breakaway pins such as these [Sparkfun ones](https://www.sparkfun.com/products/12693) will more than suffice.
+The assembly video shows how to install the power supply board to a post-2018 Cyton and a pre-2018 Cyton.
+
+If you have a newer Cyton (purchased after 2018), you just need a pair of pliers, no soldering iron needed!
 
 [![Cyton solder](../../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
 
