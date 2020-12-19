@@ -8,7 +8,7 @@ This is a guide to setting up and cleaning your OpenBCI Electrode Cap. Please co
 Product Page and review this guide in its entirety before starting.
 The Electrode Cap allows up to 19 channels of EEG data to be obtained using wet electrodes.
 You can pair the the Electrode Cap with the OpenBCI [CytonDaisy 16-channel Biosensing Board,](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
-or a bioamplifier of your choice.
+or a bioamplifier of your choice. Electrode gel must be used with the electrode cap.
 
 The placement of these electrodes is as shown in the image below:
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/electrode%20cap%20nodes_1.png?raw=true" width="50%">
