@@ -43,7 +43,7 @@ sudo rm /System/Library/Extensions/FTDIUSBSerialDriver.kext
 sudo rm -rf /Library/Extensions/FTDIUSBSerialDriver.kext
 ```
 
-After removing all exisitng FTDI drivers, reboot your computer.
+After removing all existing FTDI drivers, reboot your computer.
 
 ### Step 3: get the FTDI driver
 
