@@ -22,6 +22,8 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 * x4 AA batteries
 * x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
+Before applying ten20 paste on subjects with long hair, refer to this [guide](https://www.aset.org/files/public/10-20_System_Demonstration.pdf) on parting the hair for 10-20 international standard electrode positions. 
+
 If you are using an OpenBCI electrode starter kit, use the following electrodes so as to be consistent with the GUI's color-coding protocol:
 
   1. Black
@@ -105,7 +107,7 @@ We are only using channels 2 and 7, so power down every other channel. You can a
 
 Don't bother with the ohm symbols to the right of the buttons with numbers; they are used for impedance measuring, but we won't go into that now.
 
-d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage. The `Hardware Settings` that are configured when you first open the GUI set every channel to EEG mode (Included in BIAS with SRB2 On) with a Gain of 24. 
+d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage. The `Hardware Settings` that are configured when you first open the GUI set every channel to EEG mode (Included in BIAS with SRB2 On) with a Gain of 24.
 
 ![Hardware Settings](assets/GettingStartedImages/CytonGS_pic3_GUI-5.0.2_HardwareSettings.png)
 
@@ -113,7 +115,7 @@ The dropdowns inside the `Hardware Settings` controller indicate the current set
 
 We have simplified the interface through the OpenBCI firmware and OpenBCI GUI to allow easy, real-time interaction with these registers. For more information on this, please refer to our doc page regarding the ADS1299 interface.
 
-By deactivating channels 1, 3, 4, 5, 6, and 8, those channels were automatically removed from the BIAS and SRB2, so as not to interfere with the signal. 
+By deactivating channels 1, 3, 4, 5, 6, and 8, those channels were automatically removed from the BIAS and SRB2, so as not to interfere with the signal.
 
 e) After updating these settings, click `Send` to send the updated settings to the board. Then click the `Time Series` button again to view the data.
 
@@ -134,5 +136,6 @@ After you've taken a few good screenshots, open up the .JPGs and take a look. **
 You'll notice that the strongest alpha wave signals should be appearing in channel 7, the O2 (O standing for occipital) electrode on the back of your head. Count the number of waves in a single 1-second time period on channel 7 of the EEG DATA montage. The number of waves should correspond x-axis position of the spike on the FFT graph. If you've identified your alpha waves, congratulations! You've now seen your first brain waves with OpenBCI!
 
 ## Improving Signal Quality
+
 
 For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
