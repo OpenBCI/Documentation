@@ -9,6 +9,8 @@ The Examples directory to the left contains example projects contributed by memb
 
 We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](https://docs.openbci.com/docs/01GettingStarted/02-Biosensing-Setups/ECGSetup) and stand-alone [EMG](https://docs.openbci.com/docs/01GettingStarted/02-Biosensing-Setups/EMGSetup) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration.  We look forward to seeing what you create!
 
+Note, the example projects below are written for the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) but can be applied to [Ganglion board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) as well.
+
 ### EMG Scrolling
 
 [Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMGscrolling) for touch-less scrolling with limb EMG
