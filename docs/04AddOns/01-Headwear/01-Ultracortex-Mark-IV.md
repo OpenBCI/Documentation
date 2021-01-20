@@ -51,17 +51,35 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
-* (**2x**)* [No.4 Screws for Brittle Plastic](https://www.mcmaster.com/#97349A100)
+* (**2x**)* No.4 Screws for Brittle Plastic
+
+	![image](assets/HeadwareImages/screw.png)
+
+
 * Cables (**x3**)
-	* We strip apart the Cables in your kit (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
+	* We strip apart the Cables in your kit 
+	
+	![image](assets/HeadwareImages/Cables.JPG)
+
 * Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
+	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
+	
+	![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
+
 * Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
+	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): 
+	
+	![image](assets/HeadwareImages/FlatUnits.JPG)
+
 * Comfort units
-	* (**5x**) Comfort units used for distributing weight of headset: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
+	* (**5x**) Comfort units used for distributing weight of headset: 
+	
+	![image](assets/HeadwareImages/ComfortUnits.JPG)
+
 * Ear Clips
-	* (**2x**) Ear Clip electrode: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/EarClips.JPG)
+	* (**2x**) Ear Clip electrode: 
+	
+	![image](assets/HeadwareImages/EarClips.JPG)
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
@@ -316,20 +334,25 @@ It's time to connect the electrodes to your OpenBCI Cyton board with jumper cabl
 
 Peel off the GRAY and PURPLE from the 12" set and the BLUE, GREEN, ORANGE and YELLOW from the 8" set and the RED and BROWN from the 4" set.
 
-Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location. To follow along with this tutorial, attach each electrode to the wire color listed in the table below.
+Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location. 
 
 ![image](assets/HeadwareImages/MarkIV_electrode_map.png)
 
-| Electrode | Wire Color |
-|---|---|
-| FP1 | Grey |
-| FP2 | Purple |
-| C3 | Blue |
-| C4 | Green |
-| P7 | Yellow |
-| P8 | Orange |
-| O1 | Red |
-| O2 | Brown |
+To follow along with this tutorial, attach each electrode to the corresponding wire color following the table and steps below. Here's a table with the correct electrode, wire color, and Cyton. By bottom pin, we mean the pin CLOSEST to the OpenBCI board.
+
+| Electrode | Wire Color | Cyton Board Pin |
+|---|---|---|
+| Ear Clip | Black | Bottom SRB pin (SRB2) |
+| FP1 | Grey | Bottom N1P pin |
+| FP2 | Purple | Bottom N2P pin |
+| C3 | Blue | Bottom N3P pin |
+| C4 | Green | Bottom N4P pin |
+| P7 | Yellow | Bottom N5P pin |
+| P8 | Orange | Bottom N6P pin |
+| O1 | Red | Bottom N7P pin |
+| O2 | Brown | Bottom N8P pin |
+| Ear Clip | Black | Bottom BIAS pin |
+
 
 To connect wires to electrodes, plug the male end in to the header cable on the NODES as shown:
 
@@ -349,21 +372,6 @@ To use your Mark IV headset, you'll also need two ear clip electrodes, which com
 Connect an OpenBCI Cyton board to the Mark IV as shown below:
 
 ![image](assets/HeadwareImages/cyton_wired_nocover_FIXED.jpg)
-
-Here's a table with the correct electrode, wire color, and Cyton board pin pairings. By bottom pin, we mean the pin CLOSEST to the OpenBCI board:
-
-| Electrode | Wire Color | Cyton Board Pin |
-|---|---|---|
-| Ear Clip | Black | Bottom SRB pin (SRB2) |
-| FP1 | Grey | Bottom N1P pin |
-| FP2 | Purple | Bottom N2P pin |
-| C3 | Blue | Bottom N3P pin |
-| C4 | Green | Bottom N4P pin |
-| P7 | Yellow | Bottom N5P pin |
-| P8 | Orange | Bottom N6P pin |
-| O1 | Red | Bottom N7P pin |
-| O2 | Brown | Bottom N8P pin |
-| Ear Clip | Black | Bottom BIAS pin |
 
 The electrodes (FP1 through O2) can be connected to any N1P, N2P, etc, channel. The ear clips must always be connected to the bottom SRB pin and either of the BIAS pins.
 
@@ -412,9 +420,9 @@ If you have a Cyton Daisy extension, you can expand your headset from 8 electrod
 
 ### Adding extra electrodes
 
-From the front of the frame remove the two Comfort Nodes and replace them with spiky electrodes. Add 6 more spiky electrode units in the locations shown below:.
+From the front of the frame remove the two Comfort Nodes and replace them with spiky electrodes. Add 6 more spiky electrode units in the locations shown below:
 
-![image](assets/HeadwareImages/Assembly_16Chan_Node_Placement.JPG)
+![image](assets/HeadwareImages/MarkIV_16_channel_map.png)
 
 ### Wiring Electrodes
 
@@ -425,8 +433,6 @@ Take out your rest of your Ribbon Cables and separate the GRAY and PURPLE 8" & 4
 Next, connect one female end of the white Y-Splitter Cable to the bottom SRB pin of the Cyton. Connect the male end of the white Y-Splitter Cable to the female end of one black ear clip electrode. The other black ear clip electrode should be connected to the bottom BIAS pin of the Cyton. Bottom pins N1P through N8P of the Cyton should be connected to colored wires in the order shown below. Then, attach the Daisy extension to the outside of the Cyton board as shown below. You will plug all of the new electrodes into the Daisy board pins in the next step.
 
 Connect each of the new electrodes to corresponding Daisy pins as shown below. You may have to use a different color scheme, depending on what wires you have available. Just make sure to keep track of which electrodes are connected to which Daisy pins.
-
-![image](assets/HeadwareImages/MarkIV_16_channel_map.png)
 
 The electrode and Daisy pin pairings are below:
 
