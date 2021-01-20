@@ -51,42 +51,30 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
-* (**2x**)* No.4 Screws for Brittle Plastic
-
-	![image](assets/HeadwareImages/screw.png)
-
+* No.4 screws for brittle plastic (**2x**).
 
 * Cables (**x3**)
-	* We strip apart the Cables in your kit 
-	
-	![image](assets/HeadwareImages/Cables.JPG)
+	* We strip apart the cables in your kit.
 
 * Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
-	
-	![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
+	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair.
 
 * Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): 
-	
-	![image](assets/HeadwareImages/FlatUnits.JPG)
+	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance).
 
 * Comfort units
-	* (**5x**) Comfort units used for distributing weight of headset: 
-	
-	![image](assets/HeadwareImages/ComfortUnits.JPG)
+	* (**5x**) Comfort units used for relieving weight reuse of headset.
 
 * Ear Clips
-	* (**2x**) Ear Clip electrode: 
-	
-	![image](assets/HeadwareImages/EarClips.JPG)
+	* (**2x**) Ear Clip electrode.
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
-* (**1x**) An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
-* (**1x**) Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)
-* (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
-* (**1x**) [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/) - The Ultracortex            Mark IV has horizontal bars designed to hold straps. The addition of DIY chin straps improves stability and                    therefore quality of the signal. We recommend 25 yard rolls of 1" Velcro One Wrap. which has hooks on one side and            loops on the other.
+ * An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (**1x**) 
+* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578) (**1x**) 
+* [A charger for your battery pack](https://www.adafruit.com/products/1304) (**1x**) 
+* [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/) (**1x**)            
+
 
 ## THE COMPLETE ULTRACORTEX (w/ PICTURES)
 
@@ -131,46 +119,57 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 ### Non-printed Parts:
 
-**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
+**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need these files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
 
 #### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 
-* (**2x**)* [#4 Screws for Brittle Plastic](https://www.mcmaster.com/#97349A100)
 
-![image](assets/HeadwareImages/Screw.JPG)
+* No.4 screws for brittle plastic (**2x**):
+
+	![image](assets/HeadwareImages/screw.png)
+
 
 * Cables (**x3**)
-	* We strip apart the Cables in your kit (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/Cables.JPG)
-
-![image](assets/HeadwareImages/Cables.JPG)
+	* We strip apart the cables in your kit: 
+	
+	![image](assets/HeadwareImages/Cables.JPG)
 
 * Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/SpikeyUnits8chan.JPG)
-
-![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
+	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
+	
+	![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
 
 * Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/FlatUnits.JPG)
-
-![image](assets/HeadwareImages/FlatUnits.JPG)
+	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): 
+	
+	![image](assets/HeadwareImages/FlatUnits.JPG)
 
 * Comfort units
-	* (**5x**) Comfort units used for relieving weight reuse of headset: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/ComfortUnits.JPG)
-
-![image](assets/HeadwareImages/ComfortUnits.JPG)
+	* (**5x**) Comfort units used for distributing weight of headset: 
+	
+	![image](assets/HeadwareImages/ComfortUnits.JPG)
 
 * Ear Clips
-	* (**2x**) Ear Clip electrode: (https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/Photos/Earclips.JPG)
+	* (**2x**) Ear Clip electrode: 
+	
+	![image](assets/HeadwareImages/EarClips.JPG)
 
-![image](assets/HeadwareImages/EarClips.JPG)
+The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
-#### (1x) An [OpenBCI Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) (8 electrode channels) or an [OpenBCI CytonDaisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (16 electrode channels)
+* An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)  (**1x**) 
 
-![image](assets/HeadwareImages/OPENBCIs.jpg)
+![image](assets/HeadwareImages/cyton_boards.png) 
 
-#### (**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
+
+* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)  (**1x**) 
+
+* [A charger for your battery pack](https://www.adafruit.com/products/1304)  (**1x**) 
 
 ![image](assets/HeadwareImages/BATTERY.jpg)
+
+* [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/)  (**1x**) - The Ultracortex Mark IV has horizontal bars designed to hold straps. The addition of DIY chin straps improves stability and therefore quality of the signal. We recommend 25 yard rolls of 1" Velcro One Wrap. which has hooks on one side and loops on the other.
+
+![image](assets/HeadwareImages/velcro.png)
 
 
 
