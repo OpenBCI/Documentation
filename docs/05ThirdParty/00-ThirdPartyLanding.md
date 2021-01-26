@@ -3,7 +3,7 @@ id: ThirdPartyLanding
 title: Third-Party Hardware
 ---
 
-This directory contains documents to explain the integration between OpenBCI and compatible third-party hardware.
+The directory to the left contains documents to explain the integration between OpenBCI and compatible third-party hardware. This landing page summarizes the variety of sampling modalities!
 
 ## EmotiBit
 
@@ -14,6 +14,18 @@ Designed by our good friend Sean Montgomery and his team, [EmotiBit](emotibit.co
 EmotiBit is a wearable sensor module for capturing high-quality emotional, physiological, and movement data. Easy-to-use and scientifically-validated sensing lets you enjoy wireless data streaming to any platform or direct data recording to the built-in SD card. Customize the Arduino-compatible hardware and fully open-source software to meet any project needs!
 
 **Tutorial Coming Soon!**
+
+## HEGduino
+
+The "HEG" in HEGduino stands for HemoEncephaloGraphy, a non-invasive biofeedback method. HEG detects regional changes in the brain’s energy consumption via changes in blood-oxygen. HEGduino enables you to see in real time how your brain blood-oxygen levels respond to your thoughts and actions, resulting in a simple and elegant biofeedback system. You can easily affect and eventually control regional blood flow in your head by focusing, breathing, and relaxing, and watching the response on your screen. With the biofeedback provided by HEGduino, you can exercise your brain and make it healthier with mindful practice.
+
+We're partnering with HEGduino to bring you low-cost at-home HEG technology. Brain blood-flow biofeedback meets open-source IoT technology!  These kits are hand-assembled and tested by their team to run out-of-the box. No firmware tinkering or wire soldering needed!
+
+The open-source, extensively documented HEGduino Kit is now available at the [OpenBCI Shop](https://shop.openbci.com/products/hegduino-kit).
+
+## IDUN Dryode
+
+Introducing research-validated dry electrodes for sampling frontal cortex EEG and facial/body EMG, compatible with OpenBCI boards and standard snap cables!
 
 ## MyoWare
 
@@ -31,6 +43,9 @@ The Pulse Sensor is one of the third-party add-ons offered in our store.
 
 It can be connected to the [Ganglion](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board), [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel), or any Arduino board to easily obtain your heart rate using [photoplethysmogram (PPG)](https://en.wikipedia.org/wiki/Photoplethysmogram).
 
+## ThinkPulse Active Electrodes
+
+We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry AND active electrode EEG sensors at an unprecedented price point and comfort level.
 
 ## Wifi Shield
 
