@@ -411,6 +411,7 @@ Your 8 channel headset is finished! To expand to a 16 channel headset (for use w
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished.JPG)
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished2.JPG)
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished3.JPG)
+![image](assets/HeadwareImages/Assembly_8Chan_Finished4.JPG)
 
 
 ## 16 Channel Add-Ons
@@ -458,6 +459,8 @@ Your Mark IV is now ready to use 16 channels! It should look like the images bel
 
 ![image](assets/HeadwareImages/Assembly_16Chan_Finished.JPG)
 ![image](assets/HeadwareImages/Assembly_16Chan_Finished2.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Finished3.JPG)
+![image](assets/HeadwareImages/Assembly_16Chan_Finished4.JPG)
 
 ### Adjust the Ultracortex for your head
 
