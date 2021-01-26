@@ -45,7 +45,7 @@ It can be connected to the [Ganglion](https://shop.openbci.com/collections/front
 
 ## ThinkPulse Active Electrodes
 
-We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry AND active electrode EEG sensors at an unprecedented price point and comfort level.
+We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry, active electrode EEG sensors at an unprecedented price point and comfort level.
 
 ## Wifi Shield
 
