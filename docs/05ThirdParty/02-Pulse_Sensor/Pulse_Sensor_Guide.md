@@ -53,7 +53,7 @@ When running the GUI, select the pulse sensor widget option from the dropdown me
 ## Ganglion Pulse Sensor
 
 Read the Ganglion [Getting Started Guide](../../01GettingStarted/01-Boards/02-Ganglion_Getting_Started_Guide.md)
-You only need the GUI, pulse sensor kit, Ganglion, Ganglion dongle, and battery pack.
+You need the GUI, pulse sensor kit, Ganglion, Ganglion dongle, and battery pack.
 
 ![pulse sensor ganglion](../../assets/ThirdPartyImages/Pulse_sensor_ganglion.jpg)
 
@@ -66,6 +66,8 @@ The connections are circled above.
 | purple | pin 1,2,3, or 4 | input (signal) |
 
 Red pulse sensor cable goes to DVDD on the Ganglion, black to GNDA (right next to DVDD), and purple to any single pin 1,2,3, or 4. The single-channel data will show up in the GUI's Time Series Widget.
+
+Any unused / unconnected channels should be turned OFF in the GUI. Press the colored channel button in the Time Series to toggle on/off status.
 
 After you have set up your hardware and software using the above steps,
 Please scroll through the [general guide](https://www.generationrobots.com/media/DetecteurDePoulsAmplifie/PulseSensorAmpedGettingStartedGuide.pdf) to learn how to secure the pulse sensor to your finger.
