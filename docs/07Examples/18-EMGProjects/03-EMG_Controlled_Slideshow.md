@@ -46,7 +46,7 @@ title: EMG-controlled Slideshow
 
  The Python script will search for an EMG data stream. Once it finds the stream it will read it and detect any spikes that correspond to eye blinks. If an eye blink is detected and 2 seconds have passed since the last eye blink, it will press the space bar, which will make the presentation go to the next slide. The threshold for the time between blinks can be modified as needed to avoid debouncing.
 
- Get the Python script from [here](https://github.com/evaesteban/OpenBCI_Tutorials/tree/master/EMG_Controlled_Slideshow) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the Python folder from your command line by using the cd command, and run it using `python.exe <script_name>.py`
+ Get the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/EMG_Controlled_Slideshow) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the Python folder from your command line by using the cd command, and run it using `python.exe <script_name>.py`
 
  Open your slideshow in Presentation mode. Every time you blink, it will go to the next slide. By modifying the time_thres and blink_thres parameters in the code you can adjust the time to wait between binks and the blink strength to your needs.
 

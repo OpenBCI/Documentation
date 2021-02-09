@@ -75,7 +75,7 @@ The first step is to download the Arduino IDE from [here](https://www.arduino.cc
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/init_arduino_pic.png?raw=true" width="70%">
 
-Download the folder with the code from [here](https://github.com/evaesteban/OpenBCI_Tutorials/tree/master/Facial_EMG_Multiple_LEDs) and open it using the Arduino IDE by clicking on File >> Open... and selecting the entire folder.  Connect the Arduino to the computer by clicking on **Tools**, then selecting the right Board and Port options. Next, click on Upload and wait for the code to be uploaded.
+Download the folder with the code from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/Facial_EMG_Multiple_LEDs) and open it using the Arduino IDE by clicking on File >> Open... and selecting the entire folder.  Connect the Arduino to the computer by clicking on **Tools**, then selecting the right Board and Port options. Next, click on Upload and wait for the code to be uploaded.
 
 Once the code has been loaded into the Arduino, open the Serial Monitor in the Arduino IDE and try sending the commands ‘Y’, ‘G’, and ‘B’ to the Arduino. The LED color should change to Red, Green and Blue respectively if everything is correct. After testing, close the Serial Monitor.
 
@@ -100,7 +100,7 @@ Follow the Networking [Tutorial](https://docs.openbci.com/docs/06Software/01-Ope
 
 The Python script will search for the EMG data streams. Once it finds them it will read it and detect any spikes that correspond to the face muscle flexing. If a flex is detected and 10 milliseconds have passed since the last flex, it will send the corresponding letter ‘R’, ‘Y’ or ‘B’ depending on which gesture was detected.  The threshold for the time between flexes can be modified as needed to avoid debouncing.
 
-Get the Python script from [here](https://github.com/evaesteban/OpenBCI_Tutorials/tree/master/Facial_EMG_Multiple_LEDs) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the folder that you stored the script in from your command line, and run it using `python.exe <script_name>.py`
+Get the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/Facial_EMG_Multiple_LEDs) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the folder that you stored the script in from your command line, and run it using `python.exe <script_name>.py`
 
 Hold the breadboard with LEDs towards your face in a dark environment and check how the color changes when you smile and frown. By modifying the time_thres and flex_thres parameters in the code you can adjust the time to wait between flexes and the flex strength to your needs.
 
