@@ -3,8 +3,10 @@ id: GUIWidgets
 title: GUI Widget Guide
 ---
 ## What is a GUI Widget?
+
 GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left-hand corner of every widget, there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
 
+The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Download the stand-alone GUI directly from the [OpenBCI GitHub](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
 ## Time Series
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%">
@@ -92,7 +94,7 @@ Alternatively, "+" will display only an absolute value, without regard to whethe
 
 ![GUI v5 Screenshot with Spectrogram Labeled](assets/SoftwareImages/OpenBCISoftware/GUIv5_SpectrogramScreenshot_Labeled.png)
 
-This widget contains a dual spectrogram display which allows users to see changes in FFT data over time. In the above screenshot, you can see GUI synthetic data being plotted in the Spectrogram widget, and this can be confirmed by counting the "peaks" in the TimeSeries data for each channel. Also, you can see the FFT widget is open and has been labeled. This allows us to see and confirm the data that is in the dual spectrogram display. 
+This widget contains a dual spectrogram display which allows users to see changes in FFT data over time. In the above screenshot, you can see GUI synthetic data being plotted in the Spectrogram widget, and this can be confirmed by counting the "peaks" in the TimeSeries data for each channel. Also, you can see the FFT widget is open and has been labeled. This allows us to see and confirm the data that is in the dual spectrogram display.
 
 The channel selector in this widget has two rows. The top row selects channels to include in the top spectrogram, and the bottom row selects channels for the lower spectrogram. By default, this widget will be setup to compare Left hemisphere vs Right hemisphere.
 
