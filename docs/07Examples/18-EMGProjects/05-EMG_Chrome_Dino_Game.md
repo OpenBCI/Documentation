@@ -50,3 +50,5 @@ Next, disable your internet and open a Google Chrome tab. Start the game by pres
 To learn more about brainflow visit its [GitHub repository](https://github.com/brainflow-dev/brainflow) and its [Documentation](https://brainflow.readthedocs.io/en/stable/).
 
 This is a great example to get started with brainflow. Try it out and send us a video of how you modify this prototype!
+
+**Note**: This tutorial is based on Brainflow 2020. If you experience any issues with the latest versions email us at contact@openbci.com.
