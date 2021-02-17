@@ -6,9 +6,15 @@ title: Liability Policy
 
 OpenBCI, Inc. provides the OpenBCI-trademarked products under the following conditions: This evaluation board/kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY and is not considered by OpenBCI, Inc. to be a finished end-product fit for general consumer use.
 
+FDA approval is NOT required to use an EEG device for recording and research purposes, unless specifically required by your IRB or research
+institution.
+
 All official OpenBCI products are designed and assembled in the United States. OpenBCI products are not medical, clinical, or diagnostic devices nor are they intended for medical diagnosis and are provided to you "as is," and we make no express or implied warranties whatsoever with respect to its functionality, operability, or use, including, without limitation, any implied warranties, fitness for a particular purpose, or infringement.
 
 OpenBCI boards are designed to take power only from low­-voltage DC sources, i.e. batteries. They do not take power from the “grid,” from power outlets, USB ports, etc.
+
+
+
 
 
 ### Limitations of Liability.
