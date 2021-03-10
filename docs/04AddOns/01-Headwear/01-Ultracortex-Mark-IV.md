@@ -51,7 +51,7 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
-* No.4 screws for brittle plastic (**2x**).
+* No.4 [screws](https://www.mcmaster.com/90380A146/) for brittle plastic (**2x**).
 
 * Cables (**x3**)
 	* We strip apart the cables in your kit.
@@ -70,9 +70,9 @@ The following parts are included in the Unassembled and the Print it Yourself ve
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
- * An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (**1x**) 
-* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578) (**1x**) 
-* [A charger for your battery pack](https://www.adafruit.com/products/1304) (**1x**) 
+ * An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (**1x**)
+* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578) (**1x**)
+* [A charger for your battery pack](https://www.adafruit.com/products/1304) (**1x**)
 * [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/) (**1x**)            
 
 
@@ -130,40 +130,40 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 
 * Cables (**x3**)
-	* We strip apart the cables in your kit: 
-	
+	* We strip apart the cables in your kit:
+
 	![image](assets/HeadwareImages/Cables.JPG)
 
 * Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
-	
+	* (**6x or 14x**) quantity depending on a 8 or 16 channel headset, dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
+
 	![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
 
 * Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): 
-	
+	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance):
+
 	![image](assets/HeadwareImages/FlatUnits.JPG)
 
 * Comfort units
-	* (**5x**) Comfort units used for distributing weight of headset: 
-	
+	* (**5x**) Comfort units used for distributing weight of headset:
+
 	![image](assets/HeadwareImages/ComfortUnits.JPG)
 
 * Ear Clips
-	* (**2x**) Ear Clip electrode: 
-	
+	* (**2x**) Ear Clip electrode:
+
 	![image](assets/HeadwareImages/EarClips.JPG)
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
-* An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)  (**1x**) 
+* An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)  (**1x**)
 
-![image](assets/HeadwareImages/cyton_boards.png) 
+![image](assets/HeadwareImages/cyton_boards.png)
 
 
-* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)  (**1x**) 
+* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)  (**1x**)
 
-* [A charger for your battery pack](https://www.adafruit.com/products/1304)  (**1x**) 
+* [A charger for your battery pack](https://www.adafruit.com/products/1304)  (**1x**)
 
 ![image](assets/HeadwareImages/BATTERY.jpg)
 
@@ -333,7 +333,7 @@ It's time to connect the electrodes to your OpenBCI Cyton board with jumper cabl
 
 Peel off the GRAY and PURPLE from the 12" set and the BLUE, GREEN, ORANGE and YELLOW from the 8" set and the RED and BROWN from the 4" set.
 
-Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location. 
+Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location.
 
 ![image](assets/HeadwareImages/MarkIV_electrode_map.png)
 
