@@ -80,4 +80,20 @@ If you need help or have any questions, email support@openbci.com
 
 <br/>
 
+## Troubleshooting
+
+If you are seeing 'RAILED' in the GUI, try the following tips:
+
+1) Disconnect the BIAS earclip from the Cyton board
+2) Go to the Hardware Settings (button is found above Time Series widget) and turn BIAS and SRB1 'OFF'
+3) Keep SRB2 'ON'
+4) For every channel, set the GAIN to '8' or less
+5) Stop the session, close the GUI, turn off the Cyton board
+6) Start the system up again. The changes you made to the settings will be saved
+
+Please also refer to the resolved [troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Form
+
+
+## Non-medical Use Disclaimer
+
 The ThinkPulse™ Starter Kit and the ThinkPulse™ Electrode Set are not a medical device nor are intended for medical diagnosis and are provided to you "as is." OpenBCI, Inc. provides the above product under the following conditions: This evaluation kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY.
