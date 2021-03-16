@@ -47,6 +47,6 @@ The Python script will search for the EMG data streams. Once it finds them it wi
 
 Download the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/EMG_Scrolling) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the folder that you stored the script in from your command line, and run it using `python.exe <script_name>.py`
 
-Open one of your favourite websites in your browser and scroll through it flexing your arms. By modifying the time_thres and flex_thres parameters in the code you can adjust the time to wait between flexes and the flex strength to your needs.
+Open one of your favourite websites in your browser and scroll through it flexing your arms. By modifying the time_thres and flex_thres parameters in the code, you can adjust the time to wait between flexes and the flex strength to your needs.
 
 Try it out and send us a video of your final prototype!
