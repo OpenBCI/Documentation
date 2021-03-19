@@ -63,7 +63,7 @@ The following parts are included in the Unassembled and the Print it Yourself ve
 	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance).
 
 * Comfort units
-	* (**5x**) Comfort units used for relieving weight reuse of headset.
+	* (**5x**) Comfort units used for distributing of headset weight equally.
 
 * Ear Clips
 	* (**2x**) Ear Clip electrode.
