@@ -41,7 +41,7 @@ The following parts are included in the Unassembled version of the Mark IV:
 	* INSERT (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
 * [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
 * BOARD_COVER (**x1**)
-	* [BOARD COVER](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
+	* [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
 * WIRE_CLIPS (**x30**)
 	* [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (Clips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
 
@@ -109,7 +109,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 #### (1x) BOARD_COVER
 
 * [BOARD COVER](**x1**)
-	* [BOARD COVER](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Cover.stl)
+	* [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
 
 ![image](assets/HeadwareImages/Board_Cover.JPG)
 
