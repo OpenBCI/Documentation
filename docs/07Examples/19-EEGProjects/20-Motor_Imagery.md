@@ -9,9 +9,7 @@ This tutorial was made by Rakesh C Jakati.
 Motor imagery (MI)–based brain-computer interface (BCI) is one of the standard concepts of BCI, in that the user can generate induced activity from the motor cortex by imagining motor movements without any limb movement or external stimulus.
 In this tutorial, we will learn how to use OpenBCI equipment for motor imagery. For that, we will design a BCI system that allows a user to control a system by imagining different movements of their limbs. 
 
-	![Cyton with 8-chanel Board with RFduino dongle](assets/TutorialImages/dongle_and_Cyton.png)
-
-
+	
 ## Materials Required
 
 1. OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
