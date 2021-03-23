@@ -163,12 +163,6 @@
           "07Examples/ExamplesLanding",
           {
             "type": "subcategory",
-            "label": "Arduino Focus Example",
-            "ids": [
-              "07Examples/FocusArduino"
-            ]
-          },{
-            "type": "subcategory",
             "label": "Experiments",
             "ids": [
               "07Examples/VideoExperiment"
@@ -194,6 +188,7 @@
             "type": "subcategory",
             "label": "EEG Projects and Tutorials",
             "ids": [
+              "07Examples/19-EEGProjects/FocusArduino",
               "07Examples/19-EEGProjects/MotorImagery"
             ]
           }
