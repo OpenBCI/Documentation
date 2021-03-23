@@ -189,6 +189,13 @@
               "07Examples/18-EMGProjects/EMG_LED",
               "07Examples/18-EMGProjects/EMG_Chrome_Dino_Game"
             ]
+          },
+          {
+            "type": "subcategory",
+            "label": "EEG Projects and Tutorials",
+            "ids": [
+              "07Examples/19-EEGProjects/MotorImagery"
+            ]
           }
         ],
         "FAQ": [
