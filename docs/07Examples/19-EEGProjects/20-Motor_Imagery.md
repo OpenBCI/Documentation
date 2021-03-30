@@ -6,7 +6,7 @@ title: Motor Imagery
 This tutorial was made by Rakesh C Jakati.
 
 
-Motor imagery (MI)–based brain-computing interface (BCI) is one of the standard concepts of BCI, in that the user can generate induced activity from the motor cortex by imagining motor movements without any limb movement or external stimulus.
+Motor imagery (MI)–based brain-computer interface (BCI) is one of the standard concepts of BCI, in that the user can generate induced activity from the motor cortex by imagining motor movements without any limb movement or external stimulus.
 In this tutorial, we will learn how to use OpenBCI equipment for motor imagery. For that, we will design a BCI system that allows a user to control a system by imagining different movements of their limbs. 
 
 	
