@@ -163,12 +163,6 @@
           "07Examples/ExamplesLanding",
           {
             "type": "subcategory",
-            "label": "Arduino Focus Example",
-            "ids": [
-              "07Examples/FocusArduino"
-            ]
-          },{
-            "type": "subcategory",
             "label": "Experiments",
             "ids": [
               "07Examples/VideoExperiment"
@@ -188,6 +182,14 @@
               "07Examples/18-EMGProjects/EMGslideshow",
               "07Examples/18-EMGProjects/EMG_LED",
               "07Examples/18-EMGProjects/EMG_Chrome_Dino_Game"
+            ]
+          },
+          {
+            "type": "subcategory",
+            "label": "EEG Projects and Tutorials",
+            "ids": [
+              "07Examples/19-EEGProjects/FocusArduino",
+              "07Examples/19-EEGProjects/MotorImagery"
             ]
           }
         ],
