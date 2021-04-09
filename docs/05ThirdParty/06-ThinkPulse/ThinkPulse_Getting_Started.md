@@ -14,7 +14,7 @@ We are very excited to partner with Conscious Labs to offer this affordable, hig
 ThinkPulse™ is a product of Conscious Labs (France). Patents issued and pending. Made in France.
 
 The ThinkPulse™ system is an *add-on* to the [Ultracortex EEG Headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) plus [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
-This kit has been designed and its compatibility tested for the 8 channel Ultracortex with OpenBCI Cyton board only. Compatibility with the Ultracortex 16-channel and CytonDaisy is not currently available but we hope to have an update for you soon. For more compatibility and customization options as well as general product questions, please contact us support@openbci.com.
+This kit has been designed and its compatibility tested for the 8 and 16 channel Ultracortex with OpenBCI Cyton/CytonDaisy boards. For more compatibility and customization options as well as general product questions, please contact us support@openbci.com.
 <br/>
 <br/>
 
@@ -56,10 +56,14 @@ If you need help or have any questions, email support@openbci.com
 
 ### Step 4: Connect and organize the cables
 
-[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/GtcfUNvZlZ0)
+[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/J2ZVDfayahs)
 
 <br/>
 <br/>
+
+### Step 5 (For 16-channel kit) Connect and organize the cables
+
+[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/GtcfUNvZlZ0)
 
 ## Technical Specs and Data Sheet
 
