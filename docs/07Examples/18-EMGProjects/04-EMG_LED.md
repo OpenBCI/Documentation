@@ -19,7 +19,7 @@ The following instructions have been written for use with Windows 10.
 - [Cyton Board](https://shop.openbci.com/products/cyton-biosensing-board-8-channel?variant=38958638542)
 - [Arduino UNO or equivalent](https://store.arduino.cc/usa/arduino-uno-rev3)
 - [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
-- [Ten20 Conductive Paste](https://shop.openbci.com/products/ten20-conductive-paste-2oz-jars?variant=31373533198)]
+- [Ten20 Conductive Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar)
 - USB Cable
 - Blue, Red and Yellow LEDs - the number varies depending on the intensity
 - 150 and 100 Ohm Resistors

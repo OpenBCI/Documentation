@@ -17,12 +17,12 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 ![What You Need](assets/GettingStartedImages/whatYouNeed.JPG)
 
 #### Necessary:
-* [Ten20 conductive electrode paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198) (or other conductive electrode gel)
+* [Ten20 conductive electrode paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) (or other conductive electrode gel)
 * [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 * x4 AA batteries
 * x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
-Before applying ten20 paste on subjects with long hair, refer to this [guide](https://www.aset.org/files/public/10-20_System_Demonstration.pdf) on parting the hair for 10-20 international standard electrode positions. 
+Before applying ten20 paste on subjects with long hair, refer to this [guide](https://www.aset.org/files/public/10-20_System_Demonstration.pdf) on parting the hair for 10-20 international standard electrode positions.
 
 If you are using an OpenBCI electrode starter kit, use the following electrodes so as to be consistent with the GUI's color-coding protocol:
 
