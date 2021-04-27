@@ -13,7 +13,7 @@ Please note, all returns are contingent on the resale-able condition of the item
 
 #### Order Issues
 
-If you have received the wrong or a damaged item, we will take care of return shipping and send you a replacement at no additional charge. Please get in touch with us at contact@openbci.com and we will reply promptly!
+If you received a damaged item, we will send a replacement at no additional charge, or refund the order in full, including shipping cost. OpenBCI must be notified as soon as possible after you receive your order, via support@openbci.com.
 
 
 #### How to Return or Exchange Items in 3 Simple Steps
@@ -27,7 +27,7 @@ Include a note that indicates your name and contact information, the order numbe
 
 #### If You’re Requesting a Refund
 
-We will assess a fee based on the condition of the product(s)and the logistics cost of refurbishing and restocking. The fee will be at minimum 10% of the product price and will subtracted from the amount of the refund. Shipping costs are not refunded.
+We reserve the right to deduct up to a 10% fee based on the condition of the product(s)and the logistics cost of refurbishing and restocking. The fee is subtracted from the amount of the refund. Shipping costs are not refunded.
 
 When the returned item is received, your original method of payment will be credited as soon as we have completed processing your return (usually within 2 weeks).
 
