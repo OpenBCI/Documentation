@@ -230,4 +230,5 @@ As always, don't hesitate to email us at support@openbci.com for assistance!
 - The flat and snap electrodes can be used with [electrode gel.](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
 - The electrodes can be difficult to remove from their cables. To release the spikey electrodes, press the side of your finger between the black plastic and the electrode. The black side will pop up and then you can pull it off. To put it back on, put the gold wire into the ridge on the neck of the electrode, and press down the black plastic side. To release the Ag/AgCl snap electrode, press down on the velcro and pull the snap off at an angle. 
 - We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver or butter knife, being careful not to cut yourself.
+- having difficulty disconnecting the electrodes from the headband kit? Refer to the [video guide](https://youtu.be/PZaRhF4yZ1M).
 
