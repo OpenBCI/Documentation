@@ -23,7 +23,7 @@ Each Ultracortex comes with wires that are color-coded to match the GUI, which c
 
 For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
 
-Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings.
+Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings. Also, users will need to stop the data stream in order to access the Hardware Settings UI inside the Time Series Widget.
 
 ### Other Settings
 
