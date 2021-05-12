@@ -95,7 +95,7 @@ If you are seeing 'RAILED' in the GUI, try the following tips:
 5) Stop the session, close the GUI, turn off the Cyton board
 6) Start the system up again. The changes you made to the settings will be saved
 
-Please also refer to the resolved [troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Form
+Please also refer to the resolved [troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Forum,
 
 
 ## Non-medical Use Disclaimer
