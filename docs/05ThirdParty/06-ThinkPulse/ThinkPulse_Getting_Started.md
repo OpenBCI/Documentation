@@ -56,14 +56,14 @@ If you need help or have any questions, email support@openbci.com
 
 ### Step 4: Connect and organize the cables
 
-[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/J2ZVDfayahs)
+[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/GtcfUNvZlZ0)
 
 <br/>
 <br/>
 
 ### Step 5 (For 16-channel kit) Connect and organize the cables
 
-[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/GtcfUNvZlZ0)
+[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/J2ZVDfayahs)
 
 ## Technical Specs and Data Sheet
 
