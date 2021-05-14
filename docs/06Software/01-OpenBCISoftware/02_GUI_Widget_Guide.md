@@ -115,6 +115,11 @@ The widget recognizes a focused mental state by looking at alpha and beta wave l
 
 **W_Focus Folder**: This folder contains the original data the focus widget was based on and materials (including an example and instructions) regarding Arduino output.
 
+The new Focus Widget is in progress and on schedule to be in the next version of the GUI at the end of May 2021. 
+There is also a [forum post] on this topic.
+(https://openbci.com/forum/index.php?p=/discussion/2981/questions-about-the-focus-widget)
+
+
 ## Band Power
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_BandPower.jpg?raw=true" width="50%">
 
