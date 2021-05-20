@@ -28,3 +28,7 @@ Place EmotiBit almost anywhere on the body and launch the visualizer to start vi
 Save data to an SD card, stream via LSL, OSC, TCP, etc, or open up the code and do anything you want!
 
 Head to the [EmotiBit Github](https://github.com/EmotiBit) for complete guides and documentation.
+Happy sensing!
+
+![EmotiBot](assets/ThirdPartyImages/Emotibot.png)
+
