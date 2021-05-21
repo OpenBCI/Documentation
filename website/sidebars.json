@@ -18,7 +18,8 @@
               "ids": [
                   "01GettingStarted/02-Biosensing-Setups/EEGSetup",
                   "01GettingStarted/02-Biosensing-Setups/ECGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/EMGSetup"
+                  "01GettingStarted/02-Biosensing-Setups/EMGSetup",
+                  "01GettingStarted/02-Biosensing-Setups/ExGSetup"
               ]
             }, {
               "type": "subcategory",
