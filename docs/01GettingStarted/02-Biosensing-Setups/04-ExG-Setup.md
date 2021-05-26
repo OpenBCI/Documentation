@@ -54,6 +54,10 @@ Here are the reference channels needed for EEG, EMG and ECG respectively.
 * EMG: one reference channel: AGND
 * ECG: one reference channel: BIAS
 
+, where SRB serves as reference for the EEG channels. AGND is simply the common ground in measuring the
+ voltage activity. BIAS is used for noise-canceling, it combines the common noise on all channels and subtracts the noise from
+ the data channels.
+
 ## Hardware setup
 We are going to use the pins on Cyton to connect the EEG, and use Daisy to connect
 to EMG and ECG.
