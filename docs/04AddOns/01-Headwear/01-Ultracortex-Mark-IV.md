@@ -51,7 +51,7 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
-* No.4 [screws](https://www.mcmaster.com/90380A146/) for brittle plastic (**2x**).
+* No.6 [screws](https://www.mcmaster.com/90380A146/) for brittle plastic (**2x**).
 
 * Cables (**x3**)
 	* We strip apart the cables in your kit.
@@ -124,7 +124,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 #### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 
 
-* No.4 screws for brittle plastic (**2x**):
+* No.6 screws for brittle plastic (**2x**):
 
 	![image](assets/HeadwareImages/screw.png)
 
