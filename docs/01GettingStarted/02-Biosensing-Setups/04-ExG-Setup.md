@@ -95,12 +95,12 @@ if they are not already attached.
 
 ![ExG Daisy Attached to Cyton](../../assets/GettingStartedImages/ExG_attach.png)
 
-The image above shows using a lithium battery. It is equivalent to using a battery pack powered by
+The image above shows using a lithium battery. It is equivalent to use a battery pack powered by
 4 AA batteries.
 
 ## Visualizing the data in OpenBCI GUI
 If you don't have the GUI installed, please refer to [this guide](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIDocs) to learn
-about how to setup the OpenBCI GUI for your operating system.
+about how to set up the OpenBCI GUI for your operating system.
 
 Attach battery, power on the board in bluetooth mode by flipping the switch towards the top of the board (where the
 pins are). Connect the USB dongle to your computer. Flip the switch on the dongle so it's GPIO6 (closer to the USB port).
