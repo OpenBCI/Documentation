@@ -61,15 +61,18 @@ voltage activity. BIAS is used for noise-canceling; it combines the common noise
 We are going to use the pins on Cyton to connect the EEG, and use Daisy to connect
 to EMG and ECG.
 
+First, [attach Daisy to Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526)
+if they are not already attached.
+
 ### Setting up 3-lead ECG and forearm EMG
 We take 6 [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and 6
 [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395). Attach the 
-sticky electrodes to the cables. Use 3 sticky electrodes for ECG and the other 3 is for EMG.
+sticky electrodes to the cables. Use three sticky electrodes for ECG and the other three is for EMG.
 
-For **ECG**, connect 2 cables to **N1P** top and bottom pin, connect the remaining one to bottom pin of **BIAS**.
+For **ECG**, connect two cables to **N1P** top and bottom pin, connect the remaining one to bottom pin of **BIAS**.
 Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-ECG-Setup.md).
 
-For **EMG**, connect 2 cables to **N8P** top and bottom pin, and the remaining one to **AGND**.
+For **EMG**, connect two cables to **N8P** top and bottom pin, and the remaining one to **AGND**.
 Attach the electrodes to your arm, the recommended layout is described in the [EMG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md).
 
 
@@ -87,19 +90,16 @@ Here we will show how to connect to a 3-channel EEG with EMG and ECG on the same
 You can later increase the number of EEG channels based on your needs as long as there enough signal (analog)
 channels (the data channels NxP) on your board.
 
-We will connect the EEG to Cyton, as shown in the following image. The 2 ear clips go in **SRB** and **BIAS** bottom pins. The
-3 electrode cable connects to the bottom pins of **N1P, N2P, and N3P**.
+We will connect the EEG to Cyton, as shown in the following image. The two ear clips go in **SRB** and **BIAS** bottom pins. The
+three electrode cable connects to the bottom pins of **N1P, N2P, and N3P**.
 
 ![EEG on Cyton](../../assets/GettingStartedImages/ExG_cyton_eeg.jpg)
 
-
-Finally, [attach Daisy to Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526)
-if they are not already attached.
-
-![ExG Daisy Attached to Cyton](../../assets/GettingStartedImages/ExG_attach.png)
-
 The image above shows using a lithium battery. It is equivalent to use a battery pack powered by
-4 AA batteries.
+four AA batteries.
+
+The complete setup should look like this
+![ExG Daisy Attached to Cyton](../../assets/GettingStartedImages/ExG_attach.png)
 
 ## Visualizing the data in OpenBCI GUI
 If you don't have the GUI installed, please refer to [this guide](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIDocs) to learn
@@ -109,7 +109,7 @@ Attach battery, power on the board in Bluetooth mode by flipping the switch towa
 pins are). Connect the USB dongle to your computer. Flip the switch on the dongle, so it's at GPIO6 (closer to the USB port).
 
 Open the [OpenBCI GUI](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIDocs), select CYTON (live) ->
-Serial (from Dongle) -> 16 CHANNELS. Click START SESSION. Note that we are not using all 16 channels, we are going to turn
+Serial (from Dongle) -> 16 CHANNELS. Click AUTO-CONNECT. Note that we are not using all 16 channels, we are going to turn
 off the channels that we don't use in the GUI.
 
 ![EEG on Cyton](../../assets/GettingStartedImages/ExG_GUI_0.png)
