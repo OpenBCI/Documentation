@@ -9,13 +9,13 @@ ECG (electrocardiogram) data at the same time.
 
 After going through this document, you will learn one configuration for setting up multiple ExG recordings
 at the same time. You could apply the same principle to build channel layouts to fit your application (i.e., 
-3-lead ECG vs. 5-lead ECG; 8 or more EEG channels).
+3-lead ECG vs. 5-lead ECG; eight or more EEG channels).
 
 ## Preliminary
-Before starting this tutorial, we recommend you go through at least one of the following guide to familiarize with OpenBCI 
+Before starting this tutorial, we recommend you go through at least one of the following guides to familiarize with OpenBCI 
 pipeline before starting this doc:
 * [EEG](01-EEG-Setup.md): scalp surface recording brain activity. [Learn more](https://en.wikipedia.org/wiki/Electroencephalography)  
-* [EMG](01-EMG-Setup.md) forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
+* [EMG](01-EMG-Setup.md): forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
 * [ECG](01-ECG-Setup.md): [measure heart rhythm on the chest [Learn more](https://en.wikipedia.org/wiki/Electrocardiography)
 
 ---
@@ -65,7 +65,7 @@ First, [attach Daisy to Cyton](https://shop.openbci.com/collections/frontpage/pr
 if they are not already attached.
 
 ### Setting up 3-lead ECG and forearm EMG
-We take 6 [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and 6
+We take six [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and 6
 [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395). Attach the 
 sticky electrodes to the cables. Use three sticky electrodes for ECG and the other three is for EMG.
 
@@ -91,7 +91,7 @@ You can later increase the number of EEG channels based on your needs as long as
 channels (the data channels NxP) on your board.
 
 We will connect the EEG to Cyton, as shown in the following image. The two ear clips go in **SRB** and **BIAS** bottom pins. The
-three electrode cable connects to the bottom pins of **N1P, N2P, and N3P**.
+three electrode cables connect to the bottom pins of **N1P, N2P, and N3P**.
 
 ![EEG on Cyton](../../assets/GettingStartedImages/ExG_cyton_eeg.jpg)
 
