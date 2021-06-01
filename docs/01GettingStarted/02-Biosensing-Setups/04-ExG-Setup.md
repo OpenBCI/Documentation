@@ -49,9 +49,9 @@ N1P-N8P. The data streams come from the data channels. Each channel come with a 
 ![Cyton Channels Layout](../../assets/GettingStartedImages/Cyton_channels_layouts.jpg)
 
 Here are the reference channels needed for EEG, EMG, and ECG, respectively.
-* EEG: two reference channels: one SRB, and one BIAS
-* EMG: one reference channel: AGND
-* ECG: one reference channel: BIAS
+* EEG: two reference channels - one SRB, and one BIAS
+* EMG: one reference channel - AGND
+* ECG: one reference channel - BIAS
 
 , where SRB serves as a reference for the EEG channels. AGND is the common ground in measuring the
 voltage activity. BIAS is used for noise-canceling; it combines the common noise on all channels and is subtracted from
