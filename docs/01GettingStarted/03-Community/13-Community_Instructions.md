@@ -34,8 +34,6 @@ Making a post is a great way to share a cool project, tutorial, or research stud
 
 Our community page is based on the Wordpress platform. If you’ve used Wordpress before, you’ll feel right at home. If not, no worries—it’s easy! Log in the same way you would to edit your profile. When you log in, the Wordpress admin page should appear with an option to see the Posts section. Click on it and select Add New from the menu. Next, follow [this great tutorial](https://www.wpbeginner.com/beginners-guide/how-to-add-a-new-post-in-wordpress-and-utilize-all-the-features/) on how to write a Wordpress post. You are now ready to start sharing your work!
 
-**If you have your own blog/website** where you’ll be posting content related to OpenBCI, create an “OpenBCI” tag that you can assign to your posts, and then send us your blog’s URL. We can then add your RSS/tag/OpenBCI feed to our community page. Your posts will then automatically appear in our Community Feed and redirect back to your blog!
-
 ### On The Horizon
 
 The OpenBCI Community interface will be forever under development. We really want your feedback! If you have suggestions, please email contact@openbci.com.
