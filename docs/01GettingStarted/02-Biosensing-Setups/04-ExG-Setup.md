@@ -71,9 +71,11 @@ sticky electrodes to the cables. Use three sticky electrodes for ECG and the oth
 
 For **ECG**, connect two cables to **N1P** top and bottom pin, connect the remaining one to bottom pin of **BIAS**.
 Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-ECG-Setup.md).
+For note on ECG signal quality, you can refer to the section *Improving Signal Quality* in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-ECG-Setup.md).
 
 For **EMG**, connect two cables to **N8P** top and bottom pin, and the remaining one to **AGND**.
 Attach the electrodes to your arm, the recommended layout is described in the [EMG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md).
+
 
 
 ![EMG and ECG on Daisy](../../assets/GettingStartedImages/ExG_daisy_EMG_ECG.jpg)
