@@ -94,7 +94,7 @@ Once you have the GUI open, turn off all channels that are not connected to elec
 
 Once your settings have been adjusted, press 'Start Data Stream’.' You should see graphs similar to the ones below.
 
-![ECG_GUI_No_V](../../assets/TutorialImages/ECG_Gui_No_V.jpg)
+![ECG_GUI_No_V](../../assets/TutorialImages/ECG_GUI_No_V.jpg)
 
 **Data streaming, shown above**
 
