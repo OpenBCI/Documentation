@@ -92,7 +92,7 @@ The last electrode cable connects the bottom BIAS pin on the Cyton to RL.
 
 Once you have the GUI open, turn off all channels that are not connected to electrodes by toggling the numbered channels in the Time Series widget. Then, go to hardware settings (located above the Time Series widget) and turn SRB2 **OFF** for Channels 1, 2 and 3. Turn OFF every other channel.
 
-Once your settings have been adjusted, press 'Start Data Stream’.' You should see graphs similar to the ones below.
+Once your settings have been adjusted, press 'Start Data Stream'. You should see graphs similar to the ones below.
 
 ![ECG_GUI_No_V](../../assets/TutorialImages/ECG_GUI_No_V.jpg)
 
