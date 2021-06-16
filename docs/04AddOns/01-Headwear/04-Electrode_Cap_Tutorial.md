@@ -17,10 +17,10 @@ These electrodes map to labels on the electrodes. Please note that the cap uses 
 
 The Electrode Cap comes in two variants:
 
-* 19-channel electrode cap with Ag/AgCl coated electrodes
-* Premium 19-channel electrode cap with patented, sintered Ag/AgCl electrodes
+* 19-channel electrode cap with Ag/AgCl **coated** electrodes
+* Premium 19-channel electrode cap with patented, **sintered** Ag/AgCl electrodes
 
-The set up is the same between the two cap variants. You can follow this tutorial for either one.
+The set up is the same between the two cap variants. You can follow this tutorial for both coated and sintered caps.
 ## Electrode Cap With CytonDaisy Tutorial
 
 When combined with the OpenBCI [CytonDaisy 16-channel Biosensing Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel),
@@ -58,6 +58,27 @@ Connect a leftover HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin 
 For WHY these connections are recommended, see the [EEG explanation](../../01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)page.
 
 After the cables are all connected as shown above, place the cap on the subject's head and inject a small amount of electrode gel using the included syringe. After each data recording session, be sure to clean the gel off the cap!
+
+### Troubleshooting
+
+Seeing a lot of noise? Check your electrode connections -
+
+These steps can be done in any order:
+
+1) The bottom BIAS pin of the Cyton **board** goes to the GND electrode of the **cap**. **You would use the HPTA cable to connect them.**
+
+2) The bottom SRB pins on the Cyton and the Daisy **boards** should be "ganged together" using the split end of the y-splitter cable. 
+The single end of the y-splitter cable should go to the REF electrode of the **cap**. **You would use the HPTA cable to connect them.**
+
+The rest of the cap electrodes are completely up to you how you want to connect them to the Cyton.
+
+3) For example, if you want data from Fp1 (of the cap) to show up on channel 1 of the OpenBCI GUI, then connect Fp1 cable to the bottom pin N1P of the Cyton. Use the HPTA cable to connect them.
+
+If you want Fp1 data to show up on channel 9 of the OpenBCI GUI, then connect Fp1 to the bottom pin N1P of the CytonDaisy. You can pair any cap electrode (aside from GND and REF) with any pins N1P through N8P on the Cyton and Daisy boards
+
+Channels 1-8 on the GUI correspond to bottom pins N1P through N8P on the Cyton
+Channels 9-16 on the GUI correspond to bottoms pins N1P through N8P on the Daisy.
+
 
 ### Software
 
