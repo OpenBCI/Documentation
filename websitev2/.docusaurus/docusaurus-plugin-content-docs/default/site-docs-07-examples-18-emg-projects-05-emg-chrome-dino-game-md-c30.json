@@ -1,0 +1,30 @@
+{
+  "unversionedId": "07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+  "id": "07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+  "isDocsHomePage": false,
+  "title": "EMG Chrome Dino Game",
+  "description": "In this tutorial we will show you how to play the Google Chrome Dinosaur Game without touching your laptop. To do that, we will read EMG data from your arm muscles and find the peaks which correspond to flexing, using them to trigger a jump of the dinosaur.",
+  "source": "@site/../docs/07Examples/18-EMGProjects/05-EMG_Chrome_Dino_Game.md",
+  "sourceDirName": "07Examples/18-EMGProjects",
+  "slug": "/07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+  "permalink": "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/05-EMG_Chrome_Dino_Game.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "EMG_Chrome_Dino_Game",
+    "title": "EMG Chrome Dino Game"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "EMG-controlled LED",
+    "permalink": "/docs/07Examples/EMGProjects/EMG_LED"
+  },
+  "next": {
+    "title": "Send Focus Data from GUI to Arduino",
+    "permalink": "/docs/07Examples/EEGProjects/FocusArduino"
+  }
+}

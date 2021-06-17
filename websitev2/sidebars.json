@@ -7,25 +7,25 @@
               "type": "category",
               "label": "Boards",
               "items": [
-                  "01GettingStarted/01-Boards/CytonGS",
-                  "01GettingStarted/01-Boards/DaisyGS",
-                  "01GettingStarted/01-Boards/GanglionGS",
-                  "01GettingStarted/01-Boards/WiFiGS"
+                  "01GettingStarted/Boards/CytonGS",
+                  "01GettingStarted/Boards/DaisyGS",
+                  "01GettingStarted/Boards/GanglionGS",
+                  "01GettingStarted/Boards/WiFiGS"
               ]
             }, {
               "type": "category",
               "label": "Biosensing Setups",
               "items": [
-                  "01GettingStarted/02-Biosensing-Setups/EEGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/ECGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/EMGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/ExGSetup"
+                  "01GettingStarted/Biosensing-Setups/EEGSetup",
+                  "01GettingStarted/Biosensing-Setups/ECGSetup",
+                  "01GettingStarted/Biosensing-Setups/EMGSetup",
+                  "01GettingStarted/Biosensing-Setups/ExGSetup"
               ]
             }, {
               "type": "category",
               "label": "Community",
               "items": [
-                  "01GettingStarted/03-Community/Community"
+                  "01GettingStarted/Community/Community"
               ]
           }],
       "Cyton Board": [
@@ -49,17 +49,17 @@
           "type": "category",
           "label": "Headwear",
           "items": [
-            "04AddOns/01-Headwear/MarkIV",
-            "04AddOns/01-Headwear/MarkIII",
-            "04AddOns/01-Headwear/HeadBand",
-            "04AddOns/01-Headwear/ElectrodeCap"
+            "04AddOns/Headwear/MarkIV",
+            "04AddOns/Headwear/MarkIII",
+            "04AddOns/Headwear/HeadBand",
+            "04AddOns/Headwear/ElectrodeCap"
           ]
       },
         {
           "type": "category",
           "label": "Electrodes",
           "items": [
-            "04AddOns/02-Electrodes/ElectrodesLanding"
+            "04AddOns/Electrodes/ElectrodesLanding"
           ]
         }],
       "Third-Party Hardware": [
@@ -69,48 +69,48 @@
           "type": "category",
           "label": "EmotiBit",
           "items": [
-            "05ThirdParty/00-EmotiBit/EmotiBit_Guide"
+            "05ThirdParty/EmotiBit/EmotiBit_Guide"
           ]
           }, {
               "type": "category",
               "label": "HEGduino Kit",
               "items": [
-                "05ThirdParty/05-HEGduino Kit/HEGduino"
+                "05ThirdParty/HEGduino Kit/HEGduino"
               ]
           }, {
 
             "type": "category",
             "label": "IDUN Dryode",
             "items": [
-              "05ThirdParty/04-IDUN_Dryode/Dryode"
+              "05ThirdParty/IDUN_Dryode/Dryode"
             ]
           }, {
           "type": "category",
           "label": "Myoware",
           "items": [
-            "05ThirdParty/01-Myoware/MyoCyton",
-            "05ThirdParty/01-Myoware/MyoGanglion"
+            "05ThirdParty/Myoware/MyoCyton",
+            "05ThirdParty/Myoware/MyoGanglion"
           ]
           }, {
           "type": "category",
           "label": "Pulse Sensor",
           "items": [
-            "05ThirdParty/02-Pulse_Sensor/Pulse_Sensor_Landing"
+            "05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
           ]
           }, {
          "type": "category",
          "label": "ThinkPulse",
          "items": [
-           "05ThirdParty/06-ThinkPulse/ThinkPulse"
+           "05ThirdParty/ThinkPulse/ThinkPulse"
          ]
          }, {
           "type": "category",
           "label": "WiFi Shield",
           "items": [
-            "05ThirdParty/03-WiFiShield/WiFiLanding",
-            "05ThirdParty/03-WiFiShield/WiFiProgam",
-            "05ThirdParty/03-WiFiShield/WiFiAPI",
-            "05ThirdParty/03-WiFiShield/WiFiSDK"
+            "05ThirdParty/WiFiShield/WiFiLanding",
+            "05ThirdParty/WiFiShield/WiFiProgam",
+            "05ThirdParty/WiFiShield/WiFiAPI",
+            "05ThirdParty/WiFiShield/WiFiSDK"
           ]
           }],
       "Software": [
@@ -119,21 +119,20 @@
           "type": "category",
           "label": "Developed By OpenBCI",
           "items": [
-            "06Software/01-OpenBCISoftware/GUIDocs",
-            "06Software/01-OpenBCISoftware/GUIWidgets",
-            "06Software/01-OpenBCISoftware/Hub"
+            "06Software/OpenBCISoftware/GUIDocs",
+            "06Software/OpenBCISoftware/GUIWidgets"
           ]
           }, {
             "type": "category",
             "label": "Compatible Third Party Software",
             "items": [
-              "06Software/02-CompatibleThirdPartySoftware/Matlab",
-              "06Software/02-CompatibleThirdPartySoftware/Neuromore",
-              "06Software/02-CompatibleThirdPartySoftware/OpenVibe",
-              "06Software/02-CompatibleThirdPartySoftware/LSL",
-              "06Software/02-CompatibleThirdPartySoftware/BrainBay",
-              "06Software/02-CompatibleThirdPartySoftware/BioEra",
-              "06Software/02-CompatibleThirdPartySoftware/VirtualBox"
+              "06Software/CompatibleThirdPartySoftware/Matlab",
+              "06Software/CompatibleThirdPartySoftware/Neuromore",
+              "06Software/CompatibleThirdPartySoftware/OpenVibe",
+              "06Software/CompatibleThirdPartySoftware/LSL",
+              "06Software/CompatibleThirdPartySoftware/BrainBay",
+              "06Software/CompatibleThirdPartySoftware/BioEra",
+              "06Software/CompatibleThirdPartySoftware/VirtualBox"
             ]
           }],
         "For Developers": [
@@ -178,19 +177,19 @@
             "type": "category",
             "label": "EMG Projects and Tutorials",
             "items": [
-              "07Examples/18-EMGProjects/EMGscrolling",
-              "07Examples/18-EMGProjects/EMGmusic",
-              "07Examples/18-EMGProjects/EMGslideshow",
-              "07Examples/18-EMGProjects/EMG_LED",
-              "07Examples/18-EMGProjects/EMG_Chrome_Dino_Game"
+              "07Examples/EMGProjects/EMGscrolling",
+              "07Examples/EMGProjects/EMGmusic",
+              "07Examples/EMGProjects/EMGslideshow",
+              "07Examples/EMGProjects/EMG_LED",
+              "07Examples/EMGProjects/EMG_Chrome_Dino_Game"
             ]
           },
           {
             "type": "category",
             "label": "EEG Projects and Tutorials",
             "items": [
-              "07Examples/19-EEGProjects/FocusArduino",
-              "07Examples/19-EEGProjects/MotorImagery"
+              "07Examples/EEGProjects/FocusArduino",
+              "07Examples/EEGProjects/MotorImagery"
             ]
           }
         ],

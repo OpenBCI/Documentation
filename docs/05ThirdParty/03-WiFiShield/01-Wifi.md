@@ -2,7 +2,6 @@
 id: WiFiLanding
 title: OpenBCI WiFi
 ---
-
 ## [BUY IT!](https://shop.openbci.com/collections/frontpage/products/wifi-shield)
 
 WiFi Shields are available for sale [on the OpenBCI store](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550).
@@ -15,18 +14,18 @@ The OpenBCI Wifi Shield was designed in partnership with [Push The World](www.pu
 
 ### Wifi Board Specs
 
-* Power with 3.3V to 6V DC battery ONLY
-* Current Draw: 150mA connected and streaming data
-* [ESP8266](http://www.esp8266.com) Wifi module (Arduino Compatible)
-* Board Dimensions 2.41" x 2.41" (octagon has 1" edges)
-* JST Power input
-* Switch to stop power to external board
+-   Power with 3.3V to 6V DC battery ONLY
+-   Current Draw: 150mA connected and streaming data
+-   [ESP8266](http://www.esp8266.com) Wifi module (Arduino Compatible)
+-   Board Dimensions 2.41" x 2.41" (octagon has 1" edges)
+-   JST Power input
+-   Switch to stop power to external board
 
 ### Wifi Board Circuit Schematic
 
 ![Wifi Schematic](assets/ThirdPartyImages/wifi_schematic.png)
 
-### Wifi Board PCB Layer Images  
+### Wifi Board PCB Layer Images
 
 Top Layer  
 ![Wifi Top Layer](assets/ThirdPartyImages/wifi_top.png)  

@@ -2,11 +2,9 @@
 id: MarkIV
 title: Ultracortex Mark IV
 ---
-
-*Development Period: January 2016 Through the Present*
+_Development Period: January 2016 Through the Present_
 
 ![image](assets/HeadwareImages/UCM4-Product-2.JPG)
-
 
 #### Complete Ultracortex Mark 4 kits are [available for sale](http://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) in the OpenBCI Online Store!
 
@@ -16,10 +14,10 @@ The Ultracortex is an open-source, 3D-printable headset designed to work with th
 
 Designers & Engineers:
 
-* [Aaron Lehr (aka Tangible NYC)](https://www.3dhubs.com/service/tangiblenyc)
-* [Aaron Trocola (aka Threeform)](http://threeformfashion.com/)
-* [Conor Russomanno](https://twitter.com/russomanno15)
-* [Joel Murphy (aka SafeForRobots)](https://twitter.com/safeforrobots)
+-   [Aaron Lehr (aka Tangible NYC)](https://www.3dhubs.com/service/tangiblenyc)
+-   [Aaron Trocola (aka Threeform)](http://threeformfashion.com/)
+-   [Conor Russomanno](https://twitter.com/russomanno15)
+-   [Joel Murphy (aka SafeForRobots)](https://twitter.com/safeforrobots)
 
 For those who want to modify the headset design and need CAD files, go to the [Ultracortex Mark IV Dev Kit](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/DevKit).
 
@@ -27,23 +25,24 @@ For those who want to modify the headset design and need CAD files, go to the [U
 
 **Note:** the part quantities listed below assume you are making an electrode holder for all 35 nodes of the Ultracortex Mark 4. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) (8 channels) or the [OpenBCI CytonDaisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (16 channels). In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
-*IMPORTANT PRODUCT USE NOTE*  - Please note before adjusting/twisting the blue electrode mounts, you must disconnect them from their colored cable.
+_IMPORTANT PRODUCT USE NOTE_  - Please note before adjusting/twisting the blue electrode mounts, you must disconnect them from their colored cable.
 Before turning the blue electrode mount in the Ultracortex printed frame, it is NECESSARY to ensure that the white cable end of the electrode mount is free, i.e. not connected to anything. Otherwise, a broken wire is almost guaranteed after repeated turn adjustments. This is not covered by warranty.
 
 ### 3D-printed Parts:
+
 The following parts are included in the Unassembled version of the Mark IV:
 
-* [FRAME](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory) (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
-	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl))
-	* FRAME_BACK (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
-	* You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
-* MECH_PARTS
-	* INSERT (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
-* [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
-* BOARD_COVER (**x1**)
-	* [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
-* WIRE_CLIPS (**x30**)
-	* [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (Clips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
+-   [FRAME](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory) (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
+    -   FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl))
+    -   FRAME_BACK (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
+    -   You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
+-   MECH_PARTS
+    -   INSERT (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
+-   [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
+-   BOARD_COVER (**x1**)
+    -   [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
+-   WIRE_CLIPS (**x30**)
+    -   [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (Clips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
 
 ### Non-printed Parts:
 
@@ -51,30 +50,29 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
-* No.6 [screws](https://www.mcmaster.com/90380A146/) for brittle plastic (**2x**).
+-   No.6 [screws](https://www.mcmaster.com/90380A146/) for brittle plastic (**2x**).
 
-* Cables (**x3**)
-	* We strip apart the cables in your kit.
+-   Cables (**x3**)
+    -   We strip apart the cables in your kit.
 
-* Spikey units
-	* (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair.
+-   Spikey units
+    -   (**6x or 14x**) Depending on a 8 or 16 channel heas set dry (spikey) electrodes to be installed in Ultracortex nodes with hair.
 
-* Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance).
+-   Flat units
+    -   (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance).
 
-* Comfort units
-	* (**5x**) Comfort units used for distributing of headset weight equally.
+-   Comfort units
+    -   (**5x**) Comfort units used for distributing of headset weight equally.
 
-* Ear Clips
-	* (**2x**) Ear Clip electrode.
+-   Ear Clips
+    -   (**2x**) Ear Clip electrode.
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
- * An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (**1x**)
-* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578) (**1x**)
-* [A charger for your battery pack](https://www.adafruit.com/products/1304) (**1x**)
-* [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/) (**1x**)            
-
+-   An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (**1x**)
+-   Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578) (**1x**)
+-   [A charger for your battery pack](https://www.adafruit.com/products/1304) (**1x**)
+-   [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/) (**1x**)            
 
 ## THE COMPLETE ULTRACORTEX (w/ PICTURES)
 
@@ -84,10 +82,10 @@ The following parts are not included with the purchase of any configuration of t
 
 The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html) with a build area of 250 mm by 250 mm. The absolute minimum build area needed to print the frame in halves is 130 mm by 210 mm square.
 
-* FRAME (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
-	* FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
-	* FRAME_BACK (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
-	* You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
+-   FRAME (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
+    -   FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
+    -   FRAME_BACK (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Back.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Back.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Back.stl))
+    -   You can also print the frame in quarters (suitable for small resin-based printers but otherwise not recommended) or print the full frame. The .stl files are found [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Mark_IV_Frame).
 
 The image below shows the correct 3-D printing orientation of the Ultracortex Mark IV frame halves. Please note how the flat sides (halved nodes) sit on the light gray build plate. The halved nodes are completely flat on the edge, so they are properly supported when in contact with the build plate.
 The model must be positioned correctly in the 3D print preparation software. The flat side of the model should face downward, on the platform. If it does not fit, view it from below and move/rotate the model. The model must be printed with support and a brim or raft. The headset is designed to be printed using FDM extrusion.
@@ -96,26 +94,25 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 #### (21x) MECH_PARTS
 
-* [MECH_PARTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL)
-	* [INSERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
+-   [MECH_PARTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL)
+    -   [INSERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
 
 #### (1x) BOARD_HOLDER
 
-* [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
-
+-   [BOARD_MOUNT](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl) (**x1**) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4%20Board_Mount.stl)
 
 ![image](assets/HeadwareImages/Board_Mount.JPG)
 
 #### (1x) BOARD_COVER
 
-* [BOARD COVER](**x1**)
-	* [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
+-   [BOARD COVER](**x1**)
+    -   [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
 
 ![image](assets/HeadwareImages/Board_Cover.JPG)
 
 ![image](assets/HeadwareImages/3D_printed_Parts3.JPG)
 
-* [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (lips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
+-   [WIRE CLIPS](https://github.com/openbci-archive/Docs/blob/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl) (lips will be used to hold wire in place) — [.STL download link](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Wire_Clip.stl)
 
 ### Non-printed Parts:
 
@@ -123,83 +120,102 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 #### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 
+-   No.6 screws for brittle plastic (**2x**):
 
-* No.6 screws for brittle plastic (**2x**):
-
-	![image](assets/HeadwareImages/screw.png)
+    ![image](assets/HeadwareImages/screw.png)
 
 
-* Cables (**x3**)
-	* We strip apart the cables in your kit:
+-   Cables (**x3**)
 
-	![image](assets/HeadwareImages/Cables.JPG)
+    -   We strip apart the cables in your kit:
 
-* Spikey units
-	* (**6x or 14x**) quantity depending on a 8 or 16 channel headset, dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
+    ![image](assets/HeadwareImages/Cables.JPG)
 
-	![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
+-   Spikey units
 
-* Flat units
-	* (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance):
+    -   (**6x or 14x**) quantity depending on a 8 or 16 channel headset, dry (spikey) electrodes to be installed in Ultracortex nodes with hair: 
 
-	![image](assets/HeadwareImages/FlatUnits.JPG)
+    ![image](assets/HeadwareImages/SpikeyUnits8chan.JPG)
 
-* Comfort units
-	* (**5x**) Comfort units used for distributing weight of headset:
+-   Flat units
 
-	![image](assets/HeadwareImages/ComfortUnits.JPG)
+    -   (**2x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance):
 
-* Ear Clips
-	* (**2x**) Ear Clip electrode:
+    ![image](assets/HeadwareImages/FlatUnits.JPG)
 
-	![image](assets/HeadwareImages/EarClips.JPG)
+-   Comfort units
+
+    -   (**5x**) Comfort units used for distributing weight of headset:
+
+    ![image](assets/HeadwareImages/ComfortUnits.JPG)
+
+-   Ear Clips
+
+    -   (**2x**) Ear Clip electrode:
+
+    ![image](assets/HeadwareImages/EarClips.JPG)
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
-* An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)  (**1x**)
+-   An [OpenBCI Cyton 8-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or an [OpenBCI CytonDaisy 16-channel Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)  (**1x**)
 
 ![image](assets/HeadwareImages/cyton_boards.png)
 
+-   Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)  (**1x**)
 
-* Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)  (**1x**)
-
-* [A charger for your battery pack](https://www.adafruit.com/products/1304)  (**1x**)
+-   [A charger for your battery pack](https://www.adafruit.com/products/1304)  (**1x**)
 
 ![image](assets/HeadwareImages/BATTERY.jpg)
 
-* [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/)  (**1x**) - The Ultracortex Mark IV has horizontal bars designed to hold straps. The addition of DIY chin straps improves stability and therefore quality of the signal. We recommend 25 yard rolls of 1" Velcro One Wrap. which has hooks on one side and loops on the other.
+-   [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/)  (**1x**) - The Ultracortex Mark IV has horizontal bars designed to hold straps. The addition of DIY chin straps improves stability and therefore quality of the signal. We recommend 25 yard rolls of 1" Velcro One Wrap. which has hooks on one side and loops on the other.
 
 ![image](assets/HeadwareImages/velcro.png)
-
-
 
 ## SUGGESTED PRINT SETTINGS
 
 If you're 3D-printing your Mark IV yourself, here are the print settings we recommend:
+
 #### FRAME_FRONT & FRAME_BACK
-	- Material: PLA
-	- Supports: YES
-	- Raft: hopefully NO (but if supports aren't sticking, try the raft)
-	- Infill: 20%
-	- Layer Height: 0.2mm
-	- Number of Shells: 3
-	- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
+
+```
+
+- Material: PLA
+- Supports: YES
+- Raft: hopefully NO (but if supports aren't sticking, try the raft)
+- Infill: 20%
+- Layer Height: 0.2mm
+- Number of Shells: 3
+- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
+
+```
+
 #### MECH_PARTS (INSERT)
-	- Material: PLA
-	- Supports: NO
-	- Raft: NO
-	- Infill: 20%
-	- Layer Height: 0.2mm
-	- Number of Shells: 3
-	- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
+
+```
+
+- Material: PLA
+- Supports: NO
+- Raft: NO
+- Infill: 20%
+- Layer Height: 0.2mm
+- Number of Shells: 3
+- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
+
+```
+
 #### BOARD_MOUNT, BOARD_COVER
-	- Material: PLA
-	- Supports: NO
-	- Raft: NO
-	- Infill: 20%
-	- Layer Height: 0.2mm
-	- Number of Shells: 3
-	- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
+
+```
+
+- Material: PLA
+- Supports: NO
+- Raft: NO
+- Infill: 20%
+- Layer Height: 0.2mm
+- Number of Shells: 3
+- Speed while extruding: 50-70% (slow it down if possible; these parts are detailed)
+
+```
 
 #### ADDITIONAL TIPS FOR A SUCCESSFUL PRINT
 
@@ -210,20 +226,18 @@ The Ultracortex frame is detailed and can be challenging to print, so we strongl
 3) Print the headset in two halves with the flat sides on the printer bed, as mentioned previously in this document. Use a brim around the edges if your printer has peeling problems. The brim takes extra work to remove but increases likelihood of success. The parts are designed to print at this orientation with least support.
 4) Print slowly, about 50% of normal speed, and run the extrusion hotter than normal. 220 degrees is recommended.
 
-
 ## RECOMMENDED ASSEMBLY TOOLS
 
-1. [Loctite Super Glue w/ Cyanoacrylate](http://www.amazon.com/Loctite-1365882-20-Gram-Bottle-Professional/dp/B004Y960MU/ref=sr_1_1?s=automotive&ie=UTF8&qid=1440204266&sr=1-1&keywords=loctite+cyanoacrylate&pebp=1440204267936&perid=0HJQ0FB9G4J9SEBQBVGA)
-2. coarse flat & circular files (for removing support artifacts)
-3. medium sand paper
-4. exacto blade
-5. philips head screw driver
-6. wire cutters
-7. needle-nose pliers
-8. snippers
+1.  [Loctite Super Glue w/ Cyanoacrylate](http://www.amazon.com/Loctite-1365882-20-Gram-Bottle-Professional/dp/B004Y960MU/ref=sr_1_1?s=automotive&ie=UTF8&qid=1440204266&sr=1-1&keywords=loctite+cyanoacrylate&pebp=1440204267936&perid=0HJQ0FB9G4J9SEBQBVGA)
+2.  coarse flat & circular files (for removing support artifacts)
+3.  medium sand paper
+4.  exacto blade
+5.  philips head screw driver
+6.  wire cutters
+7.  needle-nose pliers
+8.  snippers
 
 ![image](assets/HeadwareImages/TOOLS.jpg)
-
 
 ## ASSEMBLY INSTRUCTIONS
 
@@ -288,8 +302,6 @@ Connect your OpenBCI board to the battery pack, place it on the BOARD_MOUNT and 
 
 ![image](assets/HeadwareImages/MarkIV_battery_pack_2.jpeg)
 
-
-
 ### Electrode location overview
 
 Before creating your electrode mounts, it's a good idea to think about where you may want to place the electrodes on the Ultracortex FRAME. The placement of the electrode may affect how long you make the wire between the electrode and where the OpenBCI is mounted, at the back of the frame.
@@ -300,14 +312,14 @@ The images below indicates the default 10-20 electrode locations that the OpenBC
 
 For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (channels 1-8 of the OpenBCI default settings) will be used. The channel to 10-20 system correlations are as follows:
 
-* Channel 1(N1P) - Fp1
-* Channel 2(N2P) - Fp2
-* Channel 3(N3P) - C3
-* Channel 4(N4P) - C4
-* Channel 5(N5P) - P7
-* Channel 6(N6P) - P8
-* Channel 7(N7P) - O1
-* Channel 8(N8P) - O2
+-   Channel 1(N1P) - Fp1
+-   Channel 2(N2P) - Fp2
+-   Channel 3(N3P) - C3
+-   Channel 4(N4P) - C4
+-   Channel 5(N5P) - P7
+-   Channel 6(N6P) - P8
+-   Channel 7(N7P) - O1
+-   Channel 8(N8P) - O2
 
 ![image](assets/HeadwareImages/1020.jpg)
 
@@ -318,12 +330,14 @@ Please open the image above in new tab to better recognize the position.
 First screw your two FLAT ELECTRODE UNITS in the front two nodes of the frame.
 
 ![image](assets/HeadwareImages/Assembly_Flat2.JPG)
-<!-- ![image](../assets//MarkIV/Photos/Assembly_Comfort_Flat.JPG) -->
+
+ ![image](../assets//MarkIV/Photos/Assembly_Comfort_Flat.JPG) 
 
 Then screw 6 SPIKEY ELECTRODE UNITS in the following nodes of the frame.
 
 ![image](assets/HeadwareImages/Assembly_CFS.JPG)
-<!-- ![image](../assets/images/MarkIV/MarkIV_spiky_units.JPG) -->
+
+ ![image](../assets/images/MarkIV/MarkIV_spiky_units.JPG) 
 
 ### Connect wiring to OpenBCI
 
@@ -339,19 +353,18 @@ Now connect the jumper cables to the electrodes. The map below assigns names to 
 
 To follow along with this tutorial, attach each electrode to the corresponding wire color following the table and steps below. Here's a table with the correct electrode, wire color, and Cyton. By bottom pin, we mean the pin CLOSEST to the OpenBCI board.
 
-| Electrode | Wire Color | Cyton Board Pin |
-|---|---|---|
-| Ear Clip | Black | Bottom SRB pin (SRB2) |
-| FP1 | Grey | Bottom N1P pin |
-| FP2 | Purple | Bottom N2P pin |
-| C3 | Blue | Bottom N3P pin |
-| C4 | Green | Bottom N4P pin |
-| P7 | Yellow | Bottom N5P pin |
-| P8 | Orange | Bottom N6P pin |
-| O1 | Red | Bottom N7P pin |
-| O2 | Brown | Bottom N8P pin |
-| Ear Clip | Black | Bottom BIAS pin |
-
+| Electrode | Wire Color | Cyton Board Pin       |
+| --------- | ---------- | --------------------- |
+| Ear Clip  | Black      | Bottom SRB pin (SRB2) |
+| FP1       | Grey       | Bottom N1P pin        |
+| FP2       | Purple     | Bottom N2P pin        |
+| C3        | Blue       | Bottom N3P pin        |
+| C4        | Green      | Bottom N4P pin        |
+| P7        | Yellow     | Bottom N5P pin        |
+| P8        | Orange     | Bottom N6P pin        |
+| O1        | Red        | Bottom N7P pin        |
+| O2        | Brown      | Bottom N8P pin        |
+| Ear Clip  | Black      | Bottom BIAS pin       |
 
 To connect wires to electrodes, plug the male end in to the header cable on the NODES as shown:
 
@@ -380,7 +393,6 @@ Replace the cover, as shown below:
 
 Your Cyton board is ready to use with your Mark IV headset!
 
-
 #### Ganglion Board Setup
 
 Connect an OpenBCI Ganglion board to the Mark IV as shown below (with cover removed for clarity). We placed 8 electrodes on our Mark IV headset, but the Ganglion board can only take 4 inputs. So, we can only connect 4 of our electrodes to the board - we chose FP1, FP2, O1, and O2 for this tutorial.
@@ -390,13 +402,13 @@ Connect an OpenBCI Ganglion board to the Mark IV as shown below (with cover remo
 Here's a table with the correct electrode, wire color, and Ganglion board pin pairings:
 
 | Electrode | Wire Color | Cyton Board Pin |
-|---|---|---|
-| FP1 | Grey | +4 (Top 4 pin) |
-| FP2 | Purple | +3 (Top 3 pin) |
-| O1 | Red | +1 (Top 1 pin) |
-| O2 | Brown | +2 (Top 2 pin) |
-| Ear Clip | Black | Top D_G pin |
-| Ear Clip | Black | Top REF pin |
+| --------- | ---------- | --------------- |
+| FP1       | Grey       | +4 (Top 4 pin)  |
+| FP2       | Purple     | +3 (Top 3 pin)  |
+| O1        | Red        | +1 (Top 1 pin)  |
+| O2        | Brown      | +2 (Top 2 pin)  |
+| Ear Clip  | Black      | Top D_G pin     |
+| Ear Clip  | Black      | Top REF pin     |
 
 Next, make sure the switches on your Ganglion board are in the bottom configuration as shown below:
 
@@ -412,7 +424,6 @@ Your 8 channel headset is finished! To expand to a 16 channel headset (for use w
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished2.JPG)
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished3.JPG)
 ![image](assets/HeadwareImages/Assembly_8Chan_Finished4.jpg)
-
 
 ## 16 Channel Add-Ons
 
@@ -436,16 +447,16 @@ Connect each of the new electrodes to corresponding Daisy pins as shown below. Y
 
 The electrode and Daisy pin pairings are below:
 
-| Electrode | Wire Color | Daisy Pin |
-|---|---|---|
-| F7 | Grey | Bottom N1P pin |
-| F8 | Purple | Bottom N2P pin |
-| F3 | Blue | Bottom N3P pin |
-| F4 | Green | Bottom N4P pin |
-| T7 | Yellow | Bottom N5P pin |
-| T8 | Orange | Bottom N6P pin |
-| P3 | Red | Bottom N7P pin |
-| P4 | Brown | Bottom N8P pin |
+| Electrode | Wire Color | Daisy Pin      |
+| --------- | ---------- | -------------- |
+| F7        | Grey       | Bottom N1P pin |
+| F8        | Purple     | Bottom N2P pin |
+| F3        | Blue       | Bottom N3P pin |
+| F4        | Green      | Bottom N4P pin |
+| T7        | Yellow     | Bottom N5P pin |
+| T8        | Orange     | Bottom N6P pin |
+| P3        | Red        | Bottom N7P pin |
+| P4        | Brown      | Bottom N8P pin |
 
 The other female end of the white Y-Splitter Cable should be connected to the bottom SRB pin of the Daisy. The pins connected to the Daisy board should look like this:
 
@@ -468,7 +479,6 @@ Put the Ultracortex Mark IV onto your head and gradually tighten the electrode u
 
 **Be careful** not to strain the electrode wires when twisting the electrode units, or you may separate the wire from the electrode itself. You **must** disconnect a blue electrode mount from its colored wire before turning it.
 
-
 ### Examine your brain waves!
 
 Place your UltraCortex on your head so that the back center node is roughly the same distance above your inion (bump on the back of your skull) as the front center node is above the bridge of your nose. As you place the UltraCortex on your head, the springs should adjust to the shape and size of your head.
@@ -485,12 +495,11 @@ Below is a screenshot of what the GUI looks like when you've got your OpenBCI + 
 
 The OpenBCI GUI has a widget for visualizing signal strength at each electrode. To view it, click on the "FFT Plot" drop-down menu in the top right corner. Select "Head Plot".
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/MarkIV/head_plot_menu.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/MarkIV/head_plot_menu.png?raw=true" width="50%" />
 
 You should now see a visual map of signal strength in the top right corner.
 
 ![image](assets/HeadwareImages/MarkIV_head_plot.png)
-
 
 ### Give Us Feedback!
 

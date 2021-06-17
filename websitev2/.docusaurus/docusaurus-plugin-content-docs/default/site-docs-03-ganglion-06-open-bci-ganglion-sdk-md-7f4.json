@@ -1,0 +1,30 @@
+{
+  "unversionedId": "03Ganglion/GanglionSDK",
+  "id": "03Ganglion/GanglionSDK",
+  "isDocsHomePage": false,
+  "title": "Ganglion SDK",
+  "description": "The OpenBCI boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Ganglion. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, please send reset commands to your board to see what firmware you have if you're unsure!",
+  "source": "@site/../docs/03Ganglion/06-OpenBCI_Ganglion_SDK.md",
+  "sourceDirName": "03Ganglion",
+  "slug": "/03Ganglion/GanglionSDK",
+  "permalink": "/docs/03Ganglion/GanglionSDK",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/06-OpenBCI_Ganglion_SDK.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "GanglionSDK",
+    "title": "Ganglion SDK"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ganglion Data Format",
+    "permalink": "/docs/03Ganglion/GanglionDataFormat"
+  },
+  "next": {
+    "title": "Ganglion Programming Tutorial",
+    "permalink": "/docs/03Ganglion/GanglionProgram"
+  }
+}

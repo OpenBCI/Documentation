@@ -2,24 +2,25 @@
 id: MyoCyton
 title: MyoWare OpenBCI Integration (Cyton Board)
 ---
-
 ### Overview
+
 This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Cyton board, and the OpenBCI GUI. If you have a Ganglion board instead, check out our [Ganglion board MyoWare integration tutorial!](05ThirdParty/01-Myoware/15-MyoWare_Integration_Ganglion.md)
 
 ![MyoWare Board](assets/ThirdPartyImages/myoware.jpg)
 
 ### Materials Needed
 
-1. MyoWare board
-2. OpenBCI Cyton board, with power source
-3. OpenBCI dongle
-4. Skintact sticky electrodes (for using the MyoWare board)
-5. Soldering iron and materials
-6. Two male-male jumper wires (like [these](https://www.adafruit.com/product/266)), and three male-female jumper wires (like [these](https://www.adafruit.com/product/826))
+1.  MyoWare board
+2.  OpenBCI Cyton board, with power source
+3.  OpenBCI dongle
+4.  Skintact sticky electrodes (for using the MyoWare board)
+5.  Soldering iron and materials
+6.  Two male-male jumper wires (like [these](https://www.adafruit.com/product/266)), and three male-female jumper wires (like [these](https://www.adafruit.com/product/826))
 
 Note: jumper wires aren't sold on the OpenBCI website, but we used some from Adafruit (linked above) for this tutorial
 
 ### 1. Soldering the MyoWare Headers
+
 Solder 5 wires to the MyoWare board as shown below. Solder the male-male wires to the "+" and "-" connects, and the male-female wires to the R, E, and M connects.
 
 ![MyoWare Board post-soldering](assets/ThirdPartyImages/myoware_post_solder.jpg)
@@ -28,8 +29,8 @@ The wires attached to the "+" and "-" connects will be used to supply power to t
 
 The wires attached to the R, E, and M connects will transmit electrical signals from MyoWare's three electrodes to the OpenBCI Cyton board. R is the reference electrode, the one attached to the black wire. M is the middle electrode, and E is the end electrode. The E and M electrodes will measure activity across a muscle.
 
-
 ### 2. Preparing OpenBCI Cyton Board
+
 Your Cyton board should look like this:
 
 ![Board with Headers](assets/ThirdPartyImages/8bit_w_Headers.jpg)
@@ -37,6 +38,7 @@ Your Cyton board should look like this:
 If your Cyton board is missing the black, female pin connectors (called "headers") sticking out of the board, you will need to solder them on before continuing.
 
 ### 3. Wiring the MyoWare Board to the OpenBCI Cyton Board
+
 Connect the 5 wires from the MyoWare board in step 1 to the OpenBCI board, as shown below:
 
 ![Board with Headers](assets/ThirdPartyImages/cyton_myoware_connects.jpg)
@@ -45,13 +47,13 @@ The "+" and "-" from the MyoWare board should go to DVDD and GND connects on the
 
 The wires should be connected like this:
 
-| MyoWare Board | OpenBCI Board |
-| -------------- | -------------- |
-| \+ | DVDD |
-| \- | GND |
-| R | BIAS (top pin) |
-| E | N1P Top |
-| M | N1P Bottom |
+| MyoWare Board | OpenBCI Board  |
+| ------------- | -------------- |
+| +             | DVDD           |
+| -             | GND            |
+| R             | BIAS (top pin) |
+| E             | N1P Top        |
+| M             | N1P Bottom     |
 
 R, "+", and "-" must always go to the pins shown above. E and M can also be connected to N2P top and N2P bottom, or N3P top and N3P bottom, or any of the other two "NXP" pins.
 
@@ -59,7 +61,7 @@ When you have everything wired up, set the power switch on the MyoWare board to 
 
 ### 4. Streaming EMG Data with the OpenBCI GUI
 
-Attach three Skintact electrodes to the three electrodes on the MyoWare board, and then stick the board on a muscle you'd like to monitor. The adafruit MyoWare tutorial has good guidelines for MyoWare board placement: (https://learn.adafruit.com/getting-started-with-myoware-muscle-sensor/placing-electrodes).
+Attach three Skintact electrodes to the three electrodes on the MyoWare board, and then stick the board on a muscle you'd like to monitor. The adafruit MyoWare tutorial has good guidelines for MyoWare board placement: (https:).
 
 You'll be able to see signals from the MyoWare electrodes in the OpenBCI GUI. If you connected E and M to the N1P pins on the OpenBCI board, then the MyoWare data will appear in channel 1.
 
@@ -85,4 +87,4 @@ Here's what happens to the GUI when a muscle is flexed a little (top) or very st
 ![](assets/ThirdPartyImages/emg_gui_flex_small.png)
 ![](assets/ThirdPartyImages/emg_gui_flex_big.png)
 
-You can use these changes in signal intensity to trigger analog or digital events from within the GUI as you like. Check out the `EMG_Widget.pde` file for more information on the EMG widget.
+You can use these changes in signal intensity to trigger analog or digital events from within the GUI as you like. Check out the `` file for more information on the EMG widget.

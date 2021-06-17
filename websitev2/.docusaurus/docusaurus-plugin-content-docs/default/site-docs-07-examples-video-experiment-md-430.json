@@ -1,0 +1,29 @@
+{
+  "unversionedId": "07Examples/VideoExperiment",
+  "id": "07Examples/VideoExperiment",
+  "isDocsHomePage": false,
+  "title": "OpenBCI_Experiment",
+  "description": "Welcome to the OpenBCI Puppies and Kittens Experiment designed by Fan Li.",
+  "source": "@site/../docs/07Examples/Video_Experiment.md",
+  "sourceDirName": "07Examples",
+  "slug": "/07Examples/VideoExperiment",
+  "permalink": "/docs/07Examples/VideoExperiment",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/Video_Experiment.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "VideoExperiment",
+    "title": "Puppies and Kittens Experiment"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Example Projects",
+    "permalink": "/docs/07Examples/ExamplesLanding"
+  },
+  "next": {
+    "title": "Community Page Projects",
+    "permalink": "/docs/07Examples/CommunityPageProjects"
+  }
+}

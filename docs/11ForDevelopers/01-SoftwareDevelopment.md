@@ -2,7 +2,6 @@
 id: SoftwareDevelopment
 title: Software Development
 ---
-
 # Overview
 
 Welcome all Software Developers! In this document, we will go over the tools available to assist in integrating OpenBCI hardware with projects in multiple programming languages. Also, we will briefly look at how OpenBCI hardware is integrated into the OpenBCI GUI using [Processing](https://en.wikipedia.org/wiki/Processing_(programming_language)).
@@ -25,51 +24,50 @@ Once proof-of-concept is achieved, it's appopriate to consider integrating the O
 
 ## Supported Boards
 
-- [Supported Boards and Parameters](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#supported-boards) (*important*)
+-   [Supported Boards and Parameters](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#supported-boards) (_important_)
 
 ## BrainFlow - C++
 
-- [Compilation of Core BrainFlow Module and C++ Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#compilation-of-core-module-and-c-binding)
-- [C++ API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#c-api-reference)
-- [C++ Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#id1)
+-   [Compilation of Core BrainFlow Module and C++ Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#compilation-of-core-module-and-c-binding)
+-   [C++ API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#c-api-reference)
+-   [C++ Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#id1)
 
 ## BrainFlow - Python
 
-- [Install Python Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#python)
-- [Python API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#python-api-reference)
-- [Python Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#python)
+-   [Install Python Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#python)
+-   [Python API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#python-api-reference)
+-   [Python Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#python)
 
 ## BrainFlow - C#
 
-- [Install C# Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#c)
-- [C# API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#id1)
-- [C# Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#c)
+-   [Install C# Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#c)
+-   [C# API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#id1)
+-   [C# Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#c)
 
 ## BrainFlow - Java
 
-- [Install Java Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#java)
-- [Java API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#java-api-reference)
-- [Java Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#java)
+-   [Install Java Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#java)
+-   [Java API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#java-api-reference)
+-   [Java Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#java)
 
 ## BrainFlow - R
 
-- [Install R Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#r)
-- [R API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#r-api-reference)
-- [R Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#r)
+-   [Install R Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#r)
+-   [R API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#r-api-reference)
+-   [R Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#r)
 
 ## Notebooks
 
-- [BrainFlow to MNE Python Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/brainflow_mne.html)
-- [Denoising Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/denoising.html)
+-   [BrainFlow to MNE Python Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/brainflow_mne.html)
+-   [Denoising Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/denoising.html)
 
-
-___
+* * *
 
 ## OpenBCI GUI Overview
 
-- [GUI How-to and Installation](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
-- The [GUI Widget Guide](06Software/01-OpenBCISoftware/GUIWidgets) provides details on each "widget" within the GUI, such as the [Time Series Widget](06Software/01-OpenBCISoftware/GUIWidgets#time-series) and the [Networking Widget](06Software/01-OpenBCISoftware/GUIWidgets#networking)
-- [GUI Changelog](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/CHANGELOG.md)
+-   [GUI How-to and Installation](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+-   The [GUI Widget Guide](06Software/01-OpenBCISoftware/GUIWidgets) provides details on each "widget" within the GUI, such as the [Time Series Widget](06Software/01-OpenBCISoftware/GUIWidgets#time-series) and the [Networking Widget](06Software/01-OpenBCISoftware/GUIWidgets#networking)
+-   [GUI Changelog](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/CHANGELOG.md)
 
 ## BrainFlow Java Binding and OpenBCI GUI
 

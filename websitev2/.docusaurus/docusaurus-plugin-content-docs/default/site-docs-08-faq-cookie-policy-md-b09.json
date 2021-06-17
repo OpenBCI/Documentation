@@ -1,0 +1,29 @@
+{
+  "unversionedId": "08FAQ/Cookie",
+  "id": "08FAQ/Cookie",
+  "isDocsHomePage": false,
+  "title": "OpenBCI Cookie Policy",
+  "description": "What Are Cookies",
+  "source": "@site/../docs/08FAQ/Cookie_Policy.md",
+  "sourceDirName": "08FAQ",
+  "slug": "/08FAQ/Cookie",
+  "permalink": "/docs/08FAQ/Cookie",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/Cookie_Policy.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "Cookie",
+    "title": "OpenBCI Cookie Policy"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Shipping & Taxes",
+    "permalink": "/docs/08FAQ/ShippingFAQ"
+  },
+  "next": {
+    "title": "Privacy & Security",
+    "permalink": "/docs/08FAQ/Privacy"
+  }
+}

@@ -2,16 +2,15 @@
 id: Community
 title: Welcome to the OpenBCI Community
 ---
-
 [openbci.com/community/](http://openbci.com/community/)
 
 Thank you! You represent the heart of OpenBCI. Without your support and belief in the OpenBCI mission, we wouldn't be where we are today.
 
 The **OpenBCI Community** interface is our latest project. It consists of:
 
-* [The People](http://openbci.com/community/people/) - you! The people making posts and creating challenges
-* [The Feed](http://openbci.com/community/) - where new community posts end up
-* [Join](http://openbci.com/community/wp-login.php?action=register) - the way to register (send this to your friends)!
+-   [The People](http://openbci.com/community/people/) - you! The people making posts and creating challenges
+-   [The Feed](http://openbci.com/community/) - where new community posts end up
+-   [Join](http://openbci.com/community/wp-login.php?action=register) - the way to register (send this to your friends)!
 
 After you [register](http://openbci.com/community/wp-login.php?action=register) and are verified (we must approve your application), your account will be switched from **subscriber** to **contributor**. After this, you'll be able to create posts and challenges! Posts appear in the [Community Feed](http://openbci.com/community/), and challenges appear on the Challenges Page. More on this below.
 
@@ -19,14 +18,15 @@ After you [register](http://openbci.com/community/wp-login.php?action=register) 
 
 Upon registering, you should have received an email with your Login/Password. If you did not, reach out to me and I’ll help you recover it. To edit your profile:
 
-1. Go to the [OpenBCI Wordpress login](http://openbci.com/community/wp-login.php) & enter your Login/Password
-* Navigate to “Profile” on the left-hand side of the admin page
-* Add any missing information
-* Click the “Save” button to confirm
+1.  Go to the [OpenBCI Wordpress login](http://openbci.com/community/wp-login.php) & enter your Login/Password
+
+-   Navigate to “Profile” on the left-hand side of the admin page
+-   Add any missing information
+-   Click the “Save” button to confirm
 
 **Note**: your profile will not appear on the People Page until you have a first name, last name, and photo. All other info is optional (but encouraged)!
 
-If your profile is still not showing up on the People Page, reach out to contact@openbci.com. We’ll make sure your profile is active and set up as a contributor.
+If your profile is still not showing up on the People Page, reach out to [contact@openbci.com.](mailto:contact@openbci.com.) We’ll make sure your profile is active and set up as a contributor.
 
 ### Making Posts
 
@@ -36,7 +36,7 @@ Our community page is based on the Wordpress platform. If you’ve used Wordpres
 
 ### On The Horizon
 
-The OpenBCI Community interface will be forever under development. We really want your feedback! If you have suggestions, please email contact@openbci.com.
+The OpenBCI Community interface will be forever under development. We really want your feedback! If you have suggestions, please email [contact@openbci.com](mailto:contact@openbci.com).
 
 As we move forward, we want to improve the level of interactivity between community members and also provide incentives for posting cool projects and challenges.
 

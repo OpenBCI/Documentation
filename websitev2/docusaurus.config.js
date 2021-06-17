@@ -21,7 +21,7 @@ module.exports={
         "docs": {
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
-          "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/website/",
+          "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/",
           "path": "../docs",
           "sidebarPath": "../websitev2/sidebars.json"
         },

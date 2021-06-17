@@ -1,0 +1,30 @@
+{
+  "unversionedId": "03Ganglion/GanglionDataFormat",
+  "id": "03Ganglion/GanglionDataFormat",
+  "isDocsHomePage": false,
+  "title": "Ganglion Data Format",
+  "description": "This discussion of the OpenBCI data format only applies to the OpenBCI Ganglion. The Ganglion contains a Simblee microcontroller that can both be programmed through the Arduino IDE or over-the-air (OTA). The Simblee has an on-board radio module. The format of the Ganglion data as seen on the PC is defined by a combination of the Arduino code on the Ganglion board and software on your computer. So, if you don't like the data format defined here, feel free to change it! In general, and believe us, we tried, you can't send more then 100 BLE packets per second. For more info on the byte stream parsing on the computer side, or for a working example, see the NodeJS Ganglion Driver.",
+  "source": "@site/../docs/03Ganglion/08-Ganglion_Data_Format.md",
+  "sourceDirName": "03Ganglion",
+  "slug": "/03Ganglion/GanglionDataFormat",
+  "permalink": "/docs/03Ganglion/GanglionDataFormat",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/08-Ganglion_Data_Format.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "GanglionDataFormat",
+    "title": "Ganglion Data Format"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ganglion Specs",
+    "permalink": "/docs/03Ganglion/GanglionSpecs"
+  },
+  "next": {
+    "title": "Ganglion SDK",
+    "permalink": "/docs/03Ganglion/GanglionSDK"
+  }
+}

@@ -1,0 +1,3477 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionEditUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs",
+          "versionEditUrlLocalized": "https://github.com/OpenBCI/Documentation/edit/master/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/Richard/Documents/GitHub/Documentation/websitev2/sidebars.json",
+          "contentPath": "/Users/Richard/Documents/GitHub/Documentation/docs",
+          "contentPathLocalized": "/Users/Richard/Documents/GitHub/Documentation/websitev2/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "Welcome",
+          "sidebars": {
+            "docs": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Welcome to OpenBCI",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Welcome"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Getting Started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "01GettingStarted/GettingStartedLanding"
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Boards",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Boards/CytonGS"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Boards/DaisyGS"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Boards/GanglionGS"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Boards/WiFiGS"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Biosensing Setups",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Biosensing-Setups/EEGSetup"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Biosensing-Setups/ECGSetup"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Biosensing-Setups/EMGSetup"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Biosensing-Setups/ExGSetup"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Community",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "01GettingStarted/Community/Community"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Cyton Board",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonLanding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonSpecs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonDataFormat"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonSDK"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonProgram"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonRadios"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonExternal"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "02Cyton/CytonSDCard"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Ganglion Board",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "03Ganglion/GanglionLanding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "03Ganglion/GanglionSpecs"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "03Ganglion/GanglionDataFormat"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "03Ganglion/GanglionSDK"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "03Ganglion/GanglionProgram"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Headwear & Electrodes",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "04AddOns/AddOnLanding"
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Headwear",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "04AddOns/Headwear/MarkIV"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "04AddOns/Headwear/MarkIII"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "04AddOns/Headwear/HeadBand"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "04AddOns/Headwear/ElectrodeCap"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Electrodes",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "04AddOns/Electrodes/ElectrodesLanding"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Third-Party Hardware",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "05ThirdParty/ThirdPartyLanding"
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "EmotiBit",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/EmotiBit/EmotiBit_Guide"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "HEGduino Kit",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/HEGduino Kit/HEGduino"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "IDUN Dryode",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/IDUN_Dryode/Dryode"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Myoware",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/Myoware/MyoCyton"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/Myoware/MyoGanglion"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Pulse Sensor",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "ThinkPulse",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/ThinkPulse/ThinkPulse"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "WiFi Shield",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/WiFiShield/WiFiLanding"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/WiFiShield/WiFiProgam"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/WiFiShield/WiFiAPI"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "05ThirdParty/WiFiShield/WiFiSDK"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Software",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "06Software/SoftwareLanding"
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Developed By OpenBCI",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "06Software/OpenBCISoftware/GUIDocs"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/OpenBCISoftware/GUIWidgets"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Compatible Third Party Software",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/Matlab"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/Neuromore"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/OpenVibe"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/LSL"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/BrainBay"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/BioEra"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "06Software/CompatibleThirdPartySoftware/VirtualBox"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "For Developers",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "11ForDevelopers/ForDevelopersLanding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "11ForDevelopers/SoftwareDevelopment"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "11ForDevelopers/FirmwareDevelopment"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "11ForDevelopers/HardwareDevelopment"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Deprecated Documents",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/DeprecatedLanding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/SpiderclawDep"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/8bitBoardDep"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/UltracortexMark1Dep"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/UltracortexMark2Dep"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/UltracortexMark2Dep"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/UltracortexMark3_NovaDep"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/Python"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "09Deprecated/Hub"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Troubleshooting",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "10Troubleshooting/TroubleshootingLanding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "10Troubleshooting/minimizingNoise"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "10Troubleshooting/GUI_Troubleshooting"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "10Troubleshooting/FTDI_Fix_Linux"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "10Troubleshooting/FTDI_Fix_Mac"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "10Troubleshooting/FTDI_Fix_Windows"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Example Projects",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "07Examples/ExamplesLanding"
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Experiments",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "07Examples/VideoExperiment"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Community Page Projects",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "07Examples/CommunityPageProjects"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "EMG Projects and Tutorials",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EMGProjects/EMGscrolling"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EMGProjects/EMGmusic"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EMGProjects/EMGslideshow"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EMGProjects/EMG_LED"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EMGProjects/EMG_Chrome_Dino_Game"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "EEG Projects and Tutorials",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EEGProjects/FocusArduino"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "07Examples/EEGProjects/MotorImagery"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "FAQ",
+                "items": [
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "FAQ",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/FAQLanding"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/GenFAQ"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/HowProductsGoTogether"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/HardFAQ"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/PaymentFAQ"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/ShippingFAQ"
+                      }
+                    ]
+                  },
+                  {
+                    "collapsed": true,
+                    "type": "category",
+                    "label": "Policies",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/Cookie"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/Privacy"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/Returns"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "08FAQ/Liability"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/01GettingStarted/Biosensing-Setups/ECGSetup": "docs",
+            "/docs/01GettingStarted/Biosensing-Setups/EEGSetup": "docs",
+            "/docs/01GettingStarted/Biosensing-Setups/EMGSetup": "docs",
+            "/docs/01GettingStarted/Biosensing-Setups/ExGSetup": "docs",
+            "/docs/01GettingStarted/Boards/CytonGS": "docs",
+            "/docs/01GettingStarted/Boards/DaisyGS": "docs",
+            "/docs/01GettingStarted/Boards/GanglionGS": "docs",
+            "/docs/01GettingStarted/Boards/WiFiGS": "docs",
+            "/docs/01GettingStarted/Community/Community": "docs",
+            "/docs/01GettingStarted/GettingStartedLanding": "docs",
+            "/docs/02Cyton/CytonDataFormat": "docs",
+            "/docs/02Cyton/CytonExternal": "docs",
+            "/docs/02Cyton/CytonLanding": "docs",
+            "/docs/02Cyton/CytonProgram": "docs",
+            "/docs/02Cyton/CytonRadios": "docs",
+            "/docs/02Cyton/CytonSDCard": "docs",
+            "/docs/02Cyton/CytonSDK": "docs",
+            "/docs/02Cyton/CytonSpecs": "docs",
+            "/docs/03Ganglion/GanglionDataFormat": "docs",
+            "/docs/03Ganglion/GanglionLanding": "docs",
+            "/docs/03Ganglion/GanglionProgram": "docs",
+            "/docs/03Ganglion/GanglionSDK": "docs",
+            "/docs/03Ganglion/GanglionSpecs": "docs",
+            "/docs/04AddOns/AddOnLanding": "docs",
+            "/docs/04AddOns/Electrodes/ElectrodesLanding": "docs",
+            "/docs/04AddOns/Headwear/ElectrodeCap": "docs",
+            "/docs/04AddOns/Headwear/HeadBand": "docs",
+            "/docs/04AddOns/Headwear/MarkIII": "docs",
+            "/docs/04AddOns/Headwear/MarkIV": "docs",
+            "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide": "docs",
+            "/docs/05ThirdParty/HEGduino Kit/HEGduino": "docs",
+            "/docs/05ThirdParty/IDUN_Dryode/Dryode": "docs",
+            "/docs/05ThirdParty/Myoware/MyoCyton": "docs",
+            "/docs/05ThirdParty/Myoware/MyoGanglion": "docs",
+            "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing": "docs",
+            "/docs/05ThirdParty/ThinkPulse/ThinkPulse": "docs",
+            "/docs/05ThirdParty/ThirdPartyLanding": "docs",
+            "/docs/05ThirdParty/WiFiShield/WiFiAPI": "docs",
+            "/docs/05ThirdParty/WiFiShield/WiFiLanding": "docs",
+            "/docs/05ThirdParty/WiFiShield/WiFiProgam": "docs",
+            "/docs/05ThirdParty/WiFiShield/WiFiSDK": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/BioEra": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/BrainBay": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/LSL": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/Matlab": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/Neuromore": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe": "docs",
+            "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox": "docs",
+            "/docs/06Software/OpenBCISoftware/GUIDocs": "docs",
+            "/docs/06Software/OpenBCISoftware/GUIWidgets": "docs",
+            "/docs/06Software/SoftwareLanding": "docs",
+            "/docs/07Examples/CommunityPageProjects": "docs",
+            "/docs/07Examples/EEGProjects/FocusArduino": "docs",
+            "/docs/07Examples/EEGProjects/MotorImagery": "docs",
+            "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game": "docs",
+            "/docs/07Examples/EMGProjects/EMG_LED": "docs",
+            "/docs/07Examples/EMGProjects/EMGmusic": "docs",
+            "/docs/07Examples/EMGProjects/EMGscrolling": "docs",
+            "/docs/07Examples/EMGProjects/EMGslideshow": "docs",
+            "/docs/07Examples/ExamplesLanding": "docs",
+            "/docs/07Examples/VideoExperiment": "docs",
+            "/docs/08FAQ/Cookie": "docs",
+            "/docs/08FAQ/FAQLanding": "docs",
+            "/docs/08FAQ/GenFAQ": "docs",
+            "/docs/08FAQ/HardFAQ": "docs",
+            "/docs/08FAQ/HowProductsGoTogether": "docs",
+            "/docs/08FAQ/Liability": "docs",
+            "/docs/08FAQ/PaymentFAQ": "docs",
+            "/docs/08FAQ/Privacy": "docs",
+            "/docs/08FAQ/Returns": "docs",
+            "/docs/08FAQ/ShippingFAQ": "docs",
+            "/docs/09Deprecated/8bitBoardDep": "docs",
+            "/docs/09Deprecated/DeprecatedLanding": "docs",
+            "/docs/09Deprecated/Hub": "docs",
+            "/docs/09Deprecated/Python": "docs",
+            "/docs/09Deprecated/SpiderclawDep": "docs",
+            "/docs/09Deprecated/UltracortexMark1Dep": "docs",
+            "/docs/09Deprecated/UltracortexMark2Dep": "docs",
+            "/docs/09Deprecated/UltracortexMark3_NovaDep": "docs",
+            "/docs/10Troubleshooting/FTDI_Fix_Linux": "docs",
+            "/docs/10Troubleshooting/FTDI_Fix_Mac": "docs",
+            "/docs/10Troubleshooting/FTDI_Fix_Windows": "docs",
+            "/docs/10Troubleshooting/GUI_Troubleshooting": "docs",
+            "/docs/10Troubleshooting/minimizingNoise": "docs",
+            "/docs/10Troubleshooting/TroubleshootingLanding": "docs",
+            "/docs/11ForDevelopers/FirmwareDevelopment": "docs",
+            "/docs/11ForDevelopers/ForDevelopersLanding": "docs",
+            "/docs/11ForDevelopers/HardwareDevelopment": "docs",
+            "/docs/11ForDevelopers/SoftwareDevelopment": "docs",
+            "/docs/": "docs"
+          },
+          "docs": [
+            {
+              "unversionedId": "01GettingStarted/Biosensing-Setups/ECGSetup",
+              "id": "01GettingStarted/Biosensing-Setups/ECGSetup",
+              "isDocsHomePage": false,
+              "title": "Setting up for ECG",
+              "description": "This document will show you how to read ECG data (electrical signals from  the heart) using OpenBCI hardware and GUI.",
+              "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md",
+              "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+              "slug": "/01GettingStarted/Biosensing-Setups/ECGSetup",
+              "permalink": "/docs/01GettingStarted/Biosensing-Setups/ECGSetup",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "ECGSetup",
+                "title": "Setting up for ECG"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Setting up for EEG",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/EEGSetup"
+              },
+              "next": {
+                "title": "Setting up for EMG",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/EMGSetup"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Biosensing-Setups/EEGSetup",
+              "id": "01GettingStarted/Biosensing-Setups/EEGSetup",
+              "isDocsHomePage": false,
+              "title": "Setting up for EEG",
+              "description": "This page will explain the most basic setup to process EEG Data using your OpenBCI board, using our gold cup electrodes.",
+              "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md",
+              "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+              "slug": "/01GettingStarted/Biosensing-Setups/EEGSetup",
+              "permalink": "/docs/01GettingStarted/Biosensing-Setups/EEGSetup",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "EEGSetup",
+                "title": "Setting up for EEG"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "WiFi Shield Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/WiFiGS"
+              },
+              "next": {
+                "title": "Setting up for ECG",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/ECGSetup"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Biosensing-Setups/EMGSetup",
+              "id": "01GettingStarted/Biosensing-Setups/EMGSetup",
+              "isDocsHomePage": false,
+              "title": "Setting up for EMG",
+              "description": "This document will show you how to read EMG data (electrical signals from muscles) using OpenBCI hardware and GUI.",
+              "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md",
+              "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+              "slug": "/01GettingStarted/Biosensing-Setups/EMGSetup",
+              "permalink": "/docs/01GettingStarted/Biosensing-Setups/EMGSetup",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "EMGSetup",
+                "title": "Setting up for EMG"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Setting up for ECG",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/ECGSetup"
+              },
+              "next": {
+                "title": "Setting up for EEG, EMG, and ECG at the same time",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/ExGSetup"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Biosensing-Setups/ExGSetup",
+              "id": "01GettingStarted/Biosensing-Setups/ExGSetup",
+              "isDocsHomePage": false,
+              "title": "Setting up for EEG, EMG, and ECG at the same time",
+              "description": "OpenBCI Cyton+Daisy board offers a wide range of flexibility with more signal channels.",
+              "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/04-ExG-Setup.md",
+              "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+              "slug": "/01GettingStarted/Biosensing-Setups/ExGSetup",
+              "permalink": "/docs/01GettingStarted/Biosensing-Setups/ExGSetup",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/04-ExG-Setup.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "ExGSetup",
+                "title": "Setting up for EEG, EMG, and ECG at the same time"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Setting up for EMG",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/EMGSetup"
+              },
+              "next": {
+                "title": "Welcome to the OpenBCI Community",
+                "permalink": "/docs/01GettingStarted/Community/Community"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Boards/CytonGS",
+              "id": "01GettingStarted/Boards/CytonGS",
+              "isDocsHomePage": false,
+              "title": "Cyton Getting Started Guide",
+              "description": "This guide will walk you through setting up your computer to use the Cyton and USB Dongle, using the OpenBCI_GUI Application, and how to get EEG/EMG/EKG from your own body! Please review this guide in its entirety before starting and consult the Cyton Biosensing Tutorial Video for extra guidance. Have fun!",
+              "source": "@site/../docs/01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md",
+              "sourceDirName": "01GettingStarted/01-Boards",
+              "slug": "/01GettingStarted/Boards/CytonGS",
+              "permalink": "/docs/01GettingStarted/Boards/CytonGS",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "CytonGS",
+                "title": "Cyton Getting Started Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Getting Started",
+                "permalink": "/docs/01GettingStarted/GettingStartedLanding"
+              },
+              "next": {
+                "title": "Daisy Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/DaisyGS"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Boards/DaisyGS",
+              "id": "01GettingStarted/Boards/DaisyGS",
+              "isDocsHomePage": false,
+              "title": "Daisy Getting Started Guide",
+              "description": "This guide will walk you through getting 16-channel input on your Cyton+Daisy Module",
+              "source": "@site/../docs/01GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md",
+              "sourceDirName": "01GettingStarted/01-Boards",
+              "slug": "/01GettingStarted/Boards/DaisyGS",
+              "permalink": "/docs/01GettingStarted/Boards/DaisyGS",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 11,
+              "frontMatter": {
+                "id": "DaisyGS",
+                "title": "Daisy Getting Started Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Cyton Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/CytonGS"
+              },
+              "next": {
+                "title": "Ganglion Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/GanglionGS"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Boards/GanglionGS",
+              "id": "01GettingStarted/Boards/GanglionGS",
+              "isDocsHomePage": false,
+              "title": "Ganglion Getting Started Guide",
+              "description": "Overview",
+              "source": "@site/../docs/01GettingStarted/01-Boards/02-Ganglion_Getting_Started_Guide.md",
+              "sourceDirName": "01GettingStarted/01-Boards",
+              "slug": "/01GettingStarted/Boards/GanglionGS",
+              "permalink": "/docs/01GettingStarted/Boards/GanglionGS",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/01-Boards/02-Ganglion_Getting_Started_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "GanglionGS",
+                "title": "Ganglion Getting Started Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Daisy Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/DaisyGS"
+              },
+              "next": {
+                "title": "WiFi Shield Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/WiFiGS"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Boards/WiFiGS",
+              "id": "01GettingStarted/Boards/WiFiGS",
+              "isDocsHomePage": false,
+              "title": "WiFi Shield Getting Started Guide",
+              "description": "Overview",
+              "source": "@site/../docs/01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md",
+              "sourceDirName": "01GettingStarted/01-Boards",
+              "slug": "/01GettingStarted/Boards/WiFiGS",
+              "permalink": "/docs/01GettingStarted/Boards/WiFiGS",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "WiFiGS",
+                "title": "WiFi Shield Getting Started Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ganglion Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/GanglionGS"
+              },
+              "next": {
+                "title": "Setting up for EEG",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/EEGSetup"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/Community/Community",
+              "id": "01GettingStarted/Community/Community",
+              "isDocsHomePage": false,
+              "title": "Welcome to the OpenBCI Community",
+              "description": "openbci.com/community/",
+              "source": "@site/../docs/01GettingStarted/03-Community/13-Community_Instructions.md",
+              "sourceDirName": "01GettingStarted/03-Community",
+              "slug": "/01GettingStarted/Community/Community",
+              "permalink": "/docs/01GettingStarted/Community/Community",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/03-Community/13-Community_Instructions.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 13,
+              "frontMatter": {
+                "id": "Community",
+                "title": "Welcome to the OpenBCI Community"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Setting up for EEG, EMG, and ECG at the same time",
+                "permalink": "/docs/01GettingStarted/Biosensing-Setups/ExGSetup"
+              },
+              "next": {
+                "title": "Cyton Board",
+                "permalink": "/docs/02Cyton/CytonLanding"
+              }
+            },
+            {
+              "unversionedId": "01GettingStarted/GettingStartedLanding",
+              "id": "01GettingStarted/GettingStartedLanding",
+              "isDocsHomePage": false,
+              "title": "Getting Started",
+              "description": "This directory will show you everything you need to know to get started with OpenBCI.",
+              "source": "@site/../docs/01GettingStarted/00-GettingStartedLanding.md",
+              "sourceDirName": "01GettingStarted",
+              "slug": "/01GettingStarted/GettingStartedLanding",
+              "permalink": "/docs/01GettingStarted/GettingStartedLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/00-GettingStartedLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "GettingStartedLanding",
+                "title": "Getting Started"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Welcome to the OpenBCI Community",
+                "permalink": "/docs/"
+              },
+              "next": {
+                "title": "Cyton Getting Started Guide",
+                "permalink": "/docs/01GettingStarted/Boards/CytonGS"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonDataFormat",
+              "id": "02Cyton/CytonDataFormat",
+              "isDocsHomePage": false,
+              "title": "Cyton Data Format",
+              "description": "This discussion of the OpenBCI data format only applies to OpenBCI v1 (2014-2016) and v2.0.0 (Fall 2016). For OpenBCI Cyton, the OpenBCI board contains either a ChipKIT or ATmega microcontroller that can both be programmed through the Arduino IDE. The Cyton board has an on-board RFDuino radio module acting as a \"Device\". The Cyton system includes a USB dongle for the PC, which acts as the RFDuino \"Host\". The format of the OpenBCI data as seen on the PC is defined by a combination of the Arduino code on the Cyton board and of the RFDuino code running on the Host. So, if you don't like the data format defined here, feel free to change it! For more info on the v2 firmware, see these Notes On Updating and Using v2.0.0 Cyton Firmware. There is also further information on controlling the OpenBCI Cyton on our OpenBCI Cyton SDK page.",
+              "source": "@site/../docs/02Cyton/03-Cyton_Data_Format.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonDataFormat",
+              "permalink": "/docs/02Cyton/CytonDataFormat",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/03-Cyton_Data_Format.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "CytonDataFormat",
+                "title": "Cyton Data Format"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Cyton Specs",
+                "permalink": "/docs/02Cyton/CytonSpecs"
+              },
+              "next": {
+                "title": "Cyton Board SDK",
+                "permalink": "/docs/02Cyton/CytonSDK"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonExternal",
+              "id": "02Cyton/CytonExternal",
+              "isDocsHomePage": false,
+              "title": "External Trigger on OpenBCI Cyton Board",
+              "description": "Sometimes, when studying EEG or other biopotential signals, you will want to have precise timing between external events or stimulus and the data stream. For example, if you are working with P300 waves it is necessary to know the exact time that the signal was presented to the subject in order to look for the tell-tale brain wave that happens about 300mS after the stimulus.",
+              "source": "@site/../docs/02Cyton/07-External_Trigger_Cyton_Example.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonExternal",
+              "permalink": "/docs/02Cyton/CytonExternal",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/07-External_Trigger_Cyton_Example.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "id": "CytonExternal",
+                "title": "External Trigger on OpenBCI Cyton Board"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "**Note, you do not need to do ANY Cyton board or radio module programming if you want to use the Cyton out-of-the-box. All OpenBCI boards and dongles ship already programmed, i.e. with firmware already uploaded.** If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding)",
+                "permalink": "/docs/02Cyton/CytonRadios"
+              },
+              "next": {
+                "title": "Using SD Card with OpenBCI",
+                "permalink": "/docs/02Cyton/CytonSDCard"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonLanding",
+              "id": "02Cyton/CytonLanding",
+              "isDocsHomePage": false,
+              "title": "Cyton Board",
+              "description": "Buy it!",
+              "source": "@site/../docs/02Cyton/01-CytonBoard.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonLanding",
+              "permalink": "/docs/02Cyton/CytonLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/01-CytonBoard.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "CytonLanding",
+                "title": "Cyton Board"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Welcome to the OpenBCI Community",
+                "permalink": "/docs/01GettingStarted/Community/Community"
+              },
+              "next": {
+                "title": "Cyton Specs",
+                "permalink": "/docs/02Cyton/CytonSpecs"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonProgram",
+              "id": "02Cyton/CytonProgram",
+              "isDocsHomePage": false,
+              "title": "**Note, you do not need to do any board programming if you want to use the Cyton out-of-the-box.** All OpenBCI boards ship already programmed, i.e. with firmware already uploaded. If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding)",
+              "description": "Overview",
+              "source": "@site/../docs/02Cyton/05-Cyton_Board_Programming_Tutorial.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonProgram",
+              "permalink": "/docs/02Cyton/CytonProgram",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/05-Cyton_Board_Programming_Tutorial.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "id": "CytonProgram",
+                "title": "Cyton Board Programming Tutorial"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Cyton Board SDK",
+                "permalink": "/docs/02Cyton/CytonSDK"
+              },
+              "next": {
+                "title": "**Note, you do not need to do ANY Cyton board or radio module programming if you want to use the Cyton out-of-the-box. All OpenBCI boards and dongles ship already programmed, i.e. with firmware already uploaded.** If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding)",
+                "permalink": "/docs/02Cyton/CytonRadios"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonRadios",
+              "id": "02Cyton/CytonRadios",
+              "isDocsHomePage": false,
+              "title": "**Note, you do not need to do ANY Cyton board or radio module programming if you want to use the Cyton out-of-the-box. All OpenBCI boards and dongles ship already programmed, i.e. with firmware already uploaded.** If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding)",
+              "description": "Overview",
+              "source": "@site/../docs/02Cyton/06-Cyton_Radios_Programming_Tutorial.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonRadios",
+              "permalink": "/docs/02Cyton/CytonRadios",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/06-Cyton_Radios_Programming_Tutorial.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "id": "CytonRadios",
+                "title": "Cyton Radios Programming Tutorial"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "**Note, you do not need to do any board programming if you want to use the Cyton out-of-the-box.** All OpenBCI boards ship already programmed, i.e. with firmware already uploaded. If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding)",
+                "permalink": "/docs/02Cyton/CytonProgram"
+              },
+              "next": {
+                "title": "External Trigger on OpenBCI Cyton Board",
+                "permalink": "/docs/02Cyton/CytonExternal"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonSDCard",
+              "id": "02Cyton/CytonSDCard",
+              "isDocsHomePage": false,
+              "title": "Using SD Card with OpenBCI",
+              "description": "Overview",
+              "source": "@site/../docs/02Cyton/09-Using_SD_Card_with_OpenBCI.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonSDCard",
+              "permalink": "/docs/02Cyton/CytonSDCard",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/09-Using_SD_Card_with_OpenBCI.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "id": "CytonSDCard",
+                "title": "Using SD Card with OpenBCI"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "External Trigger on OpenBCI Cyton Board",
+                "permalink": "/docs/02Cyton/CytonExternal"
+              },
+              "next": {
+                "title": "Ganglion Board",
+                "permalink": "/docs/03Ganglion/GanglionLanding"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonSDK",
+              "id": "02Cyton/CytonSDK",
+              "isDocsHomePage": false,
+              "title": "Cyton Board SDK",
+              "description": "The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Cyton and 8bit boards. Some of the commands are board specific, where noted. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, the 8bit board runs v0, while the Cyton runs v1 and Boards shipped as of Fall 2016 run v2.0.0. v3.0.0 will begin shipping with boards in August of 2017.",
+              "source": "@site/../docs/02Cyton/04-OpenBCI_Cyton_SDK.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonSDK",
+              "permalink": "/docs/02Cyton/CytonSDK",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/04-OpenBCI_Cyton_SDK.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "CytonSDK",
+                "title": "Cyton Board SDK"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Cyton Data Format",
+                "permalink": "/docs/02Cyton/CytonDataFormat"
+              },
+              "next": {
+                "title": "**Note, you do not need to do any board programming if you want to use the Cyton out-of-the-box.** All OpenBCI boards ship already programmed, i.e. with firmware already uploaded. If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](https://docs.openbci.com/docs/01GettingStarted/GettingStartedLanding)",
+                "permalink": "/docs/02Cyton/CytonProgram"
+              }
+            },
+            {
+              "unversionedId": "02Cyton/CytonSpecs",
+              "id": "02Cyton/CytonSpecs",
+              "isDocsHomePage": false,
+              "title": "Cyton Specs",
+              "description": "BUY IT!",
+              "source": "@site/../docs/02Cyton/02-Cyton.md",
+              "sourceDirName": "02Cyton",
+              "slug": "/02Cyton/CytonSpecs",
+              "permalink": "/docs/02Cyton/CytonSpecs",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/02Cyton/02-Cyton.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "CytonSpecs",
+                "title": "Cyton Specs"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Cyton Board",
+                "permalink": "/docs/02Cyton/CytonLanding"
+              },
+              "next": {
+                "title": "Cyton Data Format",
+                "permalink": "/docs/02Cyton/CytonDataFormat"
+              }
+            },
+            {
+              "unversionedId": "03Ganglion/GanglionDataFormat",
+              "id": "03Ganglion/GanglionDataFormat",
+              "isDocsHomePage": false,
+              "title": "Ganglion Data Format",
+              "description": "This discussion of the OpenBCI data format only applies to the OpenBCI Ganglion. The Ganglion contains a Simblee microcontroller that can both be programmed through the Arduino IDE or over-the-air (OTA). The Simblee has an on-board radio module. The format of the Ganglion data as seen on the PC is defined by a combination of the Arduino code on the Ganglion board and software on your computer. So, if you don't like the data format defined here, feel free to change it! In general, and believe us, we tried, you can't send more then 100 BLE packets per second. For more info on the byte stream parsing on the computer side, or for a working example, see the NodeJS Ganglion Driver.",
+              "source": "@site/../docs/03Ganglion/08-Ganglion_Data_Format.md",
+              "sourceDirName": "03Ganglion",
+              "slug": "/03Ganglion/GanglionDataFormat",
+              "permalink": "/docs/03Ganglion/GanglionDataFormat",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/08-Ganglion_Data_Format.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "id": "GanglionDataFormat",
+                "title": "Ganglion Data Format"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ganglion Specs",
+                "permalink": "/docs/03Ganglion/GanglionSpecs"
+              },
+              "next": {
+                "title": "Ganglion SDK",
+                "permalink": "/docs/03Ganglion/GanglionSDK"
+              }
+            },
+            {
+              "unversionedId": "03Ganglion/GanglionLanding",
+              "id": "03Ganglion/GanglionLanding",
+              "isDocsHomePage": false,
+              "title": "Ganglion Board",
+              "description": "Buy it!",
+              "source": "@site/../docs/03Ganglion/01-GanglionBoard.md",
+              "sourceDirName": "03Ganglion",
+              "slug": "/03Ganglion/GanglionLanding",
+              "permalink": "/docs/03Ganglion/GanglionLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/01-GanglionBoard.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "GanglionLanding",
+                "title": "Ganglion Board"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Using SD Card with OpenBCI",
+                "permalink": "/docs/02Cyton/CytonSDCard"
+              },
+              "next": {
+                "title": "Ganglion Specs",
+                "permalink": "/docs/03Ganglion/GanglionSpecs"
+              }
+            },
+            {
+              "unversionedId": "03Ganglion/GanglionProgram",
+              "id": "03Ganglion/GanglionProgram",
+              "isDocsHomePage": false,
+              "title": "Ganglion Programming Tutorial",
+              "description": "Please note, you do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.",
+              "source": "@site/../docs/03Ganglion/09-Ganglion_Programming_Tutorial.md",
+              "sourceDirName": "03Ganglion",
+              "slug": "/03Ganglion/GanglionProgram",
+              "permalink": "/docs/03Ganglion/GanglionProgram",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/09-Ganglion_Programming_Tutorial.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 9,
+              "frontMatter": {
+                "id": "GanglionProgram",
+                "title": "Ganglion Programming Tutorial"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ganglion SDK",
+                "permalink": "/docs/03Ganglion/GanglionSDK"
+              },
+              "next": {
+                "title": "Add Ons",
+                "permalink": "/docs/04AddOns/AddOnLanding"
+              }
+            },
+            {
+              "unversionedId": "03Ganglion/GanglionSDK",
+              "id": "03Ganglion/GanglionSDK",
+              "isDocsHomePage": false,
+              "title": "Ganglion SDK",
+              "description": "The OpenBCI boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Ganglion. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, please send reset commands to your board to see what firmware you have if you're unsure!",
+              "source": "@site/../docs/03Ganglion/06-OpenBCI_Ganglion_SDK.md",
+              "sourceDirName": "03Ganglion",
+              "slug": "/03Ganglion/GanglionSDK",
+              "permalink": "/docs/03Ganglion/GanglionSDK",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/06-OpenBCI_Ganglion_SDK.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "id": "GanglionSDK",
+                "title": "Ganglion SDK"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ganglion Data Format",
+                "permalink": "/docs/03Ganglion/GanglionDataFormat"
+              },
+              "next": {
+                "title": "Ganglion Programming Tutorial",
+                "permalink": "/docs/03Ganglion/GanglionProgram"
+              }
+            },
+            {
+              "unversionedId": "03Ganglion/GanglionSpecs",
+              "id": "03Ganglion/GanglionSpecs",
+              "isDocsHomePage": false,
+              "title": "Ganglion Specs",
+              "description": "BUY IT!",
+              "source": "@site/../docs/03Ganglion/02-Ganglion.md",
+              "sourceDirName": "03Ganglion",
+              "slug": "/03Ganglion/GanglionSpecs",
+              "permalink": "/docs/03Ganglion/GanglionSpecs",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/02-Ganglion.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "GanglionSpecs",
+                "title": "Ganglion Specs"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ganglion Board",
+                "permalink": "/docs/03Ganglion/GanglionLanding"
+              },
+              "next": {
+                "title": "Ganglion Data Format",
+                "permalink": "/docs/03Ganglion/GanglionDataFormat"
+              }
+            },
+            {
+              "unversionedId": "04AddOns/AddOnLanding",
+              "id": "04AddOns/AddOnLanding",
+              "isDocsHomePage": false,
+              "title": "Add Ons",
+              "description": "This section goes over all the headwear and accessories that go with OpenBCI to help gather data.",
+              "source": "@site/../docs/04AddOns/00-AddOnLanding.md",
+              "sourceDirName": "04AddOns",
+              "slug": "/04AddOns/AddOnLanding",
+              "permalink": "/docs/04AddOns/AddOnLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/00-AddOnLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "AddOnLanding",
+                "title": "Add Ons"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ganglion Programming Tutorial",
+                "permalink": "/docs/03Ganglion/GanglionProgram"
+              },
+              "next": {
+                "title": "Ultracortex Mark IV",
+                "permalink": "/docs/04AddOns/Headwear/MarkIV"
+              }
+            },
+            {
+              "unversionedId": "04AddOns/Electrodes/ElectrodesLanding",
+              "id": "04AddOns/Electrodes/ElectrodesLanding",
+              "isDocsHomePage": false,
+              "title": "Electrode Guide",
+              "description": "OpenBCI Boards are compatible with a variety of different electrodes.",
+              "source": "@site/../docs/04AddOns/02-Electrodes/00-ElectrodesLanding.md",
+              "sourceDirName": "04AddOns/02-Electrodes",
+              "slug": "/04AddOns/Electrodes/ElectrodesLanding",
+              "permalink": "/docs/04AddOns/Electrodes/ElectrodesLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/02-Electrodes/00-ElectrodesLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "ElectrodesLanding",
+                "title": "Electrode Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Electrode Cap Getting Started Guide",
+                "permalink": "/docs/04AddOns/Headwear/ElectrodeCap"
+              },
+              "next": {
+                "title": "Third-Party Hardware",
+                "permalink": "/docs/05ThirdParty/ThirdPartyLanding"
+              }
+            },
+            {
+              "unversionedId": "04AddOns/Headwear/ElectrodeCap",
+              "id": "04AddOns/Headwear/ElectrodeCap",
+              "isDocsHomePage": false,
+              "title": "Electrode Cap Getting Started Guide",
+              "description": "This is a guide to setting up and cleaning your OpenBCI Electrode Cap. Please consult the Electrode Cap",
+              "source": "@site/../docs/04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md",
+              "sourceDirName": "04AddOns/01-Headwear",
+              "slug": "/04AddOns/Headwear/ElectrodeCap",
+              "permalink": "/docs/04AddOns/Headwear/ElectrodeCap",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "ElectrodeCap",
+                "title": "Electrode Cap Getting Started Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI EEG Headband Kit Guide",
+                "permalink": "/docs/04AddOns/Headwear/HeadBand"
+              },
+              "next": {
+                "title": "Electrode Guide",
+                "permalink": "/docs/04AddOns/Electrodes/ElectrodesLanding"
+              }
+            },
+            {
+              "unversionedId": "04AddOns/Headwear/HeadBand",
+              "id": "04AddOns/Headwear/HeadBand",
+              "isDocsHomePage": false,
+              "title": "OpenBCI EEG Headband Kit Guide",
+              "description": "Now available in our shop!",
+              "source": "@site/../docs/04AddOns/01-Headwear/03-Headband_Tutorial.md",
+              "sourceDirName": "04AddOns/01-Headwear",
+              "slug": "/04AddOns/Headwear/HeadBand",
+              "permalink": "/docs/04AddOns/Headwear/HeadBand",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/01-Headwear/03-Headband_Tutorial.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "HeadBand",
+                "title": "OpenBCI EEG Headband Kit Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ultracortex Mark III",
+                "permalink": "/docs/04AddOns/Headwear/MarkIII"
+              },
+              "next": {
+                "title": "Electrode Cap Getting Started Guide",
+                "permalink": "/docs/04AddOns/Headwear/ElectrodeCap"
+              }
+            },
+            {
+              "unversionedId": "04AddOns/Headwear/MarkIII",
+              "id": "04AddOns/Headwear/MarkIII",
+              "isDocsHomePage": false,
+              "title": "Ultracortex Mark III",
+              "description": "Development Period: June 2016",
+              "source": "@site/../docs/04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md",
+              "sourceDirName": "04AddOns/01-Headwear",
+              "slug": "/04AddOns/Headwear/MarkIII",
+              "permalink": "/docs/04AddOns/Headwear/MarkIII",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "MarkIII",
+                "title": "Ultracortex Mark III"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ultracortex Mark IV",
+                "permalink": "/docs/04AddOns/Headwear/MarkIV"
+              },
+              "next": {
+                "title": "OpenBCI EEG Headband Kit Guide",
+                "permalink": "/docs/04AddOns/Headwear/HeadBand"
+              }
+            },
+            {
+              "unversionedId": "04AddOns/Headwear/MarkIV",
+              "id": "04AddOns/Headwear/MarkIV",
+              "isDocsHomePage": false,
+              "title": "Ultracortex Mark IV",
+              "description": "Development Period: January 2016 Through the Present",
+              "source": "@site/../docs/04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md",
+              "sourceDirName": "04AddOns/01-Headwear",
+              "slug": "/04AddOns/Headwear/MarkIV",
+              "permalink": "/docs/04AddOns/Headwear/MarkIV",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "MarkIV",
+                "title": "Ultracortex Mark IV"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Add Ons",
+                "permalink": "/docs/04AddOns/AddOnLanding"
+              },
+              "next": {
+                "title": "Ultracortex Mark III",
+                "permalink": "/docs/04AddOns/Headwear/MarkIII"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/EmotiBit/EmotiBit_Guide",
+              "id": "05ThirdParty/EmotiBit/EmotiBit_Guide",
+              "isDocsHomePage": false,
+              "title": "EmotiBit Guide",
+              "description": "Overview",
+              "source": "@site/../docs/05ThirdParty/00-EmotiBit/EmotiBit_Guide.md",
+              "sourceDirName": "05ThirdParty/00-EmotiBit",
+              "slug": "/05ThirdParty/EmotiBit/EmotiBit_Guide",
+              "permalink": "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/00-EmotiBit/EmotiBit_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "EmotiBit_Guide",
+                "title": "EmotiBit Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Third-Party Hardware",
+                "permalink": "/docs/05ThirdParty/ThirdPartyLanding"
+              },
+              "next": {
+                "title": "HEGduino How-to",
+                "permalink": "/docs/05ThirdParty/HEGduino Kit/HEGduino"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/HEGduino Kit/HEGduino",
+              "id": "05ThirdParty/HEGduino Kit/HEGduino",
+              "isDocsHomePage": false,
+              "title": "HEGduino How-to",
+              "description": "The open-source, extensively documented HEGduino Kit is now available at the OpenBCI Shop.",
+              "source": "@site/../docs/05ThirdParty/05-HEGduino Kit/HEGduino_Guide.md",
+              "sourceDirName": "05ThirdParty/05-HEGduino Kit",
+              "slug": "/05ThirdParty/HEGduino Kit/HEGduino",
+              "permalink": "/docs/05ThirdParty/HEGduino Kit/HEGduino",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/05-HEGduino Kit/HEGduino_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "HEGduino",
+                "title": "HEGduino How-to"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "EmotiBit Guide",
+                "permalink": "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide"
+              },
+              "next": {
+                "title": "IDUN Dryode",
+                "permalink": "/docs/05ThirdParty/IDUN_Dryode/Dryode"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/IDUN_Dryode/Dryode",
+              "id": "05ThirdParty/IDUN_Dryode/Dryode",
+              "isDocsHomePage": false,
+              "title": "IDUN Dryode",
+              "description": "Overview",
+              "source": "@site/../docs/05ThirdParty/04-IDUN_Dryode/Dryode_Guide.md",
+              "sourceDirName": "05ThirdParty/04-IDUN_Dryode",
+              "slug": "/05ThirdParty/IDUN_Dryode/Dryode",
+              "permalink": "/docs/05ThirdParty/IDUN_Dryode/Dryode",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/04-IDUN_Dryode/Dryode_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Dryode",
+                "title": "IDUN Dryode"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "HEGduino How-to",
+                "permalink": "/docs/05ThirdParty/HEGduino Kit/HEGduino"
+              },
+              "next": {
+                "title": "MyoWare OpenBCI Integration (Cyton Board)",
+                "permalink": "/docs/05ThirdParty/Myoware/MyoCyton"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/Myoware/MyoCyton",
+              "id": "05ThirdParty/Myoware/MyoCyton",
+              "isDocsHomePage": false,
+              "title": "MyoWare OpenBCI Integration (Cyton Board)",
+              "description": "Overview",
+              "source": "@site/../docs/05ThirdParty/01-Myoware/14-MyoWare_Integration.md",
+              "sourceDirName": "05ThirdParty/01-Myoware",
+              "slug": "/05ThirdParty/Myoware/MyoCyton",
+              "permalink": "/docs/05ThirdParty/Myoware/MyoCyton",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/01-Myoware/14-MyoWare_Integration.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 14,
+              "frontMatter": {
+                "id": "MyoCyton",
+                "title": "MyoWare OpenBCI Integration (Cyton Board)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "IDUN Dryode",
+                "permalink": "/docs/05ThirdParty/IDUN_Dryode/Dryode"
+              },
+              "next": {
+                "title": "MyoWare OpenBCI Integration (Ganglion Board)",
+                "permalink": "/docs/05ThirdParty/Myoware/MyoGanglion"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/Myoware/MyoGanglion",
+              "id": "05ThirdParty/Myoware/MyoGanglion",
+              "isDocsHomePage": false,
+              "title": "MyoWare OpenBCI Integration (Ganglion Board)",
+              "description": "Overview",
+              "source": "@site/../docs/05ThirdParty/01-Myoware/15-MyoWare_Integration_Ganglion.md",
+              "sourceDirName": "05ThirdParty/01-Myoware",
+              "slug": "/05ThirdParty/Myoware/MyoGanglion",
+              "permalink": "/docs/05ThirdParty/Myoware/MyoGanglion",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/01-Myoware/15-MyoWare_Integration_Ganglion.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 15,
+              "frontMatter": {
+                "id": "MyoGanglion",
+                "title": "MyoWare OpenBCI Integration (Ganglion Board)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "MyoWare OpenBCI Integration (Cyton Board)",
+                "permalink": "/docs/05ThirdParty/Myoware/MyoCyton"
+              },
+              "next": {
+                "title": "Pulse Sensor Guide",
+                "permalink": "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing",
+              "id": "05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing",
+              "isDocsHomePage": false,
+              "title": "Pulse Sensor Guide",
+              "description": "The Pulse Sensor can be connected to the Cyton, Ganglion, or any Arduino board to easily obtain your heart rate using photoplethysmogram (PPG).",
+              "source": "@site/../docs/05ThirdParty/02-Pulse_Sensor/Pulse_Sensor_Guide.md",
+              "sourceDirName": "05ThirdParty/02-Pulse_Sensor",
+              "slug": "/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing",
+              "permalink": "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/02-Pulse_Sensor/Pulse_Sensor_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Pulse_Sensor_Landing",
+                "title": "Pulse Sensor Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "MyoWare OpenBCI Integration (Ganglion Board)",
+                "permalink": "/docs/05ThirdParty/Myoware/MyoGanglion"
+              },
+              "next": {
+                "title": "ThinkPulse Getting Started Guide",
+                "permalink": "/docs/05ThirdParty/ThinkPulse/ThinkPulse"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/ThinkPulse/ThinkPulse",
+              "id": "05ThirdParty/ThinkPulse/ThinkPulse",
+              "isDocsHomePage": false,
+              "title": "ThinkPulse Getting Started Guide",
+              "description": "Available exclusively worldwide only on the OpenBCI® store.",
+              "source": "@site/../docs/05ThirdParty/06-ThinkPulse/ThinkPulse_Getting_Started.md",
+              "sourceDirName": "05ThirdParty/06-ThinkPulse",
+              "slug": "/05ThirdParty/ThinkPulse/ThinkPulse",
+              "permalink": "/docs/05ThirdParty/ThinkPulse/ThinkPulse",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/06-ThinkPulse/ThinkPulse_Getting_Started.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "ThinkPulse",
+                "title": "ThinkPulse Getting Started Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Pulse Sensor Guide",
+                "permalink": "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
+              },
+              "next": {
+                "title": "OpenBCI WiFi",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiLanding"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/ThirdPartyLanding",
+              "id": "05ThirdParty/ThirdPartyLanding",
+              "isDocsHomePage": false,
+              "title": "Third-Party Hardware",
+              "description": "The directory to the left contains documents to explain the integration between OpenBCI and compatible third-party hardware. This landing page summarizes the variety of sampling modalities!",
+              "source": "@site/../docs/05ThirdParty/00-ThirdPartyLanding.md",
+              "sourceDirName": "05ThirdParty",
+              "slug": "/05ThirdParty/ThirdPartyLanding",
+              "permalink": "/docs/05ThirdParty/ThirdPartyLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/00-ThirdPartyLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "ThirdPartyLanding",
+                "title": "Third-Party Hardware"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Electrode Guide",
+                "permalink": "/docs/04AddOns/Electrodes/ElectrodesLanding"
+              },
+              "next": {
+                "title": "EmotiBit Guide",
+                "permalink": "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/WiFiShield/WiFiAPI",
+              "id": "05ThirdParty/WiFiShield/WiFiAPI",
+              "isDocsHomePage": false,
+              "title": "OpenBCI WiFi Shield API",
+              "description": "The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.",
+              "source": "@site/../docs/05ThirdParty/03-WiFiShield/03-OpenBCI_Wifi_Server.md",
+              "sourceDirName": "05ThirdParty/03-WiFiShield",
+              "slug": "/05ThirdParty/WiFiShield/WiFiAPI",
+              "permalink": "/docs/05ThirdParty/WiFiShield/WiFiAPI",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/03-WiFiShield/03-OpenBCI_Wifi_Server.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "WiFiAPI",
+                "title": "OpenBCI WiFi Shield API"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Wifi Shield Programming Tutorial",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiProgam"
+              },
+              "next": {
+                "title": "OpenBCI Wifi SDK",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiSDK"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/WiFiShield/WiFiLanding",
+              "id": "05ThirdParty/WiFiShield/WiFiLanding",
+              "isDocsHomePage": false,
+              "title": "OpenBCI WiFi",
+              "description": "BUY IT!",
+              "source": "@site/../docs/05ThirdParty/03-WiFiShield/01-Wifi.md",
+              "sourceDirName": "05ThirdParty/03-WiFiShield",
+              "slug": "/05ThirdParty/WiFiShield/WiFiLanding",
+              "permalink": "/docs/05ThirdParty/WiFiShield/WiFiLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/03-WiFiShield/01-Wifi.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "WiFiLanding",
+                "title": "OpenBCI WiFi"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "ThinkPulse Getting Started Guide",
+                "permalink": "/docs/05ThirdParty/ThinkPulse/ThinkPulse"
+              },
+              "next": {
+                "title": "Wifi Shield Programming Tutorial",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiProgam"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/WiFiShield/WiFiProgam",
+              "id": "05ThirdParty/WiFiShield/WiFiProgam",
+              "isDocsHomePage": false,
+              "title": "Wifi Shield Programming Tutorial",
+              "description": "Overview",
+              "source": "@site/../docs/05ThirdParty/03-WiFiShield/12-Wifi_Programming_Tutorial.md",
+              "sourceDirName": "05ThirdParty/03-WiFiShield",
+              "slug": "/05ThirdParty/WiFiShield/WiFiProgam",
+              "permalink": "/docs/05ThirdParty/WiFiShield/WiFiProgam",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/03-WiFiShield/12-Wifi_Programming_Tutorial.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 12,
+              "frontMatter": {
+                "id": "WiFiProgam",
+                "title": "Wifi Shield Programming Tutorial"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI WiFi",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiLanding"
+              },
+              "next": {
+                "title": "OpenBCI WiFi Shield API",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiAPI"
+              }
+            },
+            {
+              "unversionedId": "05ThirdParty/WiFiShield/WiFiSDK",
+              "id": "05ThirdParty/WiFiShield/WiFiSDK",
+              "isDocsHomePage": false,
+              "title": "OpenBCI Wifi SDK",
+              "description": "The purpose of this doc is to describe what's required to interface another micro-controller with the WiFi Shield.",
+              "source": "@site/../docs/05ThirdParty/03-WiFiShield/08-OpenBCI_Wifi_SDK.md",
+              "sourceDirName": "05ThirdParty/03-WiFiShield",
+              "slug": "/05ThirdParty/WiFiShield/WiFiSDK",
+              "permalink": "/docs/05ThirdParty/WiFiShield/WiFiSDK",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/03-WiFiShield/08-OpenBCI_Wifi_SDK.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "id": "WiFiSDK",
+                "title": "OpenBCI Wifi SDK"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI WiFi Shield API",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiAPI"
+              },
+              "next": {
+                "title": "Compatible Software",
+                "permalink": "/docs/06Software/SoftwareLanding"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/BioEra",
+              "id": "06Software/CompatibleThirdPartySoftware/BioEra",
+              "isDocsHomePage": false,
+              "title": "BioEra",
+              "description": "From the BioEra homepage: BioEra is a visual designer useful for analyzing signals in real time. It can be used with any device with ability to stream data to a computer.",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/06-BioEra.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/BioEra",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BioEra",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/06-BioEra.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "id": "BioEra",
+                "title": "BioEra"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "BrainBay",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BrainBay"
+              },
+              "next": {
+                "title": "VirtualBox Windows Guide",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/BrainBay",
+              "id": "06Software/CompatibleThirdPartySoftware/BrainBay",
+              "isDocsHomePage": false,
+              "title": "BrainBay",
+              "description": "From their OpenBCI tutorials page: BrainBay is an open-source visual programming language (VPL) for rapid prototyping of EEG digital signal processing steps (or data flows.)",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/05-BrainBay.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/BrainBay",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BrainBay",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/05-BrainBay.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "id": "BrainBay",
+                "title": "BrainBay"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Lab Streaming Layer (LSL)",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/LSL"
+              },
+              "next": {
+                "title": "BioEra",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BioEra"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/LSL",
+              "id": "06Software/CompatibleThirdPartySoftware/LSL",
+              "isDocsHomePage": false,
+              "title": "Lab Streaming Layer (LSL)",
+              "description": "Lab streaming layer  is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as Matlab (see our Matlab tutorial for using LSL in this context).",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/04-LSL.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/LSL",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/LSL",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/04-LSL.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "LSL",
+                "title": "Lab Streaming Layer (LSL)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenViBE",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe"
+              },
+              "next": {
+                "title": "BrainBay",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BrainBay"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/Matlab",
+              "id": "06Software/CompatibleThirdPartySoftware/Matlab",
+              "isDocsHomePage": false,
+              "title": "MATLAB",
+              "description": "MATLAB is a powerful numerical computing language and environment that is widely used in a wide variety of academic, research, and industry applications.",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/01-Matlab.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/Matlab",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Matlab",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/01-Matlab.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "Matlab",
+                "title": "MATLAB"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "GUI Widget Guide",
+                "permalink": "/docs/06Software/OpenBCISoftware/GUIWidgets"
+              },
+              "next": {
+                "title": "Neuromore",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Neuromore"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/Neuromore",
+              "id": "06Software/CompatibleThirdPartySoftware/Neuromore",
+              "isDocsHomePage": false,
+              "title": "Neuromore",
+              "description": "Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, it provides a visual designer that can be used to process signals real-time.",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/02-Neuromore.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/Neuromore",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Neuromore",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/02-Neuromore.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "Neuromore",
+                "title": "Neuromore"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "MATLAB",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Matlab"
+              },
+              "next": {
+                "title": "OpenViBE",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/OpenVibe",
+              "id": "06Software/CompatibleThirdPartySoftware/OpenVibe",
+              "isDocsHomePage": false,
+              "title": "OpenViBE",
+              "description": "Overview",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/OpenVibe",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "OpenVibe",
+                "title": "OpenViBE"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Neuromore",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Neuromore"
+              },
+              "next": {
+                "title": "Lab Streaming Layer (LSL)",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/LSL"
+              }
+            },
+            {
+              "unversionedId": "06Software/CompatibleThirdPartySoftware/VirtualBox",
+              "id": "06Software/CompatibleThirdPartySoftware/VirtualBox",
+              "isDocsHomePage": false,
+              "title": "VirtualBox Windows Guide",
+              "description": "Some of the software compatible with OpenBCI products requires a Windows operating system. If you have a non-windows computer, you can still use this software through a Windows virtual machine on VirtualBox.",
+              "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md",
+              "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+              "slug": "/06Software/CompatibleThirdPartySoftware/VirtualBox",
+              "permalink": "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "id": "VirtualBox",
+                "title": "VirtualBox Windows Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "BioEra",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BioEra"
+              },
+              "next": {
+                "title": "For Developers",
+                "permalink": "/docs/11ForDevelopers/ForDevelopersLanding"
+              }
+            },
+            {
+              "unversionedId": "06Software/OpenBCISoftware/GUIDocs",
+              "id": "06Software/OpenBCISoftware/GUIDocs",
+              "isDocsHomePage": false,
+              "title": "The OpenBCI GUI",
+              "description": "image",
+              "source": "@site/../docs/06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md",
+              "sourceDirName": "06Software/01-OpenBCISoftware",
+              "slug": "/06Software/OpenBCISoftware/GUIDocs",
+              "permalink": "/docs/06Software/OpenBCISoftware/GUIDocs",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "GUIDocs",
+                "title": "The OpenBCI GUI"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Compatible Software",
+                "permalink": "/docs/06Software/SoftwareLanding"
+              },
+              "next": {
+                "title": "GUI Widget Guide",
+                "permalink": "/docs/06Software/OpenBCISoftware/GUIWidgets"
+              }
+            },
+            {
+              "unversionedId": "06Software/OpenBCISoftware/GUIWidgets",
+              "id": "06Software/OpenBCISoftware/GUIWidgets",
+              "isDocsHomePage": false,
+              "title": "GUI Widget Guide",
+              "description": "What is a GUI Widget?",
+              "source": "@site/../docs/06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md",
+              "sourceDirName": "06Software/01-OpenBCISoftware",
+              "slug": "/06Software/OpenBCISoftware/GUIWidgets",
+              "permalink": "/docs/06Software/OpenBCISoftware/GUIWidgets",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "GUIWidgets",
+                "title": "GUI Widget Guide"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "The OpenBCI GUI",
+                "permalink": "/docs/06Software/OpenBCISoftware/GUIDocs"
+              },
+              "next": {
+                "title": "MATLAB",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Matlab"
+              }
+            },
+            {
+              "unversionedId": "06Software/SoftwareLanding",
+              "id": "06Software/SoftwareLanding",
+              "isDocsHomePage": false,
+              "title": "Compatible Software",
+              "description": "OpenBCI Software",
+              "source": "@site/../docs/06Software/00-SoftwareLanding.md",
+              "sourceDirName": "06Software",
+              "slug": "/06Software/SoftwareLanding",
+              "permalink": "/docs/06Software/SoftwareLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/00-SoftwareLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "SoftwareLanding",
+                "title": "Compatible Software"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI Wifi SDK",
+                "permalink": "/docs/05ThirdParty/WiFiShield/WiFiSDK"
+              },
+              "next": {
+                "title": "The OpenBCI GUI",
+                "permalink": "/docs/06Software/OpenBCISoftware/GUIDocs"
+              }
+            },
+            {
+              "unversionedId": "07Examples/CommunityPageProjects",
+              "id": "07Examples/CommunityPageProjects",
+              "isDocsHomePage": false,
+              "title": "Community Page Projects",
+              "description": "Head over to the Community Page for project tutorials contributed by OpenBCI Community members! Use the \"tutorials\" tag to filter.",
+              "source": "@site/../docs/07Examples/16-Community_Page_Projects.md",
+              "sourceDirName": "07Examples",
+              "slug": "/07Examples/CommunityPageProjects",
+              "permalink": "/docs/07Examples/CommunityPageProjects",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/16-Community_Page_Projects.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 16,
+              "frontMatter": {
+                "id": "CommunityPageProjects",
+                "title": "Community Page Projects"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI_Experiment",
+                "permalink": "/docs/07Examples/VideoExperiment"
+              },
+              "next": {
+                "title": "EMG Scrolling",
+                "permalink": "/docs/07Examples/EMGProjects/EMGscrolling"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EEGProjects/FocusArduino",
+              "id": "07Examples/EEGProjects/FocusArduino",
+              "isDocsHomePage": false,
+              "title": "Send Focus Data from GUI to Arduino",
+              "description": "Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run GUI v4.2.0.",
+              "source": "@site/../docs/07Examples/19-EEGProjects/17-Arduino_Focus_Example.md",
+              "sourceDirName": "07Examples/19-EEGProjects",
+              "slug": "/07Examples/EEGProjects/FocusArduino",
+              "permalink": "/docs/07Examples/EEGProjects/FocusArduino",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/19-EEGProjects/17-Arduino_Focus_Example.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 17,
+              "frontMatter": {
+                "id": "FocusArduino",
+                "title": "Send Focus Data from GUI to Arduino"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "EMG Chrome Dino Game",
+                "permalink": "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game"
+              },
+              "next": {
+                "title": "Motor Imagery",
+                "permalink": "/docs/07Examples/EEGProjects/MotorImagery"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EEGProjects/MotorImagery",
+              "id": "07Examples/EEGProjects/MotorImagery",
+              "isDocsHomePage": false,
+              "title": "Motor Imagery",
+              "description": "This tutorial was made by Rakesh C Jakati.",
+              "source": "@site/../docs/07Examples/19-EEGProjects/20-Motor_Imagery.md",
+              "sourceDirName": "07Examples/19-EEGProjects",
+              "slug": "/07Examples/EEGProjects/MotorImagery",
+              "permalink": "/docs/07Examples/EEGProjects/MotorImagery",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/19-EEGProjects/20-Motor_Imagery.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 20,
+              "frontMatter": {
+                "id": "MotorImagery",
+                "title": "Motor Imagery"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Send Focus Data from GUI to Arduino",
+                "permalink": "/docs/07Examples/EEGProjects/FocusArduino"
+              },
+              "next": {
+                "title": "Frequently Asked Questions",
+                "permalink": "/docs/08FAQ/FAQLanding"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+              "id": "07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+              "isDocsHomePage": false,
+              "title": "EMG Chrome Dino Game",
+              "description": "In this tutorial we will show you how to play the Google Chrome Dinosaur Game without touching your laptop. To do that, we will read EMG data from your arm muscles and find the peaks which correspond to flexing, using them to trigger a jump of the dinosaur.",
+              "source": "@site/../docs/07Examples/18-EMGProjects/05-EMG_Chrome_Dino_Game.md",
+              "sourceDirName": "07Examples/18-EMGProjects",
+              "slug": "/07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+              "permalink": "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/05-EMG_Chrome_Dino_Game.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "id": "EMG_Chrome_Dino_Game",
+                "title": "EMG Chrome Dino Game"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "EMG-controlled LED",
+                "permalink": "/docs/07Examples/EMGProjects/EMG_LED"
+              },
+              "next": {
+                "title": "Send Focus Data from GUI to Arduino",
+                "permalink": "/docs/07Examples/EEGProjects/FocusArduino"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EMGProjects/EMG_LED",
+              "id": "07Examples/EMGProjects/EMG_LED",
+              "isDocsHomePage": false,
+              "title": "EMG-controlled LED",
+              "description": "This tutorial is little more involved than the other EMG tutorials. No fear, we've documented every step below. Happy bio-hacking!",
+              "source": "@site/../docs/07Examples/18-EMGProjects/04-EMG_LED.md",
+              "sourceDirName": "07Examples/18-EMGProjects",
+              "slug": "/07Examples/EMGProjects/EMG_LED",
+              "permalink": "/docs/07Examples/EMGProjects/EMG_LED",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/04-EMG_LED.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "EMG_LED",
+                "title": "EMG-controlled LED"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "EMG-controlled Slideshow",
+                "permalink": "/docs/07Examples/EMGProjects/EMGslideshow"
+              },
+              "next": {
+                "title": "EMG Chrome Dino Game",
+                "permalink": "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EMGProjects/EMGmusic",
+              "id": "07Examples/EMGProjects/EMGmusic",
+              "isDocsHomePage": false,
+              "title": "EMG controlled Music",
+              "description": "In this tutorial, we will show you how to pause and unpause your music without pressing any keys on your laptop keyboard. To do that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them as a trigger for pausing the music played via Youtube through your computer. Feel free to connect your laptop to a Bluetooth speaker to make the music louder!",
+              "source": "@site/../docs/07Examples/18-EMGProjects/02-EMG_Controlled_Music.md",
+              "sourceDirName": "07Examples/18-EMGProjects",
+              "slug": "/07Examples/EMGProjects/EMGmusic",
+              "permalink": "/docs/07Examples/EMGProjects/EMGmusic",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/02-EMG_Controlled_Music.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "EMGmusic",
+                "title": "EMG controlled Music"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "EMG Scrolling",
+                "permalink": "/docs/07Examples/EMGProjects/EMGscrolling"
+              },
+              "next": {
+                "title": "EMG-controlled Slideshow",
+                "permalink": "/docs/07Examples/EMGProjects/EMGslideshow"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EMGProjects/EMGscrolling",
+              "id": "07Examples/EMGProjects/EMGscrolling",
+              "isDocsHomePage": false,
+              "title": "EMG Scrolling",
+              "description": "In this tutorial, we will show you how to scroll up and down on your computer screen without touching the keyboard. For that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them to scroll.",
+              "source": "@site/../docs/07Examples/18-EMGProjects/01-EMG_Scrolling.md",
+              "sourceDirName": "07Examples/18-EMGProjects",
+              "slug": "/07Examples/EMGProjects/EMGscrolling",
+              "permalink": "/docs/07Examples/EMGProjects/EMGscrolling",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/01-EMG_Scrolling.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "EMGscrolling",
+                "title": "EMG Scrolling"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Community Page Projects",
+                "permalink": "/docs/07Examples/CommunityPageProjects"
+              },
+              "next": {
+                "title": "EMG controlled Music",
+                "permalink": "/docs/07Examples/EMGProjects/EMGmusic"
+              }
+            },
+            {
+              "unversionedId": "07Examples/EMGProjects/EMGslideshow",
+              "id": "07Examples/EMGProjects/EMGslideshow",
+              "isDocsHomePage": false,
+              "title": "EMG-controlled Slideshow",
+              "description": "In this tutorial, we will show you how to scroll through a presentation using your eyes. To do that, we will read EMG data from the muscles around your eyes and find the peaks which correspond to blinking, using them as a trigger to scroll to the next slide. Even though we are using eye blinks in this example, any EMG signals such as those produced by your jaw when you clench it or your arms when you move them can be used.",
+              "source": "@site/../docs/07Examples/18-EMGProjects/03-EMG_Controlled_Slideshow.md",
+              "sourceDirName": "07Examples/18-EMGProjects",
+              "slug": "/07Examples/EMGProjects/EMGslideshow",
+              "permalink": "/docs/07Examples/EMGProjects/EMGslideshow",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/03-EMG_Controlled_Slideshow.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "EMGslideshow",
+                "title": "EMG-controlled Slideshow"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "EMG controlled Music",
+                "permalink": "/docs/07Examples/EMGProjects/EMGmusic"
+              },
+              "next": {
+                "title": "EMG-controlled LED",
+                "permalink": "/docs/07Examples/EMGProjects/EMG_LED"
+              }
+            },
+            {
+              "unversionedId": "07Examples/ExamplesLanding",
+              "id": "07Examples/ExamplesLanding",
+              "isDocsHomePage": false,
+              "title": "Example Projects",
+              "description": "The Examples directory to the left contains example projects contributed by members of the OpenBCI Community and team. For even more tutorials, head to the tutorials tag in the Community Page!",
+              "source": "@site/../docs/07Examples/00-ExamplesLanding.md",
+              "sourceDirName": "07Examples",
+              "slug": "/07Examples/ExamplesLanding",
+              "permalink": "/docs/07Examples/ExamplesLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/00-ExamplesLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "ExamplesLanding",
+                "title": "Example Projects"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "FTDI Buffer Fix on Windows",
+                "permalink": "/docs/10Troubleshooting/FTDI_Fix_Windows"
+              },
+              "next": {
+                "title": "OpenBCI_Experiment",
+                "permalink": "/docs/07Examples/VideoExperiment"
+              }
+            },
+            {
+              "unversionedId": "07Examples/VideoExperiment",
+              "id": "07Examples/VideoExperiment",
+              "isDocsHomePage": false,
+              "title": "OpenBCI_Experiment",
+              "description": "Welcome to the OpenBCI Puppies and Kittens Experiment designed by Fan Li.",
+              "source": "@site/../docs/07Examples/Video_Experiment.md",
+              "sourceDirName": "07Examples",
+              "slug": "/07Examples/VideoExperiment",
+              "permalink": "/docs/07Examples/VideoExperiment",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/Video_Experiment.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "VideoExperiment",
+                "title": "Puppies and Kittens Experiment"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Example Projects",
+                "permalink": "/docs/07Examples/ExamplesLanding"
+              },
+              "next": {
+                "title": "Community Page Projects",
+                "permalink": "/docs/07Examples/CommunityPageProjects"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/Cookie",
+              "id": "08FAQ/Cookie",
+              "isDocsHomePage": false,
+              "title": "OpenBCI Cookie Policy",
+              "description": "What Are Cookies",
+              "source": "@site/../docs/08FAQ/Cookie_Policy.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/Cookie",
+              "permalink": "/docs/08FAQ/Cookie",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/Cookie_Policy.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Cookie",
+                "title": "OpenBCI Cookie Policy"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Shipping & Taxes",
+                "permalink": "/docs/08FAQ/ShippingFAQ"
+              },
+              "next": {
+                "title": "Privacy & Security",
+                "permalink": "/docs/08FAQ/Privacy"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/FAQLanding",
+              "id": "08FAQ/FAQLanding",
+              "isDocsHomePage": false,
+              "title": "Frequently Asked Questions",
+              "description": "Welcome to our Frequently Asked Questions (FAQ)! Select the appropriate question category to proceed:",
+              "source": "@site/../docs/08FAQ/00-FAQ.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/FAQLanding",
+              "permalink": "/docs/08FAQ/FAQLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/00-FAQ.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "FAQLanding",
+                "title": "Frequently Asked Questions"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Motor Imagery",
+                "permalink": "/docs/07Examples/EEGProjects/MotorImagery"
+              },
+              "next": {
+                "title": "General Frequently Asked Questions",
+                "permalink": "/docs/08FAQ/GenFAQ"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/GenFAQ",
+              "id": "08FAQ/GenFAQ",
+              "isDocsHomePage": false,
+              "title": "General Frequently Asked Questions",
+              "description": "What does OpenBCI stand for?",
+              "source": "@site/../docs/08FAQ/01-GeneralFrequentlyAskedQuestions.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/GenFAQ",
+              "permalink": "/docs/08FAQ/GenFAQ",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/01-GeneralFrequentlyAskedQuestions.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "GenFAQ",
+                "title": "General Frequently Asked Questions"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Frequently Asked Questions",
+                "permalink": "/docs/08FAQ/FAQLanding"
+              },
+              "next": {
+                "title": "How OpenBCI products go together?",
+                "permalink": "/docs/08FAQ/HowProductsGoTogether"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/HardFAQ",
+              "id": "08FAQ/HardFAQ",
+              "isDocsHomePage": false,
+              "title": "Hardware & Software",
+              "description": "What do I need to get started?",
+              "source": "@site/../docs/08FAQ/03-HardwareFAQ.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/HardFAQ",
+              "permalink": "/docs/08FAQ/HardFAQ",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/03-HardwareFAQ.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "HardFAQ",
+                "title": "Hardware & Software"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "How OpenBCI products go together?",
+                "permalink": "/docs/08FAQ/HowProductsGoTogether"
+              },
+              "next": {
+                "title": "Purchases & Payment Processing",
+                "permalink": "/docs/08FAQ/PaymentFAQ"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/HowProductsGoTogether",
+              "id": "08FAQ/HowProductsGoTogether",
+              "isDocsHomePage": false,
+              "title": "How OpenBCI products go together?",
+              "description": "image",
+              "source": "@site/../docs/08FAQ/02-HowProductsGoTogether.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/HowProductsGoTogether",
+              "permalink": "/docs/08FAQ/HowProductsGoTogether",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/02-HowProductsGoTogether.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "HowProductsGoTogether",
+                "title": "How OpenBCI products go together?"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "General Frequently Asked Questions",
+                "permalink": "/docs/08FAQ/GenFAQ"
+              },
+              "next": {
+                "title": "Hardware & Software",
+                "permalink": "/docs/08FAQ/HardFAQ"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/Liability",
+              "id": "08FAQ/Liability",
+              "isDocsHomePage": false,
+              "title": "Liability Policy",
+              "description": "Disclaimer of medical, clinical, or diagnostic use",
+              "source": "@site/../docs/08FAQ/Liability_Policy.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/Liability",
+              "permalink": "/docs/08FAQ/Liability",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/Liability_Policy.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Liability",
+                "title": "Liability Policy"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "RETURNS & REFUNDS",
+                "permalink": "/docs/08FAQ/Returns"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/PaymentFAQ",
+              "id": "08FAQ/PaymentFAQ",
+              "isDocsHomePage": false,
+              "title": "Purchases & Payment Processing",
+              "description": "Please note all orders ship after full payment. Orders cannot be split between multiple shipments. To make a change to your order, please email support@openbci.com ASAP. We cannot guarantee that we can satisfy the request, but we will do our best if contacted in a timely fashion.",
+              "source": "@site/../docs/08FAQ/04-PaymentFAQ.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/PaymentFAQ",
+              "permalink": "/docs/08FAQ/PaymentFAQ",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/04-PaymentFAQ.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "PaymentFAQ",
+                "title": "Purchases & Payment Processing"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Hardware & Software",
+                "permalink": "/docs/08FAQ/HardFAQ"
+              },
+              "next": {
+                "title": "Shipping & Taxes",
+                "permalink": "/docs/08FAQ/ShippingFAQ"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/Privacy",
+              "id": "08FAQ/Privacy",
+              "isDocsHomePage": false,
+              "title": "Privacy & Security",
+              "description": "Effective June 26, 2018",
+              "source": "@site/../docs/08FAQ/Privacy_Policy.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/Privacy",
+              "permalink": "/docs/08FAQ/Privacy",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/Privacy_Policy.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Privacy",
+                "title": "Privacy & Security"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI Cookie Policy",
+                "permalink": "/docs/08FAQ/Cookie"
+              },
+              "next": {
+                "title": "RETURNS & REFUNDS",
+                "permalink": "/docs/08FAQ/Returns"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/Returns",
+              "id": "08FAQ/Returns",
+              "isDocsHomePage": false,
+              "title": "RETURNS & REFUNDS",
+              "description": "Returns",
+              "source": "@site/../docs/08FAQ/Refund_Policy.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/Returns",
+              "permalink": "/docs/08FAQ/Returns",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/Refund_Policy.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Returns",
+                "title": "RETURNS & REFUNDS"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Privacy & Security",
+                "permalink": "/docs/08FAQ/Privacy"
+              },
+              "next": {
+                "title": "Liability Policy",
+                "permalink": "/docs/08FAQ/Liability"
+              }
+            },
+            {
+              "unversionedId": "08FAQ/ShippingFAQ",
+              "id": "08FAQ/ShippingFAQ",
+              "isDocsHomePage": false,
+              "title": "Shipping & Taxes",
+              "description": "Where do you ship to?",
+              "source": "@site/../docs/08FAQ/05-ShippingFAQ.md",
+              "sourceDirName": "08FAQ",
+              "slug": "/08FAQ/ShippingFAQ",
+              "permalink": "/docs/08FAQ/ShippingFAQ",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/08FAQ/05-ShippingFAQ.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "id": "ShippingFAQ",
+                "title": "Shipping & Taxes"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Purchases & Payment Processing",
+                "permalink": "/docs/08FAQ/PaymentFAQ"
+              },
+              "next": {
+                "title": "OpenBCI Cookie Policy",
+                "permalink": "/docs/08FAQ/Cookie"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/8bitBoardDep",
+              "id": "09Deprecated/8bitBoardDep",
+              "isDocsHomePage": false,
+              "title": "OpenBCI 8bit Board (no longer in production)",
+              "description": "8bit Board Specs:",
+              "source": "@site/../docs/09Deprecated/03-8bitBoard.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/8bitBoardDep",
+              "permalink": "/docs/09Deprecated/8bitBoardDep",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/03-8bitBoard.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "8bitBoardDep",
+                "title": "OpenBCI 8bit Board (no longer in production)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Spiderclaw V1 & V2 (deprecated)",
+                "permalink": "/docs/09Deprecated/SpiderclawDep"
+              },
+              "next": {
+                "title": "Ultracortex Mark 1",
+                "permalink": "/docs/09Deprecated/UltracortexMark1Dep"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/DeprecatedLanding",
+              "id": "09Deprecated/DeprecatedLanding",
+              "isDocsHomePage": false,
+              "title": "Deprecated Docs",
+              "description": "This directory houses all deprecated documentation.",
+              "source": "@site/../docs/09Deprecated/01-DeprecatedDocs.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/DeprecatedLanding",
+              "permalink": "/docs/09Deprecated/DeprecatedLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/01-DeprecatedDocs.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "DeprecatedLanding",
+                "title": "Deprecated Docs"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/11ForDevelopers/HardwareDevelopment"
+              },
+              "next": {
+                "title": "Spiderclaw V1 & V2 (deprecated)",
+                "permalink": "/docs/09Deprecated/SpiderclawDep"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/Hub",
+              "id": "09Deprecated/Hub",
+              "isDocsHomePage": false,
+              "title": "OpenBCI Hub",
+              "description": "THIS SOFTWARE HAS BEEN DEPRECATED AND IS NO LONGER IN ACTIVE DEVELOPMENT.",
+              "source": "@site/../docs/09Deprecated/OpenBCI_Hub.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/Hub",
+              "permalink": "/docs/09Deprecated/Hub",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/OpenBCI_Hub.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "frontMatter": {
+                "id": "Hub",
+                "title": "OpenBCI Hub"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Python and OpenBCI",
+                "permalink": "/docs/09Deprecated/Python"
+              },
+              "next": {
+                "title": "Troubleshooting Landing",
+                "permalink": "/docs/10Troubleshooting/TroubleshootingLanding"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/Python",
+              "id": "09Deprecated/Python",
+              "isDocsHomePage": false,
+              "title": "Python and OpenBCI",
+              "description": "THIS DOCUMENT HAS BEEN DEPRECATED. PLEASE REFER TO \"FOR DEVELOPERS\" SECTION FOR INFORMATION ON BRAINFLOW-PYTHON.",
+              "source": "@site/../docs/09Deprecated/08-OpenBCI_Python.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/Python",
+              "permalink": "/docs/09Deprecated/Python",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/08-OpenBCI_Python.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 8,
+              "frontMatter": {
+                "id": "Python",
+                "title": "Python and OpenBCI"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ultracortex Mark III Nova and Supernova",
+                "permalink": "/docs/09Deprecated/UltracortexMark3_NovaDep"
+              },
+              "next": {
+                "title": "OpenBCI Hub",
+                "permalink": "/docs/09Deprecated/Hub"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/SpiderclawDep",
+              "id": "09Deprecated/SpiderclawDep",
+              "isDocsHomePage": false,
+              "title": "Spiderclaw V1 & V2 (deprecated)",
+              "description": "Check out the following blog post (recently re-posted), for a detailed guide on the V1 & V2 Spiderclaw designs, as well as links to the relevant .stl, .obj, and Autodesk Maya files for Spiderclaw V1 and V2.",
+              "source": "@site/../docs/09Deprecated/02-Spiderclaw.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/SpiderclawDep",
+              "permalink": "/docs/09Deprecated/SpiderclawDep",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/02-Spiderclaw.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "SpiderclawDep",
+                "title": "Spiderclaw V1 & V2 (deprecated)"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Deprecated Docs",
+                "permalink": "/docs/09Deprecated/DeprecatedLanding"
+              },
+              "next": {
+                "title": "OpenBCI 8bit Board (no longer in production)",
+                "permalink": "/docs/09Deprecated/8bitBoardDep"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/UltracortexMark1Dep",
+              "id": "09Deprecated/UltracortexMark1Dep",
+              "isDocsHomePage": false,
+              "title": "Ultracortex Mark 1",
+              "description": "Files related to the ultracortex, the 3D-printable EEG headset compatible with OpenBCI (currently under development).",
+              "source": "@site/../docs/09Deprecated/04-UltracortexMark1.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/UltracortexMark1Dep",
+              "permalink": "/docs/09Deprecated/UltracortexMark1Dep",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/04-UltracortexMark1.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "UltracortexMark1Dep",
+                "title": "Ultracortex Mark 1"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI 8bit Board (no longer in production)",
+                "permalink": "/docs/09Deprecated/8bitBoardDep"
+              },
+              "next": {
+                "title": "Ultracortex Mark 2",
+                "permalink": "/docs/09Deprecated/UltracortexMark2Dep"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/UltracortexMark2Dep",
+              "id": "09Deprecated/UltracortexMark2Dep",
+              "isDocsHomePage": false,
+              "title": "Ultracortex Mark 2",
+              "description": "image",
+              "source": "@site/../docs/09Deprecated/05-UltracortexMark2.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/UltracortexMark2Dep",
+              "permalink": "/docs/09Deprecated/UltracortexMark2Dep",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/05-UltracortexMark2.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "id": "UltracortexMark2Dep",
+                "title": "Ultracortex Mark 2"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ultracortex Mark 1",
+                "permalink": "/docs/09Deprecated/UltracortexMark1Dep"
+              },
+              "next": {
+                "title": "Ultracortex Mark 2",
+                "permalink": "/docs/09Deprecated/UltracortexMark2Dep"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/UltracortexMark3_NovaDep",
+              "id": "09Deprecated/UltracortexMark3_NovaDep",
+              "isDocsHomePage": false,
+              "title": "Ultracortex Mark III Nova and Supernova",
+              "description": "Development Period: June 2016",
+              "source": "@site/../docs/09Deprecated/07-UltracortexMark3_Nova.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/UltracortexMark3_NovaDep",
+              "permalink": "/docs/09Deprecated/UltracortexMark3_NovaDep",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/07-UltracortexMark3_Nova.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "id": "UltracortexMark3_NovaDep",
+                "title": "Ultracortex Mark III Nova and Supernova"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Ultracortex Mark 2",
+                "permalink": "/docs/09Deprecated/UltracortexMark2Dep"
+              },
+              "next": {
+                "title": "Python and OpenBCI",
+                "permalink": "/docs/09Deprecated/Python"
+              }
+            },
+            {
+              "unversionedId": "09Deprecated/UltracortexMark3Dep",
+              "id": "09Deprecated/UltracortexMark3Dep",
+              "isDocsHomePage": false,
+              "title": "Ultracortex Mark 3",
+              "description": "Development Period: July 2015 — September 2015",
+              "source": "@site/../docs/09Deprecated/06-UltracortexMark3.md",
+              "sourceDirName": "09Deprecated",
+              "slug": "/09Deprecated/UltracortexMark3Dep",
+              "permalink": "/docs/09Deprecated/UltracortexMark3Dep",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/06-UltracortexMark3.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "id": "UltracortexMark3Dep",
+                "title": "Ultracortex Mark 3"
+              }
+            },
+            {
+              "unversionedId": "10Troubleshooting/FTDI_Fix_Linux",
+              "id": "10Troubleshooting/FTDI_Fix_Linux",
+              "isDocsHomePage": false,
+              "title": "FTDI Buffer Fix on Linux",
+              "description": "Summary",
+              "source": "@site/../docs/10Troubleshooting/03-FTDI_Fix_Linux.md",
+              "sourceDirName": "10Troubleshooting",
+              "slug": "/10Troubleshooting/FTDI_Fix_Linux",
+              "permalink": "/docs/10Troubleshooting/FTDI_Fix_Linux",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/03-FTDI_Fix_Linux.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "FTDI_Fix_Linux",
+                "title": "FTDI Buffer Fix on Linux"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "GUI Troubleshooting",
+                "permalink": "/docs/10Troubleshooting/GUI_Troubleshooting"
+              },
+              "next": {
+                "title": "FTDI Buffer Fix on OS X",
+                "permalink": "/docs/10Troubleshooting/FTDI_Fix_Mac"
+              }
+            },
+            {
+              "unversionedId": "10Troubleshooting/FTDI_Fix_Mac",
+              "id": "10Troubleshooting/FTDI_Fix_Mac",
+              "isDocsHomePage": false,
+              "title": "FTDI Buffer Fix on OS X",
+              "description": "Summary",
+              "source": "@site/../docs/10Troubleshooting/05-FTDI_Driver_Fix_Mac.md",
+              "sourceDirName": "10Troubleshooting",
+              "slug": "/10Troubleshooting/FTDI_Fix_Mac",
+              "permalink": "/docs/10Troubleshooting/FTDI_Fix_Mac",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/05-FTDI_Driver_Fix_Mac.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "id": "FTDI_Fix_Mac",
+                "title": "FTDI Buffer Fix on OS X"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "FTDI Buffer Fix on Linux",
+                "permalink": "/docs/10Troubleshooting/FTDI_Fix_Linux"
+              },
+              "next": {
+                "title": "FTDI Buffer Fix on Windows",
+                "permalink": "/docs/10Troubleshooting/FTDI_Fix_Windows"
+              }
+            },
+            {
+              "unversionedId": "10Troubleshooting/FTDI_Fix_Windows",
+              "id": "10Troubleshooting/FTDI_Fix_Windows",
+              "isDocsHomePage": false,
+              "title": "FTDI Buffer Fix on Windows",
+              "description": "Tested on:",
+              "source": "@site/../docs/10Troubleshooting/04-FTDI_Fix_Windows.md",
+              "sourceDirName": "10Troubleshooting",
+              "slug": "/10Troubleshooting/FTDI_Fix_Windows",
+              "permalink": "/docs/10Troubleshooting/FTDI_Fix_Windows",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/04-FTDI_Fix_Windows.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "FTDI_Fix_Windows",
+                "title": "FTDI Buffer Fix on Windows"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "FTDI Buffer Fix on OS X",
+                "permalink": "/docs/10Troubleshooting/FTDI_Fix_Mac"
+              },
+              "next": {
+                "title": "Example Projects",
+                "permalink": "/docs/07Examples/ExamplesLanding"
+              }
+            },
+            {
+              "unversionedId": "10Troubleshooting/GUI_Troubleshooting",
+              "id": "10Troubleshooting/GUI_Troubleshooting",
+              "isDocsHomePage": false,
+              "title": "GUI Troubleshooting",
+              "description": "The GUI Console Log",
+              "source": "@site/../docs/10Troubleshooting/02-GUI_Troubleshooting.md",
+              "sourceDirName": "10Troubleshooting",
+              "slug": "/10Troubleshooting/GUI_Troubleshooting",
+              "permalink": "/docs/10Troubleshooting/GUI_Troubleshooting",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/02-GUI_Troubleshooting.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "GUI_Troubleshooting",
+                "title": "GUI Troubleshooting"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Minimizing Noise",
+                "permalink": "/docs/10Troubleshooting/minimizingNoise"
+              },
+              "next": {
+                "title": "FTDI Buffer Fix on Linux",
+                "permalink": "/docs/10Troubleshooting/FTDI_Fix_Linux"
+              }
+            },
+            {
+              "unversionedId": "10Troubleshooting/minimizingNoise",
+              "id": "10Troubleshooting/minimizingNoise",
+              "isDocsHomePage": false,
+              "title": "Minimizing Noise",
+              "description": "If your current setup isn't getting you clean data, there are a number of possible reasons for this. We'll go through troubleshooting them here.",
+              "source": "@site/../docs/10Troubleshooting/01-MinimizingNoise.md",
+              "sourceDirName": "10Troubleshooting",
+              "slug": "/10Troubleshooting/minimizingNoise",
+              "permalink": "/docs/10Troubleshooting/minimizingNoise",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/01-MinimizingNoise.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "minimizingNoise",
+                "title": "Minimizing Noise"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Troubleshooting Landing",
+                "permalink": "/docs/10Troubleshooting/TroubleshootingLanding"
+              },
+              "next": {
+                "title": "GUI Troubleshooting",
+                "permalink": "/docs/10Troubleshooting/GUI_Troubleshooting"
+              }
+            },
+            {
+              "unversionedId": "10Troubleshooting/TroubleshootingLanding",
+              "id": "10Troubleshooting/TroubleshootingLanding",
+              "isDocsHomePage": false,
+              "title": "Troubleshooting Landing",
+              "description": "The guides below offer tips on common hardware and software issues and how to fix them.",
+              "source": "@site/../docs/10Troubleshooting/00-TroubleshootingLanding.md",
+              "sourceDirName": "10Troubleshooting",
+              "slug": "/10Troubleshooting/TroubleshootingLanding",
+              "permalink": "/docs/10Troubleshooting/TroubleshootingLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/00-TroubleshootingLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "TroubleshootingLanding",
+                "title": "Troubleshooting Landing"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "OpenBCI Hub",
+                "permalink": "/docs/09Deprecated/Hub"
+              },
+              "next": {
+                "title": "Minimizing Noise",
+                "permalink": "/docs/10Troubleshooting/minimizingNoise"
+              }
+            },
+            {
+              "unversionedId": "11ForDevelopers/FirmwareDevelopment",
+              "id": "11ForDevelopers/FirmwareDevelopment",
+              "isDocsHomePage": false,
+              "title": "Overview",
+              "description": "Welcome all Firmware Developers! In this document, you can find a list of firmware resources for current boards. This is a great starting point if you are interested in how a board works at the firmware level or an expert user interested in modifying the firmware.",
+              "source": "@site/../docs/11ForDevelopers/02-FirmwareDevelopment.md",
+              "sourceDirName": "11ForDevelopers",
+              "slug": "/11ForDevelopers/FirmwareDevelopment",
+              "permalink": "/docs/11ForDevelopers/FirmwareDevelopment",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/11ForDevelopers/02-FirmwareDevelopment.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "FirmwareDevelopment",
+                "title": "Firmware Development"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/11ForDevelopers/SoftwareDevelopment"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/11ForDevelopers/HardwareDevelopment"
+              }
+            },
+            {
+              "unversionedId": "11ForDevelopers/ForDevelopersLanding",
+              "id": "11ForDevelopers/ForDevelopersLanding",
+              "isDocsHomePage": false,
+              "title": "For Developers",
+              "description": "The information in this directory will help you start developing with OpenBCI technology.",
+              "source": "@site/../docs/11ForDevelopers/00-ForDevelopersLanding.md",
+              "sourceDirName": "11ForDevelopers",
+              "slug": "/11ForDevelopers/ForDevelopersLanding",
+              "permalink": "/docs/11ForDevelopers/ForDevelopersLanding",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/11ForDevelopers/00-ForDevelopersLanding.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "ForDevelopersLanding",
+                "title": "For Developers"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "VirtualBox Windows Guide",
+                "permalink": "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/11ForDevelopers/SoftwareDevelopment"
+              }
+            },
+            {
+              "unversionedId": "11ForDevelopers/HardwareDevelopment",
+              "id": "11ForDevelopers/HardwareDevelopment",
+              "isDocsHomePage": false,
+              "title": "Overview",
+              "description": "Welcome all Hardware Developers! Are you interested in how an OpenBCI board is made? Do you want to make one yourself or incorporate one into a project? This is the place for you! Here you will find resources, including full schematics, for current and past hardware.",
+              "source": "@site/../docs/11ForDevelopers/03-HardwareDevelopment.md",
+              "sourceDirName": "11ForDevelopers",
+              "slug": "/11ForDevelopers/HardwareDevelopment",
+              "permalink": "/docs/11ForDevelopers/HardwareDevelopment",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/11ForDevelopers/03-HardwareDevelopment.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "HardwareDevelopment",
+                "title": "Hardware Development"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/11ForDevelopers/FirmwareDevelopment"
+              },
+              "next": {
+                "title": "Deprecated Docs",
+                "permalink": "/docs/09Deprecated/DeprecatedLanding"
+              }
+            },
+            {
+              "unversionedId": "11ForDevelopers/SoftwareDevelopment",
+              "id": "11ForDevelopers/SoftwareDevelopment",
+              "isDocsHomePage": false,
+              "title": "Overview",
+              "description": "Welcome all Software Developers! In this document, we will go over the tools available to assist in integrating OpenBCI hardware with projects in multiple programming languages. Also, we will briefly look at how OpenBCI hardware is integrated into the OpenBCI GUI using Processing).",
+              "source": "@site/../docs/11ForDevelopers/01-SoftwareDevelopment.md",
+              "sourceDirName": "11ForDevelopers",
+              "slug": "/11ForDevelopers/SoftwareDevelopment",
+              "permalink": "/docs/11ForDevelopers/SoftwareDevelopment",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/11ForDevelopers/01-SoftwareDevelopment.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "SoftwareDevelopment",
+                "title": "Software Development"
+              },
+              "sidebar": "docs",
+              "previous": {
+                "title": "For Developers",
+                "permalink": "/docs/11ForDevelopers/ForDevelopersLanding"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/11ForDevelopers/FirmwareDevelopment"
+              }
+            },
+            {
+              "unversionedId": "Welcome",
+              "id": "Welcome",
+              "isDocsHomePage": false,
+              "title": "Welcome to the OpenBCI Community",
+              "description": "Welcome to the OpenBCI Learning Pages! Here you will find a wide range of guides and tutorials that are intended to teach you how to use your OpenBCI gear. If you run into issues or have additional questions, head to our Forum with daily active users. Check out the Community Page for project ideas!",
+              "source": "@site/../docs/00-Welcome.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs/",
+              "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/00-Welcome.md",
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "10/14/2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "id": "Welcome",
+                "slug": "/",
+                "title": "Welcome to the OpenBCI Community"
+              },
+              "sidebar": "docs",
+              "next": {
+                "title": "Getting Started",
+                "permalink": "/docs/01GettingStarted/GettingStartedLanding"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [
+        {
+          "id": "Blog Title",
+          "metadata": {
+            "permalink": "/blog/2016/03/11/blog-post",
+            "source": "@site/blog/2016-03-11-blog-post.md",
+            "title": "Blog Title",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.",
+            "date": "2016-03-11T00:00:00.000Z",
+            "formattedDate": "March 10, 2016",
+            "tags": [],
+            "readingTime": 2.31,
+            "truncated": false
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 1,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "Blog Title"
+          ]
+        }
+      ],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/citations",
+        "source": "@site/src/pages/citations.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/help",
+        "source": "@site/src/pages/help.js"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  },
+  "docusaurus-theme-search-algolia": {
+    "default": null
+  }
+}

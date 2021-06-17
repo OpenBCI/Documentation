@@ -1,0 +1,29 @@
+{
+  "unversionedId": "05ThirdParty/HEGduino Kit/HEGduino",
+  "id": "05ThirdParty/HEGduino Kit/HEGduino",
+  "isDocsHomePage": false,
+  "title": "HEGduino How-to",
+  "description": "The open-source, extensively documented HEGduino Kit is now available at the OpenBCI Shop.",
+  "source": "@site/../docs/05ThirdParty/05-HEGduino Kit/HEGduino_Guide.md",
+  "sourceDirName": "05ThirdParty/05-HEGduino Kit",
+  "slug": "/05ThirdParty/HEGduino Kit/HEGduino",
+  "permalink": "/docs/05ThirdParty/HEGduino Kit/HEGduino",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/05-HEGduino Kit/HEGduino_Guide.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "HEGduino",
+    "title": "HEGduino How-to"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "EmotiBit Guide",
+    "permalink": "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide"
+  },
+  "next": {
+    "title": "IDUN Dryode",
+    "permalink": "/docs/05ThirdParty/IDUN_Dryode/Dryode"
+  }
+}

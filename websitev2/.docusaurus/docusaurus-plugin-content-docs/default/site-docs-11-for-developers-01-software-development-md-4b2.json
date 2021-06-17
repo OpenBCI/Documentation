@@ -1,0 +1,30 @@
+{
+  "unversionedId": "11ForDevelopers/SoftwareDevelopment",
+  "id": "11ForDevelopers/SoftwareDevelopment",
+  "isDocsHomePage": false,
+  "title": "Overview",
+  "description": "Welcome all Software Developers! In this document, we will go over the tools available to assist in integrating OpenBCI hardware with projects in multiple programming languages. Also, we will briefly look at how OpenBCI hardware is integrated into the OpenBCI GUI using Processing).",
+  "source": "@site/../docs/11ForDevelopers/01-SoftwareDevelopment.md",
+  "sourceDirName": "11ForDevelopers",
+  "slug": "/11ForDevelopers/SoftwareDevelopment",
+  "permalink": "/docs/11ForDevelopers/SoftwareDevelopment",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/11ForDevelopers/01-SoftwareDevelopment.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "SoftwareDevelopment",
+    "title": "Software Development"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "For Developers",
+    "permalink": "/docs/11ForDevelopers/ForDevelopersLanding"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/11ForDevelopers/FirmwareDevelopment"
+  }
+}

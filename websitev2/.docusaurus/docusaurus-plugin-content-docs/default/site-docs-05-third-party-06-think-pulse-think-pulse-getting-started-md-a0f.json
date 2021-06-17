@@ -1,0 +1,29 @@
+{
+  "unversionedId": "05ThirdParty/ThinkPulse/ThinkPulse",
+  "id": "05ThirdParty/ThinkPulse/ThinkPulse",
+  "isDocsHomePage": false,
+  "title": "ThinkPulse Getting Started Guide",
+  "description": "Available exclusively worldwide only on the OpenBCI® store.",
+  "source": "@site/../docs/05ThirdParty/06-ThinkPulse/ThinkPulse_Getting_Started.md",
+  "sourceDirName": "05ThirdParty/06-ThinkPulse",
+  "slug": "/05ThirdParty/ThinkPulse/ThinkPulse",
+  "permalink": "/docs/05ThirdParty/ThinkPulse/ThinkPulse",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/06-ThinkPulse/ThinkPulse_Getting_Started.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "ThinkPulse",
+    "title": "ThinkPulse Getting Started Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Pulse Sensor Guide",
+    "permalink": "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
+  },
+  "next": {
+    "title": "OpenBCI WiFi",
+    "permalink": "/docs/05ThirdParty/WiFiShield/WiFiLanding"
+  }
+}

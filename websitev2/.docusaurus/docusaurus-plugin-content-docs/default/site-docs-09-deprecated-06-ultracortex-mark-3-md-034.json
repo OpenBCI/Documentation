@@ -1,0 +1,21 @@
+{
+  "unversionedId": "09Deprecated/UltracortexMark3Dep",
+  "id": "09Deprecated/UltracortexMark3Dep",
+  "isDocsHomePage": false,
+  "title": "Ultracortex Mark 3",
+  "description": "Development Period: July 2015 — September 2015",
+  "source": "@site/../docs/09Deprecated/06-UltracortexMark3.md",
+  "sourceDirName": "09Deprecated",
+  "slug": "/09Deprecated/UltracortexMark3Dep",
+  "permalink": "/docs/09Deprecated/UltracortexMark3Dep",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/06-UltracortexMark3.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "UltracortexMark3Dep",
+    "title": "Ultracortex Mark 3"
+  }
+}

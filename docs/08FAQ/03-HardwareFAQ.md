@@ -2,7 +2,6 @@
 id: HardFAQ
 title: Hardware & Software
 ---
-
 ## What do I need to get started?
 
 To get started, all you need is an [OpenBCI Board](http://shop.openbci.com/collections/frontpage/boards) (Ganglion or Cyton), some electrodes, and a computer! Note that you do not need an Ultracortex. In fact, you can use any standard EEG electrode cap with the OpenBCI Boards.
@@ -21,9 +20,9 @@ The boards sample rate is limited by the bluetooth bandwidth. In order to increa
 
 With the WiFi Shield connected:
 
-* The Cyton can stream data at 50Hz, 500Hz, 1000Hz, 2000Hz.
-* The Cyton + Daisy can to stream data at 250Hz, 500Hz, 1000Hz.
-* The Ganglion can stream data at 200Hz, 400Hz, 800Hz, 1600Hz.
+-   The Cyton can stream data at 50Hz, 500Hz, 1000Hz, 2000Hz.
+-   The Cyton + Daisy can to stream data at 250Hz, 500Hz, 1000Hz.
+-   The Ganglion can stream data at 200Hz, 400Hz, 800Hz, 1600Hz.
 
 ## How do I choose between 4, 8, or 16 channels for my research?
 

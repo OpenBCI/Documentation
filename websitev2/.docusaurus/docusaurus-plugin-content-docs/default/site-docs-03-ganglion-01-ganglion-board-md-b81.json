@@ -1,0 +1,30 @@
+{
+  "unversionedId": "03Ganglion/GanglionLanding",
+  "id": "03Ganglion/GanglionLanding",
+  "isDocsHomePage": false,
+  "title": "Ganglion Board",
+  "description": "Buy it!",
+  "source": "@site/../docs/03Ganglion/01-GanglionBoard.md",
+  "sourceDirName": "03Ganglion",
+  "slug": "/03Ganglion/GanglionLanding",
+  "permalink": "/docs/03Ganglion/GanglionLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/01-GanglionBoard.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "GanglionLanding",
+    "title": "Ganglion Board"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Using SD Card with OpenBCI",
+    "permalink": "/docs/02Cyton/CytonSDCard"
+  },
+  "next": {
+    "title": "Ganglion Specs",
+    "permalink": "/docs/03Ganglion/GanglionSpecs"
+  }
+}

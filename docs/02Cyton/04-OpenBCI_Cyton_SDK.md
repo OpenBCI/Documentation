@@ -2,7 +2,6 @@
 id: CytonSDK
 title: Cyton Board SDK
 ---
-
 The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Cyton and 8bit boards. Some of the commands are board specific, where noted. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, the 8bit board runs `v0`, while the Cyton runs `v1` and Boards shipped as of Fall 2016 run `v2.0.0`. `v3.0.0` will begin shipping with boards in August of 2017.
 
 ## Cyton Command Protocol Overview
@@ -11,114 +10,129 @@ Cyton boards have two powerful microcontrollers on board, and come pre-programme
 
 On startup, the OpenBCI 8bit board (`v0`) sends the following text over the radio:
 
-	OpenBCI V3 8bit Board
-	Setting ADS1299 Channel Values
-	ADS1299 Device ID: 0x3E
-	LIS3DH Device ID: 0x33
-	$$$
+```
+
+OpenBCI V3 8bit Board
+Setting ADS1299 Channel Values
+ADS1299 Device ID: 0x3E
+LIS3DH Device ID: 0x33
+$$$
+
+```
 
 the OpenBCI Cyton board with firmware `v1` sends the following text over the radio:
 
-	OpenBCI V3 16 channel
-	ADS1299 Device ID: 0x3E
-	LIS3DH Device ID: 0x33
-	$$$
+```
+
+OpenBCI V3 16 channel
+ADS1299 Device ID: 0x3E
+LIS3DH Device ID: 0x33
+$$$
+
+```
 
 the OpenBCI Cyton board with firmware `v2.0.0` sends the following text over the radio:
 
-	OpenBCI V3 8-16 channel
-	ADS1299 Device ID: 0x3E
-	LIS3DH Device ID: 0x33
-	Firmware: v2.0.0
-	$$$
+```
+
+OpenBCI V3 8-16 channel
+ADS1299 Device ID: 0x3E
+LIS3DH Device ID: 0x33
+Firmware: v2.0.0
+$$$
+
+```
 
 Device ID info is useful for general board health confirmation. The $$$ is clear indication to the controlling application that the message is complete and the Cyton board is ready to receive commands. As of `v2.0.0`, there is an additional printout to indicate the exact firmware version.
 
 Pay attention to timing when sending commands when using `v0` and `v1` firmware. There must be some delay before and after sending a command character from the PC (controlling program or user running a terminal). As of `v2.0.0`, this is no longer the case, send as fast as you can!
 
 ## Command Set
+
 ### Turn Channels OFF
+
 **1 2 3 4 5 6 7 8**  
 These ASCII characters turn the respective channels [1-8] off. The channel will read 0.00 when off during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
 
-### Turn Channels ON  
-**! @ # $ % ^ &  * **  
+### Turn Channels ON
+
+**! @ # $ % ^ &  \* **  
 These ASCII characters turn the respective channels [1-8] on. The channel will read ADC output values during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
 
-### Test Signal Control Commands  
+### Test Signal Control Commands
+
 **0 - = p [ ]**  
 Turn **all** available channels on, and connect them to internal test signal. These are useful for self test and calibration. For example, you can measure the internal noise by sending **0** which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
 
-* **0**  Connect to internal GND (VDD - VSS)  
-* **-**  Connect to test signal 1xAmplitude, slow pulse  
-* **=**  Connect to test signal 1xAmplitude, fast pulse  
-* **p**  Connect to DC signal  
-* **[**  Connect to test signal 2xAmplitude, slow pulse  
-* **]**  Connect to test signal 2xAmplitude, fast pulse  
+-   **0**  Connect to internal GND (VDD - VSS)  
+-   **-**  Connect to test signal 1xAmplitude, slow pulse  
+-   **=**  Connect to test signal 1xAmplitude, fast pulse  
+-   **p**  Connect to DC signal  
+-   **\[**  Connect to test signal 2xAmplitude, slow pulse  
+-   **]**  Connect to test signal 2xAmplitude, fast pulse  
 
-	**Note: Not all possible internal test connections are implemented here **
+    **Note: Not all possible internal test connections are implemented here **
 
 **returns** If not streaming, returns `Success: Configured internal test signal.$$$`, if streaming, there is no confirmation.
 
-### Channel Setting Commands   
+### Channel Setting Commands
+
 ** x (CHANNEL, POWER_DOWN, GAIN_SET, INPUT_TYPE_SET, BIAS_SET, SRB2_SET, SRB1_SET) X **  
 Channel Settings commands have six parameters for each ADS channel. To access Channel Settings, first send **x**. The OpenBCI board will then expect the next 7 bytes to be channel settings specific commands. The first byte is the channel number. (If you have the Daisy Module, you can select up to 16 channels to set). The following six ASCII characters are accepted as parameters to set. Lastly, sending **X** will latch the settings to the ADS channel.
 
 **CHANNEL**
 
-* **1 2 3 4 5 6 7 8**  for single board channel select
-* **Q W E R T Y U I**  for selecting channels on the Daisy Module
+-   **1 2 3 4 5 6 7 8**  for single board channel select
+-   **Q W E R T Y U I**  for selecting channels on the Daisy Module
 
 **POWER_DOWN**
 
-* 0 = ON (default)
-* 1 = OFF    
+-   0 = ON (default)
+-   1 = OFF    
 
 **GAIN_SET**
 
-* 0 = Gain 1
-* 1 = Gain 2
-* 2 = Gain 4
-* 3 = Gain 6
-* 4 = Gain 8
-* 5 = Gain 12
-* 6 = Gain 24	(default)
-
+-   0 = Gain 1
+-   1 = Gain 2
+-   2 = Gain 4
+-   3 = Gain 6
+-   4 = Gain 8
+-   5 = Gain 12
+-   6 = Gain 24	(default)
 
 **INPUT_TYPE_SET**  
 Select the ADC channel input source  
 
-
-* 0        ADSINPUT_NORMAL     	(default)  
-* 1        ADSINPUT_SHORTED          
-* 2        ADSINPUT_BIAS_MEAS  
-* 3        ADSINPUT_MVDD  
-* 4        ADSINPUT_TEMP  
-* 5        ADSINPUT_TESTSIG  
-* 6        ADSINPUT_BIAS_DRP  
-* 7        ADSINPUT_BIAS_DRN  
+-   0        ADSINPUT_NORMAL     	(default)  
+-   1        ADSINPUT_SHORTED          
+-   2        ADSINPUT_BIAS_MEAS  
+-   3        ADSINPUT_MVDD  
+-   4        ADSINPUT_TEMP  
+-   5        ADSINPUT_TESTSIG  
+-   6        ADSINPUT_BIAS_DRP  
+-   7        ADSINPUT_BIAS_DRN  
 
 **BIAS_SET**  
 Select to include the channel input in BIAS generation.
 
-* 0 = Remove form BIAS
-* 1 = Include in BIAS  (default)  
+-   0 = Remove form BIAS
+-   1 = Include in BIAS  (default)  
 
 **SRB2_SET**  
 Select to connect this channel's P input to the SRB2 pin. This closes a switch between P input and SRB2 for the given channel, and allows the P input also remain connected to the ADC.  
 
-* 0 = Disconnect this input from SRB2
-* 1 = Connect this input to SRB2  (default)  
+-   0 = Disconnect this input from SRB2
+-   1 = Connect this input to SRB2  (default)  
 
 **SRB1_SET**  
 Select to connect all channels' N inputs to SRB1. This effects all pins, and disconnects all N inputs from the ADC.  
 
-* 0 = Disconnect all N inputs from SRB1 (default)
-* 1 = Connect all N inputs to SRB1  
+-   0 = Disconnect all N inputs from SRB1 (default)
+-   1 = Connect all N inputs to SRB1  
 
 **EXAMPLE**
 
@@ -126,7 +140,7 @@ User sends **x  3  0  2  0  0  0  0  X**
 
 'x' enters Channel Settings mode. Channel 3 is set up to be powered up, with gain of 2, normal input, removed from BIAS generation, removed from SRB2, removed from SRB1. The final 'X' latches the settings to the ADS1299 channel settings register.
 
-For firmware `v0` and `v1` it is required that you allow a time delay (>10mS) when setting the channel and parameters. As of `v2.0.0`, you may stack multiple channel settings together such as:
+For firmware `v0` and `v1` it is required that you allow a time delay (&gt;10mS) when setting the channel and parameters. As of `v2.0.0`, you may stack multiple channel settings together such as:
 
 **EXAMPLE**
 
@@ -138,16 +152,16 @@ This will set the first three channels.
 
 On success:
 
-* If streaming, no confirmation of success. Note: WiFi Shields will always get a response, even if streaming.
-* If not streaming, returns `Success: Channel set for 3$$$`, where 3 is the channel that was requested to be set.
+-   If streaming, no confirmation of success. Note: WiFi Shields will always get a response, even if streaming.
+-   If not streaming, returns `Success: Channel set for 3$$$`, where 3 is the channel that was requested to be set.
 
 On failure:
 
-* If not streaming, NOTE: WiFi shield always sends the following responses without `$$$`
-  * Not enough characters received, `Failure: too few chars$$$` (**example** user sends x102000X)
-  * 9th character is not the upper case 'X', `Failure: 9th char not X$$$` (**example** user sends x1020000V)
-  * Too many characters or some other issue, `Failure: Err: too many chars$$$`
-* If not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
+-   If not streaming, NOTE: WiFi shield always sends the following responses without `$$$`
+    -   Not enough characters received, `Failure: too few chars$$$` (**example** user sends x102000X)
+    -   9th character is not the upper case 'X', `Failure: 9th char not X$$$` (**example** user sends x1020000V)
+    -   Too many characters or some other issue, `Failure: Err: too many chars$$$`
+-   If not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
 
 ### Default Channel Settings
 
@@ -159,14 +173,15 @@ On failure:
 
 **returns** When you query the default settings, expect to get 6 ASCII characters followed by **$$$**
 
-*Note: Users can change the default channel settings in the initialization function inside the OpenBCI library. Requires re-programming the board*
+_Note: Users can change the default channel settings in the initialization function inside the OpenBCI library. Requires re-programming the board_
 
-### LeadOff Impedance Commands  
+### LeadOff Impedance Commands
+
 **z (CHANNEL, PCHAN, NCHAN) Z**  
 This works similar to the Channel Settings commands. For firmware `v0` and `v1` care must be taken to delay between sending characters, as of `v2.0.0`, you may send as fast as possible in a byte stream. Impedance settings have two parameters for each ADS channel. Impedance is measurable by applying a small 31.5Hz AC signal to the given channel.
 
-* 0 = Test Signal Not Applied (default)
-* 1 = Test Signal Applied  
+-   0 = Test Signal Not Applied (default)
+-   1 = Test Signal Applied  
 
 **EXAMPLE**
 
@@ -178,35 +193,37 @@ User sends **z  4  1  0  Z**
 
 On success:
 
-* If streaming, no confirmation of success. Note: WiFi Shields will always get a response, even if streaming.
-* If not streaming, returns `Success: Lead off set for 4$$$`, where 4 is the channel that was requested to be set.
+-   If streaming, no confirmation of success. Note: WiFi Shields will always get a response, even if streaming.
+-   If not streaming, returns `Success: Lead off set for 4$$$`, where 4 is the channel that was requested to be set.
 
 On failure:
 
-* If not streaming, NOTE: WiFi shield always sends the following responses without `$$$`
-  * Not enough characters received, `Failure: too few chars$$$` (**example** user sends x102000X)
-  * 5th character is not the upper case 'X', `Failure: 5th char not Z$$$` (**example** user sends x1020000V)
-  * Too many characters or some other issue, `Failure: Err: too many chars$$$`
-* If not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
+-   If not streaming, NOTE: WiFi shield always sends the following responses without `$$$`
+    -   Not enough characters received, `Failure: too few chars$$$` (**example** user sends x102000X)
+    -   5th character is not the upper case 'X', `Failure: 5th char not Z$$$` (**example** user sends x1020000V)
+    -   Too many characters or some other issue, `Failure: Err: too many chars$$$`
+-   If not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
 
-### SD card Commands  
+### SD card Commands
+
 **A S F G H J K L**  
 Send to initiate SD card data logging for specified time  
 
-* A    =      5MIN  
-* S    =      15MIN  
-* F    =      30MIN  
-* G    =      1HR  
-* H    =      2HR  
-* J    =      4HR  
-* K    =      12HR  
-* L    =      24HR  
-* a	   =      about 14 seconds for testing
+-   A    =      5MIN  
+-   S    =      15MIN  
+-   F    =      30MIN  
+-   G    =      1HR  
+-   H    =      2HR  
+-   J    =      4HR  
+-   K    =      12HR  
+-   L    =      24HR  
+-   a	   =      about 14 seconds for testing
 
 **j**  
 Stop logging data and close SD file  
 
-### Stream Data Commands  
+### Stream Data Commands
+
 **b**  
 Start streaming data
 
@@ -217,7 +234,8 @@ Stop Streaming data
 
 **returns** none, there is no confirmation. NOTE: when command from WiFi shield, confirmation is `Stream stopped`.
 
-### Miscellaneous  
+### Miscellaneous
+
 **?**  
 Query register settings  
 
@@ -235,17 +253,19 @@ The 8bit board gets a reset signal from the Dongle any time an application opens
 	Firmware: v3.1.1
 	$$$
 
-
 ## 16 Channel Commands
+
 Currently, the Daisy Module is implemented only on the Cyton board. The Daisy Module adds 8 more input channels for a total of 16. These are the commands specific to controlling the ADS1299 on the Daisy Module.
 
 ### Turn Channels OFF
+
 **q w e r t y u i**  
 These ASCII characters turn the respective channels [9-16] off. The channel will read 0.00 during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
 
-### Turn Channels ON  
+### Turn Channels ON
+
 **Q W E R T Y U I**  
 These ASCII characters turn the respective channels [9-16] on. The channel will contain ADC values during streamData mode. These commands work in and out of streamData mode.
 
@@ -259,19 +279,19 @@ Use 8 channels only. If the Daisy Module is attached, it will be unattached, and
 
 **returns**
 
-* If daisy is not present, no confirmation is sent because the board is already in the 8 channel mode. NOTE: If command from WiFi Shield then `No daisy to remove` is returned.
-* If a daisy is present, returns `daisy removed$$$`.
+-   If daisy is not present, no confirmation is sent because the board is already in the 8 channel mode. NOTE: If command from WiFi Shield then `No daisy to remove` is returned.
+-   If a daisy is present, returns `daisy removed$$$`.
 
 **C**
 Use 16 channels.
 
 **returns**
 
-* If daisy already attached, returns `16$$$`.
-* If the daisy is not currently attached and is **not** able to be attached, then `no daisy to attach!8$$$` is returned.
-* If the daisy is not currently attached and is able to be attached, then `daisy attached16$$$` is returned.
+-   If daisy already attached, returns `16$$$`.
+-   If the daisy is not currently attached and is **not** able to be attached, then `no daisy to attach!8$$$` is returned.
+-   If the daisy is not currently attached and is able to be attached, then `daisy attached16$$$` is returned.
 
-*Note: On reset, the OpenBCI Cyton board will 'sniff' for the Daisy Module, and if it is present, it will default to 16 channel capability.*
+_Note: On reset, the OpenBCI Cyton board will 'sniff' for the Daisy Module, and if it is present, it will default to 16 channel capability._
 
 ## Firmware v2.0.0 New Commands
 
@@ -282,13 +302,13 @@ If the RFDuinos cannot speak to each other, you will see a `Failure: Communicati
 
 ### Time Stamping
 
-**<**  
+**&lt;**  
 
-Start time stamping and resynchronize command. When the Driver sends a **<**, the Host radio will respond with a **,**. Since the Host cannot send packets to the Device ad hoc, it may be helpful to know when the Host was actually able to send the command. If the Board is not streaming, then expect a response of `Time stamp ON$$$`. If the board is streaming, then you will get a response in the data stream when the Driver receives a data packet with a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](02Cyton/03-Cyton_Data_Format.md).
+Start time stamping and resynchronize command. When the Driver sends a **&lt;**, the Host radio will respond with a **,**. Since the Host cannot send packets to the Device ad hoc, it may be helpful to know when the Host was actually able to send the command. If the Board is not streaming, then expect a response of `Time stamp ON$$$`. If the board is streaming, then you will get a response in the data stream when the Driver receives a data packet with a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](02Cyton/03-Cyton_Data_Format.md).
 
 **returns** if not streaming, `Time stamp ON$$$`, if streaming then no confirmation
 
-**>**
+**&gt;**
 
 Stops time stamping. If the Board is not streaming, then expect a response of `Time stamp OFF$$$`; however if the board is streaming, then you will get a response in a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](02Cyton/03-Cyton_Data_Format.md).
 
@@ -396,6 +416,7 @@ User sends **0xF0** **0x07** to get status
 Supporting all v1.0.0 and v2.0.0, the v3.0.0 firmware extends the OpenBCI system to allow for a variable sample rate and analog or digital input readings!
 
 ### Sample Rate
+
 **~(COMMAND)**  
 This works similar to the Channel Settings commands, however, there is no latching character. Power cycling the OpenBCI board will cause the sample rate to reset back to default of 250Hz.
 
@@ -403,18 +424,18 @@ This works similar to the Channel Settings commands, however, there is no latchi
 
 **COMMAND**
 
-* 0 = 16000 Hz
-* 1 = 8000 Hz
-* 2 = 4000 Hz
-* 3 = 2000 Hz
-* 4 = 1000 Hz
-* 5 = 500 Hz
-* 6 = 250 Hz
-* ~ = Get current sample rate
+-   0 = 16000 Hz
+-   1 = 8000 Hz
+-   2 = 4000 Hz
+-   3 = 2000 Hz
+-   4 = 1000 Hz
+-   5 = 500 Hz
+-   6 = 250 Hz
+-   ~ = Get current sample rate
 
 **EXAMPLE**
 
-First, user sends **~~**
+First, user sends **\~~**
 
 **returns** `Sample rate is 250Hz$$$`
 
@@ -425,17 +446,18 @@ Then, user sends **~5**
 NOTE: if not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
 
 ### Board Mode
+
 **/(COMMAND)**  
 This works similar to the sample rate. Power cycling the OpenBCI board will cause the board mode to return to default mode with accelerometer in the aux bytes.
 
 **COMMAND**
 
-* 0 = Default mode - Sends accelerometer data in aux bytes
-* 1 = Debug mode - Sends serial output over the external serial port which is helpful for debugging.
-* 2 = Analog mode - Reads from analog pins A5(D11), A6(D12) and if no wifi shield is present, then A7(D13) as well.
-* 3 = Digital mode - Reads from analog pins D11, D12 and D17. If no wifi present then also D13 and D18.
-* 4 = Marker mode - Turns accel off and injects markers into the stream by sending _`X_ where `X` is any char to add to the first AUX byte.
-* / = Get current board mode
+-   0 = Default mode - Sends accelerometer data in aux bytes
+-   1 = Debug mode - Sends serial output over the external serial port which is helpful for debugging.
+-   2 = Analog mode - Reads from analog pins A5(D11), A6(D12) and if no wifi shield is present, then A7(D13) as well.
+-   3 = Digital mode - Reads from analog pins D11, D12 and D17. If no wifi present then also D13 and D18.
+-   4 = Marker mode - Turns accel off and injects markers into the stream by sending _\`X_ where `X` is any char to add to the first AUX byte.
+-   / = Get current board mode
 
 **EXAMPLE**
 
@@ -451,13 +473,13 @@ NOTE: if not all commands are not received within 1 second, `Timeout processing 
 
 ### Wifi Shield Commands
 
-**{**
+**{"{"}**
 
 Try to attach a Wifi Shield
 
 **returns** Success will send response `Success: Wifi attached$$$` on failure response will be `Failure: Wifi not attached$$$`. Failure happens when the wifi shield is not powered up or the wifi shield does not power correctly. Try power cycling the system if failure continues.
 
-**}**
+**{"}"}**
 
 Remove an attached wifi shield.
 
@@ -474,11 +496,13 @@ Get the status of the wifi shield, will either be connected or not connected.
 Perform a soft reset of the Wifi shield. Will do a power on reset of just the wifi shield.
 
 ### Get Version
+
 **V** To get firmware version
 
 **returns** `v3.1.1$$$`
 
 ## Unused ASCII Characters
+
 These are currently unused (and user available) characters in the OpenBCI Cyton platform:
 
-**9 ( ) _ o O f g h k l ' " n N M , . (space)**
+**9 ( ) \_ o O f g h k l ' " n N M , . (space)**

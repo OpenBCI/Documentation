@@ -2,7 +2,6 @@
 id: ShippingFAQ
 title: Shipping & Taxes
 ---
-
 ## Where do you ship to?
 
 **ALL** OpenBCI orders ship from the US. We ship worldwide!
@@ -15,7 +14,7 @@ Generally, shipping to US addresses takes less than one week. If using FedEx Int
 
 ## Sales Tax
 
-For customers in the United States, your purchase may be sales tax-free if made on behalf of a tax-exempt organization. Ask your purchasing department for the tax-exempt certificate BEFORE placing an order, and send to contact@openbci.com. We do not refund sales taxes after purchase.
+For customers in the United States, your purchase may be sales tax-free if made on behalf of a tax-exempt organization. Ask your purchasing department for the tax-exempt certificate BEFORE placing an order, and send to [contact@openbci.com.](mailto:contact@openbci.com.) We do not refund sales taxes after purchase.
 
 For other customers, the sales tax will be calculated automatically per the laws of the state you reside in.
 
@@ -32,4 +31,4 @@ If shipping to European countries, please expect the **total** import cost to be
 The import cost will be calculated by your customs office at the time of delivery and passed onto you.
 Due to the nature of international trade, OpenBCI has no control over these charges, and can give only a rough estimate from historical purchase data. Because of varied customs policies, we are unable to provide exact predictions. Please contact your local customs office if you need exact import cost information.
 
-*For international customers, if you are purchasing on behalf of an academic or tax-exempt organization, your purchase may be exempt from some import costs. Please verify with the purchasing department of your organization before placing the order.*
+_For international customers, if you are purchasing on behalf of an academic or tax-exempt organization, your purchase may be exempt from some import costs. Please verify with the purchasing department of your organization before placing the order._

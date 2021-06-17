@@ -2,7 +2,6 @@
 id: FTDI_Fix_Mac
 title: FTDI Buffer Fix on OS X
 ---
-
 ### Summary
 
 On some Macs, you may have noticed that the data coming from your board is very choppy.
@@ -13,12 +12,12 @@ This document details how to edit the config data of the **Info.plist** file of 
 
 This tutorial has been verified to work with the following macOS versions:
 
-- 10.9
-- 10.10
-- 10.11
-- 10.13
-- 10.14
-- 10.15
+-   10.9
+-   10.10
+-   10.11
+-   10.13
+-   10.14
+-   10.15
 
 ### Step 1: open Terminal
 
@@ -28,7 +27,7 @@ To open Terminal, go to:
 
 All of the lines of code you see below you will run from the Terminal command line. If you are unfamiliar with using Terminal, check out this [Introduction to the Terminal in macOS](https://www.youtube.com/watch?v=yIY3iPDVUBg) Youtube tutorial.
 
-***!!! WARNING !!!***
+**_!!! WARNING !!!_**
 
 Be very careful when using the **sudo rm** command. It is used to remove files from your system. Never EVER enter the following command by itself, without specifying a filepath. That will wipe your hard drive.
 
@@ -39,8 +38,10 @@ If you are new to Terminal, it is best to simply copy and paste the lines of cod
 Remove the FTDI [kernel extension](http://www.macbreaker.com/2012/01/what-are-kexts.html) (.kext) from your machine. You might not have it installed already. If you do not, skip this step.
 
 ```
+
 sudo rm /System/Library/Extensions/FTDIUSBSerialDriver.kext
 sudo rm -rf /Library/Extensions/FTDIUSBSerialDriver.kext
+
 ```
 
 After removing all existing FTDI drivers, reboot your computer.
@@ -64,13 +65,17 @@ Download and install the FTDI Driver 2.4.2 from the [FTDI VCP page](http://www.f
 Prior to making edits to the kext file, you must enable kext dev mode and disable signature verification. For OS X 10.10 or older, you just type:
 
 ```
+
 sudo nvram boot-args="kext-dev-mode=1"
+
 ```
 
 For 10.11 or newer, you need to reboot your computer and before booting, hold the Cmd-R key. This will get you into recovery mode. From Utilities, choose Terminal and type:
 
 ```
+
 csrutil disable
+
 ```
 
 You can then close the Terminal application and reboot your computer to normal mode. You can proceed with Step 6.
@@ -88,26 +93,35 @@ Plug in your dongle and ensure that the switch is set to GPIO6 (not RESET).
 ### Step 7: unload the FTDI kernel extension
 
 ```
+
 sudo kextunload /System/Library/Extensions/FTDIUSBSerialDriver.kext
+
 ```
 
 ### Step 8: make sure it's unloaded
 
 ```
+
 kextstat | grep FTDI
+
 ```
+
 If everthing is good, nothing should print after running this command.
 
 ### Step 9: open the Info.plist file:
 
 ```
+
 sudo emacs /System/Library/Extensions/FTDIUSBSerialDriver.kext/Contents/Info.plist
+
 ```
 
 or
 
 ```
+
 sudo vim /System/Library/Extensions/FTDIUSBSerialDriver.kext/Contents/Info.plist
+
 ```
 
 ### Step 10: edit the config data
@@ -119,6 +133,7 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
 **BEFORE**
 
 ```
+
 <key>FT X Series</key>
 <dict>
        <key>CFBundleIdentifier</key>                               
@@ -138,11 +153,13 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
        <key>idVendor</key>
        <integer>1027</integer>
 </dict>
+
 ```
 
 **AFTER**
 
 ```
+
 <key>FT X Series</key>
 <dict>
       	<key>CFBundleIdentifier</key>
@@ -169,7 +186,9 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
           <integer>64</integer>
         </dict>
 </dict>
+
 ```
+
 **Note:** We also rename the port name to OpenBCI because it's easier to spot if the board is connected or not.
 
 #### for macOS 10.13 and 10.14, using the driver 2.4.2
@@ -177,6 +196,7 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
 **BEFORE**
 
 ```
+
 <key>FT X Series</key>
 <dict>
   <key>CFBundleIdentifier</key>
@@ -196,11 +216,13 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
   <key>idVendor</key>
   <integer>1027</integer>
 </dict>
+
 ```
 
 **AFTER**
 
 ```
+
 <key>FT X Series</key>
 <dict>
   <key>CFBundleIdentifier</key>
@@ -227,6 +249,7 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
     <integer>24</integer>
   </dict>
 </dict>
+
 ```
 
 ### Step 11: save & close
@@ -243,38 +266,46 @@ To close emacs:
 followed by
 **[CTRL] + c**
 
----------------
+* * *
 
 In vim:
 
 Hit the **[esc]** key to go into command mode.
 Then type **:wq** to save and quit.
 
-
 ### Step 12: reload the kernel extension
+
 ```
+
 sudo kextload /System/Library/Extensions/FTDIUSBSerialDriver.kext
+
 ```
 
 ### Step 13: make sure it's loaded
+
 ```
+
 kextstat | grep FTDI
+
 ```
+
 You should get a response that looks something like this:
 
 ```
+
   145    0 0xffffff7f82dce000 0x8000     0x8000     com.FTDI.driver.FTDIUSBSerialDriver (2.2.18) <118 37 5 4 3 1>
+
 ```
 
 ### Step 14: enjoy smoother streaming
 
 Open the OpenBCI Processing GUI (or other software), connect to your device, and begin streaming the data.
 
-------------
+* * *
 
 ### Helpful Resources
 
-- [Marion's original fix (thank you)!](https://marion.ai/koac/)
-- [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm)
-- [What is a .kext file?](http://www.macbreaker.com/2012/01/what-are-kexts.html)
-- [FTDI Driver Installation Guide for macOS](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)
+-   [Marion's original fix (thank you)!](https://marion.ai/koac/)
+-   [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm)
+-   [What is a .kext file?](http://www.macbreaker.com/2012/01/what-are-kexts.html)
+-   [FTDI Driver Installation Guide for macOS](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)

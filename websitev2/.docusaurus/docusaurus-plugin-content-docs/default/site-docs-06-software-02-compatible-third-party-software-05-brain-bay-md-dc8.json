@@ -1,0 +1,30 @@
+{
+  "unversionedId": "06Software/CompatibleThirdPartySoftware/BrainBay",
+  "id": "06Software/CompatibleThirdPartySoftware/BrainBay",
+  "isDocsHomePage": false,
+  "title": "BrainBay",
+  "description": "From their OpenBCI tutorials page: BrainBay is an open-source visual programming language (VPL) for rapid prototyping of EEG digital signal processing steps (or data flows.)",
+  "source": "@site/../docs/06Software/02-CompatibleThirdPartySoftware/05-BrainBay.md",
+  "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+  "slug": "/06Software/CompatibleThirdPartySoftware/BrainBay",
+  "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BrainBay",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/06Software/02-CompatibleThirdPartySoftware/05-BrainBay.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "BrainBay",
+    "title": "BrainBay"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Lab Streaming Layer (LSL)",
+    "permalink": "/docs/06Software/CompatibleThirdPartySoftware/LSL"
+  },
+  "next": {
+    "title": "BioEra",
+    "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BioEra"
+  }
+}

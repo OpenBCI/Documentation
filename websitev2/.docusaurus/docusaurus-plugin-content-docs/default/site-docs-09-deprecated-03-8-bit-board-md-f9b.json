@@ -1,0 +1,29 @@
+{
+  "unversionedId": "09Deprecated/8bitBoardDep",
+  "id": "09Deprecated/8bitBoardDep",
+  "isDocsHomePage": false,
+  "title": "OpenBCI 8bit Board (no longer in production)",
+  "description": "8bit Board Specs:",
+  "source": "@site/../docs/09Deprecated/03-8bitBoard.md",
+  "sourceDirName": "09Deprecated",
+  "slug": "/09Deprecated/8bitBoardDep",
+  "permalink": "/docs/09Deprecated/8bitBoardDep",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/03-8bitBoard.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "8bitBoardDep",
+    "title": "OpenBCI 8bit Board (no longer in production)"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Spiderclaw V1 & V2 (deprecated)",
+    "permalink": "/docs/09Deprecated/SpiderclawDep"
+  },
+  "next": {
+    "title": "Ultracortex Mark 1",
+    "permalink": "/docs/09Deprecated/UltracortexMark1Dep"
+  }
+}

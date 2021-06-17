@@ -1,0 +1,30 @@
+{
+  "unversionedId": "10Troubleshooting/TroubleshootingLanding",
+  "id": "10Troubleshooting/TroubleshootingLanding",
+  "isDocsHomePage": false,
+  "title": "Troubleshooting Landing",
+  "description": "The guides below offer tips on common hardware and software issues and how to fix them.",
+  "source": "@site/../docs/10Troubleshooting/00-TroubleshootingLanding.md",
+  "sourceDirName": "10Troubleshooting",
+  "slug": "/10Troubleshooting/TroubleshootingLanding",
+  "permalink": "/docs/10Troubleshooting/TroubleshootingLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/00-TroubleshootingLanding.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "TroubleshootingLanding",
+    "title": "Troubleshooting Landing"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "OpenBCI Hub",
+    "permalink": "/docs/09Deprecated/Hub"
+  },
+  "next": {
+    "title": "Minimizing Noise",
+    "permalink": "/docs/10Troubleshooting/minimizingNoise"
+  }
+}

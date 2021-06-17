@@ -2,13 +2,11 @@
 id: GanglionProgram
 title: Ganglion Programming Tutorial
 ---
-
 **Please note, you do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.**
 
 This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device. If you want to compile the code in Arduino continue to the [Building From Source](#ganglion-programming-tutorial-building-from-source) portion of the guide.
 
 To program the Ganglion over the air, keep reading. To program using hardware, scroll all the way down to the [last section.](#ganglion-programming-tutorial-setting-up-to-program-ganglion-using-hardware)
-
 
 ## Download The Latest Firmware Build
 
@@ -20,24 +18,24 @@ You can read the release notes and more at the [on Github](https://github.com/Op
 
 The Simblee (website discontinued) radio module that is at the heart of the Ganglion board offers the ability to reprogram Over The Air `OTA`. The method for doing this in a nutshell is:  
 
-1. Create new Ganglion firmware, or modify existing code in Arduino IDE
-2. Generate a compiled HEX file in the Arduino IDE
-3. Compress it into a ZIP with some other important files
-4. Transfer the ZIP file to your phone or tablet
-5. Connect your phone or tablet to the Ganglion
-6. Upload new code Over The Air
+1.  Create new Ganglion firmware, or modify existing code in Arduino IDE
+2.  Generate a compiled HEX file in the Arduino IDE
+3.  Compress it into a ZIP with some other important files
+4.  Transfer the ZIP file to your phone or tablet
+5.  Connect your phone or tablet to the Ganglion
+6.  Upload new code Over The Air
 
 The following tutorials will get your computer and the Arduino IDE set up to create the correct ZIP file, and also show how to use your phone or tablet to upload new code to the Ganglion. This guide will also teach you how to upload code to your ganglion for the first time.
 
-***IMPORTANT: Ganglions shipped prior to February 27, 2017 will NOT program Over The Air for the first time! If you purchased your Ganglion prior to 2/27/17, Please follow the instructions below up till How to create an OTA File and read the instructions the bottom of this page to program your Ganglion for the first time.***
+**_IMPORTANT: Ganglions shipped prior to February 27, 2017 will NOT program Over The Air for the first time! If you purchased your Ganglion prior to 2/27/17, Please follow the instructions below up till How to create an OTA File and read the instructions the bottom of this page to program your Ganglion for the first time._**
 
 ### What You Need
 
-* Arduino IDE v1.8.0 Or Newer
-* Simblee Board Files
-* Ganglion Library Firmware
-* Wifi Master Library Firmware
-* Compiler Tools (for OTA)
+-   Arduino IDE v1.8.0 Or Newer
+-   Simblee Board Files
+-   Ganglion Library Firmware
+-   Wifi Master Library Firmware
+-   Compiler Tools (for OTA)
 
 ![Download Arduino Mac](assets/GanglionImages/ganglion_download-arduino-mac.png)
 
@@ -56,12 +54,12 @@ In order to program the Simblee to communicate and control the Ganglion, we need
 and you will find the file called `variant.h`. Open this file up in the editor of your choice, and change the pin defines as shown.  
 **NOTE** To access the application contents, right click on the application [or `control` + left click] and select `Show Package Contents`.
 
-| define  | DEFAULT  | Change To |
-|:----- |:------:| :-------:|
-| PIN_SPI_SS     | 6u | 26u |
-| PIN_SPI_MOSI   | 5u | 18u |
-| PIN_SPI_MISO   | 3u | 15u |
-| PIN_SPI_SCK    | 4u | 16u |   
+| define       | DEFAULT | Change To |
+| :----------- | :-----: | :-------: |
+| PIN_SPI_SS   |    6u   |    26u    |
+| PIN_SPI_MOSI |    5u   |    18u    |
+| PIN_SPI_MISO |    3u   |    15u    |
+| PIN_SPI_SCK  |    4u   |    16u    |
 
 Make sure to **save** and close the file.  
 **IMPORTANT NOTE:** If you don't do this, your Ganglion will not work after you reprogram it!
@@ -74,12 +72,12 @@ Open the _Library Manager_ and search for _OpenBCI_ and install the latest versi
 
 ### Manual Installation of Ganglion Firmware
 
- 1. Download the latest [OpenBCI_Ganglion_Library](http://www.arduinolibraries.info/libraries/open-bci_ganglion_library), it's the top most zip file.
- 2. Unzip the folder and change the name to `OpenBCI_Ganglion_Library`
- 3. Move `OpenBCI_Ganglion_Library` to:
+1.  Download the latest [OpenBCI_Ganglion_Library](http://www.arduinolibraries.info/libraries/open-bci_ganglion_library), it's the top most zip file.
+2.  Unzip the folder and change the name to `OpenBCI_Ganglion_Library`
+3.  Move `OpenBCI_Ganglion_Library` to:
 
-  On Mac: `/Documents/Arduino/libraries`  
-  On Windows: `C:\Users\username\Documents\Arduino\libraries`
+    On Mac: `/Documents/Arduino/libraries`  
+    On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 If you don't have a `libraries` folder there, go ahead and make one.  
 
@@ -87,12 +85,12 @@ If you're have trouble or want to learn more checkout the [Official Arduino Guid
 
 ### Manual Installation of WiFi Master Firmware
 
- 1. Download the latest [WiFi Master Library](http://www.arduinolibraries.info/libraries/open-bci_wifi_master), it's the top most zip file.
- 2. Unzip the folder and change the name to `OpenBCI_Wifi_Master`
- 3. Move `OpenBCI_Wifi_Master` to:
+1.  Download the latest [WiFi Master Library](http://www.arduinolibraries.info/libraries/open-bci_wifi_master), it's the top most zip file.
+2.  Unzip the folder and change the name to `OpenBCI_Wifi_Master`
+3.  Move `OpenBCI_Wifi_Master` to:
 
-  On Mac: `/Documents/Arduino/libraries`  
-  On Windows: `C:\Users\username\Documents\Arduino\libraries`
+    On Mac: `/Documents/Arduino/libraries`  
+    On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
@@ -100,19 +98,23 @@ If you're have trouble or want to learn more checkout the [Official Arduino Guid
 
 Developers looking to contribute or write custom firmware can clone the firmware repositories directly to your `libraries` folder
 
-	On Mac: `/Documents/Arduino/libraries`  
-	On Windows: `C:\Users\username\Documents\Arduino\libraries`
+```
 
-* [OpenBCI_Ganglion_Library](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
-* [OpenBCI_Wifi_Master_Library](https://github.com/OpenBCI/OpenBCI_Wifi_Master_Library)
+On Mac: `/Documents/Arduino/libraries`  
+On Windows: `C:\Users\username\Documents\Arduino\libraries`
+
+```
+
+-   [OpenBCI_Ganglion_Library](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
+-   [OpenBCI_Wifi_Master_Library](https://github.com/OpenBCI/OpenBCI_Wifi_Master_Library)
 
 ### Select 'Simblee' as Board
 
-If you followed the process in the previous link, and you will be able to select the _Simblee_ board from the Tools >> Board >> dropdown menu!
+If you followed the process in the previous link, and you will be able to select the _Simblee_ board from the Tools &gt;&gt; Board &gt;&gt; dropdown menu!
 
 ### Select DefaultGanglion.ino from Examples
 
-* In the Arduino IDE go to `File-->Examples-->OpenBCI_Ganglion_Library-->DefaultGanglion` which will launch the Ganglion firmware. **NOTE You must upload ONLY the `DefaultGanglion` Sketch!** If you can't see `OpenBCI_Ganglion_Library` then verify `Simblee` is selected as board type.
+-   In the Arduino IDE go to `FileExamples--&gt;OpenBCI_Ganglion_Library--&gt;DefaultGanglion--&gt;` which will launch the Ganglion firmware. **NOTE You must upload ONLY the `DefaultGanglion` Sketch!** If you can't see `OpenBCI_Ganglion_Library` then verify `Simblee` is selected as board type.
 
 ## How to Create OTA File
 
@@ -128,25 +130,26 @@ We're doing this in case you ever want to revert to the original.
 
 Next, download the necessary files [here](https://github.com/biomurph/Ganglion_OTA_Tools). They are:  
 
-* mkdfuzip
-* nrfutil_macosx
-* platform.txt
+-   mkdfuzip
+-   nrfutil_macosx
+-   platform.txt
 
 Move the files called `mkdfuzip`, `nrfutil_macosx`, and `platform.txt` into your `Simblee/1.1.0` folder. **Restart or launch Arduino**.
 
 ![Create OTA File](../assets/GanglionImages/ganglion_export-compiled-binary.png)
-<br>
+<br />
 ![OTA File Created](assets/GanglionImages/ganglion_ota-zip-created.png)
-<br><br>
+<br /><br />
 ![Change Zip Name](assets/GanglionImages/ganglion_ota-zip-nameChange.png)
-<br>
+<br />
 Now you're ready to create custom Ganglion firmware that is packaged correctly for OTA programming! This walk through will use example code as an example.  
 **IMPORTANT NOTE:** Whenever you want to create or modify Ganglion firmware, You must **xAlways** put the line  
 `#include <OpenBCI_Ganglion_Library.h>`  
 at the top of your code!  
-To create the OTA files, simply select `Export compiled Binary` from the `Sketch` menu. The Arduino IDE will take a few moments, and the tools you just installed will create the `.zip` file you need for OTA ***right in the sketch folder*** right beside your sketch! Cool! Go ahead and change the name of the file to remove the `.ino.Simblee` and you are good to go.
+To create the OTA files, simply select `Export compiled Binary` from the `Sketch` menu. The Arduino IDE will take a few moments, and the tools you just installed will create the `.zip` file you need for OTA **_right in the sketch folder_** right beside your sketch! Cool! Go ahead and change the name of the file to remove the `.ino.Simblee` and you are good to go.
 
 ## Setting Up for OTA Programming On A Windows
+
 ### Coming Sooooon!
 
 ## Setup Mobile Device For OTA Programming
@@ -155,9 +158,9 @@ The Simblee is designed around a Nordic Semiconductor [nRF51822](http://www.nord
 
 ### iPhone Setup: What You Need
 
-* iPhone
-* nRF Toolbox App
-* Lightblue Explorer App
+-   iPhone
+-   nRF Toolbox App
+-   Lightblue Explorer App
 
 ![nRF Toolbox appStore](assets/GanglionImages/ganglion_iphone-get-toolbox.png)
 ![Lightblue Explorer AppStore](assets/GanglionImages/ganglion_iphone-get-lightblue.png)
@@ -177,20 +180,20 @@ Turn on your Ganglion, and turn on your phone's bluetooth Then open the Lightblu
 
 In the Device Information, you will find the following:
 
-* Manufacturer Name String
-* Model Number String
-* Hardware Revision String
-* Firmware Revision String
-* Software Revision String
+-   Manufacturer Name String
+-   Model Number String
+-   Hardware Revision String
+-   Firmware Revision String
+-   Software Revision String
 
 You should see `openbci.com` as the Manufacturer, `Gagnlion` as the Model Number, and `1.1.1` as the **Software Revision String**. The Hardware and Firmware versions are generated by the Simblee itself.  
-**IMPORTANT NOTE: If the Software Revision String is earlier than 1.1.1 you *cannot do OTA* until you follow the Hardware Upload Tutorial at the bottom of this page.**  
+**IMPORTANT NOTE: If the Software Revision String is earlier than 1.1.1 you _cannot do OTA_ until you follow the Hardware Upload Tutorial at the bottom of this page.**  
 
 ### Android Setup: What You Need
 
-* Android Device
-* nRF Toolbox App
-* nRF Connect App
+-   Android Device
+-   nRF Toolbox App
+-   nRF Connect App
 
 ![nRF Toolbox PlayStore](assets/GanglionImages/ganglion_android-get-toolbox.png)
 ![nRF Connect PlayStore](assets/GanglionImages/ganglion_android-get-connect.png)
@@ -211,15 +214,14 @@ Turn on your Ganglion, and turn on your device's bluetooth then open the nRF Con
 Tap the `Device Information` service, and it will open up to show you the following information.  
 **NOTE:** You may need to tap the screen to read this data.
 
-* Manufacturer Name String
-* Model Number String
-* Hardware Revision String
-* Firmware Revision String
-* Software Revision String
+-   Manufacturer Name String
+-   Model Number String
+-   Hardware Revision String
+-   Firmware Revision String
+-   Software Revision String
 
 You should see `openbci.com` as the Manufacturer, `Ganglion` as the Model Number, and `1.1.1` as the **Software Revision String**. The Hardware and Firmware versions are generated by the Simblee itself.  
-**IMPORTANT NOTE: If the Software Revision String is earlier than 1.1.1 you *cannot do OTA* until you follow the Hardware Upload Tutorial at the bottom of this page.**  
-
+**IMPORTANT NOTE: If the Software Revision String is earlier than 1.1.1 you _cannot do OTA_ until you follow the Hardware Upload Tutorial at the bottom of this page.**  
 
 ## Using Your Mobile Device To Do OTA Programming
 
@@ -236,22 +238,20 @@ Now we need to get the `.zip` file from your Arduino Sketch folder to your iPhon
 
 If you ever want to re-upload a program that you already have on your phone, select the `DFU` tool after launching the nRF Toolbox app. Tap the `Select File` button, and on the next screen at the bottom you will see an option for `User Files`. Select that, and then `Inbox` on the next screen to choose from all of your nRF Imported files.
 
-
 ## Setting up to Program Ganglion Using Hardware
 
 Older Ganglions (pre-2017) could only be programmed using hardware first, then over the air. Newer Ganglions can be programmed OTA or using hardware.
 
 ### What You Need
 
-* FTDI Breakout or OpenBCI Cyton Dongle
-* 0.1uF Capacitor
-* Jumper Wires
-* Arduino IDE v
+-   FTDI Breakout or OpenBCI Cyton Dongle
+-   0.1uF Capacitor
+-   Jumper Wires
+-   Arduino IDE v
 
 ![FTDI Breakout](assets/ThirdPartyImages/FTDI_Friend.jpg)
 ![Capacitor](assets/GanglionImages/caps.jpg)
 ![Ganglion Pins Connection](assets/GanglionImages/ganglion_ftdi-connection.jpeg)
-
 
 For this tutorial, I will use the [Adafruit FTDI Friend](https://www.adafruit.com/products/284). You can use any FTDI breakout, as long as it uses **only 3V for logic levels**. If you go to Adafruit to purchase one, you can also pick up some [jumper wires](https://www.adafruit.com/products/758), and [0.1uF Capacitors](https://www.adafruit.com/products/753) as well.  
 **IMPORTANT NOTE: THE GANGLION IS A 3V DEVICE! YOU MUST NEVER CONNECT ANY HIGHER VOLTAGE SOURCE TO ANY OF THE PINS!**  
@@ -271,13 +271,13 @@ Now is a good time to plug your Dongle in and power up the Ganglion.
 
 ![serial_port](assets/GanglionImages/PortSelect.png)
 
-* Select the correct serial port from the `Tools > Port` menu for your OpenBCI Dongle or FTDI friend.
+-   Select the correct serial port from the `Tools > Port` menu for your OpenBCI Dongle or FTDI friend.
 
-	* On Macs, this will be named **/dev/tty.usbserial-DN00nnnn** where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
+    -   On Macs, this will be named **/dev/tty.usbserial-DN00nnnn** where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
 
-	* On Windows, the serial port will be listed as a numbered COM port.
+    -   On Windows, the serial port will be listed as a numbered COM port.
 
-	* On Linux, it will be different.
+    -   On Linux, it will be different.
 
 ### Verify Wire Connections and Press Upload
 

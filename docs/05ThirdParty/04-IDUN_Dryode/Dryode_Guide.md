@@ -1,8 +1,7 @@
 ---
 id: Dryode
-title: "IDUN Dryode™"
+title: "IDUN Dryode"
 ---
-
 ### Overview
 
 We are very excited to work with IDUN Technologies to offer this affordable, high-quality biosensing kit to our community!

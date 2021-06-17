@@ -24,8 +24,8 @@ At the moment we do not offer guided research or consulting opportunities.
 
 ## How do I become an approved OpenBCI Affiliate or Reseller?
 
-Please email us at contact@openbci.com asking for our affiliate program!
+Please email us at [contact@openbci.com](mailto:contact@openbci.com) asking for our affiliate program!
 
 ## How can I contact OpenBCI if I have more questions?
 
-You can email us at contact@openbci.com
+You can email us at [contact@openbci.com](mailto:contact@openbci.com)

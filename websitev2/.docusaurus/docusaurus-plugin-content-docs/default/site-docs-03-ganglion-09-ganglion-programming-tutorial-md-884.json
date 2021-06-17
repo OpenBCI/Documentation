@@ -1,0 +1,30 @@
+{
+  "unversionedId": "03Ganglion/GanglionProgram",
+  "id": "03Ganglion/GanglionProgram",
+  "isDocsHomePage": false,
+  "title": "Ganglion Programming Tutorial",
+  "description": "Please note, you do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.",
+  "source": "@site/../docs/03Ganglion/09-Ganglion_Programming_Tutorial.md",
+  "sourceDirName": "03Ganglion",
+  "slug": "/03Ganglion/GanglionProgram",
+  "permalink": "/docs/03Ganglion/GanglionProgram",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/03Ganglion/09-Ganglion_Programming_Tutorial.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "id": "GanglionProgram",
+    "title": "Ganglion Programming Tutorial"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ganglion SDK",
+    "permalink": "/docs/03Ganglion/GanglionSDK"
+  },
+  "next": {
+    "title": "Add Ons",
+    "permalink": "/docs/04AddOns/AddOnLanding"
+  }
+}

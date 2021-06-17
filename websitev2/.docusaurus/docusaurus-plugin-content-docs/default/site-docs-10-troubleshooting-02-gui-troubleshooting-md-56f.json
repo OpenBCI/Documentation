@@ -1,0 +1,30 @@
+{
+  "unversionedId": "10Troubleshooting/GUI_Troubleshooting",
+  "id": "10Troubleshooting/GUI_Troubleshooting",
+  "isDocsHomePage": false,
+  "title": "GUI Troubleshooting",
+  "description": "The GUI Console Log",
+  "source": "@site/../docs/10Troubleshooting/02-GUI_Troubleshooting.md",
+  "sourceDirName": "10Troubleshooting",
+  "slug": "/10Troubleshooting/GUI_Troubleshooting",
+  "permalink": "/docs/10Troubleshooting/GUI_Troubleshooting",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/10Troubleshooting/02-GUI_Troubleshooting.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "GUI_Troubleshooting",
+    "title": "GUI Troubleshooting"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Minimizing Noise",
+    "permalink": "/docs/10Troubleshooting/minimizingNoise"
+  },
+  "next": {
+    "title": "FTDI Buffer Fix on Linux",
+    "permalink": "/docs/10Troubleshooting/FTDI_Fix_Linux"
+  }
+}

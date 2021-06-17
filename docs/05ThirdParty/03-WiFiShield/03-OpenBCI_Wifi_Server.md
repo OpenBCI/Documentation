@@ -2,7 +2,6 @@
 id: WiFiAPI
 title: OpenBCI WiFi Shield API
 ---
-
 The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.
 
 ## Overview
@@ -19,17 +18,17 @@ Be sure that your WiFi Shield is on your local network.
 
 The steps for connecting to the Wifi Shield and streaming over TCP:
 
-1. Get IP Address of the Wifi Shield
-2. Open a TCP Socket on Host Computer
-3. Send `POST` `/tcp` http request with open socket IP/Port number, can include options (i.e. output format of JSON or RAW output, use delimiters between packets, adjust latency)
-4. Send `GET` `/stream/start` or `GET` `/stream/stop`
+1.  Get IP Address of the Wifi Shield
+2.  Open a TCP Socket on Host Computer
+3.  Send `POST` `/tcp` http request with open socket IP/Port number, can include options (i.e. output format of JSON or RAW output, use delimiters between packets, adjust latency)
+4.  Send `GET` `/stream/start` or `GET` `/stream/stop`
 
 The steps for connecting to the Wifi Shield and streaming over MQTT:
 
-1. Find IP Address of Wifi Shield
-2. Set up MQTT broker
-4. Send `POST` `/mqtt` http request with broker address with optional username and password
-4. Send `GET` `/stream/start` or `GET` `/stream/stop`
+1.  Find IP Address of Wifi Shield
+2.  Set up MQTT broker
+3.  Send `POST` `/mqtt` http request with broker address with optional username and password
+4.  Send `GET` `/stream/start` or `GET` `/stream/stop`
 
 ## Get IP Address of Wifi Shield
 
@@ -56,7 +55,9 @@ In `raw` output mode the data format follows the OpenBCI [33byte Binary Data For
 In `json` output mode, the WiFi Shield will convert raw data into nano volts. As of `v3.0.0` firmware for Cyton and `v2.0.0` firmware for Ganglion, the gain for each channel will be sent to the WiFi Shield once at the first connection between devices, and once each time the Ganglion or Cyton receives a start of streaming command. The WiFi Shield will connect to an NTP server to get the time once, and the WiFi Shield will then send the data in JSON.
 
 The JSON Adheres to the popular LSL stream format by default
+
 ```
+
 {
   "chunk": [
     {"data": [<float>, ..., <float>],  "timestamp": <float> },
@@ -64,6 +65,7 @@ The JSON Adheres to the popular LSL stream format by default
     {"data": [<float>, ..., <float>],  "timestamp": <float> }
   ]
 }
+
 ```
 
 #### Examples
@@ -71,6 +73,7 @@ The JSON Adheres to the popular LSL stream format by default
 Buffer of 5 samples. Each sample has 4 channels:
 
 ```
+
 [
   { "data":[ 7056745022195285, -475495395375, 475495395375, -495395375], "timestamp": 1497479774194733},
   { "data":[ 7056745022195285, -475495395375, 475495395375, -495395375], "timestamp": 1497479774195230},
@@ -78,6 +81,7 @@ Buffer of 5 samples. Each sample has 4 channels:
   { "data":[ 7056745022195285, -475495395375, 475495395375, -495395375], "timestamp": 1497479774196209},
   { "data":[ 7056745022195285, -475495395375, 475495395375, -495395375], "timestamp": 1497479774196715}
 ]
+
 ```
 
 ## OpenBCI WiFi Shield HTTP Rest Server
@@ -105,9 +109,11 @@ The time in micro seconds (us) between packet sends. The higher the OpenBCI samp
 Data can be sent from the Wifi shield in two different formats: `raw` and `JSON`.
 
 ### `raw` Byte Stream Format
+
 The first byte to send is the control byte. For streaming data, that goes on the TCP socket, send `0xCX` (where `X` is `0-F` in hex) as the control byte. In the `OpenBCI_32bit_Library` code base:
 
-~~~
+```
+
 /*  
  * @description Writes channel data and axisData array to serial port in
  *  the correct stream packet format.
@@ -127,7 +133,8 @@ void OpenBCI_32bit_Library::sendChannelDataWifi(void)  {
     sampleCounter++;
 
 }
-~~~  
+
+```
 
 This code writes 32 bytes of data in the correct format and therefore as soon as it arrives at the Wifi shield. The Wifi shield will convert the 32 byte packet to the standard 33 byte [binary format](02Cyton/03-Cyton_Data_Format.md#binary-format) by moving the control byte `0xCn`, where `n` is `0-F` (hex), to the stop position and add add `0xA0` to the start position. This allows for a seamless integration with the tried and tested parsing systems already built for the Cyton.
 **Important** if you want to only send `20` bytes of data per packet, you still must send this `32` bytes with the proper start and stop bytes.
@@ -135,7 +142,9 @@ This code writes 32 bytes of data in the correct format and therefore as soon as
 ### JSON format
 
 Suggested options for `POST` /tcp or `POST` /mqtt
+
 ```
+
 {
   "port": ..., // Enter your local server port
   "ip": ..., // Enter your local ip address of server
@@ -146,3 +155,6 @@ Suggested options for `POST` /tcp or `POST` /mqtt
 }
 
 Now when you start streaming data, you can simply look for `\r\n` in the incoming stream of data and each time you find it, you know you just got then end of packet and can parse everything before that `\r\n` as JSON.
+
+
+```

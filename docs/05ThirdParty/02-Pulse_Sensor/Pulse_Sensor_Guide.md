@@ -2,10 +2,7 @@
 id: Pulse_Sensor_Landing
 title: Pulse Sensor Guide
 ---
-
 The Pulse Sensor can be connected to the [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel), [Ganglion](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board), or any Arduino board to easily obtain your heart rate using [photoplethysmogram (PPG)](https://en.wikipedia.org/wiki/Photoplethysmogram).
-
-
 
 The basic principles are the same no matter what board you're connecting the Pulse Sensor to.
 The Pulse Sensor has three leads, seen below.
@@ -22,7 +19,6 @@ The pulse sensor takes power from the board via the red wire.
 
 The OpenBCI GUI app has a built-in pulse sensor widget. You can download the latest GUI [here](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
-
 ## Cyton Pulse Sensor
 
 Set up your Cyton according to its [Getting Started Guide](../../01GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md).
@@ -36,11 +32,11 @@ This D11 is read as analog pin A5, and sent in the first Aux data slot. The puls
 
 The connections are circled above.
 
-| Pulse Sensor Wire Color | Cyton Board Header | Function |
-|---|---|---|
-| red | DVDD | power |
-| black | GND | ground |
-| purple | D11 | Analog input (signal) |
+| Pulse Sensor Wire Color | Cyton Board Header | Function              |
+| ----------------------- | ------------------ | --------------------- |
+| red                     | DVDD               | power                 |
+| black                   | GND                | ground                |
+| purple                  | D11                | Analog input (signal) |
 
 Red pulse sensor cable goes to DVDD header on the Cyton, black to GND (right next to DVDD), and purple to D11.
 
@@ -48,7 +44,6 @@ After you have set up your hardware and software using the above steps,
 Please scroll through the [general guide](https://www.generationrobots.com/media/DetecteurDePoulsAmplifie/PulseSensorAmpedGettingStartedGuide.pdf) to learn how to secure the pulse sensor to your finger.
 
 When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog input A5, A6, and A7. Since you connected the purple wire of the pulse sensor to the D11 header, the data will show up in the A5 channel of the Analog Read Widget.
-
 
 ## Ganglion Pulse Sensor
 
@@ -59,11 +54,11 @@ You need the GUI, pulse sensor kit, Ganglion, Ganglion dongle, and battery pack.
 
 The connections are circled above.
 
-| Pulse Sensor Wire Color | Ganglion Board Header | Function |
-|---|---|---|
-| red | DVDD | power |
-| black | GNDA | ground |
-| purple | pin 1,2,3, or 4 | input (signal) |
+| Pulse Sensor Wire Color | Ganglion Board Header | Function       |
+| ----------------------- | --------------------- | -------------- |
+| red                     | DVDD                  | power          |
+| black                   | GNDA                  | ground         |
+| purple                  | pin 1,2,3, or 4       | input (signal) |
 
 Red pulse sensor cable goes to DVDD on the Ganglion, black to GNDA (right next to DVDD), and purple to any single pin 1,2,3, or 4. The single-channel data will show up in the GUI's Time Series Widget.
 
@@ -71,9 +66,8 @@ Any unused / unconnected channels should be turned OFF in the GUI. Press the col
 
 After you have set up your hardware and software using the above steps,
 Please scroll through the [general guide](https://www.generationrobots.com/media/DetecteurDePoulsAmplifie/PulseSensorAmpedGettingStartedGuide.pdf) to learn how to secure the pulse sensor to your finger.
-<!--- When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog inputs A3, A4, and A6. Since you connected the purple wire of the pulse sensor to the A3 header, the data will show up in the A3 channel of the Analog Read Widget.--->
 
-
+- When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog inputs A3, A4, and A6. Since you connected the purple wire of the pulse sensor to the A3 header, the data will show up in the A3 channel of the Analog Read Widget.-
 
 ## Troubleshooting
 

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "01GettingStarted/Biosensing-Setups/ECGSetup",
+  "id": "01GettingStarted/Biosensing-Setups/ECGSetup",
+  "isDocsHomePage": false,
+  "title": "Setting up for ECG",
+  "description": "This document will show you how to read ECG data (electrical signals from  the heart) using OpenBCI hardware and GUI.",
+  "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md",
+  "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+  "slug": "/01GettingStarted/Biosensing-Setups/ECGSetup",
+  "permalink": "/docs/01GettingStarted/Biosensing-Setups/ECGSetup",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "ECGSetup",
+    "title": "Setting up for ECG"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Setting up for EEG",
+    "permalink": "/docs/01GettingStarted/Biosensing-Setups/EEGSetup"
+  },
+  "next": {
+    "title": "Setting up for EMG",
+    "permalink": "/docs/01GettingStarted/Biosensing-Setups/EMGSetup"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "07Examples/CommunityPageProjects",
+  "id": "07Examples/CommunityPageProjects",
+  "isDocsHomePage": false,
+  "title": "Community Page Projects",
+  "description": "Head over to the Community Page for project tutorials contributed by OpenBCI Community members! Use the \"tutorials\" tag to filter.",
+  "source": "@site/../docs/07Examples/16-Community_Page_Projects.md",
+  "sourceDirName": "07Examples",
+  "slug": "/07Examples/CommunityPageProjects",
+  "permalink": "/docs/07Examples/CommunityPageProjects",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/16-Community_Page_Projects.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 16,
+  "frontMatter": {
+    "id": "CommunityPageProjects",
+    "title": "Community Page Projects"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "OpenBCI_Experiment",
+    "permalink": "/docs/07Examples/VideoExperiment"
+  },
+  "next": {
+    "title": "EMG Scrolling",
+    "permalink": "/docs/07Examples/EMGProjects/EMGscrolling"
+  }
+}

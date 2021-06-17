@@ -1,0 +1,30 @@
+{
+  "unversionedId": "01GettingStarted/Biosensing-Setups/ExGSetup",
+  "id": "01GettingStarted/Biosensing-Setups/ExGSetup",
+  "isDocsHomePage": false,
+  "title": "Setting up for EEG, EMG, and ECG at the same time",
+  "description": "OpenBCI Cyton+Daisy board offers a wide range of flexibility with more signal channels.",
+  "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/04-ExG-Setup.md",
+  "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+  "slug": "/01GettingStarted/Biosensing-Setups/ExGSetup",
+  "permalink": "/docs/01GettingStarted/Biosensing-Setups/ExGSetup",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/04-ExG-Setup.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "ExGSetup",
+    "title": "Setting up for EEG, EMG, and ECG at the same time"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Setting up for EMG",
+    "permalink": "/docs/01GettingStarted/Biosensing-Setups/EMGSetup"
+  },
+  "next": {
+    "title": "Welcome to the OpenBCI Community",
+    "permalink": "/docs/01GettingStarted/Community/Community"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "01GettingStarted/Boards/WiFiGS",
+  "id": "01GettingStarted/Boards/WiFiGS",
+  "isDocsHomePage": false,
+  "title": "WiFi Shield Getting Started Guide",
+  "description": "Overview",
+  "source": "@site/../docs/01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md",
+  "sourceDirName": "01GettingStarted/01-Boards",
+  "slug": "/01GettingStarted/Boards/WiFiGS",
+  "permalink": "/docs/01GettingStarted/Boards/WiFiGS",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "WiFiGS",
+    "title": "WiFi Shield Getting Started Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ganglion Getting Started Guide",
+    "permalink": "/docs/01GettingStarted/Boards/GanglionGS"
+  },
+  "next": {
+    "title": "Setting up for EEG",
+    "permalink": "/docs/01GettingStarted/Biosensing-Setups/EEGSetup"
+  }
+}

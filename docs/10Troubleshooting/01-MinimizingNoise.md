@@ -2,7 +2,6 @@
 id: minimizingNoise
 title: Minimizing Noise
 ---
-
 If your current setup isn't getting you clean data, there are a number of possible reasons for this. We'll go through troubleshooting them here.
 
 ![Notch Filter](assets/GettingStartedImages/notch_bar.png)

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "11ForDevelopers/ForDevelopersLanding",
+  "id": "11ForDevelopers/ForDevelopersLanding",
+  "isDocsHomePage": false,
+  "title": "For Developers",
+  "description": "The information in this directory will help you start developing with OpenBCI technology.",
+  "source": "@site/../docs/11ForDevelopers/00-ForDevelopersLanding.md",
+  "sourceDirName": "11ForDevelopers",
+  "slug": "/11ForDevelopers/ForDevelopersLanding",
+  "permalink": "/docs/11ForDevelopers/ForDevelopersLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/11ForDevelopers/00-ForDevelopersLanding.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "ForDevelopersLanding",
+    "title": "For Developers"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "VirtualBox Windows Guide",
+    "permalink": "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/11ForDevelopers/SoftwareDevelopment"
+  }
+}

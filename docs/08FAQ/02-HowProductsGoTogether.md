@@ -2,7 +2,6 @@
 id: HowProductsGoTogether
 title: How OpenBCI products go together?
 ---
-
 ![image](assets/GettingStartedImages/How_products_go_together.png)
 
 ## What products should I get?
@@ -15,9 +14,9 @@ The first component you would need is one of our 3 Biosensing Boards. You will s
 
 The boards sample rate is limited by the bluetooth bandwidth. In order to increase the sample rate, you can purchase the [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550). The [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550) increases the sample rate by transmitting the data via WiFi as opposed to Bluetooth. The WiFi Shield can be controlled through HTTP requests and can send JSON objects with data in nano volts. With the WiFi Shield connected:
 
-* The Cyton can stream data at 50Hz, 500Hz, 1000Hz, 2000Hz, 4000Hz, 8000Hz and 16000Hz.
-* The Cyton + Daisy can stream data at 250Hz, 500Hz, 1000Hz, 2000Hz, 4000Hz, and 8000Hz.
-* The Ganglion can stream data at 200Hz, 400Hz, 800Hz, 1600Hz, 3200Hz, 6400Hz, and 12800Hz
+-   The Cyton can stream data at 50Hz, 500Hz, 1000Hz, 2000Hz, 4000Hz, 8000Hz and 16000Hz.
+-   The Cyton + Daisy can stream data at 250Hz, 500Hz, 1000Hz, 2000Hz, 4000Hz, and 8000Hz.
+-   The Ganglion can stream data at 200Hz, 400Hz, 800Hz, 1600Hz, 3200Hz, 6400Hz, and 12800Hz
 
 Now that you have the board, the second thing you need to get started is a set of electrodes (or a headset, we’ll talk about it after). Our Boards have male header connectors, so you would need to get electrodes that are compatible. If you are interested in mainly doing EMG or ECG, we recommend you use our [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) with [EMG/ECG Foam Solid Gel Electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) (30/pack), these electrodes are a ready to go solution and plug in directly into our Biosensing boards. If you want to be able to do EEG as well as EMG and ECG, we recommend you get our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) with [Ten 20 Paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198). You can affix these electrodes (almost) everywhere with some medical tape, which allows you to measure EEG, EMG, and ECG. If you already have your own electrodes, or have an electrode cap with touch proof connectors, you can still use them with our Biosensing Boards, by purchasing our [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
 
@@ -33,15 +32,15 @@ You can use both the Cyton and the Ganglion with the OpenBCI GUI to get started 
 
 Regarding third party software, the Cyton board is compatible with:
 
-* [OpenViBE](http://openvibe.inria.fr/drivers-openbci/)
-* [neuromore studio](https://doc.neuromore.com/?cat=0&page=2) (Bio-data acquisition, processing and visualization software)
-* [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application, OpenBCI tutorial [here](https://sites.google.com/site/biofeedbackpages/brainbay-openbci) and another [here](http://www.autodidacts.io/use-openbci-with-brainbay-on-ubuntu-linux-and-wine/))
-* [BioEra](http://www.proatech.com/be/manual.html#_OpenBCI) (Visual designer useful for analyzing signals in real time)
+-   [OpenViBE](http://openvibe.inria.fr/drivers-openbci/)
+-   [neuromore studio](https://doc.neuromore.com/?cat=0&page=2) (Bio-data acquisition, processing and visualization software)
+-   [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application, OpenBCI tutorial [here](https://sites.google.com/site/biofeedbackpages/brainbay-openbci) and another [here](http://www.autodidacts.io/use-openbci-with-brainbay-on-ubuntu-linux-and-wine/))
+-   [BioEra](http://www.proatech.com/be/manual.html#_OpenBCI) (Visual designer useful for analyzing signals in real time)
 
 The Ganglion board is currently compatible with:
 
-* [BioEra](http://www.proatech.com/be/manual.html#_Toc477624700)
-* [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application)
+-   [BioEra](http://www.proatech.com/be/manual.html#_Toc477624700)
+-   [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application)
 
 Currently new drivers are being developed to add OpenBCI compatibility to Bioexplorer (tbd), BCI2000 (tbd), etc.
 

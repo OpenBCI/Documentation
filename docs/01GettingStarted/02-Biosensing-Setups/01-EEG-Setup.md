@@ -5,55 +5,57 @@ title: Setting up for EEG
 This page will explain the most basic setup to process EEG Data using your OpenBCI board, using our gold cup electrodes.
 
 ## Related Headware
+
 To learn more about specific OpenBCI Headware and how to set them up for EEG, follow the links below.
 
-* [Headband kit](../../04AddOns/01-Headwear/03-Headband_Tutorial.md)
-* [Ultracortex Mark IV](../../04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
-* [Ultracortex Mark III](../../04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
-* [Electrode Cap](../../04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md)
+-   [Headband kit](../../04AddOns/01-Headwear/03-Headband_Tutorial.md)
+-   [Ultracortex Mark IV](../../04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
+-   [Ultracortex Mark III](../../04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+-   [Electrode Cap](../../04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md)
 
 ## What you will need
 
 ![What You Need](assets/GettingStartedImages/whatYouNeed.JPG)
 
 #### Necessary:
-* [Ten20 conductive electrode paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) (or other conductive electrode gel)
-* [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
-* x4 AA batteries
-* x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
+
+-   [Ten20 conductive electrode paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) (or other conductive electrode gel)
+-   [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
+-   x4 AA batteries
+-   x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
 Before applying ten20 paste on subjects with long hair, refer to this [guide](https://www.aset.org/files/public/10-20_System_Demonstration.pdf) on parting the hair for 10-20 international standard electrode positions.
 
 If you are using an OpenBCI electrode starter kit, use the following electrodes so as to be consistent with the GUI's color-coding protocol:
 
-  1. Black
-  2. White
-  3. Purple
-  4. Green
-  5. Blue
-  6. Red
+1.  Black
+2.  White
+3.  Purple
+4.  Green
+5.  Blue
+6.  Red
 
 #### Optional:
 
-* Paper towels for cleaning excess Ten20 paste
-* Medical tape (or other tape) for adding extra stability to electrodes
-* Ear swabs for cleaning paste from electrodes, once you're finished
+-   Paper towels for cleaning excess Ten20 paste
+-   Medical tape (or other tape) for adding extra stability to electrodes
+-   Ear swabs for cleaning paste from electrodes, once you're finished
 
 ## 1. Connect your electrodes to OpenBCI
 
 Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well. You can see in the image below pins N1P through N8P on the Cyton. These correspond to the 8 channels available for data.
 
-On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to *'DOWN'* for EEG.
+On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to _'DOWN'_ for EEG.
 Explanation in detail [here](../../03Ganglion/02-Ganglion.md#inverting-input-select-switches).
 
 ![eegGoldCupSetup](assets/GettingStartedImages/eeg_cytonSetup.JPG)
 
-| Electrode Wire Color | Cyton Board Pin | Ganglion Board Pin | Function |
-|---|---|---|---|
-| white | SRB2 (bottom SRB pin) | REF (top pin) | Reference Pin |
-| black | bottom BIAS pin | D_G (top pin) | Noise-cancelling Pin |
-| purple | 2N (bottom N2P pin) | +2 (on top row) | Analog input |
-| red | 7N (bottom N7P pin) | +4 (on top row) | Analog input |
+| Electrode Wire Color | Cyton Board Pin       | Ganglion Board Pin | Function             |
+| -------------------- | --------------------- | ------------------ | -------------------- |
+| white                | SRB2 (bottom SRB pin) | REF (top pin)      | Reference Pin        |
+| black                | bottom BIAS pin       | D_G (top pin)      | Noise-cancelling Pin |
+| purple               | 2N (bottom N2P pin)   | +2 (on top row)    | Analog input         |
+| red                  | 7N (bottom N7P pin)   | +4 (on top row)    | Analog input         |
 
 The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or pins 1 through 4 in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
 
@@ -136,6 +138,5 @@ After you've taken a few good screenshots, open up the .JPGs and take a look. **
 You'll notice that the strongest alpha wave signals should be appearing in channel 7, the O2 (O standing for occipital) electrode on the back of your head. Count the number of waves in a single 1-second time period on channel 7 of the EEG DATA montage. The number of waves should correspond x-axis position of the spike on the FFT graph. If you've identified your alpha waves, congratulations! You've now seen your first brain waves with OpenBCI!
 
 ## Improving Signal Quality
-
 
 For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)

@@ -13,10 +13,6 @@ All official OpenBCI products are designed and assembled in the United States. O
 
 OpenBCI boards are designed to take power only from low­-voltage DC sources, i.e. batteries. They do not take power from the “grid,” from power outlets, USB ports, etc.
 
-
-
-
-
 ### Limitations of Liability.
 
 Persons handling the product(s) must have electronics training and observe good engineering practice standards. As such, the goods being provided are not intended to be complete in terms of required design­, marketing­, and/or manufacturing ­related protective considerations, including product safety and environmental measures typically found in end products that incorporate such semiconductor components or circuit boards. This evaluation board/kit does not fall within the scope of the European Union directives regarding electromagnetic compatibility, restricted substances (RoHS), recycling (WEEE), FCC, CE or UL, and therefore may not meet the technical requirements of these directives or other related directives.

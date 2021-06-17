@@ -2,7 +2,6 @@
 id: Hub
 title: OpenBCI Hub
 ---
-
 **THIS SOFTWARE HAS BEEN DEPRECATED AND IS NO LONGER IN ACTIVE DEVELOPMENT.**
 
 Middleware Software used to communicate with OpenBCI boards through TCP/IP command protocol. This Doc covers the OpenBCI Hub for Cyton, Ganglion, and WiFi Shield.
@@ -10,6 +9,7 @@ Middleware Software used to communicate with OpenBCI boards through TCP/IP comma
 Last used with GUI v4.2.0 from January 2020.
 
 ## Version
+
 Version `v2.1.0` last used January 2020.
 
 Version `v2.0.0` released September 2018.
@@ -17,12 +17,13 @@ Version `v2.0.0` released September 2018.
 Version `v1.0.0` released January 3rd, 2017.
 
 ## OpenBCI Electron Hub Overview
+
 The OpenBCI Electron Hub (or just "Hub") is a TCP/IP server that listens for clients on port `10996` on `localhost` aka `127.0.0.1`. Broadcast/multicast is never used for transmitting information to clients. Outgoing data is only transmitted to the requesting client. We use [semantic versioning](http://www.semver.org) the protocol is always listed first and foremost in all documentation. Please follow the rules of [semantic versioning](http://www.semver.org) to avoid breaking changes.
 
 The hub is designed for either two use cases:
 
-1. An owning application, such as OpenBCI's processing app, starts and stops the Hub.
-2. The Hub runs continuously and 3rd party applications can simply connect as clients, use OpenBCI boards, disconnect and go on their way without closing the Hub.
+1.  An owning application, such as OpenBCI's processing app, starts and stops the Hub.
+2.  The Hub runs continuously and 3rd party applications can simply connect as clients, use OpenBCI boards, disconnect and go on their way without closing the Hub.
 
 A unique port, `10996`, is critical because applications must be able to hit a known port number on a local machine. This Specification shall [be available here](https://github.com/OpenBCI/OpenBCI_Ganglion_Electron/blob/master/ganglion-api-spec.yaml) in the [source code of the Hub](https://github.com/OpenBCI/OpenBCI_Ganglion_Electron).
 
@@ -31,9 +32,11 @@ A unique port, `10996`, is critical because applications must be able to hit a k
 As of v2.0.0, the Hub uses JSON to pass messages send and receive messages over TCP. Each JSON string should end in a `\n`. Parse for `\n` and then strip the beginning of the string down to the character before `\n` and use your languages built in JSON parser. The contents of the buffer can be now be considered a Message. The buffer can be flushed and the Message can be processed. There will always be a 'command' key which will aid in parsing the rest of message. The rest of the Message will then be translated based on the protocol for that command described in the Specification below. All commands sent to the client will be replied to asynchronously.
 
 ### Example:
+
 If a client sends `{"type":"scan", "action":"start"}\n` to the Hub on `127.0.0.1:10996`, the Hub will respond with either `{"type":"scan", "action":"start", "code":200}\n` if the scan was started or an error message if unable to start such as `{"type":"scan","code":412,"message":"unable to start scan"}\n`.
 
 ## Command Set
+
 Commands are sent from the client to the Hub. Each command gets an asynchronous response with a meaningful code. When able, errors are sent with string error messages.
 
 ### Accelerometer
@@ -75,7 +78,6 @@ Response: on success
 
 Response: on failure
 `{"type":"accelerometer", "action": "stop", "code": 417, "message": "string error message"}`
-
 
 ### Board Type
 
@@ -180,7 +182,9 @@ Availability:
 As of `v2.0.0`
 
 Example:
+
 ```
+
 {
   "action": "set",
   "type": "channelSettings",
@@ -192,6 +196,7 @@ Example:
   "srb2": true,
   "srb1": false
 }
+
 ```
 
 Response: on success
@@ -243,23 +248,23 @@ Availability: as of `v2.0.0`
 
 The local string name of a Cyton USB Dongle, Ganglion peripheral, or WiFi Shield unique name to connect to.
 
-**burst** *optional*
+**burst** _optional_
 
 True to use burst mode, only applies when UDP is set for protocol. Either `true` and `false`.
 
-**sampleRate** *optional*
+**sampleRate** _optional_
 
 A number that is the requested sample rate to set the attached Ganglion or Cyton to. Ganglion must have v2.0.0 firmware or later and Cyton must have v3.0.0 firmware available. Value is in Hz and must be a valid sample rate for the board of choice.
 
-**latency** *optional*
+**latency** _optional_
 
 A number that is the latency for the inter-packet sending on the WiFi Shield. The time is in micro-seconds.
 
-**protocol** *optional*
+**protocol** _optional_
 
 The type of internet protocol to use, either 'udp' or 'tcp'.
 
-**ipAdderss** *optional*
+**ipAdderss** _optional_
 
 The ip
 
@@ -270,7 +275,9 @@ Example for Ganglion and Cyton:
 `{"type": "connect", "name": "Ganglion-XXXX"}`
 
 Example for WiFi with name over tcp:
+
 ```
+
 {
   "type": "connect",
   "name": "OpenBCI-XXXX",
@@ -278,10 +285,13 @@ Example for WiFi with name over tcp:
   "sampleRate": 500,
   "protocol": "tcp"
 }
+
 ```
 
 Example for WiFi with IP Address over UDP with burst mode:
+
 ```
+
 {
   "type": "connect",
   "ipAddress": "192.168.4.1",
@@ -290,6 +300,7 @@ Example for WiFi with IP Address over UDP with burst mode:
   "protocol": "udp",
   "burst": true
 }
+
 ```
 
 Response: on success
@@ -376,7 +387,9 @@ Should the impedance signal be routed to the P input `channelNumber`
 Should the impedance signal be routed to the N input `channelNumber`
 
 Example:
+
 ```
+
 {
   "action": "set",
   "type": "impedance",
@@ -384,6 +397,7 @@ Example:
   "pInputApplied": false,
   "nInputApplied": true
 }
+
 ```
 
 Response: on success
@@ -473,7 +487,6 @@ Example of `wifi` for Cyton:
 
 Response: on success for `wifi` for Cyton:
 `{"type":"protocol", "action": "start", "protocol": "wifi", "code": 200}`
-
 
 #### `action` - `status`
 
@@ -606,15 +619,15 @@ The currently supported protocols are `serial`, and `wifi`.
 
 The duration you want to log SD information for. Opens a new SD file to write into. Limited to:
 
- * `14sec` - 14 seconds
- * `5min` - 5 minutes
- * `15min` - 15 minutes
- * `30min` - 30 minutes
- * `1hour` - 1 hour
- * `2hour` - 2 hour
- * `4hour` - 4 hour
- * `12hour` - 12 hour
- * `24hour` - 24 hour
+-   `14sec` - 14 seconds
+-   `5min` - 5 minutes
+-   `15min` - 15 minutes
+-   `30min` - 30 minutes
+-   `1hour` - 1 hour
+-   `2hour` - 2 hour
+-   `4hour` - 4 hour
+-   `12hour` - 12 hour
+-   `24hour` - 24 hour
 
 Example:
 `{"type":"sd", "action": "start", "command": "5min"}`
@@ -668,7 +681,7 @@ Availability: as of `v1.0.0`
 #### `action` - `eraseCredentials`
 
 Description:
-Erase credentials on the WiFi shield. Your WiFi shield must have no board attached. You should use the *Examine* command to connect to the WiFi Shield with no Ganglion or Cyton attached. The process will take about 6 seconds. WiFi Shield will become a hotspot again.
+Erase credentials on the WiFi shield. Your WiFi shield must have no board attached. You should use the _Examine_ command to connect to the WiFi Shield with no Ganglion or Cyton attached. The process will take about 6 seconds. WiFi Shield will become a hotspot again.
 
 Availability:
 As of `v2.0.0`
@@ -754,6 +767,7 @@ Response: on failure because no wifi shield attached
 `{"type":"wifi", "code": 426}`
 
 ## Response Set
+
 As soon as a client has established itself to the Hub as a requester of information, messages will asynchronously be sent to the client.
 
 ### Accelerometer
@@ -822,7 +836,9 @@ Availability:
 As of `v1.0.0`
 
 Example:
+
 ```
+
 {
   "code": 207
   "type": "channelSettings",
@@ -834,6 +850,7 @@ Example:
   "srb2": true,
   "srb1": false
 }
+
 ```
 
 ### Impedance
@@ -855,13 +872,16 @@ Channel number as zero indexed i.e. 1,2,3,4 or 0 for the reference channel.
 The impedance value in ohms for `CHANNEL`.
 
 Example:
+
 ```
+
 {
   "code": 203
   "type": "impedance",
   "channel": 3,
   "value": 300
 }
+
 ```
 
 ### Message
@@ -879,13 +899,16 @@ As of `v1.0.0`
 The string message from the Ganglion.
 
 Example:
+
 ```
+
 {
   "code": 200
   "type": "message",
   "message": "Hello, world!",
   "value": 300
 }
+
 ```
 
 ### Samples
@@ -939,16 +962,21 @@ Number the raw board time
 Number the boardTime plus the NTP calculated offset
 
 Example for gangliom:
+
 ```
+
 {
   "code": 200,
   "type": "data",
   "channelDataCounts": [0, 1, 2, 3]
 }
+
 ```
 
 Example for Cyton with accel:
+
 ```
+
 {
   "code": 200,
   "type": "data",
@@ -956,11 +984,13 @@ Example for Cyton with accel:
   "accelDataCounts": [0, 1, 2],
   "stopByte": 192
 }
+
 ```
 
 Example for Cyton with Daisy in analog read mode:
 
 ```
+
 {
   "auxData": {
     "lower": {
@@ -984,4 +1014,5 @@ Example for Cyton with Daisy in analog read mode:
   "sampleNumber": 52,
   "timestamp": 1543879978994
 }
+
 ```

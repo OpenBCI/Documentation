@@ -2,7 +2,6 @@
 id: GUIDocs
 title: The OpenBCI GUI
 ---
-
 ![image](assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party software such as MATLAB. 
@@ -15,14 +14,14 @@ Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 ![image](assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
 ### Cyton and Cyton+Daisy on macOS/Windows/Linux
-If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system. This installation is required to establish a clean connection with the OpenBCI Cyton and Cyton+Daisy hardware. 
 
+If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system. This installation is required to establish a clean connection with the OpenBCI Cyton and Cyton+Daisy hardware. 
 
 ### Ganglion on macOS/Windows/Linux
 
 **The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0). In order to use the Ganglion, you need a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
 
-*Note: The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported.* We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
+_Note: The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported._ We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
 
 ### WiFi Shield
 
@@ -30,20 +29,20 @@ There are no prerequisites for running the WiFi Shield with Cyton or Ganglion on
 
 ### Linux Users: Serial Port Permissions
 
-<p><details><summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</b></i></summary><br>
+<p /><details><summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</i></b></summary><br />
 
-Before trying to connect to any OpenBCI boards on Linux, you need to make sure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or similar. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [full explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br><br>
+Before trying to connect to any OpenBCI boards on Linux, you need to make sure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or similar. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [full explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br /><br />
 
-1. First, verify if the user does belong to the "dialout" group using the “id” command.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Type `id -Gn <username>` in terminal and check if it prints `dialout` as one of the options.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Replace <username> with your Linux username. Example: `id -Gn susieQ`<br>
-2. Next, add the user to the “dialout” supplementary group.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Type `sudo usermod -a -G dialout <username>` in terminal.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Example: `sudo usermod -a -G dialout susieQ`<br>
-3. Restart Ubuntu<br>
-4. Try "id" command again<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Repeat step one<br>
-</details></p>
+1.  First, verify if the user does belong to the "dialout" group using the “id” command.<br />
+        - Type `id -Gn <username>` in terminal and check if it prints `dialout` as one of the options.<br />
+        - Replace username with your Linux username. Example: ``
+2.  Next, add the user to the “dialout” supplementary group.
+        - Type `` in terminal.
+        - Example: ``
+3.  Restart Ubuntu
+4.  Try "id" command again
+        - Repeat step one
+    </details><p />
 
 ## Installing the OpenBCI GUI as a "Standalone" Application
 
@@ -65,42 +64,42 @@ Move the `OpenBCI_GUI` directory anywhere you like.
 
 <details><summary><i>Windows Users: How to run the GUI with High DPI Screens</i></summary>
 
-<br>If you have a high DPI screen and are running Windows 10, you may notice that the GUI is hard to see, and nothing seems to scale correctly.<br>
+<br />If you have a high DPI screen and are running Windows 10, you may notice that the GUI is hard to see, and nothing seems to scale correctly.<br />
 
-1. First, close the GUI if it is open.<br>
+1.  First, close the GUI if it is open.<br />
 
-2. Next, right click on `OpenBCI_GUI.exe` and select `Properties`. The following window should pop up:<br>
+2.  Next, right click on `OpenBCI_GUI.exe` and select `Properties`. The following window should pop up:<br />
 
-![gui windows properties menu](../../assets/SoftwareImages/OpenBCISoftware/GUI-WindowsProperties.png)<br>
+![gui windows properties menu](../../assets/SoftwareImages/OpenBCISoftware/GUI-WindowsProperties.png)<br />
 
-3. Select the `Compatibility` tab at the top of this window, and then click `Change high DPI settings`.<br>
+3.  Select the `Compatibility` tab at the top of this window, and then click `Change high DPI settings`.<br />
 
-![gui windows properties compatibility](../../assets/SoftwareImages/OpenBCISoftware/GUI_WindowsProperties_Compatibility.png)<br>
+![gui windows properties compatibility](../../assets/SoftwareImages/OpenBCISoftware/GUI_WindowsProperties_Compatibility.png)<br />
 
-4. In the section labeled `High DPI scaling override`, check the box `Override high DPI scaling behavior` and change from `Application` to `System (Enhanced)`.<br>
+4.  In the section labeled `High DPI scaling override`, check the box `Override high DPI scaling behavior` and change from `Application` to `System (Enhanced)`.<br />
 
-![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/GUI_Windows_OverrideHighDPI.png)<br>
+![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/GUI_Windows_OverrideHighDPI.png)<br />
 
-5. That's it! Once the settings have been changed, restart the GUI!
+5.  That's it! Once the settings have been changed, restart the GUI!
 
 </details>
 
 ### Install OpenBCI_GUI On Linux
 
-<p>Unzip the downloaded application and place in desired location.</p><br>
+<p>Unzip the downloaded application and place in desired location.</p><br />
 
-<p><details><summary><i>Linux Users: How to run the GUI with High DPI Screens</i></summary>
+<p /><details><summary><i>Linux Users: How to run the GUI with High DPI Screens</i></summary>
 
-On Linux, there is no way to force scaling. However, here is a <a href ="https://github.com/kaueraal/run_scaled">link to a script that should work</a>.
+On Linux, there is no way to force scaling. However, here is a <a href="https://github.com/kaueraal/run_scaled">link to a script that should work</a>.
 
-</details></p>
+</details><p />
 
 ## Running the OpenBCI_GUI
 
 **Important Notes:**
 
- * In some cases, there may be issues with the way your machine handles the BLE application that enables communication with the Ganglion Board.
- * If you run into additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum
+-   In some cases, there may be issues with the way your machine handles the BLE application that enables communication with the Ganglion Board.
+-   If you run into additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum
 
 ### Running on macOS
 
@@ -119,11 +118,17 @@ Open a terminal application and navigate to the directory (with `cd`) of the unz
 Then, launch the Application from terminal with the command:
 
 ```
+
 $ ./OpenBCI_GUI
+
 ```
+
 or
+
 ```
+
 $ sudo ./OpenBCI_GUI
+
 ```
 
 This will launch the OpenBCI_GUI. **If you experience issues, try running with or without `sudo`.**
@@ -152,63 +157,65 @@ The OpenBCI GUI displays up to six customizable windows in twelve layouts! You c
 
 ![GUI Layout Dropdown Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUIv5_LayoutSelector_Highlighted.png)
 
-
 ### Impedance Testing
+
 When using Cyton, you can display the impedance of individual channels by toggling the small Ohm icon to the right of each color coded channel number in the Time Series Widget. When the Ohm icon is toggled on, the board sends a small current through the selected channel to obtain the impedance value. **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously.**
 
 In the screengrab below, the GUI is showing Time Series, FFT Plot, and Accelerometer. Also, you can see an impedance test has been started on Channel 1.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%" />
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/ganglion_signal_widget-impedance_check.png?raw=true" width="50%">
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/ganglion_signal_widget-impedance_check.png?raw=true" width="50%" />
 
 ### Decrease Setup Time by Saving/Loading Settings
-Starting with GUI V3, you can save and load a snapshot of nearly every setting in the GUI (ex. Layout, Time Series Channel Settings, Networking Settings, etc.) by using a dropdown menu (pictured below) or keyboard shortcuts. If you change anything during a session, save your settings or click "Stop System" before exiting. __Save with lowercase 'n'__ and __Load with capital 'N'__ on your keyboard to and from */Documents/OpenBCI_GUI/Settings/*.
+
+Starting with GUI V3, you can save and load a snapshot of nearly every setting in the GUI (ex. Layout, Time Series Channel Settings, Networking Settings, etc.) by using a dropdown menu (pictured below) or keyboard shortcuts. If you change anything during a session, save your settings or click "Stop System" before exiting. **Save with lowercase 'n'** and **Load with capital 'N'** on your keyboard to and from _/Documents/OpenBCI_GUI/Settings/_.
 
 ![Config Button](../../assets/SoftwareImages/OpenBCISoftware/GUI_Config_Button_ScreenshotRev3.png)
 
-Start the system first. Then, arrange the GUI to suit your needs and __click "Settings"-->"Save"__. A dialog box will open to confirm file name and path _(e.g. GanglionUserSettings.json)_. After, you will see a message saying "Settings Saved!" When you click "Stop System", all settings will be auto-saved.
+Start the system first. Then, arrange the GUI to suit your needs and **click "Settings"--&gt;"Save"**. A dialog box will open to confirm file name and path _(e.g. GanglionUserSettings.json)_. After, you will see a message saying "Settings Saved!" When you click "Stop System", all settings will be auto-saved.
 
-The GUI automatically loads settings from */Documents/OpenBCI_GUI/Settings/* when the system starts!
+The GUI automatically loads settings from _/Documents/OpenBCI_GUI/Settings/_ when the system starts!
 
-To load settings, just __click "Settings"-->"Load"__. Select a settings file from the dialog box that opens. If the settings are incompatible (ex. loading 16 channels while using 8), the GUI will display an error at the bottom or "Default Settings Loaded". If all is well, the GUI will display "Settings Loaded!" as the GUI snaps directly to your desired settings.
+To load settings, just **click "Settings"--&gt;"Load"**. Select a settings file from the dialog box that opens. If the settings are incompatible (ex. loading 16 channels while using 8), the GUI will display an error at the bottom or "Default Settings Loaded". If all is well, the GUI will display "Settings Loaded!" as the GUI snaps directly to your desired settings.
 
-__Click "Settings"-->"Default" to revert the GUI to default settings.__
+**Click "Settings"--&gt;"Default" to revert the GUI to default settings.**
 
 For all data modes, the GUI will load all GUI-related settings automatically. After starting a session, hardware settings (channel on/off, gain, etc.) will need to be set by the user manually.
 
 ### GUI Keyboard Shortcuts
-__Use the spacebar to start or stop the data stream!__
+
+**Use the spacebar to start or stop the data stream!**
 
 #### Expert Mode
 
-__To enable all keyboard shortcuts, set "Expert Mode On" in the settings dropdown.__ This mode is off by default to prevent accidentally sending a command to the board.
+**To enable all keyboard shortcuts, set "Expert Mode On" in the settings dropdown.** This mode is off by default to prevent accidentally sending a command to the board.
 
 ![Expert Mode Button](../../assets/SoftwareImages/OpenBCISoftware/expertModeToggleHelpText.png)
 
 Expert Mode Keyboard Shortcuts:
 
-- Other than spacebar, you can press 's' to stop data stream, and 'b' to begin, or start the data stream.
+-   Other than spacebar, you can press 's' to stop data stream, and 'b' to begin, or start the data stream.
 
-- You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels.
+-   You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels.
 
-- __Press lowercase 'd' to set all channels settings to default.__
+-   **Press lowercase 'd' to set all channels settings to default.**
 
-- Using an _English keyboard_, you can deactivate channels 1-16 using:
-  - 1,2,3,4,5,6,7,8
-  - q,w,e,r,t,y,u,i
+-   Using an _English keyboard_, you can deactivate channels 1-16 using:
+    -   1,2,3,4,5,6,7,8
+    -   q,w,e,r,t,y,u,i
 
-- Similarly, activate channels 1-16 using:
-  - !, @, #, $, %, ^, &, *
-  - Q,W,E,R,T,Y,U,I
+-   Similarly, activate channels 1-16 using:
+    -   !, @, #, $, %, ^, &, \*
+    -   Q,W,E,R,T,Y,U,I
 
-- __Take a screenshot of the GUI using lowercase 'm'!__ It will be saved to */Documents/OpenBCI_GUI/Settings/*.
+-   **Take a screenshot of the GUI using lowercase 'm'!** It will be saved to _/Documents/OpenBCI_GUI/Settings/_.
 
-- __Enter presentation mode using Enter (Win), or Return (Mac).__
+-   **Enter presentation mode using Enter (Win), or Return (Mac).**
 
-- To change to the alternate color scheme, use '{'.
+-   To change to the alternate color scheme, use '{"{"}'.
 
 ## Running the OpenBCI GUI from the Processing IDE
 
@@ -216,11 +223,10 @@ Expert Mode Keyboard Shortcuts:
 
 The OpenBCI GUI was built using [Processing](https://processing.org/), a popular, Java-based creative coding framework. If you are interested in adding features or modifying the existing code, it is really easy to do so if you are familiar with Java. If you're not familiar with Java, don't fret! Processing is one of the easiest software packages to pick up as a beginner coder.
 
-
 The things you will need to run the OpenBCI GUI in Processing are:  
 
- * [Processing App](https://processing.org/download/?processing)
- * [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
+-   [Processing App](https://processing.org/download/?processing)
+-   [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
 
 First, go to processing.org and download the latest version of Processing. [Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
 

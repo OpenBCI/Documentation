@@ -1,0 +1,30 @@
+{
+  "unversionedId": "04AddOns/Headwear/MarkIII",
+  "id": "04AddOns/Headwear/MarkIII",
+  "isDocsHomePage": false,
+  "title": "Ultracortex Mark III",
+  "description": "Development Period: June 2016",
+  "source": "@site/../docs/04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md",
+  "sourceDirName": "04AddOns/01-Headwear",
+  "slug": "/04AddOns/Headwear/MarkIII",
+  "permalink": "/docs/04AddOns/Headwear/MarkIII",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "MarkIII",
+    "title": "Ultracortex Mark III"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ultracortex Mark IV",
+    "permalink": "/docs/04AddOns/Headwear/MarkIV"
+  },
+  "next": {
+    "title": "OpenBCI EEG Headband Kit Guide",
+    "permalink": "/docs/04AddOns/Headwear/HeadBand"
+  }
+}

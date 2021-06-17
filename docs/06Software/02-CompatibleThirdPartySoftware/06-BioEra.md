@@ -2,7 +2,6 @@
 id: BioEra
 title: BioEra
 ---
-
 From the BioEra homepage: BioEra is a visual designer useful for analyzing signals in real time. It can be used with any device with ability to stream data to a computer.
 
 BioEra is used to create a design visually. A design represents data flow from input (e.g. biofeedback device) to output (e.g. visual or sound feedback). The flow can be customized with hundreds built-in objects (elements). For example an amplitude of alpha brainwaves can be filtered from input EEG signal, it can then trigger a MIDI, video or a computer task at a certain threshold level.
@@ -15,7 +14,7 @@ BioEra is used to create a design visually. A design represents data flow from i
 
 ## Installation
 
-Click on the download link for the trial version of BioEra here: (http://www.proatech.com/download.php). If you're using a virtual machine, be sure to download and set up BioEra from within the VM environment.
+Click on the download link for the trial version of BioEra here: (http:). If you're using a virtual machine, be sure to download and set up BioEra from within the VM environment.
 
 Click **BioEra Trial 4.027 for Windows - full**, or the equivalent link for the latest version, and follow the prompts to run the program.
 
@@ -31,29 +30,29 @@ A PacMan demo will pop up automatically. Play around with the demo, or take a lo
 
 This section will show how to stream data live from your OpenBCI board within BioEra. We'll also show how to use the oscilloscope tool, as an introduction to BioEra's interface, as well as a way to verify your board is streaming data to BioEra.
 
-Start BioEra. To start a new project, select System -> New Design from the toolbar of one of the windows.
+Start BioEra. To start a new project, select System -&gt; New Design from the toolbar of one of the windows.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_new_design.png?raw=true" width="80%">
 
-Two new windows will appear - one with a light gray background (the "design" window) and one with a dark gray background (the "output" window). In the design window, select Element -> New.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_new_element.png?raw=true" width="80%">
+Two new windows will appear - one with a light gray background (the "design" window) and one with a dark gray background (the "output" window). In the design window, select Element -&gt; New.
+
+
 
 In the New Element window, find the "FTDI Serial Port" object. Select it and click "OK".
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_FTDI_object.png?raw=true" width="80%">
+
 
 An FTDI icon should now be visible in the design window.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_FTDI_icon.png?raw=true" width="80%">
 
-Navigate to Element -> New again from the toolbar. Find the "OpenBCI" object. Select it and click "OK". An OpenBCI icon should now be visible in the design window.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_OpenBCI_icon.png?raw=true" width="80%">
+Navigate to Element -&gt; New again from the toolbar. Find the "OpenBCI" object. Select it and click "OK". An OpenBCI icon should now be visible in the design window.
+
+
 
 Connect the output of the FTDI object with the input of the OpenBCI object, as shown. To connect the two objects, click on the output of the FTDI object, the click on the input of the OpenBCI object.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_icons_connected.png?raw=true" width="80%">
+
 
 You're ready to stream live data from your OpenBCI board! In the next section, we'll give an example for how to use and display your OpenBCI data using BioEra tools.
 
@@ -63,17 +62,17 @@ BioEra has a wide variety of useful tools for streaming EEG data. To get familia
 
 Select an oscilloscope object the same way you selected the FTDI and OpenBCI objects. In addition to the oscilloscope icon in the design window, an oscilloscope display will appear in the dark grey window, like below. Connect one of the OpenBCI channels to the oscilloscope icon input.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/Bioera_Osc_edit.png?raw=true" width="80%">
+
 
 Select the "View" button at the top of the design window. The oscilloscope screen should look like below.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_osc_view.png?raw=true" width="80%">
+
 
 Press the "play" button at the top of the design window. Data will start streaming from your board into BioEra (BioEra should automatically identify your board's serial port). A red light should appear on the OpenBCI Dongle; this means data is streaming from your OpenBCI board to your computer.
 
 Tap on the pins of your OpenBCI board. You should see the oscilloscope signal react accordingly.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/BioEra_data_output.png?raw=ture" width="80%">
+
 
 You are now streaming live data from your OpenBCI board into BioEra! Check out the rest of BioEra's tools for EEG streaming and processing.
 

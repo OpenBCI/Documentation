@@ -12,13 +12,13 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 ![OpenBCI Contents](assets/GettingStartedImages/ganglion_what_you_need.png)
 
- 1. OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
- 2. An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
- 3. 6V AA battery pack & (x4) AA batteries (batteries not included)
- 4. (x4) plastic feet for board stabilization
- 5. EEG electrodes: OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) 
- 6. or EMG electrodes: [Snap Electrode Cables](http://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and [Snap Electrodes](http://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
- 7. A computer connected to the internet
+1.  OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
+2.  An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
+3.  6V AA battery pack & (x4) AA batteries (batteries not included)
+4.  (x4) plastic feet for board stabilization
+5.  EEG electrodes: OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) 
+6.  or EMG electrodes: [Snap Electrode Cables](http://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and [Snap Electrodes](http://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
+7.  A computer connected to the internet
 
 ### 1. Your Ganglion
 
@@ -53,8 +53,8 @@ Your OpenBCI kit comes with 4 plastic feet that can be snapped into the holes of
 
 If you ordered OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) and [Electrode Paste](http://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars), it should come with:
 
- * 10 passive, gold cup electrodes on a color-coded ribbon cable
- * 3 2oz Jars of Ten20 conductive electrode paste
+-   10 passive, gold cup electrodes on a color-coded ribbon cable
+-   3 2oz Jars of Ten20 conductive electrode paste
 
 ![TouchProof Adapter](assets/GettingStartedImages/touch_proof.jpg)
 
@@ -80,7 +80,7 @@ Make sure your computer's Bluetooth feature is turned on. **Select `LIVE (from G
 
 The GUI will automatically start searching for Ganglion devices.
 
-Each Ganglion has its own unique 4 character ID (in HEX), and you will see it listed in the `BLE DEVICES` window. If you don't see any Ganglions, check to make sure your Ganglion has a battery connected, is switched on, and the blue LED is blinking. If there are multiple Ganglions in the room, you can find yours by turning it off, clicking the `REFRESH LIST` button, then turn on your Ganglion again. Make a note of *your* Ganglion's 4 character ID.  
+Each Ganglion has its own unique 4 character ID (in HEX), and you will see it listed in the `BLE DEVICES` window. If you don't see any Ganglions, check to make sure your Ganglion has a battery connected, is switched on, and the blue LED is blinking. If there are multiple Ganglions in the room, you can find yours by turning it off, clicking the `REFRESH LIST` button, then turn on your Ganglion again. Make a note of _your_ Ganglion's 4 character ID.  
 
 **Select the desired Ganglion device from the dropdown list.**
 
@@ -124,17 +124,17 @@ Pick up your board, and move it around. You should see the data in the `Accelero
 
 **NOTE: If you're having connection issues, refer to the troubleshooting tips below.**
 
-- check that you have fresh batteries
-- move the Ganglion board closer to its dongle
-- hit 'AUTOSCAN' a couple of times
-- exit the GUI and restart the computer to reboot your USB port
+-   check that you have fresh batteries
+-   move the Ganglion board closer to its dongle
+-   hit 'AUTOSCAN' a couple of times
+-   exit the GUI and restart the computer to reboot your USB port
 
-
-Now that you've got your computer connected to the Ganglion, it's time to connect your *self!*
-
+Now that you've got your computer connected to the Ganglion, it's time to connect your _self!_
 
 ## Connect yourself to OpenBCI
+
 To learn how to connect yourself to OpenBCI using your newly set up board, see the following tutorials:
-* [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)
-* [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md)
-* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md)
+
+-   [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)
+-   [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md)
+-   [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md)

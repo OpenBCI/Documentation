@@ -1,0 +1,30 @@
+{
+  "unversionedId": "09Deprecated/Python",
+  "id": "09Deprecated/Python",
+  "isDocsHomePage": false,
+  "title": "Python and OpenBCI",
+  "description": "THIS DOCUMENT HAS BEEN DEPRECATED. PLEASE REFER TO \"FOR DEVELOPERS\" SECTION FOR INFORMATION ON BRAINFLOW-PYTHON.",
+  "source": "@site/../docs/09Deprecated/08-OpenBCI_Python.md",
+  "sourceDirName": "09Deprecated",
+  "slug": "/09Deprecated/Python",
+  "permalink": "/docs/09Deprecated/Python",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/09Deprecated/08-OpenBCI_Python.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "Python",
+    "title": "Python and OpenBCI"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ultracortex Mark III Nova and Supernova",
+    "permalink": "/docs/09Deprecated/UltracortexMark3_NovaDep"
+  },
+  "next": {
+    "title": "OpenBCI Hub",
+    "permalink": "/docs/09Deprecated/Hub"
+  }
+}

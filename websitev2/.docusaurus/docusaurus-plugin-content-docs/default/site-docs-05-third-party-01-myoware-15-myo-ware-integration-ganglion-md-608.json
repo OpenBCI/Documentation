@@ -1,0 +1,30 @@
+{
+  "unversionedId": "05ThirdParty/Myoware/MyoGanglion",
+  "id": "05ThirdParty/Myoware/MyoGanglion",
+  "isDocsHomePage": false,
+  "title": "MyoWare OpenBCI Integration (Ganglion Board)",
+  "description": "Overview",
+  "source": "@site/../docs/05ThirdParty/01-Myoware/15-MyoWare_Integration_Ganglion.md",
+  "sourceDirName": "05ThirdParty/01-Myoware",
+  "slug": "/05ThirdParty/Myoware/MyoGanglion",
+  "permalink": "/docs/05ThirdParty/Myoware/MyoGanglion",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/05ThirdParty/01-Myoware/15-MyoWare_Integration_Ganglion.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "id": "MyoGanglion",
+    "title": "MyoWare OpenBCI Integration (Ganglion Board)"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "MyoWare OpenBCI Integration (Cyton Board)",
+    "permalink": "/docs/05ThirdParty/Myoware/MyoCyton"
+  },
+  "next": {
+    "title": "Pulse Sensor Guide",
+    "permalink": "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
+  }
+}

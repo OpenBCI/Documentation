@@ -1,0 +1,30 @@
+{
+  "unversionedId": "07Examples/EMGProjects/EMGslideshow",
+  "id": "07Examples/EMGProjects/EMGslideshow",
+  "isDocsHomePage": false,
+  "title": "EMG-controlled Slideshow",
+  "description": "In this tutorial, we will show you how to scroll through a presentation using your eyes. To do that, we will read EMG data from the muscles around your eyes and find the peaks which correspond to blinking, using them as a trigger to scroll to the next slide. Even though we are using eye blinks in this example, any EMG signals such as those produced by your jaw when you clench it or your arms when you move them can be used.",
+  "source": "@site/../docs/07Examples/18-EMGProjects/03-EMG_Controlled_Slideshow.md",
+  "sourceDirName": "07Examples/18-EMGProjects",
+  "slug": "/07Examples/EMGProjects/EMGslideshow",
+  "permalink": "/docs/07Examples/EMGProjects/EMGslideshow",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/07Examples/18-EMGProjects/03-EMG_Controlled_Slideshow.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "EMGslideshow",
+    "title": "EMG-controlled Slideshow"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "EMG controlled Music",
+    "permalink": "/docs/07Examples/EMGProjects/EMGmusic"
+  },
+  "next": {
+    "title": "EMG-controlled LED",
+    "permalink": "/docs/07Examples/EMGProjects/EMG_LED"
+  }
+}

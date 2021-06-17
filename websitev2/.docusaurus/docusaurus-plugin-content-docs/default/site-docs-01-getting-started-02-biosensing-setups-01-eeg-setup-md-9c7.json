@@ -1,0 +1,30 @@
+{
+  "unversionedId": "01GettingStarted/Biosensing-Setups/EEGSetup",
+  "id": "01GettingStarted/Biosensing-Setups/EEGSetup",
+  "isDocsHomePage": false,
+  "title": "Setting up for EEG",
+  "description": "This page will explain the most basic setup to process EEG Data using your OpenBCI board, using our gold cup electrodes.",
+  "source": "@site/../docs/01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md",
+  "sourceDirName": "01GettingStarted/02-Biosensing-Setups",
+  "slug": "/01GettingStarted/Biosensing-Setups/EEGSetup",
+  "permalink": "/docs/01GettingStarted/Biosensing-Setups/EEGSetup",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/../docs/01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "EEGSetup",
+    "title": "Setting up for EEG"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "WiFi Shield Getting Started Guide",
+    "permalink": "/docs/01GettingStarted/Boards/WiFiGS"
+  },
+  "next": {
+    "title": "Setting up for ECG",
+    "permalink": "/docs/01GettingStarted/Biosensing-Setups/ECGSetup"
+  }
+}
