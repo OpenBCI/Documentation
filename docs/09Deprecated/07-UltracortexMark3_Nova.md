@@ -1,6 +1,6 @@
 ---
 id: UltracortexMark3_NovaDep
-title: Ultracortex Mark III "Nova" & "Supernova" (REVISED)
+title: "Ultracortex Mark III "Nova" & "Supernova" (REVISED)"
 ---
 
 *Development Period: June 2016*

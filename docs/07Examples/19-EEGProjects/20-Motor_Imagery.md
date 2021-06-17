@@ -1,6 +1,6 @@
 ---
 id: MotorImagery
-title: Motor Imagery  
+title: Motor Imagery
 ---
 
 This tutorial was made by Rakesh C Jakati.

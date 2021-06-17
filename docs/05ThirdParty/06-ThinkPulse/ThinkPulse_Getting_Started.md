@@ -1,6 +1,6 @@
 ---
 id: ThinkPulse
-title: ThinkPulse™ Getting Started Guide
+title: "ThinkPulse™ Getting Started Guide"
 ---
 
 Available exclusively worldwide only on the [OpenBCI® store](https://shop.openbci.com/products/thinkpulse-active-electrode-kit).

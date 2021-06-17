@@ -1,6 +1,6 @@
 ---
 id: EMGmusic
-title: EMG-controlled Stop/Start Music
+title: "EMG-controlled Stop/Start Music"
 ---
 
 
