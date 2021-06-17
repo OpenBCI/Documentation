@@ -19,7 +19,8 @@ This section details the electrode setups for the various types of biosensing:
 
 * [EEG Setup](01GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md) — Details how to wire electrodes to gather signals from the brain.
 * [EMG Setup](01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md) — Details how to wire electrodes to gather signals from different muscle groups.
-* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md) — Details how to wire electrodes to gather signals from different muscle groups.
+* [ECG Setup](01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md) — Details how to wire electrodes to gather signals from the heart.
+* [ExG Setup](01GettingStarted/02-Biosensing-Setups/04-ExG-Setup.md) — Details how to set up for recording EEG, EMG and ECG at the same time.
 
 ## Community
 This section contains the tutorial about getting started as a member of the OpenBCI Community:
