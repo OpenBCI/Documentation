@@ -1,0 +1,30 @@
+{
+  "unversionedId": "02Cyton/CytonLanding",
+  "id": "02Cyton/CytonLanding",
+  "isDocsHomePage": false,
+  "title": "Cyton Board",
+  "description": "Buy it!",
+  "source": "@site/docs/02Cyton/01-CytonBoard.md",
+  "sourceDirName": "02Cyton",
+  "slug": "/02Cyton/CytonLanding",
+  "permalink": "/docs/02Cyton/CytonLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/02Cyton/01-CytonBoard.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "CytonLanding",
+    "title": "Cyton Board"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Welcome to the OpenBCI Community",
+    "permalink": "/docs/01GettingStarted/Community/Community"
+  },
+  "next": {
+    "title": "Cyton Specs",
+    "permalink": "/docs/02Cyton/CytonSpecs"
+  }
+}

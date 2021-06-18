@@ -1,8 +1,4 @@
 {
-  "/-deb": {
-    "component": "component---site-src-pages-index-jsc-4-f-f99",
-    "config": "config---5-e-9-4f3"
-  },
   "/__docusaurus/debug-3d6": {
     "component": "component---theme-debug-config-23-a-2ff"
   },
@@ -42,381 +38,381 @@
   },
   "/citations-36e": {
     "component": "component---site-src-pages-citations-jsbfd-c73",
-    "config": "config---5-e-9-4f3"
+    "config": "config---citations-5-e-9-797"
   },
   "/help-416": {
     "component": "component---site-src-pages-help-js-7-e-3-222",
-    "config": "config---5-e-9-4f3"
+    "config": "config---citations-5-e-9-797"
   },
   "/search-4f1": {
     "component": "component---users-richard-documents-git-hub-documentation-websitev-2-node-modules-docusaurus-theme-search-algolia-src-theme-search-page-index-js-047-8f8"
   },
-  "/docs-71d": {
+  "/docs-3b0": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/-502": {
+  "/docs/-19c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-8-c-9-6ae"
+    "content": "content---docs-bea-911"
   },
-  "/docs/01GettingStarted/Biosensing-Setups/ECGSetup-8f4": {
+  "/docs/01GettingStarted/Biosensing-Setups/ECGSetup-901": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-biosensing-setups-ecg-setup-5-de-a97"
+    "content": "content---docs-01-getting-started-biosensing-setups-ecg-setup-248-095"
   },
-  "/docs/01GettingStarted/Biosensing-Setups/EEGSetup-1a7": {
+  "/docs/01GettingStarted/Biosensing-Setups/EEGSetup-f7e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-biosensing-setups-eeg-setup-9-c-7-016"
+    "content": "content---docs-01-getting-started-biosensing-setups-eeg-setupea-8-68b"
   },
-  "/docs/01GettingStarted/Biosensing-Setups/EMGSetup-87f": {
+  "/docs/01GettingStarted/Biosensing-Setups/EMGSetup-523": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-biosensing-setups-emg-setupc-93-151"
+    "content": "content---docs-01-getting-started-biosensing-setups-emg-setupc-23-c0e"
   },
-  "/docs/01GettingStarted/Biosensing-Setups/ExGSetup-622": {
+  "/docs/01GettingStarted/Biosensing-Setups/ExGSetup-7da": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-biosensing-setups-ex-g-setup-0-cc-6da"
+    "content": "content---docs-01-getting-started-biosensing-setups-ex-g-setupb-5-d-89c"
   },
-  "/docs/01GettingStarted/Boards/CytonGS-849": {
+  "/docs/01GettingStarted/Boards/CytonGS-451": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-boards-cyton-gs-4-e-4-8ae"
+    "content": "content---docs-01-getting-started-boards-cyton-g-sac-8-448"
   },
-  "/docs/01GettingStarted/Boards/DaisyGS-5ae": {
+  "/docs/01GettingStarted/Boards/DaisyGS-6e4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-boards-daisy-g-sd-71-ab3"
+    "content": "content---docs-01-getting-started-boards-daisy-gs-494-3fc"
   },
-  "/docs/01GettingStarted/Boards/GanglionGS-4fd": {
+  "/docs/01GettingStarted/Boards/GanglionGS-30f": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-boards-ganglion-g-sf-48-afe"
+    "content": "content---docs-01-getting-started-boards-ganglion-g-se-7-b-f1b"
   },
-  "/docs/01GettingStarted/Boards/WiFiGS-d56": {
+  "/docs/01GettingStarted/Boards/WiFiGS-52c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-boards-wi-fi-gs-2-de-5c2"
+    "content": "content---docs-01-getting-started-boards-wi-fi-gs-7-ed-975"
   },
-  "/docs/01GettingStarted/Community/Community-396": {
+  "/docs/01GettingStarted/Community/Community-10c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-community-community-4-e-9-a7b"
+    "content": "content---docs-01-getting-started-community-community-177-e7b"
   },
-  "/docs/01GettingStarted/GettingStartedLanding-6d7": {
+  "/docs/01GettingStarted/GettingStartedLanding-726": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-01-getting-started-getting-started-landing-78-c-e0f"
+    "content": "content---docs-01-getting-started-getting-started-landingd-68-a18"
   },
-  "/docs/02Cyton/CytonDataFormat-1a6": {
+  "/docs/02Cyton/CytonDataFormat-917": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-data-format-8-b-6-d39"
+    "content": "content---docs-02-cyton-cyton-data-formate-2-e-921"
   },
-  "/docs/02Cyton/CytonExternal-f19": {
+  "/docs/02Cyton/CytonExternal-533": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-external-19-d-c9f"
+    "content": "content---docs-02-cyton-cyton-external-809-01b"
   },
-  "/docs/02Cyton/CytonLanding-807": {
+  "/docs/02Cyton/CytonLanding-cae": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-landing-1-d-2-3bd"
+    "content": "content---docs-02-cyton-cyton-landing-836-cb5"
   },
-  "/docs/02Cyton/CytonProgram-b5b": {
+  "/docs/02Cyton/CytonProgram-9f4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-program-2-b-6-2eb"
+    "content": "content---docs-02-cyton-cyton-program-7-ce-26f"
   },
-  "/docs/02Cyton/CytonRadios-1a0": {
+  "/docs/02Cyton/CytonRadios-e67": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-radios-428-824"
+    "content": "content---docs-02-cyton-cyton-radios-0-fb-8af"
   },
-  "/docs/02Cyton/CytonSDCard-931": {
+  "/docs/02Cyton/CytonSDCard-a9f": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-sd-cardcf-8-7f6"
+    "content": "content---docs-02-cyton-cyton-sd-card-067-ae7"
   },
-  "/docs/02Cyton/CytonSDK-03a": {
+  "/docs/02Cyton/CytonSDK-278": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-sdk-73-e-166"
+    "content": "content---docs-02-cyton-cyton-sdk-89-b-5f0"
   },
-  "/docs/02Cyton/CytonSpecs-29f": {
+  "/docs/02Cyton/CytonSpecs-5a1": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-02-cyton-cyton-specs-2-e-3-872"
+    "content": "content---docs-02-cyton-cyton-specs-2-f-2-1e4"
   },
-  "/docs/03Ganglion/GanglionDataFormat-adc": {
+  "/docs/03Ganglion/GanglionDataFormat-3d4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-03-ganglion-ganglion-data-format-059-bd7"
+    "content": "content---docs-03-ganglion-ganglion-data-formatcd-7-434"
   },
-  "/docs/03Ganglion/GanglionLanding-d50": {
+  "/docs/03Ganglion/GanglionLanding-63f": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-03-ganglion-ganglion-landingb-81-b38"
+    "content": "content---docs-03-ganglion-ganglion-landing-23-a-860"
   },
-  "/docs/03Ganglion/GanglionProgram-5df": {
+  "/docs/03Ganglion/GanglionProgram-828": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-03-ganglion-ganglion-program-884-de5"
+    "content": "content---docs-03-ganglion-ganglion-programe-31-1d2"
   },
-  "/docs/03Ganglion/GanglionSDK-bcd": {
+  "/docs/03Ganglion/GanglionSDK-8db": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-03-ganglion-ganglion-sdk-7-f-4-9ae"
+    "content": "content---docs-03-ganglion-ganglion-sdk-06-c-3c4"
   },
-  "/docs/03Ganglion/GanglionSpecs-2f6": {
+  "/docs/03Ganglion/GanglionSpecs-536": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-03-ganglion-ganglion-specse-0-c-a52"
+    "content": "content---docs-03-ganglion-ganglion-specs-9-cb-f3d"
   },
-  "/docs/04AddOns/AddOnLanding-c80": {
+  "/docs/04AddOns/AddOnLanding-235": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-04-add-ons-add-on-landingfcf-de4"
+    "content": "content---docs-04-add-ons-add-on-landing-0-a-4-b5c"
   },
-  "/docs/04AddOns/Electrodes/ElectrodesLanding-8fb": {
+  "/docs/04AddOns/Electrodes/ElectrodesLanding-2ae": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-04-add-ons-electrodes-electrodes-landingcd-0-b00"
+    "content": "content---docs-04-add-ons-electrodes-electrodes-landing-7-d-1-bb9"
   },
-  "/docs/04AddOns/Headwear/ElectrodeCap-cf5": {
+  "/docs/04AddOns/Headwear/ElectrodeCap-f07": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-04-add-ons-headwear-electrode-capfb-8-ebb"
+    "content": "content---docs-04-add-ons-headwear-electrode-capf-8-a-b91"
   },
-  "/docs/04AddOns/Headwear/HeadBand-bdd": {
+  "/docs/04AddOns/Headwear/HeadBand-03d": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-04-add-ons-headwear-head-band-4-a-8-496"
+    "content": "content---docs-04-add-ons-headwear-head-bande-52-0af"
   },
-  "/docs/04AddOns/Headwear/MarkIII-355": {
+  "/docs/04AddOns/Headwear/MarkIII-987": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-04-add-ons-headwear-mark-ii-icbf-af1"
+    "content": "content---docs-04-add-ons-headwear-mark-ii-ife-4-176"
   },
-  "/docs/04AddOns/Headwear/MarkIV-f81": {
+  "/docs/04AddOns/Headwear/MarkIV-308": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-04-add-ons-headwear-mark-i-vca-7-a01"
+    "content": "content---docs-04-add-ons-headwear-mark-i-ve-73-f97"
   },
-  "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide-464": {
+  "/docs/05ThirdParty/EmotiBit/EmotiBit_Guide-290": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-emoti-bit-emoti-bit-guidec-05-d30"
+    "content": "content---docs-05-third-party-emoti-bit-emoti-bit-guidecfe-e80"
   },
-  "/docs/05ThirdParty/HEGduino Kit/HEGduino-5a9": {
+  "/docs/05ThirdParty/HEGduino Kit/HEGduino-2b6": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-he-gduino-kit-he-gduino-569-cbe"
+    "content": "content---docs-05-third-party-he-gduino-kit-he-gduinobd-1-ac8"
   },
-  "/docs/05ThirdParty/IDUN_Dryode/Dryode-f76": {
+  "/docs/05ThirdParty/IDUN_Dryode/Dryode-98a": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-idun-dryode-dryodecb-0-204"
+    "content": "content---docs-05-third-party-idun-dryode-dryodeaa-3-f6d"
   },
-  "/docs/05ThirdParty/Myoware/MyoCyton-4a7": {
+  "/docs/05ThirdParty/Myoware/MyoCyton-901": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-myoware-myo-cytond-95-56e"
+    "content": "content---docs-05-third-party-myoware-myo-cytonce-6-f0d"
   },
-  "/docs/05ThirdParty/Myoware/MyoGanglion-f54": {
+  "/docs/05ThirdParty/Myoware/MyoGanglion-5e2": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-myoware-myo-ganglion-608-17a"
+    "content": "content---docs-05-third-party-myoware-myo-ganglion-22-c-7a4"
   },
-  "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing-528": {
+  "/docs/05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing-846": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-pulse-sensor-pulse-sensor-landinge-7-e-ee6"
+    "content": "content---docs-05-third-party-pulse-sensor-pulse-sensor-landing-544-dff"
   },
-  "/docs/05ThirdParty/ThinkPulse/ThinkPulse-4d5": {
+  "/docs/05ThirdParty/ThinkPulse/ThinkPulse-c4c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-think-pulse-think-pulsea-0-f-8d4"
+    "content": "content---docs-05-third-party-think-pulse-think-pulse-434-bf7"
   },
-  "/docs/05ThirdParty/ThirdPartyLanding-1cf": {
+  "/docs/05ThirdParty/ThirdPartyLanding-be7": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-third-party-landing-989-ec2"
+    "content": "content---docs-05-third-party-third-party-landing-049-d6e"
   },
-  "/docs/05ThirdParty/WiFiShield/WiFiAPI-1cd": {
+  "/docs/05ThirdParty/WiFiShield/WiFiAPI-134": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-api-482-185"
+    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-ap-iaf-5-a96"
   },
-  "/docs/05ThirdParty/WiFiShield/WiFiLanding-da4": {
+  "/docs/05ThirdParty/WiFiShield/WiFiLanding-5da": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-landing-7-fc-c7e"
+    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-landing-6-ff-194"
   },
-  "/docs/05ThirdParty/WiFiShield/WiFiProgam-d29": {
+  "/docs/05ThirdParty/WiFiShield/WiFiProgam-b93": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-progamb-8-b-971"
+    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-progamc-16-c5f"
   },
-  "/docs/05ThirdParty/WiFiShield/WiFiSDK-66e": {
+  "/docs/05ThirdParty/WiFiShield/WiFiSDK-039": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-sdk-3-c-4-d88"
+    "content": "content---docs-05-third-party-wi-fi-shield-wi-fi-sdk-75-e-afa"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/BioEra-1d4": {
+  "/docs/06Software/CompatibleThirdPartySoftware/BioEra-689": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-bio-era-7-e-1-ba1"
+    "content": "content---docs-06-software-compatible-third-party-software-bio-era-8-ed-3bb"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/BrainBay-219": {
+  "/docs/06Software/CompatibleThirdPartySoftware/BrainBay-da4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-brain-baydc-8-9b3"
+    "content": "content---docs-06-software-compatible-third-party-software-brain-bay-823-220"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/LSL-0aa": {
+  "/docs/06Software/CompatibleThirdPartySoftware/LSL-624": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-lsl-235-b82"
+    "content": "content---docs-06-software-compatible-third-party-software-ls-lfc-4-a2e"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/Matlab-ca1": {
+  "/docs/06Software/CompatibleThirdPartySoftware/Matlab-f6b": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-matlab-3-df-842"
+    "content": "content---docs-06-software-compatible-third-party-software-matlabdfe-bc8"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/Neuromore-3d6": {
+  "/docs/06Software/CompatibleThirdPartySoftware/Neuromore-92c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-neuromoreed-5-24d"
+    "content": "content---docs-06-software-compatible-third-party-software-neuromore-7-e-0-6fc"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe-acb": {
+  "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe-212": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-open-vibe-48-b-fe0"
+    "content": "content---docs-06-software-compatible-third-party-software-open-vibeb-45-575"
   },
-  "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox-f8c": {
+  "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox-b3c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-compatible-third-party-software-virtual-box-33-b-6c6"
+    "content": "content---docs-06-software-compatible-third-party-software-virtual-box-049-a66"
   },
-  "/docs/06Software/OpenBCISoftware/GUIDocs-771": {
+  "/docs/06Software/OpenBCISoftware/GUIDocs-456": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-open-bci-software-gui-docs-931-a9f"
+    "content": "content---docs-06-software-open-bci-software-gui-docsbd-9-56a"
   },
-  "/docs/06Software/OpenBCISoftware/GUIWidgets-d92": {
+  "/docs/06Software/OpenBCISoftware/GUIWidgets-39d": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-open-bci-software-gui-widgetscad-f44"
+    "content": "content---docs-06-software-open-bci-software-gui-widgets-302-0d1"
   },
-  "/docs/06Software/SoftwareLanding-6a9": {
+  "/docs/06Software/SoftwareLanding-5aa": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-06-software-software-landing-8-c-0-83c"
+    "content": "content---docs-06-software-software-landinge-8-b-327"
   },
-  "/docs/07Examples/CommunityPageProjects-41c": {
+  "/docs/07Examples/CommunityPageProjects-0e9": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-community-page-projects-856-da5"
+    "content": "content---docs-07-examples-community-page-projects-9-b-0-ff9"
   },
-  "/docs/07Examples/EEGProjects/FocusArduino-839": {
+  "/docs/07Examples/EEGProjects/FocusArduino-4ce": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-eeg-projects-focus-arduino-506-55a"
+    "content": "content---docs-07-examples-eeg-projects-focus-arduinof-2-d-c98"
   },
-  "/docs/07Examples/EEGProjects/MotorImagery-cca": {
+  "/docs/07Examples/EEGProjects/MotorImagery-c30": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-eeg-projects-motor-imagery-964-6f1"
+    "content": "content---docs-07-examples-eeg-projects-motor-imagery-5-aa-c75"
   },
-  "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game-27b": {
+  "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game-cd7": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-emg-projects-emg-chrome-dino-gamec-30-7df"
+    "content": "content---docs-07-examples-emg-projects-emg-chrome-dino-gamef-65-758"
   },
-  "/docs/07Examples/EMGProjects/EMG_LED-f00": {
+  "/docs/07Examples/EMGProjects/EMG_LED-706": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-emg-projects-emg-led-52-c-b20"
+    "content": "content---docs-07-examples-emg-projects-emg-le-de-6-c-b0e"
   },
-  "/docs/07Examples/EMGProjects/EMGmusic-3f9": {
+  "/docs/07Examples/EMGProjects/EMGmusic-dbc": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-emg-projects-em-gmusicc-2-e-904"
+    "content": "content---docs-07-examples-emg-projects-em-gmusic-1-cd-9b2"
   },
-  "/docs/07Examples/EMGProjects/EMGscrolling-876": {
+  "/docs/07Examples/EMGProjects/EMGscrolling-eb4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-emg-projects-em-gscrolling-982-151"
+    "content": "content---docs-07-examples-emg-projects-em-gscrolling-4-cc-9a3"
   },
-  "/docs/07Examples/EMGProjects/EMGslideshow-19b": {
+  "/docs/07Examples/EMGProjects/EMGslideshow-e36": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-emg-projects-em-gslideshow-3-bd-e16"
+    "content": "content---docs-07-examples-emg-projects-em-gslideshow-9-e-5-689"
   },
-  "/docs/07Examples/ExamplesLanding-5b1": {
+  "/docs/07Examples/ExamplesLanding-481": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-examples-landing-48-b-06f"
+    "content": "content---docs-07-examples-examples-landing-472-bd8"
   },
-  "/docs/07Examples/VideoExperiment-11c": {
+  "/docs/07Examples/VideoExperiment-d9c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-07-examples-video-experiment-430-671"
+    "content": "content---docs-07-examples-video-experimentae-0-2f5"
   },
-  "/docs/08FAQ/Cookie-e27": {
+  "/docs/08FAQ/Cookie-acd": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-cookieb-09-2a5"
+    "content": "content---docs-08-faq-cookie-322-86e"
   },
-  "/docs/08FAQ/FAQLanding-42b": {
+  "/docs/08FAQ/FAQLanding-642": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-faq-landingb-70-8df"
+    "content": "content---docs-08-faq-faq-landing-0-f-3-e98"
   },
-  "/docs/08FAQ/GenFAQ-5b0": {
+  "/docs/08FAQ/GenFAQ-cd8": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-gen-faq-1-c-0-3b8"
+    "content": "content---docs-08-faq-gen-faq-49-a-06c"
   },
-  "/docs/08FAQ/HardFAQ-439": {
+  "/docs/08FAQ/HardFAQ-84c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-hard-fa-qa-3-a-e68"
+    "content": "content---docs-08-faq-hard-faq-766-56b"
   },
-  "/docs/08FAQ/HowProductsGoTogether-840": {
+  "/docs/08FAQ/HowProductsGoTogether-a25": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-how-products-go-togetherbb-2-a1c"
+    "content": "content---docs-08-faq-how-products-go-togetherf-0-f-a9f"
   },
-  "/docs/08FAQ/Liability-a1e": {
+  "/docs/08FAQ/Liability-0c7": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-liability-661-c10"
+    "content": "content---docs-08-faq-liability-282-4c2"
   },
-  "/docs/08FAQ/PaymentFAQ-709": {
+  "/docs/08FAQ/PaymentFAQ-bda": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-payment-fa-qcb-0-244"
+    "content": "content---docs-08-faq-payment-fa-qafa-6b3"
   },
-  "/docs/08FAQ/Privacy-a8a": {
+  "/docs/08FAQ/Privacy-ff5": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-privacyff-8-de2"
+    "content": "content---docs-08-faq-privacyf-1-d-3b6"
   },
-  "/docs/08FAQ/Returns-3a3": {
+  "/docs/08FAQ/Returns-dc4": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-returns-126-835"
+    "content": "content---docs-08-faq-returns-8-cf-da0"
   },
-  "/docs/08FAQ/ShippingFAQ-5b6": {
+  "/docs/08FAQ/ShippingFAQ-746": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-08-faq-shipping-faq-72-d-45e"
+    "content": "content---docs-08-faq-shipping-fa-qb-0-c-89d"
   },
-  "/docs/09Deprecated/8bitBoardDep-2b9": {
+  "/docs/09Deprecated/8bitBoardDep-b52": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-8-bit-board-depf-9-b-074"
+    "content": "content---docs-09-deprecated-8-bit-board-depf-5-f-623"
   },
-  "/docs/09Deprecated/DeprecatedLanding-73a": {
+  "/docs/09Deprecated/DeprecatedLanding-fc3": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-deprecated-landing-252-482"
+    "content": "content---docs-09-deprecated-deprecated-landing-376-2a8"
   },
-  "/docs/09Deprecated/Hub-83e": {
+  "/docs/09Deprecated/Hub-ac1": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-hube-61-f2d"
+    "content": "content---docs-09-deprecated-hub-5-c-5-aba"
   },
-  "/docs/09Deprecated/Python-c0e": {
+  "/docs/09Deprecated/Python-ec1": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-pythonc-08-7d6"
+    "content": "content---docs-09-deprecated-python-14-d-622"
   },
-  "/docs/09Deprecated/SpiderclawDep-b4d": {
+  "/docs/09Deprecated/SpiderclawDep-6ab": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-spiderclaw-depc-57-1be"
+    "content": "content---docs-09-deprecated-spiderclaw-depbfa-203"
   },
-  "/docs/09Deprecated/UltracortexMark1Dep-6a0": {
+  "/docs/09Deprecated/UltracortexMark1Dep-ebc": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-ultracortex-mark-1-depd-88-7fd"
+    "content": "content---docs-09-deprecated-ultracortex-mark-1-depf-59-43d"
   },
-  "/docs/09Deprecated/UltracortexMark2Dep-6b6": {
+  "/docs/09Deprecated/UltracortexMark2Dep-626": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-ultracortex-mark-2-depe-7-e-8bb"
+    "content": "content---docs-09-deprecated-ultracortex-mark-2-depeb-6-53d"
   },
-  "/docs/09Deprecated/UltracortexMark3_NovaDep-667": {
+  "/docs/09Deprecated/UltracortexMark3_NovaDep-93f": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-ultracortex-mark-3-nova-dep-41-d-25b"
+    "content": "content---docs-09-deprecated-ultracortex-mark-3-nova-depc-42-0a2"
   },
-  "/docs/09Deprecated/UltracortexMark3Dep-f12": {
+  "/docs/09Deprecated/UltracortexMark3Dep-dec": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-09-deprecated-ultracortex-mark-3-dep-034-842"
+    "content": "content---docs-09-deprecated-ultracortex-mark-3-depb-07-02e"
   },
-  "/docs/10Troubleshooting/FTDI_Fix_Linux-075": {
+  "/docs/10Troubleshooting/FTDI_Fix_Linux-478": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-10-troubleshooting-ftdi-fix-linux-4-cd-508"
+    "content": "content---docs-10-troubleshooting-ftdi-fix-linux-42-b-ad4"
   },
-  "/docs/10Troubleshooting/FTDI_Fix_Mac-a94": {
+  "/docs/10Troubleshooting/FTDI_Fix_Mac-829": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-10-troubleshooting-ftdi-fix-mac-7-cf-c84"
+    "content": "content---docs-10-troubleshooting-ftdi-fix-macdee-ea1"
   },
-  "/docs/10Troubleshooting/FTDI_Fix_Windows-e0a": {
+  "/docs/10Troubleshooting/FTDI_Fix_Windows-320": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-10-troubleshooting-ftdi-fix-windows-7-cb-ec2"
+    "content": "content---docs-10-troubleshooting-ftdi-fix-windowsd-84-b35"
   },
-  "/docs/10Troubleshooting/GUI_Troubleshooting-110": {
+  "/docs/10Troubleshooting/GUI_Troubleshooting-c24": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-10-troubleshooting-gui-troubleshooting-56-f-6db"
+    "content": "content---docs-10-troubleshooting-gui-troubleshootingfdf-11f"
   },
-  "/docs/10Troubleshooting/minimizingNoise-05a": {
+  "/docs/10Troubleshooting/minimizingNoise-2b6": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-10-troubleshooting-minimizing-noised-56-efb"
+    "content": "content---docs-10-troubleshooting-minimizing-noise-86-a-1d0"
   },
-  "/docs/10Troubleshooting/TroubleshootingLanding-45f": {
+  "/docs/10Troubleshooting/TroubleshootingLanding-41b": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-10-troubleshooting-troubleshooting-landing-128-d4d"
+    "content": "content---docs-10-troubleshooting-troubleshooting-landing-622-6b4"
   },
-  "/docs/11ForDevelopers/FirmwareDevelopment-346": {
+  "/docs/11ForDevelopers/FirmwareDevelopment-fbd": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-11-for-developers-firmware-development-89-c-2c3"
+    "content": "content---docs-11-for-developers-firmware-development-88-c-99f"
   },
-  "/docs/11ForDevelopers/ForDevelopersLanding-9e4": {
+  "/docs/11ForDevelopers/ForDevelopersLanding-371": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-11-for-developers-for-developers-landing-047-148"
+    "content": "content---docs-11-for-developers-for-developers-landinge-5-b-f6c"
   },
-  "/docs/11ForDevelopers/HardwareDevelopment-54f": {
+  "/docs/11ForDevelopers/HardwareDevelopment-bdb": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-11-for-developers-hardware-development-535-4a9"
+    "content": "content---docs-11-for-developers-hardware-developmenta-95-b29"
   },
-  "/docs/11ForDevelopers/SoftwareDevelopment-03f": {
+  "/docs/11ForDevelopers/SoftwareDevelopment-e6d": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-11-for-developers-software-development-4-b-2-182"
+    "content": "content---docs-11-for-developers-software-development-444-098"
   }
 }

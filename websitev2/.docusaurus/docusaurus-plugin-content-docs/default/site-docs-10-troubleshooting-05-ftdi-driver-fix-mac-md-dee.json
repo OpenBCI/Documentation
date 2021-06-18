@@ -1,0 +1,30 @@
+{
+  "unversionedId": "10Troubleshooting/FTDI_Fix_Mac",
+  "id": "10Troubleshooting/FTDI_Fix_Mac",
+  "isDocsHomePage": false,
+  "title": "FTDI Buffer Fix on OS X",
+  "description": "Summary",
+  "source": "@site/docs/10Troubleshooting/05-FTDI_Driver_Fix_Mac.md",
+  "sourceDirName": "10Troubleshooting",
+  "slug": "/10Troubleshooting/FTDI_Fix_Mac",
+  "permalink": "/docs/10Troubleshooting/FTDI_Fix_Mac",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/10Troubleshooting/05-FTDI_Driver_Fix_Mac.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "FTDI_Fix_Mac",
+    "title": "FTDI Buffer Fix on OS X"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "FTDI Buffer Fix on Linux",
+    "permalink": "/docs/10Troubleshooting/FTDI_Fix_Linux"
+  },
+  "next": {
+    "title": "FTDI Buffer Fix on Windows",
+    "permalink": "/docs/10Troubleshooting/FTDI_Fix_Windows"
+  }
+}

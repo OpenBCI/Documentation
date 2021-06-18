@@ -1,0 +1,30 @@
+{
+  "unversionedId": "10Troubleshooting/FTDI_Fix_Windows",
+  "id": "10Troubleshooting/FTDI_Fix_Windows",
+  "isDocsHomePage": false,
+  "title": "FTDI Buffer Fix on Windows",
+  "description": "Tested on:",
+  "source": "@site/docs/10Troubleshooting/04-FTDI_Fix_Windows.md",
+  "sourceDirName": "10Troubleshooting",
+  "slug": "/10Troubleshooting/FTDI_Fix_Windows",
+  "permalink": "/docs/10Troubleshooting/FTDI_Fix_Windows",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/10Troubleshooting/04-FTDI_Fix_Windows.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "FTDI_Fix_Windows",
+    "title": "FTDI Buffer Fix on Windows"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "FTDI Buffer Fix on OS X",
+    "permalink": "/docs/10Troubleshooting/FTDI_Fix_Mac"
+  },
+  "next": {
+    "title": "Example Projects",
+    "permalink": "/docs/07Examples/ExamplesLanding"
+  }
+}

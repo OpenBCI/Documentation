@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Welcome",
+  "id": "Welcome",
+  "isDocsHomePage": false,
+  "title": "Welcome to the OpenBCI Community",
+  "description": "Welcome to the OpenBCI Learning Pages! Here you will find a wide range of guides and tutorials that are intended to teach you how to use your OpenBCI gear. If you run into issues or have additional questions, head to our Forum with daily active users. Check out the Community Page for project ideas!",
+  "source": "@site/docs/00-Welcome.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/00-Welcome.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "Welcome",
+    "slug": "/",
+    "title": "Welcome to the OpenBCI Community"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/docs/01GettingStarted/GettingStartedLanding"
+  }
+}

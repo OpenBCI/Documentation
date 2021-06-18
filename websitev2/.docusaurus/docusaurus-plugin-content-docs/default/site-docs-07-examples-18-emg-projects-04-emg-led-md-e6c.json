@@ -1,0 +1,30 @@
+{
+  "unversionedId": "07Examples/EMGProjects/EMG_LED",
+  "id": "07Examples/EMGProjects/EMG_LED",
+  "isDocsHomePage": false,
+  "title": "EMG-controlled LED",
+  "description": "This tutorial is little more involved than the other EMG tutorials. No fear, we've documented every step below. Happy bio-hacking!",
+  "source": "@site/docs/07Examples/18-EMGProjects/04-EMG_LED.md",
+  "sourceDirName": "07Examples/18-EMGProjects",
+  "slug": "/07Examples/EMGProjects/EMG_LED",
+  "permalink": "/docs/07Examples/EMGProjects/EMG_LED",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/07Examples/18-EMGProjects/04-EMG_LED.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "EMG_LED",
+    "title": "EMG-controlled LED"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "EMG-controlled Slideshow",
+    "permalink": "/docs/07Examples/EMGProjects/EMGslideshow"
+  },
+  "next": {
+    "title": "EMG Chrome Dino Game",
+    "permalink": "/docs/07Examples/EMGProjects/EMG_Chrome_Dino_Game"
+  }
+}

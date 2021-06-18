@@ -1,0 +1,30 @@
+{
+  "unversionedId": "02Cyton/CytonSpecs",
+  "id": "02Cyton/CytonSpecs",
+  "isDocsHomePage": false,
+  "title": "Cyton Specs",
+  "description": "BUY IT!",
+  "source": "@site/docs/02Cyton/02-Cyton.md",
+  "sourceDirName": "02Cyton",
+  "slug": "/02Cyton/CytonSpecs",
+  "permalink": "/docs/02Cyton/CytonSpecs",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/02Cyton/02-Cyton.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "CytonSpecs",
+    "title": "Cyton Specs"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Cyton Board",
+    "permalink": "/docs/02Cyton/CytonLanding"
+  },
+  "next": {
+    "title": "Cyton Data Format",
+    "permalink": "/docs/02Cyton/CytonDataFormat"
+  }
+}

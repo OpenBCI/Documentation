@@ -1,0 +1,30 @@
+{
+  "unversionedId": "01GettingStarted/GettingStartedLanding",
+  "id": "01GettingStarted/GettingStartedLanding",
+  "isDocsHomePage": false,
+  "title": "Getting Started",
+  "description": "This directory will show you everything you need to know to get started with OpenBCI.",
+  "source": "@site/docs/01GettingStarted/00-GettingStartedLanding.md",
+  "sourceDirName": "01GettingStarted",
+  "slug": "/01GettingStarted/GettingStartedLanding",
+  "permalink": "/docs/01GettingStarted/GettingStartedLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/01GettingStarted/00-GettingStartedLanding.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "GettingStartedLanding",
+    "title": "Getting Started"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Welcome to the OpenBCI Community",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Cyton Getting Started Guide",
+    "permalink": "/docs/01GettingStarted/Boards/CytonGS"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "09Deprecated/DeprecatedLanding",
+  "id": "09Deprecated/DeprecatedLanding",
+  "isDocsHomePage": false,
+  "title": "Deprecated Docs",
+  "description": "This directory houses all deprecated documentation.",
+  "source": "@site/docs/09Deprecated/01-DeprecatedDocs.md",
+  "sourceDirName": "09Deprecated",
+  "slug": "/09Deprecated/DeprecatedLanding",
+  "permalink": "/docs/09Deprecated/DeprecatedLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/09Deprecated/01-DeprecatedDocs.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "DeprecatedLanding",
+    "title": "Deprecated Docs"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/11ForDevelopers/HardwareDevelopment"
+  },
+  "next": {
+    "title": "Spiderclaw V1 & V2 (deprecated)",
+    "permalink": "/docs/09Deprecated/SpiderclawDep"
+  }
+}

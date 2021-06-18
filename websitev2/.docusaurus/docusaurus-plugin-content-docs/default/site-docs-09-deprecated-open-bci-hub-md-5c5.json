@@ -1,0 +1,29 @@
+{
+  "unversionedId": "09Deprecated/Hub",
+  "id": "09Deprecated/Hub",
+  "isDocsHomePage": false,
+  "title": "OpenBCI Hub",
+  "description": "THIS SOFTWARE HAS BEEN DEPRECATED AND IS NO LONGER IN ACTIVE DEVELOPMENT.",
+  "source": "@site/docs/09Deprecated/OpenBCI_Hub.md",
+  "sourceDirName": "09Deprecated",
+  "slug": "/09Deprecated/Hub",
+  "permalink": "/docs/09Deprecated/Hub",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/09Deprecated/OpenBCI_Hub.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "Hub",
+    "title": "OpenBCI Hub"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Python and OpenBCI",
+    "permalink": "/docs/09Deprecated/Python"
+  },
+  "next": {
+    "title": "Troubleshooting Landing",
+    "permalink": "/docs/10Troubleshooting/TroubleshootingLanding"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "unversionedId": "04AddOns/Headwear/ElectrodeCap",
+  "id": "04AddOns/Headwear/ElectrodeCap",
+  "isDocsHomePage": false,
+  "title": "Electrode Cap Getting Started Guide",
+  "description": "This is a guide to setting up and cleaning your OpenBCI Electrode Cap. Please consult the Electrode Cap",
+  "source": "@site/docs/04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md",
+  "sourceDirName": "04AddOns/01-Headwear",
+  "slug": "/04AddOns/Headwear/ElectrodeCap",
+  "permalink": "/docs/04AddOns/Headwear/ElectrodeCap",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "ElectrodeCap",
+    "title": "Electrode Cap Getting Started Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "OpenBCI EEG Headband Kit Guide",
+    "permalink": "/docs/04AddOns/Headwear/HeadBand"
+  },
+  "next": {
+    "title": "Electrode Guide",
+    "permalink": "/docs/04AddOns/Electrodes/ElectrodesLanding"
+  }
+}

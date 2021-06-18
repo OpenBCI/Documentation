@@ -1,0 +1,30 @@
+{
+  "unversionedId": "04AddOns/Electrodes/ElectrodesLanding",
+  "id": "04AddOns/Electrodes/ElectrodesLanding",
+  "isDocsHomePage": false,
+  "title": "Electrode Guide",
+  "description": "OpenBCI Boards are compatible with a variety of different electrodes.",
+  "source": "@site/docs/04AddOns/02-Electrodes/00-ElectrodesLanding.md",
+  "sourceDirName": "04AddOns/02-Electrodes",
+  "slug": "/04AddOns/Electrodes/ElectrodesLanding",
+  "permalink": "/docs/04AddOns/Electrodes/ElectrodesLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/04AddOns/02-Electrodes/00-ElectrodesLanding.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "ElectrodesLanding",
+    "title": "Electrode Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Electrode Cap Getting Started Guide",
+    "permalink": "/docs/04AddOns/Headwear/ElectrodeCap"
+  },
+  "next": {
+    "title": "Third-Party Hardware",
+    "permalink": "/docs/05ThirdParty/ThirdPartyLanding"
+  }
+}

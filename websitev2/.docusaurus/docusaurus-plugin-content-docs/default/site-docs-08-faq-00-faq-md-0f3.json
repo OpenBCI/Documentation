@@ -1,0 +1,30 @@
+{
+  "unversionedId": "08FAQ/FAQLanding",
+  "id": "08FAQ/FAQLanding",
+  "isDocsHomePage": false,
+  "title": "Frequently Asked Questions",
+  "description": "Welcome to our Frequently Asked Questions (FAQ)! Select the appropriate question category to proceed:",
+  "source": "@site/docs/08FAQ/00-FAQ.md",
+  "sourceDirName": "08FAQ",
+  "slug": "/08FAQ/FAQLanding",
+  "permalink": "/docs/08FAQ/FAQLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/08FAQ/00-FAQ.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "FAQLanding",
+    "title": "Frequently Asked Questions"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Motor Imagery",
+    "permalink": "/docs/07Examples/EEGProjects/MotorImagery"
+  },
+  "next": {
+    "title": "General Frequently Asked Questions",
+    "permalink": "/docs/08FAQ/GenFAQ"
+  }
+}

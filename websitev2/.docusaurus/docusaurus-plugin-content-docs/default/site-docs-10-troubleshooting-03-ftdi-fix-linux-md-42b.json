@@ -1,0 +1,30 @@
+{
+  "unversionedId": "10Troubleshooting/FTDI_Fix_Linux",
+  "id": "10Troubleshooting/FTDI_Fix_Linux",
+  "isDocsHomePage": false,
+  "title": "FTDI Buffer Fix on Linux",
+  "description": "Summary",
+  "source": "@site/docs/10Troubleshooting/03-FTDI_Fix_Linux.md",
+  "sourceDirName": "10Troubleshooting",
+  "slug": "/10Troubleshooting/FTDI_Fix_Linux",
+  "permalink": "/docs/10Troubleshooting/FTDI_Fix_Linux",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/10Troubleshooting/03-FTDI_Fix_Linux.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "FTDI_Fix_Linux",
+    "title": "FTDI Buffer Fix on Linux"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "GUI Troubleshooting",
+    "permalink": "/docs/10Troubleshooting/GUI_Troubleshooting"
+  },
+  "next": {
+    "title": "FTDI Buffer Fix on OS X",
+    "permalink": "/docs/10Troubleshooting/FTDI_Fix_Mac"
+  }
+}

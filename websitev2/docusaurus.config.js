@@ -22,14 +22,14 @@ module.exports={
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/",
-          "path": "../docs",
-          "sidebarPath": "../websitev2/sidebars.json"
+          "path": "./docs",
+          "sidebarPath": require.resolve('./sidebars.json'),
         },
         "blog": {
           "path": "blog"
         },
         "theme": {
-          "customCss": "../src/css/customTheme.css"
+          "customCss": [require.resolve('./src/css/customTheme.css')],
         }
       }
     ]

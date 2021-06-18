@@ -1,0 +1,30 @@
+{
+  "unversionedId": "07Examples/EMGProjects/EMGscrolling",
+  "id": "07Examples/EMGProjects/EMGscrolling",
+  "isDocsHomePage": false,
+  "title": "EMG Scrolling",
+  "description": "In this tutorial, we will show you how to scroll up and down on your computer screen without touching the keyboard. For that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them to scroll.",
+  "source": "@site/docs/07Examples/18-EMGProjects/01-EMG_Scrolling.md",
+  "sourceDirName": "07Examples/18-EMGProjects",
+  "slug": "/07Examples/EMGProjects/EMGscrolling",
+  "permalink": "/docs/07Examples/EMGProjects/EMGscrolling",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/07Examples/18-EMGProjects/01-EMG_Scrolling.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "EMGscrolling",
+    "title": "EMG Scrolling"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Community Page Projects",
+    "permalink": "/docs/07Examples/CommunityPageProjects"
+  },
+  "next": {
+    "title": "EMG controlled Music",
+    "permalink": "/docs/07Examples/EMGProjects/EMGmusic"
+  }
+}

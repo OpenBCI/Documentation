@@ -1,0 +1,30 @@
+{
+  "unversionedId": "08FAQ/HardFAQ",
+  "id": "08FAQ/HardFAQ",
+  "isDocsHomePage": false,
+  "title": "Hardware & Software",
+  "description": "What do I need to get started?",
+  "source": "@site/docs/08FAQ/03-HardwareFAQ.md",
+  "sourceDirName": "08FAQ",
+  "slug": "/08FAQ/HardFAQ",
+  "permalink": "/docs/08FAQ/HardFAQ",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/08FAQ/03-HardwareFAQ.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "HardFAQ",
+    "title": "Hardware & Software"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "How OpenBCI products go together?",
+    "permalink": "/docs/08FAQ/HowProductsGoTogether"
+  },
+  "next": {
+    "title": "Purchases & Payment Processing",
+    "permalink": "/docs/08FAQ/PaymentFAQ"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "08FAQ/Liability",
+  "id": "08FAQ/Liability",
+  "isDocsHomePage": false,
+  "title": "Liability Policy",
+  "description": "Disclaimer of medical, clinical, or diagnostic use",
+  "source": "@site/docs/08FAQ/Liability_Policy.md",
+  "sourceDirName": "08FAQ",
+  "slug": "/08FAQ/Liability",
+  "permalink": "/docs/08FAQ/Liability",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/08FAQ/Liability_Policy.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "id": "Liability",
+    "title": "Liability Policy"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "RETURNS & REFUNDS",
+    "permalink": "/docs/08FAQ/Returns"
+  }
+}

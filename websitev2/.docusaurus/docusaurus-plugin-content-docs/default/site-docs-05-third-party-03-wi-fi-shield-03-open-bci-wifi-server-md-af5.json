@@ -1,0 +1,30 @@
+{
+  "unversionedId": "05ThirdParty/WiFiShield/WiFiAPI",
+  "id": "05ThirdParty/WiFiShield/WiFiAPI",
+  "isDocsHomePage": false,
+  "title": "OpenBCI WiFi Shield API",
+  "description": "The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.",
+  "source": "@site/docs/05ThirdParty/03-WiFiShield/03-OpenBCI_Wifi_Server.md",
+  "sourceDirName": "05ThirdParty/03-WiFiShield",
+  "slug": "/05ThirdParty/WiFiShield/WiFiAPI",
+  "permalink": "/docs/05ThirdParty/WiFiShield/WiFiAPI",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/05ThirdParty/03-WiFiShield/03-OpenBCI_Wifi_Server.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "WiFiAPI",
+    "title": "OpenBCI WiFi Shield API"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Wifi Shield Programming Tutorial",
+    "permalink": "/docs/05ThirdParty/WiFiShield/WiFiProgam"
+  },
+  "next": {
+    "title": "OpenBCI Wifi SDK",
+    "permalink": "/docs/05ThirdParty/WiFiShield/WiFiSDK"
+  }
+}

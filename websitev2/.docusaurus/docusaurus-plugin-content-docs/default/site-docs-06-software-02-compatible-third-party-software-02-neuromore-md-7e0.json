@@ -1,0 +1,30 @@
+{
+  "unversionedId": "06Software/CompatibleThirdPartySoftware/Neuromore",
+  "id": "06Software/CompatibleThirdPartySoftware/Neuromore",
+  "isDocsHomePage": false,
+  "title": "Neuromore",
+  "description": "Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, it provides a visual designer that can be used to process signals real-time.",
+  "source": "@site/docs/06Software/02-CompatibleThirdPartySoftware/02-Neuromore.md",
+  "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+  "slug": "/06Software/CompatibleThirdPartySoftware/Neuromore",
+  "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Neuromore",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/06Software/02-CompatibleThirdPartySoftware/02-Neuromore.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "Neuromore",
+    "title": "Neuromore"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "MATLAB",
+    "permalink": "/docs/06Software/CompatibleThirdPartySoftware/Matlab"
+  },
+  "next": {
+    "title": "OpenViBE",
+    "permalink": "/docs/06Software/CompatibleThirdPartySoftware/OpenVibe"
+  }
+}

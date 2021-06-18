@@ -1,0 +1,30 @@
+{
+  "unversionedId": "06Software/SoftwareLanding",
+  "id": "06Software/SoftwareLanding",
+  "isDocsHomePage": false,
+  "title": "Compatible Software",
+  "description": "OpenBCI Software",
+  "source": "@site/docs/06Software/00-SoftwareLanding.md",
+  "sourceDirName": "06Software",
+  "slug": "/06Software/SoftwareLanding",
+  "permalink": "/docs/06Software/SoftwareLanding",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/06Software/00-SoftwareLanding.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "SoftwareLanding",
+    "title": "Compatible Software"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "OpenBCI Wifi SDK",
+    "permalink": "/docs/05ThirdParty/WiFiShield/WiFiSDK"
+  },
+  "next": {
+    "title": "The OpenBCI GUI",
+    "permalink": "/docs/06Software/OpenBCISoftware/GUIDocs"
+  }
+}

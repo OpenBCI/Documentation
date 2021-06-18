@@ -1,0 +1,30 @@
+{
+  "unversionedId": "07Examples/EMGProjects/EMGmusic",
+  "id": "07Examples/EMGProjects/EMGmusic",
+  "isDocsHomePage": false,
+  "title": "EMG controlled Music",
+  "description": "In this tutorial, we will show you how to pause and unpause your music without pressing any keys on your laptop keyboard. To do that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them as a trigger for pausing the music played via Youtube through your computer. Feel free to connect your laptop to a Bluetooth speaker to make the music louder!",
+  "source": "@site/docs/07Examples/18-EMGProjects/02-EMG_Controlled_Music.md",
+  "sourceDirName": "07Examples/18-EMGProjects",
+  "slug": "/07Examples/EMGProjects/EMGmusic",
+  "permalink": "/docs/07Examples/EMGProjects/EMGmusic",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/07Examples/18-EMGProjects/02-EMG_Controlled_Music.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "EMGmusic",
+    "title": "EMG controlled Music"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "EMG Scrolling",
+    "permalink": "/docs/07Examples/EMGProjects/EMGscrolling"
+  },
+  "next": {
+    "title": "EMG-controlled Slideshow",
+    "permalink": "/docs/07Examples/EMGProjects/EMGslideshow"
+  }
+}

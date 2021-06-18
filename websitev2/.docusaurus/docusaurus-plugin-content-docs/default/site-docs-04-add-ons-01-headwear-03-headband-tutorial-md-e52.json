@@ -1,0 +1,30 @@
+{
+  "unversionedId": "04AddOns/Headwear/HeadBand",
+  "id": "04AddOns/Headwear/HeadBand",
+  "isDocsHomePage": false,
+  "title": "OpenBCI EEG Headband Kit Guide",
+  "description": "Now available in our shop!",
+  "source": "@site/docs/04AddOns/01-Headwear/03-Headband_Tutorial.md",
+  "sourceDirName": "04AddOns/01-Headwear",
+  "slug": "/04AddOns/Headwear/HeadBand",
+  "permalink": "/docs/04AddOns/Headwear/HeadBand",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/04AddOns/01-Headwear/03-Headband_Tutorial.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "HeadBand",
+    "title": "OpenBCI EEG Headband Kit Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Ultracortex Mark III",
+    "permalink": "/docs/04AddOns/Headwear/MarkIII"
+  },
+  "next": {
+    "title": "Electrode Cap Getting Started Guide",
+    "permalink": "/docs/04AddOns/Headwear/ElectrodeCap"
+  }
+}

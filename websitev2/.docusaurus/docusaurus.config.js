@@ -22,14 +22,16 @@ export default {
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/",
-          "path": "../docs",
-          "sidebarPath": "../websitev2/sidebars.json"
+          "path": "./docs",
+          "sidebarPath": "/Users/Richard/Documents/GitHub/Documentation/websitev2/sidebars.json"
         },
         "blog": {
           "path": "blog"
         },
         "theme": {
-          "customCss": "../src/css/customTheme.css"
+          "customCss": [
+            "/Users/Richard/Documents/GitHub/Documentation/websitev2/src/css/customTheme.css"
+          ]
         }
       }
     ]

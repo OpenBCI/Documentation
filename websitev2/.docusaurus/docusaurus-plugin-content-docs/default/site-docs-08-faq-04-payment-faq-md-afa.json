@@ -1,0 +1,30 @@
+{
+  "unversionedId": "08FAQ/PaymentFAQ",
+  "id": "08FAQ/PaymentFAQ",
+  "isDocsHomePage": false,
+  "title": "Purchases & Payment Processing",
+  "description": "Please note all orders ship after full payment. Orders cannot be split between multiple shipments. To make a change to your order, please email support@openbci.com ASAP. We cannot guarantee that we can satisfy the request, but we will do our best if contacted in a timely fashion.",
+  "source": "@site/docs/08FAQ/04-PaymentFAQ.md",
+  "sourceDirName": "08FAQ",
+  "slug": "/08FAQ/PaymentFAQ",
+  "permalink": "/docs/08FAQ/PaymentFAQ",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/08FAQ/04-PaymentFAQ.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "PaymentFAQ",
+    "title": "Purchases & Payment Processing"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Hardware & Software",
+    "permalink": "/docs/08FAQ/HardFAQ"
+  },
+  "next": {
+    "title": "Shipping & Taxes",
+    "permalink": "/docs/08FAQ/ShippingFAQ"
+  }
+}

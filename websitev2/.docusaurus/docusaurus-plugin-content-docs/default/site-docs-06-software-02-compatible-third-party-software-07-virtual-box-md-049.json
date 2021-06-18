@@ -1,0 +1,30 @@
+{
+  "unversionedId": "06Software/CompatibleThirdPartySoftware/VirtualBox",
+  "id": "06Software/CompatibleThirdPartySoftware/VirtualBox",
+  "isDocsHomePage": false,
+  "title": "VirtualBox Windows Guide",
+  "description": "Some of the software compatible with OpenBCI products requires a Windows operating system. If you have a non-windows computer, you can still use this software through a Windows virtual machine on VirtualBox.",
+  "source": "@site/docs/06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md",
+  "sourceDirName": "06Software/02-CompatibleThirdPartySoftware",
+  "slug": "/06Software/CompatibleThirdPartySoftware/VirtualBox",
+  "permalink": "/docs/06Software/CompatibleThirdPartySoftware/VirtualBox",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "VirtualBox",
+    "title": "VirtualBox Windows Guide"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "BioEra",
+    "permalink": "/docs/06Software/CompatibleThirdPartySoftware/BioEra"
+  },
+  "next": {
+    "title": "For Developers",
+    "permalink": "/docs/11ForDevelopers/ForDevelopersLanding"
+  }
+}

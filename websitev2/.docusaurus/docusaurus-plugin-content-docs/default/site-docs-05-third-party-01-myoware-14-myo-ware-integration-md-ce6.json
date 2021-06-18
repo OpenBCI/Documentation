@@ -1,0 +1,30 @@
+{
+  "unversionedId": "05ThirdParty/Myoware/MyoCyton",
+  "id": "05ThirdParty/Myoware/MyoCyton",
+  "isDocsHomePage": false,
+  "title": "MyoWare OpenBCI Integration (Cyton Board)",
+  "description": "Overview",
+  "source": "@site/docs/05ThirdParty/01-Myoware/14-MyoWare_Integration.md",
+  "sourceDirName": "05ThirdParty/01-Myoware",
+  "slug": "/05ThirdParty/Myoware/MyoCyton",
+  "permalink": "/docs/05ThirdParty/Myoware/MyoCyton",
+  "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/docs/05ThirdParty/01-Myoware/14-MyoWare_Integration.md",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "id": "MyoCyton",
+    "title": "MyoWare OpenBCI Integration (Cyton Board)"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "IDUN Dryode",
+    "permalink": "/docs/05ThirdParty/IDUN_Dryode/Dryode"
+  },
+  "next": {
+    "title": "MyoWare OpenBCI Integration (Ganglion Board)",
+    "permalink": "/docs/05ThirdParty/Myoware/MyoGanglion"
+  }
+}
