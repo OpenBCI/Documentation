@@ -21,9 +21,10 @@ module.exports={
         "docs": {
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
-          "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/docs/",
-          "path": "./docs",
+          "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/websitev2/",
+          "path": "docs",
           "sidebarPath": require.resolve('./sidebars.json'),
+          "routeBasePath": '/'
         },
         "blog": {
           "path": "blog"
@@ -45,32 +46,32 @@ module.exports={
         {
           "href": "https://openbci.com",
           "label": "Main Site",
-          "position": "left"
+          "position": "right"
         },
         {
           "href": "https://shop.openbci.com",
           "label": "Shop",
-          "position": "left"
+          "position": "right"
         },
         {
           "href": "https://openbci.com/forum/",
           "label": "Forum",
-          "position": "left"
+          "position": "right"
         },
         {
-          "to": "docs/",
+          "to": "/",
           "label": "Documentation",
-          "position": "left"
+          "position": "right"
         },
         {
           "href": "https://github.com/OpenBCI",
           "label": "Github",
-          "position": "left"
+          "position": "right"
         },
         {
           "to": "/citations",
           "label": "Citations",
-          "position": "left"
+          "position": "right"
         }
       ]
     },

@@ -16,8 +16,8 @@ Before starting this tutorial, we recommend you go through at least one of the f
 pipeline before starting this doc:
 
 -   [EEG](01-EEG-Setup.md): scalp surface recording brain activity. [Learn more](https://en.wikipedia.org/wiki/Electroencephalography)  
--   [EMG](01-EMG-Setup.md): forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
--   [ECG](01-ECG-Setup.md): \[measure heart rhythm on the chest [Learn more](https://en.wikipedia.org/wiki/Electrocardiography)
+-   [EMG](02-EMG-Setup.md): forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
+-   [ECG](03-ECG-Setup.md): \[measure heart rhythm on the chest [Learn more](https://en.wikipedia.org/wiki/Electrocardiography)
 
 * * *
 
@@ -76,8 +76,8 @@ We take six [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections
 sticky electrodes to the cables. Use three sticky electrodes for ECG and the other three is for EMG.
 
 For **ECG**, connect two cables to **N1P** top and bottom pin, connect the remaining one to bottom pin of **BIAS**.
-Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-ECG-Setup.md).
-For note on ECG signal quality, you can refer to the section _Improving Signal Quality_ in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-ECG-Setup.md).
+Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md).
+For note on ECG signal quality, you can refer to the section _Improving Signal Quality_ in the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md).
 
 For **EMG**, connect two cables to **N8P** top and bottom pin, and the remaining one to **AGND**.
 Attach the electrodes to your arm, the recommended layout is described in the [EMG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md).
@@ -88,7 +88,7 @@ Attach the electrodes to your arm, the recommended layout is described in the [E
 
 **Note**
 
-Please refer to the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/02-ECG-Setup.md) for alternative 5-lead ECG setup.
+Please refer to the [ECG tutorial](../../01GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md) for alternative 5-lead ECG setup.
 
 * * *
 
