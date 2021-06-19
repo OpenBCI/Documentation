@@ -178,7 +178,7 @@ After creating a Playback file, it can be replayed by running Playback File data
 
 #### Select your SD setting
 
-![WRITE TO SD](assets/GettingStartedImages/writeToSD.png)
+![WRITE TO SD](../../assets/GettingStartedImages/writeToSD.png)
 
 If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE TO SD (Y/N)? sub-panel section you can select the maximum recording time of the file. This setting is defaulted to "Do not write to SD…" and will automatically switch to this if you do not have a MicroSD card properly inserted into your Cyton board.
 
@@ -188,11 +188,11 @@ If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE
 
 ### 7. Press "START SYSTEM"
 
-![START SYSTEM](assets/GettingStartedImages/serial_cyton_start_system.png)
+![START SYSTEM](../../assets/GettingStartedImages/serial_cyton_start_system.png)
 
 Now you're ready to start the system! Press the START SYSTEM button and wait for the OpenBCI GUI to establish a connection with your Cyton board. This usually takes ~5 seconds.
 
-![Initializing](assets/GettingStartedImages/serial_cyton_initializing_gui.png)
+![Initializing](../../assets/GettingStartedImages/serial_cyton_initializing_gui.png)
 
 During this time, the help line at the bottom of the OpenBCI GUI should be blinking the words: "Attempting to establish a connection with your OpenBCI Board..."
 
@@ -211,15 +211,15 @@ If the initialization fails, try the following steps in order:
 
 Now that the OpenBCI_GUI is connected to your Cyton you may press `Start Data Stream` in the upper left hand corner.
 
-![cyton serial data stream start](assets/GettingStartedImages/serial_cyton_data_stream_start.png)
+![cyton serial data stream start](../../assets/GettingStartedImages/serial_cyton_data_stream_start.png)
 
 You should see data streaming into the GUI, try running your fingers along the electrode pins at the top of your board.
 
-![Touch](assets/GettingStartedImages/touch.JPG)
+![Touch](../../assets/GettingStartedImages/touch.JPG)
 
 You should see the 8 (or 16 if you're using a Daisy module) channels on the _Time Series_ widget behave chaotically in response to you touching the pins and all the traces of the FFT graph on the upper right should instantly shift upwards.
 
-![cyton serial chaos](assets/GettingStartedImages/serial_cyton_chaos.png)
+![cyton serial chaos](../../assets/GettingStartedImages/serial_cyton_chaos.png)
 
 If this is the case, congratulations; you are now connected to your Cyton board. It's time to see some brain waves!
 Learn about the _Time Series_ and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets)

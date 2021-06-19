@@ -11,14 +11,14 @@ The easiest way to update your OpenBCI Wifi Shield Firmware is Over-The-Air (OTA
 ### Use Any Web Browser
 
 Pick your default web browser
-![default browser](assets/ThirdPartyImages/wifi_firmware_update_default_browser.png)
+![default browser](../../assets/ThirdPartyImages/wifi_firmware_update_default_browser.png)
 
 ### Download the WiFi Shield Firmware
 
 First, download the file called `DefaultWifiShield.bin` from the latest release [OpenBCI_WiFi Github repository](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
 
 Save to your downloads folder.
-![download the latest binary](assets/ThirdPartyImages/wifi_firmware_update_download.png)
+![download the latest binary](../../assets/ThirdPartyImages/wifi_firmware_update_download.png)
 
 ### Isolate and Power WiFi Shield
 
@@ -34,7 +34,7 @@ Then [get your WiFi Shield on your local wireless network](01GettingStarted/01-B
 
 Find the IP Address of your WiFi Shield by clicking the '&gt;' button in the WiFi section of the Control Panel, and then clicking the IP Address button, as shown in the image below:
 
-![image](assets/ThirdPartyImages/IPfind.png)
+![image](../../assets/ThirdPartyImages/IPfind.png)
 
 If you're having issues with that step, here's a more in-depth tutorial on using the OpenBCI_GUI to get [your shields ip address](01GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address).
 
@@ -42,36 +42,36 @@ If you're having issues with that step, here's a more in-depth tutorial on using
 
 Navigate to http: where `` is the IP Address of your WiFi Shield found in the step above.
 
-![navigate to update page](assets/ThirdPartyImages/wifi_firmware_update_ip_address.png)
+![navigate to update page](../../assets/ThirdPartyImages/wifi_firmware_update_ip_address.png)
 
 On mac, you may use your shields unique name instead of the ip address; i.e.  where `` is your devices unique identifier. Either option works on Mac.
 
-![use unique id on mac](assets/ThirdPartyImages/wifi_firmware_update_mac_using_mdns.png)
+![use unique id on mac](../../assets/ThirdPartyImages/wifi_firmware_update_mac_using_mdns.png)
 
 ### Select Binary File to Upload
 
 Now select the `` button and from the drop down selected the `` which you downloaded earlier
-![select choose file](assets/ThirdPartyImages/wifi_firmware_update_select_binary.png)
+![select choose file](../../assets/ThirdPartyImages/wifi_firmware_update_select_binary.png)
 
 ### Update the Firmware
 
 Then select `` to start the update process
-![selecting update](assets/ThirdPartyImages/wifi_firmware_update_select_update.png)
+![selecting update](../../assets/ThirdPartyImages/wifi_firmware_update_select_update.png)
 
 The page will hang for about 10-15 seconds, this the firmware being uploaded.
-![firmware uploading](assets/ThirdPartyImages/wifi_firmware_update_first_wait_page.png)
+![firmware uploading](../../assets/ThirdPartyImages/wifi_firmware_update_first_wait_page.png)
 
 Then you will see a success message appear, your WiFi Shield is now rebooting, please continue to wait for about 30 seconds.
 
 **Note:** on some browsers, the page will not automatically refresh. If you've waited more than 30 seconds for the success message to appear, skip to the next step and see if it works. If it doesn't try the above step again.
 
-![success message](assets/ThirdPartyImages/wifi_firmware_update_success_rebooting.png)
+![success message](../../assets/ThirdPartyImages/wifi_firmware_update_success_rebooting.png)
 
 ### Verify New Version Number
 
 Once your web browser refreshes itself and the update page is displayed again, you may navigate to the version page and verify your wifi firmware version matches the version you downloaded. If the version is not correct, then be sure you removed your WiFi Shield from a Cyton or Ganglion and try again.
 
-![verify firmware version number](assets/ThirdPartyImages/wifi_firmware_update_version.png)
+![verify firmware version number](../../assets/ThirdPartyImages/wifi_firmware_update_version.png)
 
 ## Hardware for Wired upload
 
@@ -81,15 +81,15 @@ There are many, many FTDI chip breakouts and cables out there that you can use. 
 
 ### FTDI Friend
 
-![FTDI Friend](assets/ThirdPartyImages/FTDI_Friend.jpg)
-![FTDI Friend Back](assets/ThirdPartyImages/FTDI_FriendBack.jpg)
+![FTDI Friend](../../assets/ThirdPartyImages/FTDI_Friend.jpg)
+![FTDI Friend Back](../../assets/ThirdPartyImages/FTDI_FriendBack.jpg)
 
 Another example would be the [FTDI Friend](http://www.adafruit.com/products/284) from Adafruit. I cut the trace on the RTS and 5V pads as well. These are the correct settings for uploading to ESP8266 using FTDI Friend. These breakouts are awesome and how the board was developed.
 
 ### FTDI Basic Breakout
 
-![FTDI BasicFront](assets/ThirdPartyImages/FTDI_BASICfront.jpg)
-![FTDI BasicBack](assets/ThirdPartyImages/FTDI_BASICback.jpg)
+![FTDI BasicFront](../../assets/ThirdPartyImages/FTDI_BASICfront.jpg)
+![FTDI BasicBack](../../assets/ThirdPartyImages/FTDI_BASICback.jpg)
 
 Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!  
 
@@ -124,7 +124,7 @@ In Windows, we use Command Prompt.
 First, download the file called `` from the latest release [OpenBCI_WiFi Github repository](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
 
 Save to your downloads folder.
-![download the latest binary](assets/ThirdPartyImages/wifi_firmware_update_really_done.png)
+![download the latest binary](../../assets/ThirdPartyImages/wifi_firmware_update_really_done.png)
 
 ### Get the Serial Port of Programmer
 
@@ -146,7 +146,7 @@ Hook up the FTDI friend, OpenBCI Dongle, or other UART-USB programmer to the Wif
 | RX          | TX          |
 | TX          | RX          |
 
-![Wifi to FTDI friend](assets/ThirdPartyImages/wifi_programming_ftdi_friend_hooked_up.jpg)
+![Wifi to FTDI friend](../../assets/ThirdPartyImages/wifi_programming_ftdi_friend_hooked_up.jpg)
 
 ### Isolate and Power WiFi Shield
 
@@ -154,33 +154,33 @@ Next **remove your wifi shield from the Cyton or Ganglion** if it's not already.
 
 Remove your Wifi Shield from the Cyton/Ganglion board. **Always use a spudger to remove your WiFi Shield from a Cyton or Ganglion.**
 
-![Wifi alone](assets/ThirdPartyImages/wifi_programming_alone.jpg)
+![Wifi alone](../../assets/ThirdPartyImages/wifi_programming_alone.jpg)
 
 Plug a battery into the WiFi Shield and power the Shield by turning the power switch to the `` position.
 
 Plug in battery to the wifi shield
 
-![Battery to wifi shield](assets/ThirdPartyImages/wifi_programming_power.jpg)
+![Battery to wifi shield](../../assets/ThirdPartyImages/wifi_programming_power.jpg)
 
 Second power the Wifi shield
 
-![Battery to wifi shield](assets/ThirdPartyImages/wifi_programming_power_in.JPG)
+![Battery to wifi shield](../../assets/ThirdPartyImages/wifi_programming_power_in.JPG)
 
 ### Put WiFi Shield in Bootloader Mode
 
 Press and hold the `` button.
 
-![Wifi programming hold prog](assets/ThirdPartyImages/wifi_programming_hold_prog.jpg)
+![Wifi programming hold prog](../../assets/ThirdPartyImages/wifi_programming_hold_prog.jpg)
 
 Press and release the `` button while holding ``.
 
-![Wifi programming hold reset](assets/ThirdPartyImages/wifi_programming_hold_reset.jpg)
+![Wifi programming hold reset](../../assets/ThirdPartyImages/wifi_programming_hold_reset.jpg)
 
-![Wifi programming release reset](assets/ThirdPartyImages/wifi_programming_release_reset.jpg)
+![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_reset.jpg)
 
 Finally release the `` button
 
-![Wifi programming release reset](assets/ThirdPartyImages/wifi_programming_release_prog.jpg)
+![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_prog.jpg)
 
 You should see no lights on the WiFi Shield if it is in bootloading mode.
 
@@ -305,7 +305,7 @@ Follow the instructions for downloading the [Arduino ESP8266 core from Boards Ma
 
 If you followed the process in the previous link, and you will be able to from `` select `` from the `` subsection. Then select from ``, ``.
 
-![board_dropdown](assets/ThirdPartyImages/OBCI32_Board_Dropdown.png)
+![board_dropdown](../../assets/ThirdPartyImages/OBCI32_Board_Dropdown.png)
 
 ### Select DefaultWifiShield.ino from Examples
 
@@ -339,7 +339,7 @@ Hook up the FTDI friend, OpenBCI Dongle, or other UART-USB programmer to the Wif
 | RX          | TX          |
 | TX          | RX          |
 
-![Wifi to FTDI friend](assets/ThirdPartyImages/wifi_programming_ftdi_friend_hooked_up.jpg)
+![Wifi to FTDI friend](../../assets/ThirdPartyImages/wifi_programming_ftdi_friend_hooked_up.jpg)
 
 ### Isolate and Power WiFi Shield
 
@@ -347,33 +347,33 @@ Next **remove your wifi shield from the Cyton or Ganglion** if it's not already.
 
 Remove your Wifi Shield from the Cyton/Ganglion board. **Always use a spudger to remove your WiFi Shield from a Cyton or Ganglion.**
 
-![Wifi alone](assets/ThirdPartyImages/wifi_programming_alone.jpg)
+![Wifi alone](../../assets/ThirdPartyImages/wifi_programming_alone.jpg)
 
 Plug a battery into the WiFi Shield and power the Shield by turning the power switch to the `` position.
 
 Plug in battery to the wifi shield
 
-![Battery to wifi shield](assets/ThirdPartyImages/wifi_programming_power.jpg)
+![Battery to wifi shield](../../assets/ThirdPartyImages/wifi_programming_power.jpg)
 
 Second power the Wifi shield
 
-![Battery to wifi shield](assets/ThirdPartyImages/wifi_programming_power_in.JPG)
+![Battery to wifi shield](../../assets/ThirdPartyImages/wifi_programming_power_in.JPG)
 
 ### Put WiFi Shield in Bootloader Mode
 
 Press and hold the `` button.
 
-![Wifi programming hold prog](assets/ThirdPartyImages/wifi_programming_hold_prog.jpg)
+![Wifi programming hold prog](../../assets/ThirdPartyImages/wifi_programming_hold_prog.jpg)
 
 Press and release the `` button while holding ``.
 
-![Wifi programming hold reset](assets/ThirdPartyImages/wifi_programming_hold_reset.jpg)
+![Wifi programming hold reset](../../assets/ThirdPartyImages/wifi_programming_hold_reset.jpg)
 
-![Wifi programming release reset](assets/ThirdPartyImages/wifi_programming_release_reset.jpg)
+![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_reset.jpg)
 
 Finally release the `` button
 
-![Wifi programming release reset](assets/ThirdPartyImages/wifi_programming_release_prog.jpg)
+![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_prog.jpg)
 
 You should see no lights on the WiFi Shield if it is in bootloading mode.
 

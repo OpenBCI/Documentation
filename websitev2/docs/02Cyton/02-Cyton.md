@@ -51,14 +51,14 @@ Swtiching either BLE or PC will produce the same result. The option is available
 
 ### OpenBCI Cyton Board Circuit Schematic
 
-![OpenBCI 32bit Schematic](assets/CytonImages/OBCI_V3_32bit-Schematic.jpg)
+![OpenBCI 32bit Schematic](../assets/CytonImages/OBCI_V3_32bit-Schematic.jpg)
 
 ### Cyton Board PCB Layer Images
 
-![32bit LayerTop](assets/CytonImages/OBCI_32bit_layerTop.jpg)
-![32bit Layer2](assets/CytonImages/OBCI_32bit_layerTwo.jpg)
-![32bit Layer3](assets/CytonImages/OBCI_32bit_layerThree.jpg)
-![32bit LayerBottom](assets/CytonImages/OBCI_32bit_layerBottom_noMirror.jpg)
+![32bit LayerTop](../assets/CytonImages/OBCI_32bit_layerTop.jpg)
+![32bit Layer2](../assets/CytonImages/OBCI_32bit_layerTwo.jpg)
+![32bit Layer3](../assets/CytonImages/OBCI_32bit_layerThree.jpg)
+![32bit LayerBottom](../assets/CytonImages/OBCI_32bit_layerBottom_noMirror.jpg)
 
 ### Cyton Board PCB Files
 
@@ -85,12 +85,12 @@ The slide switch on the Dongle has two positions (noted on the bottom  silkscree
 
 ### OpenBCI Dongle Circuit Schematic
 
-![OpenBCI Dongle Schematic](assets/CytonImages/OBCI_DONGLE-Schematic.jpg)
+![OpenBCI Dongle Schematic](../assets/CytonImages/OBCI_DONGLE-Schematic.jpg)
 
 ### Dongle PCB Layer Images
 
-![Dongle LayerTop](assets/CytonImages/OBCI_DONGLE_layerTop.jpg)
-![Dongle LayerBottom](assets/CytonImages/OBCI_DONGLE_layerBottom.jpg)
+![Dongle LayerTop](../assets/CytonImages/OBCI_DONGLE_layerTop.jpg)
+![Dongle LayerBottom](../assets/CytonImages/OBCI_DONGLE_layerBottom.jpg)
 
 ### Dongle PCB Files
 
@@ -118,14 +118,14 @@ The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Boa
 
 ### OpenBCI Daisy Module Circuit Schematic
 
-![OpenBCI Dongle Schematic](assets/CytonImages/OBCI_V3_Daisy-Schematic.jpg)
+![OpenBCI Dongle Schematic](../assets/CytonImages/OBCI_V3_Daisy-Schematic.jpg)
 
 ### Daisy Module PCB Layer Images
 
-![Daisy LayerTop](assets/CytonImages/OBCI_DaisyModule_layerTop.jpg)
-![Daisy Layer2](assets/CytonImages/OBCI_DaisyModule_layerTwo.jpg)
-![Daisy Layer3](assets/CytonImages/OBCI_DaisyModule_layerThree.jpg)
-![Daisy LayerBottom](assets/CytonImages/OBCI_DaisyModule_layerBottom_noMirror.jpg)
+![Daisy LayerTop](../assets/CytonImages/OBCI_DaisyModule_layerTop.jpg)
+![Daisy Layer2](../assets/CytonImages/OBCI_DaisyModule_layerTwo.jpg)
+![Daisy Layer3](../assets/CytonImages/OBCI_DaisyModule_layerThree.jpg)
+![Daisy LayerBottom](../assets/CytonImages/OBCI_DaisyModule_layerBottom_noMirror.jpg)
 
 ### Daisy Module PCB Files
 

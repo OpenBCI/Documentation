@@ -37,7 +37,7 @@ The Ganglion data samples are 24-bit signed (2's complement), MSB first. If we d
 
 ### 19bit Compression
 
-![19bit Packet Map](assets/GanglionImages/ganglion_19bit-packet-map.png)
+![19bit Packet Map](../assets/GanglionImages/ganglion_19bit-packet-map.png)
 
 By default we use a 19-bit delta compression. See below for the story about 18bit delta compression description. It's easiest to grok this compression scheme if we step through the process. Assume that the Ganglion is connected to a computer, and the user wants to start streaming data. The user (or controlling software) sends a `b`, and when the Ganglion receives the `b`, it turns on the data acquisition hardware, starts taking samples, and sending data in 20 byte packets. The very first byte of each sample is the `Packet ID`, and the very first packet sent starts with an ID of `0x00`. The value `0x00` indicates to the controlling software that the packet contains **Uncompressed Data**, that is, there are 4 24bit values taking up the 12 bytes following the packet ID associated with channel 1-4 respectively. These values are legit Ganglion data, and are used to seed the decompression algorithm on the computer. The Ganglion stores the values in an array called `lastChannelData[]`.  
 **NOTE:** You can find all of this code in our [Ganglion Library](https://github.com/OpenBCI/OpenBCI_Ganglion_Library) repository.
@@ -95,7 +95,7 @@ void OpenBCI_Ganglion::compressData19() {
 
 ### 18bit Compression
 
-![18bit Packet Map](assets/GanglionImages/ganglion_18bit-packet-map.png)
+![18bit Packet Map](../assets/GanglionImages/ganglion_18bit-packet-map.png)
 
 19bit compression does not leave any room for additional data. If we want to send the on-board accelerometer data, we need to squeeze our compressor a bit more. In the case of the 18bit compressor, we also use the `Packet ID` of `0x00` to send the raw uncompressed data. Each following packet uses `Packet ID` 1 to 100. This way, the controlling software that is running the decompression algorithm can decompress each packet without having to 'know' what state the system is in.
 

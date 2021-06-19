@@ -31,7 +31,7 @@ When setting up the WiFi Shield to connect to a local network or hotspot, the Wi
 
 ## Cyton with WiFi Shield
 
-![OpenBCI Cyton Wifi Contents](assets/GettingStartedImages/wifi_what_you_need.jpg)
+![OpenBCI Cyton Wifi Contents](../../assets/GettingStartedImages/wifi_what_you_need.jpg)
 
 <details>
   <summary>Expand this section for Cyton + WiFi Shield instructions</summary>
@@ -59,11 +59,11 @@ Install 4 AA batteries in your battery pack or charge up your LiPo battery. The 
 
 **IMPORTANT! Keep the dip switch labeled `EXT PWR` to `ON` when using Cyton.**
 
-![Wifi External Power](assets/GettingStartedImages/wifi_cyton_powered.jpg)
+![Wifi External Power](../../assets/GettingStartedImages/wifi_cyton_powered.jpg)
 
 The Wifi Shield and the Cyton board use only one battery by means of the JST connector on the Wifi shield. The pass through LED (the right most LED) on the wifi shield will show the solid blue LED from the Cyton below.
 
-![Wifi Pass Through Power](assets/GettingStartedImages/wifi_pass_through_power.jpg)
+![Wifi Pass Through Power](../../assets/GettingStartedImages/wifi_pass_through_power.jpg)
 
 **NOTE ABOUT ANALOG/AUX MODE**
 
@@ -114,13 +114,13 @@ To use one battery, flip `EXT PWR` in the `ON` position. You can use the black s
 
 To use two batteries, keep `EXT PWR` in the `OFF` position, or flip it to `OFF` in case it is `ON`.
 
-![EXT PWR ON/OFF](assets/GettingStartedImages/wifi_ext_pwr_on_off.jpg)`EXT PWR` is `ON` in top photo, `OFF` in bottom photo.
+![EXT PWR ON/OFF](../../assets/GettingStartedImages/wifi_ext_pwr_on_off.jpg)`EXT PWR` is `ON` in top photo, `OFF` in bottom photo.
 
 With two batteries, always power the WiFi Shield before the Ganglion.
 
-![Two batteries for ganglion with wifi shield](assets/GettingStartedImages/wifi_ganglion_power_2.jpg)
+![Two batteries for ganglion with wifi shield](../../assets/GettingStartedImages/wifi_ganglion_power_2.jpg)
 
-![Battery Connection](assets/GettingStartedImages/wifi_ganglion_power.jpg)
+![Battery Connection](../../assets/GettingStartedImages/wifi_ganglion_power.jpg)
 
 </details>
 
@@ -178,19 +178,19 @@ Follow the below example that goes through the steps of connecting the WiFi Shie
 
 Your local WiFi network is called _MeerkatManor_ and it is password protected. You turn on the WiFi on your smartphone and search for WiFi network options. Additionally, your WiFi Shield is connected to a battery and powered on (and not connected to an OpenBCI Board, or if Cyton, `` is OFF). Note what the D2 light does at start-up, if your In your iPhone's WiFi network options, you see _MeerkatManor_ and "OpenBCI-A4AD" (the last 4 characters will be different in your case).
 
-![iPhone Connected to MeerkatManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
+![iPhone Connected to MeerkatManor](../../assets/GettingStartedImages/wifi_join_network_1.PNG)
 
 You click "OpenBCI-A4AD", in an attempt to connect to the WiFi Shield's hotspot.
 
-![iPhone Connecting to \`OpenBCI-A4AD\`](assets/GettingStartedImages/wifi_join_network_2.PNG)
+![iPhone Connecting to \`OpenBCI-A4AD\`](../../assets/GettingStartedImages/wifi_join_network_2.PNG)
 
 Your phone or computer will connect to the WiFi Shield's hotspot.
 
-![iPhone Connected to \`OpenBCI-E218\`](assets/GettingStartedImages/wifi_joined_network.png)
+![iPhone Connected to \`OpenBCI-E218\`](../../assets/GettingStartedImages/wifi_joined_network.png)
 
 Launch your web browser and navigate to  to start the WiFi Manager.
 
-![iPhone Web Browser](assets/GettingStartedImages/wifi_manager_start.PNG)
+![iPhone Web Browser](../../assets/GettingStartedImages/wifi_manager_start.PNG)
 
 A success page will load with a hyperlink to the WiFi Manager.
 
@@ -198,21 +198,21 @@ A success page will load with a hyperlink to the WiFi Manager.
 
 You will be rerouted to the now started WiFi Manager.
 
-![WiFi Manager home page](assets/GettingStartedImages/wifi_manager_route_home.PNG)
+![WiFi Manager home page](../../assets/GettingStartedImages/wifi_manager_route_home.PNG)
 
 Click _Configure WiFi_ to scan for nearby wireless networks or click _Configure WiFi (No Scan)_ to enter the wireless network credentials. A captive touch portal may appear on the computer, phone or tablet, if so, continue the setup on the captive touch page if on mobile or ignore the portal on the computer if you want, either WiFi manager page will work!
 
-![Captive touch portal first screen](assets/GettingStartedImages/wifi_captive_touch_first_screen.PNG)
+![Captive touch portal first screen](../../assets/GettingStartedImages/wifi_captive_touch_first_screen.PNG)
 
 On the next screen, see that _MeerkatManor_ is listed as a possible network for the WiFi Shield to join. Select _MeerkatManor_ and enter the password for the network and press _save_.
 
-![Captive touch portal second screen](assets/GettingStartedImages/wifi_captive_touch_second_screen.PNG)
+![Captive touch portal second screen](../../assets/GettingStartedImages/wifi_captive_touch_second_screen.PNG)
 
 If the _MeerkatManor_ password was entered correctly, then the WiFi Shield will join _MeerkatManor_ after a quick reboot and every time the network is within range. Have fun streaming your brain waves over WiFi!
 
 **Note:** the OpenBCI WiFi shield cannot be paired with multiple WiFi networks. However, if the WiFi Shield is out of range of the network it is currently paired with, it will reappear as a hotspot again, you'll see the D2 light flash **10 times in 2 seconds**. At this point, if you reconnect to the hotspot and then connect the WiFi Shield to a different WiFi network. The previous network credentials will be overwritten by the new ones.
 
-![Captive touch portal final screen](assets/GettingStartedImages/wifi_captive_touch_final_screen_shot.PNG)
+![Captive touch portal final screen](../../assets/GettingStartedImages/wifi_captive_touch_final_screen_shot.PNG)
 
 If you are a developer and want to control the WiFi Shield through HTTP commands checkout the [WiFi Shield's web server specifications](https://app.swaggerhub.com/apis/pushtheworld/openbci-wifi-server/2.0.0)!
 
@@ -247,19 +247,19 @@ You want to directly connect your computer with the WiFi Shield. Your WiFi Shiel
 
 Connect your computer or phone to the WiFi Shield by joining the hotspot (a.k.a. wireless network, soft access point) broadcasted by the WiFi Shield.
 
-![iPhone Connected to MeerkatManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
+![iPhone Connected to MeerkatManor](../../assets/GettingStartedImages/wifi_join_network_1.PNG)
 
 Click "OpenBCI-A4AD", where your WiFi Shield is some other name such as OpenBCI-E318, in an attempt to connect to the WiFi Shield's hotspot.
 
-![iPhone Connecting to \`OpenBCI-A4AD\`](assets/GettingStartedImages/wifi_join_network_2.PNG)
+![iPhone Connecting to \`OpenBCI-A4AD\`](../../assets/GettingStartedImages/wifi_join_network_2.PNG)
 
 Your phone or computer will connect to the WiFi Shield's hotspot.
 
-![iPhone Connected to \`OpenBCI-E218\`](assets/GettingStartedImages/wifi_joined_network.png)
+![iPhone Connected to \`OpenBCI-E218\`](../../assets/GettingStartedImages/wifi_joined_network.png)
 
 Launch your web browser and navigate to  to go to your WiFi's home page.
 
-![WiFi Shield home page on iPhone](assets/GettingStartedImages/wifi_home_page.jpeg)
+![WiFi Shield home page on iPhone](../../assets/GettingStartedImages/wifi_home_page.jpeg)
 
 That's it! You're ready to stream high speed data from the WiFi Shield! You may use the OpenBCI GUI or any other interface such as NodeJS, python or many of the other new SDKs! Keep in mind the WiFi Shield's IP Address is set to 192.168.4.1.
 
@@ -290,27 +290,27 @@ Follow the below example that goes through the steps of connecting the WiFi Shie
 
 Your local WiFi network is called _MeerkatManor_ and it is password protected. You turn on the WiFi on your smartphone and search for WiFi network options. Additionally, your WiFi Shield is connected to a battery and powered on (and not connected to an OpenBCI Board!). In your iPhone's WiFi network options, you see _MeerkatManor_ and "OpenBCI-A4AD" (the last 4 characters will be different in your case).
 
-![iPhone Connected to MeerkatManor](assets/GettingStartedImages/wifi_join_network_1.PNG)
+![iPhone Connected to MeerkatManor](../../assets/GettingStartedImages/wifi_join_network_1.PNG)
 
 You click "OpenBCI-A4AD", in an attempt to launch the captive touch portal.
 
 **Note:** there is a known issue where it may take several times to bring up the captive touch portal. Push The World is actively seeking a better solution, in the meantime, be patient and try multiple times to connect to the board. Power cycling the board may useful.
 
-![iPhone Connecting to \`OpenBCI-A4AD\`](assets/GettingStartedImages/wifi_join_network_2.PNG)
+![iPhone Connecting to \`OpenBCI-A4AD\`](../../assets/GettingStartedImages/wifi_join_network_2.PNG)
 
 After a couple seconds a captive touch portal will appear on the computer, phone or tablet. Click _Configure WiFi_.
 
-![Captive touch portal first screen](assets/GettingStartedImages/wifi_captive_touch_first_screen.PNG)
+![Captive touch portal first screen](../../assets/GettingStartedImages/wifi_captive_touch_first_screen.PNG)
 
 On the next screen, see that _MeerkatManor_ is listed as a possible network for the WiFi Shield to join. Select _MeerkatManor_ and enter the password for the network and press _save_.
 
-![Captive touch portal second screen](assets/GettingStartedImages/wifi_captive_touch_second_screen.PNG)
+![Captive touch portal second screen](../../assets/GettingStartedImages/wifi_captive_touch_second_screen.PNG)
 
 If the _MeerkatManor_ password was entered correctly, then the WiFi Shield will join _MeerkatManor_ after a quick reboot and every time the network is within range. Have fun streaming your brain waves over WiFi!
 
 **Note:** the OpenBCI WiFi shield cannot be paired with multiple WiFi networks. However, if the WiFi Shield is out of range of the network it is currently paired with, it will reappear as a hotspot again. At this point, if you reconnect to the hotspot and then connect the WiFi Shield to a different WiFi network. The previous network credentials will be overwritten by the new ones.
 
-![Captive touch portal final screen](assets/GettingStartedImages/wifi_captive_touch_final_screen_shot.PNG)
+![Captive touch portal final screen](../../assets/GettingStartedImages/wifi_captive_touch_final_screen_shot.PNG)
 
 If you are a developer and want to control the WiFi Shield through HTTP commands checkout the [server specifications](https://app.swaggerhub.com/apis/pushtheworld/openbci-wifi-server/1.3.0)!
 
@@ -330,23 +330,23 @@ Come back to this guide when your GUI is running!
 
 Select `` from the first drop down
 
-![selecting cyton from drop down](assets/GettingStartedImages/wifi_cyton_select_cyton.png)
+![selecting cyton from drop down](../../assets/GettingStartedImages/wifi_cyton_select_cyton.png)
 
 Select `` as the transfer protocol
 
-![selecting wifi from the transfer protocol](assets/GettingStartedImages/wifi_cyton_select_wifi.png)
+![selecting wifi from the transfer protocol](../../assets/GettingStartedImages/wifi_cyton_select_wifi.png)
 
 The GUI will automatically start searching for WiFi Shields
 
-![wifi with cyton searching for wifi shield](assets/GettingStartedImages/wifi_cyton_searching.png)
+![wifi with cyton searching for wifi shield](../../assets/GettingStartedImages/wifi_cyton_searching.png)
 
 Select the desired WiFi Shield from the dropdown list
 
-![selecting wifi shield](assets/GettingStartedImages/wifi_cyton_select_wifi_shield.png)
+![selecting wifi shield](../../assets/GettingStartedImages/wifi_cyton_select_wifi_shield.png)
 
 The Cyton will default to a sample rate of 1000Hz with a latency of 10ms. For the majority of modern data WiFi networks these settings will work. If your data transfer LED (`` on WiFi Shield) is not solid blue, then you should try adjusting your sample rate and latency while you determine your wireless network problems.
 
-![setting latency and sample rate of cyton](assets/GettingStartedImages/wifi_cyton_wifi_settings.png)
+![setting latency and sample rate of cyton](../../assets/GettingStartedImages/wifi_cyton_wifi_settings.png)
 
 Press `` when you're ready to begin streaming.
 
@@ -375,39 +375,39 @@ If you are unable to connect to the board
 
 Select `` from the first drop down
 
-![selecting ganglion from drop down](assets/GettingStartedImages/wifi_ganglion_select_ganglion.png)
+![selecting ganglion from drop down](../../assets/GettingStartedImages/wifi_ganglion_select_ganglion.png)
 
 Select `` as the transfer protocol
 
-![selecting wifi from the transfer protocol](assets/GettingStartedImages/wifi_ganglion_select_wifi.png)
+![selecting wifi from the transfer protocol](../../assets/GettingStartedImages/wifi_ganglion_select_wifi.png)
 
 The GUI will automatically start searching for WiFi Shields
 
-![wifi with ganglion searching for wifi shield](assets/GettingStartedImages/wifi_ganglion_searching.png)
+![wifi with ganglion searching for wifi shield](../../assets/GettingStartedImages/wifi_ganglion_searching.png)
 
 Select the desired WiFi Shield from the dropdown list
 
-![selecting wifi shield](assets/GettingStartedImages/wifi_ganglion_select_wifi_shield.png)
+![selecting wifi shield](../../assets/GettingStartedImages/wifi_ganglion_select_wifi_shield.png)
 
 The Ganglion will default to a sample rate of 1600Hz with a latency of 10ms. For the majority of modern data WiFi networks these settings will work. If your data transfer LED (`` on WiFi Shield) is not solid blue, then you should try adjusting your sample rate and latency while you determine your wireless network problems.
 
-![setting latency and sample rate of ganglion](assets/GettingStartedImages/wifi_ganglion_settings.png)
+![setting latency and sample rate of ganglion](../../assets/GettingStartedImages/wifi_ganglion_settings.png)
 
 Press `` when you're ready to begin streaming.
 
-![wifi ganglion start system](assets/GettingStartedImages/wifi_ganglion_start_system.png)
+![wifi ganglion start system](../../assets/GettingStartedImages/wifi_ganglion_start_system.png)
 
 Press `` to begin streaming!
 
-![ganglion wifi starting data stream](assets/GettingStartedImages/wifi_ganglion_data_stream_start.png)
+![ganglion wifi starting data stream](../../assets/GettingStartedImages/wifi_ganglion_data_stream_start.png)
 
 When you are finished recording, you may press ``
 
-![ganglion wifi stopping data stream](assets/GettingStartedImages/wifi_ganglion_data_stream_stop.png)
+![ganglion wifi stopping data stream](../../assets/GettingStartedImages/wifi_ganglion_data_stream_stop.png)
 
 Then end your session by pressing `` from the `` drop down.
 
-![ganglion wifi stop system](assets/GettingStartedImages/wifi_ganglion_stop_system.png)
+![ganglion wifi stop system](../../assets/GettingStartedImages/wifi_ganglion_stop_system.png)
 
 If you are unable to connect to the board
 
@@ -421,37 +421,37 @@ If you are unable to connect to the board
 
 Select `` or `` from the first drop down
 
-![selecting ganglion from drop down](assets/GettingStartedImages/wifi_ganglion_select_ganglion.png)
+![selecting ganglion from drop down](../../assets/GettingStartedImages/wifi_ganglion_select_ganglion.png)
 
 Select `` as the transfer protocol
 
-![selecting wifi from the transfer protocol](assets/GettingStartedImages/wifi_ganglion_select_wifi.png)
+![selecting wifi from the transfer protocol](../../assets/GettingStartedImages/wifi_ganglion_select_wifi.png)
 
 The GUI will automatically start searching for WiFi Shields
 
-![wifi with ganglion searching for wifi shield](assets/GettingStartedImages/wifi_ganglion_searching.png)
+![wifi with ganglion searching for wifi shield](../../assets/GettingStartedImages/wifi_ganglion_searching.png)
 
 Select the desired WiFi Shield from the dropdown list
 
-![selecting wifi shield](assets/GettingStartedImages/wifi_ganglion_select_wifi_shield.png)
+![selecting wifi shield](../../assets/GettingStartedImages/wifi_ganglion_select_wifi_shield.png)
 
 Select the right carrot button to open the WiFi Configuration window
 
-![selecting right carrot to open wifi config](assets/GettingStartedImages/wifi_config_select_right_carrot.png)
+![selecting right carrot to open wifi config](../../assets/GettingStartedImages/wifi_config_select_right_carrot.png)
 
 If the connection to the WiFi Shield was successful, you will see a success message.
 
-![success connection to wifi shield](assets/GettingStartedImages/wifi_config_success_message.png)
+![success connection to wifi shield](../../assets/GettingStartedImages/wifi_config_success_message.png)
 
 When you are finished, press the left facing caret to close the WiFi Configuration window.
 
-![selecting left facing arrow to close wifi configuration](assets/GettingStartedImages/wifi_config_success_message.png)
+![selecting left facing arrow to close wifi configuration](../../assets/GettingStartedImages/wifi_config_success_message.png)
 
 ### Get WiFi Shield Firmware Version
 
 To verify you have the latest OpenBCI_Wifi firmware version, select `` from the WiFi Configuration menu
 
-![selecting firmware version for wifi](assets/GettingStartedImages/wifi_config_get_firmware_version.png)
+![selecting firmware version for wifi](../../assets/GettingStartedImages/wifi_config_get_firmware_version.png)
 
 Compare the firmware version with the [latest OpenBCI_Wifi firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest) available and download/update your firmware if it's outdated.
 
@@ -459,29 +459,29 @@ Compare the firmware version with the [latest OpenBCI_Wifi firmware](https://git
 
 To get the Wifi Shield IP Address, select `` from the WiFi Configuration menu
 
-![getting ip address for openbci wifi shield](assets/GettingStartedImages/wifi_config_get_ip_address.png)
+![getting ip address for openbci wifi shield](../../assets/GettingStartedImages/wifi_config_get_ip_address.png)
 
 ### Get WiFi Shield Mac Address
 
 To get the Wifi Shield IP Address, select `` from the WiFi Configuration menu
 
-![getting mac address for openbci wifi shield](assets/GettingStartedImages/wifi_config_get_mac_address.png)
+![getting mac address for openbci wifi shield](../../assets/GettingStartedImages/wifi_config_get_mac_address.png)
 
 ### What OpenBCI Board is Connected to the Wifi Shield
 
 If you are having trouble starting to stream with the GUI, then select `` to verify the WiFi Shield is attached properly to the Cyton or Ganglion.
 
-![getting connected openbci board](assets/GettingStartedImages/wifi_config_get_board_type.png)
+![getting connected openbci board](../../assets/GettingStartedImages/wifi_config_get_board_type.png)
 
 ### Erase WiFi Credentials
 
 If you want to switch what WiFi network your WiFi Shield is on, you can select ``. **NOTE: WiFi Shield must be detached from Ganglion or Cyton.**
 
-![erase credentials for openbci wifi shield](assets/GettingStartedImages/wifi_config_erase_credentials.png)
+![erase credentials for openbci wifi shield](../../assets/GettingStartedImages/wifi_config_erase_credentials.png)
 
 The GUI will automatically detach from the WiFi Shield. Your WiFi Shield should now be a hotspot which you can join to give the WiFi Shield the credentials for the new network.
 
-![erase credentials force close](assets/GettingStartedImages/wifi_config_erase_credentials_force_close.png)
+![erase credentials force close](../../assets/GettingStartedImages/wifi_config_erase_credentials_force_close.png)
 
 ## Helpful links and resources
 

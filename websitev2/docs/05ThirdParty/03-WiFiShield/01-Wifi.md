@@ -23,14 +23,14 @@ The OpenBCI Wifi Shield was designed in partnership with [Push The World](www.pu
 
 ### Wifi Board Circuit Schematic
 
-![Wifi Schematic](assets/ThirdPartyImages/wifi_schematic.png)
+![Wifi Schematic](../../assets/ThirdPartyImages/wifi_schematic.png)
 
 ### Wifi Board PCB Layer Images
 
 Top Layer  
-![Wifi Top Layer](assets/ThirdPartyImages/wifi_top.png)  
+![Wifi Top Layer](../../assets/ThirdPartyImages/wifi_top.png)  
 Bottom Layer  
-![Wifi Bottom Layer](assets/ThirdPartyImages/wifi_bottom.png)  
+![Wifi Bottom Layer](../../assets/ThirdPartyImages/wifi_bottom.png)  
 
 ### Buttons
 

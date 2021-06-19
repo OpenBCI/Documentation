@@ -15,7 +15,7 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 
 ## What you will need
 
-![What You Need](assets/GettingStartedImages/whatYouNeed.JPG)
+![What You Need](../../assets/GettingStartedImages/whatYouNeed.JPG)
 
 #### Necessary:
 
@@ -48,7 +48,7 @@ Connect the electrode wires to your Cyton board as shown below. The proper wire 
 On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to _'DOWN'_ for EEG.
 Explanation in detail [here](../../03Ganglion/02-Ganglion.md#inverting-input-select-switches).
 
-![eegGoldCupSetup](assets/GettingStartedImages/eeg_cytonSetup.JPG)
+![eegGoldCupSetup](../../assets/GettingStartedImages/eeg_cytonSetup.JPG)
 
 | Electrode Wire Color | Cyton Board Pin       | Ganglion Board Pin | Function             |
 | -------------------- | --------------------- | ------------------ | -------------------- |
@@ -61,31 +61,31 @@ The white and black electrodes must always connect to the SRB2 pin and the botto
 
 ## 2. Connect your electrodes to your head and body
 
-![Electrode Paste](assets/GettingStartedImages/electrodePaste.png)
+![Electrode Paste](../../assets/GettingStartedImages/electrodePaste.png)
 
 a) We're going to start with the electrodes on your head. Begin by scooping Ten20 electrode paste into your white gold cup electrode. This is going to be your reference (or SRB2) electrode for the other electrodes on your head. Fill the electrode so there is a little extra electrode paste spilling over the top of the gold cup, as seen in the picture to the right.
 
 **Note:** Use a paper towel or napkin to remove excess electrode paste as you are applying your electrodes.
 
-![SRB2](assets/GettingStartedImages/earlobe.JPG)
+![SRB2](../../assets/GettingStartedImages/earlobe.JPG)
 
 b) Now apply this electrode to either one of your earlobes (either A1 or A2 as seen on the 10-20 system image  below). You can use some medical tape (or electric tape!) to give this electrode some extra stability, ensuring that it does not fall off. This electrode is the reference that all of the EEG electrodes on your head will be measured in comparison to. The uV reading that will appear in the GUI's EEG DATA montage is a measure of the potential difference between each electrode and this reference electrode (SRB2). SRB1 (the top SRB pin) can also be used as a reference pin, but we won't discuss that here. Check out the other docs on how to maximize the usage of the other pins!
 
-![Fp2](assets/GettingStartedImages/Fp2.JPG)
+![Fp2](../../assets/GettingStartedImages/Fp2.JPG)
 
 c) Follow the same procedure for the purple electrode and apply it to your forehead 1 inch above your left eyebrow (as if you were looking at yourself) and an inch to the left of your forehead's centerline.
 
-![1020](assets/GettingStartedImages/1020.jpg)
+![1020](../../assets/GettingStartedImages/1020.jpg)
 
 This electrode location is Fp2 on the [10-20 System](http://en.wikipedia.org/wiki/10-20_system_%28EEG%29). The 10-20 System international standard for electrode placement in the context of EEG. Fp indicates the a "frontal polar" site.
 
-![O1](assets/GettingStartedImages/O1.JPG)
+![O1](../../assets/GettingStartedImages/O1.JPG)
 
 d) Now follow the same procedure for the red electrode and place it on the back of your head, 1 inch above the inion (as seen on the 10-20 system), and 1 inch to the left. This electrode location is O1 on the 10-20 system. The 'O' stands for occiptal, meaning above your occipital lobe (or visual cortex).
 
 **Note:** to do this, pull your hair aside and make sure the electrode is nested as deeply as possible, with the electrode paste making a definitive conductive connection between your scalp and the gold cup.
 
-![headband](assets/GettingStartedImages/headband.JPG)
+![headband](../../assets/GettingStartedImages/headband.JPG)
 
 e) Now follow the same procedure as step 2 above to apply the black electrode to your other earlobe (either A1 or A2 from the 10-20 system). The black electrode is connected to the BIAS pin, which is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in!
 
@@ -99,11 +99,11 @@ If you're using the Daisy Cyton board, still set the Channel Count to 8, even th
 
 b) Click START DATA STREAM to begin streaming data from your board. You should see live data from your body (and the unattached channels) streaming into the `Time Series` montage on the left side of the GUI.
 
-![Power Down](assets/GettingStartedImages/CytonGS_pic1.png)
+![Power Down](../../assets/GettingStartedImages/CytonGS_pic1.png)
 
 c) Now we are going to power down the channels we aren't using. Do this by clicking the circular channel number buttons outside of the left side of the `Time Series` montage. Each time you power down a channel, the channel will show a burst of signal and then settle at 0 mV.
 
-![Signals At Start](assets/GettingStartedImages/CytonGS_pic2.png)
+![Signals At Start](../../assets/GettingStartedImages/CytonGS_pic2.png)
 
 We are only using channels 2 and 7, so power down every other channel. You can also power down the channels with keyboard shortcuts (1-8). Power them back up with [SHIFT] + 1-8. If you are working with a daisy module, channels 9-16 can be powered down with q, w, e, r, t, y, u, i, respectively. You can power those channels back up with [SHIFT] + the same key.
 
@@ -111,7 +111,7 @@ Don't bother with the ohm symbols to the right of the buttons with numbers; they
 
 d) Now it's time to optimize your Cyton board's channel settings for this setup. Click the `Hardware Settings` button above the data oscilloscope display and an array of buttons should appear in place of the `Time Series` montage. The `Hardware Settings` that are configured when you first open the GUI set every channel to EEG mode (Included in BIAS with SRB2 On) with a Gain of 24.
 
-![Hardware Settings](assets/GettingStartedImages/CytonGS_pic3_GUI-5.0.2_HardwareSettings.png)
+![Hardware Settings](../../assets/GettingStartedImages/CytonGS_pic3_GUI-5.0.2_HardwareSettings.png)
 
 The dropdowns inside the `Hardware Settings` controller indicate the current settings of the ADS1299 registers on your Cyton board. For more information on these settings, refer to pages 39-47 of the [ADS1299 datasheet](https://www.ti.com/lit/ds/symlink/ads1299.pdf).
 
@@ -123,7 +123,7 @@ e) After updating these settings, click `Send` to send the updated settings to t
 
 ## 4. Alpha brain waves (EEG)
 
-![Alpha Brain Waves!](assets/GettingStartedImages/cytonGS_fft_alpha_spike.png)
+![Alpha Brain Waves!](../../assets/GettingStartedImages/cytonGS_fft_alpha_spike.png)
 
 Now, for what we've all been waiting for... let's check out some brain waves!
 
