@@ -20,7 +20,7 @@ Each Ultracortex comes with wires that are color-coded to match the GUI, which c
 
 ### Hardware Settings
 
-![image](assets/SoftwareImages/OpenBCISoftware/GUI_5.0.2-HardwareSettingsController_Screenshot.png)
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.0.2-HardwareSettingsController_Screenshot.png)
 
 For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
 
@@ -97,7 +97,7 @@ Alternatively, "+" will display only an absolute value, without regard to whethe
 
 ## Spectrogram Widget
 
-![GUI v5 Screenshot with Spectrogram Labeled](assets/SoftwareImages/OpenBCISoftware/GUIv5_SpectrogramScreenshot_Labeled.png)
+![GUI v5 Screenshot with Spectrogram Labeled](../../assets/SoftwareImages/OpenBCISoftware/GUIv5_SpectrogramScreenshot_Labeled.png)
 
 This widget contains a dual spectrogram display which allows users to see changes in FFT data over time. In the above screenshot, you can see GUI synthetic data being plotted in the Spectrogram widget, and this can be confirmed by counting the "peaks" in the TimeSeries data for each channel. Also, you can see the FFT widget is open and has been labeled. This allows us to see and confirm the data that is in the dual spectrogram display.
 

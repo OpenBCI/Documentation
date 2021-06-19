@@ -10,7 +10,7 @@ Tested on:
 
 ### I. Connecting the Board
 
-![Device Manager](assets/DepImages/device-man.jpg)
+![Device Manager](../assets/DepImages/device-man.jpg)
 
 Connect the OpenBCI dongle to the computer and power ON the OpenBCI board.
 
@@ -42,7 +42,7 @@ To check it is, in fact, the OBCI board; connecting and disconnecting the Dongle
 
 ### II. Latency Settings Fix
 
-![Latency Fix](assets/DepImages/latency.jpg)
+![Latency Fix](../assets/DepImages/latency.jpg)
 
 The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if its accumulating packets for about a full second before releasing them all at the same time into the serial stream.
 

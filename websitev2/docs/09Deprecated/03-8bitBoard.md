@@ -46,14 +46,14 @@ Switching either BLE or PC will produce the same result. The option is available
 
 ### OpenBCI 8bit Board Circuit Schematic
 
-![OpenBCI 8bit Schematic](assets/DepImages/OBCI_V3_8bit-Schematic.jpg)
+![OpenBCI 8bit Schematic](../assets/DepImages/OBCI_V3_8bit-Schematic.jpg)
 
 ### 8bit Board PCB Layer Images
 
-![8bit PCB LayerTOP](assets/DepImages/OBCI_8bit_layerTop.jpg)
-![8bit PCB Layer2](assets/DepImages/OBCI_8bit_layerTwo.jpg)
-![8bit PCB Layer3](assets/DepImages/OBCI_8bit_layerThree.jpg)
-![8bit PCB LayerBOTTOM](assets/DepImages/OBCI_8bit_layerBottom_noMirror.jpg)
+![8bit PCB LayerTOP](../assets/DepImages/OBCI_8bit_layerTop.jpg)
+![8bit PCB Layer2](../assets/DepImages/OBCI_8bit_layerTwo.jpg)
+![8bit PCB Layer3](../assets/DepImages/OBCI_8bit_layerThree.jpg)
+![8bit PCB LayerBOTTOM](../assets/DepImages/OBCI_8bit_layerBottom_noMirror.jpg)
 
 ### 8bit Board PCB Files
 

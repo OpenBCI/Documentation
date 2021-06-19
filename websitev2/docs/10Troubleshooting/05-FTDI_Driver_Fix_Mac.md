@@ -88,7 +88,7 @@ After re-installing the FTDI driver and enabling kext dev mode, reboot your comp
 
 Plug in your dongle and ensure that the switch is set to GPIO6 (not RESET).
 
-![image](assets/DepImages/dongleConnection.png)
+![image](../assets/DepImages/dongleConnection.png)
 
 ### Step 7: unload the FTDI kernel extension
 

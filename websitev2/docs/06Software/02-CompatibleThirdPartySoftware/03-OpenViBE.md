@@ -84,10 +84,10 @@ As you can see in the YouTube Video, we need to make a few modifications to the 
 7.  Click Connect and Play in the OpenViBE Acquisition Server.
 8.  Click the Play button in the OpenViBE Designer GUI.
 
-![OpenBCI GUI to OpenViBE Screenshot](assets/SoftwareImages/CompatibleThirdPartySoftwareImages/Ganglion-Wifi-LSL-OpenVibe_screenshot.png)
+![OpenBCI GUI to OpenViBE Screenshot](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/Ganglion-Wifi-LSL-OpenVibe_screenshot.png)
 
 Here is what the Acquisition Server Console Log should read when successfully connected:
-![OpenBCI GUI to OpenViBE LSL Successful Connection](assets/SoftwareImages/CompatibleThirdPartySoftwareImages/Ganglion-Wifi-LSL-OpenVibe_successMessage.png)
+![OpenBCI GUI to OpenViBE LSL Successful Connection](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/Ganglion-Wifi-LSL-OpenVibe_successMessage.png)
 
 **Enjoy OpenBCI in OpenViBE!**
 

@@ -41,7 +41,8 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
         - Example: ``
 3.  Restart Ubuntu
 4.  Try "id" command again
-        - Repeat step one
+        - Repeat step one
+
 </details><p />
 
 ## Installing the OpenBCI GUI as a "Standalone" Application

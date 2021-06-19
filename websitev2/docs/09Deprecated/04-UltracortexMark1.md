@@ -16,16 +16,16 @@ The screws and nuts used to fasten the FRI electrode to the FRI_electrode_mount 
 
 ### Image References
 
-![image](assets/DepImages/full.PNG)
+![image](../assets/DepImages/full.PNG)
 
-![image](assets/DepImages/1020.png)
+![image](../assets/DepImages/1020.png)
 
-![image](assets/DepImages/top.JPG)
+![image](../assets/DepImages/top.JPG)
 
-![image](assets/DepImages/inside.png)
+![image](../assets/DepImages/inside.png)
 
-![image](assets/DepImages/trode.JPG)
+![image](../assets/DepImages/trode.JPG)
 
-![image](assets/DepImages/trode2.JPG)
+![image](../assets/DepImages/trode2.JPG)
 
-![image](assets/DepImages/trodes.png)
+![image](../assets/DepImages/trodes.png)

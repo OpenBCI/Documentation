@@ -50,7 +50,7 @@ title: GUI Troubleshooting
 
 -   The current GUI now features packet loss interpolation. This makes filtered data much smoother and minimizes artefacts that would appear.
 
-    ![GUI Cyton Manual Radio Configuration](assets/SoftwareImages/OpenBCISoftware/gui_cyton_manual_radioconfig.png)
+    ![GUI Cyton Manual Radio Configuration](../assets/SoftwareImages/OpenBCISoftware/gui_cyton_manual_radioconfig.png)
 
 ### Ganglion
 

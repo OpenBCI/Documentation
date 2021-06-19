@@ -4,13 +4,13 @@ title: Minimizing Noise
 ---
 If your current setup isn't getting you clean data, there are a number of possible reasons for this. We'll go through troubleshooting them here.
 
-![Notch Filter](assets/GettingStartedImages/notch_bar.png)
+![Notch Filter](../assets/GettingStartedImages/notch_bar.png)
 
 #### Get rid of AC noise
 
 Get rid of 60 Hz (or 50 Hz if you're in Europe or any country that operates on a 50 Hz power grid). The OpenBCI has a built-in notch filter that does a decent job at eliminating 60 Hz noise. You can adjust the notch filter to 50 Hz by clicking the "Notch 60 Hz" button. Additionally, if your Cyton board is on a table with any power cords or devices that are plugged into a wall outlet, move it to a location away from any electronic devices plugged into the wall. This will drastically reduce the alternating current (AC) influence on your signal.
 
-![Stabilize Your Cables w/ Tape](assets/GettingStartedImages/secureCables.JPG)
+![Stabilize Your Cables w/ Tape](../assets/GettingStartedImages/secureCables.JPG)
 
 #### Stabilize your electrodes
 

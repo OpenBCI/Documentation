@@ -68,5 +68,3 @@ In [this Python notebook](https://github.com/evaesteban/OpenBCI_Experiment/blob/
 Once you understand how to conduct an experiment, you can modify [this Python script](ExternalTriggerCreator_quick.py) to make your own video. The current code reads the images stored in the `Images` folder, shuffles them, and creates a video with 4 different sessions. Each session displays the images at a different rate. Each image has an embedded trigger and is separated from the others by a fixation cross.
 
 The video pattern was created in accordance to the diagram below obtained from the research paper [Toward Emotion Aware Computing: An Integrated Approach Using Multichannel Neurophysiological Recordings and Affective Visual Stimuli](https://ieeexplore.ieee.org/document/5415563) by C. A. Frantzidis, C. Bratsas, C. L. Papadelis, E. Konstantinidis, C. Pappas and P. D. Bamidis, published in IEEE Transactions on Information Technology in Biomedicine, vol. 14, no. 3, pp. 589-597, May 2010.
-
-![](video_picture.png)

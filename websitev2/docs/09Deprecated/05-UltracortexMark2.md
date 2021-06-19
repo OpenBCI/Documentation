@@ -2,7 +2,7 @@
 id: UltracortexMark2Dep
 title: Ultracortex Mark 2
 ---
-![image](assets/DepImages/UC_back.JPG)
+![image](../assets/DepImages/UC_back.JPG)
 
 ## Print Settings (verified)
 
@@ -77,7 +77,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 -   [Stainless Steel Pan Head Phillips Machine Screw, 2-56 Thread, 3/8" Length ($5.70 per pack of 50)](http://www.mcmaster.com/#91735a017/=xzahfj)
 -   [Stainless Steel Hex Nut, 2-56 Thread Size, 3/16" Wide, 1/16" High](http://www.mcmaster.com/#91841a003/=xzahv0)
 
-![image](assets/DepImages/ScrewAndNut.JPG)
+![image](../assets/DepImages/ScrewAndNut.JPG)
 
 ## Other Helpful Information
 
@@ -90,7 +90,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
     -   wirecutters
     -   needle-nose pliers
 
-![image](assets/DepImages/HelpfulTools.JPG)
+![image](../assets/DepImages/HelpfulTools.JPG)
 
 -   The "M2_Electrode Mount A_01" part has a small lip on the inside (where the spring fits into) that must be manually removed with an exacto/razor blade.
 -   Most of the tolerances between pieces are too tight, so assembly requires substantial filing and sanding.
@@ -100,12 +100,12 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 ## Photos of Ultracortex M2
 
-![image](assets/DepImages/UC.png)
-![image](assets/DepImages/UC_front.JPG)
-![image](assets/DepImages/UC_top.JPG)
-![image](assets/DepImages/Quadrants.JPG)
-![image](assets/DepImages/MakerBot_Screenshot2.png)
-![image](assets/DepImages/sketch.JPG)
-![image](assets/DepImages/Evan.JPG)
-![image](assets/DepImages/Rodrigo.JPG)
-![image](assets/DepImages/Joel.JPG)
+![image](../assets/DepImages/UC.png)
+![image](../assets/DepImages/UC_front.JPG)
+![image](../assets/DepImages/UC_top.JPG)
+![image](../assets/DepImages/Quadrants.JPG)
+![image](../assets/DepImages/MakerBot_Screenshot2.png)
+![image](../assets/DepImages/sketch.JPG)
+![image](../assets/DepImages/Evan.JPG)
+![image](../assets/DepImages/Rodrigo.JPG)
+![image](../assets/DepImages/Joel.JPG)
