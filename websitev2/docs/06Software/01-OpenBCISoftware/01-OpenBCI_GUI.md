@@ -2,7 +2,7 @@
 id: GUIDocs
 title: The OpenBCI GUI
 ---
-![image](assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party software such as MATLAB. 
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
@@ -11,7 +11,7 @@ It can be launched as a standalone application or as a sketch from Processing (a
 
 Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 
-![image](assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
+![image](../../assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
 ### Cyton and Cyton+Daisy on macOS/Windows/Linux
 
@@ -42,7 +42,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 3.  Restart Ubuntu
 4.  Try "id" command again
         - Repeat step one
-    </details><p />
+</details><p />
 
 ## Installing the OpenBCI GUI as a "Standalone" Application
 
@@ -56,7 +56,7 @@ The fastest way is to download the standalone .exe/.app for your machine and ope
 
 Drag and drop the `OpenBCI_GUI` application to you `Applications` folder.
 
-![Drag and drop application](assets/SoftwareImages/OpenBCISoftware/gui_drag_and_drop.png)
+![Drag and drop application](../../assets/SoftwareImages/OpenBCISoftware/gui_drag_and_drop.png)
 
 ### Install OpenBCI_GUI On Windows
 
@@ -279,4 +279,4 @@ If you are encountering issues launching the GUI at this point, please head to t
 
 **Note: This can only be done with GUI v4.2.0 or earlier.** In order to convert large SD card recordings made using Cyton or Cyton+Daisy, you will need to run the GUI from Processing, but we need to change one crucial setting in Processing's Preferences. As mentioned in the screenshot below, open Processing preferences and increase max available memory to at least 9GB to convert a 12 hour SD recording. Click OK to save these preferences, restart Processing to make sure the changes take effect, and re-launch the GUI.
 
-![GUI Screenshot convert large SD recording](assets/SoftwareImages/OpenBCISoftware/gui_convert_large_SD_recordings_scrnshot.png)
+![GUI Screenshot convert large SD recording](../../assets/SoftwareImages/OpenBCISoftware/gui_convert_large_SD_recordings_scrnshot.png)
