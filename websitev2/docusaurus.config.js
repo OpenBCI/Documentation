@@ -46,7 +46,7 @@ module.exports={
         {
           "href": "https://openbci.com",
           "label": "Main Site",
-          "position": "right"
+          "position": "left"
         },
         {
           "href": "https://shop.openbci.com",
