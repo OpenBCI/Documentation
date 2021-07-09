@@ -2,30 +2,30 @@
   "docs": {
       "Welcome to OpenBCI": ["Welcome"],
       "Getting Started": [
-            "01GettingStarted/GettingStartedLanding",
+            "GettingStarted/GettingStartedLanding",
             {
               "type": "subcategory",
               "label": "Boards",
               "ids": [
-                  "01GettingStarted/01-Boards/CytonGS",
-                  "01GettingStarted/01-Boards/DaisyGS",
-                  "01GettingStarted/01-Boards/GanglionGS",
-                  "01GettingStarted/01-Boards/WiFiGS"
+                  "GettingStarted/Boards/CytonGS",
+                  "GettingStarted/Boards/DaisyGS",
+                  "GettingStarted/Boards/GanglionGS",
+                  "GettingStarted/Boards/WiFiGS"
               ]
             }, {
               "type": "subcategory",
               "label": "Biosensing Setups",
               "ids": [
-                  "01GettingStarted/02-Biosensing-Setups/EEGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/ECGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/EMGSetup",
-                  "01GettingStarted/02-Biosensing-Setups/ExGSetup"
+                  "GettingStarted/02-Biosensing-Setups/EEGSetup",
+                  "GettingStarted/02-Biosensing-Setups/ECGSetup",
+                  "GettingStarted/02-Biosensing-Setups/EMGSetup",
+                  "GettingStarted/02-Biosensing-Setups/ExGSetup"
               ]
             }, {
               "type": "subcategory",
               "label": "Community",
               "ids": [
-                  "01GettingStarted/03-Community/Community"
+                  "GettingStarted/03-Community/Community"
               ]
           }],
       "Cyton Board": [

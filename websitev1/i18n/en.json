@@ -8,34 +8,34 @@
       "Welcome": {
         "title": "Welcome to the OpenBCI Community"
       },
-      "01GettingStarted/GettingStartedLanding": {
+      "GettingStarted/GettingStartedLanding": {
         "title": "Getting Started"
       },
-      "01GettingStarted/01-Boards/CytonGS": {
+      "GettingStarted/Boards/CytonGS": {
         "title": "Cyton Getting Started Guide"
       },
-      "01GettingStarted/01-Boards/DaisyGS": {
+      "GettingStarted/Boards/DaisyGS": {
         "title": "Daisy Getting Started Guide"
       },
-      "01GettingStarted/01-Boards/GanglionGS": {
+      "GettingStarted/Boards/GanglionGS": {
         "title": "Ganglion Getting Started Guide"
       },
-      "01GettingStarted/01-Boards/WiFiGS": {
+      "GettingStarted/Boards/WiFiGS": {
         "title": "WiFi Shield Getting Started Guide"
       },
-      "01GettingStarted/02-Biosensing-Setups/EEGSetup": {
+      "GettingStarted/02-Biosensing-Setups/EEGSetup": {
         "title": "Setting up for EEG"
       },
-      "01GettingStarted/02-Biosensing-Setups/EMGSetup": {
+      "GettingStarted/02-Biosensing-Setups/EMGSetup": {
         "title": "Setting up for EMG"
       },
-      "01GettingStarted/02-Biosensing-Setups/ECGSetup": {
+      "GettingStarted/02-Biosensing-Setups/ECGSetup": {
         "title": "Setting up for ECG"
       },
-      "01GettingStarted/02-Biosensing-Setups/ExGSetup": {
+      "GettingStarted/02-Biosensing-Setups/ExGSetup": {
         "title": "Setting up for EEG, EMG, and ECG at the same time"
       },
-      "01GettingStarted/03-Community/Community": {
+      "GettingStarted/03-Community/Community": {
         "title": "Welcome to the OpenBCI Community"
       },
       "02Cyton/CytonLanding": {
