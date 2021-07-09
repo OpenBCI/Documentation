@@ -14,7 +14,7 @@ This tutorial will cover a couple of ways to add an external trigger to the Open
 
 Follow the official [OpenBCI GUI guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
 
-Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](02Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
+Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
 
 Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui) (remember to [run your OpenBCIHub application](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-on-windows) first windows users!).
 
@@ -32,15 +32,15 @@ When you use a Cyton over [WiFi Shield](https://shop.openbci.com/collections/fro
 
 Firmware 3.x.x brings a long requested out-of-the-box ability to read from analog or digital inputs with the default firmware. Allowing you to simply read from the analog input (sending `/2`) or digital input (sending `/3`) with the type of two ascii commands. The default board is activated by default, and can always be achieved again by sending a `/0`.
 
-Learn more about board modes in the [Cyton SDK](02Cyton/04-OpenBCI_Cyton_SDK.md#firmware-v300-new-commands-board-mode).
+Learn more about board modes in the [Cyton SDK](Cyton/04-OpenBCI_Cyton_SDK.md#firmware-v300-new-commands-board-mode).
 
 ### External Triggering The Easy Way (Firmware 2.x.x)
 
-Update to firmware version 3.x.x using the tutorial [**here**](02Cyton/05-Cyton_Board_Programming_Tutorial)! May all your troubles disappear!  
+Update to firmware version 3.x.x using the tutorial [**here**](Cyton/05-Cyton_Board_Programming_Tutorial)! May all your troubles disappear!  
 
 ### Sample Code Links
 
-The code used in this example is located [**here**](https://github.com/OpenBCI/OpenBCI_Button_Trigger) for those of you who want to play along at home. There's a tutorial for how to program the 32bit Board [**here**](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
+The code used in this example is located [**here**](https://github.com/OpenBCI/OpenBCI_Button_Trigger) for those of you who want to play along at home. There's a tutorial for how to program the 32bit Board [**here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)
 
 ### Utilize the on device push button
 

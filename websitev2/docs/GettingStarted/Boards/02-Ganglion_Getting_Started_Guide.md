@@ -24,7 +24,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 ![OpenBCI 8-bit Top](../../assets/GettingStartedImages/ganglion_head_shot.jpg)
 
-The battery connector on the back can accept 3V to 12V DC power input. The pushbutton is a reset button. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion](03Ganglion/01-GanglionBoard.md) page in the Hardware section.
+The battery connector on the back can accept 3V to 12V DC power input. The pushbutton is a reset button. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion](Ganglion/01-GanglionBoard.md) page in the Hardware section.
 
 ### 2. OpenBCI Ganglion Dongle
 
@@ -116,7 +116,7 @@ If the Accelerometer is off, turn on the Accelerometer by clicking the `Turn Acc
 
 You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.
 Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file.
-Learn about the `Time Series` and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets) Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/03Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
+Learn about the `Time Series` and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets) Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
 
 ![Accel Moving](../../assets/GettingStartedImages/ganglion_moving-accelerometer.jpg)
 

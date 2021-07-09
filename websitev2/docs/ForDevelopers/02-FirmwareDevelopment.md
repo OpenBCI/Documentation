@@ -14,20 +14,20 @@ All firmware provided here is licensed under the [MIT License](https://opensourc
 
 ### Cyton
 
--   [Cyton Docs](02Cyton/01-CytonBoard.md)
+-   [Cyton Docs](Cyton/01-CytonBoard.md)
 -   [Cyton Firmware GitHub](https://github.com/OpenBCI/OpenBCI_Cyton_Library)
--   [Cyton Programming Tutorial](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
+-   [Cyton Programming Tutorial](Cyton/05-Cyton_Board_Programming_Tutorial.md)
 
 ### Cyton Dongle (RFDuino)
 
 -   [OpenBCI_Radios GitHub](https://github.com/OpenBCI/OpenBCI_Radios)
--   [Cyton Radios Programming Tutorial](02Cyton/06-Cyton_Radios_Programming_Tutorial.md) -- For experienced users only!
+-   [Cyton Radios Programming Tutorial](Cyton/06-Cyton_Radios_Programming_Tutorial.md) -- For experienced users only!
 
 ### Ganglion
 
--   [Ganglion Docs](03Ganglion/01-GanglionBoard.md)
+-   [Ganglion Docs](Ganglion/01-GanglionBoard.md)
 -   [Ganglion Firmware GitHub](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
--   [Ganglion Programming Tutorial](03Ganglion/09-Ganglion_Programming_Tutorial.md)
+-   [Ganglion Programming Tutorial](Ganglion/09-Ganglion_Programming_Tutorial.md)
 
 ## Third-Party Firmware
 

@@ -14,19 +14,19 @@ All information provided here is licensed under the [MIT License](https://openso
 
 ### Cyton
 
--   [Cyton Board](02Cyton/02-Cyton.md)
--   [Cyton Board Schematic](02Cyton/02-Cyton.md#openbci-cyton-board-circuit-schematic)
--   [External Trigger on OpenBCI Cyton Board](02Cyton/07-External_Trigger_Cyton_Example.md)
+-   [Cyton Board](Cyton/02-Cyton.md)
+-   [Cyton Board Schematic](Cyton/02-Cyton.md#openbci-cyton-board-circuit-schematic)
+-   [External Trigger on OpenBCI Cyton Board](Cyton/07-External_Trigger_Cyton_Example.md)
 
 ### Cyton Dongle (RFDuino)
 
--   [OpenBCI USB Dongle](02Cyton/02-Cyton.md#openbci-usb-dongle)
--   [OpenBCI USB Dongle Schematic](02Cyton/02-Cyton.md#openbci-dongle-circuit-schematic)
+-   [OpenBCI USB Dongle](Cyton/02-Cyton.md#openbci-usb-dongle)
+-   [OpenBCI USB Dongle Schematic](Cyton/02-Cyton.md#openbci-dongle-circuit-schematic)
 
 ### Ganglion
 
--   [Ganglion Board](03Ganglion/02-Ganglion.md)
--   [Ganglion Board Schematic](03Ganglion/02-Ganglion.md#ganglion-board-circuit-schematic)
+-   [Ganglion Board](Ganglion/02-Ganglion.md)
+-   [Ganglion Board Schematic](Ganglion/02-Ganglion.md#ganglion-board-circuit-schematic)
 
 * * *
 

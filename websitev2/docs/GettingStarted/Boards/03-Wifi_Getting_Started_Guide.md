@@ -22,8 +22,8 @@ When connecting to Cyton+WiFi or Cyton+Daisy+WiFi using the OpenBCI GUI, you hav
 
 The WiFi Shield requires your Cyton to run the [latest Cyton firmware](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/latest)  and your Ganglion to the [latest Ganglion firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/latest) firmware. PLEASE NOTE IF YOU PURCHASED YOUR OPENBCI BOARD **MID-2018** OR LATER, YOU DO NOT NEED TO UPDATE ITS FIRMWARE.
 
--   [Updating Cyton Firmware Tutorial](02Cyton/05-Cyton_Board_Programming_Tutorial.md)
--   [Updating Ganglion Firmware](03Ganglion/09-Ganglion_Programming_Tutorial.md)
+-   [Updating Cyton Firmware Tutorial](Cyton/05-Cyton_Board_Programming_Tutorial.md)
+-   [Updating Ganglion Firmware](Ganglion/09-Ganglion_Programming_Tutorial.md)
 
 This guide will walk you through setting up your WiFi Shield, connecting it to your computer, and then connecting it to yourself. The first tutorial is for the Cyton and the second is for the Ganglion.
 

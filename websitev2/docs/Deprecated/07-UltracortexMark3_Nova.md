@@ -18,7 +18,7 @@ Designers & Engineers:
 
 ## THE COMPLETE ULTRACORTEX
 
-**Note:** the part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](02Cyton/01-CytonBoard.md) (8 channels) or the [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
+**Note:** the part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](Cyton/01-CytonBoard.md) (8 channels) or the [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
 \###3D-printed Parts:
 
@@ -47,12 +47,12 @@ Designers & Engineers:
     -   **Suggested Bolts** listed below (**x21**)
     -   1/4" #4 Drive Screw listed below (**x8**) for mounting the BOARD_HOLDER and OpenBCI Board
 -   Wiring (**x21**)
-    -   We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) or from the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](02Cyton/01-CytonBoard.md).
+    -   We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) or from the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](Cyton/01-CytonBoard.md).
 -   Dry electrodes by Florida Research Instruments
     -   (**18x**) Dry (spikey) electrodes to be installed in Ultracortex nodes with hair: [Disposable / Reusable Dry EEG Electrode ($0.60 each at 50+ quantity purchase) ](http://fri-fl-shop.com/product/tde-200/)
     -   (**3x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): [Disposable / Reusable Cup Wet/Dry EEG Electrode ($10.00 for 15) ](http://fri-fl-shop.com/product/disposable-reusable-dry-eeg-electrode-quantity-of-15-tde-200a1/)
     -   (**2x**) Ear Clip electrode (for reference): [TDI-430 Silver-Silver Chloride Ear Clip Electrode ($19.95 each)](http://fri-fl-shop.com/product/td-430-silver-disc-electrode-ear-clip/)
--   (**1x**) An [OpenBCI 32bit Board](02Cyton/01-CytonBoard.md) or an [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md)
+-   (**1x**) An [OpenBCI 32bit Board](Cyton/01-CytonBoard.md) or an [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md)
 -   (**1x**) Lithium Ion Rechargeable Battery Pack (~500mAh) — [Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)
 -   (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
 -   (**~10x**) [Zip tie](http://www.amazon.com/Black-Zip-Tie-100-Bag/dp/B0001IMMJI)
@@ -124,7 +124,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 \####Wiring
 
--   (**21x**) We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes)) or the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](02Cyton/01-CytonBoard.md).
+-   (**21x**) We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes)) or the Touch-Proof Connector cable that comes with an [OpenBCI 32bit Board Kit](Cyton/01-CytonBoard.md).
 
 ![image](../assets/DepImages/WIRING.jpg)
 
@@ -136,7 +136,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 ![image](../assets/DepImages/TRODES.jpg)
 
-\####(1x) An [OpenBCI 32bit Board](02Cyton/01-CytonBoard.md) (8 electrode channels) or an [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md) (16 electrode channels)
+\####(1x) An [OpenBCI 32bit Board](Cyton/01-CytonBoard.md) (8 electrode channels) or an [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md) (16 electrode channels)
 
 ![image](../assets/DepImages/OPENBCIs.jpg)
 

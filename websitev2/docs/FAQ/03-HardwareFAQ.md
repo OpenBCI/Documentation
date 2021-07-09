@@ -10,7 +10,7 @@ To get started, all you need is an [OpenBCI Board](http://shop.openbci.com/colle
 
 Yes! OpenBCI is designed to be easily interfaced by other hardware and software. The OpenBCI hardware is software agnostic, meaning it works with OpenBCI-specific software, as well as any other 3rd-Party Software that has an OpenBCI driver. Check out the [Tutorials Section](GettingStarted/00-GettingStartedLanding.md) to find guides that detail connecting OpenBCI to other tools.
 
-## What is the difference between the [Ganglion](03Ganglion/01-GanglionBoard.md), the [Cyton Board](02Cyton/01-CytonBoard.md), and the [Cyton + Daisy Boards](GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md)?
+## What is the difference between the [Ganglion](Ganglion/01-GanglionBoard.md), the [Cyton Board](Cyton/01-CytonBoard.md), and the [Cyton + Daisy Boards](GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md)?
 
 The Cyton Board is an 8 channel bio-sensing amplifier that can measure ECG, EMG, and EEG. It connects to your computer wirelessly with an included USB Dongle. Data is sampled at 250Hz.
 The Cyton + Daisy is the same as the Cyton Board, but it also includes an expansion module to increase the channel count to 16. Data is sampled at 125Hz.

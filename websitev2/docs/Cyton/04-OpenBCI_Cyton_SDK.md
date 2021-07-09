@@ -304,13 +304,13 @@ If the RFDuinos cannot speak to each other, you will see a `Failure: Communicati
 
 **&lt;**  
 
-Start time stamping and resynchronize command. When the Driver sends a **&lt;**, the Host radio will respond with a **,**. Since the Host cannot send packets to the Device ad hoc, it may be helpful to know when the Host was actually able to send the command. If the Board is not streaming, then expect a response of `Time stamp ON$$$`. If the board is streaming, then you will get a response in the data stream when the Driver receives a data packet with a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](02Cyton/03-Cyton_Data_Format.md).
+Start time stamping and resynchronize command. When the Driver sends a **&lt;**, the Host radio will respond with a **,**. Since the Host cannot send packets to the Device ad hoc, it may be helpful to know when the Host was actually able to send the command. If the Board is not streaming, then expect a response of `Time stamp ON$$$`. If the board is streaming, then you will get a response in the data stream when the Driver receives a data packet with a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](Cyton/03-Cyton_Data_Format.md).
 
 **returns** if not streaming, `Time stamp ON$$$`, if streaming then no confirmation
 
 **&gt;**
 
-Stops time stamping. If the Board is not streaming, then expect a response of `Time stamp OFF$$$`; however if the board is streaming, then you will get a response in a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](02Cyton/03-Cyton_Data_Format.md).
+Stops time stamping. If the Board is not streaming, then expect a response of `Time stamp OFF$$$`; however if the board is streaming, then you will get a response in a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](Cyton/03-Cyton_Data_Format.md).
 
 **returns** if not streaming, `Time stamp OFF$$$`, if streaming then no confirmation
 

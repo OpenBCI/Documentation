@@ -8,8 +8,8 @@ Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of gu
 ### The Learning Pages are separated into the following sections:
 
 -   [Getting Started](GettingStarted/00-GettingStartedLanding.md) — Everything you need to know to setup your OpenBCI Equipment for the first time.
--   [Cyton Board](02Cyton/01-CytonBoard.md) - Explanations, tutorials and examples for working with the Cyton board and Cyton+Daisy board.
--   [Ganglion Board](03Ganglion/01-GanglionBoard.md) - Explanations, tutorials and examples for working with the Ganglion board.
+-   [Cyton Board](Cyton/01-CytonBoard.md) - Explanations, tutorials and examples for working with the Cyton board and Cyton+Daisy board.
+-   [Ganglion Board](Ganglion/01-GanglionBoard.md) - Explanations, tutorials and examples for working with the Ganglion board.
 -   [Headwear & Electrodes](04AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
 -   [Third-Party Hardware](05ThirdParty/00-ThirdPartyLanding.md) - Here you will find information about the OpenBCI-compatible accessories.
 -   [Software](06Software/00-SoftwareLanding.md) - This section includes guides on how to get connected to OpenBCI hardware using software developed by OpenBCI and commonly used 3rd-Party Software such as Matlab, OpenVIBE, and more!

@@ -29,20 +29,20 @@
               ]
           }],
       "Cyton Board": [
-        "02Cyton/CytonLanding",
-        "02Cyton/CytonSpecs",
-        "02Cyton/CytonDataFormat",
-        "02Cyton/CytonSDK",
-        "02Cyton/CytonProgram",
-        "02Cyton/CytonRadios",
-        "02Cyton/CytonExternal",
-        "02Cyton/CytonSDCard"],
+        "Cyton/CytonLanding",
+        "Cyton/CytonSpecs",
+        "Cyton/CytonDataFormat",
+        "Cyton/CytonSDK",
+        "Cyton/CytonProgram",
+        "Cyton/CytonRadios",
+        "Cyton/CytonExternal",
+        "Cyton/CytonSDCard"],
       "Ganglion Board": [
-        "03Ganglion/GanglionLanding",
-        "03Ganglion/GanglionSpecs",
-        "03Ganglion/GanglionDataFormat",
-        "03Ganglion/GanglionSDK",
-        "03Ganglion/GanglionProgram"],
+        "Ganglion/GanglionLanding",
+        "Ganglion/GanglionSpecs",
+        "Ganglion/GanglionDataFormat",
+        "Ganglion/GanglionSDK",
+        "Ganglion/GanglionProgram"],
       "Headwear & Electrodes": [
         "04AddOns/AddOnLanding",
         {

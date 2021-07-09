@@ -78,7 +78,7 @@ Remember to use /exit to disconnect the board as you end the program, to ensure 
 
 ### Configuring the board from the command line interface
 
-You also configure board settings from this interface. For full information regarding board settings and commands, see the [Cyton board programming tutorial](02Cyton/05-Cyton_Board_Programming_Tutorial.md).
+You also configure board settings from this interface. For full information regarding board settings and commands, see the [Cyton board programming tutorial](Cyton/05-Cyton_Board_Programming_Tutorial.md).
 
 To enter Channel Settings mode, you would need to enter an "x", followed by certain channel settings, followed by an "X". For example:
 
