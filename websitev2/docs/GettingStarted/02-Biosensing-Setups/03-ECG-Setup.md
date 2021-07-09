@@ -13,7 +13,7 @@ This step by step for 3-Lead ECG will show you how to get one channel of live EC
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
 3.  Three [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) — one ground and two sensors.
-4.  [OpenBCI GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  [OpenBCI GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ### Connect Electrodes to the OpenBCI Board
 
@@ -59,7 +59,7 @@ It builds on the above guide to 3-Lead ECG and adds only a few additional steps,
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) — 4 individual cables
-4.  [OpenBCI GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  [OpenBCI GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ### Connect the Electrodes to the OpenBCI Board and to your Body
 
@@ -102,7 +102,7 @@ Once your settings have been adjusted, press 'Start Data Stream'. You should see
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving ECG signal quality, check out [this document](10Troubleshooting/01-MinimizingNoise.md) and head to the OpenBCI Technical [Forum](openbci.com/forum) if you have questions.
+For help minimizing noise and improving ECG signal quality, check out [this document](Troubleshooting/01-MinimizingNoise.md) and head to the OpenBCI Technical [Forum](openbci.com/forum) if you have questions.
 
 Concerned about the signal quality? Read [this paper](https://www.sciencedirect.com/science/article/pii/S2405844021012512)
 to learn more about the reliability of OpenBCI ECG quality.

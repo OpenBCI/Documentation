@@ -8,10 +8,10 @@ This page will explain the most basic setup to process EEG Data using your OpenB
 
 To learn more about specific OpenBCI Headware and how to set them up for EEG, follow the links below.
 
--   [Headband kit](../../04AddOns/01-Headwear/03-Headband_Tutorial.md)
--   [Ultracortex Mark IV](../../04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
--   [Ultracortex Mark III](../../04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
--   [Electrode Cap](../../04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md)
+-   [Headband kit](../../AddOns/01-Headwear/03-Headband_Tutorial.md)
+-   [Ultracortex Mark IV](../../AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
+-   [Ultracortex Mark III](../../AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+-   [Electrode Cap](../../AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md)
 
 ## What you will need
 
@@ -139,4 +139,4 @@ You'll notice that the strongest alpha wave signals should be appearing in chann
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EEG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
+For help minimizing noise and improving the quality of your EEG signals, check out [this document](Troubleshooting/01-MinimizingNoise.md)

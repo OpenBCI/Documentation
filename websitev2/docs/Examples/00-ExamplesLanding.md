@@ -12,20 +12,20 @@ Note, the example projects below are written for the [Cyton Board](https://shop.
 
 ### EMG Scrolling
 
-[Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMGscrolling) for touch-less scrolling with limb EMG
+[Tutorial](https://docs.openbci.com/docs/Examples/18-EMGProjects/EMGscrolling) for touch-less scrolling with limb EMG
 
 ### EMG-controlled Stop/Start Music
 
-[Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMGmusic) for limb EMG-triggered music playback
+[Tutorial](https://docs.openbci.com/docs/Examples/18-EMGProjects/EMGmusic) for limb EMG-triggered music playback
 
 ### EMG-controlled Slideshow
 
-[Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMGslideshow) for eye, facial, or arm EMG-controlled slideshow
+[Tutorial](https://docs.openbci.com/docs/Examples/18-EMGProjects/EMGslideshow) for eye, facial, or arm EMG-controlled slideshow
 
 ### EMG-controlled LED
 
-[Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMG_LED) for facial EMG-controlled LEDs
+[Tutorial](https://docs.openbci.com/docs/Examples/18-EMGProjects/EMG_LED) for facial EMG-controlled LEDs
 
 ### EMG-controlled Chrome Browser Dinosaur Game
 
-[Tutorial](https://docs.openbci.com/docs/07Examples/18-EMGProjects/EMG_Chrome_Dino_Game) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG
+[Tutorial](https://docs.openbci.com/docs/Examples/18-EMGProjects/EMG_Chrome_Dino_Game) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG

@@ -15,7 +15,7 @@ The following instructions have been written for use with Windows 10.
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
-4.  Computer with downloaded OpenBCI [GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  Computer with downloaded OpenBCI [GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ## Step 1: Hardware Assembly.
 
@@ -30,7 +30,7 @@ Download and install [Python](https://www.python.org/downloads/) (either version
 
 ## Step 3: Stream data using the OpenBCI GUI.
 
-Follow the networking [tutorial](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#networking) on this link to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channel 1 using the Networking Widget. Your Networking settings should look as follows:
+Follow the networking [tutorial](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIWidgets#networking) on this link to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channel 1 using the Networking Widget. Your Networking settings should look as follows:
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/EMG_Music_GUI.png?raw=true" width="70%" />
 

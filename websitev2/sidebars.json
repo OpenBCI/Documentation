@@ -44,152 +44,152 @@
         "Ganglion/GanglionSDK",
         "Ganglion/GanglionProgram"],
       "Headwear & Electrodes": [
-        "04AddOns/AddOnLanding",
+        "AddOns/AddOnLanding",
         {
           "type": "category",
           "label": "Headwear",
           "items": [
-            "04AddOns/Headwear/MarkIV",
-            "04AddOns/Headwear/MarkIII",
-            "04AddOns/Headwear/HeadBand",
-            "04AddOns/Headwear/ElectrodeCap"
+            "AddOns/Headwear/MarkIV",
+            "AddOns/Headwear/MarkIII",
+            "AddOns/Headwear/HeadBand",
+            "AddOns/Headwear/ElectrodeCap"
           ]
       },
         {
           "type": "category",
           "label": "Electrodes",
           "items": [
-            "04AddOns/Electrodes/ElectrodesLanding"
+            "AddOns/Electrodes/ElectrodesLanding"
           ]
         }],
       "Third-Party Hardware": [
-          "05ThirdParty/ThirdPartyLanding",
+          "ThirdParty/ThirdPartyLanding",
         {
 
           "type": "category",
           "label": "EmotiBit",
           "items": [
-            "05ThirdParty/EmotiBit/EmotiBit_Guide"
+            "ThirdParty/EmotiBit/EmotiBit_Guide"
           ]
           }, {
               "type": "category",
               "label": "HEGduino Kit",
               "items": [
-                "05ThirdParty/HEGduino Kit/HEGduino"
+                "ThirdParty/HEGduino Kit/HEGduino"
               ]
           }, {
 
             "type": "category",
             "label": "IDUN Dryode",
             "items": [
-              "05ThirdParty/IDUN_Dryode/Dryode"
+              "ThirdParty/IDUN_Dryode/Dryode"
             ]
           }, {
           "type": "category",
           "label": "Myoware",
           "items": [
-            "05ThirdParty/Myoware/MyoCyton",
-            "05ThirdParty/Myoware/MyoGanglion"
+            "ThirdParty/Myoware/MyoCyton",
+            "ThirdParty/Myoware/MyoGanglion"
           ]
           }, {
           "type": "category",
           "label": "Pulse Sensor",
           "items": [
-            "05ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
+            "ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"
           ]
           }, {
          "type": "category",
          "label": "ThinkPulse",
          "items": [
-           "05ThirdParty/ThinkPulse/ThinkPulse"
+           "ThirdParty/ThinkPulse/ThinkPulse"
          ]
          }, {
           "type": "category",
           "label": "WiFi Shield",
           "items": [
-            "05ThirdParty/WiFiShield/WiFiLanding",
-            "05ThirdParty/WiFiShield/WiFiProgam",
-            "05ThirdParty/WiFiShield/WiFiAPI",
-            "05ThirdParty/WiFiShield/WiFiSDK"
+            "ThirdParty/WiFiShield/WiFiLanding",
+            "ThirdParty/WiFiShield/WiFiProgam",
+            "ThirdParty/WiFiShield/WiFiAPI",
+            "ThirdParty/WiFiShield/WiFiSDK"
           ]
           }],
       "Software": [
-          "06Software/SoftwareLanding",
+          "Software/SoftwareLanding",
         {
           "type": "category",
           "label": "Developed By OpenBCI",
           "items": [
-            "06Software/OpenBCISoftware/GUIDocs",
-            "06Software/OpenBCISoftware/GUIWidgets"
+            "Software/OpenBCISoftware/GUIDocs",
+            "Software/OpenBCISoftware/GUIWidgets"
           ]
           }, {
             "type": "category",
             "label": "Compatible Third Party Software",
             "items": [
-              "06Software/CompatibleThirdPartySoftware/Matlab",
-              "06Software/CompatibleThirdPartySoftware/Neuromore",
-              "06Software/CompatibleThirdPartySoftware/OpenVibe",
-              "06Software/CompatibleThirdPartySoftware/LSL",
-              "06Software/CompatibleThirdPartySoftware/BrainBay",
-              "06Software/CompatibleThirdPartySoftware/BioEra",
-              "06Software/CompatibleThirdPartySoftware/VirtualBox"
+              "Software/CompatibleThirdPartySoftware/Matlab",
+              "Software/CompatibleThirdPartySoftware/Neuromore",
+              "Software/CompatibleThirdPartySoftware/OpenVibe",
+              "Software/CompatibleThirdPartySoftware/LSL",
+              "Software/CompatibleThirdPartySoftware/BrainBay",
+              "Software/CompatibleThirdPartySoftware/BioEra",
+              "Software/CompatibleThirdPartySoftware/VirtualBox"
             ]
           }],
         "For Developers": [
-            "11ForDevelopers/ForDevelopersLanding",
-            "11ForDevelopers/SoftwareDevelopment",
-            "11ForDevelopers/FirmwareDevelopment",
-            "11ForDevelopers/HardwareDevelopment"],
+            "ForDevelopers/ForDevelopersLanding",
+            "ForDevelopers/SoftwareDevelopment",
+            "ForDevelopers/FirmwareDevelopment",
+            "ForDevelopers/HardwareDevelopment"],
         "Deprecated Documents": [
-            "09Deprecated/DeprecatedLanding",
-            "09Deprecated/SpiderclawDep",
-            "09Deprecated/8bitBoardDep",
-            "09Deprecated/UltracortexMark1Dep",
-            "09Deprecated/UltracortexMark2Dep",
-            "09Deprecated/UltracortexMark2Dep",
-            "09Deprecated/UltracortexMark3_NovaDep",
-            "09Deprecated/Python",
-            "09Deprecated/Hub"
+            "Deprecated/DeprecatedLanding",
+            "Deprecated/SpiderclawDep",
+            "Deprecated/8bitBoardDep",
+            "Deprecated/UltracortexMark1Dep",
+            "Deprecated/UltracortexMark2Dep",
+            "Deprecated/UltracortexMark2Dep",
+            "Deprecated/UltracortexMark3_NovaDep",
+            "Deprecated/Python",
+            "Deprecated/Hub"
         ],
         "Troubleshooting": [
-            "10Troubleshooting/TroubleshootingLanding",
-            "10Troubleshooting/minimizingNoise",
-            "10Troubleshooting/GUI_Troubleshooting",
-            "10Troubleshooting/FTDI_Fix_Linux",
-            "10Troubleshooting/FTDI_Fix_Mac",
-            "10Troubleshooting/FTDI_Fix_Windows"
+            "Troubleshooting/TroubleshootingLanding",
+            "Troubleshooting/minimizingNoise",
+            "Troubleshooting/GUI_Troubleshooting",
+            "Troubleshooting/FTDI_Fix_Linux",
+            "Troubleshooting/FTDI_Fix_Mac",
+            "Troubleshooting/FTDI_Fix_Windows"
         ],
         "Example Projects": [
-          "07Examples/ExamplesLanding",
+          "Examples/ExamplesLanding",
           {
             "type": "category",
             "label": "Experiments",
             "items": [
-              "07Examples/VideoExperiment"
+              "Examples/VideoExperiment"
             ]
           },{
             "type": "category",
             "label": "Community Page Projects",
             "items": [
-              "07Examples/CommunityPageProjects"
+              "Examples/CommunityPageProjects"
             ]
           },{
             "type": "category",
             "label": "EMG Projects and Tutorials",
             "items": [
-              "07Examples/EMGProjects/EMGscrolling",
-              "07Examples/EMGProjects/EMGmusic",
-              "07Examples/EMGProjects/EMGslideshow",
-              "07Examples/EMGProjects/EMG_LED",
-              "07Examples/EMGProjects/EMG_Chrome_Dino_Game"
+              "Examples/EMGProjects/EMGscrolling",
+              "Examples/EMGProjects/EMGmusic",
+              "Examples/EMGProjects/EMGslideshow",
+              "Examples/EMGProjects/EMG_LED",
+              "Examples/EMGProjects/EMG_Chrome_Dino_Game"
             ]
           },
           {
             "type": "category",
             "label": "EEG Projects and Tutorials",
             "items": [
-              "07Examples/EEGProjects/FocusArduino",
-              "07Examples/EEGProjects/MotorImagery"
+              "Examples/EEGProjects/FocusArduino",
+              "Examples/EEGProjects/MotorImagery"
             ]
           }
         ],
@@ -198,21 +198,21 @@
             "type": "category",
             "label": "FAQ",
             "items": [
-                "08FAQ/FAQLanding",
-                "08FAQ/GenFAQ",
-                "08FAQ/HowProductsGoTogether",
-                "08FAQ/HardFAQ",
-                "08FAQ/PaymentFAQ",
-                "08FAQ/ShippingFAQ"
+                "FAQ/FAQLanding",
+                "FAQ/GenFAQ",
+                "FAQ/HowProductsGoTogether",
+                "FAQ/HardFAQ",
+                "FAQ/PaymentFAQ",
+                "FAQ/ShippingFAQ"
             ]
           }, {
             "type": "category",
             "label": "Policies",
             "items": [
-                "08FAQ/Cookie",
-                "08FAQ/Privacy",
-                "08FAQ/Returns",
-                "08FAQ/Liability"
+                "FAQ/Cookie",
+                "FAQ/Privacy",
+                "FAQ/Returns",
+                "FAQ/Liability"
             ]
           }
       ]

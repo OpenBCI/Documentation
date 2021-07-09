@@ -33,16 +33,16 @@ Here's a list of material you will need for this tutorial:
 ![Material Needed for ExG](../../assets/GettingStartedImages/ExG_material_needed.jpg)
 
 1.  EEG hardware, can be one of the following Ultracortex
-    [Headband kit](../../04AddOns/01-Headwear/03-Headband_Tutorial.md)
-    , [Ultracortex Mark IV](../../04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
-    , [Ultracortex Mark III](../../04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
-    , [Electrode Cap](../../04AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md); we will be using
-       the [Headband kit](../../04AddOns/01-Headwear/03-Headband_Tutorial.md) in this tutorial.
+    [Headband kit](../../AddOns/01-Headwear/03-Headband_Tutorial.md)
+    , [Ultracortex Mark IV](../../AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
+    , [Ultracortex Mark III](../../AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+    , [Electrode Cap](../../AddOns/01-Headwear/04-Electrode_Cap_Tutorial.md); we will be using
+       the [Headband kit](../../AddOns/01-Headwear/03-Headband_Tutorial.md) in this tutorial.
 2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
     and [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 3.  OpenBCI [Cyton Board + Daisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526)
     and the Cyton bluetooth USB dongle
-4.  Computer with [OpenBCI GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  Computer with [OpenBCI GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ## Channel requirements
 
@@ -111,13 +111,13 @@ The complete setup should look like this
 
 ## Visualizing the data in OpenBCI GUI
 
-If you don't have the GUI installed, please refer to [this guide](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIDocs) to learn
+If you don't have the GUI installed, please refer to [this guide](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIDocs) to learn
 about how to set up the OpenBCI GUI for your operating system.
 
 Attach battery, power on the board in Bluetooth mode by flipping the switch towards the top of the board (where the
 pins are). Connect the USB dongle to your computer. Flip the switch on the dongle, so it's at GPIO6 (closer to the USB port).
 
-Open the [OpenBCI GUI](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIDocs), select CYTON (live) -&gt;
+Open the [OpenBCI GUI](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIDocs), select CYTON (live) -&gt;
 Serial (from Dongle) -&gt; 16 CHANNELS. Click AUTO-CONNECT. Note that we are not using all 16 channels, we are going to turn
 off the channels that we don't use in the GUI.
 

@@ -8,10 +8,10 @@ This directory will show you everything you need to know to get started with Ope
 
 This section will run through the setup of each of our boards, and how to begin using them. Pages in this section include:
 
--   [Cyton Getting Started](GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md)
--   [Ganglion Getting Started](GettingStarted/01-Boards/02-Ganglion_Getting_Started_Guide.md)
--   [Wifi Getting Started Guide](GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md)
--   [Daisy Getting Started Guide](GettingStarted/01-Boards/011-Daisy_Getting_Started_Guide.md)
+-   [Cyton Getting Started](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md)
+-   [Ganglion Getting Started](GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md)
+-   [Wifi Getting Started Guide](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md)
+-   [Daisy Getting Started Guide](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md)
 
 ## Biosensing Setups
 

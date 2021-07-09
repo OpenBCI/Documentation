@@ -14,7 +14,7 @@ The following instructions have been written for use with Windows 10.
 
 ## Materials Required
 
--   Computer or Laptop with [OpenBCI GUI](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIDocs)
+-   Computer or Laptop with [OpenBCI GUI](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIDocs)
 -   [Cyton Board](https://shop.openbci.com/products/cyton-biosensing-board-8-channel?variant=38958638542)
 -   [Arduino UNO or equivalent](https://store.arduino.cc/usa/arduino-uno-rev3)
 -   [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
@@ -85,7 +85,7 @@ Download and install Python (either version 2 or 3). Python might already be ins
 
 ## Step 4: Stream data using the GUI
 
-Follow the Networking [Tutorial](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#networking) to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channels 1 and 2 using the Networking Widget. Your Networking settings should look as follows:
+Follow the Networking [Tutorial](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIWidgets#networking) to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channels 1 and 2 using the Networking Widget. Your Networking settings should look as follows:
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/EMG_Facial_GUI.png?raw=true" width="70%" />
 

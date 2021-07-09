@@ -10,13 +10,13 @@ Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of gu
 -   [Getting Started](GettingStarted/00-GettingStartedLanding.md) — Everything you need to know to setup your OpenBCI Equipment for the first time.
 -   [Cyton Board](Cyton/01-CytonBoard.md) - Explanations, tutorials and examples for working with the Cyton board and Cyton+Daisy board.
 -   [Ganglion Board](Ganglion/01-GanglionBoard.md) - Explanations, tutorials and examples for working with the Ganglion board.
--   [Headwear & Electrodes](04AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
--   [Third-Party Hardware](05ThirdParty/00-ThirdPartyLanding.md) - Here you will find information about the OpenBCI-compatible accessories.
--   [Software](06Software/00-SoftwareLanding.md) - This section includes guides on how to get connected to OpenBCI hardware using software developed by OpenBCI and commonly used 3rd-Party Software such as Matlab, OpenVIBE, and more!
--   [For Developers](11ForDevelopers/00-ForDevelopersLanding.md) - The information in this directory will help you start developing with OpenBCI technology.
--   [Troubleshooting](10Troubleshooting/00-TroubleshootingLanding.md) - Find fixes for common hardware and software issues here
--   [Examples](07Examples/00-ExamplesLanding.md) - This section includes projects that members of our community have worked on.
--   [FAQ](08FAQ/00-FAQ.md) - Frequently Asked Questions
+-   [Headwear & Electrodes](AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
+-   [Third-Party Hardware](ThirdParty/00-ThirdPartyLanding.md) - Here you will find information about the OpenBCI-compatible accessories.
+-   [Software](Software/00-SoftwareLanding.md) - This section includes guides on how to get connected to OpenBCI hardware using software developed by OpenBCI and commonly used 3rd-Party Software such as Matlab, OpenVIBE, and more!
+-   [For Developers](ForDevelopers/00-ForDevelopersLanding.md) - The information in this directory will help you start developing with OpenBCI technology.
+-   [Troubleshooting](Troubleshooting/00-TroubleshootingLanding.md) - Find fixes for common hardware and software issues here
+-   [Examples](Examples/00-ExamplesLanding.md) - This section includes projects that members of our community have worked on.
+-   [FAQ](FAQ/00-FAQ.md) - Frequently Asked Questions
 
 ### Research Published With OpenBCI
 
@@ -36,4 +36,4 @@ If you are interested in contributing to the OpenBCI Learning Pages, feel free t
 
 ![GUI v4.1.5](https://media.giphy.com/media/KyAYyrf3lkE6dsTKej/giphy.gif)
 
-Head to the [Software section](06Software/00-SoftwareLanding.md) for how-tos!
+Head to the [Software section](Software/00-SoftwareLanding.md) for how-tos!

@@ -8,9 +8,9 @@ Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, i
 
 **Windows**: Neuromore Studio is available for Windows (but only as a 64-bit application).
 
-**OS X**: Neuromore Studio is available for MacOS, but see the [FTDI OS X fix](10Troubleshooting/05-FTDI_Driver_Fix_Mac.md) before using it.
+**OS X**: Neuromore Studio is available for MacOS, but see the [FTDI OS X fix](Troubleshooting/05-FTDI_Driver_Fix_Mac.md) before using it.
 
-**Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md) See [FTDI Linux Fix](10Troubleshooting/03-FTDI_Fix_Linux.md).
+**Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md) See [FTDI Linux Fix](Troubleshooting/03-FTDI_Fix_Linux.md).
 
 ## Installation
 
@@ -26,7 +26,7 @@ Open the Neuromore Studio application. A demo will begin playing that displays e
 
 First, connect your OpenBCI board to your computer. Make sure to take the following steps:
 
-**Windows**: Make sure your board is recognized as a COM port and that its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial](10Troubleshooting/04-FTDI_Fix_Windows.md).
+**Windows**: Make sure your board is recognized as a COM port and that its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial](Troubleshooting/04-FTDI_Fix_Windows.md).
 
 **OS X**: Make sure your board is connected and visible as a device. To check you can type `ls /dev/tty.*` on your terminal. An example connected OBCI board should like like this:
 
@@ -87,7 +87,7 @@ In the example below, I selected the "Filtered Raw" node, and set the color to b
 
 Now you're able to view the signals from your output nodes in your Classifier!
 
-This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX](https://en.wikipedia.org/wiki/Max_(software)/) for more general purposes and [OpenViBE](06Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md) and of course neuromore for EEG specific processing.
+This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX](https://en.wikipedia.org/wiki/Max_(software)/) for more general purposes and [OpenViBE](Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md) and of course neuromore for EEG specific processing.
 
 The basic idea is that a stream of data that originates at the input device can then be mapped, processed and transformed into outputs that are useful, informative or just plain cool.
 

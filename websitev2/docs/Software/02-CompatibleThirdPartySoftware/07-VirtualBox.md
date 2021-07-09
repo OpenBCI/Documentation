@@ -14,7 +14,7 @@ Some of the software compatible with OpenBCI products requires a Windows operati
 4.  Some EEG processing software uses a lot of RAM (OpenViBE aquisition server for example). In fact, some will take up one entire core, if they can. Because of this, I would advise that you configure your VM to have multiple cores and as much RAM as you deem reasonable.
 5.  Import the VM, go through all the configs and start it.
 6.  For more detailed instructions/tutorials and troubleshooting see the [Windows Manual](https://az792536.vo.msecnd.net/vms/release_notes_license_terms_8_1_15.pdf). (If you selected a different distribution other than Win 7, see the respective manual in the Windows page.)
-7.  Follow the [OpenBCI on Windows](10Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OBCI board on Windows.
+7.  Follow the [OpenBCI on Windows](Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OBCI board on Windows.
 
 NOTE: Make sure that Guest Additions are installed correctly on your VM. With the image used, they should be automatically installed.
 
@@ -38,7 +38,7 @@ While using 3rd party software, you might want to stream data from your OpenBCI 
 
 **OpenBCI Cyton Board**
 
-1.  Make sure you're comfortable using your Cyton board and Dongle with your host computer and the OpenBCI GUI. To do so, check out our [Cyton Getting Started Guide](GettingStarted/01-Boards/01-Cyton_Getting_Started_Guide.md).
+1.  Make sure you're comfortable using your Cyton board and Dongle with your host computer and the OpenBCI GUI. To do so, check out our [Cyton Getting Started Guide](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md).
 2.  Plug in your Dongle and turn on your Cyton board. Both should display a blue light.
 3.  Start VirtualBox. When the "Oracle VM VirtualBox Manager" window appears, select your virtual machine (so that it's highlighted in blue). Make sure your virtual machine is in the "powered off" mode, and not the "saved state" mode.
 4.  Click Settings and then the Ports tab.

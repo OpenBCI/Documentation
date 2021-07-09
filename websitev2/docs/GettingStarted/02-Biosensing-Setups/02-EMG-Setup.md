@@ -9,7 +9,7 @@ This document will show you how to read EMG data (electrical signals from muscle
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
-4.  Computer with downloaded OpenBCI [GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  Computer with downloaded OpenBCI [GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 To determine the number of electrodes you will need, add up:
 
@@ -32,7 +32,7 @@ _for reference, "bottom" pins means the row of pins closer to the table when the
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="70%" />
 
-In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
+In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
 
 After making these pin connections, snap the sticky electrodes (or the [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit) if you are using that) into the electrode cable _prior to applying the electrodes to the skin._
 
@@ -68,7 +68,7 @@ Here is an example of what your data stream should look like as you flex and rel
 The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on the drop down menu under “FFT Plot”, and select “EMG”
 Each circle and box represents a channel. The circle and box fill up as the amplitude of the signal on that channel increases (unit in voltage).
 
-Check out the gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
+Check out the gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](../../Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
 
 ## Obtain EMG Data with OpenBCI Ganglion Board
 
@@ -108,7 +108,7 @@ if you are sampling EMG from a leg muscle, use the kneecap as a reference instea
 
 Once you have the GUI open, turn off any channels that you have not connected to muscle sensors, toggling the number next to the channel, in the Time Series widget.
 
-When you are running the GUI, data from top/bottom pin 1 will be displayed on Channel 1 within the [Time Series Widget](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series). Data from top/bottom pin 2 will be displayed on Channel 2, and so on and so forth.
+When you are running the GUI, data from top/bottom pin 1 will be displayed on Channel 1 within the [Time Series Widget](../../Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#time-series). Data from top/bottom pin 2 will be displayed on Channel 2, and so on and so forth.
 
 Once you are happy with your software and hardware settings, press "BEGIN DATA STREAM."
 Here is an example of what your data stream should look like as you flex and relax your muscle:
@@ -120,14 +120,14 @@ Here is an example of what your data stream should look like as you flex and rel
 The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on the drop down menu under “FFT Plot”, and select “EMG”
 Each circle and box represents a channel. The circle and box fill up as the amplitude of the signal on that channel increases (unit in voltage).
 
-Check out the gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](../../06Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
+Check out the gif above to see how this widget behaves when flexing and relaxing your muscle, and see the [GUI widget guide](../../Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EMG signals, check out [this document](10Troubleshooting/01-MinimizingNoise.md)
+For help minimizing noise and improving the quality of your EMG signals, check out [this document](Troubleshooting/01-MinimizingNoise.md)
 
 For troubleshooting or technical support, please visit the [OpenBCI Technical Forum.](https://www.openbci.com/forum)
 
 ## Additional Tutorials
 
-Ready for more advanced eye, facial, and body EMG set-ups that will allow you to scroll, control music and lights, and much more? Head to [Example Projects!](../../07Examples/00-ExamplesLanding.md)
+Ready for more advanced eye, facial, and body EMG set-ups that will allow you to scroll, control music and lights, and much more? Head to [Example Projects!](../../Examples/00-ExamplesLanding.md)

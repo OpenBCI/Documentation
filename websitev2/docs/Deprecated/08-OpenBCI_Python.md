@@ -2,7 +2,7 @@
 id: Python
 title: Python and OpenBCI
 ---
-**THIS DOCUMENT HAS BEEN DEPRECATED. PLEASE REFER TO ["FOR DEVELOPERS"](11ForDevelopers/01-SoftwareDevelopment.md) SECTION FOR INFORMATION ON [BRAINFLOW-PYTHON](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#python).**
+**THIS DOCUMENT HAS BEEN DEPRECATED. PLEASE REFER TO ["FOR DEVELOPERS"](ForDevelopers/01-SoftwareDevelopment.md) SECTION FOR INFORMATION ON [BRAINFLOW-PYTHON](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#python).**
 
 OpenBCI has a Python software library designed to work with OpenBCI hardware. To use it, download our OpenBCI Python github repository: https: **DEPRECATED**. This Python code is meant to be used by people familiar with Python and programming in general. Its purpose is to allow for programmers to interface with OpenBCI technology directly, both to acquire data and to write programs that can use that data in a live setting, using Python.The OpenBCI-Python repo is still live but it is not longer being mantained by OpenBCI.
 
@@ -100,7 +100,7 @@ If you need to find the Ganglion mac address you can use an app like [nRF connec
 
 ### Sending commands
 
-Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](Cyton/04-OpenBCI_Cyton_SDK.md), [Wifi Shield](05ThirdParty/03-WiFiShield/08-OpenBCI_Wifi_SDK.md)) to send commands to the board using python (make sure your commands are strings).
+Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](Cyton/04-OpenBCI_Cyton_SDK.md), [Wifi Shield](ThirdParty/03-WiFiShield/08-OpenBCI_Wifi_SDK.md)) to send commands to the board using python (make sure your commands are strings).
 
 ```python
 

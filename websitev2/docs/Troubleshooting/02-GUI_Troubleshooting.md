@@ -8,7 +8,7 @@ title: GUI Troubleshooting
     -   Click the Console Log button in the top right (pictured below).
         ![gui console log button](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogButton.png)<br />
 -   Need even more information to debug a problem?
-    -   [Run GUI from Processing IDE](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide) or [Visual Studio Code (Preferred)](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup).
+    -   [Run GUI from Processing IDE](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide) or [Visual Studio Code (Preferred)](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup).
     -   Go to Debugging.pde and change `boolean isVerbose = false;` to `boolean isVerbose = true;`.
 -   You can share the Console Log as text or a file on the Forums or GitHub. This is typically a requirement for new issues on GitHub.
 -   You can use keyboard shortcuts within the Console Window to Open Log as Text(`f`), Copy Full Log Text(`c`), Copy Last Line (`l`), Jump to Last Line(`j`), Scroll Down(`Down Key`), and Scroll Up(`Up Key`).
@@ -21,7 +21,7 @@ title: GUI Troubleshooting
 2.  Also, unplug and plug the USB dongle for Cyton or BLED112 for Ganglion.
 3.  Try to start a session again.
     -   Cyton: If you still can't connect, try pressing the "AUTOSCAN" button once or twice.
-    -   Cyton+WiFi: Go through the [WiFi Getting Started Guide](GettingStarted/01-Boards/03-Wifi_Getting_Started_Guide.md). If this doesn't help, check the Forums or [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) and make a new issue if one doesn't already exist. There are a number of issues that are currently being worked on.
+    -   Cyton+WiFi: Go through the [WiFi Getting Started Guide](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md). If this doesn't help, check the Forums or [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) and make a new issue if one doesn't already exist. There are a number of issues that are currently being worked on.
     -   Ganglion: The Ganglion board usually has fewer issues. If you can't get the Ganglion to connect to the GUI after trying the previous steps, you can email us at [support@openbci.com](mailto:support@openbci.com) or check [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues).
 4.  If your Cyton firmware is older than v3.0.0, you will need to [update the firmware as outlined here](Cyton/05-Cyton_Board_Programming_Tutorial.md#overview). The latest Cyton firmware as of 2019 is v3.1.2.
 5.  If nothing in the Docs, GitHub, or Forums are helpful, it's a good idea to email [support@openbci.com](mailto:support@openbci.com) or make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
@@ -33,8 +33,8 @@ title: GUI Troubleshooting
 
 ## High DPI Scaling
 
--   [On Windows](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-windows)
--   [On Linux](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-linux)
+-   [On Windows](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-windows)
+-   [On Linux](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-linux)
 
 ## Troubleshooting Packet Loss
 

@@ -12,9 +12,9 @@ title: OpenViBE
 
 ## Setting Up Your Environment
 
-**Windows**: Follow [OpenBCI on Windows](10Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OBCI board on Windows. Then, continue this tutorial.
+**Windows**: Follow [OpenBCI on Windows](Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OBCI board on Windows. Then, continue this tutorial.
 
-**OS X**: Visit the [Windows Virtual Box installation tutorial](06Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
+**OS X**: Visit the [Windows Virtual Box installation tutorial](Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
 
 **Linux**: [Linux builds](http://openvibe.inria.fr/downloads/) of OpenViBE also work. Some linux users might find this guide useful but keep in mind it is meant primarily for mac + win7.
 
@@ -27,7 +27,7 @@ Download the latest OpenViBE software from their [website](http://openvibe.inria
 
 ### Getting Started
 
-Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial.](10Troubleshooting/04-FTDI_Fix_Windows.md)
+Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial.](Troubleshooting/04-FTDI_Fix_Windows.md)
 
 Start the OpenViBE Signal Acquisition Server (SAS). **C: &gt; Program Files &gt; openvibe &gt; openvibe-acquisition-server** (normally shows up when searching “openvibe” in start menu).
 

@@ -138,7 +138,7 @@ This will launch the OpenBCI_GUI. **If you experience issues, try running with o
 
 ### BrainFlow Java Library
 
-**Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware!** In the background, we are using the included [BrainFlow Java library](http://docs.openbci.com/docs/11ForDevelopers/SoftwareDevelopment#brainflow---java) to handle communications with the boards.
+**Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware!** In the background, we are using the included [BrainFlow Java library](http://docs.openbci.com/docs/ForDevelopers/SoftwareDevelopment#brainflow---java) to handle communications with the boards.
 
 ### Tutorial
 

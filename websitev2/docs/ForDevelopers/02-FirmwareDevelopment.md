@@ -34,4 +34,4 @@ All firmware provided here is licensed under the [MIT License](https://opensourc
 ### WiFi Shield
 
 -   [WiFi Firmware GitHub](https://github.com/OpenBCI/OpenBCI_WIFI)
--   [WiFi Programming Tutorial](05ThirdParty/03-WiFiShield/12-Wifi_Programming_Tutorial.md)
+-   [WiFi Programming Tutorial](ThirdParty/03-WiFiShield/12-Wifi_Programming_Tutorial.md)

@@ -62,7 +62,7 @@ If you plan to work with your own electrodes, the [Touch-Proof Adapter](http://s
 
 ## Download/Install/Run the OpenBCI GUI
 
-Please [follow the step by step guide](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application.
+Please [follow the step by step guide](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application.
 
 Come back to this guide when your GUI is running!
 
@@ -96,7 +96,7 @@ The GUI will automatically generate a recording to a file. You have an option at
 
 ### Navigating the GUI
 
-When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) doc. For the purposes of this introductory tutorial, You should follow the following steps to setup the GUI.  
+When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) doc. For the purposes of this introductory tutorial, You should follow the following steps to setup the GUI.  
 
 ![Start Data Stream](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv4.png)
 
@@ -116,7 +116,7 @@ If the Accelerometer is off, turn on the Accelerometer by clicking the `Turn Acc
 
 You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.
 Note that the GUI, by default, saves the raw data in .csv or .txt format into the same directory that you placed the GUI file.
-Learn about the `Time Series` and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets) Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
+Learn about the `Time Series` and other built-in widgets' function in the GUI Widget [Guide.](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIWidgets) Refer to the Ganglion Data Format [guide](https://docs.openbci.com/docs/Ganglion/GanglionDataFormat#binary-format) to learn how to interpret the raw data.
 
 ![Accel Moving](../../assets/GettingStartedImages/ganglion_moving-accelerometer.jpg)
 

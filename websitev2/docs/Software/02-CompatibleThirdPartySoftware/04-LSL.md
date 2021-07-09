@@ -135,7 +135,7 @@ Note: Many issues with board connectivity can simply be resolved by restarting t
 
 Once you have the Lab Streaming Layer set up with your OpenBCI board, check out these other tutorials to view the stream in a variety of different programs:
 
-[Matlab tutorial](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md)
+[Matlab tutorial](Software/02-CompatibleThirdPartySoftware/01-Matlab.md)
 
 ## Credit
 

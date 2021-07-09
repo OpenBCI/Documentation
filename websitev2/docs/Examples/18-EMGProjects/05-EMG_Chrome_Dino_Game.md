@@ -15,7 +15,7 @@ The following instructions have been written for use with Linux 16.04.
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryodes](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
-4.  Computer with downloaded OpenBCI [GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  Computer with downloaded OpenBCI [GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ## Step 1: Hardware Assembly.
 

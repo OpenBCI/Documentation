@@ -36,7 +36,7 @@ To programmatically discover WiFi Shields on your local network use [Simple Serv
 
 [Node.js OpenBCI WiFi Driver](https://github.com/aj-ptw/OpenBCI_NodeJS/blob/wifi/examples/getStreamingWifi/getStreamingWifi.js) will implement SSDP for you.
 
-Use the [OpenBCI WiFi GUI](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](09Deprecated/OpenBCI_Hub.md#scan) to find WiFi Shields IP Address. **THE OPENBCI_HUB HAS BEEN DEPRECATED, TO ACCESS THIS FEATURE USE [GUI V4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).** You can also get the IP address in GUI v5 by selecting the WiFi shield from the list. Depending on your network configuration, it may not show automatically.
+Use the [OpenBCI WiFi GUI](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](Deprecated/OpenBCI_Hub.md#scan) to find WiFi Shields IP Address. **THE OPENBCI_HUB HAS BEEN DEPRECATED, TO ACCESS THIS FEATURE USE [GUI V4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).** You can also get the IP address in GUI v5 by selecting the WiFi shield from the list. Depending on your network configuration, it may not show automatically.
 
 Use a graphical user interface [Mac - Lan Scan](https://itunes.apple.com/us/app/lanscan/id472226235?mt=12)
 

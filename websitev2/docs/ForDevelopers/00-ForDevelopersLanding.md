@@ -8,9 +8,9 @@ The information in this directory will help you start developing with OpenBCI te
 
 OpenBCI provides a range of open-source materials under the [MIT license](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/LICENSE). Pages in this section include:
 
--   [Software Development](11ForDevelopers/01-SoftwareDevelopment.md)
--   [Firmware Development](11ForDevelopers/02-FirmwareDevelopment.md)
--   [Hardware Development](11ForDevelopers/03-HardwareDevelopment.md)
+-   [Software Development](ForDevelopers/01-SoftwareDevelopment.md)
+-   [Firmware Development](ForDevelopers/02-FirmwareDevelopment.md)
+-   [Hardware Development](ForDevelopers/03-HardwareDevelopment.md)
 
 ## Biosensing Setups
 

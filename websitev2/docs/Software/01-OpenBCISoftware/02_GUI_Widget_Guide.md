@@ -165,7 +165,7 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 
 ## Networking
 
-The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](06Software/00-SoftwareLanding.md).
+The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](Software/00-SoftwareLanding.md).
 
 With the networking widget, you can send Time Series, FFT, EMG, Band Power, Accel/Aux, and Pulse data. The Accel/Aux option allows you to send Accelerometer, Analog Read, or Digital Read data. Make sure to have the corresponding widget open, depending on the data type you would like to stream. **Full details of all possible outputs can be found at the [GUI Networking Guide](https://docs.google.com/document/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub).**
 
@@ -189,7 +189,7 @@ User Datagram Protocol is used primarily for establishing low-latency and loss-t
 
 
 
-Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](06Software/02-CompatibleThirdPartySoftware/01-Matlab.md).
+Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](Software/02-CompatibleThirdPartySoftware/01-Matlab.md).
 
 FFT data can now be sent over LSL, starting with [GUI v.4.1.5-beta.3.](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
@@ -226,7 +226,7 @@ This tutorial shows you how to create custom widgets for the [OpenBCI GUI](https
 #### Helpful Background Skills
 
 -   Knowledge of [Processing](https://processing.org/) or Java-based programming
--   Experience with [running the OpenBCI GUI from the Processing IDE](06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
+-   Experience with [running the OpenBCI GUI from the Processing IDE](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
 -   [Developer Setup using Visual Studio Code or Processing](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup)
 -   Alternatively, you can edit using [Atom with Processing packages](https://atom.io)
 

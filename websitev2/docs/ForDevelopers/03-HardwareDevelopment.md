@@ -34,11 +34,11 @@ All information provided here is licensed under the [MIT License](https://openso
 
 ### Ultracortex Mark IV (June 2016 - Present)
 
--   [Mark IV Documentation](04AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
+-   [Mark IV Documentation](AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
 
 ### Ultracortex Mark III (June 2016)
 
--   [Mark III Documentation](04AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+-   [Mark III Documentation](AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
 
 * * *
 
@@ -46,8 +46,8 @@ All information provided here is licensed under the [MIT License](https://openso
 
 ### WiFi Shield
 
--   [WiFi Board](05ThirdParty/03-WiFiShield/01-Wifi.md)
--   [WiFi Board Schematic](05ThirdParty/03-WiFiShield/01-Wifi.md#wifi-board-circuit-schematic)
+-   [WiFi Board](ThirdParty/03-WiFiShield/01-Wifi.md)
+-   [WiFi Board Schematic](ThirdParty/03-WiFiShield/01-Wifi.md#wifi-board-circuit-schematic)
 
 * * *
 

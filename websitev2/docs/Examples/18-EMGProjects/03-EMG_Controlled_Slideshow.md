@@ -14,11 +14,11 @@ In this tutorial, we will show you how to scroll through a presentation using yo
 
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 2.  [EEG Headband Kit](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit)
-3.  Computer with downloaded OpenBCI [GUI](../../06Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+3.  Computer with downloaded OpenBCI [GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ## Step 1: Hardware Assembly
 
- Follow the [tutorial](https://docs.openbci.com/docs/04AddOns/01-Headwear/HeadBand) to assemble the EEG Headband Kit, connect it to the Cyton Board, and read data from it using the OpenBCI GUI.
+ Follow the [tutorial](https://docs.openbci.com/docs/AddOns/01-Headwear/HeadBand) to assemble the EEG Headband Kit, connect it to the Cyton Board, and read data from it using the OpenBCI GUI.
 
  **Important**: For this project, using a single channel is enough. When following the tutorials in the link above, you only need to connect the electrode on top of the eye you will be blinking (any eye if you will blink both) to Channel 1.
 
@@ -31,7 +31,7 @@ In this tutorial, we will show you how to scroll through a presentation using yo
 
     ## Step 3: Stream data using the OpenBCI GUI
 
-    Follow the networking [tutorial](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets#networking) on this link to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channel 1 using the Networking Widget. Your Networking settings should look as follows:
+    Follow the networking [tutorial](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIWidgets#networking) on this link to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channel 1 using the Networking Widget. Your Networking settings should look as follows:
 
  <img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/EMG_Slideshow_GUI.png?raw=true" width="70%" />
 
