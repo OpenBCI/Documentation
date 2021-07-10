@@ -1,4 +1,4 @@
-name: deploy-docs-v2
+name: DeployDocsV2
 
 on:
   pull_request:
