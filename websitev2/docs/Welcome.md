@@ -20,7 +20,7 @@ Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of gu
 
 ### Research Published With OpenBCI
 
-We put together [The OpenBCI Citation List](https://docs.openbci.com/citations), a collection of recently published peer-reviewed research using OpenBCI products. We're proud of how many OpenBCI-based research reports are out there!
+We put together [The OpenBCI Citation List](https://openbci.com/citations), a collection of recently published peer-reviewed research using OpenBCI products. We're proud of how many OpenBCI-based research reports are out there!
 
 ### Docs Website Update
 

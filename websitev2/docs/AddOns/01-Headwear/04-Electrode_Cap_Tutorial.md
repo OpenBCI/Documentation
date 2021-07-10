@@ -202,7 +202,7 @@ Caution:
     **We recommend the EEG electrode cap for sleep study. Sintered electrode cap plus electrode gel is the gold standard of EEG data acquisition.**
 
 6.  Have you ever had consumers in the past use these items for a long duration? If so, what did they think of it?
-    **Our customers have compared OpenBCI products favorably to medical equipment at many times the cost. Please contact OpenBCI for the PDF on independent evaluation and scientific verification of OpenBCI hardware or head to the [Research Collection](docs.openbci.com/citations).**
+    **Our customers have compared OpenBCI products favorably to medical equipment at many times the cost. Please contact OpenBCI for the PDF on independent evaluation and scientific verification of OpenBCI hardware or head to the [Research Collection](https://openbci.com/citations).**
 
 7.  Are the devices easy to learn and handle?
     **I have personally worked with customers who have zero previous experience with EEG and were able to follow the guides at docs.openbci.com to see their raw EEG data in live-time, as well as store the data for later analysis.**
