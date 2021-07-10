@@ -6,7 +6,7 @@ title: Ganglion Getting Started Guide
 
 This guide will walk you through setting up your Ganglion, connecting it to your computer, and then connecting it to yourself. Please review this guide in its entirety before starting, and consult the [Ganglion Biosensing Tutorial Video](https://youtu.be/l13R_99h0qQ). Have fun!
 
-**Note that the Ganglion is not set to be discoverable out of the box, you need the [GUI](openbci.com/downloads).**
+**Note that the Ganglion is not set to be discoverable out of the box, you need the [GUI](https://openbci.com/downloads).**
 
 ## What You Need
 

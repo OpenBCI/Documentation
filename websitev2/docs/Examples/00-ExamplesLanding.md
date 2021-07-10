@@ -2,7 +2,7 @@
 id: ExamplesLanding
 title: Example Projects
 ---
-The Examples directory to the left contains example projects contributed by members of the OpenBCI Community and team. For even more tutorials, head to the tutorials tag in the [Community Page!](openbci.com/community)
+The Examples directory to the left contains example projects contributed by members of the OpenBCI Community and team. For even more tutorials, head to the tutorials tag in the [Community Page!](https://openbci.com/community)
 
 ## New EMG Projects and Tutorials
 

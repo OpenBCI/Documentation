@@ -36,7 +36,7 @@ First, make sure you have the necessary dependencies.
 
 ```python
 
-
+pip install numpy pyserial bitstring xmltodict requests
 
 ```
 
@@ -46,7 +46,7 @@ Then you can use pip to install the OpenBCI module.
 
 ```python
 
-
+pip install pyOpenBCI
 
 ```
 
@@ -64,7 +64,11 @@ First you need to initialize your board with one of the following commands:
 
 ```python
 
+# For Windows replace '*' with the port number
+board = OpenBCICyton(port='COM*')
 
+# For MacOS and Linux replace '*' with the port number
+board = OpenBCICyton(port='/dev/ttyUSB*')
 
 ```
 
@@ -74,7 +78,11 @@ To find the COM port you are connected to you can use the OpenBCI GUI. Otherwise
 
 ```python
 
+# For Windows replace '*' with the port number
+board = OpenBCICyton(port='COM*', daisy=True)
 
+# For MacOS and Linux replace '*' with the port number
+board = OpenBCICyton(port='/dev/ttyUSB*', daisy=True)
 
 ```
 
@@ -84,7 +92,8 @@ To find the COM port you are connected to you can use the OpenBCI GUI. Otherwise
 
 ```python
 
-
+# For Linux replace '*' with the mac address.
+board = OpenBCIGanglion(mac='*')
 
 ```
 
@@ -94,17 +103,18 @@ If you need to find the Ganglion mac address you can use an app like [nRF connec
 
 ```python
 
-
+board = OpenBCIWifi(shield_name='OpenBCI-2254', sample_rate=200)
 
 ```
 
 ### Sending commands
 
-Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](Cyton/04-OpenBCI_Cyton_SDK.md), [Wifi Shield](ThirdParty/WiFiShield/08-OpenBCI_Wifi_SDK.md)) to send commands to the board using python (make sure your commands are strings).
+Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](../Cyton/CytonSDK), [Wifi Shield](ThirdParty/WiFiShield/08-OpenBCI_Wifi_SDK.md)) to send commands to the board using python (make sure your commands are strings).
 
 ```python
 
-
+# Write commands to the board
+board.write_command(command)
 
 ```
 
@@ -131,7 +141,8 @@ To start your stream you can use the following command with a callback function.
 
 ```python
 
-
+# Start stream
+board.start_stream(callback)
 
 ```
 
@@ -149,7 +160,7 @@ Multiply uVolts_per_count to convert the channels_data to uVolts.
 
 ```python
 
-
+uVolts_per_count = (4500000)/24/(2**23-1) #uV/count
 
 ```
 
@@ -157,7 +168,7 @@ Multiply accel_G_per_count to convert the aux_data to G.
 
 ```python
 
-
+accel_G_per_count = 0.002 / (2**4) #G/count
 
 ```
 
@@ -167,7 +178,7 @@ Multiply Volts_per_count to convert the channels_data to Volts.
 
 ```python
 
-
+Volts_per_count = 1.2 * 8388607.0 * 1.5 * 51.0 #V/count
 
 ```
 
@@ -175,7 +186,7 @@ Multiply accel_G_per_count to convert the aux_data to G.
 
 ```python
 
-
+accel_G_per_count = 0.032 #G/count
 
 ```
 
@@ -189,7 +200,14 @@ To test this example, use `` or ``.
 
 ```python
 
+from pyOpenBCI import OpenBCICyton
 
+def print_raw(sample):
+    print(sample.channels_data)
+
+board = OpenBCICyton(port='COM5', daisy=False)
+
+board.start_stream(print_raw)
 
 ```
 
@@ -199,6 +217,32 @@ To run this example, use `` or ``.
 
 ```python
 
+from pyOpenBCI import OpenBCICyton
+from pylsl import StreamInfo, StreamOutlet
+import numpy as np
+
+SCALE_FACTOR_EEG = (4500000)/24/(2**23-1) #uV/count
+SCALE_FACTOR_AUX = 0.002 / (2**4)
+
+
+print("Creating LSL stream for EEG. \nName: OpenBCIEEG\nID: OpenBCItestEEG\n")
+
+info_eeg = StreamInfo('OpenBCIEEG', 'EEG', 8, 250, 'float32', 'OpenBCItestEEG')
+
+print("Creating LSL stream for AUX. \nName: OpenBCIAUX\nID: OpenBCItestEEG\n")
+
+info_aux = StreamInfo('OpenBCIAUX', 'AUX', 3, 250, 'float32', 'OpenBCItestAUX')
+
+outlet_eeg = StreamOutlet(info_eeg)
+outlet_aux = StreamOutlet(info_aux)
+
+def lsl_streamers(sample):
+    outlet_eeg.push_sample(np.array(sample.channels_data)*SCALE_FACTOR_EEG)
+    outlet_aux.push_sample(np.array(sample.aux_data)*SCALE_FACTOR_AUX)
+
+board = OpenBCICyton(port='COM5', daisy=False)
+
+board.start_stream(lsl_streamers)
 
 
 ```
@@ -211,7 +255,7 @@ The contributors to these repos are people using Python mainly for their data ac
 
 ### Contact us
 
-If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](../../issues) at this github repository because then we can get right on it.
+If you want to report a problem or suggest an enhancement we'd love for you to [open an issue](https://github.com/OpenBCI/Documentation/issues) at this github repository because then we can get right on it.
 
 ### Glossary
 
@@ -231,20 +275,11 @@ Thank you so much (Danke schön! Merci beaucoup!) for visiting the project and w
 
 MIT
 
-[link_shop_wifi_shield]: https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550
+[link_shop_wifi_shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550)
 
-[link_shop_ganglion]: https://shop.openbci.com/collections/frontpage/products/ganglion-board
+[link_shop_ganglion](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 
-[link_shop_cyton]: https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel
+[link_shop_cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
 
-[link_shop_cyton_daisy]: https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel
+[link_shop_cyton_daisy](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
 
-[link_nodejs_cyton]: https://github.com/openbci/openbci_nodejs_cyton
-
-[link_nodejs_ganglion]: https://github.com/openbci-archive/OpenBCI_NodeJS_Ganglion
-
-[link_nodejs_wifi]: https://github.com/openbci/openbci_nodejs_wifi
-
-[link_javascript_utilities]: https://github.com/OpenBCI/OpenBCI_JavaScript_Utilities
-
-[link_openbci]: http://www.openbci.com

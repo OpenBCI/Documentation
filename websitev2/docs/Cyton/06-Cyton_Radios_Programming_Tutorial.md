@@ -235,7 +235,15 @@ If you want to modify the firmware that the OpenBCI Dongle came with, or roll yo
 
 ```
 
+    // place this above the setup()
+    #include <RFduinoGZLL.h>  // using the Gazelle Stack
+    device_t role = HOST;  // This is the HOST
 
+    void setup(){
+         RFduinoGZLL.channel = 6;  // use channels 2-25. 1 is same as 0 and 0-8 in normal GZLL library
+         RFduinoGZLL.begin(role);  // start the GZLL stack
+         // more stuff here
+    }
 
 ```
 

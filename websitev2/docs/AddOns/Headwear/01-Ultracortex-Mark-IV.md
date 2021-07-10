@@ -46,7 +46,7 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 ### Non-printed Parts:
 
-**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
+**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](https://shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
 
 The following parts are included in the Unassembled and the Print it Yourself versions of the Mark IV:
 
@@ -105,8 +105,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 #### (1x) BOARD_COVER
 
--   [BOARD COVER](**x1**)
-    -   [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
+-   [BOARD COVER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_IV/MarkIV-FINAL/STL_Directory/M4%20Board%20Cover_updated.stl)
 
 ![image](../../assets/HeadwareImages/Board_Cover.JPG)
 
@@ -116,7 +115,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 ### Non-printed Parts:
 
-**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](shop.openbci.com). If you need these files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
+**Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](https://shop.openbci.com). If you need these files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
 
 #### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 

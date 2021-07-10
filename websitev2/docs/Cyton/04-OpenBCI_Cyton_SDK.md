@@ -295,7 +295,7 @@ _Note: On reset, the OpenBCI Cyton board will 'sniff' for the Daisy Module, and 
 
 ## Firmware v2.0.0 New Commands
 
-Firmware v2.0.0 was the first overhaul from [Push The World](www.pushtheworld.us) which stabilized the core code and added several key new features to improve the user experience. As of firmware version `v2.0.0`, a set of commands has been implemented to change the radio system and improve over-the-air programming of the main Cyton board.
+Firmware v2.0.0 was the first overhaul from Push The World which stabilized the core code and added several key new features to improve the user experience. As of firmware version `v2.0.0`, a set of commands has been implemented to change the radio system and improve over-the-air programming of the main Cyton board.
 In order to use the commands you must keep to the form of **key**-**code**-**(payload)** where **key** is`0xF0`, **code** is defined below and **payload** is optional and dependent on the **code**. For example, to get system status send `0xF0` then send `0x07`.
 
 If the RFDuinos cannot speak to each other, you will see a `Failure: Communications timeout - Device failed to poll host` which means the Device RFDuino (on the Cyton) has stopped polling the Host RFDuino on the Dongle.

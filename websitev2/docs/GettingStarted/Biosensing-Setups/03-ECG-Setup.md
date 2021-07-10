@@ -102,7 +102,7 @@ Once your settings have been adjusted, press 'Start Data Stream'. You should see
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving ECG signal quality, check out [this document](Troubleshooting/01-MinimizingNoise.md) and head to the OpenBCI Technical [Forum](openbci.com/forum) if you have questions.
+For help minimizing noise and improving ECG signal quality, check out [this document](Troubleshooting/01-MinimizingNoise.md) and head to the OpenBCI Technical [Forum](https://openbci.com/forum) if you have questions.
 
 Concerned about the signal quality? Read [this paper](https://www.sciencedirect.com/science/article/pii/S2405844021012512)
 to learn more about the reliability of OpenBCI ECG quality.

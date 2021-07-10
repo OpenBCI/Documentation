@@ -38,7 +38,7 @@ Click "Import Selection". Your matrix should now appear as an object in your wor
 
 #### Stream the OpenBCI Data from the OpenBCI GUI
 
-You can also stream live OpenBCI data into MATLAB using the Lab Streaming Layer either from the OpenBCI GUI or from Python. We will go over how to import data using the OpenBCI GUI, for the python LSL tutorial please go to [OpenBCI Python](&lt;&gt;).
+You can also stream live OpenBCI data into MATLAB using the Lab Streaming Layer either from the OpenBCI GUI or from Python. Here, we will go over how to import data from the OpenBCI GUI.
 
 Open the OpenBCI GUI and "Start System" with your setup as you would do. On the widget dropdown menu select "Networking". At the right upper corner of the Networking widget there is another dropdown menu, select LSL.
 
@@ -162,7 +162,7 @@ If EEGLAB isn't already running, enter "eeglab" into the Matlab command line to 
 
 In the pop-up window that appears, enter information about the data set. Select "Matlab variable", and enter the name of the variable where your matrix is stored. Enter the Data Sampling rate (it should be commented in at the top of the txt file - usually 250 Hz by default in the OpenBCI GUI). The other fields can be left at default, and EEGLAB will automatically fill in the information from the data set.
 
-Channel locations are useful for plotting EEG scalp maps in 2-D or 3-D format. OpenBCI uses the standard 10-20 format for the 8 and 16 channel models, which can be found within these sfp files: [8 channel](assets/Matlab/electrode_positions_8channel.sfp) and [16 channel](assets/Matlab/electrode_positions_16channel.sfp). You can then import channel data by click "Browse" next to "Channel location file or info" and locating the OpenBCI sfp file you downloaded.
+Channel locations are useful for plotting EEG scalp maps in 2-D or 3-D format. OpenBCI uses the standard 10-20 format for the 8 and 16 channel models, which can be found within these sfp files: [8 channel](../../assets/Matlab/electrode_positions_8channel.sfp) and [16 channel](../../assets/Matlab/electrode_positions_16channel.sfp). You can then import channel data by click "Browse" next to "Channel location file or info" and locating the OpenBCI sfp file you downloaded.
 
 The data is now imported into EEGLAB and ready to use!
 

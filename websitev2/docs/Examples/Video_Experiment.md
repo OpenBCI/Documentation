@@ -8,7 +8,7 @@ Welcome to the OpenBCI Puppies and Kittens Experiment designed by Fan Li.
 
 During this experiment, you will watch a video containing images of puppies and kittens, and press a button every time you see a puppy in the image.
 
-Below are the instructions on how to do it. The full information on this experiment can be found on [Fan Li's Repository](https://github.com/Fan1117/Puppies_and_Kittens/). Once you're comfortable with how the experiment works, you can modify the script to create your own experiments.
+Below are the instructions on how to do it. The full information on this experiment can be found on [the OpenBCI Repository](https://github.com/OpenBCI/OpenBCI_Experiment). Once you're comfortable with how the experiment works, you can modify the script to create your own experiments.
 
 ## Equipment Required
 
@@ -65,6 +65,6 @@ In [this Python notebook](https://github.com/evaesteban/OpenBCI_Experiment/blob/
 
 ## Step 7: Create your Own Experiment
 
-Once you understand how to conduct an experiment, you can modify [this Python script](ExternalTriggerCreator_quick.py) to make your own video. The current code reads the images stored in the `Images` folder, shuffles them, and creates a video with 4 different sessions. Each session displays the images at a different rate. Each image has an embedded trigger and is separated from the others by a fixation cross.
+Once you understand how to conduct an experiment, you can modify [this Python script](https://github.com/OpenBCI/OpenBCI_Experiment/blob/master/ExternalTriggerCreator_quick.py) to make your own video. The current code reads the images stored in the `Images` folder, shuffles them, and creates a video with 4 different sessions. Each session displays the images at a different rate. Each image has an embedded trigger and is separated from the others by a fixation cross.
 
 The video pattern was created in accordance to the diagram below obtained from the research paper [Toward Emotion Aware Computing: An Integrated Approach Using Multichannel Neurophysiological Recordings and Affective Visual Stimuli](https://ieeexplore.ieee.org/document/5415563) by C. A. Frantzidis, C. Bratsas, C. L. Papadelis, E. Konstantinidis, C. Pappas and P. D. Bamidis, published in IEEE Transactions on Information Technology in Biomedicine, vol. 14, no. 3, pp. 589-597, May 2010.

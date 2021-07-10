@@ -95,7 +95,7 @@ Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5
 
 ### OpenBCI Cyton Dongle
 
-The OpenBCI Dongle can be used to upload firmware to ESP8266. [See the section](Cyton/06-Cyton_Radios_Programming_Tutorial.md#upload-pass-thru-radio-firmware-version-2xx-fall-2016) on how to [pass through the code](Cyton/06-Cyton_Radios_Programming_Tutorial#program-device-radio-with-openbci-dongle) in the [Cyton Radio Programming Guide](Cyton/06-Cyton_Radios_Programming_Tutorial.md).
+The OpenBCI Dongle can be used to upload firmware to ESP8266. [See the section](Cyton/06-Cyton_Radios_Programming_Tutorial.md#upload-pass-thru-radio-firmware-version-2xx-fall-2016) on how to [pass through the code](Cyton/06-Cyton_Radios_Programming_Tutorial.md#program-device-radio-with-openbci-dongle) in the [Cyton Radio Programming Guide](Cyton/06-Cyton_Radios_Programming_Tutorial.md).
 
 ## Download Compiled Binary for Upload
 
