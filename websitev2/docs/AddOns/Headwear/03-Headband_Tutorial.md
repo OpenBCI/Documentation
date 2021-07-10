@@ -222,7 +222,7 @@ For cool project ideas, head over to the [**Example Projects**](https://docs.ope
 -   Run as a native application on macOS, Windows, and Linux.
 -   Apply filters and other data processing tools to quickly clean raw data in real time
 -   Use the GUI as a networking system to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
--   Send data to [MATLAB](Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](Software/00-SoftwareLanding.md)
+-   Send data to [MATLAB](Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](Software/SoftwareLanding.md)
 -   Analyze data with [Python and Brainflow](ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
 -   [Create a widget framework](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 -   Output data into a saved file for later offline processing.

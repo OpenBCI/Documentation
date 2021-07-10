@@ -487,7 +487,7 @@ The GUI will automatically detach from the WiFi Shield. Your WiFi Shield should 
 
 Before we jump into setting up your WiFi Shield, here are some helpful links:
 
--   [Learn to update your WiFi Shield](ThirdParty/03-WiFiShield/12-Wifi_Programming_Tutorial.md) to the [latest firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
--   Learn about the physical hardware on the WiFi Shield checkout the [OpenBCI Wifi Hardware docs](ThirdParty/03-WiFiShield/01-Wifi.md)
+-   [Learn to update your WiFi Shield](ThirdParty/WiFiShield/12-Wifi_Programming_Tutorial.md) to the [latest firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
+-   Learn about the physical hardware on the WiFi Shield checkout the [OpenBCI Wifi Hardware docs](ThirdParty/WiFiShield/01-Wifi.md)
 -   Lookup the commands for the HTTP rest server on the WiFi Shield at the [swaggerhub.io](https://app.swaggerhub.com/apis/pushtheworld/openbci-wifi-server/1.3.0)
 -   Checkout the firmware that powers the WiFi Shield at [on Github](http://github.com/OpenBCI/OpenBCI_WIFI)

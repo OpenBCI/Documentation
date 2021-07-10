@@ -46,8 +46,8 @@ All information provided here is licensed under the [MIT License](https://openso
 
 ### WiFi Shield
 
--   [WiFi Board](ThirdParty/03-WiFiShield/01-Wifi.md)
--   [WiFi Board Schematic](ThirdParty/03-WiFiShield/01-Wifi.md#wifi-board-circuit-schematic)
+-   [WiFi Board](ThirdParty/WiFiShield/01-Wifi.md)
+-   [WiFi Board Schematic](ThirdParty/WiFiShield/01-Wifi.md#wifi-board-circuit-schematic)
 
 * * *
 

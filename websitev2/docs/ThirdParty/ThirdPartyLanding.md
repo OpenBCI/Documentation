@@ -32,8 +32,8 @@ Introducing research-validated dry electrodes for sampling frontal cortex EEG an
 
 The MyoWare muscle sensor can be integrated with both the OpenBCI Cyton and Ganglion. To find out how, check out these tutorials:
 
--   [Cyton + MyoWare](ThirdParty/01-Myoware/14-MyoWare_Integration.md)
--   [Ganglion + MyoWare](ThirdParty/01-Myoware/15-MyoWare_Integration_Ganglion.md)
+-   [Cyton + MyoWare](ThirdParty/Myoware/14-MyoWare_Integration.md)
+-   [Ganglion + MyoWare](ThirdParty/Myoware/15-MyoWare_Integration_Ganglion.md)
 
 ## Pulse Sensor
 
@@ -53,7 +53,7 @@ We are very excited to partner with Conscious Labs to offer this affordable, hig
 The Wifi Shield is an add-on module that allows you to connect an OpenBCI Board to the GUI and send data over Wifi rather than Radio/BLE.
 To learn more about it, see these documents:
 
--   [Wifi Shield](ThirdParty/03-WiFiShield/01-Wifi.md)
--   [OpenBCI Wifi Server](ThirdParty/03-WiFiShield/03-OpenBCI_Wifi_Server.md)
--   [OpenBCI Wifi SDK](ThirdParty/03-WiFiShield/08-OpenBCI_Wifi_SDK.md)
--   [Wifi Programming Tutorial](ThirdParty/03-WiFiShield/12-Wifi_Programming_Tutorial.md)
+-   [Wifi Shield](ThirdParty/WiFiShield/01-Wifi.md)
+-   [OpenBCI Wifi Server](ThirdParty/WiFiShield/03-OpenBCI_Wifi_Server.md)
+-   [OpenBCI Wifi SDK](ThirdParty/WiFiShield/08-OpenBCI_Wifi_SDK.md)
+-   [Wifi Programming Tutorial](ThirdParty/WiFiShield/12-Wifi_Programming_Tutorial.md)
