@@ -238,7 +238,7 @@ You need to remember to rename the class to make sure that it is unique and not 
 
 ```
 
-
+class W_myNewWidget extends Widget {
 
 ```
 
@@ -250,7 +250,20 @@ Follow the protocol instantiating your widget globally by adding it here:
 
 ```
 
-
+// MAKE YOUR WIDGET GLOBALLY
+W_timeSeries w_timeSeries;
+W_fft w_fft;
+W_networking w_networking;
+W_BandPower w_bandPower;
+W_accelerometer w_accelerometer;
+W_ganglionImpedance w_ganglionImpedance;
+W_headPlot w_headPlot;
+W_template w_template1;
+W_emg w_emg;
+W_openBionics w_openbionics;
+W_Focus w_focus;
+W_PulseSensor w_pulsesensor;
+W_myNewWidget w_myNewWidget;
 
 ```
 
@@ -258,7 +271,21 @@ Then, make sure to "setup" your widget and add it to the array of all widgets by
 
 ```
 
+  ...
 
+  w_networking = new W_networking(_this);
+  w_networking.setTitle("Networking");
+  addWidget(w_networking, w);
+
+  w_myNewWidget = new W_myNewWidget(_this);
+  w_myNewWidget.setTitle("My New Widget");
+  addWidget(w_myNewWidget, w);
+
+  w_bandPower = new W_BandPower(_this);
+  w_bandPower.setTitle("Band Power");
+  addWidget(w_bandPower, w);
+
+  ...
 
 ```
 
@@ -268,7 +295,28 @@ Then, make sure to "setup" your widget and add it to the array of all widgets by
 
 ```
 
+//These functions need to be global! These functions are activated when an item from the corresponding dropdown is selected
 
+void Dropdown1(int n){
+  println("Item " + (n+1) + " selected from Dropdown 1");
+  if(n==0){
+    //do this
+  } else if(n==1){
+    //do this instead
+  }
+
+  closeAllDropdowns(); // do this at the end of all widget-activated functions to ensure proper widget interactivity ... we want to make sure a click makes the menu close
+}
+
+void Dropdown2(int n){
+  println("Item " + (n+1) + " selected from Dropdown 2");
+  closeAllDropdowns();
+}
+
+void Dropdown3(int n){
+  println("Item " + (n+1) + " selected from Dropdown 3");
+  closeAllDropdowns();
+}
 
 ```
 

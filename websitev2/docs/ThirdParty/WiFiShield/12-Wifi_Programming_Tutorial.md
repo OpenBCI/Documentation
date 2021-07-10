@@ -40,22 +40,22 @@ If you're having issues with that step, here's a more in-depth tutorial on using
 
 ### Go to /update Page of WiFi Shield
 
-Navigate to http: where `` is the IP Address of your WiFi Shield found in the step above.
+Navigate to `http://192.168.0.XXX/update` where `192.168.0.XXX` is the IP Address of your WiFi Shield found in the step above.
 
 ![navigate to update page](../../assets/ThirdPartyImages/wifi_firmware_update_ip_address.png)
 
-On mac, you may use your shields unique name instead of the ip address; i.e.  where `` is your devices unique identifier. Either option works on Mac.
+On mac, you may use your shields unique name instead of the ip address; i.e.  where `2F0E` is your devices unique identifier. Either option works on Mac.
 
 ![use unique id on mac](../../assets/ThirdPartyImages/wifi_firmware_update_mac_using_mdns.png)
 
 ### Select Binary File to Upload
 
-Now select the `` button and from the drop down selected the `` which you downloaded earlier
+Now select the `Choose File` button and from the drop down selected the `DefaultWifiShield.bin` which you downloaded earlier
 ![select choose file](../../assets/ThirdPartyImages/wifi_firmware_update_select_binary.png)
 
 ### Update the Firmware
 
-Then select `` to start the update process
+Then select `Update` to start the update process
 ![selecting update](../../assets/ThirdPartyImages/wifi_firmware_update_select_update.png)
 
 The page will hang for about 10-15 seconds, this the firmware being uploaded.
@@ -109,7 +109,7 @@ The latest stable `` release can be installed from [pypi](http://pypi.python.org
 
 ```
 
-
+$ pip install esptool
 
 ```
 
@@ -132,7 +132,11 @@ The correct serial port for your OpenBCI Dongle or FTDI friend will be
 
 ```
 
+* On Macs, this will be named **/dev/tty.usbserial-DN00nnnn** where the nnnn is a combination of numbers and letters specific to your programmer of choice.
 
+* On Windows, the serial port will be listed as a numbered COM port.
+
+* On Linux, it will be different.
 
 ```
 
@@ -192,7 +196,7 @@ From terminal you installed `` to earlier, substitute your serial port name for 
 
 ```
 
-
+$ esptool.py --port /dev/tty.usbserial-YOURPORT write_flash 0x000000 ~/Downloads/DefaultWifiShield.bin
 
 ```
 
@@ -202,7 +206,7 @@ From Command Prompt you installed `` to earlier, substitute your serial port nam
 
 ```
 
-
+$ esptool.py --port COM4 write_flash 0x000000 Downloads\DefaultWifiShield.bin
 
 ```
 
@@ -286,7 +290,8 @@ Developers looking to contribute or write custom firmware can clone the firmware
 
 ```
 
-
+On Mac: `/Documents/Arduino/libraries`  
+On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 ```
 
@@ -313,7 +318,7 @@ In the Arduino IDE go to `Examples--&gt;OpenBCI_Wifi--&gt;DefaultWifiShield--&gt
 
 ### Compile Source Code with Arduino
 
-Restart your Arduino if you just installed all of the dependencies. Select `` from the menu bar ` Verify/Compile--&gt;`.
+Restart your Arduino if you just installed all of the dependencies. Select `Verify` from the menu bar `Sketch-->Verify/Compile`.
 
 ### Compile Source Code with make
 
@@ -325,7 +330,11 @@ The correct serial port for your OpenBCI Dongle or FTDI friend will be
 
 ```
 
+* On Macs, this will be named **/dev/tty.usbserial-DN00nnnn** where the nnnn is a combination of numbers and letters specific to your programmer of choice.
 
+* On Windows, the serial port will be listed as a numbered COM port.
+
+* On Linux, it will be different.
 
 ```
 

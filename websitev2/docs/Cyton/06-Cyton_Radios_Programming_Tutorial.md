@@ -218,10 +218,10 @@ The files contained in the RFduino folder are custom builds for OpenBCI by our g
 
 ### Upload DEVICE Radio Firmware Version 1.x.x (2014 - Fall 2016)
 
-For 32bit boards, you will want to upload: [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/maint/1.0.0/OpenBCI_32bit_Device/OpenBCI_32bit_Device.ino)
+For 32bit boards, you will want to upload: [`OpenBCI_32bit_Device.ino`](https://github.com/OpenBCI/OpenBCI_Radios/blob/maint/1.0.0/OpenBCI_32bit_Device/OpenBCI_32bit_Device.ino)
 
 For 8bit boards, you will want to upload:
-[``](https://github.com/OpenBCI/OpenBCI_Radios/blob/maint/1.0.0/OpenBCI_8bit_Device/OpenBCI_8bit_Device.ino)
+[`OpenBCI_8bit_Device.ino`](https://github.com/OpenBCI/OpenBCI_Radios/blob/maint/1.0.0/OpenBCI_8bit_Device/OpenBCI_8bit_Device.ino)
 
 ### Upload Pass Thru Radio Firmware Version 1.x.x (2014 - Fall 2016)
 
