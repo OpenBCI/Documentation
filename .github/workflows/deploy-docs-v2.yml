@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [docusaurus-v2]
   push:
-    branches: [documentation]
+    branches: [master]
 
 jobs:
   checks:
