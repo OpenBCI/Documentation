@@ -15,11 +15,11 @@ The following instructions have been written for use with Linux 16.04.
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryodes](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
-4.  Computer with downloaded OpenBCI [GUI](../../Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  Computer with downloaded OpenBCI [GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 
 ## Step 1: Hardware Assembly.
 
-Follow the EMG Getting Started [tutorial](../../GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md) on this link to connect the electrodes to your body and the Cyton board, and read data from it using the OpenBCI GUI. For this tutorial, you will need to connect one of your arms to Channel 1 and Ground.
+Follow the EMG Getting Started [tutorial](../../GettingStarted/Biosensing-Setups/02-EMG-Setup.md) on this link to connect the electrodes to your body and the Cyton board, and read data from it using the OpenBCI GUI. For this tutorial, you will need to connect one of your arms to Channel 1 and Ground.
 
 ## Step 2: Software Setup.
 

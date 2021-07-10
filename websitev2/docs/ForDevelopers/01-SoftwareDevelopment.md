@@ -65,8 +65,8 @@ Once proof-of-concept is achieved, it's appopriate to consider integrating the O
 
 ## OpenBCI GUI Overview
 
--   [GUI How-to and Installation](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
--   The [GUI Widget Guide](Software/01-OpenBCISoftware/GUIWidgets) provides details on each "widget" within the GUI, such as the [Time Series Widget](Software/01-OpenBCISoftware/GUIWidgets#time-series) and the [Networking Widget](Software/01-OpenBCISoftware/GUIWidgets#networking)
+-   [GUI How-to and Installation](Software/OpenBCISoftware/01-OpenBCI_GUI.md)
+-   The [GUI Widget Guide](Software/OpenBCISoftware/GUIWidgets) provides details on each "widget" within the GUI, such as the [Time Series Widget](Software/OpenBCISoftware/GUIWidgets#time-series) and the [Networking Widget](Software/OpenBCISoftware/GUIWidgets#networking)
 -   [GUI Changelog](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/CHANGELOG.md)
 
 ## BrainFlow Java Binding and OpenBCI GUI

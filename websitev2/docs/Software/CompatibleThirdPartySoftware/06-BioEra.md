@@ -10,7 +10,7 @@ BioEra is used to create a design visually. A design represents data flow from i
 
 **Windows:** BioEra only works with Windows and Android systems.
 
-**MacOS and Linux:** If you have Mac OS or Linux, you can use BioEra through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md)
+**MacOS and Linux:** If you have Mac OS or Linux, you can use BioEra through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](Software/CompatibleThirdPartySoftware/07-VirtualBox.md)
 
 ## Installation
 

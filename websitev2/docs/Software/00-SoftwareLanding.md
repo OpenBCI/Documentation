@@ -6,19 +6,19 @@ title: Compatible Software
 
 This section details the various OpenBCI-specific software and SDKs. Included here are guides on how to use the OpenBCI GUI, as well as information about developing for OpenBCI with common languages like Python, Java, Node.js, and more!
 
--   [The OpenBCI GUI](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md)
--   [GUI Widget Guide](Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md)
+-   [The OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md)
+-   [GUI Widget Guide](Software/OpenBCISoftware/02_GUI_Widget_Guide.md)
 
 ## Compatible Third-Party Software
 
  This section details a number of third-party programs that can be used in conjunction with OpenBCI software.
 
--   [Matlab](Software/02-CompatibleThirdPartySoftware/01-Matlab.md)
--   [Neuromore](Software/02-CompatibleThirdPartySoftware/02-Neuromore.md)
--   [OpenViBE](Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md)
--   [LSL](Software/02-CompatibleThirdPartySoftware/04-LSL.md)
--   [BrainBay](Software/02-CompatibleThirdPartySoftware/05-BrainBay.md)
--   [BioEra](Software/02-CompatibleThirdPartySoftware/06-BioEra.md)
+-   [Matlab](Software/CompatibleThirdPartySoftware/01-Matlab.md)
+-   [Neuromore](Software/CompatibleThirdPartySoftware/02-Neuromore.md)
+-   [OpenViBE](Software/CompatibleThirdPartySoftware/03-OpenViBE.md)
+-   [LSL](Software/CompatibleThirdPartySoftware/04-LSL.md)
+-   [BrainBay](Software/CompatibleThirdPartySoftware/05-BrainBay.md)
+-   [BioEra](Software/CompatibleThirdPartySoftware/06-BioEra.md)
 
 ## Sample Live Data
 

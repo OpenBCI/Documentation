@@ -14,7 +14,7 @@ title: OpenViBE
 
 **Windows**: Follow [OpenBCI on Windows](Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OBCI board on Windows. Then, continue this tutorial.
 
-**OS X**: Visit the [Windows Virtual Box installation tutorial](Software/02-CompatibleThirdPartySoftware/07-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
+**OS X**: Visit the [Windows Virtual Box installation tutorial](Software/CompatibleThirdPartySoftware/07-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
 
 **Linux**: [Linux builds](http://openvibe.inria.fr/downloads/) of OpenViBE also work. Some linux users might find this guide useful but keep in mind it is meant primarily for mac + win7.
 

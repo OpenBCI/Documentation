@@ -189,7 +189,7 @@ User Datagram Protocol is used primarily for establishing low-latency and loss-t
 
 
 
-Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](Software/02-CompatibleThirdPartySoftware/01-Matlab.md).
+Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](Software/CompatibleThirdPartySoftware/01-Matlab.md).
 
 FFT data can now be sent over LSL, starting with [GUI v.4.1.5-beta.3.](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
@@ -226,7 +226,7 @@ This tutorial shows you how to create custom widgets for the [OpenBCI GUI](https
 #### Helpful Background Skills
 
 -   Knowledge of [Processing](https://processing.org/) or Java-based programming
--   Experience with [running the OpenBCI GUI from the Processing IDE](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
+-   Experience with [running the OpenBCI GUI from the Processing IDE](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
 -   [Developer Setup using Visual Studio Code or Processing](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup)
 -   Alternatively, you can edit using [Atom with Processing packages](https://atom.io)
 

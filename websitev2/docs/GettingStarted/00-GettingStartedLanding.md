@@ -17,12 +17,12 @@ This section will run through the setup of each of our boards, and how to begin 
 
 This section details the electrode setups for the various types of biosensing:
 
--   [EEG Setup](GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md) — Details how to wire electrodes to gather signals from the brain.
--   [EMG Setup](GettingStarted/02-Biosensing-Setups/02-EMG-Setup.md) — Details how to wire electrodes to gather signals from different muscle groups.
--   [ECG Setup](GettingStarted/02-Biosensing-Setups/03-ECG-Setup.md) — Details how to wire electrodes to gather signals from different muscle groups.
+-   [EEG Setup](GettingStarted/Biosensing-Setups/01-EEG-Setup.md) — Details how to wire electrodes to gather signals from the brain.
+-   [EMG Setup](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) — Details how to wire electrodes to gather signals from different muscle groups.
+-   [ECG Setup](GettingStarted/Biosensing-Setups/03-ECG-Setup.md) — Details how to wire electrodes to gather signals from different muscle groups.
 
 ## Community
 
 This section contains the tutorial about getting started as a member of the OpenBCI Community:
 
--   [Community](GettingStarted/03-Community/13-Community_Instructions.md)
+-   [Community](GettingStarted/Community/13-Community_Instructions.md)

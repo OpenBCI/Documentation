@@ -191,7 +191,7 @@ Note that removal of electrodes takes place in the reverse order of these steps.
 
 #### OpenBCI Software
 
-Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to prepare your computer to communicate with your Cyton.
+Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to prepare your computer to communicate with your Cyton.
 
 Once you've installed the GUI by following the tutorial, fire it up [as shown in this YouTube video!](http://www.youtube.com/watch?v=XktF8OhHH4A)
 
@@ -222,11 +222,11 @@ For cool project ideas, head over to the [**Example Projects**](https://docs.ope
 -   Run as a native application on macOS, Windows, and Linux.
 -   Apply filters and other data processing tools to quickly clean raw data in real time
 -   Use the GUI as a networking system to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
--   Send data to [MATLAB](Software/02-CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](Software/00-SoftwareLanding.md)
+-   Send data to [MATLAB](Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](Software/00-SoftwareLanding.md)
 -   Analyze data with [Python and Brainflow](ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
--   [Create a widget framework](Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
+-   [Create a widget framework](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 -   Output data into a saved file for later offline processing.
--   [Customize the layout](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
+-   [Customize the layout](Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
 -   Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
 
 As always, don't hesitate to email us at [support@openbci.com](mailto:support@openbci.com) for assistance!

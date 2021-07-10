@@ -34,11 +34,11 @@ All information provided here is licensed under the [MIT License](https://openso
 
 ### Ultracortex Mark IV (June 2016 - Present)
 
--   [Mark IV Documentation](AddOns/01-Headwear/01-Ultracortex-Mark-IV.md)
+-   [Mark IV Documentation](AddOns/Headwear/01-Ultracortex-Mark-IV.md)
 
 ### Ultracortex Mark III (June 2016)
 
--   [Mark III Documentation](AddOns/01-Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+-   [Mark III Documentation](AddOns/Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
 
 * * *
 

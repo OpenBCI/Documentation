@@ -166,7 +166,7 @@ Follow this section if you want to put the WiFi Shield into WiFi Station mode. T
 
 **For the rest of this tutorial, the WiFi needs to be powered independently, with Ganglion, WiFi Shield shall be disconnected, with Cyton, the `EXT PWR` shall be in the off position.**
 
-If you power the the WiFi Shield up and D2 LED does **4 blinks in 2 seconds** followed within 10 seconds by **2 blinks in 2 seconds**, then your WiFi Shield is on your local network. Feel free to head to skip a head to [connecting with the OpenBCI GUI](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application). If you want the WiFi Shield to join a different wireless network, continue reading and pay attention when it comes time to bring up the WiFi Manager.
+If you power the the WiFi Shield up and D2 LED does **4 blinks in 2 seconds** followed within 10 seconds by **2 blinks in 2 seconds**, then your WiFi Shield is on your local network. Feel free to head to skip a head to [connecting with the OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application). If you want the WiFi Shield to join a different wireless network, continue reading and pay attention when it comes time to bring up the WiFi Manager.
 
 Before the WiFi Shield has joined a network, the Shield acts as a WiFi hotspot, where the D2 LED blinks **10 times in 2 seconds** and will have a name such as "OpenBCI-A4AD" where the last four digits are hexadecimal and are unique to your WiFi Shield.
 
@@ -232,7 +232,7 @@ You must erase the stored credentials or else the WiFi Shield will spend 10 seco
 
 There is a multitude of ways to erase stored wireless network configurations:
 
-1.  Press "ERASE CREDENTIALS" of the WiFi Shield from the WIFI SHIELDS configuration inside the OpenBCI GUI. Make sure your WiFi Shield is not connected to an OpenBCI Board, or if Cyton, `` is OFF). [Tutorial link here](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#erase-stored-credentials).
+1.  Press "ERASE CREDENTIALS" of the WiFi Shield from the WIFI SHIELDS configuration inside the OpenBCI GUI. Make sure your WiFi Shield is not connected to an OpenBCI Board, or if Cyton, `` is OFF). [Tutorial link here](Software/OpenBCISoftware/01-OpenBCI_GUI.md#erase-stored-credentials).
 2.  On macOS/iPhone, go to your WiFi Shields home page in a web browser such as  (`` is the name of the WiFi Shield) and tap "Click to Erase WiFi Credentials".
 3.  On macOS/iOS, in a web browser go to  (`` is the name of the WiFi Shield).
 4.  In any web browser on any device you can use the IP Address ([OpenBCI GUI tutorial to get IP address](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address)) of the WiFi Shield and navigate to  where the `` is substituted for the WiFi Shield's IP Address to trigger the erase.
@@ -322,7 +322,7 @@ Although the WiFi Shield can be connected to any internet connected device, the 
 
 The OpenBCI GUI gained WiFi Shield support as of `` or later.
 
-Please [follow the step by step guide](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application. WiFi has no other prerequisites.
+Please [follow the step by step guide](Software/OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application. WiFi has no other prerequisites.
 
 Come back to this guide when your GUI is running!
 

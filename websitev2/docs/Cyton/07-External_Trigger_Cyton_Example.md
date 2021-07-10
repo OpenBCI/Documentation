@@ -12,11 +12,11 @@ This tutorial will cover a couple of ways to add an external trigger to the Open
 
 ### Using the OpenBCI GUI
 
-Follow the official [OpenBCI GUI guide](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
+Follow the official [OpenBCI GUI guide](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
 
 Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
 
-Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui) (remember to [run your OpenBCIHub application](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#running-on-windows) first windows users!).
+Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui) (remember to [run your OpenBCIHub application](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-on-windows) first windows users!).
 
 Once the GUI has launched, follow the guide to [connect to your Cyton from the OpenBCI GUI](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
 

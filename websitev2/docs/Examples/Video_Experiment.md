@@ -16,7 +16,7 @@ Below are the instructions on how to do it. The full information on this experim
 
 -   [Ultracortex Mark IV Headset](https://shop.openbci.com/products/ultracortex-mark-iv) with [Copper Wires](https://www.amazon.com/StrivedayTM-Flexible-Electric-electronic-electrics/dp/B01LH1FYHO/ref=sr_1_3?crid=2ANLHLBH5WL2Q&dchild=1&keywords=flexible+wire+22+gauge&qid=1598387126&s=hi&sprefix=flexible+wire+22+g%2Ctools%2C179&sr=1-3). 
 -   [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) with [Ten20 Paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198).
--   [EEG Electrode Cap Kit](https://docs.openbci.com/docs/AddOns/01-Headwear/ElectrodeCap) with [Electrode Cap Gel](https://shop.openbci.com/collections/frontpage/products/electrodegel?variant=28056992776264) and [Touch Proof Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
+-   [EEG Electrode Cap Kit](https://docs.openbci.com/docs/AddOns/Headwear/ElectrodeCap) with [Electrode Cap Gel](https://shop.openbci.com/collections/frontpage/products/electrodegel?variant=28056992776264) and [Touch Proof Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
 
 2.  [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
 3.  [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v5.0.0)
@@ -33,7 +33,7 @@ The breadboard includes a photocell circuit for the trigger and a button circuit
 
 ## Step 1: Headwear, Board and Software Setup
 
-First, connect the headwear to yourself and the Cyton board, and read from it using the GUI. If you are using the Ultracortex, follow [this tutorial](https://docs.openbci.com/docs/AddOns/01-Headwear/MarkIV). If you're using the gold cup electrodes, follow [this guide](https://docs.openbci.com/docs/GettingStarted/02-Biosensing-Setups/EEGSetup) to learn how to connect each electrode, and connect them in the positions you would like to measure EEG from. A good guide to the 8 positions commonly used can be found in the Ultracortex tutorial. If you're using an electrode cap, follow [this tutorial](https://docs.openbci.com/docs/AddOns/01-Headwear/ElectrodeCap) to connect it.
+First, connect the headwear to yourself and the Cyton board, and read from it using the GUI. If you are using the Ultracortex, follow [this tutorial](https://docs.openbci.com/docs/AddOns/Headwear/MarkIV). If you're using the gold cup electrodes, follow [this guide](https://docs.openbci.com/docs/GettingStarted/Biosensing-Setups/EEGSetup) to learn how to connect each electrode, and connect them in the positions you would like to measure EEG from. A good guide to the 8 positions commonly used can be found in the Ultracortex tutorial. If you're using an electrode cap, follow [this tutorial](https://docs.openbci.com/docs/AddOns/Headwear/ElectrodeCap) to connect it.
 
 ## Step 2: Breadboard Setup
 

@@ -54,7 +54,7 @@ Connect a leftover HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin 
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%" />
 
-For WHY these connections are recommended, see the [EEG explanation](../../GettingStarted/02-Biosensing-Setups/01-EEG-Setup.md)page.
+For WHY these connections are recommended, see the [EEG explanation](../../GettingStarted/Biosensing-Setups/01-EEG-Setup.md)page.
 
 After the cables are all connected as shown above, place the cap on the subject's head and inject a small amount of electrode gel using the included syringe. After each data recording session, be sure to clean the gel off the cap!
 
@@ -82,7 +82,7 @@ Channels 9-16 on the GUI correspond to bottoms pins N1P through N8P on the Daisy
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI-V4-Screenshot.jpg?raw=true" width="50%" />
 
-Head over to the OpenBCI GUI [tutorial](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md) to set up your free live-streaming software!
+Head over to the OpenBCI GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to set up your free live-streaming software!
 
 ### Use Cases for OpenBCI GUI
 
@@ -101,11 +101,11 @@ Head over to the OpenBCI GUI [tutorial](Software/01-OpenBCISoftware/01-OpenBCI_G
 -   Run as a native application on macOS, Windows, and Linux.
 -   Apply filters and other data processing tools to quickly clean raw data in real time
 -   Use the GUI as a networking system to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
--   Send data to [MATLAB](../../Software/02-CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](../../Software/00-SoftwareLanding.md)
+-   Send data to [MATLAB](../../Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](../../Software/00-SoftwareLanding.md)
 -   Analyze data with [Python and Brainflow](ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
--   [Create a widget framework](Software/01-OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
+-   [Create a widget framework](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 -   Output data into a saved file for later offline processing.
--   [Customize the layout](Software/01-OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
+-   [Customize the layout](Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
 -   Access built-in widgets such as Band Power, Spectrogram, Accelerometer, EEG Head Plot, and MUCH more
 
     **If you just want to visualize EEG, EMG, ECG data (and do some basic analysis) and save the data to start with, download the standalone [OpenBCI GUI](https://openbci.com/index.php/downloads) and connect it to an OpenBCI Cyton, CytonDaisy, or Ganglion!**
@@ -223,7 +223,7 @@ Caution:
     **The EEG headband is a starter kit for those new to EEG. It has not been tested for applications like sleep studies. The EEG electrode cap is a more suitable product**
 
 13. We want to be able to use the EEG data for sleep scoring, and I was wondering whether the output file can be saved in edf format, so that is readable with some sleep scoring softwares such as RemLogic?
-    **The files are saved to .csv or bdf format. For information on the software, head to the [GUI Widget Guide](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIWidgets).**
+    **The files are saved to .csv or bdf format. For information on the software, head to the [GUI Widget Guide](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIWidgets).**
 
 14. Since we want to record data during sleep (~8-9 hours), I wanted to know the power consumption of the system, and how long the battery can last.
     **A Lithium battery with high capacitance, such as [this one](https://www.digikey.com/products/en?mpart=328&v=1528) with 2500 mAh, should allow the system to operate overnight**
@@ -236,7 +236,7 @@ Caution:
 
 16. I also would like to capture the EOG signal. Can I modify the amplification factor of the biosensing board for each different type of signals? Do you also suggest the best filter specifications for EEG/EOG/EMG recording?
     By pairing electrodes to the OpenBCI Cytondaisy, you can obtain up to 16 channels from different data sources simultaneously.
-    **You can modify the gain on each channel. Please refer to the [hardware settings section](https://docs.openbci.com/docs/Software/01-OpenBCISoftware/GUIWidgets#time-series) of the GUI widget guide.
+    **You can modify the gain on each channel. Please refer to the [hardware settings section](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIWidgets#time-series) of the GUI widget guide.
     Using the gold cup electrodes plus ten20 paste, with the CytonDaisy, you can capture EOG signals. You can connect the gold cup electrodes to the CytonDaisy at the same time as you connect the electrode cap to the CytonDaisy.**
 
 17. Can I buy multiple caps (for different head sizes) with this kit?

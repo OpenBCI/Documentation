@@ -52,6 +52,6 @@ Fixing this issue should make the incoming signal much more consistent in terms 
 
 ## Available tools on Windows
 
--   [OpenViBE](Software/02-CompatibleThirdPartySoftware/03-OpenViBE.md)
+-   [OpenViBE](Software/CompatibleThirdPartySoftware/03-OpenViBE.md)
 
--   [Neuromore](Software/02-CompatibleThirdPartySoftware/02-Neuromore.md)
+-   [Neuromore](Software/CompatibleThirdPartySoftware/02-Neuromore.md)

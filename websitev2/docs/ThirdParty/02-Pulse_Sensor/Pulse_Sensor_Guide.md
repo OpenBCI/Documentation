@@ -28,7 +28,7 @@ You only need the GUI, pulse sensor kit, Cyton, Cyton dongle, and battery pack.
 
 The connections are circled above.
 Red pulse sensor cable goes to DVDD header on the Cyton, black to GND (right next to DVDD), and purple to D11.
-This D11 is read as analog pin A5, and sent in the first Aux data slot. The pulse sensor data will be pre-processed in the [pulse sensor widget](https://openbci.github.io/Documentation/docs/Software/01-OpenBCISoftware/GUIWidgets#pulse-widget). When you download the OpenBCI GUI, the pulse sensor widget is pre-packaged in it.
+This D11 is read as analog pin A5, and sent in the first Aux data slot. The pulse sensor data will be pre-processed in the [pulse sensor widget](https://openbci.github.io/Documentation/docs/Software/OpenBCISoftware/GUIWidgets#pulse-widget). When you download the OpenBCI GUI, the pulse sensor widget is pre-packaged in it.
 
 The connections are circled above.
 

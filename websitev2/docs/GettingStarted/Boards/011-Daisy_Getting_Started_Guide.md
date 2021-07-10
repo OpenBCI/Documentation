@@ -69,6 +69,6 @@ Use the 16 of the color coded cables that came with your Ultracortex MarkIV head
 
 Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. Color order does not matter.
 
-Refer to the Ultracortex Mark IV [tutorial](AddOns/01-Headwear/01-Ultracortex-Mark-IV.md) to learn how to connect the male terminations of the color coded cables to the electrodes on the headset.
+Refer to the Ultracortex Mark IV [tutorial](AddOns/Headwear/01-Ultracortex-Mark-IV.md) to learn how to connect the male terminations of the color coded cables to the electrodes on the headset.
 
 If you did not purchase a headset, you can use 16 of our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958), or [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
