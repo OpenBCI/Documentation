@@ -53,7 +53,7 @@ In order to run this .exe, do the following:
 3.  Replace RFDLoader with a script that uses wine to call RFDLoader.exe, forwarding the serial port.  A possible script is at https:
 4.  Drag RFDLoader to the RFduino folder
 
-That's it! As long as `` is installed normally the script should take care of any issues you may have when uploading.
+That's it! As long as `wine` is installed normally the script should take care of any issues you may have when uploading.
 
 ## Using Radio Firmware Version 2.x.x (Fall 2016)
 
@@ -89,21 +89,21 @@ Again, there is a small difference between the 8-bit and Cyton boards, explained
 
 **Steps:**
 
-1.  In the Arduino IDE 1.5.8 go `Examples--&gt;OpenBCI_Radios--&gt;RadioDevice32bit--&gt;` which will launch the Device firmware.
+1.  In the Arduino IDE 1.5.8 go `File--&gt;Examples--&gt;OpenBCI_Radios--&gt;RadioDevice32bit--&gt;` which will launch the Device firmware.
 
-2.  Then go to `Board--&gt;` and select ``.
+2.  Then go to `Tools--&gt;Board` and select `RFduino`.
 
 3.  Follow one of the methods listed in the next section to connect the Device to your computer.
 
-4.  Now go `Port--&gt;` and select the `` port (Windows)  or `` port (Mac/Linux) for your device or
+4.  Now go `Tools--&gt;Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
 
-5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `` then you are ready to go!
+5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `Done Compiling` then you are ready to go!
 
-6.  Choose a channel number for your device. The channel number can be set in the code [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino#L22).
+6.  Choose a channel number for your device. The channel number can be set in the code [`radio.begin(OPENBCI_MODE_DEVICE,20);`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino#L22).
 
 7.  Click "Upload" on the toolbar (the icon to the right of the checkmark). Your code is now uploading to the OpenBCI Device!
 
-_Important!_ As of firmware version 2, you must first flash the board with the line `` in the `` function uncommented, then comment the line back out and program again. It is very important that you reprogram the board with the line commented out. We must do this because with firmware version two, the channel number is stored to non-volatile memory so we can change the channel number of the system from the PC/Driver, turn the system off and still remember the newly set channel. _If this is your first time uploading firmware version two (your bought your board prior to October 2016), you may ignore this message the first time you upload radio code._
+_Important!_ As of firmware version 2, you must first flash the board with the line `radio.flashNonVolatileMemory();` in the `setup()` function uncommented, then comment the line back out and program again. It is very important that you reprogram the board with the line commented out. We must do this because with firmware version two, the channel number is stored to non-volatile memory so we can change the channel number of the system from the PC/Driver, turn the system off and still remember the newly set channel. _If this is your first time uploading firmware version two (your bought your board prior to October 2016), you may ignore this message the first time you upload radio code._
 
 ### Program DEVICE Radio with OpenBCI Dongle
 
@@ -115,7 +115,7 @@ First, solder the headers that came with your OpenBCI Dongle. Then, move the swi
 
 ### Upload Pass Thru Radio Firmware Version 2.x.x (Fall 2016)
 
-Go to the Arduino IDE 1.5.8 and do `Examples--&gt;OpenBCI_Radios--&gt;RadioPassThru32bit--&gt;`. Make sure to select `` from ``.
+Go to the Arduino IDE 1.5.8 and do `File--&gt;Examples--&gt;OpenBCI_Radios--&gt;RadioPassThru32bit`. Make sure to select `RFduino` from `Tools--&gt;Board--&gt;RFDuino`.
 
 ![0.1uF capacitors](../assets/CytonImages/caps.jpg)
 
@@ -144,7 +144,7 @@ Helpful tips:
 -   Place the board on a table or hard surface
 -   Keep the pins straight up and _centered_ on the pads. (perpendicular to the surface of the pads)
 
-There is a trick to it, it may take you a couple tries to get good at it. On Mac, It does not matter if you select `` or `` in the port selection on the Arduino IDE.
+There is a trick to it, it may take you a couple tries to get good at it. On Mac, It does not matter if you select `/dev/cu.*` or `/dev/tty.*` in the port selection on the Arduino IDE.
 
 ## Program Device Radio with Other FTDI Boards
 
@@ -182,21 +182,21 @@ This process does not require 3rd party hardware. Before you begin, note that th
 
 **Steps:**
 
-1.  In the Arduino IDE 1.5.8 go `Examples--&gt;OpenBCI_Radios--&gt;RadioHost32bit--&gt;` which will launch the Host firmware.
+1.  In the Arduino IDE 1.5.8 go `File--&gt;Examples--&gt;OpenBCI_Radios--&gt;RadioHost32bit` which will launch the Host firmware.
 
-2.  Then go to `Board--&gt;` and select ``.
+2.  Then go to `Tools--&gt;Board` and select `RFduino`.
 
-3.  Plug the Dongle into your computer. Flip the switch to the `` position if it is not already.
+3.  Plug the Dongle into your computer. Flip the switch to the `Reset` position if it is not already.
 
-4.  Now go `Port--&gt;` and select the `` port (Windows)  or `` port (Mac/Linux) for your device or
+4.  Now go `Tools--&gt;Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
 
-5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `` then you are ready to go!
+5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `Done Compiling` then you are ready to go!
 
-6.  Choose a channel number for your device. The channel number can be set in the code see [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino#L30).
+6.  Choose a channel number for your device. The channel number can be set in the code see [`radio.begin(OPENBCI_MODE_HOST,20);`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino#L30).
 
 7.  Click "Upload" on the toolbar (the icon to the right of the checkmark). Your code is now uploading to the OpenBCI Dongle!
 
-_Important!_ As of firmware version 2, you must first flash the board with the line `` in the `` function uncommented, then comment the line back out and program again. It is very important that you reprogram the board with the line commented out. We must do this because with firmware version two, the channel number is stored to non-volatile memory so we can change the channel number of the system from the PC/Driver, turn the system off and still remember the newly set channel. _If this is your first time uploading firmware version two (your bought your board prior to October 2016), you may ignore this message the first time you upload radio code._
+_Important!_ As of firmware version 2, you must first flash the board with the line `radio.flashNonVolatileMemory();` in the `setup()` function uncommented, then comment the line back out and program again. It is very important that you reprogram the board with the line commented out. We must do this because with firmware version two, the channel number is stored to non-volatile memory so we can change the channel number of the system from the PC/Driver, turn the system off and still remember the newly set channel. _If this is your first time uploading firmware version two (your bought your board prior to October 2016), you may ignore this message the first time you upload radio code._
 
 ## Using Radio Firmware Version 1.x.x (2014 - Fall 2016)
 
@@ -206,13 +206,18 @@ The following is for working with our original radio firmware. Please refer to t
 
 Download the [OpenBCI_Radios](https://github.com/OpenBCI/OpenBCI_Radios/tree/maint/1.0.0) repo from our github, and place it in the proper location depending upon your OS.
 
-On a Mac, put the RFduino folder and everything it contains in ``
+Put the RFduino folder and everything it contains in one of the following folders:
 
-On a Windows, put the RFduino folder and everything it contains in ``
+```
+
+On Mac: /Applications/Arduino.app/Contents/Resources/Java/hardware/arduino
+
+On Windows: C\Program Files (x86)\Arduino-1.5.x\hardware\arduino
+```
 
 **_Note_**: To upload code to the Cyton board, you need Arduino v1.8.0 or later, while you need Arduino v1.5.8 to upload code to the dongle. If you have already installed Ardiono v1.8.0, you may see an error message while installing 1.5.8 saying that you need to uninstall v1.8.0. Instead of doing that, simply move the existing "Arduino" program folder (which should be 1.8.0) in your Program Files to another folder (such as "Documents"). Go to your program manager (called "Change or Remove Program" in Windows, press Uninstall Arduino 1.8.0, and confirm if told that there was an error in uninstalling 1.8.0. Then, install 1.5.8. Rename the new "Arduino" program folder (which should now be 1.5.8) to "Arduino 1.5.8", and rename the Arduino folder that you moved to the name "Arduino 1.8.0". Move this folder back to your Program Files where "Arduino 1.5.8" is located, allowing you to keep both versions.
 
-**Note for Windows users** While installing 1.5.8 if the installer instructs you to uninstall 1.8.0, move the Arduino folder from `` to your downloads folder. Rename this folder to ``. Open the `` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.5.8 as normal. Navigate to back to your `` folder and locate the Arduino folder. Rename this folder to ``. Now drag and drop the `` back into `` folder.  
+**Note for Windows users** While installing 1.5.8 if the installer instructs you to uninstall 1.8.0, move the Arduino folder from `Program Files (x86)` to your downloads folder. Rename this folder to `Arduino_1.8.0`. Open the `Change or remove program` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.5.8 as normal. Navigate to back to your `Program Files (x86)` folder and locate the Arduino folder. Rename this folder to `Arduino_1.5.8`. Now drag and drop the `Arduino_1.8.0` back into `Program Files (x86)` folder.  
 
 The files contained in the RFduino folder are custom builds for OpenBCI by our good friends over at RFdigital. Those guys are great! They helped us to squeeze all of the speed we could get out of the RFduinoGZLL library, and also gave us access to 25 discreet channels for OpenBCI boards to work on. ROCK!
 

@@ -28,52 +28,52 @@ These instructions apply to programming the Cyton with firmware versions 2.x.x, 
 
 -   If your computer does not have Arduino v1.8.0 (or later), install the latest Arduino IDE which can be found here: https:
 
-**Note for Windows users** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `` to your desktop or another folder. Rename this folder to ``. Open the `` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.8.0 as normal. Navigate to back to your `` folder and locate the Arduino folder. Rename this folder to ``. Now drag and drop the `` back into `` folder.
+**Note for Windows users** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.8.0 as normal. Navigate to back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.0`. Now drag and drop the `Arduino_1.5.8` back into `Program Files` folder.
 
 ### Install Firmware From Arduino Library Manager (easiest!)
 
 Don't know what the _Library Manager_ is? Skim over the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc3).
 
-Open the _Library Manager_ and search for _OpenBCI_ and install the latest version for ``, `` and ``.
+Open the _Library Manager_ and search for _OpenBCI_ and install the latest version for `OpenBCI_32bit_Library`, `OpenBCI_32bit_SD` and `OpenBCI_Wifi_Master`.
 
 Now jump down to the section [install ChipKit Core](#install-chipkit-core-firmware)
 
 ### Manual Installation of Cyton Firmware
 
 1.  Download the latest [OpenBCI_32bit_Library](http://www.arduinolibraries.info/libraries/open-bci_32bit_library), it's the top most zip file.
-2.  Unzip the folder and change the name to ``
-3.  Move `` to:
+2.  Unzip the folder and change the name to `OpenBCI_32bit_Library`
+3.  Move `OpenBCI_32bit_Library` to:
 
-    On Mac: ``  
-    On Windows: ``
+    On Mac: `/Documents/Arduino/libraries`  
+    On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Manual Installation of Cyton SD Library
 
 1.  Download the latest [OpenBCI_32bit_SD](http://www.arduinolibraries.info/libraries/open-bci_32bit_sd), it's the top most zip file.
-2.  Unzip the folder and change the name to ``
-3.  Move `` to:
+2.  Unzip the folder and change the name to `OpenBCI_32bit_SD`
+3.  Move `OpenBCI_32bit_SD` to:
 
-    On Mac: ``  
-    On Windows: ``
+    On Mac: `/Documents/Arduino/libraries`  
+    On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Manual Installation of WiFi Master Firmware
 
 1.  Download the latest [WiFi Master Library](http://www.arduinolibraries.info/libraries/open-bci_wifi_master), it's the top most zip file.
-2.  Unzip the folder and change the name to ``
-3.  Move `` to:
+2.  Unzip the folder and change the name to `OpenBCI_Wifi_Master`
+3.  Move `OpenBCI_Wifi_Master` to:
 
-    On Mac: ``  
-    On Windows: ``
+    On Mac: `/Documents/Arduino/libraries`  
+    On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Clone The Repos From Github
 
-Developers looking to contribute or write custom firmware can clone the firmware repositories directly to your `` folder
+Developers looking to contribute or write custom firmware can clone the firmware repositories directly to your `libraries` folder
 
 ```
 
@@ -100,7 +100,7 @@ If you followed the process in the previous link, and you will be able to select
 
 ### Select DefaultBoard.ino from Examples
 
--   In the Arduino IDE go to `Examples--&gt;OpenBCI_32bit_Library--&gt;DefaultBoard--&gt;` which will launch the Cyton firmware. **NOTE You must upload ONLY the `` Sketch!**
+-   In the Arduino IDE go to `File--&gt;Examples--&gt;OpenBCI_32bit_Library--&gt;DefaultBoard--&gt;` which will launch the Cyton firmware. **NOTE You must upload ONLY the `DefaultBoard` Sketch!**
 
 ### Pre-upload Hardware Setting
 
@@ -156,9 +156,9 @@ That's it! You will see some blinky lights on the Dongle, and after a short whil
 
 First, install the Arduino IDE which can be found here:  
 
+https://www.arduino.cc/en/Main/Software
 
-
-**Note for Windows users** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `` to your downloads folder. Rename this folder to ``. Open the `` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.8.0 as normal. Navigate to back to your `` folder and locate the Arduino folder. Rename this folder to ``. Now drag and drop the `` back into `` folder.  
+**Note for Windows users** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files (x86)` to your downloads folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.8.0 as normal. Navigate to back to your `Program Files (x86)` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.0`. Now drag and drop the `Arduino_1.5.8` back into `Program Files` folder.  
 
 You can find the previous OpenBCI firmware and libraries on our github repository.
 
@@ -222,7 +222,7 @@ Now you should see the blue LED on the Cyton Board blinking pleasantly. Your Cyt
 ![image](../assets/CytonImages/Upload32.png)
 
 ** Note: ** occasionally, you may see the error message in the screenshot below. You can ignore this. As long as
-`` appears, 99 out of 100 times your firmware uploaded correctly. If your board doesn't appear to be working in the GUI (or other software), simply try re-uploading the firmware.
+`Program flash: ...................................#################################### done` appears, 99 out of 100 times your firmware uploaded correctly. If your board doesn't appear to be working in the GUI (or other software), simply try re-uploading the firmware.
 
 ![Upload32](../assets/CytonImages/oddUploadError.png)
 
@@ -274,9 +274,9 @@ When you are happy with the code, simply press upload to program the OpenBCI 8bi
 
 ## Troubleshooting
 
-If you're having an issue with `` and you're uploading using Linux, you must move ALL files located in:  `` to `` This should fix any issues you're having compiling.
+If you're having an issue with `Board_Defs.h` and you're uploading using Linux, you must move ALL files located in:  `/Arduino/hardware/chipkit-core/pic32/variants/openbci/` to `/Arduino/hardware/chipkit-core/pic32/cores/pic32/` This should fix any issues you're having compiling.
 
-If the upload fails with ``:
+If the upload fails with `No Target Found`:
 
 1.  Unplug the Dongle and Device.
 2.  Plug the Dongle into your computer.
@@ -284,7 +284,7 @@ If the upload fails with ``:
 4.  Put the device into bootloader mode.
 5.  Try upload again.
 
-If the upload fails with `` it's due to the Arduino IDE not being able to read from the serial port fast enough possibly do to resource starvation or overall computer power. We recommend taking the following actions:
+If the upload fails with `Program Flash Failed` it's due to the Arduino IDE not being able to read from the serial port fast enough possibly do to resource starvation or overall computer power. We recommend taking the following actions:
 
 -   Keep the Board and Dongle physically close to each other during the upload.
 -   Keep the Arduino IDE open, front and center and don't use any other programs during the upload.
@@ -292,21 +292,21 @@ If the upload fails with `` it's due to the Arduino IDE not being able to read f
 -   Restart your computer and don't open any other programs other than the Arduino IDE used for programming.
 -   If all else fails, find a friend with a more powerful computer and do the uploading from their computer.
 
-In extreme conditions, if you have tried all five of the above methods and still can't upload, then you can try to change the Device's polling time. The Poll Time can be adjusted using the OpenBCI Radio Config Utility software (_Tutorial coming soon!_)   
+In extreme conditions, if you have tried all five of the above methods and still can't upload, then you can try to change the Device's polling time. The Poll Time can be adjusted using the OpenBCI Radio Config Utility software.   
 
 ## Notes On Updating and Using v2.0.0 Cyton Firmware
 
 ### Overview
 
-The OpenBCI Cyton boards were updated with new firmware across all three main microcontrollers, the Pic 32 ([``](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino)) and both RFduinos on the Dongle ([``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino)) and the Board ([``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino)). This tutorial does not explain how to program the firmware using the OpenBCI Dongle and ``; you will want to refer to the tutorials [Cyton Board Programming Tutorial](Cyton/05-Cyton_Board_Programming_Tutorial.md) and [Cyton Radios Programming Tutorial](Cyton/06-Cyton_Radios_Programming_Tutorial.md). If you have spent a lot of time writing custom Arduino code to run on the OpenBCI, then you will find this tutorial helpful in upgrading to get the new stability and features of the 2.0.0 firmware.
+The OpenBCI Cyton boards were updated with new firmware across all three main microcontrollers, the Pic 32 ([`Pic32`](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino)) and both RFduinos on the Dongle ([`Host`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino)) and the Board ([`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino)). This tutorial does not explain how to program the firmware using the OpenBCI Dongle and `PC`; you will want to refer to the tutorials [Cyton Board Programming Tutorial](Cyton/05-Cyton_Board_Programming_Tutorial.md) and [Cyton Radios Programming Tutorial](Cyton/06-Cyton_Radios_Programming_Tutorial.md). If you have spent a lot of time writing custom Arduino code to run on the OpenBCI, then you will find this tutorial helpful in upgrading to get the new stability and features of the 2.0.0 firmware.
 
 ### Sending data packets from the Pic32 to the PC
 
-At 250Hz, we are at the upper limit of the physical hardware. The [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) RFduino must send data packets as soon as it get's them from the [``](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino) because of the slow serial baud rate between [``](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino) and [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) (``, a faster baud rate messes up the radio on the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino)). On the other hand, over the air programming must be able to combine multiple radio packets together into one page and write at one time, therefore, over the air programming must wait to see if it received all data over the serial port before sending. These two requirements led to the original firmware being stateful, where the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) and [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino) would be in either `` or `` mode. This led to problems and could result in the `` not being able to contact the `` because the radios were stuck in streaming mode and the reset button on the `` is not tied to the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) so one would have to power cycle the entire ``.
+At 250Hz, we are at the upper limit of the physical hardware. The [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) RFduino must send data packets as soon as it gets them from the [`Pic32`](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino) because of the slow serial baud rate between [`Pic32`](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino) and [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) (`115200 baud`, a faster baud rate messes up the radio on the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino)). On the other hand, over the air programming must be able to combine multiple radio packets together into one page and write at one time, therefore, over the air programming must wait to see if it received all data over the serial port before sending. These two requirements led to the original firmware being stateful, where the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) and [`Host`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino) would be in either `streaming` or `not streaming` mode. This led to problems and could result in the `PC` not being able to contact the `Cyton` because the radios were stuck in streaming mode and the reset button on the `Cyton` is not tied to the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) so one would have to power cycle the entire `Cyton`.
 
 ### An Example
 
-Let's say you want to send custom data from the `` to the ``. In order to do that simply wrap the data with the correct start byte, ``, and stop byte, `` (where `` is `` in hex). In the `` code base:
+Let's say you want to send custom data from the `Cyton` to the `PC`. In order to do that simply wrap the data with the correct start byte, `0x41`, and stop byte, `0xCX` (where `X` is `0-F` in hex). In the `OpenBCI_32bit_Library` code base:
 
 ```
 
@@ -334,8 +334,8 @@ void OpenBCI_32bit_Library::sendChannelDataWithAccel(void)  {
 
 ```
 
-This code writes 33 bytes of data from the [``](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino) to the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) in the correct format and therefore as soon as it arrives at the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) it will be sent to the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino) and to the ``. New to firmware version 2 is the ability to have different stop bytes, in the original firmware, one could only send stop bytes of `` however now, we can send `` where `` is `` (hex).  
-**Important** if you want to only send `` bytes of data per packet, you still must send this `` bytes with the proper start and stop bytes. Sending data too fast will result in a buffer overflow on the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) and cause the system to restart and send an error message to the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino) and ``.
+This code writes 33 bytes of data from the [`Pic32`](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/DefaultBoard/DefaultBoard.ino) to the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) in the correct format and therefore as soon as it arrives at the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) it will be sent to the [`Host`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino) and to the `PC`. New to firmware version 2 is the ability to have different stop bytes, in the original firmware, one could only send stop bytes of `0xC0` however now, we can send `0xCn` where `n` is `0-F` (hex).  
+**Important** if you want to only send `20` bytes of data per packet, you still must send this `33` bytes with the proper start and stop bytes. Sending data too fast will result in a buffer overflow on the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) and cause the system to restart and send an error message to the [`Host`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioHost32bit/RadioHost32bit.ino) and `PC`.
 
 ### Sending one byte of data every 10ms or 100Hz
 
@@ -359,10 +359,10 @@ void sendLEDStatus() {
 
 ```
 
-As you can see above, we only really want to send 1 byte, but if we want to do it fast, at this 100Hz rate, we must wrap it in the start byte and stop byte to tell the [``](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) to send the packet as soon as it get's the stop byte.
+As you can see above, we only really want to send 1 byte, but if we want to do it fast, at this 100Hz rate, we must wrap it in the start byte and stop byte to tell the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) to send the packet as soon as it get's the stop byte.
 
 ### Adopting the new Pic32 code paradigm
 
-We drastically reduced the complexity of the `` files in order to make custom device programming more approachable for new programmers but also add a suite of features to give great power to great programmers. We have created an environment to drive contribution to the main project in the form of examples. If you want to contribute code the main library for others to use, now you can simply do a pull request. Joel was able to adapt his [pulse sensor code](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino) to the new firmware in about 20 minutes! Now anyone who downloads the firmware, will get the pulse sensor code versus having to dig through all the `` repos to find an example of [how to use a pulse sensor](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino), [have external triggers](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWith2ButtonExternalTriggers/BoardWith2ButtonExternalTriggers.ino), [read an analog input](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithAnalogSensor/BoardWithAnalogSensor.ino), etc...
+We drastically reduced the complexity of the `.ino` files in order to make custom device programming more approachable for new programmers but also add a suite of features to give great power to great programmers. We have created an environment to drive contribution to the main project in the form of examples. If you want to contribute code the main library for others to use, now you can simply do a pull request. Joel was able to adapt his [pulse sensor code](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino) to the new firmware in about 20 minutes! Now anyone who downloads the firmware, will get the pulse sensor code versus having to dig through all the OpenBCI repos to find an example of [how to use a pulse sensor](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino), [have external triggers](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWith2ButtonExternalTriggers/BoardWith2ButtonExternalTriggers.ino), [read an analog input](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithAnalogSensor/BoardWithAnalogSensor.ino), etc...
 
-Please dig through the [``](https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/master/examples) folder on the [``](https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/master) for a deep dive into all the possibilities with the new code. Remember if you have new code you want to share, please do!! [Make a pull request](https://help.github.com/articles/creating-a-pull-request/)!
+Please dig through the [`examples`](https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/master/examples) folder on the [`OpenBCI_32bit_Library`](https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/master) for a deep dive into all the possibilities with the new code. Remember if you have new code you want to share, please do!! [Make a pull request](https://help.github.com/articles/creating-a-pull-request/)!
