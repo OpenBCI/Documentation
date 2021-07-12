@@ -39,7 +39,7 @@ We are in the process of testing different springs to be nested
 
 #### Spring 1 (tested)
 
-[McMaster-Carr](http://www.mcmaster.com/#) &gt; [1	9657K279	Steel Compression Spring, Zinc-Plated Music Wire, .500" L, .600" OD, .045" Wire, Packs of 12](http://www.mcmaster.com/#9657k279/=xkccgf)
+[McMaster-Carr](http://www.mcmaster.com/#) > [1	9657K279	Steel Compression Spring, Zinc-Plated Music Wire, .500" L, .600" OD, .045" Wire, Packs of 12](http://www.mcmaster.com/#9657k279/=xkccgf)
 
 **Summary**: The **~23 lb/in** is too strong!
 

@@ -475,7 +475,7 @@ If you are having trouble starting to stream with the GUI, then select `` to ver
 
 ### Erase WiFi Credentials
 
-If you want to switch what WiFi network your WiFi Shield is on, you can select ``. **NOTE: WiFi Shield must be detached from Ganglion or Cyton.**
+If you want to switch what WiFi network your WiFi Shield is on, you can select `ERASE CREDENTIALS`. **NOTE: WiFi Shield must be detached from Ganglion or Cyton.**
 
 ![erase credentials for openbci wifi shield](../../assets/GettingStartedImages/wifi_config_erase_credentials.png)
 

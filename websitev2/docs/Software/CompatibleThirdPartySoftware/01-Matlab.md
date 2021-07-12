@@ -95,7 +95,7 @@ Open up MATLAB, and set your current MATLAB directory to the unzipped BCILAB fil
 
 ```
 
-&gt; cd your/path/to/bcilab;--&gt;
+cd your/path/to/bcilab;
 
 ```
 
@@ -103,7 +103,7 @@ Once you're in the file, just type the command:
 
 ```
 
-&gt; bcilab--&gt;
+bcilab
 
 ```
 
@@ -113,7 +113,7 @@ To start running BCILAB. After some console output, you should see the text "Wel
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/bcilab_menu.png?raw=true" width="80%" />
 
-Once a stream has been started on your computer, open BCILAB within MATLAB (&gt;&gt; cd your/path/to/bcilab; bcilab) and from the menu, select **Online Analysis &gt; Read input from... &gt; Lab streaming layer...**
+Once a stream has been started on your computer, open BCILAB within MATLAB (>> cd your/path/to/bcilab; bcilab) and from the menu, select **Online Analysis > Read input from... > Lab streaming layer...**
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/bcilab_lsl.png?raw=true" width="80%" />
 
@@ -133,7 +133,7 @@ Download the zip file of the most current version of EEGLAB and extract it into 
 
 To check if EEGLAB is correctly set up, go to the Matlab prompt and type:
 
-&gt; \&gt;&gt; eeglab
+> \>> eeglab
 
 If the toolkit is not yet correctly implemented, the console should output:
 "Undefined function or variable 'eeglab'."
@@ -156,7 +156,7 @@ Your data matrix is now ready to use with EEGLAB.
 
 #### Using EEGLAB
 
-If EEGLAB isn't already running, enter "eeglab" into the Matlab command line to start the program. Import your matrix into EEGLAB using the EEGLAB GUI: File -&gt; Import Data -&gt; Using EEGLAB functions and plugins -&gt; From ASCII/float file or Matlab array
+If EEGLAB isn't already running, enter "eeglab" into the Matlab command line to start the program. Import your matrix into EEGLAB using the EEGLAB GUI: File -> Import Data -> Using EEGLAB functions and plugins -> From ASCII/float file or Matlab array
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/eeglab_dataimport.png?raw=true" width="80%" />
 
@@ -168,7 +168,7 @@ The data is now imported into EEGLAB and ready to use!
 
 #### Plotting Data in EEGLAB
 
-To double check your data is imported correctly, and to get familiar with EEGLAB's interface, try plotting your data. Select Plot -&gt; Channel data (scroll) from the EEGLAB pop-up window.
+To double check your data is imported correctly, and to get familiar with EEGLAB's interface, try plotting your data. Select Plot -> Channel data (scroll) from the EEGLAB pop-up window.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/EEGLAB_plot.png?raw=true" width="50%" />
 
@@ -188,7 +188,7 @@ From the [ERPLAB homepage](http://erpinfo.org/erplab): "ERPLAB Toolbox is a free
 
 #### Setup
 
-[Download](https://github.com/lucklab/erplab/releases) and extract the latest ERPLAB release to the "plugins" folder of your EEGLAB directory (if you have an old release of EEGLAB, you will also have to enter the path to this directory in MATLAB by _File &gt; Set Path_)
+[Download](https://github.com/lucklab/erplab/releases) and extract the latest ERPLAB release to the "plugins" folder of your EEGLAB directory (if you have an old release of EEGLAB, you will also have to enter the path to this directory in MATLAB by _File > Set Path_)
 
 Next time your launch EEGLAB, the ERPLAB menu should appear in the EEGLAB GUI:
 

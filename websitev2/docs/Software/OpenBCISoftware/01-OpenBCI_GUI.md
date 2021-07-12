@@ -35,10 +35,10 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 
 1.  First, verify if the user does belong to the "dialout" group using the “id” command.<br />
         - Type `id -Gn <username>` in terminal and check if it prints `dialout` as one of the options.<br />
-        - Replace username with your Linux username. Example: ``
+        - Replace username with your Linux username. Example: `id -Gn susieQ`
 2.  Next, add the user to the “dialout” supplementary group.
-        - Type `` in terminal.
-        - Example: ``
+        - Type `sudo usermod -a -G dialout <username>` in terminal.
+        - Example: `sudo usermod -a -G dialout susieQ`
 3.  Restart Ubuntu
 4.  Try "id" command again
         - Repeat step one
@@ -176,13 +176,13 @@ Starting with GUI V3, you can save and load a snapshot of nearly every setting i
 
 ![Config Button](../../assets/SoftwareImages/OpenBCISoftware/GUI_Config_Button_ScreenshotRev3.png)
 
-Start the system first. Then, arrange the GUI to suit your needs and **click "Settings"--&gt;"Save"**. A dialog box will open to confirm file name and path _(e.g. GanglionUserSettings.json)_. After, you will see a message saying "Settings Saved!" When you click "Stop System", all settings will be auto-saved.
+Start the system first. Then, arrange the GUI to suit your needs and **click "Settings"-->"Save"**. A dialog box will open to confirm file name and path _(e.g. GanglionUserSettings.json)_. After, you will see a message saying "Settings Saved!" When you click "Stop System", all settings will be auto-saved.
 
 The GUI automatically loads settings from _/Documents/OpenBCI_GUI/Settings/_ when the system starts!
 
-To load settings, just **click "Settings"--&gt;"Load"**. Select a settings file from the dialog box that opens. If the settings are incompatible (ex. loading 16 channels while using 8), the GUI will display an error at the bottom or "Default Settings Loaded". If all is well, the GUI will display "Settings Loaded!" as the GUI snaps directly to your desired settings.
+To load settings, just **click "Settings"-->"Load"**. Select a settings file from the dialog box that opens. If the settings are incompatible (ex. loading 16 channels while using 8), the GUI will display an error at the bottom or "Default Settings Loaded". If all is well, the GUI will display "Settings Loaded!" as the GUI snaps directly to your desired settings.
 
-**Click "Settings"--&gt;"Default" to revert the GUI to default settings.**
+**Click "Settings"-->"Default" to revert the GUI to default settings.**
 
 For all data modes, the GUI will load all GUI-related settings automatically. After starting a session, hardware settings (channel on/off, gain, etc.) will need to be set by the user manually.
 

@@ -32,7 +32,7 @@ Then [get your WiFi Shield on your local wireless network](GettingStarted/Boards
 
 ### Get Address of WiFi Shield
 
-Find the IP Address of your WiFi Shield by clicking the '&gt;' button in the WiFi section of the Control Panel, and then clicking the IP Address button, as shown in the image below:
+Find the IP Address of your WiFi Shield by clicking the `>` button in the WiFi section of the Control Panel, and then clicking the IP Address button, as shown in the image below:
 
 ![image](../../assets/ThirdPartyImages/IPfind.png)
 
@@ -105,7 +105,7 @@ You will need [either Python 2.7 or Python 3.4 or newer](https://www.python.org/
 
 ### Download and Install esptool
 
-The latest stable `` release can be installed from [pypi](http://pypi.python.org/pypi/esptool) via pip:
+The latest stable `esptool.py` release can be installed from [pypi](http://pypi.python.org/pypi/esptool) via pip:
 
 ```
 
@@ -113,15 +113,15 @@ $ pip install esptool
 
 ```
 
-With some Python installations this may not work and you'll receive an error, try `` or ``.
+With some Python installations this may not work and you'll receive an error, try `python -m pip install esptool` or `pip2 install esptool`.
 
-After installing, you will have `` installed into the default Python executables directory and you should be able to run it with the command ``.
+After installing, you will have `esptool.py` installed into the default Python executables directory and you should be able to run it with the command `esptool.py`.
 
 In Windows, we use Command Prompt.
 
 ### Download the WiFi Shield Firmware
 
-First, download the file called `` from the latest release [OpenBCI_WiFi Github repository](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
+First, download the file called `DefaultWifiShield.bin` from the latest release [OpenBCI_WiFi Github repository](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
 
 Save to your downloads folder.
 ![download the latest binary](../../assets/ThirdPartyImages/wifi_firmware_update_really_done.png)
@@ -154,35 +154,35 @@ Hook up the FTDI friend, OpenBCI Dongle, or other UART-USB programmer to the Wif
 
 ### Isolate and Power WiFi Shield
 
-Next **remove your wifi shield from the Cyton or Ganglion** if it's not already.
+Next, **remove your wifi shield from the Cyton or Ganglion** if it's not already.
 
 Remove your Wifi Shield from the Cyton/Ganglion board. **Always use a spudger to remove your WiFi Shield from a Cyton or Ganglion.**
 
 ![Wifi alone](../../assets/ThirdPartyImages/wifi_programming_alone.jpg)
 
-Plug a battery into the WiFi Shield and power the Shield by turning the power switch to the `` position.
+Plug a battery into the WiFi Shield and power the Shield by turning the power switch to the `ON` position.
 
-Plug in battery to the wifi shield
+Plug in battery to the WiFi Shield.
 
 ![Battery to wifi shield](../../assets/ThirdPartyImages/wifi_programming_power.jpg)
 
-Second power the Wifi shield
+Next, power the Wifi shield.
 
 ![Battery to wifi shield](../../assets/ThirdPartyImages/wifi_programming_power_in.JPG)
 
 ### Put WiFi Shield in Bootloader Mode
 
-Press and hold the `` button.
+Press and hold the `PROG` button.
 
 ![Wifi programming hold prog](../../assets/ThirdPartyImages/wifi_programming_hold_prog.jpg)
 
-Press and release the `` button while holding ``.
+Press and release the `RESET` button while holding `PROG`.
 
 ![Wifi programming hold reset](../../assets/ThirdPartyImages/wifi_programming_hold_reset.jpg)
 
 ![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_reset.jpg)
 
-Finally release the `` button
+Finally, release the `PROG` button.
 
 ![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_prog.jpg)
 
@@ -192,7 +192,7 @@ You should see no lights on the WiFi Shield if it is in bootloading mode.
 
 #### On Mac/Linux
 
-From terminal you installed `` to earlier, substitute your serial port name for `` in the command below.
+From terminal you installed `esptool.py` to earlier, substitute your serial port name for `YOURPORT` in the command below.
 
 ```
 
@@ -202,7 +202,7 @@ $ esptool.py --port /dev/tty.usbserial-YOURPORT write_flash 0x000000 ~/Downloads
 
 #### On Windows
 
-From Command Prompt you installed `` to earlier, substitute your serial port name for `` in the command below.
+From Command Prompt you installed `esptool.py` to earlier, substitute your serial port name for `COM4` in the command below.
 
 ```
 
@@ -241,17 +241,17 @@ Don't know what the _Library Manager_ is? Skim over the [Official Arduino Guide]
 
 Open the _Library Manager_ and then
 
-1.  Search for _OpenBCI_ and install the latest version for ``.
+1.  Search for _OpenBCI_ and install the latest version for `OpenBCI_Wifi`.
 
-2.  Search for _WiFiManager_ and install the latest version for ``.
+2.  Search for _WiFiManager_ and install the latest version for `WiFiManager`.
 
-3.  Search for _ArduinoJson_ and install the latest version for ``.
+3.  Search for _ArduinoJson_ and install the latest version for `ArduinoJson`.
 
-4.  Search for _PubSubClient_ and install the latest version for ``.
+4.  Search for _PubSubClient_ and install the latest version for `PubSubClient`.
 
-5.  Search for _Time_ and install the latest version for `` `` by Michael Margolis, you will need to scroll down to the `` section.
+5.  Search for _Time_ and install the latest version for `Time` `v1.5.0` by Michael Margolis, you will need to scroll down to the `T` section.
 
-6.  Search for _ntp_ and install the latest version for `` (**NOT** ``).
+6.  Search for _ntp_ and install the latest version for `NtpClientLib` (**NOT** `NtpClient`).
 
 7.  Use the _Library Manager_ to search for and install:
 
@@ -268,25 +268,29 @@ Open the _Library Manager_ and then
 
 2.  Unzip the folders and change the names to:
 
-    -   ``
-    -   ``
-    -   ``
-    -   ``
-    -   ``
-    -   ``
+```
+- OpenBCI_Wifi
+- WiFiManager
+- ArduinoJson
+- PubSubClient
+- Time
+- NtpClientLib
+```
 
 3.  Move all folders to:
 
-    On Mac: ``  
-    On Windows: ``
+```
+On Mac: /Documents/Arduino/libraries
+On Windows: C:\Users\username\Documents\Arduino\libraries
+```
 
-If you don't have a `` folder there, go ahead and make one.  
+If you don't have a `libraries` folder there, go ahead and make one.  
 
 If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Clone The Repo From Github
 
-Developers looking to contribute or write custom firmware can clone the firmware repositories directly to your `` folder
+Developers looking to contribute or write custom firmware can clone the firmware repositories directly to your `libraries` folder.
 
 ```
 
@@ -304,17 +308,17 @@ On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 ### Install ESP8266 Core Firmware
 
-Follow the instructions for downloading the [Arduino ESP8266 core from Boards Manager](https://github.com/esp8266/Arduino). The `` is newly added to the official SDK. **NOTE: Per a comment in the forums: "the GUI only works if the binary is compiled using Arduino ESP library version 2.5.0".**
+Follow the instructions for downloading the [Arduino ESP8266 core from Boards Manager](https://github.com/esp8266/Arduino). The `SPISlave.h` is newly added to the official SDK. **NOTE: Per a comment in the forums: "the GUI only works if the binary is compiled using Arduino ESP library version 2.5.0".**
 
 ### Select 'Adafruit Huzzah ESP8266 as Board
 
-If you followed the process in the previous link, and you will be able to from `` select `` from the `` subsection. Then select from ``, ``.
+If you followed the process in the previous link, and you will be able to from `Tools->Board` select `Adafruit Huzzah ESP8266` from the `ESP8266 Modules` subsection. Then, select from `Tools->Flash Size`, `4M (1M SPIFFS)`.
 
 ![board_dropdown](../../assets/ThirdPartyImages/OBCI32_Board_Dropdown.png)
 
 ### Select DefaultWifiShield.ino from Examples
 
-In the Arduino IDE go to `Examples--&gt;OpenBCI_Wifi--&gt;DefaultWifiShield--&gt;` which will launch the default Wifi Shield firmware. **NOTE You must upload ONLY the `` Sketch!**
+In the Arduino IDE go to `Files-->Examples-->OpenBCI_Wifi-->DefaultWifiShield` which will launch the default Wifi Shield firmware. **NOTE You must upload ONLY the `DefaultWifiShield` Sketch!**
 
 ### Compile Source Code with Arduino
 
@@ -322,7 +326,7 @@ Restart your Arduino if you just installed all of the dependencies. Select `Veri
 
 ### Compile Source Code with make
 
-While developing this firmware, we found it much better to use [makeESPArduino](https://github.com/plerup/makeEspArduino) which is a command line tool for building and compiling the firmware without having to use the Arduino IDE! Use the `` file in the [WiFi's github repo](https://github.com/OpenBCI/OpenBCI_WIFI)
+While developing this firmware, we found it much better to use [makeESPArduino](https://github.com/plerup/makeEspArduino) which is a command line tool for building and compiling the firmware without having to use the Arduino IDE! Use the `makeESPWifiDefault.mk` file in the [WiFi's github repo](https://github.com/OpenBCI/OpenBCI_WIFI).
 
 ### Get the Serial Port of Programmer
 
@@ -358,7 +362,7 @@ Remove your Wifi Shield from the Cyton/Ganglion board. **Always use a spudger to
 
 ![Wifi alone](../../assets/ThirdPartyImages/wifi_programming_alone.jpg)
 
-Plug a battery into the WiFi Shield and power the Shield by turning the power switch to the `` position.
+Plug a battery into the WiFi Shield and power the Shield by turning the power switch to the `ON` position.
 
 Plug in battery to the wifi shield
 
@@ -370,17 +374,17 @@ Second power the Wifi shield
 
 ### Put WiFi Shield in Bootloader Mode
 
-Press and hold the `` button.
+Press and hold the `PROG` button.
 
 ![Wifi programming hold prog](../../assets/ThirdPartyImages/wifi_programming_hold_prog.jpg)
 
-Press and release the `` button while holding ``.
+Press and release the `RESET` button while holding `PROG`.
 
 ![Wifi programming hold reset](../../assets/ThirdPartyImages/wifi_programming_hold_reset.jpg)
 
 ![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_reset.jpg)
 
-Finally release the `` button
+Finally, release the `PROG` button.
 
 ![Wifi programming release reset](../../assets/ThirdPartyImages/wifi_programming_release_prog.jpg)
 
@@ -388,4 +392,4 @@ You should see no lights on the WiFi Shield if it is in bootloading mode.
 
 ### Upload the code
 
-Now press upload in the Arduino IDE or execute the `` to upload to the shield.
+Now press upload in the Arduino IDE or execute the `make -f makeESPDefault.mk flash` to upload to the shield.

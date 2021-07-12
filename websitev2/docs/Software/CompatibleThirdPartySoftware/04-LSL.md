@@ -84,13 +84,13 @@ To enter Channel Settings mode, you would need to enter an "x", followed by cert
 
 ```
 
- x3020000X--&gt;
+ x3020000X
 
 ```
 
 This command will do the following: ‘x’ enters Channel Settings mode. Channel 3 is set up to be powered up, with gain of 2, normal input, removed from BIAS generation, removed from SRB2, removed from SRB1. The final ‘X’ latches the settings to the ADS1299 channel settings register.
 
-To view current board and register settings, enter: --&gt; ?
+To view current board and register settings, enter: `?`
 
 If you get an error message at any point while using the command line interface, check the Troubleshooting section, or pull up an issue on the Github repository.
 
@@ -99,7 +99,7 @@ To change the channel location metadata of the stream, type /loc followed by a s
 
 ```
 
-/loc F3,F4,C3,C4,T3,T4,P3,P4--&gt;
+/loc F3,F4,C3,C4,T3,T4,P3,P4
 
 ```
 

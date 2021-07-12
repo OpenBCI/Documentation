@@ -133,7 +133,7 @@ The CHANNEL COUNT setting is defaulted to 8. If you are working with an OpenBCI 
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/serial_cyton_open_radio_config.png?raw=true" width="50%" />
 
-There is a Radio Configuration tab that you can use to check the status of your Cyton system and change the radio channel. Click on the `--&gt;` arrow to open up the options panel. Here you will find tools for configuring your Cyton Radio connection. Let's walk through the functions of each button.
+There is a Radio Configuration tab that you can use to check the status of your Cyton system and change the radio channel. Click on the `>` arrow to open up the options panel. Here you will find tools for configuring your Cyton Radio connection. Let's walk through the functions of each button.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cyton_radio-status.png?raw=true" width="50%" />
 

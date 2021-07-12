@@ -89,13 +89,13 @@ Again, there is a small difference between the 8-bit and Cyton boards, explained
 
 **Steps:**
 
-1.  In the Arduino IDE 1.5.8 go `File--&gt;Examples--&gt;OpenBCI_Radios--&gt;RadioDevice32bit--&gt;` which will launch the Device firmware.
+1.  In the Arduino IDE 1.5.8 go `File-->Examples-->OpenBCI_Radios-->RadioDevice32bit` which will launch the Device firmware.
 
-2.  Then go to `Tools--&gt;Board` and select `RFduino`.
+2.  Then go to `Tools-->Board` and select `RFduino`.
 
 3.  Follow one of the methods listed in the next section to connect the Device to your computer.
 
-4.  Now go `Tools--&gt;Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
+4.  Now go `Tools-->Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
 
 5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `Done Compiling` then you are ready to go!
 
@@ -115,7 +115,7 @@ First, solder the headers that came with your OpenBCI Dongle. Then, move the swi
 
 ### Upload Pass Thru Radio Firmware Version 2.x.x (Fall 2016)
 
-Go to the Arduino IDE 1.5.8 and do `File--&gt;Examples--&gt;OpenBCI_Radios--&gt;RadioPassThru32bit`. Make sure to select `RFduino` from `Tools--&gt;Board--&gt;RFDuino`.
+Go to the Arduino IDE 1.5.8 and do `File-->Examples-->OpenBCI_Radios-->RadioPassThru32bit`. Make sure to select `RFduino` from `Tools-->Board-->RFDuino`.
 
 ![0.1uF capacitors](../assets/CytonImages/caps.jpg)
 
@@ -125,10 +125,10 @@ Next you need a breadboard, 8 jumpers and a 0.1uF capacitor. 0.1uF capacitors ar
 
 Here's a picture of the connections that you need to make. Power the OpenBCI board with the battery pack it came with, and so you only need these four connections to do the upload. You could also power the OpenBCI board with 3V from the Dongle, but that makes the next step a bit trickier. In any case, these are the basic pin connections that you need to make when powering the board with a battery pack:
 
--   FTDI RX	--&gt;	RF TX
--   FTDI TX	--&gt;	RF RX
--   GPIO6	--&gt;	0.1uF Cap	--&gt;	RF RST
--   GND	--&gt;	GND
+-   FTDI RX	-->	RF TX
+-   FTDI TX	-->	RF RX
+-   GPIO6	-->	0.1uF Cap	-->	RF RST
+-   GND	-->	GND
 
 ![8-bitDeviceConnection](../assets/CytonImages/8bitDeviceConnection.jpg)
 
@@ -182,13 +182,13 @@ This process does not require 3rd party hardware. Before you begin, note that th
 
 **Steps:**
 
-1.  In the Arduino IDE 1.5.8 go `File--&gt;Examples--&gt;OpenBCI_Radios--&gt;RadioHost32bit` which will launch the Host firmware.
+1.  In the Arduino IDE 1.5.8 go `File-->Examples-->OpenBCI_Radios-->RadioHost32bit` which will launch the Host firmware.
 
-2.  Then go to `Tools--&gt;Board` and select `RFduino`.
+2.  Then go to `Tools-->Board` and select `RFduino`.
 
 3.  Plug the Dongle into your computer. Flip the switch to the `Reset` position if it is not already.
 
-4.  Now go `Tools--&gt;Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
+4.  Now go `Tools-->Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
 
 5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `Done Compiling` then you are ready to go!
 

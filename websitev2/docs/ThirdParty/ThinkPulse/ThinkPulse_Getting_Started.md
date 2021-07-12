@@ -76,7 +76,7 @@ If you need help or have any questions, email [support@openbci.com](mailto:suppo
 | Typical Consumption | 5 mW |
 | Active amplification Gain | 0 dB |
 | Electrode Noise | &lt;10nV |
-| Bandwidth | &gt;10KHz |
+| Bandwidth | >10KHz |
 
 <br />
 

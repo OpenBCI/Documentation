@@ -94,13 +94,13 @@ On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 ### Select 'OpenBCI 32' as Board
 
-If you followed the process in the previous link, and you will be able to select the _OpenBCI 32_ board from the Tools &gt;&gt; Board &gt;&gt; dropdown menu!
+If you followed the process in the previous link, and you will be able to select the _OpenBCI 32_ board from the Tools >> Board >> dropdown menu!
 
 ![board_dropdown](../assets/CytonImages/OBCI32_Board_Dropdown.png)
 
 ### Select DefaultBoard.ino from Examples
 
--   In the Arduino IDE go to `File--&gt;Examples--&gt;OpenBCI_32bit_Library--&gt;DefaultBoard--&gt;` which will launch the Cyton firmware. **NOTE You must upload ONLY the `DefaultBoard` Sketch!**
+-   In the Arduino IDE go to `File-->Examples-->OpenBCI_32bit_Library-->DefaultBoard` which will launch the Cyton firmware. **NOTE You must upload ONLY the `DefaultBoard` Sketch!**
 
 ### Pre-upload Hardware Setting
 
@@ -179,11 +179,11 @@ https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/maint/1.0.0
 
 You will need to install the folders 'OpenBCI_32_Daisy' and 'OBCI_SD' from our Libraries repository into your Documents/Arduino/libraries folder. If there is no 'libraries' folder in the sketch folder, create one. Move the folder called 'OpenBCI_32bit' into your Documents/Arduino folder.
 
-Before you can upload code correctly to the PIC32 with Arduino, you need to add the chipKIT-core board files to your Arduino IDE. The folks at chipKIT have put together instructions on how to [Auto Install via URL from within Arduino](http://chipkit.net/wiki/index.php?title=ChipKIT_core#1.29_Auto_install_via_URL_from_within_Arduino_IDE_.28latest_version_chipKIT-core_v1.3.1.29). Follow the process in the previous link, and you will be able to select the OpenBCI board from the Tools &gt;&gt; Board &gt;&gt; dropdown menu!
+Before you can upload code correctly to the PIC32 with Arduino, you need to add the chipKIT-core board files to your Arduino IDE. The folks at chipKIT have put together instructions on how to [Auto Install via URL from within Arduino](http://chipkit.net/wiki/index.php?title=ChipKIT_core#1.29_Auto_install_via_URL_from_within_Arduino_IDE_.28latest_version_chipKIT-core_v1.3.1.29). Follow the process in the previous link, and you will be able to select the OpenBCI board from the Tools >> Board >> dropdown menu!
 
 ![board_dropdown](../assets/CytonImages/OBCI32_Board_Dropdown.png)
 
-Open the OpenBCI_32bit sketch from the File -&gt; Sketchbook dropdown. Then select OpenBCI 32 from the Board drop-down menu.
+Open the OpenBCI_32bit sketch from the File -> Sketchbook dropdown. Then select OpenBCI 32 from the Board drop-down menu.
 
 Make sure that the slide switch on the OpenBCI Dongle is switched to the GPIO6 selection (towards your computer). If it's on the other side, it will try to program the Dongle-mounted RFduino! Now is a good time to plug your Dongle in and power down the Cyton Board.
 
@@ -199,7 +199,7 @@ Select the correct serial port for your OpenBCI Dongle.
 
 When you are happy with the code, you will have to put the 32bit board into bootloader mode. We don't have a way to remotely reset the chipKIT compatible IC, so you have to do it manually.
 
--   If you're uploading firmware 3.x.x, you'll need to make sure you have the WiFi library installed before uploading the firmware. To do this, go to Sketch &gt; Include Library &gt; Manage Libraries...
+-   If you're uploading firmware 3.x.x, you'll need to make sure you have the WiFi library installed before uploading the firmware. To do this, go to `Sketch > Include Library > Manage Libraries`.
 
 -   Then, in the search field in the upper right, type OpenBCI WiFi.
 

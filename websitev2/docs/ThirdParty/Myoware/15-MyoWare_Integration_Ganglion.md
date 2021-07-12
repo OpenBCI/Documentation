@@ -80,6 +80,6 @@ Here's what happens to the GUI when a muscle is flexed:
 
 ![Ganglion EMG After Flex](../../assets/ThirdPartyImages/Ganglion_GUI_after_widget.png)
 
-You can use this change in signal intensity to trigger analog or digital events from within the GUI as you like. Check out the `` file for more information on the EMG widget.
+You can use this change in signal intensity to trigger analog or digital events from within the GUI as you like. Check out the `W_EMG.pde` file for more information on the EMG widget.
 
 Still have questions? Post on our [Forum](http://openbci.com/index.php/forum/) or let us know at [contact@openbci.com](mailto:contact@openbci.com)!

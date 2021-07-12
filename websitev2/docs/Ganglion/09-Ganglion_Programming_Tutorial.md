@@ -110,11 +110,11 @@ On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 ### Select 'Simblee' as Board
 
-If you followed the process in the previous link, and you will be able to select the _Simblee_ board from the Tools &gt;&gt; Board &gt;&gt; dropdown menu!
+If you followed the process in the previous link, and you will be able to select the _Simblee_ board from the Tools >> Board >> dropdown menu!
 
 ### Select DefaultGanglion.ino from Examples
 
--   In the Arduino IDE go to `FileExamples--&gt;OpenBCI_Ganglion_Library--&gt;DefaultGanglion--&gt;` which will launch the Ganglion firmware. **NOTE You must upload ONLY the `DefaultGanglion` Sketch!** If you can't see `OpenBCI_Ganglion_Library` then verify `Simblee` is selected as board type.
+-   In the Arduino IDE go to `File-->Examples-->OpenBCI_Ganglion_Library-->DefaultGanglion` which will launch the Ganglion firmware. **NOTE You must upload ONLY the `DefaultGanglion` Sketch!** If you can't see `OpenBCI_Ganglion_Library` then verify `Simblee` is selected as board type.
 
 ## How to Create OTA File
 

@@ -40,7 +40,7 @@ pip install numpy pyserial bitstring xmltodict requests
 
 ```
 
-Linux users may need `` also.
+Linux users may need `bluepy` also.
 
 Then you can use pip to install the OpenBCI module.
 
@@ -196,7 +196,7 @@ The Wifi Shield already outputs the data in Volts and the aux data in G.
 
 ### Example (Print Raw Data)
 
-To test this example, use `` or ``.
+To test this example, use `py Examples\print_raw_example.py` or `Examples\print_raw_example.py`.
 
 ```python
 
@@ -213,7 +213,7 @@ board.start_stream(print_raw)
 
 ### Example (Simple LSL Streamer)
 
-To run this example, use `` or ``.
+To run this example, use `py Examples\lsl_example.py` or `python Examples\lsl_example.py`.
 
 ```python
 

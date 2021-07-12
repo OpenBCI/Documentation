@@ -196,7 +196,7 @@ Caution:
     **Yes. The electrode is a medical-grade product at a "kickstarter" price and is scientifically validated. It includes designs such as the durable cable sleeve to prevent tangled cables. The sintered cap is especially durable, given its sintered electrode design which is hardy to corrosion.**
 
 4.  How would you recommend logging data from the participants every day?
-    **OpenBCI provides the free GUI to help customers verify proper hardware connection and provide a software for free raw data storage, visualization, and streaming. Please note the OpenBCI GUI does not provide built-in data cleaning or analysis. Many third-party softwares are compatible with the OpenBCI system. For a full list, head to docs.openbci.com --&gt; software**
+    **OpenBCI provides the free GUI to help customers verify proper hardware connection and provide a software for free raw data storage, visualization, and streaming. Please note the OpenBCI GUI does not provide built-in data cleaning or analysis. Many third-party softwares are compatible with the OpenBCI system. For a full list, head to https://docs.openbci.com/Software/SoftwareLanding.**
 
 5.  Do you recommend using the OpenBCI EEG Headband Kit or the EEG Electrode Cap?
     **We recommend the EEG electrode cap for sleep study. Sintered electrode cap plus electrode gel is the gold standard of EEG data acquisition.**
