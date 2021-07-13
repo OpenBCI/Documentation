@@ -65,8 +65,9 @@ If you need help or have any questions, email [support@openbci.com](mailto:suppo
 
 **[Full Technical Information](https://drive.google.com/file/d/1Ri2UPmPH2SrTjYQ8Mj046ciWLGzRxCSl/view?usp=sharing)**
 <br />
+
 | Parameters | Specs |
-\|---\|---\|
+|---|---|
 | Electrode Height | 7 mm |
 | External Diameter | 19 mm |
 | Bio-contact Area Diameter | 15 mm |

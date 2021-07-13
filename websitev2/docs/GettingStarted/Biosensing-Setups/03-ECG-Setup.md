@@ -86,6 +86,7 @@ Follow the diagram below to connect the first 3 Sticky Electrodes. On the diagra
 The last electrode cable connects the bottom BIAS pin on the Cyton to RL.
 
 <br /><br />
+
 ![ECG_Cyton_No_V](../../assets/TutorialImages/ECG_Cyton_No_V.jpg)
 
 **Connections for 5-lead ECG, shown above**
