@@ -44,7 +44,7 @@ Navigate to `http://192.168.0.XXX/update` where `192.168.0.XXX` is the IP Addres
 
 ![navigate to update page](../../assets/ThirdPartyImages/wifi_firmware_update_ip_address.png)
 
-On mac, you may use your shields unique name instead of the ip address; i.e.  where `2F0E` is your devices unique identifier. Either option works on Mac.
+On Mac, you may use your shields unique name instead of the ip address; i.e. `http://OpenBCI-2F0E.local/update` where `2F0E` is your devices unique identifier. Either option works on Mac.
 
 ![use unique id on mac](../../assets/ThirdPartyImages/wifi_firmware_update_mac_using_mdns.png)
 
