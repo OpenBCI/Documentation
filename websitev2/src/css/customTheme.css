@@ -7,3 +7,14 @@
   --ifm-color-primary-darker: #1A3B5E;
   --ifm-color-primary-darkest: #16304D;
 }
+
+html[data-theme='dark'] {
+  /*--ifm-color-primary: #4e89e8;*/
+  /*--ifm-color-primary-dark: #5a91ea;*/
+  /* any other colors you wish to overwrite */
+  --ifm-navbar-link-hover-color: #00A3DD;
+  --ifm-link-color: #00A3DD;
+  --ifm-menu-color-active: #00A3DD;
+  --ifm-color-primary: #00A3DD;
+  --ifm-color-primary-dark: #00A3DD;
+}
