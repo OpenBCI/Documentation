@@ -40,7 +40,7 @@ module.exports={
     "navbar": {
       "title": "OpenBCI Documentation",
       "logo": {
-        "src": "img/favicon_large.ico"
+        "src": "img/openbci-logo.svg"
       },
       "items": [
         {
@@ -80,7 +80,7 @@ module.exports={
       "links": [],
       "copyright": "Copyright © 2021 OpenBCI",
       "logo": {
-        "src": "img/favicon_large.ico"
+        "src": "img/openbci-logo.svg"
       }
     },
     "algolia": {
