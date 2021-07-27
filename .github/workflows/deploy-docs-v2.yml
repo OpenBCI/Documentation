@@ -43,6 +43,7 @@ jobs:
         run: |
           git config --global user.email "retiutut@icloud.com"
           git config --global user.name "retiutut"
+          cd website
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
