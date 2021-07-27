@@ -223,7 +223,7 @@ Caution:
     **The EEG headband is a starter kit for those new to EEG. It has not been tested for applications like sleep studies. The EEG electrode cap is a more suitable product**
 
 13. We want to be able to use the EEG data for sleep scoring, and I was wondering whether the output file can be saved in edf format, so that is readable with some sleep scoring softwares such as RemLogic?
-    **The files are saved to .csv or bdf format. For information on the software, head to the [GUI Widget Guide](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIWidgets).**
+    **The files are saved to .csv or bdf format. For information on the software, head to the [GUI Widget Guide](../../../Software/OpenBCISoftware/GUIWidgets).**
 
 14. Since we want to record data during sleep (~8-9 hours), I wanted to know the power consumption of the system, and how long the battery can last.
     **A Lithium battery with high capacitance, such as [this one](https://www.digikey.com/products/en?mpart=328&v=1528) with 2500 mAh, should allow the system to operate overnight**

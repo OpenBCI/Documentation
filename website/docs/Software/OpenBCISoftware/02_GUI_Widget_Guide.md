@@ -6,7 +6,7 @@ title: GUI Widget Guide
 
 GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left-hand corner of every widget, there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
 
-The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Download the stand-alone GUI directly from the [OpenBCI GitHub](https://github.com/OpenBCI/OpenBCI_GUI/releases)
+The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Download the stand-alone GUI directly from the [OpenBCI GitHub](https://github.com/OpenBCI/OpenBCI_GUI/releases/latest).
 
 ## Time Series
 
