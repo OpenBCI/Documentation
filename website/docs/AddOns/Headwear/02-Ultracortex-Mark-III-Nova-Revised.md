@@ -220,7 +220,7 @@ First, use a 1/16" drillbit to expand the holes on the Ultracortex frame. This w
 
 Use four #4 Drive Screws to mount the BOARD_HOLDER to the FRAME. Make sure that the orientation of the BOARD_HOLDER matches that of the pictures below:
 
-![image](../../assets/HeadwareImages/boardMount.jpg)
+![image](../../assets/HeadwareImages/boardMount.JPG)
 
 ### Assemble the Comfort Nodes
 
@@ -252,7 +252,7 @@ Then, slide the OCTABOLT over the top:
 
 **Note:** Before glueing the OCTANUT into the frame ensure, that it fits properly into the frame without glue.
 
-![image](../../assets/HeadwareImages/insertOCTANUT.jpg)
+![image](../../assets/HeadwareImages/insertOCTANUT.JPG)
 
 For each OCTANUT, line the inner rim of frame with glue. Then insert the OCTANUT so that it is flush with the frame.
 
@@ -260,7 +260,7 @@ For each OCTANUT, line the inner rim of frame with glue. Then insert the OCTANUT
 
 Your Ultracortex should now look like this:
 
-![image](../../assets/HeadwareImages/nodes_in.jpg)
+![image](../../assets/HeadwareImages/nodes_in.JPG)
 
 ### Embed OpenBCI into the Ultracortex
 
@@ -334,7 +334,7 @@ First, slide a **Machine Screw (2-56 Thread, 3/4" Length)** through the FRI elec
 ![image](../../assets/HeadwareImages/insertscrew.jpg)
 
 Then, slide the screw and electrode into the ELECTRODE_HOLDER
-![image](../../assets/HeadwareImages/inserttrode.jpg)
+![image](../../assets/HeadwareImages/insertTrode.JPG)
 
 Next, twist a _Hex Nut (2-56 Thread Size, 3/16" Wide, 1/16" High)_ onto the screw, securing the electrode to the holder.
 ![image](../../assets/HeadwareImages/fastenNut.jpg)
@@ -350,15 +350,15 @@ This part is a little bit tricky! Wrap the exposed metal of your wire once aroun
 
 Then, twist your second Hex Nut onto the screw, securing the wire between the two nuts. You can use wire cutters to firmly screw the nut into place.
 
-![image](../../assets/HeadwareImages/fastenNut2.jpg)
+![image](../../assets/HeadwareImages/fastenNut2.JPG)
 
 Slide a **Suggested Spring 1 (aka "Weak Spring")** and then the OCTABOLT around the wire as shown below.
 
-![image](../../assets/HeadwareImages/fullPart.jpg)
+![image](../../assets/HeadwareImages/fullPart.JPG)
 
 Snap the full electrode unit together, guiding the semi-spherical protrusions on the outside of the SPRING_CASING into the relief cuts of the OCTABOLT.
 
-![image](../../assets/HeadwareImages/completedPart.jpg)
+![image](../../assets/HeadwareImages/completedPart.JPG)
 
 Voila! Spring-loaded electrode GIF!
 

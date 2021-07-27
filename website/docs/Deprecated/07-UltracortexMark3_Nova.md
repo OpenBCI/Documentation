@@ -252,7 +252,7 @@ Then, slide the OCTABOLT over the top:
 
 **Note:** Before glueing the OCTANUT into the frame ensure, that it fits properly into the frame without glue.
 
-![image](../assets/DepImages/insertOCTANUT.jpg)
+![image](../assets/DepImages/insertOCTANUT.JPG)
 
 For each OCTANUT, line the inner rim of frame with glue. Then insert the OCTANUT so that it is flush with the frame.
 
@@ -260,7 +260,7 @@ For each OCTANUT, line the inner rim of frame with glue. Then insert the OCTANUT
 
 Your Ultracortex should now look like this:
 
-![image](../assets/DepImages/nodes_in.jpg)
+![image](../assets/DepImages/nodes_in.JPG)
 
 ### Embed OpenBCI into the Ultracortex
 
@@ -334,7 +334,7 @@ First, slide a **Machine Screw (2-56 Thread, 3/4" Length)** through the FRI elec
 ![image](../assets/DepImages/insertscrew.jpg)
 
 Then, slide the screw and electrode into the ELECTRODE_HOLDER
-![image](../assets/DepImages/inserttrode.jpg)
+![image](../assets/DepImages/insertTrode.JPG)
 
 Next, twist a _Hex Nut (2-56 Thread Size, 3/16" Wide, 1/16" High)_ onto the screw, securing the electrode to the holder.
 ![image](../assets/DepImages/fastenNut.jpg)
@@ -350,15 +350,15 @@ This part is a little bit tricky! Wrap the exposed metal of your wire once aroun
 
 Then, twist your second Hex Nut onto the screw, securing the wire between the two nuts. You can use wire cutters to firmly screw the nut into place.
 
-![image](../assets/DepImages/fastenNut2.jpg)
+![image](../assets/DepImages/fastenNut2.JPG)
 
 Slide a **Suggested Spring 1 (aka "Weak Spring")** and then the OCTABOLT around the wire as shown below.
 
-![image](../assets/DepImages/fullPart.jpg)
+![image](../assets/DepImages/fullPart.JPG)
 
 Snap the full electrode unit together, guiding the semi-spherical protrusions on the outside of the SPRING_CASING into the relief cuts of the OCTABOLT.
 
-![image](../assets/DepImages/completedPart.jpg)
+![image](../assets/DepImages/completedPart.JPG)
 
 Voila! Spring-loaded electrode GIF!
 
