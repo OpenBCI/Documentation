@@ -51,7 +51,7 @@ If you are using the OpenBCI USB Dongle, attach the Daisy module on top of the C
 
 ### 2) Connect Y-Splitter Cable
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/GettingStartedImages/cytonDaisy_ySplitter_on_SRBpins.jpg?raw=true" width="60%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/GettingStartedImages/cytonDaisy_ySplitter_on_SRBpins.jpg?raw=true" width="60%" />
 
 The Y-Splitter connects the bottom `SRB` pin of the Daisy Board to the bottom `SRB` pin of the Cyton Board. The single end of the Y-Splitter connects to a reference point i.e. the earlobe or mastoid.
 

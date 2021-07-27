@@ -32,7 +32,7 @@ Download and install [Python](https://www.python.org/downloads/) (either version
 
 Follow the networking [tutorial](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIWidgets#networking) on this link to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channel 1 using the Networking Widget. Your Networking settings should look as follows:
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/EMG_Music_GUI.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/EMG_Music_GUI.png?raw=true" width="70%" />
 
 **Important**: Make sure your EMG widget is open before you start streaming.
 

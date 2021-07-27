@@ -36,7 +36,7 @@ the Electrode Cap is a low-cost, research-grade tool for obtaining 16 channels o
 
 Use the [y-splitter cable](../../GettingStarted/Boards/DaisyGS#2-y-splitter-cable) that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/GettingStartedImages/cytonDaisy_ySplitter_on_SRBpins.jpg?raw=true" width="50%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/GettingStartedImages/cytonDaisy_ySplitter_on_SRBpins.jpg?raw=true" width="50%" />
 
 Connect a HPTA cable to the single end of the y-splitter cable, then connect the its blue termination to the REF electrode of the cap, shown below.
 

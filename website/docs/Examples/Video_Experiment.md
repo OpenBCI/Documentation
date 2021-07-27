@@ -39,17 +39,17 @@ First, connect the headwear to yourself and the Cyton board, and read from it us
 
 The diagram for the circuit with the photocell and the button can be found below. 
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/ExamplesImages/Circuit_Diagram.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/Circuit_Diagram.png?raw=true" width="70%" />
 
 Using the components listed above, assemble the breadboard. You can find an example of how to assemble a button circuit using Arduino [here](https://www.arduino.cc/en/tutorial/button) and an example of how to assemble a photocell circuit [here](https://openbci.com/community/measuring-stimulus-timing-with-a-photoresistor/). The final breadboard should look similar to the pictures.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/ExamplesImages/Full_Breadboard_Setup.jpeg?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/Full_Breadboard_Setup.jpeg?raw=true" width="70%" />
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/ExamplesImages/Breadboard_Setup.jpeg?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/Breadboard_Setup.jpeg?raw=true" width="70%" />
 
 Next, connect the breadboard to the Cyton board as shown below. Place the breadboard beside your computer such that the photocell points to the lower-left corner of your screen, which is where the video trigger will be located.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/ExamplesImages/connect.jpeg?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/connect.jpeg?raw=true" width="70%" />
 
 ## Step 4: Run Experiment
 

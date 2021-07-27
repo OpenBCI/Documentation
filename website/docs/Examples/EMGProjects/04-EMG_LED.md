@@ -29,11 +29,11 @@ The following instructions have been written for use with Windows 10.
 
 For this project you will need five gold cup electrodes. Connect the first electrode cable to the bottom AGND pin, and the other _four_ electrode cables to the top and bottom pins of Channel 1 (**N1P**) and Channel 2 (**N2P**), as shown on the picture below.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/Facial_EMG_Cyton.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/Facial_EMG_Cyton.png?raw=true" width="70%" />
 
 Now it’s time to connect the electrodes to your body. To connect a gold cup electrode to your skip, apply some Ten20 paste on it like shown on the picture below, and stick it to your skin. To secure the connection, you can put some medical tape over it.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/Ten20.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/Ten20.png?raw=true" width="70%" />
 
 Now connect the five electrodes as shown on the picture below. The two electrodes on top of your eyebrow go to top and bottom N2P pins on the Cyton, the two electrodes closest to your mouth go to top and bottom N1P pins, and the electrode closest to your ear goes to bottom AGND. You can also use the color of the wires as a guide to know which electrode goes where.
 
@@ -49,7 +49,7 @@ Now connect the five electrodes as shown on the picture below. The two electrode
 
 <br />
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/Facial_EMG_Positions.jpeg?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/Facial_EMG_Positions.jpeg?raw=true" width="70%" />
 
 <br />
 
@@ -58,17 +58,17 @@ LEDs to the Arduino for each color. The connections are shown on the diagram bel
 
 Finally, the LED gets connected to the Emitter pin of the transistor and to the Arduino pin GND through a resistor. In this way, the transistor acts as a switch to turn ON/OFF the group of LEDs while protecting the Arduino pin from receiving too much current.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/Facial_EMG_Diagram.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/Facial_EMG_Diagram.png?raw=true" width="70%" />
 
 The diagram above needs to be replicated for every color, with as many LEDs as you like. An example breadboard set-up is shown below.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/LED_Panels.jpeg?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/LED_Panels.jpeg?raw=true" width="70%" />
 
 ## Step 2: Arduino Setup
 
 The first step is to download the Arduino IDE from [here](https://www.arduino.cc/en/main/software). Once you have downloaded and installed the Arduino IDE, you should see a screen like the one below.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/init_arduino_pic.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/init_arduino_pic.png?raw=true" width="70%" />
 
 Download the folder with the code from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/Facial_EMG_Multiple_LEDs) and open it using the Arduino IDE by clicking on File &gt;&gt; Open... and selecting the entire folder.  Connect the Arduino to the computer by clicking on **Tools**, then selecting the right Board and Port options. Next, click on Upload and wait for the code to be uploaded.
 
@@ -87,7 +87,7 @@ Download and install Python (either version 2 or 3). Python might already be ins
 
 Follow the Networking [Tutorial](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIWidgets#networking) to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data from Channels 1 and 2 using the Networking Widget. Your Networking settings should look as follows:
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/docs/assets/TutorialImages/EMG_Facial_GUI.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/EMG_Facial_GUI.png?raw=true" width="70%" />
 
 **Important**: Make sure your EMG widget is open before you start streaming.
 
