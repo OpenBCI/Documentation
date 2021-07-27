@@ -2,7 +2,7 @@ module.exports={
   "title": "OpenBCI Documentation",
   "tagline": "OpenBCI Docs",
   "url": "https://openbci.github.io",
-  "baseUrl": "/Documentation/",
+  "baseUrl": "/",
   "organizationName": "OpenBCI",
   "projectName": "Documentation",
   "scripts": [
