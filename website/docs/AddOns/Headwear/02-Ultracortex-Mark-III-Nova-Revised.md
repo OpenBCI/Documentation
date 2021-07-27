@@ -334,7 +334,7 @@ First, slide a **Machine Screw (2-56 Thread, 3/4" Length)** through the FRI elec
 ![image](../../assets/HeadwareImages/insertscrew.jpg)
 
 Then, slide the screw and electrode into the ELECTRODE_HOLDER
-![image](../../assets/HeadwareImages/insertTrode.jpg)
+![image](../../assets/HeadwareImages/inserttrode.jpg)
 
 Next, twist a _Hex Nut (2-56 Thread Size, 3/16" Wide, 1/16" High)_ onto the screw, securing the electrode to the holder.
 ![image](../../assets/HeadwareImages/fastenNut.jpg)
