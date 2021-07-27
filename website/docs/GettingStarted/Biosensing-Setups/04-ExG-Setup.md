@@ -15,9 +15,9 @@ at the same time. You could apply the same principle to build channel layouts to
 Before starting this tutorial, we recommend you go through at least one of the following guides to familiarize with OpenBCI 
 pipeline before starting this doc:
 
--   [EEG](EEGSetup): scalp surface recording brain activity. [Learn more](https://en.wikipedia.org/wiki/Electroencephalography)  
--   [EMG](EMGSetup): forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
--   [ECG](ECGSetup): \[measure heart rhythm on the chest [Learn more](https://en.wikipedia.org/wiki/Electrocardiography)
+-   [EEG](../EEGSetup): scalp surface recording brain activity. [Learn more](https://en.wikipedia.org/wiki/Electroencephalography)  
+-   [EMG](../EMGSetup): forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
+-   [ECG](../ECGSetup): \[measure heart rhythm on the chest [Learn more](https://en.wikipedia.org/wiki/Electrocardiography)
 
 * * *
 
@@ -76,11 +76,11 @@ We take six [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections
 sticky electrodes to the cables. Use three sticky electrodes for ECG and the other three is for EMG.
 
 For **ECG**, connect two cables to **N1P** top and bottom pin, connect the remaining one to bottom pin of **BIAS**.
-Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](ECGSetup).
-For note on ECG signal quality, you can refer to the section _Improving Signal Quality_ in the [ECG tutorial](ECGSetup).
+Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](../ECGSetup).
+For note on ECG signal quality, you can refer to the section _Improving Signal Quality_ in the [ECG tutorial](../ECGSetup).
 
 For **EMG**, connect two cables to **N8P** top and bottom pin, and the remaining one to **AGND**.
-Attach the electrodes to your arm, the recommended layout is described in the [EMG tutorial](EMGSetup).
+Attach the electrodes to your arm, the recommended layout is described in the [EMG tutorial](../EMGSetup).
 
 ![EMG and ECG on Daisy](../../assets/GettingStartedImages/ExG_daisy_EMG_ECG.jpg)
 
@@ -88,7 +88,7 @@ Attach the electrodes to your arm, the recommended layout is described in the [E
 
 **Note**
 
-Please refer to the [ECG tutorial](ECGSetup) for alternative 5-lead ECG setup.
+Please refer to the [ECG tutorial](../ECGSetup) for alternative 5-lead ECG setup.
 
 * * *
 
@@ -111,13 +111,13 @@ The complete setup should look like this
 
 ## Visualizing the data in OpenBCI GUI
 
-If you don't have the GUI installed, please refer to [this guide](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIDocs) to learn
+If you don't have the GUI installed, please refer to [this guide](../../../Software/OpenBCISoftware/GUIDocs) to learn
 about how to set up the OpenBCI GUI for your operating system.
 
 Attach battery, power on the board in Bluetooth mode by flipping the switch towards the top of the board (where the
 pins are). Connect the USB dongle to your computer. Flip the switch on the dongle, so it's at GPIO6 (closer to the USB port).
 
-Open the [OpenBCI GUI](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIDocs), select CYTON (live) -&gt;
+Open the [OpenBCI GUI](../../../Software/OpenBCISoftware/GUIDocs), select CYTON (live) -&gt;
 Serial (from Dongle) -&gt; 16 CHANNELS. Click AUTO-CONNECT. Note that we are not using all 16 channels, we are going to turn
 off the channels that we don't use in the GUI.
 

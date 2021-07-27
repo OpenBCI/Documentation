@@ -203,7 +203,7 @@ Play around with the vertical scale, filter, frequency range to see the effect o
 
 For more details on the various GUI functions, scroll up to the OpenBCI Software section of the Headband-Ganglion Tutorial above.
 
-For cool project ideas, head over to the [**Example Projects**](https://docs.openbci.com/docs/Examples/ExamplesLanding) Directory!
+For cool project ideas, head over to the [**Example Projects**](https://docs.openbci.com/Examples/ExamplesLanding) Directory!
 
 **Use Cases for OpenBCI GUI**
 
