@@ -14,7 +14,7 @@ module.exports={
   },
   "onBrokenLinks": "log",
   "onBrokenMarkdownLinks": "log",
-  "trailingSlash": false,
+  "trailingSlash": true,
   "presets": [
     [
       "@docusaurus/preset-classic",
