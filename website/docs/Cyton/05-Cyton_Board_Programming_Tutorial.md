@@ -6,7 +6,7 @@ title: Cyton Board Programming Tutorial
 
 ## Overview
 
-The OpenBCI Cyton boards have powerful microcontrollers on them which ship with the latest OpenBCI firmware to interface with the on-board ADS1299, Accelerometer, and SD card. This tutorial explains how to program the firmware using the OpenBCI Dongle and you PC. If we come out with a firmware upgrade, or if your or someone comes up with a custom program that you want to implement, you should use the following method. We made major changes to the Cyton firmware in 2016 with v2.x and again in 2017 with v3.x. This tutorial covers the v2 and v3, as well as v1. If you have already mucked about in the code using the v1 firmware, and want to upgrade, check out the [Notes](CytonProgram#notes-on-updating-and-using-v200-cyton-firmware) at the end of this doc. Happy Hacking!
+The OpenBCI Cyton boards have powerful microcontrollers on them which ship with the latest OpenBCI firmware to interface with the on-board ADS1299, Accelerometer, and SD card. This tutorial explains how to program the firmware using the OpenBCI Dongle and you PC. If we come out with a firmware upgrade, or if your or someone comes up with a custom program that you want to implement, you should use the following method. We made major changes to the Cyton firmware in 2016 with v2.x and again in 2017 with v3.x. This tutorial covers the v2 and v3, as well as v1. If you have already mucked about in the code using the v1 firmware, and want to upgrade, check out the [Notes](#notes-on-updating-and-using-v200-cyton-firmware) at the end of this doc. Happy Hacking!
 
 ## Firmware Versions 2.x.x & 3.x.x (Fall 2016 - present)
 

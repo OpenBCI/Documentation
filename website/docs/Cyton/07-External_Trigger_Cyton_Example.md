@@ -36,7 +36,7 @@ Learn more about board modes in the [Cyton SDK](Cyton/04-OpenBCI_Cyton_SDK.md#fi
 
 ### External Triggering The Easy Way (Firmware 2.x.x)
 
-Update to firmware version 3.x.x using the tutorial [**here**](CytonProgram)! May all your troubles disappear!  
+Update to firmware version 3.x.x using the tutorial [**here**](Cyton/CytonProgram)! May all your troubles disappear!  
 
 ### Sample Code Links
 
