@@ -5,19 +5,24 @@ node_modules
 lib/core/metadata.js
 lib/core/MetadataBlog.js
 
-websitev2/build/
+website/translated_docs
+website/build/
+website/yarn.lock
+website/node_modules
+website/i18n/*
+website/package-lock.json
 .env
 
 
 # dependencies
-websitev2/node_modules
+website/node_modules
 
 # production
-websitev2/build
+website/build
 
 # generated files
-websitev2/.docusaurus
-websitev2/.cache-loader
+website/.docusaurus
+website/.cache-loader
 
 # misc
 .DS_Store
