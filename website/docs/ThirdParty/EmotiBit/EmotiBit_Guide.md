@@ -36,4 +36,4 @@ Save data to an SD card, stream via LSL, OSC, TCP, etc, or open up the code and 
 Head to the [EmotiBit Github](https://github.com/EmotiBit) for complete guides and documentation.
 Happy sensing!
 
-![EmotiBot](../../assets/ThirdPartyImages/Emotibot.png)
+![EmotiBot](../../assets/ThirdPartyImages/EmotiBot.png)

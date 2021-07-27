@@ -220,7 +220,7 @@ First, use a 1/16" drillbit to expand the holes on the Ultracortex frame. This w
 
 Use four #4 Drive Screws to mount the BOARD_HOLDER to the FRAME. Make sure that the orientation of the BOARD_HOLDER matches that of the pictures below:
 
-![image](../assets/DepImages/boardMount.jpg)
+![image](../assets/DepImages/boardMount.JPG)
 
 ### Assemble the Comfort Nodes
 
