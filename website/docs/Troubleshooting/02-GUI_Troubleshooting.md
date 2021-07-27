@@ -40,7 +40,7 @@ title: GUI Troubleshooting
 
 ### Cyton
 
- Please, be advised that packet loss can occur in noisy environments, especially in university lab environments with multiple Cytons running. If you think you are experiencing packet loss, you can open the [Console Log Window](GUI_Troubleshooting#the_gui_console_log) to confirm or deny packet loss and assess severity. Also, boards with low battery power may show packet loss and excessive noise.
+ Please, be advised that packet loss can occur in noisy environments, especially in university lab environments with multiple Cytons running. If you think you are experiencing packet loss, you can open the [Console Log Window](#the-gui-console-log) to confirm or deny packet loss and assess severity. Also, boards with low battery power may show packet loss and excessive noise.
 
  To fix this:
 

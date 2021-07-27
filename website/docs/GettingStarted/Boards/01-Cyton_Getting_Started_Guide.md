@@ -234,7 +234,7 @@ To learn how to connect yourself to OpenBCI using your newly set up board, see t
 -   [EMG Setup](GettingStarted/Biosensing-Setups/02-EMG-Setup.md)
 -   [ECG Setup](GettingStarted/Biosensing-Setups/03-ECG-Setup.md)
 
-In the above setups, you may need to adjust the Hardware Settings of the ADS1299 chip, the core piece of technology in the Cyton. [Click here](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#hardware-settings) for more info on Cyton Hardware Settings UI in the Time Series Widget. If you are an advanced user, you can look at the GUI console log after changing hardware settings and the [Cyton SDK Guide](../../Cyton/CytonSDK#channel-setting-commands) to learn how to send custom commands to the Cyton using [any BrainFlow binding](../../ForDevelopers/SoftwareDevelopment).
+In the above setups, you may need to adjust the Hardware Settings of the ADS1299 chip, the core piece of technology in the Cyton. [Click here](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#hardware-settings) for more info on Cyton Hardware Settings UI in the Time Series Widget. If you are an advanced user, you can look at the GUI console log after changing hardware settings and the [Cyton SDK Guide](../../../Cyton/CytonSDK#channel-setting-commands) to learn how to send custom commands to the Cyton using [any BrainFlow binding](../../../ForDevelopers/SoftwareDevelopment).
 
 ## VI. Fixing FTDI Buffering on Mac OS
 
