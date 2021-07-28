@@ -19,7 +19,7 @@ The following instructions have been written for use with Windows 10.
 
 ## Step 1: Hardware Assembly.
 
-Follow the EMG Getting Started [tutorial](../../GettingStarted/Biosensing-Setups/02-EMG-Setup.md) on this link to connect the electrodes to your body and the Cyton board, and read data from it using the OpenBCI GUI. For this tutorial, you will need to connect both arms, one to Channel 1 and the other one to Channel 2. Only one ground is needed.
+Follow the EMG Getting Started [tutorial](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) on this link to connect the electrodes to your body and the Cyton board, and read data from it using the OpenBCI GUI. For this tutorial, you will need to connect both arms, one to Channel 1 and the other one to Channel 2. Only one ground is needed.
 
 ## Step 2: Software Setup.
 
@@ -30,11 +30,13 @@ Download and install [Python](https://www.python.org/downloads/) (either version
 
 ## Step 3: Data Stream using the GUI.
 
-Follow the networking [tutorial](https://docs.openbci.com/docs/Software/OpenBCISoftware/GUIWidgets#networking) to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data using the Networking Widget. Your Networking settings should look as follows:
+Follow the networking [tutorial](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data using the Networking Widget. Your Networking settings should look as follows:
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/EMG_Scrolling_GUI.png?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/EMG_Scrolling_GUI.png?raw=true" width="100%" />
 
+:::info
 **Important:** Make sure your EMG widget is open before you start streaming.
+:::
 
 ## Step 4: Using a Python Script to Read the Data and Scroll.
 

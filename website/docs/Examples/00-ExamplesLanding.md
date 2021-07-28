@@ -6,26 +6,26 @@ The Examples directory to the left contains example projects contributed by memb
 
 ## New EMG Projects and Tutorials
 
-We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](https://docs.openbci.com/docs/GettingStarted/Biosensing-Setups/ECGSetup) and stand-alone [EMG](https://docs.openbci.com/docs/GettingStarted/Biosensing-Setups/EMGSetup) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration.  We look forward to seeing what you create!
+We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](GettingStarted/Biosensing-Setups/03-ECG-Setup.md) and stand-alone [EMG](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration.  We look forward to seeing what you create!
 
 Note, the example projects below are written for the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) but can be applied to [Ganglion board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) as well.
 
 ### EMG Scrolling
 
-[Tutorial](https://docs.openbci.com/docs/Examples/EMGProjects/EMGscrolling) for touch-less scrolling with limb EMG
+[Tutorial](Examples/EMGProjects/01-EMG_Scrolling.md) for touch-less scrolling with limb EMG
 
 ### EMG-controlled Stop/Start Music
 
-[Tutorial](https://docs.openbci.com/docs/Examples/EMGProjects/EMGmusic) for limb EMG-triggered music playback
+[Tutorial](Examples/EMGProjects/02-EMG_Controlled_Music.md) for limb EMG-triggered music playback
 
 ### EMG-controlled Slideshow
 
-[Tutorial](https://docs.openbci.com/docs/Examples/EMGProjects/EMGslideshow) for eye, facial, or arm EMG-controlled slideshow
+[Tutorial](Examples/EMGProjects/03-EMG_Controlled_Slideshow.md) for eye, facial, or arm EMG-controlled slideshow
 
 ### EMG-controlled LED
 
-[Tutorial](https://docs.openbci.com/docs/Examples/EMGProjects/EMG_LED) for facial EMG-controlled LEDs
+[Tutorial](Examples/EMGProjects/04-EMG_LED.md) for facial EMG-controlled LEDs
 
 ### EMG-controlled Chrome Browser Dinosaur Game
 
-[Tutorial](https://docs.openbci.com/docs/Examples/EMGProjects/EMG_Chrome_Dino_Game) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG
+[Tutorial](Examples/EMGProjects/05-EMG_Chrome_Dino_Game.md) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG
