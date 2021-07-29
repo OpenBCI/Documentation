@@ -20,7 +20,7 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "showLastUpdateAuthor": true,
+          "showLastUpdateAuthor": false,
           "showLastUpdateTime": true,
           "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/websitev2/",
           "path": "docs",
