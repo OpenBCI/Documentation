@@ -76,7 +76,7 @@ module.exports={
         }
       ]
     },
-    "image": "img/undraw_online.svg",
+    "image": "img/openbci-logo-web.png",
     "footer": {
       "links": [],
       "copyright": "Copyright © 2021 OpenBCI",
