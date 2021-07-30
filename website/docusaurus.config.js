@@ -76,7 +76,7 @@ module.exports={
         }
       ]
     },
-    "image": "https://openbci.github.io/Documentationimg/UC-production-1140x424.jpg",
+    "image": "https://openbci.github.io/Documentation/img/UC-production-1140x424.jpg",
     "footer": {
       "links": [],
       "copyright": "Copyright © 2021 OpenBCI",
