@@ -61,6 +61,20 @@ If you need help or have any questions, email [support@openbci.com](mailto:suppo
 
 [![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/J2ZVDfayahs)
 
+## Using the ThinkPulse™ sensors with OpenBCI Cyton Board
+
+The following information applies specifically to Cyton and Cyton+Daisy Boards. If you are seeing `RAILED` in the GUI, try the following tips:
+
+1. Disconnect the BIAS earclip from the Cyton board.
+2. Go to the Hardware Settings (button is found above Time Series widget) and turn BIAS and SRB1 to `NO` and `OFF`.
+3. Keep SRB2 `ON`.
+4. For every channel, set the GAIN to '8' or less.
+5. Below, you will find a screenshot of what this should look like in the GUI Hardware Settings. If you are communicating directly with the Cyton, the command correlating to this picture would be `x1040010X`.
+6. Pressing the `Save` button at the bottom of the Hardware Settings will allow you to store this configuration as a file.
+7. Next time you want to use the Cyton with ThinkPulse Electrodes, open Hardware Settings to `Load` and then `Send` channel settings. If you are using BrainFlow outside of the GUI, simply send these commands after instantiating the Board.
+
+![ThinkPulse and Cyton Channel Setting Example](../../assets/ThirdPartyImages/ThinkPulse_Cyton_HardwareChannelSetting.png)
+
 ## Technical Specs and Data Sheet
 
 **[Full Technical Information](https://drive.google.com/file/d/1Ri2UPmPH2SrTjYQ8Mj046ciWLGzRxCSl/view?usp=sharing)**
@@ -81,19 +95,11 @@ If you need help or have any questions, email [support@openbci.com](mailto:suppo
 
 <br />
 
-## Troubleshooting
+## Additional Troubleshooting
+When using the ThinkPulse Active Electrodes with Cyton, make sure to set the correct channel settings. This should resolve most issues. If you still have issues, you can reach out on the [OpenBCI Forum](https://openbci.com/forum) or send us an email at [contact@openbci.com](mailto:contact@openbci.com).
 
-If you are seeing 'RAILED' in the GUI, try the following tips:
-
-1) Disconnect the BIAS earclip from the Cyton board
-2) Go to the Hardware Settings (button is found above Time Series widget) and turn BIAS and SRB1 'OFF'
-3) Keep SRB2 'ON'
-4) For every channel, set the GAIN to '8' or less
-5) Stop the session, close the GUI, turn off the Cyton board
-6) Start the system up again. The changes you made to the settings will be saved
-
-Please also refer to the resolved [troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Forum,
+You can also refer to [this resolved troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Forum.
 
 ## Non-medical Use Disclaimer
 
-The ThinkPulse™ Starter Kit and the ThinkPulse™ Electrode Set are not a medical device nor are intended for medical diagnosis and are provided to you "as is." OpenBCI, Inc. provides the above product under the following conditions: This evaluation kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY.
+The ThinkPulse™ Starter Kit and the ThinkPulse™ Electrode Set are not medical devices and are not intended for medical diagnosis. These products are provided to you "as is." OpenBCI, Inc. provides the above product under the following conditions: This evaluation kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY.
