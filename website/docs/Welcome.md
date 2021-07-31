@@ -22,10 +22,6 @@ Welcome to the **OpenBCI Learning Pages**! Here you will find a wide range of gu
 
 We put together [The OpenBCI Citation List](https://openbci.com/citations), a collection of recently published peer-reviewed research using OpenBCI products. We're proud of how many OpenBCI-based research reports are out there!
 
-### Docs Website Update
-
-We have recently updated the Docs website! You may be seeing this page if you have attempted to access a page that has moved. You can find the same information using either the dropdowns on the left or the "Search Docs" function in the top right of this window. Enjoy!
-
 ### Contributing
 
 If you are interested in contributing to the OpenBCI Learning Pages, feel free to create your own Markdown file and submit a pull request to relevant sub-directory of the [Docs repo](https://github.com/openbci/Documentation) on our Github! If you notice any mistakes in these guides, you can also submit issues there.

@@ -203,7 +203,8 @@
                 "FAQ/HowProductsGoTogether",
                 "FAQ/HardFAQ",
                 "FAQ/PaymentFAQ",
-                "FAQ/ShippingFAQ"
+                "FAQ/ShippingFAQ",
+                "FAQ/DocsUpdate"
             ]
           }, {
             "type": "category",
