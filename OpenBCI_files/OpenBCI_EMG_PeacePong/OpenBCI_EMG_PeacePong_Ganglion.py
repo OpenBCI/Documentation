@@ -17,6 +17,7 @@ import numpy as np
 import collections
 import pyautogui
 import pandas as pd
+from typing import Any
 
 import brainflow
 from brainflow.board_shim import BoardShim, BrainFlowInputParams
@@ -25,41 +26,8 @@ from brainflow.data_filter import DataFilter, FilterTypes, AggOperations, Window
 import tkinter as tk
 
 time_to_play_game = False
-
-class Application(tk.Frame):
-    status = tk.Label
-
-    def __init__(self, master=None):
-        super().__init__(master)
-        self.master = master
-        self.master.minsize(400, 200)
-        self.master.title("OpenBCI EMG Gaming App")
-        self.pack()
-        self.create_widgets()
-
-    def create_widgets(self):
-        self.status = tk.Label(self, text="Game Controls Off")
-
-        self.hi_there = tk.Button(self)
-        self.hi_there["text"] = "Toggle EMG Game Controls"
-        self.hi_there["command"] = self.toggle_game_state
-        self.hi_there.pack(side="top", pady=100)
-
-        self.quit = tk.Button(self, text="QUIT", fg="red",
-                              command=self.master.destroy)
-        self.quit.pack(side="bottom")
-
-    def toggle_game_state(self):
-        global time_to_play_game
-        time_to_play_game = not time_to_play_game
-        print("Toggling Game Controls. New State == %b" % time_to_play_game)
-        if time_to_play_game:
-            self.status["text"] = "Game Controls On"
-        else:
-            self.status["text"] = "Game Controls Off"
-
-    def draw(self):
-        pass
+board = None
+args = None
 
 def parse_arguments():
     parser = argparse.ArgumentParser ()
@@ -76,6 +44,7 @@ def parse_arguments():
     parser.add_argument ('--serial-number', type = str, help  = 'serial number', required = False, default = '')
     parser.add_argument ('--board-id', type = int, help  = 'board id, check docs to get a list of supported boards', required = True)
     parser.add_argument ('--log', action = 'store_true')
+    global args
     args = parser.parse_args ()
 
     params = BrainFlowInputParams ()
@@ -92,25 +61,19 @@ def parse_arguments():
         BoardShim.enable_dev_board_logger ()
     else:
         BoardShim.disable_board_logger ()
-
+    global board
     board = BoardShim (args.board_id, params)
-    return board, args
-
-def main ():
-
-    root = tk.Tk()
-    app = Application(master=root)
-
-    result = parse_arguments()
-    board = result[0]
-    args = result[1]
     print("Arguments have been parsed...")
 
+def connect_to_brainflow_board():
+    parse_arguments()
+    global board
     tries = 3;
     for x in range(0, tries):
         try:
             print("Attempting to connect. Try #%d" % x)
-            board.prepare_session ()
+            if (board is not None):
+                board.prepare_session ()
             break
         except brainflow.board_shim.BrainFlowError as e:
             print(e)
@@ -121,24 +84,78 @@ def main ():
             time.sleep(3)
 
     print("Instantiated BrainFlow Board! Now streaming data from Board!")
-    board.start_stream (45000)
-    prev_time = int(round(time.time() * 1000))
+    if (board is not None):
+        board.start_stream (45000)
+
+class Application(tk.Frame):
+    status = tk.Label
+
+    def __init__(self, master=None):
+        super().__init__(master)
+        self.master = master
+        self.master.minsize(400, 200)
+        self.master.title("OpenBCI EMG Gaming App")
+        self.pack()
+        self.create_widgets()
+
+    def create_widgets(self):
+        self.status = tk.Label(self, text="Game Controls Off")
+        self.status.pack(side="top", pady=10)
+
+        self.instatiate_but = tk.Button(self)
+        self.instatiate_but["text"] = "Connect to Board"
+        self.instatiate_but["command"] = self.connect_to_board
+        self.instatiate_but.pack(side="top", pady=50)
+
+
+        self.hi_there = tk.Button(self)
+        self.hi_there["text"] = "Toggle EMG Game Controls"
+        self.hi_there["command"] = self.toggle_game_state
+        self.hi_there.pack(side="top", pady=90)
+
+        self.quit = tk.Button(self, text="QUIT", fg="red", command=self.master.destroy)
+        self.quit.pack(side="bottom", pady=10)
+
+    def toggle_game_state(self):
+        global time_to_play_game
+        time_to_play_game = not time_to_play_game
+        print("Toggling Game Controls. New State == %s" % time_to_play_game)
+        if time_to_play_game:
+            self.status["text"] = "Game Controls On"
+        else:
+            self.status["text"] = "Game Controls Off"
+
+    def connect_to_board(self):
+        connect_to_brainflow_board()
+
+    def draw(self):
+        pass 
+
+def main ():
+
+    root = tk.Tk()
+    app = Application(master=root)
+    root.lift()
 
     # initialize calibration and time variables
+    prev_time = int(round(time.time() * 1000))
     time_thres =  100
-    sampling_rate = BoardShim.get_sampling_rate (args.board_id)
-    window = sampling_rate*5 # 5 second window   
+    sampling_rate = 0
     flex_thres = 0.8
+    global board
 
     # Main App Loop
     while True:
         # Update and draw the GUI
         app.draw()
         root.update()
+        if (args is not None):
+            sampling_rate = BoardShim.get_sampling_rate (args.board_id)
+        window = sampling_rate*5 # 5 second window   
         
         # Do the magic and control key presses if user toggles the controls button
-        if (time_to_play_game):
-            data = board.get_current_board_data(window) # get data 
+        if (time_to_play_game and board is not None):
+            data = board.get_current_board_data(window)
             DataFilter.perform_rolling_filter (data[1], 2, AggOperations.MEAN.value) # denoise data
             maximum = max(data[1])
             minimum = min(data[1])
@@ -151,7 +168,8 @@ def main ():
                         ##pyautogui.press('up') # jump
                         print("Jump! - " + ctime(time.time()));
                         break
-
+    
+    print("Stopping data stream and ending session.")
     board.stop_stream ()
     board.release_session ()
 
