@@ -101,8 +101,9 @@ def main ():
     root = tk.Tk()
     app = Application(master=root)
 
-    board = parse_arguments()[0]
-    args = parse_arguments[1]
+    result = parse_arguments()
+    board = result[0]
+    args = result[1]
     print("Arguments have been parsed...")
 
     tries = 3;
