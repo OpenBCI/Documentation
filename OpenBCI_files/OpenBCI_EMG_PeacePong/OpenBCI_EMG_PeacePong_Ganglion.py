@@ -28,6 +28,8 @@ import tkinter as tk
 time_to_play_game = False
 board = None
 args = None
+sampling_rate = 0
+window = 0
 
 def parse_arguments():
     parser = argparse.ArgumentParser ()
@@ -56,6 +58,11 @@ def parse_arguments():
     params.ip_address = args.ip_address
     params.ip_protocol = args.ip_protocol
     params.timeout = args.timeout
+
+    global sampling_rate
+    global window
+    sampling_rate = BoardShim.get_sampling_rate (args.board_id)
+    window = sampling_rate*5 # 5 second window   
 
     if (args.log):
         BoardShim.enable_dev_board_logger ()
@@ -139,19 +146,18 @@ def main ():
 
     # initialize calibration and time variables
     prev_time = int(round(time.time() * 1000))
-    time_thres =  100
-    sampling_rate = 0
+    time_thres =  1000
     flex_thres = 0.8
     global board
+    global sampling_rate
+    global window
+    do_action = False
 
     # Main App Loop
     while True:
         # Update and draw the GUI
         app.draw()
         root.update()
-        if (args is not None):
-            sampling_rate = BoardShim.get_sampling_rate (args.board_id)
-        window = sampling_rate*5 # 5 second window   
         
         # Do the magic and control key presses if user toggles the controls button
         if (time_to_play_game and board is not None):
@@ -161,13 +167,14 @@ def main ():
             minimum = min(data[1])
             norm_data = (data[1,(window-(int)(sampling_rate/2)):(window-1)] - minimum) / (maximum - minimum) # normalize as many samples as needed
 
-            if((int(round(time.time() * 1000)) - time_thres) > prev_time): # if enough time has gone by since the last flex
+            do_action = (int(round(time.time() * 1000)) - time_thres) > prev_time
+            if(do_action): # if enough time has gone by since the last flex
                 prev_time = int(round(time.time() * 1000)) # update time
                 for element in norm_data:
                     if(element >= flex_thres):
                         ##pyautogui.press('up') # jump
-                        print("Jump! - " + ctime(time.time()));
-                        break
+                        print("Jump! - " + ctime(time.time()))
+                        break  
     
     print("Stopping data stream and ending session.")
     board.stop_stream ()
