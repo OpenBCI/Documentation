@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######
+pylsl
+pyautogui
+brainflow
+numpy
+Tkinter
