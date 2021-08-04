@@ -42,7 +42,7 @@ Once the script has launched, follow the instructions on the terminal. The scrip
 
 **Important**: If you are using `chrome_dino_v1.py` and the mean value printed out is negative, swap the N and P electrode cables and repeat calibration to get a positive mean.
 
-Next, disable your internet and open a Google Chrome tab. Start the game by pressing the spacebar or flexing your arm. Every time you flex, the dinosaur will jump. Since we’re processing raw signals, the threshold might need to be adjusted. If the jump is not getting triggered, play with the value of `flex_thres` by modifying the variable directly in `chrome_dino_v2.py` or the percentage multiplier set to 0.5 in `chrome_dino_v1.py`. You can also modify the time between flexes by changing the parameter `time_thres`.
+Next, open a Google Chrome tab and go to the url `chrome://dino`. You do not have to disable your internet to access this free game. Start the game by pressing the spacebar or flexing your arm. Every time you flex, the dinosaur will jump. Since we’re processing raw signals, the threshold might need to be adjusted. If the jump is not getting triggered, play with the value of `flex_thres` by modifying the variable directly in `chrome_dino_v2.py` or the percentage multiplier set to 0.5 in `chrome_dino_v1.py`. You can also modify the time between flexes by changing the parameter `time_thres`.
 
 To learn more about brainflow visit its [GitHub repository](https://github.com/brainflow-dev/brainflow) and its [Documentation](https://brainflow.readthedocs.io/en/stable/).
 
