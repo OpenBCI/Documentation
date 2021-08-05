@@ -185,7 +185,7 @@ This works similar to the Channel Settings commands. For firmware `v0` and `v1` 
 
 **EXAMPLE**
 
-User sends **z  4  1  0  Z**
+User sends **z  4  1  0  Z** or `z410Z`
 
 'z' enters Impedance Settings mode. Channel 4 is set up to measure impedance on the P input. The final 'Z' latches the settings to the ADS registers.
 
