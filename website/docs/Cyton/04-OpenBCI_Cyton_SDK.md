@@ -51,29 +51,29 @@ Pay attention to timing when sending commands when using `v0` and `v1` firmware.
 
 ### Turn Channels OFF
 
-**1 2 3 4 5 6 7 8**  
+**1 2 3 4 5 6 7 8**
 These ASCII characters turn the respective channels [1-8] off. The channel will read 0.00 when off during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
 
 ### Turn Channels ON
 
-**! @ # $ % ^ &  \* **  
+**! @ # $ % ^ &  \* **
 These ASCII characters turn the respective channels [1-8] on. The channel will read ADC output values during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
 
 ### Test Signal Control Commands
 
-**0 - = p [ ]**  
+**0 - = p [ ]**
 Turn **all** available channels on, and connect them to internal test signal. These are useful for self test and calibration. For example, you can measure the internal noise by sending **0** which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
 
--   **0**  Connect to internal GND (VDD - VSS)  
--   **-**  Connect to test signal 1xAmplitude, slow pulse  
--   **=**  Connect to test signal 1xAmplitude, fast pulse  
--   **p**  Connect to DC signal  
--   **\[**  Connect to test signal 2xAmplitude, slow pulse  
--   **]**  Connect to test signal 2xAmplitude, fast pulse  
+-   **0**  Connect to internal GND (VDD - VSS)
+-   **-**  Connect to test signal 1xAmplitude, slow pulse
+-   **=**  Connect to test signal 1xAmplitude, fast pulse
+-   **p**  Connect to DC signal
+-   **\[**  Connect to test signal 2xAmplitude, slow pulse
+-   **]**  Connect to test signal 2xAmplitude, fast pulse
 
     **Note: Not all possible internal test connections are implemented here **
 
@@ -81,7 +81,7 @@ Turn **all** available channels on, and connect them to internal test signal. Th
 
 ### Channel Setting Commands
 
-** x (CHANNEL, POWER_DOWN, GAIN_SET, INPUT_TYPE_SET, BIAS_SET, SRB2_SET, SRB1_SET) X **  
+** x (CHANNEL, POWER_DOWN, GAIN_SET, INPUT_TYPE_SET, BIAS_SET, SRB2_SET, SRB1_SET) X **
 Channel Settings commands have six parameters for each ADS channel. To access Channel Settings, first send **x**. The OpenBCI board will then expect the next 7 bytes to be channel settings specific commands. The first byte is the channel number. (If you have the Daisy Module, you can select up to 16 channels to set). The following six ASCII characters are accepted as parameters to set. Lastly, sending **X** will latch the settings to the ADS channel.
 
 **CHANNEL**
@@ -92,7 +92,7 @@ Channel Settings commands have six parameters for each ADS channel. To access Ch
 **POWER_DOWN**
 
 -   0 = ON (default)
--   1 = OFF    
+-   1 = OFF
 
 **GAIN_SET**
 
@@ -104,35 +104,35 @@ Channel Settings commands have six parameters for each ADS channel. To access Ch
 -   5 = Gain 12
 -   6 = Gain 24	(default)
 
-**INPUT_TYPE_SET**  
-Select the ADC channel input source  
+**INPUT_TYPE_SET**
+Select the ADC channel input source
 
--   0        ADSINPUT_NORMAL     	(default)  
--   1        ADSINPUT_SHORTED          
--   2        ADSINPUT_BIAS_MEAS  
--   3        ADSINPUT_MVDD  
--   4        ADSINPUT_TEMP  
--   5        ADSINPUT_TESTSIG  
--   6        ADSINPUT_BIAS_DRP  
--   7        ADSINPUT_BIAS_DRN  
+-   0        ADSINPUT_NORMAL     	(default)
+-   1        ADSINPUT_SHORTED
+-   2        ADSINPUT_BIAS_MEAS
+-   3        ADSINPUT_MVDD
+-   4        ADSINPUT_TEMP
+-   5        ADSINPUT_TESTSIG
+-   6        ADSINPUT_BIAS_DRP
+-   7        ADSINPUT_BIAS_DRN
 
-**BIAS_SET**  
+**BIAS_SET**
 Select to include the channel input in BIAS generation.
 
 -   0 = Remove form BIAS
--   1 = Include in BIAS  (default)  
+-   1 = Include in BIAS  (default)
 
-**SRB2_SET**  
-Select to connect this channel's P input to the SRB2 pin. This closes a switch between P input and SRB2 for the given channel, and allows the P input also remain connected to the ADC.  
+**SRB2_SET**
+Select to connect this channel's P input to the SRB2 pin. This closes a switch between P input and SRB2 for the given channel, and allows the P input also remain connected to the ADC.
 
 -   0 = Disconnect this input from SRB2
--   1 = Connect this input to SRB2  (default)  
+-   1 = Connect this input to SRB2  (default)
 
-**SRB1_SET**  
-Select to connect all channels' N inputs to SRB1. This effects all pins, and disconnects all N inputs from the ADC.  
+**SRB1_SET**
+Select to connect all channels' N inputs to SRB1. This effects all pins, and disconnects all N inputs from the ADC.
 
 -   0 = Disconnect all N inputs from SRB1 (default)
--   1 = Connect all N inputs to SRB1  
+-   1 = Connect all N inputs to SRB1
 
 **EXAMPLE**
 
@@ -165,7 +165,7 @@ On failure:
 
 ### Default Channel Settings
 
-**d** To set all channels to default  
+**d** To set all channels to default
 
 **returns** if not streaming, `updating channel settings to default$$$`
 
@@ -177,15 +177,15 @@ _Note: Users can change the default channel settings in the initialization funct
 
 ### LeadOff Impedance Commands
 
-**z (CHANNEL, PCHAN, NCHAN) Z**  
+**z (CHANNEL, PCHAN, NCHAN) Z**
 This works similar to the Channel Settings commands. For firmware `v0` and `v1` care must be taken to delay between sending characters, as of `v2.0.0`, you may send as fast as possible in a byte stream. Impedance settings have two parameters for each ADS channel. Impedance is measurable by applying a small 31.5Hz AC signal to the given channel.
 
 -   0 = Test Signal Not Applied (default)
--   1 = Test Signal Applied  
+-   1 = Test Signal Applied
 
 **EXAMPLE**
 
-User sends **z  4  1  0  Z**
+User sends **z410Z**
 
 'z' enters Impedance Settings mode. Channel 4 is set up to measure impedance on the P input. The final 'Z' latches the settings to the ADS registers.
 
@@ -206,44 +206,44 @@ On failure:
 
 ### SD card Commands
 
-**A S F G H J K L**  
-Send to initiate SD card data logging for specified time  
+**A S F G H J K L**
+Send to initiate SD card data logging for specified time
 
--   A    =      5MIN  
--   S    =      15MIN  
--   F    =      30MIN  
--   G    =      1HR  
--   H    =      2HR  
--   J    =      4HR  
--   K    =      12HR  
--   L    =      24HR  
+-   A    =      5MIN
+-   S    =      15MIN
+-   F    =      30MIN
+-   G    =      1HR
+-   H    =      2HR
+-   J    =      4HR
+-   K    =      12HR
+-   L    =      24HR
 -   a	   =      about 14 seconds for testing
 
-**j**  
-Stop logging data and close SD file  
+**j**
+Stop logging data and close SD file
 
 ### Stream Data Commands
 
-**b**  
+**b**
 Start streaming data
 
 **returns** none, there is no confirmation. NOTE: when command from WiFi shield, confirmation is `Stream started`.
 
-**s**  
-Stop Streaming data  
+**s**
+Stop Streaming data
 
 **returns** none, there is no confirmation. NOTE: when command from WiFi shield, confirmation is `Stream stopped`.
 
 ### Miscellaneous
 
-**?**  
-Query register settings  
+**?**
+Query register settings
 
-**returns** Read and report all register settings for the ADS1299 and the LIS3DH. Expect to get a verbose serial output from the OpenBCI Board, followed by **$$$**  
+**returns** Read and report all register settings for the ADS1299 and the LIS3DH. Expect to get a verbose serial output from the OpenBCI Board, followed by **$$$**
 
 **v**
 
-Soft reset for the Board peripherals  
+Soft reset for the Board peripherals
 The 8bit board gets a reset signal from the Dongle any time an application opens the serial port, just like a arduino. The Cyton board doesn't have this feature. So, if you want to soft-reset the Cyton board (`v1` or `v2.0.0`), send it a **v**.
 
 **returns**
@@ -259,14 +259,14 @@ Currently, the Daisy Module is implemented only on the Cyton board. The Daisy Mo
 
 ### Turn Channels OFF
 
-**q w e r t y u i**  
+**q w e r t y u i**
 These ASCII characters turn the respective channels [9-16] off. The channel will read 0.00 during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
 
 ### Turn Channels ON
 
-**Q W E R T Y U I**  
+**Q W E R T Y U I**
 These ASCII characters turn the respective channels [9-16] on. The channel will contain ADC values during streamData mode. These commands work in and out of streamData mode.
 
 **returns** none, there is no confirmation.
@@ -302,7 +302,7 @@ If the RFDuinos cannot speak to each other, you will see a `Failure: Communicati
 
 ### Time Stamping
 
-**&lt;**  
+**&lt;**
 
 Start time stamping and resynchronize command. When the Driver sends a **&lt;**, the Host radio will respond with a **,**. Since the Host cannot send packets to the Device ad hoc, it may be helpful to know when the Host was actually able to send the command. If the Board is not streaming, then expect a response of `Time stamp ON$$$`. If the board is streaming, then you will get a response in the data stream when the Driver receives a data packet with a different **stop byte** as described in the document titled [OpenBCI Streaming Data Format](Cyton/03-Cyton_Data_Format.md).
 
@@ -417,7 +417,7 @@ Supporting all v1.0.0 and v2.0.0, the v3.0.0 firmware extends the OpenBCI system
 
 ### Sample Rate
 
-**~(COMMAND)**  
+**~(COMMAND)**
 This works similar to the Channel Settings commands, however, there is no latching character. Power cycling the OpenBCI board will cause the sample rate to reset back to default of 250Hz.
 
 **IMPORTANT!** The Cyton with USB Dongle cannot and will not stream data over 250SPS. Plug in the [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550) to get speeds over 250SPS streaming. You may still write to an SD card though, the firmware will not send EEG data over the Bluetooth radios.
@@ -447,7 +447,7 @@ NOTE: if not all commands are not received within 1 second, `Timeout processing 
 
 ### Board Mode
 
-**/(COMMAND)**  
+**/(COMMAND)**
 This works similar to the sample rate. Power cycling the OpenBCI board will cause the board mode to return to default mode with accelerometer in the aux bytes.
 
 **COMMAND**
