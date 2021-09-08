@@ -30,6 +30,10 @@ Note, the example projects below are written for the [Cyton Board](https://shop.
 
 [Tutorial](Examples/EMGProjects/05-EMG_Chrome_Dino_Game.md) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG
 
+### Motor Imagery Controlled Car
+
+[Tutorial](Examples/EMGProjects/20-Motor_Imagery.md) to control a robotic car using motor imagery
+
 ### EEG-controlled Tetris Game
 
 [Tutorial](Examples/EEGProjects/Tetris_Tutorial.md) to play Tetris using EEG

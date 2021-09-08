@@ -189,7 +189,8 @@
             "label": "EEG Projects and Tutorials",
             "items": [
               "Examples/EEGProjects/FocusArduino",
-              "Examples/EEGProjects/MotorImagery"
+              "Examples/EEGProjects/MotorImagery",
+              "Examples/EEGProjects/EEG_Tetris"
             ]
           }
         ],
