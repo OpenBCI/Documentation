@@ -30,6 +30,6 @@ Note, the example projects below are written for the [Cyton Board](https://shop.
 
 [Tutorial](Examples/EMGProjects/05-EMG_Chrome_Dino_Game.md) how to play the Google Chrome Dinosaur Game without touching your laptop, using arm EMG
 
-### EEG-controlled Tetris Game
+### EMG-controlled Tetris Game
 
-[Tutorial](Examples/EEGProjects/Tetris_Tutorial.md) to play Tetris using EEG
+[Tutorial](Examples/EMGProjects/Tetris_Tutorial.md) to play Tetris using EMG and an OpenBCI board's built-in Accelerometer
