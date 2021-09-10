@@ -40,7 +40,12 @@ Mainly, change the protocol from Serial to UDP and set the Data Type of Stream 1
 ## Step 4: Using a Python Script to Read the Data and Scroll.
 
 The Python script will search for the EMG and Accelerometer data streams. Once it finds them, it will read them and detect any spikes that correspond to blinks as well as movements of the head.
-Download the Python script from [here](https://github.com/sonikavuyyuru/EEG-Tetris/blob/main/tetris.py). Run the Python script in your preferred IDE or through your command line using "python tetris.py" in the directory where you have it saved. Once you run the script, you can start the data stream and start the UDP stream from the GUI data.
+
+:::info
+Download the Python script from [here](https://github.com/sonikavuyyuru/EEG-Tetris/blob/main/tetris.py).
+:::
+
+Run the Python script in your preferred IDE or through your command line using "python tetris.py" in the directory where you have it saved. Once you run the script, you can start the data stream and start the UDP stream from the GUI data.
 
 Keep your head still for the less than 10 second calibration period. Once the calibration period is complete (indicated by the "Calibration done. You may now begin Tetris!" message), go ahead and navigate to your favorite online Tetris website with arrow and space controls (these controls can be modified using the variables at the start of the code). We recommend using https://jstris.jezevec10.com. 
 
