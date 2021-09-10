@@ -42,7 +42,7 @@ Mainly, change the protocol from Serial to UDP and set the Data Type of Stream 1
 The Python script will search for the EMG and Accelerometer data streams. Once it finds them, it will read them and detect any spikes that correspond to blinks as well as movements of the head.
 
 :::info
-Download the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/blob/master/EEG_Controlled_Tetris/tetris.py).
+Download the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/blob/master/EMG_Controlled_Tetris/tetris.py).
 :::
 
 Run the Python script in your preferred IDE or through your command line using "python tetris.py" in the directory where you have it saved. Once you run the script, you can start the data stream and start the UDP stream from the GUI data.
