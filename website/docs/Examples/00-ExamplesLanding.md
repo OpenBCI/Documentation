@@ -10,6 +10,10 @@ We added all-new tutorials for facial, ocular, and limb EMG, as well as expand
 
 Note, the example projects below are written for the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) but can be applied to [Ganglion board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) as well.
 
+### Motor Imagery Controlled Car
+
+[Tutorial](Examples/EEGProjects/20-Motor_Imagery.md) to control a robotic car using motor imagery
+
 ### EMG Scrolling
 
 [Tutorial](Examples/EMGProjects/01-EMG_Scrolling.md) for touch-less scrolling with limb EMG
