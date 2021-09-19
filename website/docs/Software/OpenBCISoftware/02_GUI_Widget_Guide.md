@@ -107,27 +107,33 @@ The "Max Freq." dropdown controls the maximum frequency to display. The "Samples
 
 _Important: The data/graphs displayed in this widget are an approximation, and should not be used in any serious contexts or diagnosis._
 
-## Focus Widget (Temporarily Deprecated)
+## Focus Widget
 
-**Starting with GUI v5.0.0, this feature is temporarily deprecated until a more reliable and research-based Focus algorithm is implemented. If you would still like to use this widget, you can download and run [GUI v4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).**
+The widget uses the BrainFlow Metric feature to detect Relaxation or Concentration, aka Focus. We also have the ability to change the classification method used! In the screenshot below, you will see synthetic Alpha waves from Channel 2 being used to control the Relaxation metric. **Make sure to try the built-in [Auditory Feedback](#auditory-feedback) feature!**
 
-The widget recognizes a focused mental state by looking at alpha and beta wave levels on channels 1 & 2. It is based on research supporting focused states aligning with alpha levels between 0.7-2.0 μV, and the beta levels between 0.0-0.7 μV. If your data is outside of this ratio, the algorithm states that you are not focused.
+![GUI 5.0.6 Focus Widget with Synthetic Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.0.6-FocusWidgetSyntheticData.png)
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Focus.jpg?raw=true" width="50%" />
+**Channel Select**: Using the "Channels" button at the top left of the widget, we can select which channels/electrodes to feed into the BrainFlow metric. The accuracy of the metric will depend on the channels used. With OpenBCI hardware and the GUI, users have the freedom to change physical electrode positions and select the best combination for the desired metric!
 
-\*For best results, try setting smooth to 0.98 in the FFT plot.
+**Metric**: Choose from "Relaxation" or "Concentration" as the desired flavor of Focus to detect. "Relaxation" generally looks at FFT values associated with Delta, Theta and Alpha brainwaves, while "Concentration" looks at Beta and Gamma brainwaves. Relaxation is usually achieved by "meditating" with eyes closed, while Concentration can be achieved by focusing intently with eyes open. Models were trained using band powers. There is no training phase, and predefined coefficients are used.
 
-**Key Press**: When KeyPress is on, you can perform tasks and whenever you are focused, either your UP arrow or SPACE key will be pressed. Otherwise, it will be released.
+**Classifier**: Using BrainFlow Metrics allows us to choose our classifier for both metrics. This can be Regression, KNN, SVM, or LDA. You are free to change this setting at any time to experiment! We recommend Regression by default.
 
-**W_Focus Folder**: This folder contains the original data the focus widget was based on and materials (including an example and instructions) regarding Arduino output.
+**Threshold**: Use this dropdown to select the threshold for the metric to determine if you are "Relaxing" or "Concentrating". You can see the metric value displayed in the top row of the table in this widget, it ranges from 0 to 1.
 
-The new Focus Widget is in progress and on schedule to be in the next version of the GUI at the end of May 2021. 
-There is also a [forum post] on this topic.
-(https:)
+**Window**: This allows you to select the window used to calculate the metric value, by looking at the average band powers over the selected time period. 
+
+### **Auditory Feedback**
+Starting with GUI 5.0.6, the Focus Widget is able to provide auditory feedback. This means you can use your brain control the volume of a peaceful musical chord. Simply press the "Turn Audio On" button to activate this feature. We recommend the default settings as a fun way to practice mindfulness and relaxation using OpenBCI hardware and one or two electrodes attached to the forehead (usually Fp1 and Fp2).
+
+![GUI 5.0.6 Focus Widget with Synthetic Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.0.6-FocusWidgetAuditoryFeedbackHighlighted.png)
+
+**In-depth Info on Auditory Feedback Feature**: There are two modes which are controlled via the second button under the large circle: metric value and band powers.
+- Using the metric value, the volume of all of the musical notes will increase or decrease based on the metric value (0 to 1) displayed in the table.
+- Using the band powers, certain musical notes will get louder or quieter and are directly correlated to the band power values displayed in the table (0 to 1). Lower notes are associated with lower frequencies, and higher notes are associated with higher frequencies. So, if you have predominate alpha brainwaves, you will likely hear lower and middle tones from the chord.
+
 
 ## Band Power
-
-
 
 The band power widget shows the relative voltages of the various brain wave categories. Each type of brain wave represents a subset of frequencies, which represent different states of activity. The widget is a great "at-a-glance" look into your brain’s activity.
 
