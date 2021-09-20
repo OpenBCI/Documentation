@@ -345,16 +345,16 @@ There are a few details at the top of SessionSettings.pde that should be helpful
 
 ### Step 6 - Initial Testing
 
-_Debugging_
+**Debugging:**
 If you've added any `println()` or `verbosePrint()` in your widget, you can use the Console Log feature to see these messages, or just look at the console in your favorite IDE.
 
-_Screen Resized_
+**Screen Resized:**
 Some objects may need to be resized or re-positioned when the user changes the GUI screen size. This is why the widget class has the `screenResized()` method. Something not displaying right after the GUI is resized? This is where you need to add code. Typically, object x, y, width, and height are declared when the widget is instantiated, and again in `screenResized()` using relative positioning.
 
-_Settings_
+**Settings:**
 To test that everything is working, you should see the data in a settings JSON file for each data mode in the `Documents/OpenBCI_GUI/Settings/` folder. JSON files can be viewed as text. Confirm that your new JSON object and data are being written to file. Finally, confirm that the settings work properly when configuring the widget, saving, and loading.
 
-_GUI Crash_
+**GUI Crash:**
 One of the most common ways to crash the GUI with a new widget is drawing `null` data, or some other error related to `draw()`. Another common crash is an `Exception`, which will print to the console of Atom, VSCode, or Processing IDE.
 
 ### Step 7 - Share your custom widget with the world!
