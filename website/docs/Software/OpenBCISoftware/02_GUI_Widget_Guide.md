@@ -121,7 +121,7 @@ The widget uses the BrainFlow Metric feature to detect Relaxation or Concentrati
 
 **Threshold**: Use this dropdown to select the threshold for the metric to determine if you are "Relaxing" or "Concentrating". You can see the metric value displayed in the top row of the table in this widget, it ranges from 0 to 1.
 
-**Window**: This allows you to select the window used to calculate the metric value, by looking at the average band powers over the selected time period. 
+**Window**: This allows you to select the window of time used to calculate the metric value by looking at the average band powers over the selected time period. 
 
 ### **Auditory Feedback**
 Starting with GUI 5.0.6, the Focus Widget is able to provide auditory feedback. This means you can use your brain control the volume of a peaceful musical chord. Simply press the "Turn Audio On" button to activate this feature. We recommend the default settings as a fun way to practice mindfulness and relaxation using OpenBCI hardware and one or two electrodes attached to the forehead (usually Fp1 and Fp2).
