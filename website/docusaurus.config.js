@@ -22,7 +22,7 @@ module.exports={
         "docs": {
           "showLastUpdateAuthor": false,
           "showLastUpdateTime": true,
-          "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/websitev2/",
+          "editUrl": "https://github.com/OpenBCI/Documentation/edit/master/website/",
           "path": "docs",
           "sidebarPath": require.resolve('./sidebars.json'),
           "routeBasePath": '/'
