@@ -223,7 +223,11 @@ The Ultracortex frame is detailed and can be challenging to print, so we strongl
 1) Print a tall test model such as a figurine with overhanging features (limbs) to ensure your machine is working properly.
 2) Don't use too much support. Default settings in CURA usually work, but Prusa is heavy on support and makes the headset hard to remove without breaking.
 3) Print the headset in two halves with the flat sides on the printer bed, as mentioned previously in this document. Use a brim around the edges if your printer has peeling problems. The brim takes extra work to remove but increases likelihood of success. The parts are designed to print at this orientation with least support.
-4) Print slowly, about 50% of normal speed, and run the extrusion hotter than normal. 220 degrees is recommended.
+4) Here are other tips in order of importance.
+- Print slowly, about 50% of default speed, and run the extrusion hotter than normal. 220 degrees is recommended.
+- Print using a support raft.
+- Print in a warm environment to reduce the shrinkage of the part as it cools.
+- Use PLA material (not ABS) and a heated bed.
 
 ## RECOMMENDED ASSEMBLY TOOLS
 
