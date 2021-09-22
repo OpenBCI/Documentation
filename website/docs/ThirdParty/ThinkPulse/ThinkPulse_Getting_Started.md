@@ -18,7 +18,7 @@ This kit has been designed and its compatibility tested for the 8 and 16 channel
 <br />
 <br />
 
-## ThinkPulse Starter Kit $299.99 Contents
+## ThinkPulse Starter Kit $349.99 Contents
 
 <br />
 
@@ -26,7 +26,7 @@ This kit has been designed and its compatibility tested for the 8 and 16 channel
 
 <br />
 
-Note, the replacement electrode set $99.99 is just for those who want extra electrodes on-hand. The Starter Kit $299.99 includes electrodes.
+Note, the replacement set $99.99 is just for those who want backup electrode tips. The Starter Kit $349.99 includes the necessary electrodes and electrode tips.
 
 <br />
 <br />
