@@ -41,13 +41,13 @@ module.exports={
     "navbar": {
       "title": "OpenBCI Documentation",
       "logo": {
-        "src": "img/openbci-logo.svg"
+        "src": "img/open-bci-gear.svg"
       },
       "items": [
         {
           "href": "https://openbci.com",
           "label": "Main Site",
-          "position": "left"
+          "position": "right"
         },
         {
           "href": "https://shop.openbci.com",
@@ -82,7 +82,7 @@ module.exports={
       "links": [],
       "copyright": "Copyright © 2021 OpenBCI",
       "logo": {
-        "src": "img/openbci-logo.svg"
+        "src": "img/open-bci-gear-blue.svg"
       }
     },
     "algolia": {
