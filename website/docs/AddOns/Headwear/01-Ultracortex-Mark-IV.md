@@ -48,7 +48,7 @@ The following parts are included in the Unassembled version of the Mark IV:
 
 **Note that unlike the Mark III, the electrodes and the electrode holders of the Mark IV are not designed to be 3D printed. The Spikey, Flat, and Comfort Units are all custom made and injection molded and can be purchased at the [OpenBCI shop](https://shop.openbci.com). If you need thse files for prototyping you can find them [here](https://github.com/openbci-archive/Docs/tree/master/assets/MarkIV/STL_Directory/Injection_Molded_Parts).**
 
-The following parts are included in the [Unassembled](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv?variant=23280716611){:target="_blank" rel="noopener"} and the [Print it Yourself](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv?variant=23280716419){:target="_blank" rel="noopener"} versions of the Mark IV:
+The following parts are included in the [Unassembled](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv?variant=23280716611) and the [Print it Yourself](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv?variant=23280716419) versions of the Mark IV:
 
 -   No.6 [screws](https://www.mcmaster.com/90380A146/) for brittle plastic (**2x**).
 
