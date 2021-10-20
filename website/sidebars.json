@@ -50,7 +50,6 @@
           "label": "Headwear",
           "items": [
             "AddOns/Headwear/MarkIV",
-            "AddOns/Headwear/MarkIII",
             "AddOns/Headwear/HeadBand",
             "AddOns/Headwear/ElectrodeCap",
             "AddOns/Headwear/GelfreeElectrodeCap"
@@ -149,6 +148,7 @@
             "Deprecated/UltracortexMark2Dep",
             "Deprecated/UltracortexMark2Dep",
             "Deprecated/UltracortexMark3_NovaDep",
+            "Deprecated/MarkIII",
             "Deprecated/Python",
             "Deprecated/Hub"
         ],

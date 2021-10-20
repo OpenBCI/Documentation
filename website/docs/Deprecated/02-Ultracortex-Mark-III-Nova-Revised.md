@@ -4,7 +4,7 @@ title: Ultracortex Mark III
 ---
 _Development Period: June 2016_
 
-![image](../../assets/HeadwareImages/m3_upgrade_1000.jpg)
+![image](../assets/HeadwareImages/m3_upgrade_1000.jpg)
 
 #### Complete Ultracortex Mark 3 kits are not longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
 
@@ -67,7 +67,7 @@ Designers & Engineers:
     -   FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/small/SMALL_FRONT-M3_Nova_Revised.stl) / [medium](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/medium/MEDIUM_FRONT-M3_Nova_Revised.stl) / [large](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/large/LARGE_FRONT-M3_Nova_Revised.stl))
     -   FRAME_BACK (**x1**) — .STLs ([small](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/small/SMALL_FRONT-M3_Nova_Revised.stl) / [medium](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/medium/MEDIUM_BACK-M3_Nova_Revised.stl) / [large](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova_REVISED/STLs/FRAME/large/LARGE_BACK-M3_Nova_Revised.stl))
 
-![image](../../assets/HeadwareImages/FRAME_parts.jpg)
+![image](../assets/HeadwareImages/FRAME_parts.jpg)
 
 #### (21x) MECH_PARTS
 
@@ -82,7 +82,7 @@ Designers & Engineers:
 #### (1x) BOARD_HOLDER
 
 -   [BOARD_HOLDER](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_HOLDER.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl)
-    ![image](../../assets/HeadwareImages/BOARD_HOLDER.jpg)
+    ![image](../assets/HeadwareImages/BOARD_HOLDER.jpg)
 
 #### (1x) BOARD_COVER
 
@@ -90,10 +90,10 @@ Designers & Engineers:
     -   [STANDARD](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_STANDARD.stl)
     -   [ADVANCED](https://github.com/OpenBCI/Ultracortex/blob/master/Mark_III_Nova_REVISED/STLs/HOLDER_AND_COVER/BOARD_COVER_ADVANCED.stl) (for extra hardware accessibility / if you've soldered on your header rows) — [.STL download link](https://github.com/OpenBCI/Ultracortex/raw/master/Mark_III_Nova/STLs/HOLDER_AND_COVER/BOARD_COVER_ADVANCED.stl)
 
-![image](../../assets/HeadwareImages/BOARD_COVER2.jpg)
+![image](../assets/HeadwareImages/BOARD_COVER2.jpg)
 
-![image](../../assets/HeadwareImages/printedParts.jpg)
-![image](../../assets/HeadwareImages/bolts_screws_springs_trodes.jpg)
+![image](../assets/HeadwareImages/printedParts.jpg)
+![image](../assets/HeadwareImages/bolts_screws_springs_trodes.jpg)
 
 ### Non-printed Parts:
 
@@ -101,11 +101,11 @@ Designers & Engineers:
 
 -   Suggested Spring 1 (**x21**) — aka "Weak Spring" — [Century Spring Corp. Stock #: U-4](http://cad.centuryspring.com/db/service?domain=century&command=showProduct&category=compression&product=U-4) — this spring is not as strong as spring 2. We use it to mount the electrodes. The low "Rate" (1.3 lbs/in) makes it more forgiving and comfortable when holding the spikey electrode against your head. This process is described in more detail below (in the "Assembly Instructions" section).
 
-![image](../../assets/HeadwareImages/SPRING.jpg)
+![image](../assets/HeadwareImages/SPRING.jpg)
 
 -   Suggested Spring 2 (**x5**) — aka "Strong Spring" — [Century Spring Corp. Stock #: S-845](http://cad.centuryspring.com/db/service?domain=century&command=showProduct&category=compression&product=S-845) — this spring has a much stronger "Rate" (14 lb/in). This makes is ideal to act as a standoff at locations where you do not have a spikey electrode. This process is described in more detail below (in the "Assembly Instructions" section).
 
-![image](../../assets/HeadwareImages/Spring_S-845.png)
+![image](../assets/HeadwareImages/Spring_S-845.png)
 
 #### Suggested nuts/bolts:
 
@@ -114,19 +114,19 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 -   (**21x**) [Stainless Steel Pan Head Phillips Machine Screw, 2-56 Thread, 3/4" Length ($5.70 per pack of 50)](http://www.mcmaster.com/#91772a084/=11zdicn)
 -   (**42x**) [Stainless Steel Hex Nut, 2-56 Thread Size, 3/16" Wide, 1/16" High](http://www.mcmaster.com/#91841a003/=xzahv0)
 
-![image](../../assets/HeadwareImages/NUT_AND_BOLT.jpg)
+![image](../assets/HeadwareImages/NUT_AND_BOLT.jpg)
 
 #### Suggested screws for fastening BOARD_MOUNT & OpenBCI Board
 
 -   (**8x**) [#4 Drive Screw](http://www.mcmaster.com/#90077a106/=yysd5f)
 
-![image](../../assets/HeadwareImages/SHEET_METAL_SCREW.jpg)
+![image](../assets/HeadwareImages/SHEET_METAL_SCREW.jpg)
 
 #### Wiring
 
 -   (**21x**) We strip apart the [Gold Cup Electrodes](http://openbci.myshopify.com/collections/frontpage/products/openbci-gold-cup-electrodes) or the [Touch-Proof Adapter Cable](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter).
 
-![image](../../assets/HeadwareImages/WIRING.jpg)
+![image](../assets/HeadwareImages/WIRING.jpg)
 
 #### Dry electrodes by Florida Research Instruments
 
@@ -134,19 +134,19 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 -   (**3x**) Dry (non-spikey) electrodes to be installed in Ultracortex nodes without hair (forehead, for instance): [Disposable / Reusable Cup Wet/Dry EEG Electrode ($10.00 for 15) ](http://fri-fl-shop.com/product/disposable-reusable-dry-eeg-electrode-quantity-of-15-tde-200a1/)
 -   (**2x**) Ear Clip electrode (for reference): [TDI-430 Silver-Silver Chloride Ear Clip Electrode ($19.95 each)](http://fri-fl-shop.com/product/td-430-silver-disc-electrode-ear-clip/)
 
-![image](../../assets/HeadwareImages/TRODES.jpg)
+![image](../assets/HeadwareImages/TRODES.jpg)
 
 #### (1x) An [OpenBCI Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) (8 electrode channels) or an [OpenBCI CytonDaisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel) (16 electrode channels)
 
-![image](../../assets/HeadwareImages/OPENBCIs.jpg)
+![image](../assets/HeadwareImages/OPENBCIs.jpg)
 
 #### (**1x**) ~500mAh lithium ion rechargeable battery pack ([Sparkfun](https://www.sparkfun.com/products/10718) or [Adafruit](http://www.adafruit.com/products/1578)) & (**1x**) [A charger for your battery pack](https://www.adafruit.com/products/1304)
 
-![image](../../assets/HeadwareImages/BATTERY.jpg)
+![image](../assets/HeadwareImages/BATTERY.jpg)
 
 #### (**~10x**) [Zip tie](http://www.amazon.com/Black-Zip-Tie-100-Bag/dp/B0001IMMJI)
 
-![image](../../assets/HeadwareImages/zipTie.png)
+![image](../assets/HeadwareImages/zipTie.png)
 
 ## SUGGESTED PRINT SETTINGS
 
@@ -195,7 +195,7 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 7.  needle-nose pliers
 8.  snippers
 
-![image](../../assets/HeadwareImages/TOOLS.jpg)
+![image](../assets/HeadwareImages/TOOLS.jpg)
 
 ## ASSEMBLY INSTRUCTIONS
 
@@ -203,24 +203,24 @@ We use small stainless steel screws and hex nuts to fasten the FRI electrodes (l
 
 Use sand paper, a file, and snippers to clean your FRAME and other 3D-printed parts. The most important part of this process is that you thoroughly clean out the frames nodes where you will place your OCTANUT pieces.
 
-![image](../../assets/HeadwareImages/cleanup1.JPG)
-![image](../../assets/HeadwareImages/cleanup3.JPG)
+![image](../assets/HeadwareImages/cleanup1.JPG)
+![image](../assets/HeadwareImages/cleanup3.JPG)
 
 ### Glue the FRAME together
 
 Carefully, glue the FRAME_FRONT and FRAME_BACK together with your Cyanoacrylate super glue. The best way to do this is to place both halves of the frame on a level surface and carefully bring them together. Be sure to be precise; it's VERY difficult to pull the pieces apart once you've put them together.
 
-![image](../../assets/HeadwareImages/glueFrame.JPG)
+![image](../assets/HeadwareImages/glueFrame.JPG)
 
 ### Mount the OpenBCI BOARD_HOLDER
 
 First, use a 1/16" drillbit to expand the holes on the Ultracortex frame. This will make it easier to screw the BOARD_HOLDER on the frame.
 
-![image](../../assets/HeadwareImages/drilling_frame.jpg)
+![image](../assets/HeadwareImages/drilling_frame.jpg)
 
 Use four #4 Drive Screws to mount the BOARD_HOLDER to the FRAME. Make sure that the orientation of the BOARD_HOLDER matches that of the pictures below:
 
-![image](../../assets/HeadwareImages/boardMount.jpg)
+![image](../assets/HeadwareImages/boardMount.jpg)
 
 ### Assemble the Comfort Nodes
 
@@ -236,39 +236,39 @@ You will need the following pieces:
 
 \-Comfort insert
 
-![image](../../assets/HeadwareImages/comfortnodeparts.jpg)
+![image](../assets/HeadwareImages/comfortnodeparts.jpg)
 
 First, put the comfort insert into front of the ELECTRODE_HOLDER.
-![image](../../assets/HeadwareImages/comfortinsert_electrodeholder.jpg)
+![image](../assets/HeadwareImages/comfortinsert_electrodeholder.jpg)
 
 Next, insert the spring into the back of the ELECTRODE_HOLDER.
-![image](../../assets/HeadwareImages/spring_electrodeholder.jpg)
+![image](../assets/HeadwareImages/spring_electrodeholder.jpg)
 
 Then, slide the OCTABOLT over the top:
-![image](../../assets/HeadwareImages/OCTABOLT_comfort1.jpg)
-![image](../../assets/HeadwareImages/OCTABOLT_comfort2.jpg)
+![image](../assets/HeadwareImages/OCTABOLT_comfort1.jpg)
+![image](../assets/HeadwareImages/OCTABOLT_comfort2.jpg)
 
 ### Insert OCTANUT pieces (x21) into frame
 
 **Note:** Before glueing the OCTANUT into the frame ensure, that it fits properly into the frame without glue.
 
-![image](../../assets/HeadwareImages/insertOCTANUT.jpg)
+![image](../assets/HeadwareImages/insertOCTANUT.jpg)
 
 For each OCTANUT, line the inner rim of frame with glue. Then insert the OCTANUT so that it is flush with the frame.
 
-![image](../../assets/HeadwareImages/glue_octanut.jpg)
+![image](../assets/HeadwareImages/glue_octanut.jpg)
 
 Your Ultracortex should now look like this:
 
-![image](../../assets/HeadwareImages/nodes_in.jpg)
+![image](../assets/HeadwareImages/nodes_in.jpg)
 
 ### Embed OpenBCI into the Ultracortex
 
 Connect your ~500 mAh lithium ion rechargeable batter to the back of your 32bit OpenBCI Board. Then fold the battery and its wires neatly behind the board before inserting the board into the BOARD_MOUNT. You can then use one of your #4 Drive Screws to secure the OpenBCI Board to the BOARD_MOUNT. Typically you don't need to use any #4 Drive Screws because the BOARD_COVER locks the OpenBCI Board in place, but in this case it's a good idea because you'll want to see where you're connecting your wires.
 
-![image](../../assets/HeadwareImages/embed_OpenBCI.jpg)
+![image](../assets/HeadwareImages/embed_OpenBCI.jpg)
 
-![image](../../assets/HeadwareImages/screw_board.jpg)
+![image](../assets/HeadwareImages/screw_board.jpg)
 
 ### Identify electrode locations
 
@@ -289,13 +289,13 @@ For the remainder of this tutorial, the blue nodes on the 10-20 system diagram (
 -   Channel 7(N7P) - O1
 -   Channel 8(N8P) - O2
 
-![image](../../assets/HeadwareImages/1020.jpg)
+![image](../assets/HeadwareImages/1020.jpg)
 
 ### Connect wiring to OpenBCI
 
 Before shortening any of your wires, connect the female header of each wire to the N pin of channels 1-8, as indicated in the image to the lower right. The N pins are the ones closer to the OpenBCI Board. By default, the OpenBCI Board references these 8 pins with the SRB 2 pin (the bottom SRB pin).
 
-![image](../../assets/HeadwareImages/CONNECT_WIRES.jpg)
+![image](../assets/HeadwareImages/CONNECT_WIRES.jpg)
 
 ### Measure, cut, and strip wires
 
@@ -314,91 +314,91 @@ As mentioned above, if you're using the default OpenBCI electrode configuration,
 
 After you're done measuring, cutting, and stripping your wires, disconnect them from the OpenBCI board. You will need the female header free so you can guide the springs and OCTANUT pieces into place in the following step. But remember which wire goes where!
 
-![image](../../assets/HeadwareImages/STRIP_WIRE1.jpg)
+![image](../assets/HeadwareImages/STRIP_WIRE1.jpg)
 
-![image](../../assets/HeadwareImages/STRIP_WIRE2.jpg)
+![image](../assets/HeadwareImages/STRIP_WIRE2.jpg)
 
-![image](../../assets/HeadwareImages/STRIP_WIRE3.jpg)
+![image](../assets/HeadwareImages/STRIP_WIRE3.jpg)
 
-![image](../../assets/HeadwareImages/STRIP_WIRE4.jpg)
+![image](../assets/HeadwareImages/STRIP_WIRE4.jpg)
 
 ### Assemble electrode mounts (x8 or x16)
 
 **Note:** repeat the following steps as many times as necessary, depending upon your OpenBCI setup. In general, using more electrodes will distribute the downward scalp pressure, increasing comfort. Additionally, to increase comfort you can create electrode units without electrodes and the wires to place at various nodes around the frame. This will also help to distribute  pressure.
 
 These are the pieces that comprise one full electrode unit:
-![image](../../assets/HeadwareImages/electrode_hardware_parts.jpg)
+![image](../assets/HeadwareImages/electrode_hardware_parts.jpg)
 
 First, slide a **Machine Screw (2-56 Thread, 3/4" Length)** through the FRI electrode and guide it into the ELECTRODE_HOLDER. For channel 1 and channel 2 you may use flat electrodes since these elctrodes will be on your forehead where there is no hair.
 
-![image](../../assets/HeadwareImages/insertscrew.jpg)
+![image](../assets/HeadwareImages/insertscrew.jpg)
 
 Then, slide the screw and electrode into the ELECTRODE_HOLDER
-![image](../../assets/HeadwareImages/inserttrode.jpg)
+![image](../assets/HeadwareImages/inserttrode.jpg)
 
 Next, twist a _Hex Nut (2-56 Thread Size, 3/16" Wide, 1/16" High)_ onto the screw, securing the electrode to the holder.
-![image](../../assets/HeadwareImages/fastenNut.jpg)
+![image](../assets/HeadwareImages/fastenNut.jpg)
 
 Next, twist the exposed metal of your wire so that it is tight and clean.
 
-![image](../../assets/HeadwareImages/twistWire.JPG)
+![image](../assets/HeadwareImages/twistWire.JPG)
 
 This part is a little bit tricky! Wrap the exposed metal of your wire once around the remaining thread of the screw. You can use your finger nail to pinch the wire down against the nut, while wrapping.
 
-![image](../../assets/HeadwareImages/twistWire3.jpg)
-![image](../../assets/HeadwareImages/twistWire4.jpg)
+![image](../assets/HeadwareImages/twistWire3.jpg)
+![image](../assets/HeadwareImages/twistWire4.jpg)
 
 Then, twist your second Hex Nut onto the screw, securing the wire between the two nuts. You can use wire cutters to firmly screw the nut into place.
 
-![image](../../assets/HeadwareImages/fastenNut2.jpg)
+![image](../assets/HeadwareImages/fastenNut2.jpg)
 
 Slide a **Suggested Spring 1 (aka "Weak Spring")** and then the OCTABOLT around the wire as shown below.
 
-![image](../../assets/HeadwareImages/fullPart.jpg)
+![image](../assets/HeadwareImages/fullPart.jpg)
 
 Snap the full electrode unit together, guiding the semi-spherical protrusions on the outside of the SPRING_CASING into the relief cuts of the OCTABOLT.
 
-![image](../../assets/HeadwareImages/completedPart.jpg)
+![image](../assets/HeadwareImages/completedPart.jpg)
 
 Voila! Spring-loaded electrode GIF!
 
-![image](../../assets/HeadwareImages/MechParts.gif)
+![image](../assets/HeadwareImages/MechParts.gif)
 
 ### Insert electrode units into your Ultracortex
 
 Once you've asesembled all of your electrode units, twist them into their respective Ultracortex frame nodes. If the parts are tough to twist into place by hand, use the OCTATOOL that comes with your kit as shown in the picture below. Over time the resistance between the OCTANUT and OCTABOLT will diminish, and the pieces will twist into place more easily.
 
-![image](../../assets/HeadwareImages/INSERT_ELECTRODES.png)
+![image](../assets/HeadwareImages/INSERT_ELECTRODES.png)
 
 ### Reconnect wires to OpenBCI & connect ear clip electrodes (Reference & Ground)
 
 Now that all of your electrode units are connected to your Ultracortex frame, reconnect the electrode wires to the OpenBCI board as detailed above. If you have some handy, you may want to use zip ties to secure the loose wiring to the Ultracortex frame. Later revisions of the headset will be designed to account for this. ;)
 
-![image](../../assets/HeadwareImages/RECONNECT_WIRES.jpg)
+![image](../assets/HeadwareImages/RECONNECT_WIRES.jpg)
 
 Next, connect two touch-proof adapter cables to SRB2 and bottom BIAS pin (white and black respectively in the image below). You can use the touch-proof adapter that comes with the OpenBCI 32bit Board or OpenBCI 16-channel R&D Kit. Then connect your [ear clip electrodes](http://fri-fl-shop.com/product/td-430-silver-disc-electrode-ear-clip/) to these touch-proof adapters. These ear clip electrodes serve as the reference and bias (ground with common-mode noise rejection) for your EEG system.
 
 Alternatively, cut the earclip wire to about a foot long. Cut the touch-proof adapter wire to 2 inches long. Solder these two wires together, and shrink wrap them or wrap them in electrical tape.
 
-![image](../../assets/HeadwareImages/soldering.jpg)
+![image](../assets/HeadwareImages/soldering.jpg)
 
 For the 16 channel board, cut and solder two wires to the ear clip wire as shown:
 
-![image](../../assets/HeadwareImages/soldering_16.jpg)
+![image](../assets/HeadwareImages/soldering_16.jpg)
 
-![image](../../assets/HeadwareImages/REF_BIAS.jpg)
+![image](../assets/HeadwareImages/REF_BIAS.jpg)
 
 ### Fasten the BOARD_COVER
 
 Now clip your board cover into place. If you've soldered any of the header rows onto your OpenBCI board, you'll need to use the BOARD_COVER_ADVANCED, as seen in the picture below. Otherwise, you can use the BOARD_COVER_STANDARD with the OpenBCI logo.
 
-![image](../../assets/HeadwareImages/BOARD_COVER_2.jpg)
+![image](../assets/HeadwareImages/BOARD_COVER_2.jpg)
 
 ## Supernova Add-Ons
 
 ### Parts
 
-![image](../../assets/HeadwareImages/supernova_parts.jpg)
+![image](../assets/HeadwareImages/supernova_parts.jpg)
 
 To add the QUADSTAR extensions to your Supernova, use the following parts:
 
@@ -416,33 +416,33 @@ To add the QUADSTAR extensions to your Supernova, use the following parts:
 ### Stretch QUADSTAR over OCTARING
 
 Take your QUADSTAR and stretch it so that it fits over the OCTARING
-![image](../../assets/HeadwareImages/stretch_quadstar1.jpg)
-![image](../../assets/HeadwareImages/stretch_quadstar2.jpg)
+![image](../assets/HeadwareImages/stretch_quadstar1.jpg)
+![image](../assets/HeadwareImages/stretch_quadstar2.jpg)
 
 ### Zip Tie QUADSTAR onto frame
 
 Using zip ties, tie down the corners of the QUADSTAR onto the frame of your ULTRACORTEX. You should be using four zip ties per QUADSTAR. For QUADSTARS that are next to each other, re-use the same zip tie to tie them both down to the frame. NOTE: Tie the QUADSTARS down loosely at first in order to ensure that they are all centered while tied down to the frame. Once all of the QUADSTARS are tied loosely to the frame, tighten them to secure them to the frame.
 
-![image](../../assets/HeadwareImages/tiedown1.jpg)
-![image](../../assets/HeadwareImages/tiedown3.jpg)
-![image](../../assets/HeadwareImages/tiedown2.jpg)
-![image](../../assets/HeadwareImages/tiedown_complete.jpg)
+![image](../assets/HeadwareImages/tiedown1.jpg)
+![image](../assets/HeadwareImages/tiedown3.jpg)
+![image](../assets/HeadwareImages/tiedown2.jpg)
+![image](../assets/HeadwareImages/tiedown_complete.jpg)
 
 ### Cut Zip Ties
 
 Turn the ULTRACORTEX over and snip off all of the loose ends of the zip ties.
 
-![image](../../assets/HeadwareImages/snip_zipties.jpg)
+![image](../assets/HeadwareImages/snip_zipties.jpg)
 
 ### Insert Comfort Nodes
 
 Next, screw a comfort node into each of the 8 QUADSTARS.
 
-![image](../../assets/HeadwareImages/screw_comforts.jpg)
+![image](../assets/HeadwareImages/screw_comforts.jpg)
 
 ### Supernova Assembly Complete!
 
-![image](../../assets/HeadwareImages/supernova_complete.jpg)
+![image](../assets/HeadwareImages/supernova_complete.jpg)
 
 ### Adjust the Ultracortex for your head
 
@@ -450,7 +450,7 @@ Put the Ultracortex Mark 3 onto your head and gradually tighten the electrode un
 
 **Be careful** not to strain the electrode wires when twisting the electrode unit with the OCTATOOL, or you may separate the wire from the electrode itself. Turn the OCTABOLT until the wire is nearly taught, then reposition the wire and tool and twist again, as demonstrated in the gif.
 
-![image](../../assets/HeadwareImages/OCTATOOL.gif)
+![image](../assets/HeadwareImages/OCTATOOL.gif)
 
 ### Examine your brain waves!
 
@@ -458,13 +458,13 @@ Place your UltraCortex on your head so that the back center node is roughly the 
 
 Now that you have your Ultracortex assembled and comfortably adjusted to your head size and shape, it's brain wave time!
 
-![image](../../assets/HeadwareImages/WEARING_IT2.jpg)
+![image](../assets/HeadwareImages/WEARING_IT2.jpg)
 
-Check out the [Getting Started w/ OpenBCI tutorial](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
+Check out the [Getting Started w/ OpenBCI tutorial](../Software/OpenBCISoftware/01-OpenBCI_GUI.md) to get up-and-running with the [OpenBCI Processing GUI](https://github.com/OpenBCI/OpenBCI_Processing).
 
 Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
 
-![image](../../assets/HeadwareImages/GUI.jpg)
+![image](../assets/HeadwareImages/GUI.jpg)
 
 ### Give Us Feedback!
 
