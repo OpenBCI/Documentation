@@ -72,13 +72,6 @@
             "ThirdParty/EmotiBit/EmotiBit_Guide"
           ]
           }, {
-              "type": "category",
-              "label": "HEGduino Kit",
-              "items": [
-                "ThirdParty/HEGduino Kit/HEGduino"
-              ]
-          }, {
-
             "type": "category",
             "label": "IDUN Dryode",
             "items": [
