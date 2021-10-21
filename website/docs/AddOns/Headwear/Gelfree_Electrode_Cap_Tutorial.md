@@ -143,5 +143,13 @@ Disinfection should be carried out only after the cleaning procedure and when it
 It is recommended to use very low concentration of disinfectant solution to disinfect the Gelfree BCI cap, electrodes and Hydro-linkTM. Please follow the instructions provided by the manufacturer of the selected disinfectant solution. Please only apply a minimum concentration and a minimum of soaking time required. Make sure that the substances to be disinfected is fully covered with a fairly diluted disinfectant. After disinfection, thoroughly rinse the substances with water and let it dry in air.
 The recommended disinfectants are as follows: Perfektan TB (Dr. Schumacher GmbH), Envirocide (Metrex), Metricide (Metrex), Cavicide (Metrex), or just diluted household bleach. If you are unable to purchase the products mentioned above brands in your region, a disinfecting product with similar proportions and active ingredients would be recommended. 
 
-## Technical 
+## Technical Specifications
+
+| Metric | Values |
+| ------------------------------ | --------------------------- |
+| AC Impedance | <2.5 kΩ·cm2 at 10 Hz |
+| DC offset voltage | <30 mV |
+| Potential Drift | <±5 mV/10min |
+| Electrode-scalp impedance | < 20 kΩ (at 10 Hz) |
+
 
