@@ -37,19 +37,19 @@ the Gelfree Electrode Cap is a semi-dry, low-cost, research-grade tool for obtai
 
 2. Connect a HPTA cable to the single end of the y-splitter cable, then connect the its blue termination to the gray cable, then to the REF location of the cap, shown below.
 
-<img src="<image URL>?raw=true" width="50%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_ref_pin.png?raw=true" width="50%" />
 
 3. Connect bottom pins N1P through N8P on the Cyton to a set of HPTA cables, shown below. These pins will be channels 1-8 on the OpenBCI GUI.
 
-<img src="<image URL>?raw=true" width="50%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_cyton_pins.png?raw=true" width="50%" />
 
 Connect top pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
 
-<img src="<image URL>?raw=true" width="50%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_cytondaisy_pins.png?raw=true" width="50%" />
 
 4. Connect a HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in! Connect the blue termination of this HPTA cable to gray cable, then connect the gray cable to the GND location on the cap, shown below.
 
-<img src="<insert URL>?raw=true" width="50%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%" />
 
 For WHY these connections are recommended, see the [EEG explanation](../../GettingStarted/Biosensing-Setups/01-EEG-Setup.md)page.
 
