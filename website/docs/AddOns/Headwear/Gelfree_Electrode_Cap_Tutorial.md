@@ -70,9 +70,7 @@ These steps can be done in any order:
 2. The bottom SRB pins on the Cyton and the Daisy **boards** should be "ganged together" using the split end of the y-splitter cable. 
 The single end of the y-splitter cable should go to the REF location of the **cap**. **You would use the HPTA cable to connect them.**
 
-The rest of the cap electrodes are completely up to you how you want to connect them to the Cyton.
-
-3. For example, if you want data from Fp1 (of the cap) to show up on channel 1 of the OpenBCI GUI, then connect Fp1 cable to the bottom pin N1P of the Cyton. Use the HPTA cable to connect them.
+3. The rest of the cap electrodes are completely up to you how you want to connect them to the Cyton. For example, if you want data from Fp1 (of the cap) to show up on channel 1 of the OpenBCI GUI, then connect Fp1 cable to the bottom pin N1P of the Cyton. Use the HPTA cable to connect them.
 
 If you want Fp1 data to show up on channel 9 of the OpenBCI GUI, then connect Fp1 to the bottom pin N1P of the CytonDaisy. You can pair any cap electrode (aside from GND and REF) with any pins N1P through N8P on the Cyton and Daisy boards
 
@@ -118,8 +116,6 @@ Head over to the OpenBCI GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.
     **If you just want to visualize EEG, EMG, ECG data (and do some basic analysis) and save the data to start with, download the standalone [OpenBCI GUI](https://openbci.com/index.php/downloads) and connect it to an OpenBCI Cyton, CytonDaisy, or Ganglion!**
 
 
-Find it all overwhelming? Don't know where to start? Questions, comments, suggestions? Email [support@openbci.com](mailto:support@openbci.com)
-
 ## Electrode Cap Care and Cleaning Guide
 
 A routine schedule for cleaning and disinfecting the Electrode
@@ -153,3 +149,4 @@ The recommended disinfectants are as follows: Perfektan TB (Dr. Schumacher GmbH)
 | Electrode-scalp impedance | < 20 kΩ (at 10 Hz) |
 
 
+Questions, comments, suggestions? Email [support@openbci.com](mailto:support@openbci.com)
