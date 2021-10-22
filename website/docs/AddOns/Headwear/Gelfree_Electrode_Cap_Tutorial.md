@@ -111,7 +111,7 @@ Head over to the OpenBCI GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.
 -   [Create a widget framework](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
 -   Output data into a saved file for later offline processing.
 -   [Customize the layout](Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
--   Access built-in widgets such as Band Power, Spectrogram, Accelerometer, EEG Head Plot, and MUCH more
+-   Access [OpenBCI GUI's built-in widgets](https://docs.openbci.com/docs/06Software/01-OpenBCISoftware/GUIWidgets) such as Band Power, Spectrogram, Accelerometer, EEG Head Plot, and MUCH more
 
     **If you just want to visualize EEG, EMG, ECG data (and do some basic analysis) and save the data to start with, download the standalone [OpenBCI GUI](https://openbci.com/index.php/downloads) and connect it to an OpenBCI Cyton, CytonDaisy, or Ganglion!**
 
@@ -119,12 +119,12 @@ Head over to the OpenBCI GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.
 ## Electrode Cap Care and Cleaning Guide
 
 A routine schedule for cleaning and disinfecting the Electrode
-Cap helps assure accurate EEG signals and the reuse of
+Cap ensures accurate EEG signals and the reuse of
 electrodes between different participants. Furthermore, you will
 preserve the excellent characteristics of your electrodes and will
 ensure a long product life.
 
-#### Cleaning and Storage:
+#### Cleaning and Storage
 
 After the measurement is finished, disconnect the electrode connectors from the CytonDaisy board. Remove the electrode holders out of the bases on the cap.
 1) Take the Hydro-linkTM sponges out of the holders and wash the Hydro-linkTM with tap water for at least three times, while squeezing out the water in the Hydro-linkTM during washing. Then let the Hydro-linkTM dry in air.
