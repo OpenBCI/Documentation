@@ -14,7 +14,7 @@ The [touchproof adapter cable](https://shop.openbci.com/collections/frontpage/pr
 :::
 
 The 10-20 placement of these electrodes is as shown in the image below:
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/gelfree_electrode_cap_2.jpg?raw=true" width="50%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/Gelfree_Electrode_Cap_10-20_locations.png?raw=true" width="50%" />
 
 
 ## Electrode Cap With CytonDaisy Tutorial
