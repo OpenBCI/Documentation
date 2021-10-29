@@ -125,7 +125,7 @@ The band power window in the lower right of the GUI shows the relative strengths
 
 In the picture above, you can see the Ganglion Signal window in the lower left of the GUI. This widget helps users establish a quality connection for each electrode. For most bioelectrical measurements, you want the skin-electrode contact surface impedance to be low. Two of the four channels show lower impedance (these happen to be the flat snap electrodes that are touching the skin over the frontal cortex). This connection must be good, hence the green light to the left of the impedance value. If the impedance light in the GUI is red, you can improve the connection by making sure the electrodes are secured against the skin and making good contact. You may find it helpful to add a little [electrode paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198) to boost conductivity of the Ag-AgCl coating on the electrodes.
 
-Another widget shown in the picture above is the Focus widget. When the alpha waves are (relatively) high and beta waves are low, the GUI translates this to a focused state. **The Focus Widget is temporarily deprecated until a more reliable Focus algorithm is implemented. If you would still like to use this widget, you can download and run [GUI v4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).**
+Another widget shown in the picture above is the Focus widget. When the alpha waves are (relatively) high and beta waves are low, the GUI translates this to a focused state. **Download the latest [GUI 5.x.x](https://github.com/OpenBCI/OpenBCI_GUI/releases) with updated Focus Widget.**
 
 ## Headband-Cyton Tutorial
 
