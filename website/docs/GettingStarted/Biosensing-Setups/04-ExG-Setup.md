@@ -19,13 +19,10 @@ pipeline before starting this doc:
 -   [EMG](../EMGSetup): forearm measurement of muscle nerve signals [Learn more](https://en.wikipedia.org/wiki/Electromyography)
 -   [ECG](../ECGSetup): \[measure heart rhythm on the chest [Learn more](https://en.wikipedia.org/wiki/Electrocardiography)
 
-* * *
 
-**Note**
-
+:::info
 Sometimes we use ECG and EKG interchangeably, as they are the same thing. This modality measures the electrical activity of muscles in the heart.
-
-* * *
+:::
 
 ## Materials Needed
 
@@ -35,7 +32,7 @@ Here's a list of material you will need for this tutorial:
 1.  EEG hardware, can be one of the following Ultracortex
     [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
     , [Ultracortex Mark IV](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md)
-    , [Ultracortex Mark III](../../AddOns/Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+    , [Ultracortex Mark III](../../Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md)
     , [Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md); we will be using
        the [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md) in this tutorial.
 2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)

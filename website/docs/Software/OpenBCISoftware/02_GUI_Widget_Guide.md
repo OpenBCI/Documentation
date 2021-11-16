@@ -10,11 +10,11 @@ The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Downlo
 
 ## Time Series
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%" />
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_TimeSeries_Cyton_Screenshot.png)
 
 The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real-time, with each graph representing the voltage detected at one point in time by an electrode.
 
-It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared).
+It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared). The above screenshot was taken while touching the Cyton pins directly.
 
 Each Ultracortex comes with wires that are color-coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
 

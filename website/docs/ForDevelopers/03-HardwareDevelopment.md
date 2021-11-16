@@ -38,7 +38,7 @@ All information provided here is licensed under the [MIT License](https://openso
 
 ### Ultracortex Mark III (June 2016)
 
--   [Mark III Documentation](AddOns/Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+-   [Mark III Documentation](Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md). This hardware is now deprecated.
 
 * * *
 

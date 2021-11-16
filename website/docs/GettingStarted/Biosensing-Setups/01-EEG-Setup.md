@@ -10,7 +10,7 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 
 -   [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
 -   [Ultracortex Mark IV](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md)
--   [Ultracortex Mark III](../../AddOns/Headwear/02-Ultracortex-Mark-III-Nova-Revised.md)
+-   [Ultracortex Mark III](../../Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md)
 -   [Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md)
 
 ## What you will need
