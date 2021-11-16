@@ -20,9 +20,13 @@ Each Ultracortex comes with wires that are color-coded to match the GUI, which c
 
 ### Hardware Settings
 
-![image](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.0.2-HardwareSettingsController_Screenshot.png)
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_TimeSeries_HWSC_Screenshot_UnappliedSetting.png)
 
-For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
+For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. As an example, you can see Channel 1 has been highlighted in the above screenshot. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
+
+:::tip
+To change the gain of a channel, you can click a dropdown and then scroll to view more options.
+:::
 
 Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings. Also, users will need to stop the data stream in order to access the Hardware Settings UI inside the Time Series Widget.
 
@@ -40,9 +44,9 @@ _Window_ — Controls the amount of time that is shown in the series.
 **Railed/Near Railed Warnings**:
 These warnings show that there is no or poor signal and that you need to check the electrodes to ensure that they are making good contact with your body.
 
-**Impedance Check**:
-Sends a test current down the pin to check impedance. Information is given in kΩ.
-Note: Data will stop streaming automatically for the duration of the check.
+:::info
+To check the impedance of channels, use the new [Cyton Signal Widget](#cyton-signal) as of GUI 5.0.9.
+:::
 
 ## FFT Plot
 
@@ -209,6 +213,8 @@ You can find the [example Python script here in the GUI Networking Test Kit](htt
 Open Sound Control is a protocol for networking sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control. OSC's advantages include interoperability, accuracy, flexibility, and enhanced organization and documentation.
 
 OSC works with MaxMSP, PureData, and Resolume.
+
+## Cyton Signal
 
 ## Playback Widget
 
