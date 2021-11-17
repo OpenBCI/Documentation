@@ -45,7 +45,7 @@ _Window_ — Controls the amount of time that is shown in the series.
 These warnings show that there is no or poor signal and that you need to check the electrodes to ensure that they are making good contact with your body.
 
 :::info
-To check the impedance of channels, use the new [Cyton Signal Widget](#cyton-signal) as of GUI 5.0.9.
+As of GUI 5.0.9, use the new [Cyton Signal Widget](#cyton-signal) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
 :::
 
 ## FFT Plot
@@ -214,11 +214,11 @@ Open Sound Control is a protocol for networking sound synthesizers, computers, a
 
 OSC works with MaxMSP, PureData, and Resolume.
 
-## Cyton Signal
+## Cyton Signal Widget
+
+Use the new [Cyton Signal Widget](#cyton-signal) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
 
 ## Playback Widget
-
-
 
 This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
 
