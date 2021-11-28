@@ -45,7 +45,7 @@ _Window_ — Controls the amount of time that is shown in the series.
 These warnings show that there is no or poor signal and that you need to check the electrodes to ensure that they are making good contact with your body.
 
 :::info
-As of GUI 5.0.9, use the new [Cyton Signal Widget](#cyton-signal) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
+As of GUI 5.0.9, use the new [Cyton Signal Widget](#cyton-signal-widget) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
 :::
 
 ## FFT Plot
@@ -217,6 +217,10 @@ OSC works with MaxMSP, PureData, and Resolume.
 ## Cyton Signal Widget
 
 Use the new [Cyton Signal Widget](#cyton-signal) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
+
+:::info
+The impedance check mode injects 31.5Hz noise into an individual channel, and we can only check one at a time due to the noise this creates on other nearby channels. This is the only way to get reliable measurements using this method. It is not advised to check impedance using injected current on more than one channel.
+:::
 
 ## Playback Widget
 
