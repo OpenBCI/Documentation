@@ -216,11 +216,32 @@ OSC works with MaxMSP, PureData, and Resolume.
 
 ## Cyton Signal Widget
 
-Use the new [Cyton Signal Widget](#cyton-signal) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
+Use this widget to check the signal quality of attached electrodes. There are two modes for this widget: Impedance and Live. You will find a description of each mode below along with screenshots.
+
+![Cyton Signal Widget starting view](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_NoData.png)
+
+
+### Impedance Mode
+
+Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality. 
+
+Please be patient when sending commands and pressing buttons while in this mode. The Cyton needs a few milliseconds to reconfigure the board between checking channels. After checking the signal quality, the Cyton board may reset to the default board settings. You may also choose to do this manually by pressing the "Reset All Channels" button found in the top right of this widget.
+
+We recommend using this widget and mode before starting a recording session. **Also, note that this data will not be recorded to a file, though you may see some data in the Time Series widget.** In the future, we would like to save this data to a separate file for those advanced users who may wish to analyze it further.
+
+![Cyton Signal Widget Impedance ](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_IsCheckingWithNoPinsAttached.png)
 
 :::info
 The impedance check mode injects 31.5Hz noise into an individual channel, and we can only check one at a time due to the noise this creates on other nearby channels. This is the only way to get reliable measurements using this method. It is not advised to check impedance using injected current on more than one channel.
 :::
+
+### Live Mode
+
+Use this mode to check the status of all channels at once while streaming data. This information is also displayed on each channel in the Time Series Widget. Though, it can be helpful to view all of this data together in a table to make comparisons.
+
+![Cyton Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_LiveMode_LiveDataNoPinsConnected.png)
+
+'Railed' indication in the GUI just means your signal amplitude is exceeding the maximum value for the scale you are using. Generally, this indicates that an electrode may not be making direct contact with skin. If it is already touching, you could try lowering the gain on that channel via the Hardware Settings feature.
 
 ## Playback Widget
 
