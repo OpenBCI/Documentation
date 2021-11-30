@@ -10,19 +10,23 @@ The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Downlo
 
 ## Time Series
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_TimeSeries.jpg?raw=true" width="50%" />
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_TimeSeries_Cyton_Screenshot.png)
 
 The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real-time, with each graph representing the voltage detected at one point in time by an electrode.
 
-It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared).
+It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared). The above screenshot was taken while touching the Cyton pins directly.
 
 Each Ultracortex comes with wires that are color-coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
 
 ### Hardware Settings
 
-![image](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.0.2-HardwareSettingsController_Screenshot.png)
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_TimeSeries_HWSC_Screenshot_UnappliedSetting.png)
 
-For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
+For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. As an example, you can see Channel 1 has been highlighted in the above screenshot. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
+
+:::tip
+To change the gain of a channel, you can click a dropdown and then scroll to view more options.
+:::
 
 Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings. Also, users will need to stop the data stream in order to access the Hardware Settings UI inside the Time Series Widget.
 
@@ -40,9 +44,9 @@ _Window_ — Controls the amount of time that is shown in the series.
 **Railed/Near Railed Warnings**:
 These warnings show that there is no or poor signal and that you need to check the electrodes to ensure that they are making good contact with your body.
 
-**Impedance Check**:
-Sends a test current down the pin to check impedance. Information is given in kΩ.
-Note: Data will stop streaming automatically for the duration of the check.
+:::info
+As of GUI 5.0.9, use the new [Cyton Signal Widget](#cyton-signal-widget) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
+:::
 
 ## FFT Plot
 
@@ -210,9 +214,38 @@ Open Sound Control is a protocol for networking sound synthesizers, computers, a
 
 OSC works with MaxMSP, PureData, and Resolume.
 
+## Cyton Signal Widget
+
+Use this widget to check the signal quality of attached electrodes. There are two modes for this widget: Impedance and Live. You will find a description of each mode below along with screenshots. *For now, a placeholder image of the headplot with default electrode positions is displayed on the right side of this widget. We will be updating this in the next major version of the GUI.*
+
+![Cyton Signal Widget starting view](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_NoData.png)
+
+
+### Impedance Mode
+
+Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality. 
+
+Please be patient when sending commands and pressing buttons while in this mode. The Cyton needs a few milliseconds to reconfigure the board between checking channels. After checking the signal quality, the Cyton board may reset to the default board settings. You may also choose to do this manually by pressing the "Reset Channels" button found in the top right of this widget.
+
+We recommend using this widget and mode before starting a recording session. **Also, note that this data will not be recorded to a file, though you may see some data in the Time Series widget.** In the future, we would like to save this data to a separate file for those advanced users who may wish to analyze it further.
+
+![Cyton Signal Widget Impedance ](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_IsCheckingWithNoPinsAttached.png)
+
+In the above screenshot, take note of the injected current in the Time Series widget on channel 3. Also, you can see that the baseline values for all channels are around 5000 kOhms with no electrodes attached or touching a user. Many users should simply opt to use the "Check All Channels" button to automatically check signals on all channels. You can adjust the "Interval" at the top of the widget using a dropdown menu.
+
+:::info
+The impedance check mode injects 31.5Hz noise into an individual channel, and we can only check one at a time due to the noise this creates on other nearby channels. This is the only way to get reliable measurements using this method. It is not advised to check impedance using injected current on more than one channel.
+:::
+
+### Live Mode
+
+Use this mode to check the status of all channels at once while streaming data. This information is also displayed on each channel in the Time Series Widget. Though, it can be helpful to view all of this data together in a table to make comparisons.
+
+![Cyton Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_LiveMode_LiveDataNoPinsConnected.png)
+
+'Railed' indication in the GUI just means your signal amplitude is exceeding the maximum value for the scale you are using. Generally, this indicates that an electrode may not be making direct contact with skin. If it is already touching, you could try lowering the gain on that channel via the Hardware Settings feature.
+
 ## Playback Widget
-
-
 
 This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
 
