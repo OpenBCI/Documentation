@@ -216,7 +216,7 @@ OSC works with MaxMSP, PureData, and Resolume.
 
 ## Cyton Signal Widget
 
-Use this widget to check the signal quality of attached electrodes. There are two modes for this widget: Impedance and Live. You will find a description of each mode below along with screenshots.
+Use this widget to check the signal quality of attached electrodes. There are two modes for this widget: Impedance and Live. You will find a description of each mode below along with screenshots. *For now, a placeholder image of the headplot with default electrode positions is displayed on the right side of this widget. We will be updating this in the next major version of the GUI.*
 
 ![Cyton Signal Widget starting view](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_NoData.png)
 
@@ -225,11 +225,13 @@ Use this widget to check the signal quality of attached electrodes. There are tw
 
 Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality. 
 
-Please be patient when sending commands and pressing buttons while in this mode. The Cyton needs a few milliseconds to reconfigure the board between checking channels. After checking the signal quality, the Cyton board may reset to the default board settings. You may also choose to do this manually by pressing the "Reset All Channels" button found in the top right of this widget.
+Please be patient when sending commands and pressing buttons while in this mode. The Cyton needs a few milliseconds to reconfigure the board between checking channels. After checking the signal quality, the Cyton board may reset to the default board settings. You may also choose to do this manually by pressing the "Reset Channels" button found in the top right of this widget.
 
 We recommend using this widget and mode before starting a recording session. **Also, note that this data will not be recorded to a file, though you may see some data in the Time Series widget.** In the future, we would like to save this data to a separate file for those advanced users who may wish to analyze it further.
 
 ![Cyton Signal Widget Impedance ](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_IsCheckingWithNoPinsAttached.png)
+
+In the above screenshot, take note of the injected current in the Time Series widget on channel 3. Also, you can see that the baseline values for all channels are around 5000 kOhms with no electrodes attached or touching a user. Many users should simply opt to use the "Check All Channels" button to automatically check signals on all channels. You can adjust the "Interval" at the top of the widget using a dropdown menu.
 
 :::info
 The impedance check mode injects 31.5Hz noise into an individual channel, and we can only check one at a time due to the noise this creates on other nearby channels. This is the only way to get reliable measurements using this method. It is not advised to check impedance using injected current on more than one channel.
