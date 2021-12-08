@@ -6,7 +6,7 @@ title: General Frequently Asked Questions
 
 Open Brain Computer Interface. We believe that science advancements will only—and should only—be made through an open forum of shared knowledge and concerted effort, by people from a variety of backgrounds. We work to harness the power of the open source movement to accelerate ethical innovation of human-computer interface technologies.
 
-## Where can find what people have been doing with OpenBCI?
+## Where can I find what people have been doing with OpenBCI?
 
 People working with OpenBCI regularly post about their projects on our [Community Page](http://openbci.com/community).
 
