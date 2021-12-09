@@ -50,7 +50,7 @@ jobs:
           elif [ -e package-lock.json ]; then
           npm ci
           else
-          npm i --force
+          npm i
           fi
           ls
           npm run deploy
