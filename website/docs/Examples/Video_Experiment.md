@@ -1,8 +1,8 @@
 ---
 id: VideoExperiment
-title: Puppies and Kittens Experiment
+title: Trigger Addition
 ---
-# OpenBCI_Experiment
+# Trigger Addition
 
 Welcome to the OpenBCI Puppies and Kittens Experiment designed by Fan Li.
 
