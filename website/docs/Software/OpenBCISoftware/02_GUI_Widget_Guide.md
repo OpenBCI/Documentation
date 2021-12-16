@@ -376,7 +376,7 @@ As of GUI v4, the app attempts to auto-save and auto-load user settings. Otherwi
 
 There are a few details at the top of SessionSettings.pde that should be helpful. Just follow the style that is already in place to save and load from [JSON](https://en.wikipedia.org/wiki/JSON). Skim through the code in save() or load(), you will see settings from some of your favorite widgets. Use this as your example!
 
-### Step 6 - Initial Testing
+### Step 6 - Widget Testing
 
 **Debugging:**
 If you've added any `println()` or `verbosePrint()` in your widget, you can use the Console Log feature to see these messages, or just look at the console in your favorite IDE.
