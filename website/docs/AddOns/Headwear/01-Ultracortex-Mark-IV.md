@@ -490,7 +490,7 @@ Check out the [Getting Started w/ OpenBCI tutorial](Software/OpenBCISoftware/01-
 
 Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
 
-![image](../../assets/HeadwareImages/MarkIV_screenshot.png)
+![image](../../assets/HeadwareImages/Cyton_11Hz.jpg)
 
 The OpenBCI GUI has a widget for visualizing signal strength at each electrode. To view it, click on the "FFT Plot" drop-down menu in the top right corner. Select "Head Plot".
 
