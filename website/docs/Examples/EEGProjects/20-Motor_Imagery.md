@@ -64,7 +64,7 @@ Lastly, these trials must be in a randomized order, i.e., not simply a block of 
 
 ### Common Spatial Pattern
 
-![CSP Node](../../assets/TutorialImages/CSP_MotorImagery_Node.PNG)
+![CSP Node](../../assets/TutorialImages/CSP_MotorImagery_Node_screenshot.png)
 
 Node: Common Spatial Pattern
 
