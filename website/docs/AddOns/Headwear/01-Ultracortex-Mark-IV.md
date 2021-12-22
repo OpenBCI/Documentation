@@ -488,7 +488,7 @@ Now that you have your Ultracortex assembled and comfortably adjusted to your he
 
 Check out the [Getting Started w/ OpenBCI tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to get up-and-running with the [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI).
 
-Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~11 hz) spike on the FFT Plot.
+Below is a screenshot of what the GUI looks like when you've got your OpenBCI + Ultracortex (w/ 8 channels) hooked up! You can see a nice alpha (~10 hz) spike on the FFT Plot.
 
 ![image](../../assets/HeadwareImages/Cyton_11Hz.jpg)
 
