@@ -241,3 +241,4 @@ Caution:
 
 17. Can I buy multiple caps (for different head sizes) with this kit?
     - **The electrode cap kits come in different sizes. Choose from small, medium, and large in the [product page](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap-kit?variant=16456863776840).**
+
