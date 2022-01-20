@@ -34,23 +34,23 @@ the Gelfree Electrode Cap is a semi-dry, low-cost, research-grade tool for obtai
 
 1. Use the [y-splitter cable](../../../GettingStarted/Boards/DaisyGS/#2-y-splitter-cable) that came with your CytonDaisy to "gang" together the bottom SRB pins on the Cyton and the Daisy module, as shown below. This will be the reference electrode for the other electrodes on the subject's head.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/gelfree_electrode_cap_2.jpg?raw=true" width="50%" />
+![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_2.jpg)
 
 2. Connect a HPTA cable to the single end of the y-splitter cable, then connect the its blue termination to the gray cable, then to the REF location of the cap, shown below.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/gelfree_electrode_cap_4and5and6.jpg?raw=true" width="100%" /> 
+![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_4and5and6.jpg)
 
 3. Connect bottom pins N1P through N8P on the Cyton to a set of HPTA cables, shown below. These pins will be channels 1-8 on the OpenBCI GUI.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/gelfree_electrode_cap_1.jpg?raw=true" width="50%" />
+![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_1.jpg)
 
 Connect top pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/gelfree_electrode_cap_3.jpg?raw=true" width="50%" />
+![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_3.jpg)
 
 4. Connect a HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in! Connect the blue termination of this HPTA cable to gray cable, then connect the gray cable to the GND location on the cap, shown below.
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/HeadwareImages/gelfree_electrode_cap_7and8and9.jpg?raw=true" width="100%" />
+![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_7and8and9.jpg)
 
 For WHY these connections are recommended, see the [EEG explanation](../../GettingStarted/Biosensing-Setups/01-EEG-Setup.md)page.
 
