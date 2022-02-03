@@ -15,7 +15,7 @@ EmotiBit is a wearable sensor module for capturing high-quality emotional, physi
 -   Lithium Battery
 -   MicroSD Card
 
-Purchase the [EmotiBit + Kit](https://shop.openbci.com/products/emotibit-kit) or the [All-in-One EmotiBit Bundle](https://shop.openbci.com/collections/frontpage/products/all-in-one-emotibit-bundle) to receive these materials in one order!
+Purchase the [EmotiBit + Kit](https://shop.openbci.com/collections/frontpage/products/emotibit) or the [All-in-One EmotiBit Bundle](https://shop.openbci.com/collections/frontpage/products/all-in-one-emotibit-bundle) to receive these materials in one order!
 
 ### How to use it
 
