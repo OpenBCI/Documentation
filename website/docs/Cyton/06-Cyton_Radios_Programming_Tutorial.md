@@ -108,7 +108,7 @@ Again, there is a small difference between the 8-bit and Cyton boards, explained
 
 7.  Click "Upload" on the toolbar (the icon to the right of the checkmark). Your code is now uploading to the OpenBCI Device!
 
-_Important!_ As of firmware version 2, you must first flash the board with the line `radio.flashNonVolatileMemory();` in the `setup()` function uncommented, then comment the line back out and program again. It is very important that you reprogram the board with the line commented out. We must do this because with firmware version two, the channel number is stored to non-volatile memory so we can change the channel number of the system from the PC/Driver, turn the system off and still remember the newly set channel. _If this is your first time uploading firmware version two (your bought your board prior to October 2016), you may ignore this message the first time you upload radio code._
+_Important!_ As of firmware version 2, you must first flash the board with the line `radio.flashNonVolatileMemory();` in the `setup()` function uncommented, then comment the line back out and program again. It is very important that you reprogram the board with the line commented out. We must do this because with firmware version two, the channel number is stored to non-volatile memory so we can change the channel number of the system from the PC/Driver, turn the system off and still remember the newly set channel. _If this is your first time uploading firmware version two (you bought your board prior to October 2016), you may ignore this message the first time you upload radio code._
 
 ### Program DEVICE Radio with OpenBCI Dongle
 
