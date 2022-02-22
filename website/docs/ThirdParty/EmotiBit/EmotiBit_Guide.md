@@ -43,8 +43,8 @@ What is the difference between the EmotiBit Emo and MD Boards?
 
 | Product name      | What's Included | Price   |
 | ---        |    ----   |          --- |
-| EmotiBit Emo            | <ul><li>PPG Sensor (3-wavelength) </li><li>EDA / GSR sensor (+AgCl snap electrodes)</li><li>9-axis IMU (Accel, Gyro, Mag)</li><li>Temperature sensor (standard-grade)</li><li>Numerous derivative biometric streams</li><li>Finger strap       | $249.99   |
-| EmotiBit MD   |  <ul><li>**Everything** on EmotiBit Emo</li><li>**PLUS** a medical-grade temperature sensor (thermopile) for sensing even more accurate body temperature        | $349.99      |
+| EmotiBit Emo            | <ul><li>PPG Sensor (3-wavelength) </li><li>EDA / GSR sensor (+AgCl snap electrodes)</li><li>9-axis IMU (Accel, Gyro, Mag)</li><li>Temperature sensor (standard-grade)</li><li>Numerous derivative biometric streams</li><li>Finger strap      </li></ul>| $249.99   |
+| EmotiBit MD   |  <ul><li>**Everything** on EmotiBit Emo</li><li>**PLUS** a medical-grade temperature sensor (thermopile) for sensing even more accurate body temperature  </li></ul>     | $349.99      |
 
 ###Do I need a kit?
 You need several items in the Essentials Kit to use EmotiBit, including:
@@ -60,8 +60,8 @@ We also have an Electrode Kit for folks who want spares and additional flexibili
 
 | Product name      | What's Included | Price   |
 | ---        |    ----   |          --- |
-| [Essentials Kit](https://shop.openbci.com/collections/frontpage/products/emotibit-essentials-kit?variant=42366414749936)          | <ul><li>Adafruit Feather M0 WiFi </li><li>400mAh battery (up to 10 hours use in data-logger mode)</li><li>High-speed microSD card</li><li>MicroSD card reader</li><li>Micro USB cable</li><li>3 Emoti-stretch straps of different lengths to wear EmotiBit nearly anywhere on the body, ranging from a child’s wrist to an adult head     | $114.99  |
-| Electrode Kit  |  <ul><li>10x EDA electrodes (Ag/AgCl)</li><li>5x solder-cup snaps (to add your own EDA leads)   </li><li>5x Emoti-genic covers (provides an additional hygienic layer and sweat protection)     |$34.99    |
+| [Essentials Kit](https://shop.openbci.com/collections/frontpage/products/emotibit-essentials-kit?variant=42366414749936)          | <ul><li>Adafruit Feather M0 WiFi </li><li>400mAh battery (up to 10 hours use in data-logger mode)</li><li>High-speed microSD card</li><li>MicroSD card reader</li><li>Micro USB cable</li><li>3 Emoti-stretch straps of different lengths to wear EmotiBit nearly anywhere on the body, ranging from a child’s wrist to an adult head </li></ul>    | $114.99  |
+| Electrode Kit  |  <ul><li>10x EDA electrodes (Ag/AgCl)</li><li>5x solder-cup snaps (to add your own EDA leads)   </li><li>5x Emoti-genic covers (provides an additional hygienic layer and sweat protection) </li></ul>    |$34.99    |
 
 ![](https://media1.giphy.com/media/lKcSrcr58hch9ZieE1/giphy.gif?cid=790b7611dd919598cee4b4b51d2094e000cd6b94b7aa740f&rid=giphy.gif&ct=g)
 
