@@ -24,7 +24,8 @@ We put together [The OpenBCI Citation List](https://openbci.com/citations), a co
 
 ### Contributing
 
-If you are interested in contributing to the OpenBCI Learning Pages, feel free to create your own Markdown file and submit a pull request to relevant sub-directory of the [Docs repo](https://github.com/openbci/Documentation) on our Github! If you notice any mistakes in these guides, you can also submit issues there.
+If you are interested in contributing to the OpenBCI Learning Pages, follow [this simple tutorial](GettingStarted/Documentation/01-Doc_Edits.md) on how to edit our documentation! If you notice any mistakes in these guides, you can open an issue in our [Docs Repository](https://github.com/openbci/Documentation).
+
 
 ### Real-time EEG data with OpenBCI GUI
 

@@ -27,7 +27,13 @@
               "items": [
                   "GettingStarted/Community/Community"
               ]
-          }],
+          }, {
+            "type": "category",
+            "label": "Documentation",
+            "items": [
+                "GettingStarted/Documentation/DocEdits"
+            ]
+        }],
       "Cyton Board": [
         "Cyton/CytonLanding",
         "Cyton/CytonSpecs",
