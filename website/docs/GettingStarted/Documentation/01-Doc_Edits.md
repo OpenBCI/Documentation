@@ -18,6 +18,6 @@ If you'd like to make a minor change to our docs, such as updating a hyperlink o
 
 ## Major Changes
 
-If you'd like to make a major change such as adding a new document follow the steps on our [Docs Wiki](https://github.com/OpenBCI/Documentation/wiki/Making-Changes-to-OpenBCI-Documentation). 
+If you'd like to make a major change, such as adding a new document, follow the steps on our [Docs Wiki](https://github.com/OpenBCI/Documentation/wiki/Making-Changes-to-OpenBCI-Documentation). 
 
 
