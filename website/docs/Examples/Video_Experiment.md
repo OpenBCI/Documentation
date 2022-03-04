@@ -2,7 +2,7 @@
 id: VideoExperiment
 title: Puppies and Kittens Experiment
 ---
-# OpenBCI_Experiment
+# OpenBCI Experiment
 
 Welcome to the OpenBCI Puppies and Kittens Experiment designed by Fan Li.
 
