@@ -32,6 +32,9 @@ module.exports={
         },
         "theme": {
           "customCss": [require.resolve('./src/css/customTheme.css')],
+        },
+        "gtag": {
+          "trackingID": "UA-42419007-3"
         }
       }
     ]
@@ -90,9 +93,6 @@ module.exports={
       "indexName": "openbci",
       "placeholder": "Search Docs",
       "algoliaOptions": {}
-    },
-    "gtag": {
-      "trackingID": "UA-42419007-3"
     }
   }
 }
