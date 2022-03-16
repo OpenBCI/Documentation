@@ -61,7 +61,7 @@ Here is the [code sample to read/write BrainFlow CSV file using BrainFlow Python
 
 ### Method 1: Offline Import of CSV file from the OpenBCI GUI
 
-To get started, use your OpenBCI board (like the Cyton or Ganglion board) and the OpenBCI GUI to stream some data. Whenever you stream data to the GUI, it's also automatically saved in .csv format on your computer. GUI recordings are saved to `[USER]/Documents/OpenBCI_GUI/Recordings/` on all operating systems.
+To get started, use your OpenBCI board (like the Cyton or Ganglion board) and the OpenBCI GUI to stream some data. Whenever you stream data to the GUI, it's also automatically saved in .csv format on your computer. GUI recordings are saved to `[USER]/Documents/OpenBCI_GUI/Recordings/` on all operating systems. The OpenBCI Processing GUI saves data in text (txt) or comma-separated value (CSV) files.
 
 :::caution OpenBCI vs. BrainFlow CSV
 This method is not the same as using BrainFlow CSV files. In OpenBCI CSV files, data stored is in a slightly different order and configuration.
@@ -70,7 +70,7 @@ This method is not the same as using BrainFlow CSV files. In OpenBCI CSV files, 
 - OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
 :::
 
-The OpenBCI Processing GUI saves data in text (txt) or comma-separated value (CSV) files. Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
+Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/matlab_import_data.png?raw=true" width="80%" />
 
