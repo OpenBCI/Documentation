@@ -186,6 +186,24 @@ To load settings, just **click "Settings"-->"Load"**. Select a settings file fro
 
 For all data modes, the GUI will load all GUI-related settings automatically. After starting a session, hardware settings (channel on/off, gain, etc.) will need to be set by the user manually.
 
+### BrainFlow Streaming Board Feature
+
+#### External Process to GUI
+
+This feature allows more advanced users to connect to OpenBCI boards using an external process (such as a Python script) and simultaneously send unfiltered data to the OpenBCI GUI. **Users may find this necessary for developing apps while wanting to use the GUI to visualize data.** Make sure to specify the same IP address and port mentioned in the primary process. Here is the [official BrainFlow Documentation for Streaming Board](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html?highlight=streaming%20board#streaming-board).
+
+![BrainFlow Streaming Board Screenshot](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-StreamingBoardCP_Screenshot.png)
+
+#### GUI to External Process
+
+Similarly, you can reverse this process by using the BrainFlow Streamer set to "Network" and specifying the IP address and port there. The data sent out from the GUI is unfiltered. Here is the [official BrainFlow Documentation for Streaming Board](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html?highlight=streaming%20board#streaming-board).
+
+:::tip Recommendation
+This method can be more reliable and quicker to implement than sending Time Series data out from the Networking Widget over UDP, LSL, or OSC!
+:::
+
+![BrainFlow Streamer over Network Option](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-BrainFlowStreamerNetworkSetting_Screenshot.png)
+
 ### GUI Keyboard Shortcuts
 
 **Use the spacebar to start or stop the data stream!**
