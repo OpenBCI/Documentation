@@ -4,43 +4,87 @@ title: MATLAB
 ---
 [MATLAB](https://en.wikipedia.org/wiki/MATLAB) is a powerful numerical computing language and environment that is widely used in a wide variety of academic, research, and industry applications.
 
-A few Matlab toolboxes have been created specifically for working with EEG and BCI. [EEGLAB](http://sccn.ucsd.edu/eeglab/), [BCILAB](http://sccn.ucsd.edu/wiki/BCILAB), [ERPLAB](http://erpinfo.org/erplab), and [FieldTrip](http://www.fieldtriptoolbox.org/) are a few toolboxes that have helped OpenBCI users work in MATLAB.
+A few MATLAB toolboxes have been created specifically for working with EEG and BCI. [EEGLAB](http://sccn.ucsd.edu/eeglab/), [BCILAB](http://sccn.ucsd.edu/wiki/BCILAB), [ERPLAB](http://erpinfo.org/erplab), and [FieldTrip](http://www.fieldtriptoolbox.org/) are a few toolboxes that have helped OpenBCI users work in MATLAB.
 
-This tutorial will walk through setting up your Matlab environment for use with OpenBCI hardware, as well as some basic uses and functionalities that Matlab offers for working with brain-computer interfaces.
+This tutorial will walk through setting up your MATLAB environment for use with OpenBCI hardware, as well as some basic uses and functionalities that MATLAB offers for working with brain-computer interfaces.
 
 ## Installation
 
 Go to the [MathWorks website](http://www.mathworks.com/help/install/ug/install-mathworks-software.html) for MATLAB installation instructions.
 
-_Please note that MATLAB is commercial software. Licenses must either be purchased or acquired through academic or professional institutions._
+:::info
+Please note that MATLAB is commercial software. Licenses must either be purchased or acquired through academic or professional institutions.
+:::
 
 Several useful MATLAB toolkits (EEGLAB, BCILAB, FieldTrip, etc) have been created for collecting and analyzing EEG data, so this tutorial will focus on using MATLAB through these toolkits.
 
-## Loading OpenBCI Data
+## Using BrainFlow (Recommended)
 
-There are two main ways to get your OpenBCI data from the boards into MATLAB for analysis. The first is to import a CSV file from a recorded session, and the second is to use the Lab Streaming Layer (LSL) to stream the board data into MATLAB. We will go over both methods.
+There are two main ways to get your OpenBCI data while leveraging BrainFlow. The first method is to connect directly using the BrainFlow MATLAB Binding to get live data, and the second is to use a BrainFlow CSV file and BrainFlow Playback Board for offline playback or analysis.
 
-### Method 1: Import CSV file from the OpenBCI GUI
+:::tip BrainFlow Slack
+For more in-depth questions and assistance with BrainFlow, please visit the [official BrainFlow Slack](https://c6ber255cc.execute-api.eu-west-1.amazonaws.com/Express/).
+:::
 
-To get started, use your OpenBCI board (like the Cyton or Ganglion board) and the OpenBCI GUI to stream some data. Whenever you stream data to the GUI, it's also automatically saved in .csv format on your computer. GUI data and recordings are saved to _/Documents/OpenBCI_GUI/Settings/_ on all operating systems.
+### Method 1: Live Data Directly from OpenBCI Board using BrainFlow
 
-The OpenBCI Processing GUI saves data in text (txt) or comma separated value (csv) files. Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
+Now that we can connect to OpenBCI boards using [BrainFlow](https://brainflow.org), we can utilize the [MATLAB binding to get direct access](../../ForDevelopers/SoftwareDevelopment/#brainflow---matlab) **without using LSL**.
+
+:::tip Code Examples
+Here are the [official code examples](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab) of how to connect to OpenBCI boards directly in MATLAB.
+:::
+
+### Method 2: Offline data playback using BrainFlow CSV file and Playback Board
+
+- Connect to your OpenBCI Board using the OpenBCI GUI or directly with any BrainFlow API. See GUI and Python methods below.
+- Save data to file in the BrainFlow CSV format.
+- Then, you would load this file in MATLAB using **[the BrainFlow Playback Board feature](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#playback-file-board)** in [BrainFlow MATLAB binding](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab).
+
+#### Use OpenBCI GUI to create BrainFlow CSV File
+
+See the screenshot below to see where the option is to save data to BrainFlow CSV file. This is enabled by default and is saved simultaneously alongside OpenBCI CSV data in `[USER]/Documents/OpenBCI_GUI/Recordings`. You can then load this file into MATLAB.
+
+![BrainFlow Streamer Control Panel - Save to File](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-BrainFlowStreamerCP_Screenshot.png)
+
+:::caution OpenBCI vs. BrainFlow CSV
+This method is not the same as using OpenBCI CSV files. In BrainFlow CSV files, data stored is in a slightly different order and configuration.
+
+- BrainFlow CSV File Example: `BrainFlow-RAW_2022-03-11_15-41-42_0.csv`
+- OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
+:::
+
+#### Use BrainFlow Python Script to Read/Write BrainFlow CSV File
+
+Here is the [code sample to read/write BrainFlow CSV file using BrainFlow Python Binding](https://brainflow.readthedocs.io/en/stable/Examples.html#python-read-write-file)
+
+## Using the OpenBCI GUI
+
+### Method 1: Offline Import of CSV file from the OpenBCI GUI
+
+To get started, use your OpenBCI board (like the Cyton or Ganglion board) and the OpenBCI GUI to stream some data. Whenever you stream data to the GUI, it's also automatically saved in .csv format on your computer. GUI recordings are saved to `[USER]/Documents/OpenBCI_GUI/Recordings/` on all operating systems.
+
+:::caution OpenBCI vs. BrainFlow CSV
+This method is not the same as using BrainFlow CSV files. In OpenBCI CSV files, data stored is in a slightly different order and configuration.
+
+- BrainFlow CSV File Example: `BrainFlow-RAW_2022-03-11_15-41-42_0.csv`
+- OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
+:::
+
+The OpenBCI Processing GUI saves data in text (txt) or comma-separated value (csv) files. Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/matlab_import_data.png?raw=true" width="80%" />
 
-Select a saved OpenBCI data file. Once the data import screen is open, select the "Numeric Matrix" import option. Deselect all of the header rows. Also deselect the final column, the timestamp values, since the import wizard can only parse numeric values. Feel free to give your matrix a conveneint name, like "eeg_data":
+Select a saved OpenBCI data file. Once the data import screen is open, select the "Numeric Matrix" import option. Deselect all of the header rows. Also deselect the final column, the timestamp values, since the import wizard can only parse numeric values. Feel free to give your matrix a convenient name, like "eeg_data":
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/matlab_import_screen.png?raw=true" width="80%" />
 
 Click "Import Selection". Your matrix should now appear as an object in your workspace! Keep reading to learn more about processing your data with MATLAB toolboxes.
 
-### Method 2: Stream OpenBCI data via LSL
-
-#### Stream the OpenBCI Data from the OpenBCI GUI
+### Method 2: Stream Live Time Series Data from the OpenBCI GUI via LSL
 
 You can also stream live OpenBCI data into MATLAB using the Lab Streaming Layer either from the OpenBCI GUI or from Python. Here, we will go over how to import data from the OpenBCI GUI.
 
-Open the OpenBCI GUI and "Start System" with your setup as you would do. On the widget dropdown menu select "Networking". At the right upper corner of the Networking widget there is another dropdown menu, select LSL.
+Open the OpenBCI GUI and "Start System" with your setup as you would do. On the widget dropdown menu, select "Networking". At the right upper corner of the Networking widget there is another dropdown menu. Select "LSL."
 
 <img src="https://media.giphy.com/media/Rkol8EcqWbtNEeBrH9/giphy.gif" width="80%" />
 
@@ -123,15 +167,15 @@ There are many ways in which you can use MATLAB to analyze the data from the Ope
 
 ### EEGLAB
 
-From the EEGLAB wiki: "EEGLAB is an interactive Matlab toolbox for processing continuous and event-related EEG, MEG and other electrophysiological data using independent component analysis (ICA), time/frequency analysis, and other methods including artifact rejection."
+From the EEGLAB wiki: "EEGLAB is an interactive MATLAB toolbox for processing continuous and event-related EEG, MEG and other electrophysiological data using independent component analysis (ICA), time/frequency analysis, and other methods including artifact rejection."
 
 #### Setup
 
 Go to the [EEGLAB downloads page](http://sccn.ucsd.edu/eeglab/downloadtoolbox.html) and follow the instructions for your operating system.
 
-Download the zip file of the most current version of EEGLAB and extract it into a directory on your system. Then, make this toolbox accessible from Matlab by adding a path to this directory (the steps to do this vary by OS - see the "EEGLAB downloads page" link above).
+Download the zip file of the most current version of EEGLAB and extract it into a directory on your system. Then, make this toolbox accessible from MATLAB by adding a path to this directory (the steps to do this vary by OS - see the "EEGLAB downloads page" link above).
 
-To check if EEGLAB is correctly set up, go to the Matlab prompt and type:
+To check if EEGLAB is correctly set up, go to the MATLAB prompt and type:
 
 > \>> eeglab
 
@@ -156,11 +200,11 @@ Your data matrix is now ready to use with EEGLAB.
 
 #### Using EEGLAB
 
-If EEGLAB isn't already running, enter "eeglab" into the Matlab command line to start the program. Import your matrix into EEGLAB using the EEGLAB GUI: File -> Import Data -> Using EEGLAB functions and plugins -> From ASCII/float file or Matlab array
+If EEGLAB isn't already running, enter "eeglab" into the MATLAB command line to start the program. Import your matrix into EEGLAB using the EEGLAB GUI: File -> Import Data -> Using EEGLAB functions and plugins -> From ASCII/float file or MATLAB array
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/eeglab_dataimport.png?raw=true" width="80%" />
 
-In the pop-up window that appears, enter information about the data set. Select "Matlab variable", and enter the name of the variable where your matrix is stored. Enter the Data Sampling rate (it should be commented in at the top of the txt file - usually 250 Hz by default in the OpenBCI GUI). The other fields can be left at default, and EEGLAB will automatically fill in the information from the data set.
+In the pop-up window that appears, enter information about the data set. Select "MATLAB variable", and enter the name of the variable where your matrix is stored. Enter the Data Sampling rate (it should be commented in at the top of the txt file - usually 250 Hz by default in the OpenBCI GUI). The other fields can be left at default, and EEGLAB will automatically fill in the information from the data set.
 
 Channel locations are useful for plotting EEG scalp maps in 2-D or 3-D format. OpenBCI uses the standard 10-20 format for the 8 and 16 channel models, which can be found within these sfp files: [8 channel](../../assets/Matlab/electrode_positions_8channel.sfp) and [16 channel](../../assets/Matlab/electrode_positions_16channel.sfp). You can then import channel data by click "Browse" next to "Channel location file or info" and locating the OpenBCI sfp file you downloaded.
 
@@ -184,7 +228,7 @@ From what we can tell, EEGLAB seems to work primarily with datasets and recorded
 
 ### ERPLAB
 
-From the [ERPLAB homepage](http://erpinfo.org/erplab): "ERPLAB Toolbox is a free, open-source Matlab package for analyzing ERP data.  It is tightly integrated with EEGLAB Toolbox, extending EEGLAB’s capabilities to provide robust, industrial-strength tools for ERP processing, visualization, and analysis.  A graphical user interface makes it easy for beginners to learn, and Matlab scripting provides enormous power for intermediate and advanced users."
+From the [ERPLAB homepage](http://erpinfo.org/erplab): "ERPLAB Toolbox is a free, open-source MATLAB package for analyzing ERP data.  It is tightly integrated with EEGLAB Toolbox, extending EEGLAB’s capabilities to provide robust, industrial-strength tools for ERP processing, visualization, and analysis.  A graphical user interface makes it easy for beginners to learn, and MATLAB scripting provides enormous power for intermediate and advanced users."
 
 #### Setup
 

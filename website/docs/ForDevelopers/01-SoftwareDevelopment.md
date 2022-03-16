@@ -56,10 +56,29 @@ Once proof-of-concept is achieved, it's appopriate to consider integrating the O
 -   [R API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#r-api-reference)
 -   [R Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#r)
 
+## BrainFlow - MATLAB
+
+-   [Install MATLAB Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#matlab)
+-   [MATLAB API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#matlab-api-reference)
+-   [MATLAB Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab)
+
+## BrainFlow - Julia
+
+-   [Install Julia Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#julia)
+-   [Julia API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#julia-api-reference)
+-   [Julia Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#julia)
+
+## BrainFlow - Rust
+
+-   [Install Rust Binding](https://brainflow.readthedocs.io/en/stable/BuildBrainFlow.html#rust)
+-   [Rust API Reference](https://brainflow.readthedocs.io/en/stable/UserAPI.html#rust-api-reference)
+-   [Rust Code Samples](https://brainflow.readthedocs.io/en/stable/Examples.html#rust)
+
 ## Notebooks
 
 -   [BrainFlow to MNE Python Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/brainflow_mne.html)
 -   [Denoising Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/denoising.html)
+-   [BrainFlow Band Power Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/band_power.html)
 
 * * *
 
