@@ -68,7 +68,3 @@ Once proof-of-concept is achieved, it's appopriate to consider integrating the O
 -   [GUI How-to and Installation](Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 -   The [GUI Widget Guide](Software/OpenBCISoftware/GUIWidgets) provides details on each "widget" within the GUI, such as the [Time Series Widget](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#time-series) and the [Networking Widget](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking)
 -   [GUI Changelog](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/CHANGELOG.md)
-
-## BrainFlow Java Binding and OpenBCI GUI
-
-This project is currently in Alpha testing, more information will be available after the stable GUI version 5.0 has been released.
