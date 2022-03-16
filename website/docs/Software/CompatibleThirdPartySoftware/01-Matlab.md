@@ -2,7 +2,7 @@
 id: Matlab
 title: MATLAB
 ---
-[MATLAB](https://en.wikipedia.org/wiki/MATLAB) is a powerful numerical computing language and environment that is widely used in a wide variety of academic, research, and industry applications.
+[MATLAB](https://en.wikipedia.org/wiki/MATLAB) is a powerful numerical computing language and environment that is widely used in a wide variety of academic, research, and industrial applications.
 
 A few MATLAB toolboxes have been created specifically for working with EEG and BCI. [EEGLAB](http://sccn.ucsd.edu/eeglab/), [BCILAB](http://sccn.ucsd.edu/wiki/BCILAB), [ERPLAB](http://erpinfo.org/erplab), and [FieldTrip](http://www.fieldtriptoolbox.org/) are a few toolboxes that have helped OpenBCI users work in MATLAB.
 
@@ -70,7 +70,7 @@ This method is not the same as using BrainFlow CSV files. In OpenBCI CSV files, 
 - OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
 :::
 
-The OpenBCI Processing GUI saves data in text (txt) or comma-separated value (csv) files. Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
+The OpenBCI Processing GUI saves data in text (txt) or comma-separated value (CSV) files. Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/matlab_import_data.png?raw=true" width="80%" />
 
@@ -84,11 +84,11 @@ Click "Import Selection". Your matrix should now appear as an object in your wor
 
 You can also stream live OpenBCI data into MATLAB using the Lab Streaming Layer either from the OpenBCI GUI or from Python. Here, we will go over how to import data from the OpenBCI GUI.
 
-Open the OpenBCI GUI and "Start System" with your setup as you would do. On the widget dropdown menu, select "Networking". At the right upper corner of the Networking widget there is another dropdown menu. Select "LSL."
+Open the OpenBCI GUI and "Start System" with your setup as you would do. On the widget dropdown menu, select "Networking". At the right upper corner of the Networking widget, there is another dropdown menu. Select "LSL."
 
 <img src="https://media.giphy.com/media/Rkol8EcqWbtNEeBrH9/giphy.gif" width="80%" />
 
-Now you can select the OpenBCI Data you want to send, the Name of the LSL stream, the data advertised by the LSL and the number of channels you will be sending. Once you select your parameters make sure to turn on your LSL stream at the bottom of the widget. Then click start and you are ready to go.
+Now you can select the OpenBCI Data you want to send, the Name of the LSL stream, the data advertised by the LSL, and the number of channels you will be sending. Once you select your parameters make sure to turn on your LSL stream at the bottom of the widget. Then click start and you are ready to go.
 
 #### Import the LSL stream into MATLAB
 
@@ -96,7 +96,7 @@ There are two ways to import an LSL using the liblsl-Matlab library to stream in
 
 ##### liblsl-Matlab
 
-Follow the instalation instructions on the [liblsb-Matlab GitHub Repo](https://github.com/labstreaminglayer/liblsl-Matlab). Once you successfully added the correct directories and files you can use the following script to stream the OpenBCI data from your LSL stream.
+Follow the installation instructions on the [liblsb-Matlab GitHub Repo](https://github.com/labstreaminglayer/liblsl-Matlab). Once you successfully added the correct directories and files you can use the following script to stream the OpenBCI data from your LSL stream.
 
 ```Matlab
 
@@ -204,7 +204,7 @@ If EEGLAB isn't already running, enter "eeglab" into the MATLAB command line to 
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/eeglab_dataimport.png?raw=true" width="80%" />
 
-In the pop-up window that appears, enter information about the data set. Select "MATLAB variable", and enter the name of the variable where your matrix is stored. Enter the Data Sampling rate (it should be commented in at the top of the txt file - usually 250 Hz by default in the OpenBCI GUI). The other fields can be left at default, and EEGLAB will automatically fill in the information from the data set.
+In the pop-up window that appears, enter information about the data set. Select "MATLAB variable", and enter the name of the variable where your matrix is stored. Enter the Data Sampling rate (it should be commented in at the top of the text file - usually 250 Hz by default in the OpenBCI GUI). The other fields can be left at default, and EEGLAB will automatically fill in the information from the data set.
 
 Channel locations are useful for plotting EEG scalp maps in 2-D or 3-D format. OpenBCI uses the standard 10-20 format for the 8 and 16 channel models, which can be found within these sfp files: [8 channel](../../assets/Matlab/electrode_positions_8channel.sfp) and [16 channel](../../assets/Matlab/electrode_positions_16channel.sfp). You can then import channel data by click "Browse" next to "Channel location file or info" and locating the OpenBCI sfp file you downloaded.
 
@@ -212,7 +212,7 @@ The data is now imported into EEGLAB and ready to use!
 
 #### Plotting Data in EEGLAB
 
-To double check your data is imported correctly, and to get familiar with EEGLAB's interface, try plotting your data. Select Plot -> Channel data (scroll) from the EEGLAB pop-up window.
+To double-check your data is imported correctly, and to get familiar with EEGLAB's interface, try plotting your data. Select Plot -> Channel data (scroll) from the EEGLAB pop-up window.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/EEGLAB_plot.png?raw=true" width="50%" />
 
@@ -248,7 +248,7 @@ From the [FieldTrip homepage](http://www.fieldtriptoolbox.org/development/realti
 
 #### Setup
 
-[Download](http://www.fieldtriptoolbox.org/download) the latest version of FieldTrip from the download page (you will have to provide an email address and descriptiption of research).
+[Download](http://www.fieldtriptoolbox.org/download) the latest version of FieldTrip from the download page (you will have to provide an email address and description of research).
 
 Add the FieldTrip directory to your MATLAB path and check out FieldTrip's [getting started guide](http://www.fieldtriptoolbox.org/getting_started).
 
