@@ -83,7 +83,7 @@ module.exports={
     metadata: [{name: 'thumbnail', content: 'https://docs.openbci.com/img/openbci-logo-web.png'}],
     "footer": {
       "links": [],
-      "copyright": "Copyright © 2021 OpenBCI",
+      "copyright": "Copyright © 2022 OpenBCI",
       "logo": {
         "src": "img/open-bci-gear-blue.svg"
       }
