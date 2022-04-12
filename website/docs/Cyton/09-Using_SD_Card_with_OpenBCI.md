@@ -4,7 +4,10 @@ title: Using SD Card with OpenBCI
 ---
 ## Overview
 
-There are many situations where logging biometric data to local storage may be desirable. You may be doing a sleep study, or out on the road with your OpenBCI, and the wireless connection to a PC may be tenuous. The amount of data you are producing may require more bandwidth than the BLE connection can handle. This tutorial will cover the basics of adding an SD card for local storage to OpenBCI, how the data is formatted on the card, and how to retrieve the data after you've logged it.
+There are many situations where logging biometric data to local storage may be desirable. You may be doing a sleep study, or out on the road with your OpenBCI, and the wireless connection to a PC may be tenuous. The amount of data you are producing may require more bandwidth than the BLE connection can handle. This tutorial will cover the basics of adding an SD card for local storage to OpenBCI, how the data is formatted on the card, and how to retrieve the data after you've logged it. 
+
+The data saved to SD card is sampled at 250 Hz, even if you use a CytonDaisy 16-channel board! Therefore you are not limited to the 125 Hz sampling rate when streaming data from CytonDaisy. Note, the data still streams from CytonDaisy to computer at 125 Hz, but the sampling rate is 250Hz if you select the 'save to SD card' option in the GUI start screen.
+
 
 ## SD Card Basics
 
@@ -22,7 +25,7 @@ People have reported issues with _Transcend_ and _Samsung_ Class 10 cards.
 ![DiskUtility](../assets/CytonImages/DiskUtil_Erase.jpg)
 ![SecureErase](../assets/CytonImages/DiskUtil_eraseSecure.jpg)
 
-If you are using a new card, or one that you've had around, first thing you should do is format it to FAT32. We've found that the most successful formatting method is one that overwrites the card, not just 'erasing' it which can leave old data intact. The Mac OS provides this option in the Disk Utility. Click the Erase tab, open Security Options, and slide the slider to the 'single pass of zeros' option. There are more comprehensive secure erase options, but they take longer.
+**IMPORTANT** - If you are using a new card, or one that you've had around, you MUST format it to FAT32 or FAT. We've found that the most successful formatting method is one that overwrites the card, not just 'erasing' it which can leave old data intact. The Mac OS provides this option in the Disk Utility. Click the Erase tab, open Security Options, and slide the slider to the 'single pass of zeros' option. There are more comprehensive secure erase options, but they take longer. 
 
 ![ScanDiskFormatterMAC](../assets/CytonImages/ScanDiskFormatter.jpg)
 ![ScanDiskFormatterWin](../assets/CytonImages/SDformatterWin.jpg)
