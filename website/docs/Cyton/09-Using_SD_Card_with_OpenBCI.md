@@ -22,18 +22,27 @@ People have reported issues with _Transcend_ and _Samsung_ Class 10 cards.
 
 ### Formatting
 
+:::info Important
+If you are using a new card, or one that you've had around, you MUST format it to FAT32 or FAT. 
+
+We've found that the most successful formatting method is one that overwrites the card, not just 'erasing' it which can leave old data intact. The Mac OS provides this option in the Disk Utility. Click the Erase tab, open Security Options, and slide the slider to the 'single pass of zeros' option. There are more comprehensive secure erase options, but they take longer.
+
+In our experience, it's best not to have any sort of file structure on the SD card. All files that OpenBCI boards create will be saved in the root.
+:::
+
+#### Formatting SD Card on Mac
 ![DiskUtility](../assets/CytonImages/DiskUtil_Erase.jpg)
 ![SecureErase](../assets/CytonImages/DiskUtil_eraseSecure.jpg)
-
-**IMPORTANT** - If you are using a new card, or one that you've had around, you MUST format it to FAT32 or FAT. We've found that the most successful formatting method is one that overwrites the card, not just 'erasing' it which can leave old data intact. The Mac OS provides this option in the Disk Utility. Click the Erase tab, open Security Options, and slide the slider to the 'single pass of zeros' option. There are more comprehensive secure erase options, but they take longer. 
-
 ![ScanDiskFormatterMAC](../assets/CytonImages/ScanDiskFormatter.jpg)
+
+#### Formatting SD Card on Windows
 ![ScanDiskFormatterWin](../assets/CytonImages/SDformatterWin.jpg)
 ![ScanDiskFormatterOverwriteWIN](../assets/CytonImages/SDformatterFullOverwrite.jpg)
 
 Another, and some say better, option is to use the SD Association's own formatter software. [Download it here](https://www.sdcard.org/downloads/formatter_4/). (available for Windows and Mac). We recommend using it if you are on a Windows machine, because the Windows format option does not allow for overwriting the disk. Make sure to select OverWrite Format Type when using the SDFormatter tool on Windows or Mac.
 
-In our experience, it's best not to have any sort of file structure on the SD card. All files that OpenBCI boards create will be saved in the root.
+#### Formatting SD Card on Linux
+If you are using Linux, you can simply search the internet for "How to Format SD Card on Linux" and pick your favorite method.
 
 ### Block Writing
 
