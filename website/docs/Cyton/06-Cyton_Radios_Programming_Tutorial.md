@@ -5,7 +5,9 @@ title: Cyton Radios Programming Tutorial
 
 :::caution
 
-Note, you do not need to do ANY Cyton board or radio module programming if you want to use the Cyton out-of-the-box. **All OpenBCI boards and dongles ship already programmed**, i.e. with firmware already uploaded. If you're curious about how we do it, keep reading! If you just want to start streaming EEG/EMG/ECG data right away, head over to [Getting Started.](../../GettingStarted/GettingStartedLanding)
+Note, you do not need to do any board programming if you want to use the Cyton and Dongle out-of-the-box. All OpenBCI boards ship already programmed, i.e. with firmware uploaded. Email support@openbci.com before attempting to update or alter board firmware, or if you think there is an issue with your board. DO NOT attempt to upload firmware to your Cyton board or dongle unless specifically instructed to do so.
+
+If you're curious about how we do it, keep reading! If you want to start streaming EEG/EMG/ECG data right away, head over to Getting Started. Happy bio-sensing!
 
 :::
 
