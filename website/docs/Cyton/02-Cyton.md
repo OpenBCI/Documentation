@@ -29,9 +29,9 @@ The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture progr
 -   SPI bus pins on the 3V side for Daisy Module expansion
     -   DVDD, GND, MISO, MOSI, SCK, CS, CLK, RST
 -   Unused PIC32 pins
-    -   D11 (A5), D12 (A6), D13 (A7), D17, D18
+    -   D11 , D12 (A6), D13 (A7), D17, D18
 
-The SPI bus pins on 3V side include CLK, which is tied to the ADS1299 CLK pin for timing the Daisy Module, and a RST pin which is tied to the ADS1299 MCLR pin for hardware reset of the ADS chips. We use a PICkit 3 to bootload the PIC chips. Pins D11, D12, and D13 can be digital or analog (called by their A number above for analog purposes). D11 is also PGD, and has the blue LED in series with a 1K resistor connected to AGND. D12 is PGC, for bootloading purposes. D17 and D18 are digital I|O only. D17 is connected to the PROG pushbutton. The PROG button can be used as an input by setting it's MODE direction and doing digitalRead on it (there is a 470K pulldown on D17, pressing PROG pulls pin D17 up to DVDD).
+The SPI bus pins on 3V side include CLK, which is tied to the ADS1299 CLK pin for timing the Daisy Module, and a RST pin which is tied to the ADS1299 MCLR pin for hardware reset of the ADS chips. We use a PICkit 3 to bootload the PIC chips. Pins D12, and D13 can be digital or analog (called by their A number above for analog purposes). D11 is a Digital I/O and the PGD , and has the blue LED in series with a 1K resistor connected to AGND. D12 is PGC, for bootloading purposes. D17 and D18 are digital I|O only. D17 is connected to the PROG pushbutton. The PROG button can be used as an input by setting it's MODE direction and doing digitalRead on it (there is a 470K pulldown on D17, pressing PROG pulls pin D17 up to DVDD).
 
 ### Push Buttons
 
