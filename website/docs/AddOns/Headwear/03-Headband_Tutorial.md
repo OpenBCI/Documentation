@@ -6,9 +6,9 @@ title: OpenBCI EEG Headband Kit Guide
 
 ##### Now [available](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit?variant=8120393760782) in our shop!
 
-When combined with our [Ganglion](https://shop.openbci.com/collections/frontpage/products/ganglion-board), [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542), or CytonDaisy boards, the OpenBCI EEG Headband Kit is a low-cost, easy-to-use device for obtaining research-grade EEG data.
+When combined with our [Ganglion](https://shop.openbci.com/collections/frontpage/products/ganglion-board), [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542), or [CytonDaisy boards](https://shop.openbci.com/products/cyton-daisy-biosensing-boards-16-channel), the OpenBCI EEG Headband Kit is a low-cost, easy-to-use device for obtaining research-grade EEG data.
 
-This tutorial will guide you through setting up your EEG system with either board! Please read this tutorial in its entirety before setting up the system.
+This tutorial will guide you through setting up your headband kit! Please read this tutorial in its entirety before setting up the system.
 
 #### Each kit includes:
 
@@ -28,7 +28,7 @@ All electrode wires end in a female header termination compatible with OpenBCI b
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/10-20%20Placement.jpg?raw=true" width="50%" />
 
-The flat snap electrodes facilitate multiple frontal cortex measurements (F7, AF7, Fp1, Fpz, Fp2, AF8, F8). The comb snap electrodes will allow measurement at the FT7/FT8, T7/T8, TP7/TP8, P7/P8, PO7/PO8, O1/O2, and Oz nodes, depending where on the adjustable strap you place the electrodes. This kit is intended to provude up to eight channels of EEG data when paired with the Cyton 8-channel board. If you want 16-channels, purchase two headband kits and pair them with the CytonDaisy 16-channel board.
+The flat snap electrodes facilitate multiple frontal cortex measurements (F7, AF7, Fp1, Fpz, Fp2, AF8, F8). The comb snap electrodes will allow measurement at the FT7/FT8, T7/T8, TP7/TP8, P7/P8, PO7/PO8, O1/O2, and Oz nodes, depending where on the adjustable strap you place the electrodes. This kit is intended to provide up to eight channels of EEG data when paired with the Cyton 8-channel board. If you want 16-channels, purchase two headband kits and pair them with the CytonDaisy 16-channel board.
 
 ## Headband-Ganglion Tutorial
 
@@ -49,7 +49,7 @@ We recommend this battery for its long battery life, compact size, and compatibi
 
 #### Hardware
 
-Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. Once you've peeled the protective layer off, and flipped the switches to **down** position, they should look like the image below. Because we are using the Ganglion to obtain EEG, this step is IMPORTANT.
+Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. After you've peeled the protective layer off, and flipped the switches to **down** position, they will look like the image below. Please do not skip this step.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="50%" />
 
@@ -210,5 +210,5 @@ As always, don't hesitate to email us at [support@openbci.com](mailto:support@op
 ## Headband Tips and Signal Troubleshooting
 
 -   Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
--   *Optional* The flat and snap electrodes can be used with [electrode gel.](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
+-   *Optional* - The flat and snap electrodes can be used with [electrode gel.](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
 -   We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver.
