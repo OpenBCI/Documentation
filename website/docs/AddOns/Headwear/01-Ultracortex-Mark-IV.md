@@ -92,7 +92,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 
 ![image](../../assets/HeadwareImages/M4_Orientation_render.png)
 
-#### (21x) MECH_PARTS
+#### (35x) MECH_PARTS
 
 -   [MECH_PARTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL)
     -   [INSERTS](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/M4_Released/STL's/Mech_Parts/M4_Hardware_insert.STL) (**x35**) — .STLs ([tight](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_105dot5_percent.STL) / [loose](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Hardware_insert_106_percent.STL)) (Choose one configuration and modify accordingly)
