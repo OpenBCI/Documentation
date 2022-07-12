@@ -76,7 +76,7 @@ See the [Ganglion Hardware page](Ganglion/02-Ganglion.md#inverting-input-select-
 
 The placement of nodes on the headband is best represented in the following image:
 
-<br><img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Ganglion.png?raw=true" width="30%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Ganglion.png?raw=true" width="30%" />
 
 In this diagram, the red circles represent areas where flat electrodes can be placed, and the blue circles represent areas where comb electrodes can be placed. This placement is ultimately up to you, and the areas that you wish to record. However, a general suggestion for standard electrode placement is outlined in yellow.
 
@@ -86,11 +86,6 @@ To attach the electrodes to the headband:
 2.  Place the electrode on the soft side of the velcro
 3.  Snap the two pieces together, with the velcro in between, to secure them.
 
-<!--
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Spikey%20Electrode%202.jpeg?raw=true" width="30%" />
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Spikey%20Electrode%201.jpeg?raw=true" width="30%" />
-
--->
 #### OpenBCI Software
 
 Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md#download-install-run-the-openbci-gui) to prepare your computer to communicate with your Ganglion.
@@ -150,7 +145,8 @@ As shown above:
 **Assembling the Headband**
 
 The placement of nodes on the headband is best represented in the following image:
-<br><img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Cyton.png?raw=true" width="30%" />
+
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Cyton.png?raw=true" width="30%" />
 
 In this diagram, the red circles represent areas where flat electrodes can be placed, and the blue circles represent areas where comb electrodes can be placed. This placement is ultimately up to you, and the areas that you wish to record. However, a general suggestion for standard electrode placement is outlined in yellow.
 
@@ -159,11 +155,6 @@ To attach the electrodes to the headband:
 1.  Place the cable head on the rough side of the velcro
 2.  Place the electrode on the soft side of the velcro
 3.  Snap the two pieces together, with the velcro in between, to secure them.
-
-<!--
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Spikey%20Electrode%202.jpeg?raw=true" width="30%" />
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Spikey%20Electrode%201.jpeg?raw=true" width="30%" />
--->
 
 #### OpenBCI Software
 
@@ -210,5 +201,5 @@ As always, don't hesitate to email us at [support@openbci.com](mailto:support@op
 ## Headband Tips and Signal Troubleshooting
 
 -   Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
--   *Optional* - The flat and snap electrodes can be used with [electrode gel.](https://shop.openbci.com/collections/frontpage/products/electrodegel) Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
+-   *Optional* - The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel). Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
 -   We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver.
