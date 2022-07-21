@@ -289,6 +289,7 @@ If you are on Windows, please set Processing to `Run this program as an administ
 
 When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment). Select `File > Open` and open the `OpenBCI_GUI.pde` file from where you saved your fork or clone of the repository.
 
+![GUI Folder structure screenshot](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI_processing_windows_folder_structure.PNG)
 ![GUI code window](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-code-window.png)
 
 If you don't know anything about coding, don't edit these files. If you like to dig in to the meat of what makes things work, by all means. have at it. You are looking at the program code that makes the OpenBCI GUI work it's magic. Now, it's time to run it!
