@@ -269,10 +269,9 @@ Go ahead and move it to your `Applications` folder, and launch the application. 
 
 The OpenBCI GUI code repository is located on github [here](https://github.com/OpenBCI/OpenBCI_GUI). click on the `Clone or download` button in green on the right, and select `Download ZIP`. If you are a advanced GitHub user, go ahead and clone it, or fork it if you like.
 
-After the download completes and the file extracts itself, you will see the folder called `OpenBCI_GUI-master`. Change the name of this file to `OpenBCI_GUI`. If you don't change it, it won't work! You can move the folder `OpenBCI_GUI` and it's entire contents to your Sketch folder, or put it wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
+If you downloaded the repository as a zip, please unzip it and you can change the folder name from `OpenBCI_GUI-master` to `OpenBCI_GUI`, if you prefer. You can then place this folder wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
 
-![libraries folder](../../assets/SoftwareImages/OpenBCISoftware/ganglion_libraries-folder.png)
-
+:::info Copy 3rd Party Libraries
 Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. Theses are the 3rd party libraries that the OpenBCI GUI uses to work it's magic. You need to **copy** all of these folders into:
 
 On a Mac `Users/<user-name>/Documents/Processing/libraries`  
@@ -280,21 +279,18 @@ On Windows `C:\Users\Username\Documents\Processing\libraries`
 On Linux `/home/<user-name>/sketchbook/libraries`
 
 If there is no folder called `libraries` in that location, go ahead and make one. Once you have done that, close the Processing app and reopen it. If you get an error saying "Duplicate Packages", you may need to remove the `jna` package from the `Processing\libraries` folder.
+:::
 
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
-![processing startup](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-launch.png)
+:::note
+If you are on Windows, please set Processing to `Run this program as an administrator`.
+:::
 
-**If you are on Windows, set Processing to 'Run this program as an administrator'.**
+When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment). Select `File > Open` and open the `OpenBCI_GUI.pde` file from where you saved your fork or clone of the repository.
 
-When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment).
-
-![Select Sketchbook](../../assets/SoftwareImages/OpenBCISoftware/ganglion_file-sketchbook.png)
-![Select OpenBCI GUI from Sketchbook](../../assets/SoftwareImages/OpenBCISoftware/ganglion_sketchbook-window.png)
-
-Select `File > Sketchbook` and you will open a window where you should see the option to select `OpenBCI GUI`. When you get that far, select `OpenBCI GUI` and the Processing will open up yet another window, that contains all the code to successfully run the OpenBCI GUI.  
-
-![GUI code window](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-code-window.png)
+![GUI Folder structure screenshot](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI_processing_windows_folder_structure.PNG)
+![GUI code window](../../assets/SoftwareImages/OpenBCISoftware/GUI_code_window.PNG)
 
 If you don't know anything about coding, don't edit these files. If you like to dig in to the meat of what makes things work, by all means. have at it. You are looking at the program code that makes the OpenBCI GUI work it's magic. Now, it's time to run it!
 
