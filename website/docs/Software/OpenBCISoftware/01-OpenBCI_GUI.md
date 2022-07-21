@@ -269,10 +269,11 @@ Go ahead and move it to your `Applications` folder, and launch the application. 
 
 The OpenBCI GUI code repository is located on github [here](https://github.com/OpenBCI/OpenBCI_GUI). click on the `Clone or download` button in green on the right, and select `Download ZIP`. If you are a advanced GitHub user, go ahead and clone it, or fork it if you like.
 
-After the download completes and the file extracts itself, you will see the folder called `OpenBCI_GUI-master`. Change the name of this file to `OpenBCI_GUI`. If you don't change it, it won't work! You can move the folder `OpenBCI_GUI` and it's entire contents to your Sketch folder, or put it wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
+If you downloaded the repo as a zip, please unzip it and you can change the folder name from `OpenBCI_GUI-master` to `OpenBCI_GUI`, if you prefer. You can then place this folder wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
 
 ![libraries folder](../../assets/SoftwareImages/OpenBCISoftware/ganglion_libraries-folder.png)
 
+:::info Copy 3rd Party Libraries
 Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. Theses are the 3rd party libraries that the OpenBCI GUI uses to work it's magic. You need to **copy** all of these folders into:
 
 On a Mac `Users/<user-name>/Documents/Processing/libraries`  
@@ -280,6 +281,7 @@ On Windows `C:\Users\Username\Documents\Processing\libraries`
 On Linux `/home/<user-name>/sketchbook/libraries`
 
 If there is no folder called `libraries` in that location, go ahead and make one. Once you have done that, close the Processing app and reopen it. If you get an error saying "Duplicate Packages", you may need to remove the `jna` package from the `Processing\libraries` folder.
+:::
 
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
