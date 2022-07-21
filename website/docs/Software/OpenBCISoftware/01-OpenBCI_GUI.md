@@ -271,8 +271,6 @@ The OpenBCI GUI code repository is located on github [here](https://github.com/O
 
 If you downloaded the repo as a zip, please unzip it and you can change the folder name from `OpenBCI_GUI-master` to `OpenBCI_GUI`, if you prefer. You can then place this folder wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
 
-![libraries folder](../../assets/SoftwareImages/OpenBCISoftware/ganglion_libraries-folder.png)
-
 :::info Copy 3rd Party Libraries
 Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. Theses are the 3rd party libraries that the OpenBCI GUI uses to work it's magic. You need to **copy** all of these folders into:
 
@@ -285,16 +283,11 @@ If there is no folder called `libraries` in that location, go ahead and make one
 
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
-![processing startup](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-launch.png)
+:::note
+If you are on Windows, set Processing to 'Run this program as an administrator'.**
+:::
 
-**If you are on Windows, set Processing to 'Run this program as an administrator'.**
-
-When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment).
-
-![Select Sketchbook](../../assets/SoftwareImages/OpenBCISoftware/ganglion_file-sketchbook.png)
-![Select OpenBCI GUI from Sketchbook](../../assets/SoftwareImages/OpenBCISoftware/ganglion_sketchbook-window.png)
-
-Select `File > Sketchbook` and you will open a window where you should see the option to select `OpenBCI GUI`. When you get that far, select `OpenBCI GUI` and the Processing will open up yet another window, that contains all the code to successfully run the OpenBCI GUI.  
+When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment). Select `File > Open` and open the `OpenBCI_GUI.pde` file from where you saved your fork or clone of the repository.
 
 ![GUI code window](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-code-window.png)
 
