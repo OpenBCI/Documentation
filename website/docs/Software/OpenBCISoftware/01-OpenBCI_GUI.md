@@ -284,7 +284,7 @@ If there is no folder called `libraries` in that location, go ahead and make one
 ### Open The OpenBCI GUI Project in Processing & Launch It!
 
 :::note
-If you are on Windows, set Processing to 'Run this program as an administrator'.**
+If you are on Windows, please set Processing to `Run this program as an administrator`.
 :::
 
 When you get Processing running again, you will see a window open up. This is the Processing IDE (Integrated Development Environment). Select `File > Open` and open the `OpenBCI_GUI.pde` file from where you saved your fork or clone of the repository.
