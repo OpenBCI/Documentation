@@ -129,4 +129,4 @@ The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Boa
 
 ### Daisy Module PCB Files
 
-[OpenBCI Daisy Module gerber & BOM (532K zip)](http://ultracortex.com/downloads/hardware/OpenBCI_DaisyModule.zip)
+[OpenBCI Daisy Module Gerber Files](https://github.com/OpenBCI/V3_Hardware_Design_Files/tree/master/OpenBCI%20Daisy%20Designs/OBCI_Daisy_Plots)
