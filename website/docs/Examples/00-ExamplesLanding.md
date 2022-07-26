@@ -37,3 +37,7 @@ Note, the example projects below are written for the [Cyton Board](https://shop.
 ### EMG-controlled Tetris Game
 
 [Tutorial](Examples/EMGProjects/Tetris_Tutorial.md) to play Tetris using EMG and an OpenBCI board's built-in Accelerometer
+
+### EMG-controlled Piano
+
+[Tutorial](Examples/EMGProjects/EMG_Controlled_Piano.md) to play the piano using EMG 
