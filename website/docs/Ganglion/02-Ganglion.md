@@ -92,4 +92,5 @@ _Bottom Layer_
 ### Ganglion Board PCB Files
 
 [OpenBCI Ganglion Board Gerber Files](https://github.com/OpenBCI/Ganglion_Hardware_Design_Files/tree/master/OBCI_Ganglion_Plots)
+
 [OpenBCI Ganglion Board BOM](https://github.com/OpenBCI/Ganglion_Hardware_Design_Files/blob/master/Ganglion_01_BOM.xlsx)
