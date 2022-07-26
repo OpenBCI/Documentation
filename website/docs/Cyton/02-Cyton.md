@@ -94,7 +94,7 @@ The slide switch on the Dongle has two positions (noted on the bottom  silkscree
 
 ### Dongle PCB Files
 
-[OpenBCI Dongle gerber & BOM (518K zip)](http://ultracortex.com/downloads/hardware/OpenBCI_Dongle.zip)
+[OpenBCI Dongle Gerber & BOM](https://github.com/OpenBCI/V3_Hardware_Design_Files/tree/master/OpenBCI%20Dongle%20Designs/OBCI_Dongle_Plots)
 
 ## OpenBCI Daisy Module
 
