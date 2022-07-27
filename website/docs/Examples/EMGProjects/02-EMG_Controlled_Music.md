@@ -1,7 +1,8 @@
 ---
 id: EMGmusic
-title: "EMG controlled Music"
+title: EMG-controlled Music
 ---
+
 In this tutorial, we will show you how to pause and unpause your music without pressing any keys on your laptop keyboard. To do that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them as a trigger for pausing the music played via Youtube through your computer. Feel free to connect your laptop to a Bluetooth speaker to make the music louder!
 
 Check out an example video of this tutorial being put into action!
@@ -25,8 +26,8 @@ Follow the EMG Getting Started [Tutorial](GettingStarted/Biosensing-Setups/02-EM
 
 Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3). Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
 
--   **pylsl**: use `python -m pip install pylsl` from the Python folder in the command line to install it.
--   **pyautogui** : use `python -m pip install pyautogui` to install.
+- **pylsl**: use `python -m pip install pylsl` from the Python folder in the command line to install it.
+- **pyautogui** : use `python -m pip install pyautogui` to install.
 
 ## Step 3: Stream data using the OpenBCI GUI.
 
