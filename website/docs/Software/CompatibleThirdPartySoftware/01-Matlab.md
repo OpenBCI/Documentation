@@ -28,7 +28,7 @@ For more in-depth questions and assistance with BrainFlow, please visit the [off
 
 ### Method 1: Live Data Directly from OpenBCI Board using BrainFlow
 
-Now that we can connect to OpenBCI boards using [BrainFlow](https://brainflow.org), we can utilize the [MATLAB binding to get direct access](../../ForDevelopers/SoftwareDevelopment/#brainflow---matlab) **without using LSL**.
+Now that we can connect to OpenBCI boards using [BrainFlow](https://brainflow.org), we can utilize the [MATLAB binding to get direct access](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---matlab) **without using LSL**.
 
 :::tip Code Examples
 Here are the [official code examples](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab) of how to connect to OpenBCI boards directly in MATLAB.

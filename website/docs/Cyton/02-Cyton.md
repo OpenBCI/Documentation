@@ -94,7 +94,7 @@ The slide switch on the Dongle has two positions (noted on the bottom  silkscree
 
 ### Dongle PCB Files
 
-[OpenBCI Dongle gerber & BOM (518K zip)](http://ultracortex.com/downloads/hardware/OpenBCI_Dongle.zip)
+[OpenBCI Dongle Gerber & BOM](https://github.com/OpenBCI/V3_Hardware_Design_Files/tree/master/OpenBCI%20Dongle%20Designs/OBCI_Dongle_Plots)
 
 ## OpenBCI Daisy Module
 
@@ -112,7 +112,7 @@ The OpenBCI Daisy Module is a daughter card to the Cyton Board, and expands the 
 -   Analog Power and BIAS pins
     -   AVDD, AVSS, AGND, BIAS
 
-The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Board ONLY. Daisy Modyle requires an external clock signal (2.048MHz) to be applied to the CLK pin.
+The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Board ONLY. Daisy Module requires an external clock signal (2.048MHz) to be applied to the CLK pin.
 
 **NOTE** This design contains an error [documented here](http://openbci.com/community/daisy-module-re-work/). If you intend to use these designs, be aware that you will have to make the change to the PCB file.
 
@@ -129,4 +129,4 @@ The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Boa
 
 ### Daisy Module PCB Files
 
-[OpenBCI Daisy Module gerber & BOM (532K zip)](http://ultracortex.com/downloads/hardware/OpenBCI_DaisyModule.zip)
+[OpenBCI Daisy Module Gerber Files](https://github.com/OpenBCI/V3_Hardware_Design_Files/tree/master/OpenBCI%20Daisy%20Designs/OBCI_Daisy_Plots)

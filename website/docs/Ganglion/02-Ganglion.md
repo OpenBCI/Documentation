@@ -88,3 +88,9 @@ _Inner Layer 2_
 ![Ganglion Layer 2](../assets/GanglionImages/ganglion_layer2.png)  
 _Bottom Layer_  
 ![Ganglion Bottom Layer](../assets/GanglionImages/ganglion_bottom.png)  
+
+### Ganglion Board PCB Files
+
+[OpenBCI Ganglion Board Gerber Files](https://github.com/OpenBCI/Ganglion_Hardware_Design_Files/tree/master/OBCI_Ganglion_Plots)
+
+[OpenBCI Ganglion Board BOM](https://github.com/OpenBCI/Ganglion_Hardware_Design_Files/blob/master/Ganglion_01_BOM.xlsx)
