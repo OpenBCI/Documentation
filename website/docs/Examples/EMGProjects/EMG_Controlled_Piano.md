@@ -6,7 +6,7 @@ In this tutorial, we will show you how to play the piano using just the EMG sign
 
  Check out an example video of this tutorial being put into action!
 
- [![EMG Piano Tutorial](../../assets/TutorialImages/EMG-piano-full-screen.png)](https://youtu.be/811cSMR86XA)
+ [![EMG Piano Tutorial](../../assets/TutorialImages/EMG-piano-full-screen.png)](https://youtu.be/-eaO98mhO5M)
 
 ## Materials Required
 
