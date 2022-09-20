@@ -170,11 +170,16 @@ The OpenBCI GUI displays up to six customizable windows in twelve layouts! You c
 
 ### Impedance Testing
 
-When using Cyton, you can display the impedance of individual channels by toggling the small Ohm icon to the right of each color coded channel number in the Time Series Widget. When the Ohm icon is toggled on, the board sends a small current through the selected channel to obtain the impedance value. **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously.**
+The impedance widget is a valuable tool for evaluating electrode contact before data acquisition. 
+Press `test` to start impedance test on an individual channel. 
+    
+The impedance value is in colored font as a visual guide to the pre-set thresholds. A red impedance value means you should adjust your electrodes, part your hair, add gel, use paste, or such measures as appropriate for the electrode you’re using. Experienced users can also adjust these thresholds in the bracket-field beneath the table.
 
-In the screengrab below, the GUI is showing Time Series, FFT Plot, and Accelerometer. Also, you can see an impedance test has been started on Channel 1.
+    During the impedance test, the board sends a small current through the selected channel to obtain the impedance value. **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Impedance.png?raw=true" width="100%" />
+The screengrab below shows the GUI Impedance Widget -
+
+    ![GUI Impedance Widget Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0_cyton_impedance.png)
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
 
