@@ -171,14 +171,16 @@ The OpenBCI GUI displays up to six customizable windows in twelve layouts! You c
 ### Impedance Testing
 
 The impedance widget is a valuable tool for evaluating electrode contact before data acquisition. 
-Press `test` to start impedance test on an individual channel. 
+Press `Test` to start impedance test on an individual channel. 
     
 The impedance value is in colored font as a visual guide to the pre-set thresholds. A red impedance value means you should adjust your electrodes, part your hair, add gel, use paste, or such measures as appropriate for the electrode you’re using. Experienced users can also adjust these thresholds in the bracket-field beneath the table.
 
+:::info
 During the impedance test, the board sends a small current through the selected channel to obtain the impedance value. 
-*For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
+**For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
+:::
 
-The screengrab below shows the GUI Impedance Widget:
+The screengrab below shows the GUI Impedance Widget for Cyton:
 ![GUI Impedance Widget Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0_cyton_impedance.png)
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
