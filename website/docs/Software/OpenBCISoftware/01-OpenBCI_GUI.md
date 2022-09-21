@@ -175,11 +175,11 @@ Press `test` to start impedance test on an individual channel.
     
 The impedance value is in colored font as a visual guide to the pre-set thresholds. A red impedance value means you should adjust your electrodes, part your hair, add gel, use paste, or such measures as appropriate for the electrode you’re using. Experienced users can also adjust these thresholds in the bracket-field beneath the table.
 
-    During the impedance test, the board sends a small current through the selected channel to obtain the impedance value. **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
+During the impedance test, the board sends a small current through the selected channel to obtain the impedance value. 
+*For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
 
-The screengrab below shows the GUI Impedance Widget -
-
-    ![GUI Impedance Widget Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0_cyton_impedance.png)
+The screengrab below shows the GUI Impedance Widget:
+![GUI Impedance Widget Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0_cyton_impedance.png)
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
 
