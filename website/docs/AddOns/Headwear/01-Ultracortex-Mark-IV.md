@@ -128,7 +128,7 @@ The model must be positioned correctly in the 3D print preparation software. The
 
     -   We strip apart the cables in your kit:
 
-    ![image](../../assets/HeadwareImages/Cables.JPG)
+    ![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-wires.jpg)
 
 -   Spikey units
 
@@ -146,13 +146,13 @@ The model must be positioned correctly in the 3D print preparation software. The
 
     -   (**5x**) Comfort units used for distributing weight of headset:
 
-    ![image](../../assets/HeadwareImages/ComfortUnits.JPG)
+    ![image](../../assets/HeadwareImages/ucm4_2022/blue-comfort.jpg)
 
 -   Ear Clips
 
     -   (**2x**) Ear Clip electrode:
 
-    ![image](../../assets/HeadwareImages/EarClips.JPG)
+    ![image](../../assets/HeadwareImages/ucm4_2022/earclips1.jpg)
 
 The following parts are not included with the purchase of any configuration of the Mark IV and should be purchased separately:
 
@@ -164,7 +164,7 @@ The following parts are not included with the purchase of any configuration of t
 
 -   [A charger for your battery pack](https://www.adafruit.com/products/1304)  (**1x**)
 
-![image](../../assets/HeadwareImages/BATTERY.jpg)
+![image](../../assets/HeadwareImages/ucm4_2022/lipo-battery.jpg)
 
 -   [Velcro One Wrap](https://www.industrialwebbing.com/velcro-brand-one-wrap-tape-1-x-25-yard-roll/)  (**1x**) - The Ultracortex Mark IV has horizontal bars designed to hold straps. The addition of DIY chin straps improves stability and therefore quality of the signal. We recommend 25 yard rolls of 1" Velcro One Wrap. which has hooks on one side and loops on the other.
 
