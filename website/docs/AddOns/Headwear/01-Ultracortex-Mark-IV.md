@@ -281,29 +281,21 @@ Screw 5 COMFORT UNITS into the frame as shown below. Your Ultracortex should now
 
 Connect your ~500 mAh lithium ion rechargeable batter to the back of your Cyton OpenBCI Board:
 
-![image](../../assets/HeadwareImages/embed_OpenBCI.jpg)
+![image](../../assets/HeadwareImages/ucm4_2022/cyton-2022-9-2.jpg)
 
 Fold the battery and its wires neatly behind the board before inserting the board into the BOARD_MOUNT:
 
-![image](../../assets/HeadwareImages/MarkIV_cyton_cover_1.jpeg)
+![image](../../assets/HeadwareImages/ucm4_2022/frame-with-cyton-1.jpg)
 
 Snap your Cyton board onto the four pegs on the outside of the BOARD_MOUNT:
 
-![image](../../assets/HeadwareImages/MarkIV_cyton_cover_2.jpeg)
+![image](../../assets/HeadwareImages/ucm4_2022/frame-with-cyton-2.jpg)
 
 You can then secure the OpenBCI Board to the BOARD_MOUNT by clipping BOARD_COVER over top.
 
-![image](../../assets/HeadwareImages/MarkIV_cyton_cover_3.jpeg)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-frame.jpg)
 
 The pins and female headers should fit neatly into the BOARD_COVER holes as shown.
-
-Only have a black battery pack with AA batteries? Tape the pack to your Mark IV in the location shown. As long as you use an 8-channel setup, the battery pack won't overlap with any of the electrode locations. Thread the battery pack wire through the hole in the BOARD_MOUNT as shown.
-
-![image](../../assets/HeadwareImages/MarkIV_battery_pack_1.jpeg)
-
-Connect your OpenBCI board to the battery pack, place it on the BOARD_MOUNT and snap the BOARD_COVER into place. Your Mark IV should look like the image below.
-
-![image](../../assets/HeadwareImages/MarkIV_battery_pack_2.jpeg)
 
 ### Electrode location overview
 
@@ -342,13 +334,13 @@ Then screw 6 SPIKEY ELECTRODE UNITS in the following nodes of the frame.
 
 It's time to connect the electrodes to your OpenBCI Cyton board with jumper cables. You will find 3 ribbon cables in your kit as seen below.
 
-![image](../../assets/HeadwareImages/Cables.JPG)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-wires.jpg)
 
 Peel off the GRAY and PURPLE from the 12" set and the BLUE, GREEN, ORANGE and YELLOW from the 8" set and the RED and BROWN from the 4" set.
 
 Now connect the jumper cables to the electrodes. The map below assigns names to all the electrodes by their location.
 
-![image](../../assets/HeadwareImages/MarkIV_electrode_map.png)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-connect-wiring.jpg)
 
 To follow along with this tutorial, attach each electrode to the corresponding wire color following the table and steps below. Here's a table with the correct electrode, wire color, and Cyton. By bottom pin, we mean the pin CLOSEST to the OpenBCI board.
 
@@ -367,12 +359,12 @@ To follow along with this tutorial, attach each electrode to the corresponding w
 
 To connect wires to electrodes, plug the male end in to the header cable on the NODES as shown:
 
-![image](../../assets/HeadwareImages/Assembly_Node_Plug.JPG)
+![image](../../assets/HeadwareImages/ucm4_2022/gray-white-wire-connection-1.jpg)
 
 After connecting wires to electrodes, run wires along the frame to the top of the OpenBCI BOARD_MOUNT. Use the included plastic clips to hold wires on the frame, like shown:
 
-![image](../../assets/HeadwareImages/Assembly_Wire_Clip.JPG)
-![image](../../assets/HeadwareImages/Assembly_Wire_Clip2.JPG)
+![image](../../assets/HeadwareImages/ucm4_2022/wire-connector.jpg)
+![image](../../assets/HeadwareImages/ucm4_2022/wire-connector-3.jpg)
 
 #### Ear Clips
 
@@ -411,7 +403,7 @@ Here's a table with the correct electrode, wire color, and Ganglion board pin pa
 
 Next, make sure the switches on your Ganglion board are in the bottom configuration as shown below:
 
-![Switches DOWN](../../assets/HeadwareImages/ganglion_SW_DOWN.png)
+![Switches DOWN](../../assets/HeadwareImages/ucm4_2022/ultracortex-ganglion.jpg)
 
 Replace the cover. Your Ganglion board is now ready to use with your Mark IV headset!
 
@@ -432,7 +424,7 @@ If you have a Cyton Daisy extension, you can expand your headset from 8 electrod
 
 From the front of the frame remove the two Comfort Nodes and replace them with spiky electrodes. Add 6 more spiky electrode units in the locations shown below:
 
-![image](../../assets/HeadwareImages/MarkIV_16_channel_map.png)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-16channel-adding-electodes.jpg)
 
 ### Wiring Electrodes
 
@@ -467,9 +459,9 @@ Like for the first 8 electrodes, use the plastic clips to secure wires in place:
 
 Your Mark IV is now ready to use 16 channels! It should look like the images below.
 
-![image](../../assets/HeadwareImages/Assembly_16Chan_Finished.JPG)
-![image](../../assets/HeadwareImages/Assembly_16Chan_Finished2.JPG)
-![image](../../assets/HeadwareImages/Assembly_16Chan_Finished3.jpg)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-with-daisy.JPG)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex.jpg)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-side-view.jpg)
 ![image](../../assets/HeadwareImages/Assembly_16Chan_Finished4.jpg)
 
 ### Adjust the Ultracortex for your head
@@ -484,7 +476,7 @@ Place your UltraCortex on your head so that the back center node is roughly the 
 
 Now that you have your Ultracortex assembled and comfortably adjusted to your head size and shape, it's brain wave time!
 
-![image](../../assets/HeadwareImages/UCM4-Product-2.JPG)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-with-daisy-2.jpg)
 
 Check out the [Getting Started w/ OpenBCI tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to get up-and-running with the [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI).
 
