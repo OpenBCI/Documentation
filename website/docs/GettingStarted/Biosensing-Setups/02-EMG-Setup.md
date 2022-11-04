@@ -38,7 +38,7 @@ After making these pin connections, snap the sticky electrodes (or the [IDUN Dry
 
 **2. Electrode-Muscle Connection**
 
-Choose muscle groups that can be flexed and relaxed easily. Place one electrode at the base of the muscle, and the other electrode at the opposite end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. For example below, top N1P pin on the Cyton is connected to the yellow electrode cable, and the bottom N2P pin to the green electrode cable.
+Choose muscle groups that can be flexed and relaxed easily. Place one electrode at the base of the muscle, and the other electrode at the opposite end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. For example below, top N1P pin on the Cyton is connected to the yellow electrode cable, and the bottom N1P pin to the green electrode cable.
 Place the ground electrode on a bony part of the body with as few muscles as possible (elbow, shown below).
 
 | Electrode Wire Color | Cyton Board Pin | Body Location | Purpose                                      |
