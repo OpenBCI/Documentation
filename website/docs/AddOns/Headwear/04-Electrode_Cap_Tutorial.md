@@ -48,7 +48,7 @@ Connect bottom pins N1P through N8P on the Cyton to a set of HPTA cables, shown 
 
 ![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_1.jpg)
 
-Connect top pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
+Connect bottom pins N1P through N8P on the Daisy module to another set of HPTA cables, shown below. These pins will be channels 9-16.
 
 ![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_3.jpg)
 
