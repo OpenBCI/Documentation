@@ -290,13 +290,13 @@ This tutorial shows you how to create custom widgets for the [OpenBCI GUI](https
 
 ### Step 1 - Duplicate the W_template.pde file & rename
 
-The [W_template.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/W_Template.pde) file is designed to serve as a simple starting point for creating your widgets. You'll want to start by duplicating this file and renaming it to something like W*myNewWidget.pde, where "myNewWidget" is something relevant to the purpose of your new widget! Try to adhere to the naming convention and put \*\*W*\*\* in front to make sure that all of your widgets end up next to one another in your project directory.
+The [W_template.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/W_Template.pde) file is designed to serve as a simple starting point for creating your widgets. You'll want to start by duplicating this file and renaming it to something like `W_MyNewWidget.pde`, where "MyNewWidget" is something relevant to the purpose of your new widget! Try to adhere to the naming convention and put `W_` in front to make sure that all of your widgets end up next to one another in your project directory.
 
-You need to remember to rename the class to make sure that it is unique and not the same class as W_template.pde. The first uncommented line of your file should read:
+_You need to remember to rename the class to make sure that it is unique and not the same class as W_template.pde._ The first uncommented line of your file should read:
 
 ```
 
-class W_myNewWidget extends Widget {
+class W_MyNewWidget extends Widget {
 
 ```
 
@@ -311,17 +311,22 @@ Follow the protocol instantiating your widget globally by adding it here:
 // MAKE YOUR WIDGET GLOBALLY
 W_timeSeries w_timeSeries;
 W_fft w_fft;
-W_networking w_networking;
+W_Networking w_networking;
 W_BandPower w_bandPower;
-W_accelerometer w_accelerometer;
-W_ganglionImpedance w_ganglionImpedance;
-W_headPlot w_headPlot;
+W_Accelerometer w_accelerometer;
+W_CytonImpedance w_cytonImpedance;
+W_GanglionImpedance w_ganglionImpedance;
+W_HeadPlot w_headPlot;
 W_template w_template1;
 W_emg w_emg;
-W_openBionics w_openbionics;
-W_Focus w_focus;
 W_PulseSensor w_pulsesensor;
-W_myNewWidget w_myNewWidget;
+W_AnalogRead w_analogRead;
+W_DigitalRead w_digitalRead;
+W_playback w_playback;
+W_Spectrogram w_spectrogram;
+W_PacketLoss w_packetLoss;
+W_Focus w_focus;
+W_MyNewWidget w_myNewWidget;
 
 ```
 
