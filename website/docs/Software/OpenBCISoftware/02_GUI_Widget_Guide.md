@@ -2,6 +2,7 @@
 id: GUIWidgets
 title: GUI Widget Guide
 ---
+
 ## What is a GUI Widget?
 
 GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left-hand corner of every widget, there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
@@ -66,6 +67,30 @@ Each OpenBCI board is fitted with a three-axis accelerometer, the data from whic
 
 **Timeline**: Displays relative XYZ accelerations over time, color-coded by axis.
 
+## Channel Select UI (Multiple Widgets)
+
+Some widgets in the OpenBCI GUI have a feature which allows you to select the channels that will control the behavior of that widget. Clicking on the `Channels` button will expand the UI and show buttons which correlate to each available channel. This feature gives users more control over visualizing data. Let's go over the UI and what it means.
+
+### Border
+
+- Green Border: Data is streaming for that channel
+- Red Border: Data is not streaming for that channel
+
+### Fill
+
+- Blue Fill: Data will be used by this widget for that channel
+- Grey Fill: Data will not be used by this widget for that channel
+
+### Example Configuration
+
+In the screenshot below, we see the Channel Select UI open in both the Time Series and FFT widgets. In both widgets, we see buttons correlating to each channel. We have disabled streaming for channels 2 through 6 using the round buttons in the Time Series widget on the left side of each channel. As such, these channels have a red border in the Channel Select UI. In contrast, channels 1, 7, and 8 are still streaming data and they have a green border. However, we have turned off the Channel Select button for channel 7 in the Time Series widget, which causes it to not be shown only in this widget.
+
+Next, let's look closely at the FFT Plot widget in the top right. Though we have hidden channel 7 from the Time Series widget, the data is still streaming and we see a blue fill on button for Channel 7. In this case, we still want to see data in the FFT Plot from all channels, and we can do just that! We see the peeks in the graph correlating to channels 1, 7, and 8. We do not see data from Channels 2 through 6 only because the data is all zeros.
+
+![Channel Select Feature Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0-ChannelSelectFeature_SyntheticData.png)
+
+While this example is not a realistic setup, it shows the level of control and customization that is possible across all widgets that have the Channel Select UI. Find your perfect layout and then remember to [save your Settings using the `Settings` tab in the top right of the GUI!](Software/OpenBCISoftware/01-OpenBCI_GUI.md#decrease-setup-time-by-savingloading-settings) Have fun!
+
 ## Head Plot
 
 The head plot displays which regions of the head are experiencing the most activity. The deeper the red in a region, the more brain activity there is occurring in that region. Contour lines are also shown to connect various regions of similar activity levels.
@@ -76,16 +101,16 @@ Each number on the diagram corresponds to an electrode channel displayed in the 
 
 Based off of 10-20 model
 
-| # | 10-20 Node |
-| - | ---------- |
-| 1 | Fp1        |
-| 2 | Fp2        |
-| 3 | C3         |
-| 4 | C4         |
-| 5 | P7/T5\*    |
-| 6 | P8/T6\*    |
-| 7 | O1         |
-| 8 | O2         |
+| #   | 10-20 Node |
+| --- | ---------- |
+| 1   | Fp1        |
+| 2   | Fp2        |
+| 3   | C3         |
+| 4   | C4         |
+| 5   | P7/T5\*    |
+| 6   | P8/T6\*    |
+| 7   | O1         |
+| 8   | O2         |
 
 \* P7 and P8 are the new terminologies for nodes T5 and T6
 
@@ -125,17 +150,18 @@ The widget uses the BrainFlow Metric feature to detect Relaxation or Concentrati
 
 **Threshold**: Use this dropdown to select the threshold for the metric to determine if you are "Relaxing" or "Concentrating". You can see the metric value displayed in the top row of the table in this widget, it ranges from 0 to 1.
 
-**Window**: This allows you to select the window of time used to calculate the metric value by looking at the average band powers over the selected time period. 
+**Window**: This allows you to select the window of time used to calculate the metric value by looking at the average band powers over the selected time period.
 
 ### **Auditory Feedback**
+
 Starting with GUI 5.0.6, the Focus Widget is able to provide auditory feedback. This means you can use your brain control the volume of a peaceful musical chord. Simply press the "Turn Audio On" button to activate this feature. We recommend the default settings as a fun way to practice mindfulness and relaxation using OpenBCI hardware and one or two electrodes attached to the forehead (usually Fp1 and Fp2).
 
 ![GUI 5.0.6 Focus Widget with Synthetic Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.0.6-FocusWidgetAuditoryFeedbackHighlighted.png)
 
 **In-depth Info on Auditory Feedback Feature**: There are two modes which are controlled via the second button under the large circle: metric value and band powers.
+
 - Using the metric value, the volume of all of the musical notes will increase or decrease based on the metric value (0 to 1) displayed in the table.
 - Using the band powers, certain musical notes will get louder or quieter and are directly correlated to the band power values displayed in the table (0 to 1). Lower notes are associated with lower frequencies, and higher notes are associated with higher frequencies. So, if you have predominate alpha brainwaves, you will likely hear lower and middle tones from the chord.
-
 
 ## Band Power
 
@@ -143,17 +169,15 @@ The band power widget shows the relative voltages of the various brain wave cate
 
 ### Types of Waves
 
-|  Wave | Frequency (Hz) | Description                                                                                                                                                                               |
+| Wave  | Frequency (Hz) | Description                                                                                                                                                                               |
 | :---: | :------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Gamma |     32-100     | Signifies heightened perception, learning and problem solving tasks, as well as alertness. It occurs when there is simueltaneous information processing from multiple parts of the brain. |
-|  Beta |      13-32     | Signfies normal alert consciousness and active thinking. It occurs when one is focusing on work, solving a problem, learning a new concept, or engaging in active conversation.           |
+| Beta  |     13-32      | Signfies normal alert consciousness and active thinking. It occurs when one is focusing on work, solving a problem, learning a new concept, or engaging in active conversation.           |
 | Alpha |      8-13      | Signifies physical and mental relaxation. They occur when your eyes are closed, when one is being artistic, and during yoga.                                                              |
-| Theta |       4-8      | Signifies deep relaxation, creativity, insight, reduced consciousness. They are picked up during day dreaming and deep meditation.                                                        |
-| Delta |      0.5-4     | Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.                                                                                                       |
+| Theta |      4-8       | Signifies deep relaxation, creativity, insight, reduced consciousness. They are picked up during day dreaming and deep meditation.                                                        |
+| Delta |     0.5-4      | Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.                                                                                                       |
 
 ## EMG
-
-
 
 In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1.
 
@@ -177,11 +201,13 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 
 The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](Software/SoftwareLanding.md).
 
-With the networking widget, you can send Time Series, FFT, EMG, Band Power, Accel/Aux, and Pulse data. The Accel/Aux option allows you to send Accelerometer, Analog Read, or Digital Read data. Make sure to have the corresponding widget open, depending on the data type you would like to stream. **Full details of all possible outputs can be found at the [GUI Networking Guide](https://docs.google.com/document/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub).**
+With the networking widget, you can send Time Series, FFT, EMG, Band Power, Accel/Aux, and Pulse data. The Accel/Aux option allows you to send Accelerometer, Analog Read, or Digital Read data.
+
+:::important
+Make sure to have the corresponding widget open, depending on the data type you would like to stream. **Full details of all possible outputs can be found at the [GUI Networking Guide](https://docs.google.com/document/d/e/2PACX-1vR_4DXPTh1nuiOwWKwIZN3NkGP3kRwpP4Hu6fQmy3jRAOaydOuEI1jket6V4V6PG4yIG15H1N7oFfdV/pub).**
+:::
 
 ### Serial
-
-
 
 Able to stream one data type. The data is sent sequentially, bit by bit, in consecutive packets. Serial is the main networking protocol that can be used when using OpenBCI with Arduino.
 
@@ -191,11 +217,9 @@ Able to stream one data type. The data is sent sequentially, bit by bit, in cons
 
 ### UDP
 
-
 User Datagram Protocol is used primarily for establishing low-latency and loss-tolerating connections between applications on the internet. The UDP protocol allows for up to three different data sets to be sent to three different applications.
 
 ### LSL
-
 
 Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](Software/CompatibleThirdPartySoftware/01-Matlab.md).
 
@@ -209,21 +233,19 @@ You can find the [example Python script here in the GUI Networking Test Kit](htt
 
 ### OSC
 
-
 Open Sound Control is a protocol for networking sound synthesizers, computers, and other multimedia devices for purposes such as musical performance or show control. OSC's advantages include interoperability, accuracy, flexibility, and enhanced organization and documentation.
 
 OSC works with MaxMSP, PureData, and Resolume.
 
 ## Cyton Signal Widget
 
-Use this widget to check the signal quality of attached electrodes. There are two modes for this widget: Impedance and Live. You will find a description of each mode below along with screenshots. *For now, a placeholder image of the headplot with default electrode positions is displayed on the right side of this widget. We will be updating this in the next major version of the GUI.*
+Use this widget to check the signal quality of attached electrodes. There are two modes for this widget: Impedance and Live. You will find a description of each mode below along with screenshots. _For now, a placeholder image of the headplot with default electrode positions is displayed on the right side of this widget. We will be updating this in the next major version of the GUI._
 
 ![Cyton Signal Widget starting view](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_ImpedanceMode_NoData.png)
 
-
 ### Impedance Mode
 
-Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality. 
+Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality.
 
 Please be patient when sending commands and pressing buttons while in this mode. The Cyton needs a few milliseconds to reconfigure the board between checking channels. After checking the signal quality, the Cyton board may reset to the default board settings. You may also choose to do this manually by pressing the "Reset Channels" button found in the top right of this widget.
 
@@ -253,7 +275,7 @@ This Widget only appears when in playback mode. It allows you to select a differ
 
 This widget will only show for Cyton in Live mode. It uses the Analog Read mode to get data from the pin marked D11 on the Cyton. Using this data, the widget will calculate the Beats per minute (BPM) and the Interbeat Interval (IBI). When using the Networking widget, this data type will send BPM, Raw Signal, and IBI.
 
-* * *
+---
 
 ## Custom Widget
 
@@ -261,20 +283,20 @@ This tutorial shows you how to create custom widgets for the [OpenBCI GUI](https
 
 #### Helpful Background Skills
 
--   Knowledge of [Processing](https://processing.org/) or Java-based programming
--   Experience with [running the OpenBCI GUI from the Processing IDE](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
--   [Developer Setup using Visual Studio Code or Processing](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup)
--   Alternatively, you can edit using [Atom with Processing packages](https://atom.io)
+- Knowledge of [Processing](https://processing.org/) or Java-based programming
+- Experience with [running the OpenBCI GUI from the Processing IDE](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
+- [Developer Setup using Visual Studio Code or Processing](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup)
+- Alternatively, you can edit using [Atom with Processing packages](https://atom.io)
 
 ### Step 1 - Duplicate the W_template.pde file & rename
 
-The [W_template.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/W_Template.pde) file is designed to serve as a simple starting point for creating your widgets. You'll want to start by duplicating this file and renaming it to something like W_myNewWidget.pde, where "myNewWidget" is something relevant to the purpose of your new widget! Try to adhere to the naming convention and put \*\*W_\*\* in front to make sure that all of your widgets end up next to one another in your project directory.
+The [W_template.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/W_Template.pde) file is designed to serve as a simple starting point for creating your widgets. You'll want to start by duplicating this file and renaming it to something like `W_MyNewWidget.pde`, where "MyNewWidget" is something relevant to the purpose of your new widget! Try to adhere to the naming convention and put `W_` in front to make sure that all of your widgets end up next to one another in your project directory.
 
-You need to remember to rename the class to make sure that it is unique and not the same class as W_template.pde. The first uncommented line of your file should read:
+_You need to remember to rename the class to make sure that it is unique and not the same class as W_template.pde._ The first uncommented line of your file should read:
 
 ```
 
-class W_myNewWidget extends Widget {
+class W_MyNewWidget extends Widget {
 
 ```
 
@@ -289,17 +311,22 @@ Follow the protocol instantiating your widget globally by adding it here:
 // MAKE YOUR WIDGET GLOBALLY
 W_timeSeries w_timeSeries;
 W_fft w_fft;
-W_networking w_networking;
+W_Networking w_networking;
 W_BandPower w_bandPower;
-W_accelerometer w_accelerometer;
-W_ganglionImpedance w_ganglionImpedance;
-W_headPlot w_headPlot;
+W_Accelerometer w_accelerometer;
+W_CytonImpedance w_cytonImpedance;
+W_GanglionImpedance w_ganglionImpedance;
+W_HeadPlot w_headPlot;
 W_template w_template1;
 W_emg w_emg;
-W_openBionics w_openbionics;
-W_Focus w_focus;
 W_PulseSensor w_pulsesensor;
-W_myNewWidget w_myNewWidget;
+W_AnalogRead w_analogRead;
+W_DigitalRead w_digitalRead;
+W_playback w_playback;
+W_Spectrogram w_spectrogram;
+W_PacketLoss w_packetLoss;
+W_Focus w_focus;
+W_MyNewWidget w_myNewWidget;
 
 ```
 
@@ -364,11 +391,11 @@ Explore how the existing widgets are accessing data structures internal to the G
 
 **Some cool things to know:**
 
--   Every widget has `x, y, w, h` variables that correspond to the left edge of the widget (horizontal pixel location), the top edge of the widget (vertical pixel location), the # of pixels wide, and the # of pixels tall, respectively. These variables update automatically when the screen is resized or when the widgets are cycled through the layout containers. When adding graphics to your widget, do everything based on these variables to ensure responsiveness.
--   Aside from setting up your widget in the widgetManager.pde file, all of your code can live inside of the W_myNewWidget.pde file (if done correctly).
--   To see how to access global data structures like FFT data and Time Series data, check out how the [other widgets](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/OpenBCI_GUI) are accessing data in their `update()` functions
--   One way that we add features such as dropdowns and radio buttons to our widgets is the [ControlP5 Library](https://github.com/sojamo/controlp5). This library has been modified extensively from the original to improve functionality in the GUI.
--   To learn more about how widgets work, look at the [widget.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/Widget.pde) file. That said, I don't recommend changing anything!
+- Every widget has `x, y, w, h` variables that correspond to the left edge of the widget (horizontal pixel location), the top edge of the widget (vertical pixel location), the # of pixels wide, and the # of pixels tall, respectively. These variables update automatically when the screen is resized or when the widgets are cycled through the layout containers. When adding graphics to your widget, do everything based on these variables to ensure responsiveness.
+- Aside from setting up your widget in the widgetManager.pde file, all of your code can live inside of the W_myNewWidget.pde file (if done correctly).
+- To see how to access global data structures like FFT data and Time Series data, check out how the [other widgets](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/OpenBCI_GUI) are accessing data in their `update()` functions
+- One way that we add features such as dropdowns and radio buttons to our widgets is the [ControlP5 Library](https://github.com/sojamo/controlp5). This library has been modified extensively from the original to improve functionality in the GUI.
+- To learn more about how widgets work, look at the [widget.pde](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/OpenBCI_GUI/Widget.pde) file. That said, I don't recommend changing anything!
 
 ### Step 5 - Add any dropdown settings to SessionSettings.pde
 
