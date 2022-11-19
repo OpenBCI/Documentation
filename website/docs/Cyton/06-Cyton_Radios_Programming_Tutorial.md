@@ -15,10 +15,10 @@ If you're curious about how we do it, keep reading! If you want to start streami
 
 The OpenBCI Cyton Boards come with a USB dongle that allows for communication between the Board and your computer. There is a BLE radio module (actually an [RFduino 22301](http://www.rfduino.com/product/rfd22301-rfduino-ble-smt/index.html)) on the Dongle and Board that make the communication happen. Here's some terms that are important to note:
 
--   The radio module on the Dongle is called the **HOST**
--   The radio module on the Cyton Board is called the **DEVICE**
--   Host-Device pairs can be programmed to transmit on up to **25** discreet channels
--   There are _important_ differences in the firmware for 8-bit and 32-bit systems
+- The radio module on the Dongle is called the **HOST**
+- The radio module on the Cyton Board is called the **DEVICE**
+- Host-Device pairs can be programmed to transmit on up to **25** discreet channels
+- There are _important_ differences in the firmware for 8-bit and 32-bit systems
 
 This page covers how the radio link works, and how to upload new firmware to the Dongle radio and the Board radio.
 
@@ -26,10 +26,10 @@ This page covers how the radio link works, and how to upload new firmware to the
 
 **You will need:**
 
--   Computer (Windows or Mac or Other)
--   Arduino IDE Version 1.5.8 BETA
--   Custom [RFduino libraries for OpenBCI](https://github.com/OpenBCI/OpenBCI_RFduino/archive/master.zip)
--   A 0.1uF capacitor (see Device section below)
+- Computer (Windows or Mac or Other)
+- Arduino IDE Version 1.5.8 BETA
+- Custom [RFduino libraries for OpenBCI](https://github.com/OpenBCI/OpenBCI_RFduino/archive/master.zip)
+- A 0.1uF capacitor (see Device section below)
 
 **Steps:**
 
@@ -52,12 +52,12 @@ This page covers how the radio link works, and how to upload new firmware to the
     On Linux, put the RFduino folder and everything it contains in `arduino-1.5.8/hardware/arduino`
 
 **NOTE FOR LINUX USERS**  
-Linux users will need to have the program [wine](https://www.winehq.org/) installed in order to continue. There is a dependency for the arduino code that requires the running  `RFDLoader.exe` to continue.
+Linux users will need to have the program [wine](https://www.winehq.org/) installed in order to continue. There is a dependency for the arduino code that requires the running `RFDLoader.exe` to continue.
 In order to run this .exe, do the following:
 
 1.  Navigate to the /hardware/arduino/RFduino folder
 2.  Rename RFDLoader to RFDLoader.old (just in case)
-3.  Replace RFDLoader with a script that uses wine to call RFDLoader.exe, forwarding the serial port.  A possible script is at https:
+3.  Replace RFDLoader with a script that uses wine to call RFDLoader.exe, forwarding the serial port.
 4.  Drag RFDLoader to the RFduino folder
 
 That's it! As long as `wine` is installed normally the script should take care of any issues you may have when uploading.
@@ -72,13 +72,13 @@ That's it! As long as `wine` is installed normally the script should take care o
 
 3.  Move the OpenBCI_Radios folder from your downloads into:
 
-       On Mac/Linux:
+    On Mac/Linux:
     Documents/Arduino/libraries
 
-       On Windows:
+    On Windows:
     C:\\Users\\username\\Documents\\Arduino\\libraries
 
-       If there is no 'libraries' folder in the above folder, create one.
+    If there is no 'libraries' folder in the above folder, create one.
 
 4.  Open the Arduino IDE 1.5.8, restart the Arduino IDE if it was open.
 
@@ -102,7 +102,7 @@ Again, there is a small difference between the 8-bit and Cyton boards, explained
 
 3.  Follow one of the methods listed in the next section to connect the Device to your computer.
 
-4.  Now go `Tools-->Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
+4.  Now go `Tools-->Port` and select the `COM` port (Windows) or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
 
 5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `Done Compiling` then you are ready to go!
 
@@ -132,10 +132,10 @@ Next you need a breadboard, 8 jumpers and a 0.1uF capacitor. 0.1uF capacitors ar
 
 Here's a picture of the connections that you need to make. Power the OpenBCI board with the battery pack it came with, and so you only need these four connections to do the upload. You could also power the OpenBCI board with 3V from the Dongle, but that makes the next step a bit trickier. In any case, these are the basic pin connections that you need to make when powering the board with a battery pack:
 
--   FTDI RX	-->	RF TX
--   FTDI TX	-->	RF RX
--   GPIO6	-->	0.1uF Cap	-->	RF RST
--   GND	-->	GND
+- FTDI RX --> RF TX
+- FTDI TX --> RF RX
+- GPIO6 --> 0.1uF Cap --> RF RST
+- GND --> GND
 
 ![8-bitDeviceConnection](../assets/CytonImages/8bitDeviceConnection.jpg)
 
@@ -146,10 +146,10 @@ On The **8-bit Board**, the pins you need to connect to are accessed from the TO
 On the **Cyton Board** the pins you need to connect to are accessed from the BOTTOM of the board. Connect the jumper wires to the _center_ of the pads as shown and press tightly while uploading to the Device.
 Helpful tips:
 
--   Use a 4pin female header to keep the wires in place
--   Don't move your hand at all
--   Place the board on a table or hard surface
--   Keep the pins straight up and _centered_ on the pads. (perpendicular to the surface of the pads)
+- Use a 4pin female header to keep the wires in place
+- Don't move your hand at all
+- Place the board on a table or hard surface
+- Keep the pins straight up and _centered_ on the pads. (perpendicular to the surface of the pads)
 
 There is a trick to it, it may take you a couple tries to get good at it. On Mac, It does not matter if you select `/dev/cu.*` or `/dev/tty.*` in the port selection on the Arduino IDE.
 
@@ -175,7 +175,7 @@ Another example would be the [FTDI Friend](http://www.adafruit.com/products/284)
 ![FTDI BasicFront](../assets/CytonImages/FTDI_BASICfront.jpg)
 ![FTDI BasicBack](../assets/CytonImages/FTDI_BASICback.jpg)
 
-Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] The Basic Breakout isn't as fancy as the FTDI Friend, but you do need to put a 0.1uF capacitor between the DTR pin and the RF RST pin. Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!  
+Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] The Basic Breakout isn't as fancy as the FTDI Friend, but you do need to put a 0.1uF capacitor between the DTR pin and the RF RST pin. Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!
 
 ## Uploading Host Firmware to the OpenBCI Dongle
 
@@ -195,7 +195,7 @@ This process does not require 3rd party hardware. Before you begin, note that th
 
 3.  Plug the Dongle into your computer. Flip the switch to the `Reset` position if it is not already.
 
-4.  Now go `Tools-->Port` and select the `COM` port (Windows)  or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
+4.  Now go `Tools-->Port` and select the `COM` port (Windows) or `/dev/tty.usbserial-*` port (Mac/Linux) for your device or
 
 5.  Click "Verify" on the toolbar (checkmark icon) to verify everything is ready. If you see `Done Compiling` then you are ready to go!
 
@@ -224,7 +224,7 @@ On Windows: C\Program Files (x86)\Arduino-1.5.x\hardware\arduino
 
 **_Note_**: To upload code to the Cyton board, you need Arduino v1.8.0 or later, while you need Arduino v1.5.8 to upload code to the dongle. If you have already installed Ardiono v1.8.0, you may see an error message while installing 1.5.8 saying that you need to uninstall v1.8.0. Instead of doing that, simply move the existing "Arduino" program folder (which should be 1.8.0) in your Program Files to another folder (such as "Documents"). Go to your program manager (called "Change or Remove Program" in Windows, press Uninstall Arduino 1.8.0, and confirm if told that there was an error in uninstalling 1.8.0. Then, install 1.5.8. Rename the new "Arduino" program folder (which should now be 1.5.8) to "Arduino 1.5.8", and rename the Arduino folder that you moved to the name "Arduino 1.8.0". Move this folder back to your Program Files where "Arduino 1.5.8" is located, allowing you to keep both versions.
 
-**Note for Windows users** While installing 1.5.8 if the installer instructs you to uninstall 1.8.0, move the Arduino folder from `Program Files (x86)` to your downloads folder. Rename this folder to `Arduino_1.8.0`. Open the `Change or remove program` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.5.8 as normal. Navigate to back to your `Program Files (x86)` folder and locate the Arduino folder. Rename this folder to `Arduino_1.5.8`. Now drag and drop the `Arduino_1.8.0` back into `Program Files (x86)` folder.  
+**Note for Windows users** While installing 1.5.8 if the installer instructs you to uninstall 1.8.0, move the Arduino folder from `Program Files (x86)` to your downloads folder. Rename this folder to `Arduino_1.8.0`. Open the `Change or remove program` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.5.8 as normal. Navigate to back to your `Program Files (x86)` folder and locate the Arduino folder. Rename this folder to `Arduino_1.5.8`. Now drag and drop the `Arduino_1.8.0` back into `Program Files (x86)` folder.
 
 The files contained in the RFduino folder are custom builds for OpenBCI by our good friends over at RFdigital. Those guys are great! They helped us to squeeze all of the speed we could get out of the RFduinoGZLL library, and also gave us access to 25 discreet channels for OpenBCI boards to work on. ROCK!
 
