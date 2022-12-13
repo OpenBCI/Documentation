@@ -2,7 +2,12 @@
 id: FTDI_Fix_Mac
 title: FTDI Buffer Fix on OS X
 ---
-### Summary
+
+## Summary
+
+:::important
+**The FTDI driver is only necessary for Mac OS X 10.9 through 10.15. If you are running a Mac that is mid 2015 or newer, you do not need to install the FTDI driver! The included drivers with OS X 11, 12, and 13 can handle communications with Cyton and Dongle out of the box.**
+:::
 
 On some Macs, you may have noticed that the data coming from your board is very choppy.
 
@@ -12,12 +17,12 @@ This document details how to edit the config data of the **Info.plist** file of 
 
 This tutorial has been verified to work with the following macOS versions:
 
--   10.9
--   10.10
--   10.11
--   10.13
--   10.14
--   10.15
+- 10.9
+- 10.10
+- 10.11
+- 10.13
+- 10.14
+- 10.15
 
 ### Step 1: open Terminal
 
@@ -136,7 +141,7 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
 
 <key>FT X Series</key>
 <dict>
-       <key>CFBundleIdentifier</key>                               
+       <key>CFBundleIdentifier</key>
  	   <string>com.FTDI.driver.FTDIUSBSerialDriver</string>
        <key>IOClass</key>
        <string>FTDIUSBSerialDriver</string>
@@ -266,7 +271,7 @@ To close emacs:
 followed by
 **[CTRL] + c**
 
-* * *
+---
 
 In vim:
 
@@ -301,11 +306,11 @@ You should get a response that looks something like this:
 
 Open the OpenBCI Processing GUI (or other software), connect to your device, and begin streaming the data.
 
-* * *
+---
 
 ### Helpful Resources
 
--   [Marion's original fix (thank you)!](https://marion.ai/koac/)
--   [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm)
--   [What is a .kext file?](http://www.macbreaker.com/2012/01/what-are-kexts.html)
--   [FTDI Driver Installation Guide for macOS](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)
+- [Marion's original fix (thank you)!](https://marion.ai/koac/)
+- [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm)
+- [What is a .kext file?](http://www.macbreaker.com/2012/01/what-are-kexts.html)
+- [FTDI Driver Installation Guide for macOS](http://www.ftdichip.com/Support/Documents/AppNotes/AN_134_FTDI_Drivers_Installation_Guide_for_MAC_OSX.pdf)

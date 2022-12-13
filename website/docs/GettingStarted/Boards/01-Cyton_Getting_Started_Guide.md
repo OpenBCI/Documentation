@@ -2,6 +2,7 @@
 id: CytonGS
 title: Cyton Getting Started Guide
 ---
+
 This guide will walk you through setting up your computer to use the Cyton and USB Dongle, using the OpenBCI_GUI Application, and how to get EEG/EMG/EKG from your own body! Please review this guide in its entirety before starting and consult the [Cyton Biosensing Tutorial Video](https://youtu.be/D5RCu41msT4) for extra guidance. Have fun!
 
 ## I. What You Need
@@ -32,8 +33,8 @@ The OpenBCI USB Dongle has an integrated RFDuino that communicates with the RFDu
 
 If you ordered an OpenBCI Gold Cup Electrodes and Ten20 Paste you should have:
 
--   10 passive, gold cup electrodes on a color-coded ribbon cable
--   3 2oz Jars of Ten20 conductive electrode paste
+- 10 passive, gold cup electrodes on a color-coded ribbon cable
+- 3 2oz Jars of Ten20 conductive electrode paste
 
 If you plan to work with your own electrodes, the [touch-proof adapter](https://shop.openbci.com/products/touch-proof-electrode-cable-adapter) may come in handy:
 
@@ -234,23 +235,23 @@ Experts and those interested in communicating directly with the board can refer 
 
 To learn how to connect yourself to OpenBCI using your newly set up board, see the following tutorials:
 
--   [EEG Setup](GettingStarted/Biosensing-Setups/01-EEG-Setup.md)
--   [EMG Setup](GettingStarted/Biosensing-Setups/02-EMG-Setup.md)
--   [ECG Setup](GettingStarted/Biosensing-Setups/03-ECG-Setup.md)
+- [EEG Setup](GettingStarted/Biosensing-Setups/01-EEG-Setup.md)
+- [EMG Setup](GettingStarted/Biosensing-Setups/02-EMG-Setup.md)
+- [ECG Setup](GettingStarted/Biosensing-Setups/03-ECG-Setup.md)
 
 In the above setups, you may need to adjust the Hardware Settings of the ADS1299 chip, the core piece of technology in the Cyton. [Click here](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#hardware-settings) for more info on Cyton Hardware Settings UI in the Time Series Widget. If you are an advanced user, you can look at the GUI console log after changing hardware settings and the [Cyton SDK Guide](../../../Cyton/CytonSDK#channel-setting-commands) to learn how to send custom commands to the Cyton using [any BrainFlow binding](ForDevelopers/01-SoftwareDevelopment.md).
 
 ## VI. Fixing FTDI Buffering on Mac OS
 
-On some Macs, you may have noticed that the data coming from your Cyton board is very choppy.
+On some Macs, you may have noticed that the data coming from your Cyton board is very choppy. Newer Macs (mid 2015 - present) may not have this issue and can connect flawlessly to the Cyton using the Dongle sold with each Cyton.
 
 This is a result of the FTDI virtual com port (VCP) driver's default settings for macOS. Head over to the [FTDI Driver Fix Guide](Troubleshooting/05-FTDI_Driver_Fix_Mac.md) to see how to adjust the settings.
 
 ## VII. Fixing FTDI Buffering on Windows
 
 The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if its accumulating packets for about a full second before releasing them all at the same time into the serial stream.
- Head over to the [FTDI Driver Fix Guide for Windows](Troubleshooting/04-FTDI_Fix_Windows.md) to see how to adjust the settings.
+Head over to the [FTDI Driver Fix Guide for Windows](Troubleshooting/04-FTDI_Fix_Windows.md) to see how to adjust the settings.
 
 ## VIII. Fixing FTDI Latency on Linux
 
--   [FTDI Driver Fix for Linux](Troubleshooting/03-FTDI_Fix_Linux.md)
+- [FTDI Driver Fix for Linux](Troubleshooting/03-FTDI_Fix_Linux.md)
