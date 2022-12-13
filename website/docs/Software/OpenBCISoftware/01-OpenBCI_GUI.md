@@ -2,9 +2,10 @@
 id: GUIDocs
 title: The OpenBCI GUI
 ---
+
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
-The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party software such as MATLAB. 
+The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party software such as MATLAB.
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
 ## Hardware/Driver Setup for OpenBCI_GUI
@@ -13,9 +14,13 @@ Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
-### Cyton and Cyton+Daisy on macOS/Windows/Linux
+### Cyton and Cyton+Daisy Drivers
 
-If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system. This installation is required to establish a clean connection with the OpenBCI Cyton and Cyton+Daisy hardware. 
+If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system.
+
+:::important
+**The FTDI driver is only necessary for Windows 8, Windows 10, and Mac OS X 10.9 through 10.15. If you are running a Mac that is mid 2015 or newer, you do not need to install the FTDI driver!**
+:::
 
 ### Ganglion on macOS/Windows/Linux
 
@@ -40,8 +45,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
         - Type `sudo usermod -a -G dialout <username>` in terminal.
         - Example: `sudo usermod -a -G dialout susieQ`
 3.  Restart Ubuntu
-4.  Try "id" command again
-        - Repeat step one
+4.  Try "id" command again - Repeat step one
 
 </details><p />
 
@@ -99,8 +103,8 @@ On Linux, there is no way to force scaling. However, here is a <a href="https://
 
 **Important Notes:**
 
--   In some cases, there may be issues with the way your machine handles the BLE application that enables communication with the Ganglion Board.
--   If you run into additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum
+- In some cases, there may be issues with the way your machine handles the BLE application that enables communication with the Ganglion Board.
+- If you run into additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum
 
 ### Running on macOS
 
@@ -170,13 +174,13 @@ The OpenBCI GUI displays up to six customizable windows in twelve layouts! You c
 
 ### Impedance Testing
 
-The impedance widget is a valuable tool for evaluating electrode contact before data acquisition. 
-Press `Test` to start impedance test on an individual channel. 
-    
+The impedance widget is a valuable tool for evaluating electrode contact before data acquisition.
+Press `Test` to start impedance test on an individual channel.
+
 The impedance value is in colored font as a visual guide to the pre-set thresholds. A red impedance value means you should adjust your electrodes, part your hair, add gel, use paste, or such measures as appropriate for the electrode you’re using. Experienced users can also adjust these thresholds in the bracket-field beneath the table.
 
 :::info
-During the impedance test, the board sends a small current through the selected channel to obtain the impedance value. 
+During the impedance test, the board sends a small current through the selected channel to obtain the impedance value.
 **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
 :::
 
@@ -233,25 +237,27 @@ This method can be more reliable and quicker to implement than sending Time Seri
 
 Expert Mode Keyboard Shortcuts:
 
--   Other than spacebar, you can press 's' to stop data stream, and 'b' to begin, or start the data stream.
+- Other than spacebar, you can press 's' to stop data stream, and 'b' to begin, or start the data stream.
 
--   You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels.
+- You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels.
 
--   **Press lowercase 'd' to set all channels settings to default.**
+- **Press lowercase 'd' to set all channels settings to default.**
 
--   Using an _English keyboard_, you can deactivate channels 1-16 using:
-    -   1,2,3,4,5,6,7,8
-    -   q,w,e,r,t,y,u,i
+- Using an _English keyboard_, you can deactivate channels 1-16 using:
 
--   Similarly, activate channels 1-16 using:
-    -   !, @, #, $, %, ^, &, \*
-    -   Q,W,E,R,T,Y,U,I
+  - 1,2,3,4,5,6,7,8
+  - q,w,e,r,t,y,u,i
 
--   **Take a screenshot of the GUI using lowercase 'm'!** It will be saved to _/Documents/OpenBCI_GUI/Settings/_.
+- Similarly, activate channels 1-16 using:
 
--   **Enter presentation mode using Enter (Win), or Return (Mac).**
+  - !, @, #, $, %, ^, &, \*
+  - Q,W,E,R,T,Y,U,I
 
--   To change to the alternate color scheme, use '{"{"}'.
+- **Take a screenshot of the GUI using lowercase 'm'!** It will be saved to _/Documents/OpenBCI_GUI/Settings/_.
+
+- **Enter presentation mode using Enter (Win), or Return (Mac).**
+
+- To change to the alternate color scheme, use '{"{"}'.
 
 ## Running the OpenBCI GUI from the Processing IDE
 
@@ -259,18 +265,18 @@ Expert Mode Keyboard Shortcuts:
 
 The OpenBCI GUI was built using [Processing](https://processing.org/), a popular, Java-based creative coding framework. If you are interested in adding features or modifying the existing code, it is really easy to do so if you are familiar with Java. If you're not familiar with Java, don't fret! Processing is one of the easiest software packages to pick up as a beginner coder.
 
-The things you will need to run the OpenBCI GUI in Processing are:  
+The things you will need to run the OpenBCI GUI in Processing are:
 
--   [Processing App](https://processing.org/download/?processing)
--   [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
+- [Processing App](https://processing.org/download/?processing)
+- [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
 
 First, go to processing.org and download the latest version of Processing. [Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
 
-Go ahead and move it to your `Applications` folder, and launch the application. If this is the first time that you are running Processing, it will create what it calls it's `Sketch` folder in the following locations:  
+Go ahead and move it to your `Applications` folder, and launch the application. If this is the first time that you are running Processing, it will create what it calls it's `Sketch` folder in the following locations:
 
- On a Mac `Users/<user-name>/Documents/Processing`  
+On a Mac `Users/<user-name>/Documents/Processing`  
  On Windows `C:\Users\<user-name>\Documents\Processing`  
- On Linux `/home/<user-name>/sketchbook`  
+ On Linux `/home/<user-name>/sketchbook`
 
 ![GUI repo](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-repo.png)
 
@@ -303,7 +309,7 @@ If you don't know anything about coding, don't edit these files. If you like to 
 
 ![Processing RUN](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-RUN.png)
 
-Press the `play` button on the upper left of the IDE, and the sketch will try to launch! 
+Press the `play` button on the upper left of the IDE, and the sketch will try to launch!
 
 If you are encountering issues launching the GUI at this point, please head to the [OpenBCI_GUI section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum and look for help or post a question.
 
