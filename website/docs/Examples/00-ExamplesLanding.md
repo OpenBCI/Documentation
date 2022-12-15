@@ -2,17 +2,32 @@
 id: ExamplesLanding
 title: Example Projects
 ---
+
 The Examples directory to the left contains example projects contributed by members of the OpenBCI Community and team. For even more tutorials, head to the tutorials tag in the [Community Page!](https://openbci.com/community)
 
-## New EMG Projects and Tutorials
+## EEG Projects and Tutorials
+
+Whether you're new to neurotechnology or conducting research, OpenBCI makes it easy and fun to work with EEG signals. OpenBCI hardware can be used to replicate and expand upon existing EEG paradigms. Below, you will find a few examples from our worldwide Community of scientists and enthusiasts to help you get started controlling computers and robots using the power of your mind.
+
+### P300 Example
+
+[P300 Speller by UCLA](https://github.com/DarrenVawter/P300_BCI/) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) and [Gel Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
+
+### SSVEP Examples
+
+[SSVEP-based BCI speller by McGill University](https://github.com/NTX-McGill/NeuroTechX-McGill-2021) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) and [Gold Cup Electrodes](https://shop.openbci.com/products/openbci-gold-cup-electrodes)
+
+[SSVEP-based communicator by University of Waterloo](https://github.com/WATOLINK/mind-speech-interface-ssvep) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) + Customized [Ultracortex](https://shop.openbci.com/products/ultracortex-mark-iv)
+
+### Motor Imagery Controlled Car
+
+[Tutorial](Examples/EEGProjects/20-Motor_Imagery.md) to control a robotic car using motor imagery - Uses [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) and [Ultracortex EEG headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) or [EEG cap](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap-kit)
+
+## EMG Projects and Tutorials
 
 We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](GettingStarted/Biosensing-Setups/03-ECG-Setup.md) and stand-alone [EMG](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration.  We look forward to seeing what you create!
 
 Note, the example projects below are written for the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) but can be applied to [Ganglion board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) as well.
-
-### Motor Imagery Controlled Car
-
-[Tutorial](Examples/EEGProjects/20-Motor_Imagery.md) to control a robotic car using motor imagery
 
 ### EMG Scrolling
 
@@ -40,4 +55,4 @@ Note, the example projects below are written for the [Cyton Board](https://shop.
 
 ### EMG-controlled Piano
 
-[Tutorial](Examples/EMGProjects/EMG_Controlled_Piano.md) to play the piano using EMG 
+[Tutorial](Examples/EMGProjects/EMG_Controlled_Piano.md) to play the piano using EMG
