@@ -51,15 +51,23 @@ As of GUI 5.0.9, use the new [Cyton Signal Widget](#cyton-signal-widget) to chec
 
 ## FFT Plot
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_FTT.jpg?raw=true" width="50%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_FTT.jpg?raw=true" width="100%" />
 
-This is a standard data visualization feature of biosensing tools. The x-axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV. These amplitudes are displayed logarithmically by default — a recommended setting — but you can alter this in the log/ln dropdown.
+This is a standard data visualization feature of biosensing tools. The x-axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV. These amplitudes are displayed logarithmically by default — a recommended setting — but you can alter this in the "Log/Lin" dropdown.
 
-_Note: Each color in the FFT Plot is color-coded to match the channels in the time series._
+:::note
+Each color in the FFT Plot is color-coded to match the channels in the time series.\_
+:::
+
+:::tip
+In the picture below, you can see great Alpha Waves centered around 10 Hz using the [OpenBCI Ganglion](https://shop.openbci.com/products/ganglion-board) and [Headband Kit](https://shop.openbci.com/products/openbci-eeg-headband-kit).
+:::
+
+![Ganglion FFT Alpha Waves](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.1_Ganglion_PostSignalCheck_AlphaWaves.png)
 
 ## Accelerometer
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Accel.jpg?raw=true" width="50%" />
+<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Accel.jpg?raw=true" width="100%" />
 
 Each OpenBCI board is fitted with a three-axis accelerometer, the data from which is streamed to this widget. This accelerometer measures the acceleration of the board itself on an XYZ-axis.
 
@@ -266,6 +274,18 @@ Use this mode to check the status of all channels at once while streaming data. 
 ![Cyton Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_CytonSignal_LiveMode_LiveDataNoPinsConnected.png)
 
 'Railed' indication in the GUI just means your signal amplitude is exceeding the maximum value for the scale you are using. Generally, this indicates that an electrode may not be making direct contact with skin. If it is already touching, you could try lowering the gain on that channel via the Hardware Settings feature.
+
+## Ganglion Signal Check
+
+Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality. Please be patient while this widget cycles through checking each channel one by one.
+
+We recommend using this widget and mode before starting a recording session. **Please note that this data will not be recorded to a file, though you may see some data in the Time Series widget.** You may also see values of zero in the accelerometer widget, this is normal during impedance testing with Ganglion. In the future, we would like to save this data to a separate file for those advanced users who may wish to analyze it further.
+
+:::info
+In the picture below, you will see an example of some acceptable impedance values using the [Headband Kit](https://shop.openbci.com/products/openbci-eeg-headband-kit) with the [Ganglion channels set to EEG mode](../../AddOns/Headwear/03-Headband_Tutorial.md#hardware). The circle off the to left of each channel will show either green, yellow, or red. Green and yellow values are acceptable, though green is better.
+:::
+
+![Ganglion Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.1_GanglionSignalCheckWidget_WidgetOnly.png)
 
 ## Playback Widget
 
