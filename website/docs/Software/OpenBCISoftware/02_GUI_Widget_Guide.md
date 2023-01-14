@@ -277,9 +277,15 @@ Use this mode to check the status of all channels at once while streaming data. 
 
 ## Ganglion Signal Check
 
-![Ganglion Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.1_GanglionSignalCheckWidget_WidgetOnly.png)
+Use this mode to check the status of each pin/electrode using an injected current. This method is quite reliable and the most accurate method of checking signal quality. Please be patient while this widget cycles through checking each channel one by one.
 
-![Ganglion Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.1_GanglionSignalCheckWidget_FullGUI.png)
+We recommend using this widget and mode before starting a recording session. **Please note that this data will not be recorded to a file, though you may see some data in the Time Series widget.** You may also see values of zero in the accelerometer widget, this is normal during impedance testing with Ganglion. In the future, we would like to save this data to a separate file for those advanced users who may wish to analyze it further.
+
+:::info
+In the picture below, you will see an example of some acceptable impedance values using the [Headband Kit](https://shop.openbci.com/products/openbci-eeg-headband-kit) with the [Ganglion channels set to EEG mode](../../AddOns/Headwear/03-Headband_Tutorial.md#hardware). The circle off the to left of each channel will show either green, yellow, or red. Green and yellow values are acceptable, though green is better.
+:::
+
+![Ganglion Signal Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.1_GanglionSignalCheckWidget_WidgetOnly.png)
 
 ## Playback Widget
 
