@@ -305,3 +305,9 @@ If you are encountering issues launching the GUI at this point, please head to t
 **Note: This can only be done with GUI v4.2.0 or earlier.** In order to convert large SD card recordings made using Cyton or Cyton+Daisy, you will need to run the GUI from Processing, but we need to change one crucial setting in Processing's Preferences. As mentioned in the screenshot below, open Processing preferences and increase max available memory to at least 9GB to convert a 12 hour SD recording. Click OK to save these preferences, restart Processing to make sure the changes take effect, and re-launch the GUI.
 
 ![GUI Screenshot convert large SD recording](../../assets/SoftwareImages/OpenBCISoftware/gui_convert_large_SD_recordings_scrnshot.png)
+
+## Cyton Other Channels
+
+When recording using Cyton, the GUI will output a data file which contains 7 channels with the header "Other". These channels are user defined based on the [board mode](https://docs.openbci.com/Cyton/CytonSDK/#board-mode). Refer to the [aux data footer section](https://docs.openbci.com/Cyton/CytonDataFormat/#firmware-version-200-fall-2016-to-now-1) of the Cyton data format documentation for further information.
+
+In digital read mode the 5th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
