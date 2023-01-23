@@ -308,6 +308,6 @@ If you are encountering issues launching the GUI at this point, please head to t
 
 ## Cyton Other Channels
 
-When recording using Cyton, the GUI will output a data file which contains 7 channels with the header "Other". These channels are user defined based on the [board mode](https://docs.openbci.com/Cyton/CytonSDK/#board-mode). Refer to the [aux data footer section](https://docs.openbci.com/Cyton/CytonDataFormat/#firmware-version-200-fall-2016-to-now-1) of the Cyton data format documentation for further information.
+When recording using Cyton, the GUI will output a data file which contains 7 channels with the header "Other". These channels are user defined based on the [board mode](../../Cyton/04-OpenBCI_Cyton_SDK.md/#board-mode). Refer to the [aux data footer section](../../Cyton/03-Cyton_Data_Format.md/#firmware-version-200-fall-2016-to-now-1) of the Cyton data format documentation for further information.
 
 In digital read mode the 5th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
