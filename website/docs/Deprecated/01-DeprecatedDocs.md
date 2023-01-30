@@ -12,6 +12,8 @@ Deprecated Hardware:
 -   [UltracortexMark2](Deprecated/05-UltracortexMark2.md)
 -   [UltracortexMark3](Deprecated/06-UltracortexMark3.md)
 -   [UltracortexMark3_Nova](Deprecated/07-UltracortexMark3_Nova.md)
+-   [Myoware v1.0 Cyton Integration](Deprecated/14-MyoWare_Integration.md)
+-   [Myoware v1.0 Ganglion Integration](Deprecated/15-MyoWare_Integration_Ganglion.md)
 
 Deprecated Software:
 

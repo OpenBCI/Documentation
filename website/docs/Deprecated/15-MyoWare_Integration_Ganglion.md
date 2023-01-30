@@ -2,11 +2,16 @@
 id: MyoGanglion
 title: MyoWare OpenBCI Integration (Ganglion Board)
 ---
+**THIS HARDWARE VERSION HAS BEEN DEPRECATED AND IS NO LONGER IN PRODUCTION.**
+
+MyoWare v1.0 is obsolete and has been pulled from production. The updated version is Myoware v2.0. This doc covers the integration of MyoWare v1.0 with the Cyton board.
+
+
 ### Overview
 
 This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Ganglion board, and the OpenBCI GUI. If you have a Cyton board instead, check out our [Cyton board MyoWare integration tutorial!](ThirdParty/Myoware/14-MyoWare_Integration.md)
 
-![MyoWare + Ganglion supplies](../../assets/ThirdPartyImages/flatlay_myoware_ganglion.JPG)
+![MyoWare + Ganglion supplies](../assets/ThirdPartyImages/flatlay_myoware_ganglion.JPG)
 
 ### Materials Needed
 
@@ -22,7 +27,7 @@ Note: jumper wires aren't sold on the OpenBCI website, but we used the ones from
 
 Solder 5 wires to the MyoWare board as shown below. Solder the male-male wires to the "+" and "-" connects, and the male-female wires to the R, E, and M connects.
 
-![MyoWare Board post-soldering](../../assets/ThirdPartyImages/myoware_post_solder.jpg)
+![MyoWare Board post-soldering](../assets/ThirdPartyImages/myoware_post_solder.jpg)
 
 The wires attached to the "+" and "-" connects will be used to supply power to the board. They'll be attached to high voltage and ground outputs on the OpenBCI Ganglion board.
 
@@ -36,7 +41,7 @@ Remove the transparent yellow stickers from the four switches on the front of th
 
 Connect the 5 wires from the MyoWare board in step 1 to the Ganglion board, as shown below:
 
-![Board with Headers](../../assets/ThirdPartyImages/ganglion_myoware_connects.JPG)
+![Board with Headers](../assets/ThirdPartyImages/ganglion_myoware_connects.JPG)
 
 The "+" and "-" from the MyoWare board should go to the DVDD and GNDA connects on the left side of the Ganglion board. R, E, and M will connect to the pins at the top.
 
@@ -62,23 +67,23 @@ You'll be able to see signals from the MyoWare electrodes in the OpenBCI GUI. If
 
 Here's what the GUI, and channel 1, will look like with the muscle at rest:
 
-![Resting](../../assets/ThirdPartyImages/Ganglion_GUI_before_flexing.png)
+![Resting](../assets/ThirdPartyImages/Ganglion_GUI_before_flexing.png)
 
 And here's what channel 1 will look like after flexing the muscle:
 
-![Firing](../../assets/ThirdPartyImages/Ganglion_GUI_after_flex.png)
+![Firing](../assets/ThirdPartyImages/Ganglion_GUI_after_flex.png)
 
 ### 5. Using OpenBCI's EMG GUI Widget
 
 The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on the drop down menu under "FFT Plot", and select "EMG" instead:
 
-![Ganglion EMG Before Flex](../../assets/ThirdPartyImages/Ganglion_GUI_before_widget.png)
+![Ganglion EMG Before Flex](../assets/ThirdPartyImages/Ganglion_GUI_before_widget.png)
 
 Each circle and box represents a channel. The circle and box fill up as the intensity of the signal on that channel increases.
 
 Here's what happens to the GUI when a muscle is flexed:
 
-![Ganglion EMG After Flex](../../assets/ThirdPartyImages/Ganglion_GUI_after_widget.png)
+![Ganglion EMG After Flex](../assets/ThirdPartyImages/Ganglion_GUI_after_widget.png)
 
 You can use this change in signal intensity to trigger analog or digital events from within the GUI as you like. Check out the `W_EMG.pde` file for more information on the EMG widget.
 

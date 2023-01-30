@@ -1,10 +1,10 @@
 ---
-id: MyoCyton
+id: MyoWareCyton
 title: MyoWare OpenBCI Integration (Cyton Board)
 ---
 ### Overview
 
-This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Cyton board, and the OpenBCI GUI. If you have a Ganglion board instead, check out our [Ganglion board MyoWare integration tutorial!](ThirdParty/Myoware/15-MyoWare_Integration_Ganglion.md)
+This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Cyton board, and the OpenBCI GUI. 
 
 ![MyoWare Board](../../assets/ThirdPartyImages/myoware.jpg)
 
@@ -13,17 +13,24 @@ This tutorial will show you how to read EMG data (electrical signals from muscle
 1.  MyoWare board
 2.  OpenBCI Cyton board, with power source
 3.  OpenBCI dongle
-4.  Skintact sticky electrodes (for using the MyoWare board)
+4.  Disposable 24mm sticky electrodes (for using the MyoWare board)
 5.  Soldering iron and materials
-6.  Two male-male jumper wires (like [these](https://www.adafruit.com/product/266)), and three male-female jumper wires (like [these](https://www.adafruit.com/product/826))
+6.  Five male header pins (like [these](https://www.adafruit.com/product/2671)) 
+7.  Five male-female jumper wires (like [these](https://www.adafruit.com/product/826))
 
-Note: jumper wires aren't sold on the OpenBCI website, but we used some from Adafruit (linked above) for this tutorial
+Note: Jumper wires and header pins aren't sold on the OpenBCI website, but we used some from Adafruit (linked above) for this tutorial
 
 ### 1. Soldering the MyoWare Headers
 
-Solder 5 wires to the MyoWare board as shown below. Solder the male-male wires to the "+" and "-" connects, and the male-female wires to the R, E, and M connects.
+Break the male headers into a set of 2-pin headers and 3-pin headers as shown below
+
+### ADD IMAGE HERE
+
+Solder the 3-pin header to the VIN, GND and ENV pads and solder the 2-pin header to the RECT and RAW pads of the MyoWare board. 
 
 ![MyoWare Board post-soldering](../../assets/ThirdPartyImages/myoware_post_solder.jpg)
+
+The male-female jumper wires can then be used to interface with the Cyton from the Myoware board. The female part of the jumper wire is plugged into the Myoware whereas the male part is plugged into the Cyton.
 
 The wires attached to the "+" and "-" connects will be used to supply power to the board. They'll be attached to high voltage and ground outputs on the OpenBCI Cyton board.
 
