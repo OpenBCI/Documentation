@@ -2,10 +2,10 @@
 id: Returns
 title: RETURNS & REFUNDS
 ---
+
 #### Returns
 
-Before returning any items,
-you must contact us at [sales@openbci.com.](mailto:sales@openbci.com.) Refunds and exchanges can be requested within 30 days of the delivery date.
+To initiate a return, contact us at [support@openbci.com.](mailto:support@openbci.com.) Refunds and exchanges can be requested within 30 days of the delivery date.
 
 Please note, all returns are contingent on the resale-able condition of the items. The customer is responsible for the cost of return shipping.
 
@@ -15,10 +15,9 @@ If you received a damaged item, we will send a replacement at no additional char
 
 #### How to Return or Exchange Items in 3 Simple Steps
 
-Contact us at [sales@openbci.com](mailto:sales@openbci.com) indicating the issue or reason for return. We will provide the return shipping address.
-Send us the items in the original box (or a different box, as long as it's unmarked) to the address below. We suggest you use USPS Priority Mail or a carrier that provides tracking. OpenBCI, Inc. is not responsible for lost shipments.
-
-Include a note that indicates your name and contact information, the order number, and reason for return.
+1. Contact us at [support@openbci.com](mailto:support@openbci.com) indicating the issue or reason for return. We will provide the return shipping address.
+2. Send us the items in the original box (or a different box, as long as it's unmarked) to the address below. We suggest you use USPS Priority Mail or a carrier that provides tracking. OpenBCI, Inc. is not responsible for lost shipments. If returning an order from outside the US, declare a low shipment value for customs, i.e. $10.
+3. Email us to let us know when to expect the package.
 
 #### If You’re Requesting a Refund
 
@@ -26,4 +25,8 @@ We reserve the right to deduct up to a 10% fee based on the condition of the pro
 
 When the returned item is received, your original method of payment will be credited as soon as we have completed processing your return (usually within 2 weeks).
 
-For questions or assistance with your return, please contact us at [sales@openbci.com](mailto:sales@openbci.com).
+#### Policy Limitation
+
+The product policy outlined above is applicable only to orders from shop.openbci.com. Because OpenBCI's hardware and software files are open-source, some companies use the files to make counterfeit biosensing products. They look similar to authentic OpenBCI products but do not function or meet expectations. We are unable to offer support on counterfeit or inauthentic products. 
+
+OpenBCI manufactures biosensing boards at a dedicated facility in the United States. We use a strict quality-control system to ensure our customers receive high-quality, research-grade products. 

@@ -26,11 +26,11 @@ Connect one electrode cable to top pin N1P and one electrode cable to bottom pin
 
 To obtain additional EMG channels, connect electrode cables to pins N2P, N3P, N4P, and so on and so forth, in the same way as you did for N1P, until you have the desired number of channels. Remember, one channel per muscle.
 
-After you have done this, connect one electrode cable to the Cyton bottom AGND pin.
+After you have done this, connect one electrode cable to the Cyton bottom BIAS pin.
 
 _for reference, "bottom" pins means the row of pins closer to the table when the board is laid flat._
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="70%" />
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/GettingStartedImages/CYTON_EMG_BIAS.png?raw=true" width="70%" />
 
 In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
 
@@ -43,7 +43,7 @@ Place the ground electrode on a bony part of the body with as few muscles as pos
 
 | Electrode Wire Color | Cyton Board Pin | Body Location | Purpose                                      |
 | -------------------- | --------------- | ------------- | -------------------------------------------- |
-| black                | bottom AGND pin | elbow         | reference                                    |
+| black                | bottom BIAS pin | elbow         | reference                                    |
 | yellow               | top N1P pin     | muscle        | measuring potential difference for channel 1 |
 | green                | bottom N1P pin  | muscle        | measuring potential difference for channel 1 |
 

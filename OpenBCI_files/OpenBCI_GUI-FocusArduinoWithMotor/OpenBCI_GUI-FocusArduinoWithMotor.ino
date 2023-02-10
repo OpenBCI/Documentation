@@ -5,7 +5,7 @@
 //            - Potentiometer controls motor speed                                     //
 //            - Button on pin 7 reverses motor direction while pressed                 //
 //                                                                                     //
-//          Tested 7/27/2019 using iMac, Genuine Arduino, OpenBCI_GUI 4.1.3            //
+//          Tested 1/30/2023 using iMac, Genuine Arduino, OpenBCI_GUI 5.1.0            //
 //    Uses https://learn.adafruit.com/adafruit-arduino-lesson-15-dc-motor-reversing/   //
 //        and https://docs.openbci.com/Tutorials/17-Arduino_Focus_Example              //
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -77,11 +77,11 @@ void showNewData() {
         //Only perform an action when the incoming data changes
         if (!s.equals(previousData)) {
           //Check if the string is "true" or "false"
-          if (s.equals("false")) {
+          if (s.equals("0")) {
             Serial.println("Input: FALSE");
             isFocused = false;
             digitalWrite(LED_BUILTIN, LOW);
-          } else if (s.equals("true")) {
+          } else if (s.equals("1")) {
             Serial.println("Input: TRUE");
             digitalWrite(LED_BUILTIN, HIGH);
             isFocused = true;

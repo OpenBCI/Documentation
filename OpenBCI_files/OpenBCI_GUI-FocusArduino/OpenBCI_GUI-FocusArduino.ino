@@ -3,7 +3,7 @@
 //                                                                    //
 //    - The Arduino Built-In LED blinks when the user is Focused      //
 //   https://docs.openbci.com/Tutorials/17-Arduino_Focus_Example.md   //
-//   Tested 4/7/2019 using iMac, Genuine Arduino, OpenBCI_GUI 4.1.2   //
+//   Tested 1/30/2023 using iMac, Genuine Arduino, OpenBCI_GUI 5.1.0   //
 ////////////////////////////////////////////////////////////////////////
 
 const byte numChars = 32;
@@ -53,10 +53,10 @@ void showNewData() {
         //Only perform an action when the incoming data changes
         if (!s.equals(previousData)) {
           //Check if the string is "true" or "false"
-          if (s.equals("false")) {
+          if (s.equals("0")) {
             Serial.println("Input: FALSE");
             digitalWrite(LED_BUILTIN, LOW);
-          } else if (s.equals("true")) {
+          } else if (s.equals("1")) {
             Serial.println("Input: TRUE");
             digitalWrite(LED_BUILTIN, HIGH);
           } else {
