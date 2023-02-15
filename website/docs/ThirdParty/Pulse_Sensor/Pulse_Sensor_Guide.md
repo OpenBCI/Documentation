@@ -2,7 +2,7 @@
 id: Pulse_Sensor_Landing
 title: Pulse Sensor Guide
 ---
-The Pulse Sensor can be connected to the [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel), [Ganglion](https://shop.openbci.com/collections/frontpage/products/pre-order-ganglion-board), or any Arduino board to easily obtain your heart rate using [photoplethysmogram (PPG)](https://en.wikipedia.org/wiki/Photoplethysmogram).
+The Pulse Sensor can be connected to the [Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) or any Arduino board to easily obtain your heart rate using [photoplethysmogram (PPG)](https://en.wikipedia.org/wiki/Photoplethysmogram).
 
 The basic principles are the same no matter what board you're connecting the Pulse Sensor to.
 The Pulse Sensor has three leads, seen below.
@@ -45,6 +45,7 @@ Please scroll through the [general guide](https://www.generationrobots.com/media
 
 When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog input A5, A6, and A7. Since you connected the purple wire of the pulse sensor to the D11 header, the data will show up in the A5 channel of the Analog Read Widget.
 
+<!--
 ## Ganglion Pulse Sensor
 
 Read the Ganglion [Getting Started Guide](../../GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md)
@@ -61,6 +62,7 @@ The connections are circled above.
 | purple                  | pin 1,2,3, or 4       | input (signal) |
 
 Red pulse sensor cable goes to DVDD on the Ganglion, black to GNDA (right next to DVDD), and purple to any single pin 1,2,3, or 4. The single-channel data will show up in the GUI's Time Series Widget.
+//
 
 Any unused / unconnected channels should be turned OFF in the GUI. Press the colored channel button in the Time Series to toggle on/off status.
 
@@ -68,7 +70,7 @@ After you have set up your hardware and software using the above steps,
 Please scroll through the [general guide](https://www.generationrobots.com/media/DetecteurDePoulsAmplifie/PulseSensorAmpedGettingStartedGuide.pdf) to learn how to secure the pulse sensor to your finger.
 
 - When running the GUI, select the pulse sensor widget option from the dropdown menu, then hit 'Analog Read On, then go to another pane of the GUI and select 'Analog Read' from the dropdown menu. The pulse sensor widget will display your pulse data, and the Analog Read widget displays data from analog inputs A3, A4, and A6. Since you connected the purple wire of the pulse sensor to the A3 header, the data will show up in the A3 channel of the Analog Read Widget.-
-
+-->
 ## Troubleshooting
 
 Running into trouble? Consult these pulse sensor-ganglion Forum posts [here](https://openbci.com/forum/index.php?p=/discussion/1690/ganglion-use-with-pulse-sensor-which-analog-pin) and [here](http://openbci.com/forum/index.php?p=/discussion/919/ganglion-and-pulse-sensors).
