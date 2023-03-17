@@ -21,6 +21,7 @@ The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture progr
 -   Mount holes are 1/16" ID, 0.8" x 2.166" on center
 -   Input voltage range: +2.5 to -2.5V
 -   Signal-Noise-Ratio: 121 dB
+-   Voltage resolution = 0.298 microvolt/bit (5V/16777216)
 
 ### Breakout pins:
 
