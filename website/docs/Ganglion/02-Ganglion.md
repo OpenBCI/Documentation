@@ -10,6 +10,8 @@ The OpenBCI Ganglion PCBs were designed with KiCAD, an Open Source PCB capture s
 
 ### Ganglion Board Specs
 
+-   Voltage resolution = 0.1788microvolt/bit (3V/16777216)
+-   Resolution = Voltage level / 2^n where n is the bit-level of ADC
 -   Power with 3.3V to 12V DC battery ONLY
 -   Current Draw: 14mA when idle, 15mA connected and streaming data
 -   [Simblee](http://www.simblee.com) BLE Radio module (Arduino Compatible)
