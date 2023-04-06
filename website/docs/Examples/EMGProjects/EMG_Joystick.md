@@ -2,6 +2,7 @@
 id: EMG_Joystick
 title: EMG Joystick
 ---
+
 This tutorial will show you how to control a joystick using EMG data with the OpenBCI GUI. You can then use this customizable, muscle-activated joystick for any purpose of your choosing! OpenBCI used this to control a drone in the 2023 OpenBCI TED Talk.
 
 Check out an example video of this joystick being put into action!
@@ -19,14 +20,14 @@ Check out an example video of this joystick being put into action!
 
 Follow the [EMG Getting Started tutorial](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) to connect the electrodes to your body and the Cyton board. We will read data from the Cyton using the OpenBCI GUI. For this tutorial, you will need to connect up to four channels. The number of channels depends on how many degrees of freedom are needed. Four channels will enable control of both positive and negative X/Y directions of the joystick. Only one ground is needed.
 
-Here is a mapping of channel numbers to X/Y joystick directions: 
+Here is a mapping of channel numbers to X/Y joystick directions:
 
-| Channel | Direction              |
-| ------- | ---------------------- |
-| 1       | - X (left)      |
-| 2       | + X (right)     |
-| 3       | + Y (up)        |
-| 4       | - Y (down)      |
+| Channel | Direction   |
+| ------- | ----------- |
+| 1       | - X (left)  |
+| 2       | + X (right) |
+| 3       | + Y (up)    |
+| 4       | - Y (down)  |
 
 :::tip
 The most complex part of this tutorial will be finding the right placement for each pair of electrodes. It is important to find the muscle locations that are the easiest for the user to precisely control. You may need to play around with different locations before finding your optimal electrode setup.
@@ -34,7 +35,7 @@ The most complex part of this tutorial will be finding the right placement for e
 
 ## Step 2: GUI Setup
 
-Start by streaming data using the GUI. Follow this [getting started tutorial](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md/#using-the-openbci-gui) to get the board streaming. You will need to open the EMG Joystick and EMG Settings widgets. 
+Start by streaming data using the GUI. Follow this [getting started tutorial](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md/#using-the-openbci-gui) to get the board streaming. You will need to open the EMG Joystick and EMG Settings widgets.
 
 ### EMG Settings
 
@@ -42,16 +43,16 @@ This widget contains the tuneable parameters used for the threshold algorithm th
 
 ![EMG Settings Screenshot](../../assets/TutorialImages/EMG_settings.png)
 
-| Parameter | Definition              |
-| ------- | ---------------------- |
-| Smooth       | Controls how many seconds of data to average over. This reduces the effect of outliers in the dataset.    |
-| uV Limit     | Upper limit for the EMG signal.     |
-| Creep+       | Adjustment speed for upper threshold. How fast it should decrease if not triggered.     |
-| Creep-       | Adjustment speed for lower threshold. How fast it should increase if not triggered.      |
-| Min ΔuV      | Minimum difference awllowed between upper and lower thresholds.       |
-| Low Limit    | Minimum lower threshold allowed.      |
+| Parameter | Definition                                                                                             |
+| --------- | ------------------------------------------------------------------------------------------------------ |
+| Smooth    | Controls how many seconds of data to average over. This reduces the effect of outliers in the dataset. |
+| uV Limit  | Upper limit for the EMG signal.                                                                        |
+| Creep+    | Adjustment speed for upper threshold. How fast it should decrease if not triggered.                    |
+| Creep-    | Adjustment speed for lower threshold. How fast it should increase if not triggered.                    |
+| Min ΔuV   | Minimum difference allowed between upper and lower thresholds.                                         |
+| Low Limit | Minimum lower threshold allowed.                                                                       |
 
-A futher description of these parameters can be found on the [GUI Widgets options](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md/#options) page.
+A further description of these parameters can be found on the [GUI Widgets options](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md/#options) page.
 
 ### EMG Joystick Widget
 
