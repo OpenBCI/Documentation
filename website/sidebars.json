@@ -183,7 +183,8 @@
               "Examples/EMGProjects/EMG_LED",
               "Examples/EMGProjects/EMG_Chrome_Dino_Game",
               "Examples/EMGProjects/EMG_Tetris",
-              "Examples/EMGProjects/EMGpiano"
+              "Examples/EMGProjects/EMGpiano",
+              "Examples/EMGProjects/EMG_Joystick"
             ]
           },
           {
