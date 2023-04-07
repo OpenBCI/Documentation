@@ -119,7 +119,8 @@
           "label": "Developed By OpenBCI",
           "items": [
             "Software/OpenBCISoftware/GUIDocs",
-            "Software/OpenBCISoftware/GUIWidgets"
+            "Software/OpenBCISoftware/GUIWidgets",
+            "Software/OpenBCISoftware/NeuroFly_Toolkit"
           ]
           }, {
             "type": "category",
@@ -183,8 +184,7 @@
               "Examples/EMGProjects/EMG_LED",
               "Examples/EMGProjects/EMG_Chrome_Dino_Game",
               "Examples/EMGProjects/EMG_Tetris",
-              "Examples/EMGProjects/EMGpiano",
-              "Examples/EMGProjects/EMG_Joystick"
+              "Examples/EMGProjects/EMGpiano"
             ]
           },
           {

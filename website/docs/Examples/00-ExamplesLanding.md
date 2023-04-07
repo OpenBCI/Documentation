@@ -56,7 +56,3 @@ Note, the example projects below are written for the [Cyton Board](https://shop.
 ### EMG-controlled Piano
 
 [Tutorial](Examples/EMGProjects/EMG_Controlled_Piano.md) to play the piano using EMG
-
-### EMG-controlled Joystick
-
-[Tutorial](Examples/EMGProjects/EMG_Joystick.md) to play the piano using EMG

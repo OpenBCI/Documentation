@@ -1,13 +1,13 @@
 ---
-id: EMG_Joystick
-title: EMG Joystick
+id: NeuroFly_Toolkit
+title: NeuroFly Toolkit
 ---
 
 This tutorial will show you how to control a joystick using EMG data with the OpenBCI GUI. You can then use this customizable, muscle-activated joystick for any purpose of your choosing! OpenBCI used this to control a drone in the 2023 OpenBCI TED Talk.
 
-Check out an example video of this joystick being put into action!
-
-<!-- [![EMG Joystick Tutorial](../../assets/TutorialImages/)]() -->
+:::note
+More information coming soon!
+:::
 
 ## Materials Required
 
