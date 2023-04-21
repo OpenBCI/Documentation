@@ -19,6 +19,9 @@ The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture progr
 -   Voltage Regulation (3.3V, +2.5V, -2.5V)
 -   Board Dimensions 2.41" x 2.41" (octogon has 1" edges)
 -   Mount holes are 1/16" ID, 0.8" x 2.166" on center
+-   Input voltage range: +2.5 to -2.5V
+-   Signal-Noise-Ratio: 121 dB
+-   Voltage resolution = 0.298 microvolt/bit (5V/16777216). Resolution = Voltage level / 2^n where n is the bit-level of ADC
 
 ### Breakout pins:
 

@@ -8,6 +8,7 @@ This section details the various OpenBCI-specific software and SDKs. Included he
 
 -   [The OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 -   [GUI Widget Guide](Software/OpenBCISoftware/02_GUI_Widget_Guide.md)
+-   [NeuroFly Toolkit](Software/OpenBCISoftware/NeuroFly_Toolkit.md)
 
 ## Compatible Third-Party Software
 

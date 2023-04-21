@@ -118,7 +118,8 @@
           "label": "Developed By OpenBCI",
           "items": [
             "Software/OpenBCISoftware/GUIDocs",
-            "Software/OpenBCISoftware/GUIWidgets"
+            "Software/OpenBCISoftware/GUIWidgets",
+            "Software/OpenBCISoftware/NeuroFly_Toolkit"
           ]
           }, {
             "type": "category",
