@@ -26,7 +26,7 @@ Upon registering, you should have received an email with your Login/Password. If
 
 **Note**: your profile will not appear on the People Page until you have a first name, last name, and photo. All other info is optional (but encouraged)!
 
-If your profile is still not showing up on the People Page, reach out to [contact@openbci.com.](mailto:contact@openbci.com.) We’ll make sure your profile is active and set up as a contributor.
+Once you have made an account, reach out to [contact@openbci.com.](mailto:contact@openbci.com.) Your account is inactive until an admin "checks off" your account. We’ll make sure your profile is active and set up as a contributor. 
 
 ### Making Posts
 
