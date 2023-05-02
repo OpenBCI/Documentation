@@ -15,7 +15,6 @@
   --ifm-menu-color-active: #1f456e;
   /*--ifm-link-color: #e37625;*/
   /*--ifm-menu-color-active: #e37625;*/
-  
 }
 
 html[data-theme='dark'] {
@@ -45,5 +44,6 @@ html[data-theme='dark'] {
     hue-rotate(223deg) brightness(104%) contrast(98%);
     --ifm-menu-color: rgb(238, 240, 242);
     --ifm-menu-color-active: #00adeb;
+    --ifm-menu-color-background-active: #ffffff0d;
   }
 }
