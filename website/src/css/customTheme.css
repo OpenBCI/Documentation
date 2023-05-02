@@ -39,7 +39,7 @@ html[data-theme='dark'] {
 }
 
 @media (max-width: 996px) {
-  :root { 
+  a[class^="menu__link"] { 
     --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%)
     hue-rotate(223deg) brightness(104%) contrast(98%);
     --ifm-menu-color: rgb(238, 240, 242);
