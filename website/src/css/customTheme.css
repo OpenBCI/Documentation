@@ -11,8 +11,11 @@
   --ifm-navbar-background-color: #011326;
   --ifm-navbar-link-color: #fff;
   --ifm-navbar-link-hover-color: #f98025;
+  /*--ifm-menu-color: white;*/
+  --ifm-menu-color-active: #1f456e;
   /*--ifm-link-color: #e37625;*/
   /*--ifm-menu-color-active: #e37625;*/
+  
 }
 
 html[data-theme='dark'] {
@@ -26,4 +29,21 @@ html[data-theme='dark'] {
   --ifm-color-primary-dark: #00adeb;
   --ifm-alert-color: #000;
   --ra-admonition-color: #000;
+}
+
+.navbar__toggle {
+  color: white !important;
+}
+
+.navbar-sidebar__back {
+  color: white !important;
+}
+
+@media (max-width: 996px) {
+  :root { 
+    --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%)
+    hue-rotate(223deg) brightness(104%) contrast(98%);
+    --ifm-menu-color: rgb(238, 240, 242);
+    --ifm-menu-color-active: #00adeb;
+  }
 }
