@@ -36,14 +36,25 @@ html[data-theme='dark'] {
 
 .navbar-sidebar__back {
   color: white !important;
+  --ifm-menu-color-background-active: #ffffff0d;
 }
 
 @media (max-width: 996px) {
-  a[class^="menu__link"] { 
+  a[class^="menu__"] { 
     --ifm-menu-link-sublist-icon-filter: invert(100%) sepia(94%) saturate(17%)
     hue-rotate(223deg) brightness(104%) contrast(98%);
     --ifm-menu-color: rgb(238, 240, 242);
     --ifm-menu-color-active: #00adeb;
     --ifm-menu-color-background-active: #ffffff0d;
+  }
+
+  a[class^="menu__"]:hover { 
+    --ifm-menu-color: #00adeb;
+    --ifm-menu-color-active: #00adeb;
+    --ifm-menu-color-background-hover: #ffffff0d;
+  }
+
+  div[class^="menu__list-item-collapsible"]:hover { 
+    --ifm-menu-color-background-hover: #ffffff0d;
   }
 }
