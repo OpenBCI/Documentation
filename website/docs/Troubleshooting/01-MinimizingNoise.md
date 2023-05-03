@@ -9,7 +9,7 @@ Are you getting "noisy" data from your device? There are several possible reason
 
 Get rid of 60 Hz (or 50 Hz if you're in Europe or any country that operates on a 50 Hz power grid) using the OpenBCI GUI built-in notch filter. This does a good job at eliminating 60 Hz noise. You can adjust the notch filter by clicking the **Filters** button next to **Start/Stop Data Stream** then choose an option from the dropdown list. Additionally, if your board is on a table with any power cords or devices that are plugged into a wall outlet, move it to a location away from any electronic devices plugged into the wall. This will drastically reduce the alternating current (AC) influence on your signal.
 
-![Notch Filter](../assets/GettingStartedImages/filters_UI.png)
+![Notch Filter](../assets/GettingStartedImages/filters_UI.PNG)
 
 #### Stabilize your electrodes
 
