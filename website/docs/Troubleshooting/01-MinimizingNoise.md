@@ -7,13 +7,13 @@ Are you getting "noisy" data from your device? There are several possible reason
 
 #### Get rid of AC noise
 
-Get rid of 60 Hz (or 50 Hz if you're in Europe or any country that operates on a 50 Hz power grid). The OpenBCI has a built-in notch filter that does a decent job at eliminating 60 Hz noise. You can adjust the notch filter to 50 Hz by clicking the "Notch 60 Hz" button. Additionally, if your Cyton board is on a table with any power cords or devices that are plugged into a wall outlet, move it to a location away from any electronic devices plugged into the wall. This will drastically reduce the alternating current (AC) influence on your signal.
+Get rid of 60 Hz (or 50 Hz if you're in Europe or any country that operates on a 50 Hz power grid) using the OpenBCI GUI built-in notch filter. This does a good job at eliminating 60 Hz noise. You can adjust the notch filter by clicking the **Filters** button next to **Start/Stop Data Stream** then choose an option from the dropdown list. Additionally, if your board is on a table with any power cords or devices that are plugged into a wall outlet, move it to a location away from any electronic devices plugged into the wall. This will drastically reduce the alternating current (AC) influence on your signal.
 
-![Notch Filter](../assets/GettingStartedImages/notch_bar.png)
+![Notch Filter](../assets/GettingStartedImages/filters_UI.png)
 
 #### Stabilize your electrodes
 
-Make sure your electrode cables are steady. If you shake the electrodes that are dangling from your head/body, you'll notice that it severely affects the signals. This movement noise is something that could be greatly improved with "active" electrodes. When using the "passive" electrodes that come with the OpenBCI electrode starter kit, you have to be very careful to remain steady while using the system to produce the best signal. As a quick fix, binding all of the electrode cables together with a piece of electric tape secures them and minimizes cable movement. If you do this, don't worry about including the blue and green electrodes in the bundle, since movement noise doesn't affect the EMG/EKG signal as significantly.
+Make sure your electrode cables are steady. If you shake the electrodes that are dangling from your head/body, you'll notice that it severely affects the signals. This movement noise is something that could be greatly improved with active electrodes. When using the passive electrodes that come with the OpenBCI electrode starter kit, you have to be very careful to remain steady while using the system to produce the best signal. As a quick fix, binding all of the electrode cables together with a piece of electric tape secures them and minimizes cable movement. It is not as important to include any EMG/ECG channels in the bundle, since movement noise doesn't affect their signal as significantly.
 
 ![Stabilize Your Cables w/ Tape](../assets/GettingStartedImages/secureCables.JPG)
 
@@ -25,28 +25,34 @@ Ensure that your electrodes are connected securely (especially your reference)!
 
 Every so often, an error will occur with the wireless communication between your OpenBCI Dongle and board. If you've followed all of the steps above, and the data that you are seeing in the GUI interface is still illegible, try the following:
 
-1. Power down your Cyton board and unplug your USB Dongle.
-2. Then, plug back in your USB Dongle and power up your Cyton board in that order. 
-3. Last, try restarting the system by pressing the `START SYSTEM` button again.
+1. Power down your board and unplug your USB Dongle.
+2. Plug back in your USB Dongle and power up your board in that order. 
+3. Restart the GUI and start a new session.
 
 #### Check Cyton - GUI connection
-1. Open the GUI application and select Cyton
-2. Select the 'manual' option
-3. Unplug your dongle and select 'refresh' on the port selection
-4. Re-plug the dongle and select 'refresh' once again
+1. Open the GUI application and select **Cyton**
+2. Select the **Manual** option
+3. Unplug your dongle and select **Refresh** on the port selection
+4. Re-plug the dongle and select **Refresh** once again
 5. Select the serial port number (so that it's highlighted green)
-6. Hit 'AUTO-SCAN'
+6. Hit **AUTO-SCAN**
  
 #### General tips for reducing noise (Cyton and Ganglion boards):
 * Plugging the dongle into a hub rather than directly into the computer’s USB port
-* Toggling on the filters built into the GUI (above the Time Series widget)
+* Toggling on the filters built into the GUI
 * Using the feet that came with the board
 * Using a fully charged battery
+* Turning off bluetooth devices in the room
 * Sitting slightly away from the computer
 * Using the FTDI fix for [Windows](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Windows/) or [Mac](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Mac/)
 
 :::caution Additional Sources of Noise
-Metal desks or other large metal objects nearby; LED or CFL or fluorescent lighting, which contains switching power supplies; his LED helmet power supply; other power supplies on the walls, floors; AC power or extension cables on the floor, conduits inside walls or floors or ceilings; nearby wifi or cellular equipment some of these mounted on rooftops; laptop and desktop computers that have certain 'ground loop' or AC noise characteristics; setting the OpenBCI circuit board near any such noise sources.
+* AC power or extension cables on the floor
+* Conduits inside walls, floors or ceilings
+* Nearby wifi or cellular equipment
+* Laptop and desktop computers that have certain 'ground loop' or AC noise characteristics
+* Metal desks or other large metal objects nearby
+* LED, CFL or fluorescent lighting
 :::
 
 
