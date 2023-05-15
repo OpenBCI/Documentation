@@ -319,8 +319,107 @@ If you are encountering issues launching the GUI at this point, please head to t
 
 ![GUI Screenshot convert large SD recording](../../assets/SoftwareImages/OpenBCISoftware/gui_convert_large_SD_recordings_scrnshot.png)
 
-## Cyton Other Channels
+## Exported Data
 
+Data from the board will be recorded into a **Brainflow-RAW_date_time** CSV file and **OpenBCI-RAW_date_time** CSV file in txt format. All data saved to these files are unfiltered. These recordings are stored in ```User/Documents/OpenBCI_GUI/Recordings```. Each GUI session will have its own directory titled **OpenBCISession_date_time**. Every time you start and stop a session creates a new Brainflow-RAW and OpenBCI-RAW file within that session folder. The picture below shows three recordings within one GUI session.
+
+![GUI data files](../../assets/SoftwareImages/OpenBCISoftware/GUI_data_files.png)
+
+### Cyton
+
+Here is a table of the column headers and descriptions for the Cyton.
+
+| Column | Name                    | Description                                              |
+| ------ | ----------------------- | -------------------------------------------------------- |
+| 1      | Sample Index            | The index of the sample per second (0-250)               |
+| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to pins N1P                |
+| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to pins N2P                |
+| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to pins N3P                |
+| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to pins N4P                |
+| 6      | EXG Channel 4           | EEG/EMG/ECG channel connected to pins N5P                |
+| 7      | EXG Channel 5           | EEG/EMG/ECG channel connected to pins N6P                |
+| 8      | EXG Channel 6           | EEG/EMG/ECG channel connected to pins N7P                |
+| 9      | EXG Channel 7           | EEG/EMG/ECG channel connected to pins N8P                |
+| 10     | Accel Channel 0         | Accelerometer channel 0 (X)                              |
+| 11     | Accel Channel 1         | Accelerometer channel 1 (Y)                              |
+| 12     | Accel Channel 2         | Accelerometer channel 2 (Z)                              |
+| 13     | Other                   | See below                                                |
+| 14     | Other                   | See below                                                |
+| 15     | Other                   | See below                                                |
+| 16     | Other                   | See below                                                |
+| 17     | Other                   | See below                                                |
+| 18     | Other                   | See below                                                |
+| 19     | Other                   | See below                                                |
+| 20     | Analog Channel 0        | Analog channel 0                                         |
+| 21     | Analog Channel 1        | Analog channel 1                                         |
+| 22     | Analog Channel 2        | Analog channel 2                                         |
+| 23     | Timestamp               | Unix timestamp                                           |
+| 24     | Marker Channel          | Channel for adding manual markers to data                |
+| 25     | Timestamp (Formatted)   | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+
+Here is a table of the column headers and descriptions for the **Cyton + Daisy**.
+
+| Column | Name                    | Description                                              |
+| ------ | ----------------------- | -------------------------------------------------------- |
+| 1      | Sample Index            | The index of the sample per second (0-250)               |
+| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to pins N1P on Cyton       |
+| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to pins N2P on Cyton       |
+| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to pins N3P on Cyton       |
+| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to pins N4P on Cyton       |
+| 6      | EXG Channel 4           | EEG/EMG/ECG channel connected to pins N5P on Cyton       |
+| 7      | EXG Channel 5           | EEG/EMG/ECG channel connected to pins N6P on Cyton       |
+| 8      | EXG Channel 6           | EEG/EMG/ECG channel connected to pins N7P on Cyton       |
+| 9      | EXG Channel 7           | EEG/EMG/ECG channel connected to pins N8P on Cyton       |
+| 2      | EXG Channel 8           | EEG/EMG/ECG channel connected to pins N1P on Daisy       |
+| 3      | EXG Channel 9           | EEG/EMG/ECG channel connected to pins N2P on Daisy       |
+| 4      | EXG Channel 10          | EEG/EMG/ECG channel connected to pins N3P on Daisy       |
+| 5      | EXG Channel 11          | EEG/EMG/ECG channel connected to pins N4P on Daisy       |
+| 6      | EXG Channel 12          | EEG/EMG/ECG channel connected to pins N5P on Daisy       |
+| 7      | EXG Channel 13          | EEG/EMG/ECG channel connected to pins N6P on Daisy       |
+| 8      | EXG Channel 14          | EEG/EMG/ECG channel connected to pins N7P on Daisy       |
+| 9      | EXG Channel 15          | EEG/EMG/ECG channel connected to pins N8P on Daisy       |
+| 10     | Accel Channel 0         | Accelerometer channel 0 (X)                              |
+| 11     | Accel Channel 1         | Accelerometer channel 1 (Y)                              |
+| 12     | Accel Channel 2         | Accelerometer channel 2 (Z)                              |
+| 13     | Other                   | See below                                                |
+| 14     | Other                   | See below                                                |
+| 15     | Other                   | See below                                                |
+| 16     | Other                   | See below                                                |
+| 17     | Other                   | See below                                                |
+| 18     | Other                   | See below                                                |
+| 19     | Other                   | See below                                                |
+| 20     | Analog Channel 0        | Analog channel 0                                         |
+| 21     | Analog Channel 1        | Analog channel 1                                         |
+| 22     | Analog Channel 2        | Analog channel 2                                         |
+| 23     | Timestamp               | Unix timestamp                                           |
+| 24     | Marker Channel          | Channel for adding manual markers to data                |
+| 25     | Timestamp (Formatted)   | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+
+:::info Cyton Other Channels
 When recording using Cyton, the GUI will output a data file which contains 7 channels with the header "Other". These channels are user defined based on the [board mode](../../Cyton/04-OpenBCI_Cyton_SDK.md/#board-mode). Refer to the [aux data footer section](../../Cyton/03-Cyton_Data_Format.md/#firmware-version-200-fall-2016-to-now-1) of the Cyton data format documentation for further information.
 
-In digital read mode the 5th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
+In digital read mode, the 5th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
+:::
+
+### Ganglion
+
+Here is a table of the column headers and descriptions for the Ganglion.
+
+| Column | OpenBCI-RAW             | Description                                              |
+| ------ | ----------------------- | -------------------------------------------------------- |
+| 1      | Sample Index            | The index of the sample per second (0-250)               |
+| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to pins N1P                |
+| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to pins N2P                |
+| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to pins N3P                |
+| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to pins N4P                |
+| 6      | Accel Channel 0         | Accelerometer channel 0 (X)                              |
+| 7      | Accel Channel 1         | Accelerometer channel 1 (Y)                              |
+| 8      | Accel Channel 2         | Accelerometer channel 2 (Z)                              |
+| 9      | Other                   | Not used                                                 |
+| 10     | Other                   | Not used                                                 |
+| 11     | Other                   | Not used                                                 |
+| 12     | Other                   | Not used                                                 |
+| 13     | Other                   | Not used                                                 |
+| 14     | Timestamp               | Unix timestamp                                           |
+| 15     | Marker Channel          | Channel for adding manual markers to data                |
+| 16     | Timestamp (Formatted)   | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
