@@ -332,14 +332,14 @@ Here is a table of the column headers and descriptions for the Cyton.
 | Column | Name                    | Description                                              |
 | ------ | ----------------------- | -------------------------------------------------------- |
 | 1      | Sample Index            | The index of the sample per second (0-250)               |
-| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to pins N1P                |
-| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to pins N2P                |
-| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to pins N3P                |
-| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to pins N4P                |
-| 6      | EXG Channel 4           | EEG/EMG/ECG channel connected to pins N5P                |
-| 7      | EXG Channel 5           | EEG/EMG/ECG channel connected to pins N6P                |
-| 8      | EXG Channel 6           | EEG/EMG/ECG channel connected to pins N7P                |
-| 9      | EXG Channel 7           | EEG/EMG/ECG channel connected to pins N8P                |
+| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to N1P pins                |
+| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to N2P pins                |
+| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to N3P pins                |
+| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to N4P pins                |
+| 6      | EXG Channel 4           | EEG/EMG/ECG channel connected to N5P pins                |
+| 7      | EXG Channel 5           | EEG/EMG/ECG channel connected to N6P pins                |
+| 8      | EXG Channel 6           | EEG/EMG/ECG channel connected to N7P pins                |
+| 9      | EXG Channel 7           | EEG/EMG/ECG channel connected to N8P pins                |
 | 10     | Accel Channel 0         | Accelerometer channel 0 (X)                              |
 | 11     | Accel Channel 1         | Accelerometer channel 1 (Y)                              |
 | 12     | Accel Channel 2         | Accelerometer channel 2 (Z)                              |
@@ -362,22 +362,22 @@ Here is a table of the column headers and descriptions for the **Cyton + Daisy**
 | Column | Name                    | Description                                              |
 | ------ | ----------------------- | -------------------------------------------------------- |
 | 1      | Sample Index            | The index of the sample per second (0-250)               |
-| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to pins N1P on Cyton       |
-| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to pins N2P on Cyton       |
-| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to pins N3P on Cyton       |
-| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to pins N4P on Cyton       |
-| 6      | EXG Channel 4           | EEG/EMG/ECG channel connected to pins N5P on Cyton       |
-| 7      | EXG Channel 5           | EEG/EMG/ECG channel connected to pins N6P on Cyton       |
-| 8      | EXG Channel 6           | EEG/EMG/ECG channel connected to pins N7P on Cyton       |
-| 9      | EXG Channel 7           | EEG/EMG/ECG channel connected to pins N8P on Cyton       |
-| 2      | EXG Channel 8           | EEG/EMG/ECG channel connected to pins N1P on Daisy       |
-| 3      | EXG Channel 9           | EEG/EMG/ECG channel connected to pins N2P on Daisy       |
-| 4      | EXG Channel 10          | EEG/EMG/ECG channel connected to pins N3P on Daisy       |
-| 5      | EXG Channel 11          | EEG/EMG/ECG channel connected to pins N4P on Daisy       |
-| 6      | EXG Channel 12          | EEG/EMG/ECG channel connected to pins N5P on Daisy       |
-| 7      | EXG Channel 13          | EEG/EMG/ECG channel connected to pins N6P on Daisy       |
-| 8      | EXG Channel 14          | EEG/EMG/ECG channel connected to pins N7P on Daisy       |
-| 9      | EXG Channel 15          | EEG/EMG/ECG channel connected to pins N8P on Daisy       |
+| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to N1P pins on Cyton       |
+| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to N2P pins on Cyton       |
+| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to N3P pins on Cyton       |
+| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to N4P pins on Cyton       |
+| 6      | EXG Channel 4           | EEG/EMG/ECG channel connected to N5P pins on Cyton       |
+| 7      | EXG Channel 5           | EEG/EMG/ECG channel connected to N6P pins on Cyton       |
+| 8      | EXG Channel 6           | EEG/EMG/ECG channel connected to N7P pins on Cyton       |
+| 9      | EXG Channel 7           | EEG/EMG/ECG channel connected to N8P pins on Cyton       |
+| 2      | EXG Channel 8           | EEG/EMG/ECG channel connected to N1P pins on Daisy       |
+| 3      | EXG Channel 9           | EEG/EMG/ECG channel connected to N2P pins on Daisy       |
+| 4      | EXG Channel 10          | EEG/EMG/ECG channel connected to N3P pins on Daisy       |
+| 5      | EXG Channel 11          | EEG/EMG/ECG channel connected to N4P pins on Daisy       |
+| 6      | EXG Channel 12          | EEG/EMG/ECG channel connected to N5P pins on Daisy       |
+| 7      | EXG Channel 13          | EEG/EMG/ECG channel connected to N6P pins on Daisy       |
+| 8      | EXG Channel 14          | EEG/EMG/ECG channel connected to N7P pins on Daisy       |
+| 9      | EXG Channel 15          | EEG/EMG/ECG channel connected to N8P pins on Daisy       |
 | 10     | Accel Channel 0         | Accelerometer channel 0 (X)                              |
 | 11     | Accel Channel 1         | Accelerometer channel 1 (Y)                              |
 | 12     | Accel Channel 2         | Accelerometer channel 2 (Z)                              |
@@ -408,10 +408,10 @@ Here is a table of the column headers and descriptions for the Ganglion.
 | Column | OpenBCI-RAW             | Description                                              |
 | ------ | ----------------------- | -------------------------------------------------------- |
 | 1      | Sample Index            | The index of the sample per second (0-250)               |
-| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to pins N1P                |
-| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to pins N2P                |
-| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to pins N3P                |
-| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to pins N4P                |
+| 2      | EXG Channel 0           | EEG/EMG/ECG channel connected to N1P pins                |
+| 3      | EXG Channel 1           | EEG/EMG/ECG channel connected to N2P pins                |
+| 4      | EXG Channel 2           | EEG/EMG/ECG channel connected to N3P pins                |
+| 5      | EXG Channel 3           | EEG/EMG/ECG channel connected to N4P pins                |
 | 6      | Accel Channel 0         | Accelerometer channel 0 (X)                              |
 | 7      | Accel Channel 1         | Accelerometer channel 1 (Y)                              |
 | 8      | Accel Channel 2         | Accelerometer channel 2 (Z)                              |

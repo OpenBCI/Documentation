@@ -38,13 +38,13 @@ Every so often, an error will occur with the wireless communication between your
 6. Hit **AUTO-SCAN**
  
 #### General tips for reducing noise (Cyton and Ganglion boards):
-* Plugging the dongle into a hub rather than directly into the computer’s USB port
-* Toggling on the filters built into the GUI
-* Using the feet that came with the board
-* Using a fully charged battery
-* Turning off bluetooth devices in the room
-* Sitting slightly away from the computer
-* Using the FTDI fix for [Windows](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Windows/) or [Mac](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Mac/)
+* Plug the dongle into a USB hub or USB extension cord. This limits radio interference caused by computers.
+* Toggle on the filters in the OpenBCI GUI
+* Use the feet that came with the board
+* Use a fully charged battery
+* Turn off bluetooth devices in the room
+* Sit slightly away from the computer
+* Use the FTDI fix for [Windows](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Windows/) or [Mac](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Mac/)
 
 :::caution Additional Sources of Noise
 * AC power or extension cables on the floor
