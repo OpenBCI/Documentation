@@ -2,39 +2,22 @@
 id: GanglionSDK
 title: Ganglion SDK
 ---
-The OpenBCI boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Ganglion. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, please send reset commands to your board to see what firmware you have if you're unsure!
+
+The OpenBCI boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Ganglion. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware. Please send reset commands to your board to see what firmware you have if you're unsure.
 
 ## Ganglion Command Protocol Overview
 
-Ganglion boards have a powerful microcontroller on board that comes pre-programmed with the firmware. The Simblee radio link uses the Nordic Gazelle stack and library along with a BLE stack. The microcontroller has been programmed with firmware that interfaces between the MCP (Analog Front End), LIS3DH (Accelerometer), and micro SD (if installed). The user, or application, controls the board by sending commands over wireless serial connection.
+Ganglion boards have a powerful micro-controller on board that comes pre-programmed with the firmware. The Simblee radio link uses the Nordic Gazelle stack and library along with a BLE stack. The micro-controller has been programmed with firmware that interfaces between the MCP (Analog Front End) and LIS3DH (Accelerometer). The user, or application, controls the board by sending commands over a wireless serial connection.
 
 On startup, the OpenBCI Ganglion board sends the following text over the radio:
 
 ```
 
 OpenBCI Ganglion v2.0.0
+LIS2DH ID: 0x33
+MCP3912 CONFIG_1: 0xXX
 
 ```
-
-  LIS2DH ID: 0x33
-  MCP3912 CONFIG_1: 0xXX
-  use !,@,#,$ to turn ON channels
-
-  send 'b' to start data stream
-
-  send 's' to stop data stream
-
-  use 1,2,3,4 to turn OFF channels
-
-  send '?' to print all registers
-
-  send 'v' to initialize board
-
-  send '[' ']' to enable/disable synthetic square wave
-
-  send 'z' 'Z' to start/stop impedance test
-
-  send 'n','N' to enable/disable accelerometer"
 
 ## Command Set
 
@@ -74,37 +57,19 @@ Start accelerometer which results in 18-bit delta compression of channel data.
 **N**  
 Stop accelerometer which results in 19-bit delta compression of channel data.
 
-### SD card Commands
-
-**A S F G H J K L**  
-Send to initiate SD card data logging for specified time  
-
--   A    =      5MIN  
--   S    =      15MIN  
--   F    =      30MIN  
--   G    =      1HR  
--   H    =      2HR  
--   J    =      4HR  
--   K    =      12HR  
--   L    =      24HR  
--   a	   =      about 14 seconds for testing
-
-**j**  
-Stop logging data and close SD file  
-
 ### Stream Data Commands
 
 **b**  
 Start streaming data
 
 **s**  
-Stop Streaming data  
+Stop Streaming data
 
 ### Miscellaneous
 
 **?**  
 Query register settings  
-Read and report all register settings for the MCP and the LIS3DH. Expect to get a verbose serial output from the OpenBCI Board.  
+Read and report all register settings for the MCP and the LIS3DH. Expect to get a verbose serial output from the OpenBCI Board.
 
 **v**
 Soft reset for the Board peripherals.
@@ -122,15 +87,15 @@ This works similar to the Channel Settings commands, however, there is no latchi
 
 **COMMAND**
 
--   0 = 25600 Hz
--   1 = 12800 Hz
--   2 = 6400 Hz
--   3 = 3200 Hz
--   4 = 1600 Hz
--   5 = 800 Hz
--   6 = 400 Hz
--   7 = 200 Hz
--   ~ = Get current sample rate
+- 0 = 25600 Hz
+- 1 = 12800 Hz
+- 2 = 6400 Hz
+- 3 = 3200 Hz
+- 4 = 1600 Hz
+- 5 = 800 Hz
+- 6 = 400 Hz
+- 7 = 200 Hz
+- ~ = Get current sample rate
 
 **EXAMPLE**
 
