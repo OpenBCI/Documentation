@@ -28,6 +28,10 @@ If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Da
 
 _Note: The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported._ We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
 
+:::important MacOS BLE Workaround
+If you are running MacOS 11+ and having issues streaming your Ganglion, see the [MacOS BLE workaround](../../../Troubleshooting/MacOS-Ganglion-BLE-Workaround).
+:::
+
 ### WiFi Shield
 
 There are no prerequisites for running the WiFi Shield with Cyton or Ganglion on macOS/Windows/Linux, move on to the installation section below.
