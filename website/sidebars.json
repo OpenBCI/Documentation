@@ -159,7 +159,7 @@
             "Troubleshooting/FTDI_Fix_Linux",
             "Troubleshooting/FTDI_Fix_Mac",
             "Troubleshooting/FTDI_Fix_Windows",
-            "Troubleshooting/MacOS-Ganglion-BLE-Workaround"
+            "Troubleshooting/MacOSGanglionBLEWorkaround"
         ],
         "Example Projects": [
           "Examples/ExamplesLanding",

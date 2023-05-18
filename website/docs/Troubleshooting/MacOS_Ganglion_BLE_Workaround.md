@@ -1,5 +1,5 @@
 ---
-id: MacOS-Ganglion-BLE-Workaround
+id: MacOSGanglionBLEWorkaround
 title: MacOS Ganglion BLE Workaround
 ---
 
