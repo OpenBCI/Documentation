@@ -229,6 +229,27 @@ This method can be more reliable and quicker to implement than sending Time Seri
 
 ![BrainFlow Streamer over Network Option](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-BrainFlowStreamerNetworkSetting_Screenshot.png)
 
+#### GUI To GUI Data Streaming
+
+The OpenBCI GUI can stream data to another OpenBCI GUI using the Brainflow streamer. Since this is a one-to-many [multicast](https://en.wikipedia.org/wiki/Multicast), it is possible to receive the stream from multiple devices simultaneously. To start the networked GUI stream on the host machine:
+
+1. Start the OpenBCI GUI and select your board type.
+2. Toggle on the **network** option under the Brainflow Streamer settings.
+
+![BrainFlow streamer](../../assets/SoftwareImages/OpenBCISoftware/Brainflow_streamer.png)
+
+3. Enter the IP address and port for your stream. You need to be able to reach this IP address. The easiest way to do this is using a LAN or VLAN network. You can use a VPN to communicate with devices outside your local network.
+4. Start session.
+ 
+To receive this stream on a different machine:
+
+1. Open the GUI and select **Streaming (from external)**. 
+
+![Streaming from external](../../assets/SoftwareImages/OpenBCISoftware/streaming_from_external.png)
+
+2. Enter the IP address, port, and board type of the data stream.
+3. Start session.
+
 ### GUI Keyboard Shortcuts
 
 **Use the spacebar to start or stop the data stream!**
@@ -427,3 +448,4 @@ Here is a table of the column headers and descriptions for the Ganglion.
 | 14     | Timestamp             | Unix timestamp                                           |
 | 15     | Marker Channel        | Channel for adding manual markers to data                |
 | 16     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+
