@@ -31,6 +31,16 @@ To change the gain of a channel, you can click a dropdown and then scroll to vie
 
 Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings. Also, users will need to stop the data stream in order to access the Hardware Settings UI inside the Time Series Widget.
 
+### Filters
+
+![image](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0-FiltersUI.png)
+
+The GUI contains several built-in filters that can be applied to the data in real-time. These can be accessed by clicking on the `Filters` button. This will open a menu that allows you to toggle the filters on/off, choose the frequency range, type, and order of the filters. On the top right you will find the notch filter, which can be used to [reduce AC noise](Troubleshooting/01-MinimizingNoise.md#get-rid-of-ac-noise) by filtering out 50Hz or 60Hz noise. To the left of the notch filter, there is a dropdown menu to choose between applying a bandpass or bandstop filter to your data. The bandpass filter allows a specific range of frequencies to pass through while attenuating frequencies outside of that range. On the other hand, the bandstop attenuates a specific range of frequencies while allowing frequencies outside of that range to pass through.
+
+The filter parameters specify the start and stop frequencies, the filter type (Butterworth, Chebyshev, Bessel), and order of the filter. You can also toggle the filter on/off by clicking on the circle under the 'Channel' header (you will see the circle turn black if turned off). If you want to apply different filter settings to a specific channel, you can click on the 'Show Channels' dropdown to edit the parameters for each individual channel. The picture above shows the expanded filter menu.
+
+Click the save button to save your current filter settings. If you want to load a previous filter configuration, click the load button and choose the settings file you want to load. The reset button will return all filter settings to their default values.
+
 ### Other Settings
 
 **Channel Buttons**: These buttons represent each connected electrode channel. You can toggle them on/off to control whether or not you want to collect data from that electrode.
