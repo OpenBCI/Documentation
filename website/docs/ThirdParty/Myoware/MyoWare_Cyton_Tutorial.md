@@ -2,6 +2,13 @@
 id: MyoWareCyton
 title: MyoWare OpenBCI Integration (Cyton Board)
 ---
+
+:::caution
+
+The Myoware 2.0 board cannot be used with the Ganglion board due to the unavailibility of Analog pins in the Ganglion board. If you have purchased a Myoware 2.0 board with the intention of using it with the Ganglion board, please contact Customer support at contact@openbci.com
+
+:::
+
 ### Overview
 
 This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Cyton board, and the OpenBCI GUI. 
@@ -32,10 +39,6 @@ Solder the 3-pin header to the VIN, GND and ENV pads and solder the 2-pin header
 
 The male-female jumper wires can then be used to interface with the Cyton from the Myoware board. The female part of the jumper wire is plugged into the Myoware whereas the male part is plugged into the Cyton.
 
-The wires attached to the "+" and "-" connects will be used to supply power to the board. They'll be attached to high voltage and ground outputs on the OpenBCI Cyton board.
-
-The wires attached to the R, E, and M connects will transmit electrical signals from MyoWare's three electrodes to the OpenBCI Cyton board. R is the reference electrode, the one attached to the black wire. M is the middle electrode, and E is the end electrode. The E and M electrodes will measure activity across a muscle.
-
 ### 2. Preparing OpenBCI Cyton Board
 
 Your Cyton board should look like this:
@@ -50,48 +53,32 @@ Connect the 5 wires from the MyoWare board in step 1 to the OpenBCI board, as sh
 
 ![Board with Headers](../../assets/ThirdPartyImages/cyton_myoware_connects.jpg)
 
-The "+" and "-" from the MyoWare board should go to DVDD and GND connects on the left side of the Cyton board. R, E, and M will connect to the pins at the top.
+The wires attached to the "VIN" and "GND" pins will be used to supply power to the board. They'll be attached to the DVDD and GND headers on the OpenBCI Cyton board respectively.
+
+The ENV, RECT and RAW headers are the output pins of the Myoware Sensor. The ENV pin provides Envelope output, RECT provides Rectified output and RAW provides Raw EMG data from the Myoware Sensor. 
+
+The ENV, RECT and RAW pins should be connected to the Analog input pins of the Cyton, namely D12 and D13. __D11 cannot be used as an Analog pin. It can only receive Digital Input__.
 
 The wires should be connected like this:
 
 | MyoWare Board | OpenBCI Board  |
 | ------------- | -------------- |
-| +             | DVDD           |
-| -             | GND            |
-| R             | BIAS (top pin) |
-| E             | N1P Top        |
-| M             | N1P Bottom     |
+| VIN           | DVDD           |
+| GND           | GND            |
+| RAW/RECT/ENV  | D12/D13        |
 
-R, "+", and "-" must always go to the pins shown above. E and M can also be connected to N2P top and N2P bottom, or N3P top and N3P bottom, or any of the other two "NXP" pins.
-
-When you have everything wired up, set the power switch on the MyoWare board to "on". Turn on the OpenBCI board, connect the USB dongle to your computer, and start the OpenBCI GUI software. If you're new to using an OpenBCI board with your computer, take a look at the [Cyton Getting Started Guide](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md).
+When you have everything wired up, turn on the Cyton board, connect the USB dongle to your computer, and start the OpenBCI GUI software. If you're new to using an OpenBCI board with your computer, take a look at the [Cyton Getting Started Guide](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md).
 
 ### 4. Streaming EMG Data with the OpenBCI GUI
 
-Attach three Skintact electrodes to the three electrodes on the MyoWare board, and then stick the board on a muscle you'd like to monitor. The adafruit MyoWare tutorial has good guidelines for MyoWare board placement: (https:).
+Attach three sticky electrodes to the three electrodes on the MyoWare board, and then stick the board on a muscle you'd like to monitor. The [Sparkfun Hookup Guide for Myoware](https://learn.sparkfun.com/tutorials/getting-started-with-the-myoware-20-muscle-sensor-ecosystem/all) has good guidelines for Myoware board placement.
 
-You'll be able to see signals from the MyoWare electrodes in the OpenBCI GUI. If you connected E and M to the N1P pins on the OpenBCI board, then the MyoWare data will appear in channel 1.
+You'll be able to see signals from the Myoware board in the OpenBCI GUI using the Analog Read widget. The Analog Read widget is used to read signals from the Analog pins of the Cyton. For this tutorial, we have connected the ENV, RECT and RAW pins to D12. 
 
-Here's what the GUI, and channel 1, will look like with the muscle at rest:
+Here's what the GUI, and pin D12, will look like with the muscle at rest:
 
 ![Resting](../../assets/ThirdPartyImages/OpenBCIGUI_at_rest.png)
 
-And here's what channel 1 will look like after flexing the muscle:
+And here's what D12 will look like after flexing the muscle:
 
 ![Firing](../../assets/ThirdPartyImages/OpenBCIGUI_after_flex.png)
-
-### 5. Using OpenBCI's EMG GUI Widget
-
-The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on the drop down menu under "FFT Plot", and select "EMG" instead:
-
-![](../../assets/ThirdPartyImages/emg_drop_down_menu.png)
-![](../../assets/ThirdPartyImages/EMG_gui_at_rest.png)
-
-Each circle and box represents a channel. The circle and box fill up as the intensity of the signal on that channel increases.
-
-Here's what happens to the GUI when a muscle is flexed a little (top) or very strongly (bottom):
-
-![](../../assets/ThirdPartyImages/emg_gui_flex_small.png)
-![](../../assets/ThirdPartyImages/emg_gui_flex_big.png)
-
-You can use these changes in signal intensity to trigger analog or digital events from within the GUI as you like. Check out the `W_EMG.pde` file for more information on the EMG widget.
