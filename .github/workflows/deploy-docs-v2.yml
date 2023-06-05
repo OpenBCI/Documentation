@@ -2,7 +2,7 @@ name: DeployDocsV2
 
 on:
   pull_request:
-    branches: [docusaurus-v2]
+    branches: [master]
   push:
     branches: [master]
 

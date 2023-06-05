@@ -1,6 +1,6 @@
 ---
 id: CytonSDCard
-title: Using SD Card with OpenBCI
+title: Using SD Card with Cyton and CytonDaisy Board
 ---
 ## Overview
 

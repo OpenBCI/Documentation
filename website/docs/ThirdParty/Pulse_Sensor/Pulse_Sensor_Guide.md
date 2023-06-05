@@ -73,8 +73,8 @@ Please scroll through the [general guide](https://www.generationrobots.com/media
 -->
 ## Troubleshooting
 
-Running into trouble? Consult these pulse sensor-ganglion Forum posts [here](https://openbci.com/forum/index.php?p=/discussion/1690/ganglion-use-with-pulse-sensor-which-analog-pin) and [here](http://openbci.com/forum/index.php?p=/discussion/919/ganglion-and-pulse-sensors).
+Running into trouble? Consult the OpenBCI Tech support [Forum](https://openbci.com/forum).
 
-For cyton, [here](https://openbci.com/forum/index.php?p=/discussion/1527/pulse-sensor-with-cyton-daisy).
+For cyton-pulse sensor posts: [here](https://openbci.com/forum/index.php?p=/discussion/1527/pulse-sensor-with-cyton-daisy).
 
 You can find all relevant posts by using our site-specific [Google Search Function](https://www.google.com/advanced_search?q=site:openbci.com).
