@@ -78,8 +78,8 @@ You'll be able to see signals from the MyoWare board in the OpenBCI GUI using th
 
 Here's what the GUI, and pin D12, will look like with the muscle at rest:
 
-![Resting](../../assets/ThirdPartyImages/GUI_myoware_resting.png)
+![Resting](../../assets/ThirdPartyImages/GUI_myoware_resting.jpg)
 
 Here's what D12 will look like after flexing the muscle:
 
-![Firing](../../assets/ThirdPartyImages/GUI_myoware_flexion.png)
+![Firing](../../assets/ThirdPartyImages/GUI_myoware_flexion.jpg)
