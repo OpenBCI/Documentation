@@ -13,8 +13,6 @@ The Myoware 2.0 board cannot be used with the Ganglion board. If you have purcha
 
 This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Cyton board, and the OpenBCI GUI. 
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
 ![MyoWare Pin Side](../../assets/ThirdPartyImages/myoware_pin_side.jpg) | ![MyoWare Snap Side](../../assets/ThirdPartyImages/myoware_snap_side.jpg)
 
 
@@ -80,8 +78,8 @@ You'll be able to see signals from the MyoWare board in the OpenBCI GUI using th
 
 Here's what the GUI, and pin D12, will look like with the muscle at rest:
 
-![Resting](../../assets/ThirdPartyImages/OpenBCIGUI_at_rest.png)
+![Resting](../../assets/ThirdPartyImages/GUI_myoware_resting.png)
 
 Here's what D12 will look like after flexing the muscle:
 
-![Firing](../../assets/ThirdPartyImages/OpenBCIGUI_after_flex.png)
+![Firing](../../assets/ThirdPartyImages/GUI_myoware_flexion.png)
