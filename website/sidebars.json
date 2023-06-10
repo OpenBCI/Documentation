@@ -87,8 +87,7 @@
           "type": "category",
           "label": "Myoware",
           "items": [
-            "ThirdParty/Myoware/MyoCyton",
-            "ThirdParty/Myoware/MyoGanglion"
+            "ThirdParty/Myoware/MyoWareCyton"
           ]
           }, {
           "type": "category",
@@ -150,7 +149,9 @@
             "Deprecated/UltracortexMark3_NovaDep",
             "Deprecated/MarkIII",
             "Deprecated/Python",
-            "Deprecated/Hub"
+            "Deprecated/Hub",
+            "Deprecated/MyoCyton",
+            "Deprecated/MyoGanglion"
         ],
         "Troubleshooting": [
             "Troubleshooting/TroubleshootingLanding",
