@@ -6,16 +6,15 @@ title: NeuroFly Toolkit
 This tutorial will show you how to control a joystick using EMG data with the OpenBCI GUI. You can then use this customizable, muscle-activated joystick for any purpose of your choosing! OpenBCI used this to control a drone in the 2023 OpenBCI TED Talk.
 
 :::note
-__Register for updates [here](https://docs.google.com/forms/d/e/1FAIpQLSdGGPw1uSoAlo3YcjYWDd_b4Ye1TcYSy_RzmJ4ppr-RucE6KA/viewform).__
-More information coming soon!
+The Github repository can be found __[here](https://docs.google.com/forms/d/e/1FAIpQLSdGGPw1uSoAlo3YcjYWDd_b4Ye1TcYSy_RzmJ4ppr-RucE6KA/viewform)__.
 :::
 
 ## Materials Required
 
-1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
+1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/products/ganglion-board)
 2.  [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
-4.  Computer with downloaded [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md)
+4.  Computer with downloaded [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md). **Be sure to use [OpenBCI GUI v5.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases) or later**.
 
 ## Step 1: Hardware Assembly
 
@@ -46,14 +45,12 @@ This widget contains the tuneable parameters used for the threshold algorithm th
 
 | Parameter | Definition                                                                                             |
 | --------- | ------------------------------------------------------------------------------------------------------ |
-| Smooth    | Controls how many seconds of data to average over. This reduces the effect of outliers in the dataset. |
-| uV Limit  | Upper limit for the EMG signal.                                                                        |
-| Creep+    | Adjustment speed for upper threshold. How fast it should decrease if not triggered.                    |
-| Creep-    | Adjustment speed for lower threshold. How fast it should increase if not triggered.                    |
-| Min ΔuV   | Minimum difference allowed between upper and lower thresholds.                                         |
-| Low Limit | Minimum lower threshold allowed.                                                                       |
-
-A further description of these parameters can be found on the [GUI Widgets options](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md/#options) page.
+| Smooth    | This is the size of the window. If we set this value at the smallest setting of 0.01 seconds (ie., lowering the smooth value), our data will be very jittery but responsive. Alternatively, if we increase the smooth and set our window to 2.0 seconds, the output will be very smooth but much less responsive. This reduces the effect of outliers in the dataset. |
+| uV Limit  | This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues. |
+| Creep+    | This value indicates how quickly the upper μV threshold creeps downward. Notice that adjusting this value will affect how fast the the upper threshold decreases if not triggered. We generally recommend this to be slow. If this is too fast and we wait too long between muscle activations, the upper threshold will have crept too close to the lower threshold and the system will be hypersensitive. |
+| Creep-    | This value indicates how quickly the lower μV threshold creeps upward. Notice that adjusting this value will affect how fast the lower threshold increases if it is less than the current uV. A lower value enables easier activation, but the signal is more prone to noise. A large value is the opposite. It is harder to activate, but the signal will be less prone to noise. |
+| Min ΔuV   | This value sets the minimum voltage range between the upper threshold and the lower threshold. The upper threshold and lower threshold cannot get any closer than this. Increasing this value will result in you having to create a larger EMG signal to go from 0 to 100% activation. This is useful when your EMG signal is strong, but can make it difficult to reach 100% if your EMG signal is weak. Decreasing the value will make it easier to reach 100% activation with a weak signal, but may result in false activations when the signal is strong. |
+| Low Limit | This is the minimum value the lower threshold can be. In general, this value should be set just above the noise floor so that environmental noise does not trigger false activations. |
 
 ### EMG Joystick Widget
 
@@ -63,8 +60,19 @@ This widget has an indicator that moves in the direction of the activated EMG ch
 
 ## Step 3: Stream Data Using Networking Widget
 
-Follow the [Networking Tutorial](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md/#networking) to learn how to stream data using UDP from the GUI. For this project, you will need to stream the EMG channel data from the Networking Widget. Your Networking settings should look as follows:
+Follow the [Networking Tutorial](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md/#networking) to learn how to stream data using UDP from the GUI. For this project, you will need to stream the EMG channel data from the Networking Widget. **Make sure your EMG joystick widget is open when streaming**. Your Networking settings should look as follows:
 
 ![UDP Networking Widget Screenshot](../../assets/TutorialImages/UDP_drone.png)
+
+The EMG Joystick UDP stream will be sent to the IP address and port specified in the Networking Widget. The JSON packets will look like this:
+<!-- #### Packet Example -->
+```json
+{"type":"emgJoystick","data":[0.664,-0.749]}
+```
+Here is an example of how we use the deserialized JSON messages in our NeuroFly Unity application.
+```C#
+EMGJoystickX = packet.data[0];
+EMGJoystickY = packet.data[1];
+```
 
 Once your UDP stream is running, you will be able to use this EMG joystick for any use case! We are excited to see how our global Community uses this widget to create awesome projects and research!
