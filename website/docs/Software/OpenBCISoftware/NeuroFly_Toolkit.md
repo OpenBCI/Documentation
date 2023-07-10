@@ -12,6 +12,9 @@ This tutorial will show you how to control a joystick using EMG data with the Op
 3.  [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 4.  Computer with downloaded [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md). **Be sure to use [OpenBCI GUI v5.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/latest) or later**.
 
+## Video Explainer
+[NeuroFly by OpenBCI - How it works](https://www.youtube.com/watch?v=fYHwCLIIkJY)
+
 ## Step 1: Hardware Assembly
 
 Follow the [EMG Getting Started tutorial](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) to connect the electrodes to your body and the Cyton board. We will read data from the Cyton using the OpenBCI GUI. For this tutorial, you will need to connect up to four channels. The number of channels depends on how many degrees of freedom are needed. Four channels will enable control of both positive and negative X/Y directions of the joystick. Only one ground is needed.
