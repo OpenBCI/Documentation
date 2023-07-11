@@ -48,9 +48,17 @@ This widget contains the tuneable parameters used for the threshold algorithm th
 | Smooth    | This is the size of the window. If we set this value at the smallest setting of 0.01 seconds (ie., lowering the smooth value), our data will be very jittery but responsive. Alternatively, if we increase the smooth and set our window to 2.0 seconds, the output will be very smooth but much less responsive. This reduces the effect of outliers in the dataset. |
 | uV Limit  | This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues. |
 | Creep+    | This value indicates how quickly the upper μV threshold creeps downward. Notice that adjusting this value will affect how fast the the upper threshold decreases if not triggered. We generally recommend this to be slow. If this is too fast and we wait too long between muscle activations, the upper threshold will have crept too close to the lower threshold and the system will be hypersensitive. |
-| Creep-    | This value indicates how quickly the lower μV threshold creeps upward. Notice that adjusting this value will affect how fast the lower threshold increases if it is less than the current uV. A lower value enables easier activation, but the signal is more prone to noise. A large value is the opposite. It is harder to activate, but the signal will be less prone to noise. |
+| Creep-    | This value indicates how quickly the lower μV threshold creeps upward. Notice that adjusting this value will affect how fast the lower threshold increases if it is less than the current uV. A higher value enables easier activation, but the signal is more prone to noise. A lower value is the opposite. It is harder to activate, but the signal will be less prone to noise. |
 | Min ΔuV   | This value sets the minimum voltage range between the upper threshold and the lower threshold. The upper threshold and lower threshold cannot get any closer than this. Increasing this value will result in you having to create a larger EMG signal to go from 0 to 100% activation. This is useful when your EMG signal is strong, but can make it difficult to reach 100% if your EMG signal is weak. Decreasing the value will make it easier to reach 100% activation with a weak signal, but may result in false activations when the signal is strong. |
 | Low Limit | This is the minimum value the lower threshold can be. In general, this value should be set just above the noise floor so that environmental noise does not trigger false activations. |
+
+:::tip
+It is important to note **higher creep values adjust thresholds slower and lower creep values adjust faster**. For example, if we compare creep = 0.9 and creep = 0.999 with a previous threshold value = 100: 
+
+(0.9 x 100 = 90) < (0.999 x 100 = 99)
+
+You can see how a lower creep value will actually decrease the value faster.
+:::
 
 ### EMG Joystick Widget
 
