@@ -9,13 +9,21 @@ Product Page and review this guide in its entirety before starting.
 You can pair the the Gelfree Electrode Cap with the OpenBCI [CytonDaisy 16-channel Biosensing Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
 or a standard bioamplifier of your choice. **No gel is required to use this cap!**
 
+This [cap kit](https://shop.openbci.com/products/gelfree-bci-cap-kit) contains:
+cap with adjustable chinstrap
+labelled Ag-AgCl electrodes/cables
+measuring utensils/plastic beaker for saline conductive solution
+Hydro-link conductive inserts
+cotton swabs for scalp preparation
+towel for clean-up 
+
 :::info
 The [touchproof adapter cable](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) is necessary to pair this cap with the OpenBCI [CytonDaisy](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel).
 :::
 
 The 10-20 placement of these electrodes is as shown in the image below:
 
-![image](../../assets/HeadwareImages/Gelfree_Electrode_Cap_10-20_locations.png)
+![image](../../assets/HeadwareImages/gelfree_electrode_cap_diagram_1020.png)
 
 
 ## Electrode Cap With CytonDaisy Tutorial
@@ -29,6 +37,13 @@ the Gelfree Electrode Cap is a semi-dry, low-cost, research-grade tool for obtai
 2.  [Header Pin to Touchproof Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter) (HPTA) x2
 3.  [Gelfree Electrode Cap Kit](https://shop.openbci.com/collections/frontpage/products/gelfree-bci-cap-kit)
 4.  Salt
+
+### Before Starting
+
+#### Make a saline solution
+1. Fill the plastic beaker with 200 mL tap water.
+2. Stir 1 teaspoon of sodium chloride (~6 g) into it.
+3. Soak at least 16 Hydro-linkTM sponges in the saline solution while you proceed to the hardware set-up
 
 ### Connecting the Electrode Cap to the CytonDaisy
 
@@ -48,21 +63,15 @@ Connect top pins N1P through N8P on the Daisy module to another set of HPTA cabl
 
 ![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_3.jpg)
 
-The default head map used in the GUI for the CytonDaisy is shown below.
-
-![Cyton-Daisy head map](../../assets/HeadwareImages/1020.jpg)
-
 4. Connect a HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in! Connect the blue termination of this HPTA cable to gray cable, then connect the gray cable to the GND location on the cap, shown below.
 
 ![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_7and8and9.jpg)
 
 For WHY these connections are recommended, see the [EEG explanation](../../GettingStarted/Biosensing-Setups/01-EEG-Setup.md)page.
 
-5. After the cables are all connected as described above, make the saline solution by dissolving 1 tea spoon of sodium chloride (~6 g) into about 200 mL tap water with the cup. Soak the Hydro-linkTM sponges in the saline solution for 5-10 min.
+5. Place the cap on the subject's head. Make sure the Cz is correctly located halfway on the midline of the head. 
 
 6. Insert the Hydro-linkTM into the electrode holder of the electrode lead wire.
-
-7. Place the cap on the subject's head. Make sure the Cz is correctly located halfway on the midline of the head. 
 
 ### Troubleshooting
 
