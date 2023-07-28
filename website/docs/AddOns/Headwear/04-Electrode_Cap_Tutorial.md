@@ -50,10 +50,6 @@ Connect bottom pins N1P through N8P on the Daisy module to another set of HPTA c
 
 ![Cyton-Daisy wire setup](../../assets/HeadwareImages/gelfree_electrode_cap_3.jpg)
 
-The default head map used in the GUI for the CytonDaisy is shown below.
-
-![Cyton-Daisy head map](../../assets/HeadwareImages/1020.jpg)
-
 Connect a leftover HPTA cable to the bottom BIAS pin of the Cyton. The BIAS pin is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in! Connect the blue termination of this HPTA cable to the GND cap electrode, shown below.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/cap_GND_pin.png?raw=true" width="50%" />
