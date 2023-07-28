@@ -7,15 +7,15 @@ This is a guide to setting up and cleaning your OpenBCI Gelfree Electrode Cap. P
 Product Page and review this guide in its entirety before starting.
 
 You can pair the the Gelfree Electrode Cap with the OpenBCI [CytonDaisy 16-channel Biosensing Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel)
-or a standard bioamplifier of your choice. **No gel is required to use this cap!**
+or a standard bioamplifier of your choice. 
 
 This [cap kit](https://shop.openbci.com/products/gelfree-bci-cap-kit) contains:
-cap with adjustable chinstrap
-labelled Ag-AgCl electrodes/cables
-measuring utensils/plastic beaker for saline conductive solution
-Hydro-link conductive inserts
-cotton swabs for scalp preparation
-towel for clean-up 
+- cap with adjustable chinstrap
+- labelled Ag-AgCl electrodes/cables
+- measuring utensils/plastic beaker for saline conductive solution
+- Hydro-link conductive inserts
+- cotton swabs for scalp preparation
+- towel for clean-up 
 
 :::info
 The [touchproof adapter cable](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) is necessary to pair this cap with the OpenBCI [CytonDaisy](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel).
@@ -43,7 +43,7 @@ the Gelfree Electrode Cap is a semi-dry, low-cost, research-grade tool for obtai
 #### Make a saline solution
 1. Fill the plastic beaker with 200 mL tap water.
 2. Stir 1 teaspoon of sodium chloride (~6 g) into it.
-3. Soak at least 16 Hydro-linkTM sponges in the saline solution while you proceed to the hardware set-up
+3. Soak at least 16 Hydro-linkTM sponges in the saline solution while you proceed to the hardware set-up.
 
 ### Connecting the Electrode Cap to the CytonDaisy
 
