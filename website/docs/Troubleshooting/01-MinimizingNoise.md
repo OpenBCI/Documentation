@@ -35,7 +35,9 @@ Every so often, an error will occur with the wireless communication between your
 3. Unplug your dongle and select **Refresh** on the port selection
 4. Re-plug the dongle and select **Refresh** once again
 5. Select the serial port number (so that it's highlighted green)
-6. Hit **AUTO-SCAN**
+6. Selecting channel 20 within the "OVERRIDE DONGLE" dropdown
+7. Press "SYSTEM STATUS" and you should see "SUCCESS - HOST AND DEVICE ON CHANNEL 20"
+8. Hit "START SESSION"
  
 #### General tips for reducing noise (Cyton and Ganglion boards):
 * Plug the dongle into a USB hub or USB extension cord. This limits radio interference caused by computers.
