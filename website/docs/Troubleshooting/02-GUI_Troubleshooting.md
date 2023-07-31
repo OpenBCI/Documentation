@@ -20,7 +20,7 @@ title: GUI Troubleshooting
 1.  If you receive an error in red at the bottom of the GUI while trying to connect to an OpenBCI board, try turning the board Off and back On.
 2.  Also, unplug and plug the USB dongle for Cyton or BLED112 for Ganglion.
 3.  Try to start a session again.
-    -   Cyton: If you still can't connect, try pressing the "AUTOSCAN" button once or twice.
+    -   Cyton: If you still can't connect, try pressing the "AUTOSCAN" button again, or selecting channel 20 within the "OVERRIDE DONGLE" dropdown. 
     -   Cyton+WiFi: Go through the [WiFi Getting Started Guide](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md). If this doesn't help, check the Forums or [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) and make a new issue if one doesn't already exist. There are a number of issues that are currently being worked on.
     -   Ganglion: The Ganglion board usually has fewer issues. If you can't get the Ganglion to connect to the GUI after trying the previous steps, you can email us at [support@openbci.com](mailto:support@openbci.com) or check [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues).
 4.  If your Cyton firmware is older than v3.0.0, you will need to [update the firmware as outlined here](Cyton/05-Cyton_Board_Programming_Tutorial.md#overview). The latest Cyton firmware as of 2019 is v3.1.2.
