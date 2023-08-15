@@ -39,7 +39,9 @@ The cost of this transmission strategy is a reduction in sample resolution, but 
 
 We send ExG samples using either 19 bits or 18 bits. By default, 19-bit samples are sent. When the accelerometer or auxiliary features of the board are used, 18-bit samples are sent to provide room for the accelerometer or auxiliary data in the packet. Different packet ID ranges are used for 19-bit samples and 18-bit samples. This way, the controlling software that is running the decompression algorithm can decompress each packet without having to 'know' what state the system is in.
 
-**IMPORTANT!** Both the 18-bit and 19-bit transmission strategies store the signed bit in the `bit 0` or LSB position!
+:::info
+Both the 18-bit and 19-bit transmission strategies store the signed bit in the `bit 0` or LSB position!
+:::
 
 ### 19-bit Sample Transmission
 
@@ -78,9 +80,14 @@ void OpenBCI_Ganglion::sendCompressedPacket18() {
     }
 
 ```
- 
-**NOTE** that the Ganglion also has the capacity to send user defined `auxData` in the place of accelerometer data.  
-**NOTE** An `n` ASCII command is used to turn on the Ganglion accelerometer. Use an `N` to turn off the accelerometer.
+
+:::note
+The Ganglion also has the capacity to send user defined `auxData` in the place of accelerometer data.
+:::
+
+:::note
+An `n` ASCII command is used to turn on the Ganglion accelerometer. Use an `N` to turn off the accelerometer.
+:::
 
 ## Impedance Testing
 
