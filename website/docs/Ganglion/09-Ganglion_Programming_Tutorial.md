@@ -28,9 +28,9 @@ The Simblee (website discontinued) radio module that is at the heart of the Gang
 
 The following instructions will get your computer and the Arduino IDE set up to create the correct `.zip` archive and show how to use your phone or tablet to upload new code to the Ganglion.
 
-:::caution
+:::important
 Ganglions shipped prior to February 27, 2017 will NOT program Over The Air (OTA) for the first time! If you purchased your Ganglion prior to this date, please follow the instructions in the [Program Ganglion Using Hardware](#program-ganglion-using-hardware) section to program your Ganglion for the first time.
-:::caution
+:::
 
 ### What You Need
 
@@ -95,7 +95,7 @@ In the Device Information, you will find the following:
 
 You should see `openbci.com` as the Manufacturer, `Ganglion` as the Model Number, and `x.x.x` as the **Software Revision String**. 
 
-:::caution
+:::important
 If the Software Revision String is earlier than `1.1.1`, then you cannot perform OTA updates until you follow the instructions in the [Program Ganglion Using Hardware](#program-ganglion-using-hardware) section.
 :::
 
