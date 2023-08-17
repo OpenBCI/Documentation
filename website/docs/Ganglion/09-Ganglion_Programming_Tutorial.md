@@ -140,7 +140,19 @@ https://openbci-simblee.s3.amazonaws.com/package_simblee_index.json
 
 In the Arduino IDE go to `File -> Examples -> OpenBCI_Ganglion_Library -> DefaultGanglion`. This will open the Ganglion firmware source code sketch. If you can't see `OpenBCI_Ganglion_Library` then verify `Ganglion` is selected as board type.
 
-### Create OTA File
+### Upload to Ganglion OTA Deployment
+
+If you are using MacOS or Linux, you will need to make the `nrfutil` tool used by the Arduino buildchain executable.
+
+On MacOS, open a terminal and paste in:
+```
+chmod u+x /Users/$USER/Library/Arduino15/packages/OpenBCI/hardware/Simblee/1.1.4/nrfutil_macosx
+```
+
+On Linux, open a terminal and paste in:
+```
+chmod u+x /Users/$USER/Library/Arduino15/packages/OpenBCI/hardware/Simblee/1.1.4/nrfutil_linux
+```
 
 To create the OTA files, first ensure your sketch is saved. Arduino may notify you that your sketch is read-only in which case you will need to select a new location to save it. Next, select `Sketch -> Export compiled Binary`. The Arduino IDE will take a few moments, and the IDE will create the `.zip` file you need for OTA in the sketch folder right beside where you saved your sketch.
 
@@ -151,4 +163,4 @@ If you are programming your Ganglion OTA, this file can be uploaded to your Gang
 1. Ensure you have completed steps in the [Ganglion Hardware Programming](#ganglion-hardware-programming) section.
 2. Plug your dongle or FTDI Friend in and power up the Ganglion.
 3. Select the correct serial port from the `Tools > Port` menu for your OpenBCI Dongle or FTDI friend. If you don't know which port is correct, try unplugging the device and noting which port disappears from the menu. Plugging the device back in should cause the port to reappear.
-4. With your wires all connected correctly, you should be able to click the `Upload` button and successfully re-program the Ganglion. Now you're ready to [deploy OTA updates](#create-ota-file)!
+4. With your wires all connected correctly, you should be able to click the `Upload` button and successfully re-program the Ganglion. Now you're ready to [upload to Ganglion using OTA deployment](#upload-to-ganglion-ota-deployment)!
