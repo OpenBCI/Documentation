@@ -13,7 +13,7 @@ To program the Ganglion over the air, keep reading. To program using hardware, r
 - [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases)  
 - [Ganglion Firmware v3.0.0](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.0/DefaultGanglion3.0.1.zip)
 
-If you prefer to use the precompiled binaries, jump down to [setup your mobile device for OTA programming](#ganglion-programming-tutorial-setup-mobile-device-for-ota-programming) to continue.
+If you prefer to use the precompiled binaries, jump down to [setup your mobile device for OTA programming](#setup-mobile-device-for-ota-programming) to continue.
 
 ## Building From Source
 
