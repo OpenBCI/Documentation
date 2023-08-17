@@ -6,12 +6,12 @@ title: Ganglion Programming Tutorial
 **You do NOT need to program the Ganglion in order to use it. All OpenBCI boards ship ready to use out of the box. This guide is for users who want to upload their own firmware to the Ganglion or modify existing firmware.**
 :::
 
-This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device. If you want to compile the code in Arduino, continue to the [Building From Source](#ganglion-programming-tutorial-building-from-source) portion of the guide.
+This guide will walk you through how to update your Ganglion firmware. Downloading the latest binary and Over The Air programming (OTA) makes updating the Ganglion a breeze with a mobile device.
 
 ## Download The Latest Builds
 
 - [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases)  
-- [Ganglion Firmware v3.0.0](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.0/DefaultGanglion3.0.0.zip)
+- [Ganglion Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.0/DefaultGanglion3.0.0.zip)
 
 If you are planning to program your Ganglion using the precompiled binaries, jump down to [Setup Mobile Device For OTA Programming](#setup-mobile-device-for-ota-programming) section to continue.
 
@@ -44,7 +44,7 @@ Be sure to clone the repositories directly to your [Arduino libraries folder](ht
 
 ### Add the Ganglion via Board Manager
 
-1. Navigate to `File -> Preferences`
+1. Navigate to `Preferences`
 2. Paste the following URL into the `Additional Boards Manager URLs` field
 
 ```
@@ -61,7 +61,7 @@ In the Arduino IDE go to `File -> Examples -> OpenBCI_Ganglion_Library -> Defaul
 
 ### Create OTA File
 
-To create the OTA files, first ensure your sketch is saved by navigating to `File -> Save`. Arduino may notify you that your sketch is read-only in which case you will need to select a new location to save it. Next, select `Sketch -> Export compiled Binary`. The Arduino IDE will take a few moments, and the IDE will create the `.zip` file you need for OTA in the sketch folder right beside where you saved your sketch.
+To create the OTA files, first ensure your sketch is saved. Arduino may notify you that your sketch is read-only in which case you will need to select a new location to save it. Next, select `Sketch -> Export compiled Binary`. The Arduino IDE will take a few moments, and the IDE will create the `.zip` file you need for OTA in the sketch folder right beside where you saved your sketch.
 
 ## Setup Mobile Device For OTA Programming
 
@@ -101,7 +101,9 @@ If the Software Revision String is earlier than `1.1.1`, then you cannot perform
 
 ### Uploading the Firmware
 
-Before completing these steps, transfer the `.zip` file from your Arduino Sketch folder to your phone (e.g. via email, Dropbox, or Google Drive).
+Before completing this step, you should either download the [precompiled binaries](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.0/DefaultGanglion3.0.0.zip) or compile the firmware from source as described in the [Building from Source](#building-from-source) section.
+
+Transfer this `.zip` file to your phone (e.g. via email, Dropbox, or Google Drive).
 
 #### iOS
 
