@@ -16,7 +16,7 @@ This guide will walk you through how to update your Ganglion firmware. Downloadi
 ## Download The Latest Builds
 
 - [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases)  
-- [Ganglion Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.0/DefaultGanglion3.0.0.zip)
+- [Ganglion Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.1/DefaultGanglion3.0.1.zip)
 
 ## Ganglion OTA Firmware Programming
 
@@ -60,7 +60,7 @@ If the Software Revision String is earlier than `1.1.1`, then you cannot perform
 
 ### Uploading the Firmware
 
-Before completing this step, you should either download the [precompiled binaries](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.0/DefaultGanglion3.0.0.zip) or compile the firmware from source as described in the [Building from Source](#building-from-source) section.
+Before completing this step, you should either download the [precompiled binaries](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.1/DefaultGanglion3.0.1.zip) or compile the firmware from source as described in the [Building from Source](#building-from-source) section.
 
 Transfer this `.zip` file to your phone (e.g. via email, Dropbox, or Google Drive).
 
