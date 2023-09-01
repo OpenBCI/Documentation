@@ -30,10 +30,9 @@ Introducing research-validated dry electrodes for sampling frontal cortex EEG an
 
 ![myoware](../assets/ThirdPartyImages/myoware.jpg)
 
-The MyoWare muscle sensor can be integrated with both the OpenBCI Cyton and Ganglion. To find out how, check out these tutorials:
+The MyoWare muscle sensor can be integrated with both the OpenBCI Cyton. To find out how, check out these tutorials:
 
--   [Cyton + MyoWare](ThirdParty/Myoware/14-MyoWare_Integration.md)
--   [Ganglion + MyoWare](ThirdParty/Myoware/15-MyoWare_Integration_Ganglion.md)
+-   [Cyton + MyoWare](ThirdParty/Myoware/MyoWare_Cyton_Tutorial.md)
 
 ## Pulse Sensor
 

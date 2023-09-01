@@ -2,14 +2,16 @@
 id: MyoGanglion
 title: MyoWare OpenBCI Integration (Ganglion Board)
 ---
+:::note
 **THIS HARDWARE VERSION HAS BEEN DEPRECATED AND IS NO LONGER IN PRODUCTION.**
+:::
 
 MyoWare v1.0 is obsolete and has been pulled from production. The updated version is Myoware v2.0. This doc covers the integration of MyoWare v1.0 with the Cyton board.
 
 
 ### Overview
 
-This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Ganglion board, and the OpenBCI GUI. If you have a Cyton board instead, check out our [Cyton board MyoWare integration tutorial!](ThirdParty/Myoware/14-MyoWare_Integration.md)
+This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Ganglion board, and the OpenBCI GUI. If you have a Cyton board instead, check out our [Cyton board MyoWare integration tutorial!](Deprecated/14-MyoWare_Integration.md)
 
 ![MyoWare + Ganglion supplies](../assets/ThirdPartyImages/flatlay_myoware_ganglion.JPG)
 
