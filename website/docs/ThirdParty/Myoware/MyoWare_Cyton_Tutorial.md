@@ -5,7 +5,7 @@ title: MyoWare OpenBCI Integration (Cyton Board)
 
 :::caution
 
-The Myoware 2.0 board cannot be used with the Ganglion board. If you have purchased a Myoware 2.0 board with the intention of using it with the Ganglion board, please contact Customer support at contact@openbci.com
+The Myoware 2.0 board cannot be used with the Ganglion board. If you have purchased a Myoware 2.0 board with the intention of using it with the Ganglion board, please contact Customer support at contact@openbci.com.
 
 :::
 

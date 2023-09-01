@@ -368,13 +368,13 @@ Here is a table of the column headers and descriptions for the Cyton.
 | 10     | Accel Channel 0       | Accelerometer channel 0 (X)                              |
 | 11     | Accel Channel 1       | Accelerometer channel 1 (Y)                              |
 | 12     | Accel Channel 2       | Accelerometer channel 2 (Z)                              |
-| 13     | Other                 | See below                                                |
-| 14     | Other                 | See below                                                |
-| 15     | Other                 | See below                                                |
-| 16     | Other                 | See below                                                |
-| 17     | Other                 | See below                                                |
-| 18     | Other                 | See below                                                |
-| 19     | Other                 | See below                                                |
+| 13     | Not Used              | See below                                                |
+| 14     | Digital Channel 0 (D11)                 | See below                                                |
+| 15     | Digital Channel 1 (D12)                 | See below                                                |
+| 16     | Digital Channel 2 (D13)                 | See below                                                |
+| 17     | Digital Channel 3 (D17)                 | See below                                                |
+| 18     | Not Used              | See below                                                |
+| 19     | Digital Channel 4 (D18)                 | See below                                                |
 | 20     | Analog Channel 0      | Analog channel 0                                         |
 | 21     | Analog Channel 1      | Analog channel 1                                         |
 | 22     | Analog Channel 2      | Analog channel 2                                         |
@@ -395,35 +395,37 @@ Here is a table of the column headers and descriptions for the **Cyton + Daisy**
 | 7      | EXG Channel 5         | EEG/EMG/ECG channel connected to N6P pins on Cyton       |
 | 8      | EXG Channel 6         | EEG/EMG/ECG channel connected to N7P pins on Cyton       |
 | 9      | EXG Channel 7         | EEG/EMG/ECG channel connected to N8P pins on Cyton       |
-| 2      | EXG Channel 8         | EEG/EMG/ECG channel connected to N1P pins on Daisy       |
-| 3      | EXG Channel 9         | EEG/EMG/ECG channel connected to N2P pins on Daisy       |
-| 4      | EXG Channel 10        | EEG/EMG/ECG channel connected to N3P pins on Daisy       |
-| 5      | EXG Channel 11        | EEG/EMG/ECG channel connected to N4P pins on Daisy       |
-| 6      | EXG Channel 12        | EEG/EMG/ECG channel connected to N5P pins on Daisy       |
-| 7      | EXG Channel 13        | EEG/EMG/ECG channel connected to N6P pins on Daisy       |
-| 8      | EXG Channel 14        | EEG/EMG/ECG channel connected to N7P pins on Daisy       |
-| 9      | EXG Channel 15        | EEG/EMG/ECG channel connected to N8P pins on Daisy       |
-| 10     | Accel Channel 0       | Accelerometer channel 0 (X)                              |
-| 11     | Accel Channel 1       | Accelerometer channel 1 (Y)                              |
-| 12     | Accel Channel 2       | Accelerometer channel 2 (Z)                              |
-| 13     | Other                 | See below                                                |
-| 14     | Other                 | See below                                                |
-| 15     | Other                 | See below                                                |
-| 16     | Other                 | See below                                                |
-| 17     | Other                 | See below                                                |
-| 18     | Other                 | See below                                                |
-| 19     | Other                 | See below                                                |
-| 20     | Analog Channel 0      | Analog channel 0                                         |
-| 21     | Analog Channel 1      | Analog channel 1                                         |
-| 22     | Analog Channel 2      | Analog channel 2                                         |
-| 23     | Timestamp             | Unix timestamp                                           |
-| 24     | Marker Channel        | Channel for adding manual markers to data                |
-| 25     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+| 10     | EXG Channel 8         | EEG/EMG/ECG channel connected to N1P pins on Daisy       |
+| 11     | EXG Channel 9         | EEG/EMG/ECG channel connected to N2P pins on Daisy       |
+| 12     | EXG Channel 10        | EEG/EMG/ECG channel connected to N3P pins on Daisy       |
+| 13     | EXG Channel 11        | EEG/EMG/ECG channel connected to N4P pins on Daisy       |
+| 14     | EXG Channel 12        | EEG/EMG/ECG channel connected to N5P pins on Daisy       |
+| 15     | EXG Channel 13        | EEG/EMG/ECG channel connected to N6P pins on Daisy       |
+| 16      | EXG Channel 14        | EEG/EMG/ECG channel connected to N7P pins on Daisy       |
+| 17      | EXG Channel 15        | EEG/EMG/ECG channel connected to N8P pins on Daisy       |
+| 18     | Accel Channel 0       | Accelerometer channel 0 (X)                              |
+| 19     | Accel Channel 1       | Accelerometer channel 1 (Y)                              |
+| 20     | Accel Channel 2       | Accelerometer channel 2 (Z)                              |
+| 21     | Not Used              | See below                                                |
+| 22     | Digital Channel 0 (D11)                 | See below                                                |
+| 23     | Digital Channel 1 (D12)                 | See below                                                |
+| 24     | Digital Channel 2 (D13)                 | See below                                                |
+| 25     | Digital Channel 3 (D17)                 | See below                                                |
+| 26     | Not Used              | See below                                                |
+| 27     | Digital Channel 4 (D18)                 | See below                                                |
+| 28     | Analog Channel 0      | Analog channel 0                                         |
+| 29     | Analog Channel 1      | Analog channel 1                                         |
+| 30     | Analog Channel 2      | Analog channel 2                                         |
+| 31     | Timestamp             | Unix timestamp                                           |
+| 32     | Marker Channel        | Channel for adding manual markers to data                |
+| 33     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
 
-:::info Cyton Other Channels
-When recording using Cyton, the GUI will output a data file which contains 7 channels with the header "Other". These channels are user defined based on the [board mode](../../Cyton/04-OpenBCI_Cyton_SDK.md/#board-mode). Refer to the [aux data footer section](../../Cyton/03-Cyton_Data_Format.md/#firmware-version-200-fall-2016-to-now-1) of the Cyton data format documentation for further information.
+:::info Cyton Aux Channels
+In Digital Read mode, the 4th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
 
-In digital read mode, the 5th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
+You can also attach your own button to another pin, as shown in [the Puppies and Kittens Experiment](../../Examples/Video_Experiment.md/#step-2-breadboard-setup).
+
+Depending on the [Cyton board mode](../../Cyton/04-OpenBCI_Cyton_SDK.md/#board-mode), the other channels will not display meaningful data. There are three modes currently used by the OpenBCI GUI: default (with Accelerometer), Analog Mode, and Digital Mode. These can be toggled within the appropriate widget during live recording sessions, and data will be displayed when using Playback Mode in the corresponding widgets. We recommend changing your board more _before_ starting your recordings.
 :::
 
 ### Ganglion
