@@ -182,6 +182,24 @@ For cool project ideas, head over to the [**Example Projects**](https://docs.ope
 -   Users struggle to get prerequisites properly installed to get data on their own from OpenBCI Cyton and Ganglion.
 -   Users want to stream data into their own custom applications such as MATLAB.
 
+
+## Headband Tips and Signal Troubleshooting
+
+Steps to fix RAILED error in the GUI Time Series widget:
+
+1. Open the GUI and hit ‘Start Session’
+2. Before streaming data, open Hardware settings
+3. Set Gain to 8x or 12x, then hit ‘send’
+4. hit 'Start Streaming'
+
+If you are seeing RAILED error, the default gain 24x may be too high for you. The optimal gain will vary depending on the individual user’s skin impedance.
+
+#### General suggestions
+-   Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
+-   *Optional* - The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel). Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
+-   We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver.
+
+-   
 **What You Can Do with OpenBCI GUI and Software Stack**
 
 -   Visualize data from every OpenBCI device: Ganglion, Cyton, Cyton with Daisy, and the WiFi Shield
@@ -197,9 +215,3 @@ For cool project ideas, head over to the [**Example Projects**](https://docs.ope
 -   Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
 
 As always, don't hesitate to email us at [support@openbci.com](mailto:support@openbci.com) for assistance!
-
-## Headband Tips and Signal Troubleshooting
-
--   Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
--   *Optional* - The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel). Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
--   We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver.
