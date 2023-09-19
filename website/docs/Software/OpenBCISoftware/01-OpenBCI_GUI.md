@@ -297,11 +297,7 @@ The things you will need to run the OpenBCI GUI in Processing are:
 
 ### Installing Processing 4
 
-First, go to Processing's website and [download the latest version of Processing](https://processing.org/download). [Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
-
-:::noteMac Users
-Please use the __Intel 64-bit__ version of Processing 4 on all Mac computers. This will still run on Apple Silicon just fine. It allows us to continue using libraries that may not have a build for Arm64 architecture.
-:::
+First, go to Processing's website and [download the latest version of Processing](https://processing.org/download). For more information on Processing, you can review the official [Processing Getting Started Guide](https://processing.org/tutorials/gettingstarted) or the [Processing Documentation](https://processing.org/environment).
 
 Go ahead and move the Processing application to your `Applications` folder, and launch the application. If this is the first time that you are running Processing, it will create what it calls it's `Sketch` folder in the following locations:
 
@@ -309,8 +305,17 @@ Go ahead and move the Processing application to your `Applications` folder, and 
 - On Windows - `C:\Users\<user-name>\Documents\Processing`  
 - On Linux -`/home/<user-name>/sketchbook`
 
-For more information on Processing, you can review the official [Processing Getting Started Guide](https://processing.org/tutorials/gettingstarted) or the [Processing Documentation](https://processing.org/environment).
+:::note
+Linux Users
 
+[Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
+:::
+
+:::note
+Mac Users
+
+Please use the __Intel 64-bit__ version of Processing 4 on all Mac computers. This will still run great on Apple Silicon. This allows us to continue using libraries that may not have a build for Arm64 architecture.
+:::
 
 ### Downloading the code for the OpenBCI GUI
 
