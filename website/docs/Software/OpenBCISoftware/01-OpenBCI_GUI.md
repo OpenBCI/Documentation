@@ -361,6 +361,14 @@ Data from the board will be recorded into a **BrainFlow-RAW_date_time** CSV file
 
 ![GUI data files](../../assets/SoftwareImages/OpenBCISoftware/GUI_data_files.png)
 
+:::tip
+As a general policy, __the OpenBCI GUI will always store unfiltered data to file. These files will also be contiguous.__ This means that if you stop and restart streaming data, a new file will be created within the same Session folder. This allows all users the freedom to select different filters when playing back files in the GUI or in offline data processing pipelines.
+
+If you would like to copy these settings for using in another pipeline (e.g. Matlab), take a screenshot of the [GUI Filter UI](02_GUI_Widget_Guide.md#filters) for reference.
+
+You can also use the exact same BrainFlow filters in every language with a supported binding when playing back a BrainFlow CSV file. For more info, you can refer to the [OpenBCI Software Development Doc](../../ForDevelopers/01-SoftwareDevelopment.md).
+:::
+
 ### Cyton
 
 Here is a table of the column headers and descriptions for the Cyton.
