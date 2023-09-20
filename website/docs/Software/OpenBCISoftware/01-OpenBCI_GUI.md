@@ -188,7 +188,7 @@ During the impedance test, the board sends a small current through the selected 
 **For this reason, you won't be able to stream data on a channel and obtain the impedance value simultaneously from the channel.**
 :::
 
-The screengrab below shows the GUI Impedance Widget for Cyton:
+The screenshot below shows the GUI Impedance Widget for Cyton:
 ![GUI Impedance Widget Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0_cyton_impedance.png)
 
 To test impedance for Ganglion, use the Ganglion Signal Widget.
@@ -231,10 +231,10 @@ This method can be more reliable and quicker to implement than sending Time Seri
 
 #### GUI To GUI Data Streaming
 
-The OpenBCI GUI can stream data to another OpenBCI GUI using the Brainflow streamer. Since this is a one-to-many [multicast](https://en.wikipedia.org/wiki/Multicast), it is possible to receive the stream from multiple devices simultaneously. To start the networked GUI stream on the host machine:
+The OpenBCI GUI can stream data to another OpenBCI GUI using the BrainFlow streamer. Since this is a one-to-many [multicast](https://en.wikipedia.org/wiki/Multicast), it is possible to receive the stream from multiple devices simultaneously. To start the networked GUI stream on the host machine:
 
 1. Start the OpenBCI GUI and select your board type.
-2. Toggle on the **network** option under the Brainflow Streamer settings.
+2. Toggle on the **network** option under the BrainFlow Streamer settings.
 
 ![BrainFlow streamer](../../assets/SoftwareImages/OpenBCISoftware/Brainflow_streamer.png)
 
@@ -288,29 +288,45 @@ Expert Mode Keyboard Shortcuts:
 
 **Most users should start by [running the standalone OpenBCI GUI](#running-the-openbci_gui). The Processing IDE is for adding features, modifying existing code, or testing development versions.**
 
-The OpenBCI GUI was built using [Processing](https://processing.org/), a popular, Java-based creative coding framework. If you are interested in adding features or modifying the existing code, it is really easy to do so if you are familiar with Java. If you're not familiar with Java, don't fret! Processing is one of the easiest software packages to pick up as a beginner coder.
+The OpenBCI GUI is built using [Processing 4](https://processing.org/), a popular, Java-based creative coding framework. If you are interested in adding features or modifying the existing code, it is really easy to do so if you are familiar with Java. If you're not familiar with Java, don't fret! Processing is one of the easiest software packages to pick up as a beginner coder.
 
 The things you will need to run the OpenBCI GUI in Processing are:
 
-- [Processing App](https://processing.org/download/?processing)
+- [Processing App](https://processing.org/download)
 - [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
 
-First, go to processing.org and download the latest version of Processing. [Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
+### Installing Processing 4
 
-Go ahead and move it to your `Applications` folder, and launch the application. If this is the first time that you are running Processing, it will create what it calls it's `Sketch` folder in the following locations:
+First, go to Processing's website and [download the latest version of Processing](https://processing.org/download). For more information on Processing, you can review the official [Processing Getting Started Guide](https://processing.org/tutorials/gettingstarted) or the [Processing Documentation](https://processing.org/environment).
 
-On a Mac `Users/<user-name>/Documents/Processing`  
- On Windows `C:\Users\<user-name>\Documents\Processing`  
- On Linux `/home/<user-name>/sketchbook`
+Go ahead and install the Processing application as you normally would for your operating system. If this is the first time that you are running Processing, it will create what it calls it's `Sketch` folder in the following locations:
 
-![GUI repo](../../assets/SoftwareImages/OpenBCISoftware/ganglion_GUI-repo.png)
+- On a Mac -`Users/<user-name>/Documents/Processing`  
+- On Windows - `C:\Users\<user-name>\Documents\Processing`  
+- On Linux -`/home/<user-name>/sketchbook`
 
-The OpenBCI GUI code repository is located on github [here](https://github.com/OpenBCI/OpenBCI_GUI). click on the `Clone or download` button in green on the right, and select `Download ZIP`. If you are a advanced GitHub user, go ahead and clone it, or fork it if you like.
+:::info
+Linux Users
 
-If you downloaded the repository as a zip, please unzip it and you can change the folder name from `OpenBCI_GUI-master` to `OpenBCI_GUI`, if you prefer. You can then place this folder wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
+[Here is a walkthrough on how to install Processing on Ubuntu Linux.](http://www.artsnova.com/processing/installing-processing-ubuntu-linux-tutorial.html)
+:::
+
+:::info
+Mac Users
+
+Please use the __Intel 64-bit__ version of Processing 4 on all Mac computers. This will still run great on Apple Silicon. This allows us to continue using libraries that may not have a build for Arm64 architecture.
+:::
+
+### Downloading the code for the OpenBCI GUI
+
+The OpenBCI GUI code repository is located [here on Github](https://github.com/OpenBCI/OpenBCI_GUI). Complete the following steps to download it to your computer:
+
+- Click on the `Clone or download` button in green on the right, and select `Download ZIP`. If you are an advanced GitHub user, go ahead and clone it or fork it as you normally would.
+
+- If you downloaded the repository as a zip, please unzip it. You can change the folder name from `OpenBCI_GUI-master` to `OpenBCI_GUI`, if you prefer. You can then place this folder wherever you like (Mac Example: `Users/<user-name>/Documents/GitHub/OpenBCI_GUI`).
 
 :::info Copy 3rd Party Libraries
-Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. Theses are the 3rd party libraries that the OpenBCI GUI uses to work it's magic. You need to **copy** all of these folders into:
+Inside the `OpenBCI_GUI` folder, there is a folder called `libraries`. These are the 3rd party libraries that the OpenBCI GUI depends on to work. It's important to **copy all of these folders** into:
 
 On a Mac `Users/<user-name>/Documents/Processing/libraries`  
 On Windows `C:\Users\Username\Documents\Processing\libraries`  
@@ -346,9 +362,25 @@ If you are encountering issues launching the GUI at this point, please head to t
 
 ## Exported Data
 
-Data from the board will be recorded into a **Brainflow-RAW_date_time** CSV file and **OpenBCI-RAW_date_time** CSV file in txt format. All data saved to these files are unfiltered. **These recordings are stored in `User/Documents/OpenBCI_GUI/Recordings`**. Each GUI session will have its own directory titled **OpenBCISession_date_time**. Every time you start and stop the data stream, the GUI creates new recording files within that session folder. The picture below shows three recordings within one GUI session. The BrainFlow CSV files are generated by the BrainFlow Streamer feature when set to stream to file. This feature can also be used to send raw data over a network. By default, BrainFlow streamer saves data to this folder.
+### Location of saved data
+
+**By default, all GUI recordings are stored in `User/Documents/OpenBCI_GUI/Recordings` on all operating systems.**
+
+### More information about saved data
+
+Data from the GUI is recorded into a `BrainFlow-RAW_date_time` CSV file and `OpenBCI-RAW_date_time` CSV file in txt format. Each GUI session will have its own directory titled `OpenBCISession_date_time`. The picture below shows three recordings within one GUI session.
 
 ![GUI data files](../../assets/SoftwareImages/OpenBCISoftware/GUI_data_files.png)
+
+The BrainFlow CSV files are generated by the BrainFlow Streamer feature when set to stream to file. *This feature can also be used to send raw data over a network.* By default, BrainFlow streamer saves data to this folder.
+
+:::tip
+As a general policy, __the OpenBCI GUI will always store unfiltered data to file. These files will also be contiguous.__ This means that if you stop and restart streaming data, a new file will be created within the same Session folder. This allows all users the freedom to select different filters when playing back files in the GUI or in offline data processing pipelines.
+
+If you would like to copy these settings for using in another pipeline (e.g. Matlab), take a screenshot of the [GUI Filter UI](02_GUI_Widget_Guide.md#filters) for reference.
+
+You can also use the exact same BrainFlow filters in every language with a supported binding when playing back a BrainFlow CSV file. For more info, you can refer to the [OpenBCI Software Development Documentation](../../ForDevelopers/01-SoftwareDevelopment.md).
+:::
 
 ### Cyton
 
@@ -380,7 +412,7 @@ Here is a table of the column headers and descriptions for the Cyton.
 | 22     | Analog Channel 2      | Analog channel 2                                         |
 | 23     | Timestamp             | Unix timestamp                                           |
 | 24     | Marker Channel        | Channel for adding manual markers to data                |
-| 25     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+| 25     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in BrainFlow csv) |
 
 Here is a table of the column headers and descriptions for the **Cyton + Daisy**.
 
@@ -418,7 +450,7 @@ Here is a table of the column headers and descriptions for the **Cyton + Daisy**
 | 30     | Analog Channel 2      | Analog channel 2                                         |
 | 31     | Timestamp             | Unix timestamp                                           |
 | 32     | Marker Channel        | Channel for adding manual markers to data                |
-| 33     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+| 33     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in BrainFlow csv) |
 
 :::info Cyton Aux Channels
 In Digital Read mode, the 4th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
@@ -449,5 +481,5 @@ Here is a table of the column headers and descriptions for the Ganglion.
 | 13     | Other                 | Not used                                                 |
 | 14     | Timestamp             | Unix timestamp                                           |
 | 15     | Marker Channel        | Channel for adding manual markers to data                |
-| 16     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in Brainflow csv) |
+| 16     | Timestamp (Formatted) | Year-Month-Day Hour:Minute:Second (Not in BrainFlow csv) |
 
