@@ -215,6 +215,20 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 
 **Min ΔμV**: This value sets the minimum voltage range between the upper threshold and the lower threshold. The upper threshold and lower threshold cannot get any closer than this. By making this value bigger, you will have to flex harder to go from 0 to 100% flex, after the thresholds have crept as close as they will get to one another (aka Min ΔμV).
 
+## EMG Joystick
+
+This widget enables control of a joystick using EMG data. You can use up to 4 channels of EMG to have full control of each axis. Each channel is mapped to an axis direction: **+x, -x, +y, -y**. You can change which channel controls which direction using the dropdown menus at the top of the widget.
+
+![EMG Joystick Screenshot](../../assets/TutorialImages/EMG_joystick.png)
+
+The joystick indicator moves in the direction of the activated EMG channels. This visualization should be used in combination with the EMG settings to find your ideal EMG joystick setup.
+
+### EMG Settings
+
+At the top of the EMG joystick widget there is a settings tab which opens up a tunable set of parameters to adjust the joystick sensitivity. A full description of the parameters can be found in the **[NeuroFly toolkit documentation](../NeuroFly_Toolkit)**.
+
+![EMG Settings Screenshot](../../assets/TutorialImages/EMG_settings.png)
+
 ## Networking
 
 The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](Software/SoftwareLanding.md).
