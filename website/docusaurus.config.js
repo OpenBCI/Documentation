@@ -53,7 +53,7 @@ module.exports={
           "position": "right"
         },
         {
-          "href": "https://shop.openbci.com",
+          "href": "https://shop.openbci.com/collections/frontpage",
           "label": "Shop",
           "position": "right"
         },
