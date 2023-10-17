@@ -33,11 +33,11 @@ module.exports={
         "theme": {
           "customCss": [require.resolve('./src/css/customTheme.css')],
         },
-        googleTagManager: {
-          containerId: 'GTM-5MNP6L3Q',
-        },
-      },
-    ],
+        "gtag": {
+          "trackingID": "G-HVMLC0ZWWS"
+        }
+      }
+    ]
   ],
   "plugins": [],
   "themeConfig": {
