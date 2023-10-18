@@ -157,10 +157,10 @@ The recommended disinfectants are as follows: Perfektan TB (Dr. Schumacher GmbH)
 
 | Metric | Values |
 | ------------------------------ | --------------------------- |
-| AC Impedance | <2.5 kΩ·cm2 at 10 Hz |
-| DC offset voltage | <30 mV |
-| Potential Drift | <±5 mV/10min |
-| Electrode-scalp impedance | < 20 kΩ (at 10 Hz) |
+| AC Impedance | \<2.5 kΩ·cm2 at 10 Hz |
+| DC offset voltage | \<30 mV |
+| Potential Drift | \<±5 mV/10min |
+| Electrode-scalp impedance | \< 20 kΩ (at 10 Hz) |
 
 
 Questions, comments, suggestions? Email [support@openbci.com](mailto:support@openbci.com)
