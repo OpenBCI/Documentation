@@ -37,8 +37,8 @@ If you are running MacOS 11+ and having issues streaming your Ganglion, see the 
 There are no prerequisites for running the WiFi Shield with Cyton or Ganglion on macOS/Windows/Linux, move on to the installation section below.
 
 ### Linux Users: Serial Port Permissions
-
-<p /><details>
+<p />
+<details>
 <summary>
 <b>
 <i>
