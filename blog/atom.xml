@@ -9,7 +9,7 @@
     <icon>https://openbci.github.io/img/favicon_large.ico</icon>
     <entry>
         <title type="html"><![CDATA[Blog Title]]></title>
-        <id>/2016/03/11/blog-post</id>
+        <id>https://openbci.github.io/blog/2016/03/11/blog-post</id>
         <link href="https://openbci.github.io/blog/2016/03/11/blog-post"/>
         <updated>2016-03-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.]]></summary>
