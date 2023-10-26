@@ -115,7 +115,7 @@ The following instructions will get your computer and the Arduino IDE set up to 
 
 ### What You Need
 
--   [Arduino IDE v1.8.19](https://www.arduino.cc/en/software) or newer
+-   [Arduino IDE v1.8.x](https://www.arduino.cc/en/software)
 -   [Ganglion Library Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
 -   [Wifi Master Library Firmware](https://github.com/OpenBCI/OpenBCI_Wifi_Master_Library)
 
