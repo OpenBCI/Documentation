@@ -16,7 +16,7 @@ This guide will walk you through how to update your Ganglion firmware. Downloadi
 ## Download The Latest Builds
 
 - [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases)  
-- [Ganglion Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases/download/v3.0.1/DefaultGanglion3.0.1.zip)
+- [Ganglion Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases)
 
 ## Ganglion OTA Firmware Programming
 
