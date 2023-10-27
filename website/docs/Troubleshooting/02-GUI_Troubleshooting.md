@@ -26,6 +26,18 @@ title: GUI Troubleshooting
 4.  If your Cyton firmware is older than v3.0.0, you will need to [update the firmware as outlined here](Cyton/05-Cyton_Board_Programming_Tutorial.md#overview). The latest Cyton firmware as of 2019 is v3.1.2.
 5.  If nothing in the Docs, GitHub, or Forums are helpful, it's a good idea to email [support@openbci.com](mailto:support@openbci.com) or make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
 
+## Cyton Board *RAILED* error in GUI Time Series
+
+To fix 100% 'RAIL' error, select a smaller gain on Cyton channels. Access the gain settings through Hardware Settings, in the OpenBCI GUI software:
+
+1. Open the GUI and hit ‘Start Session’
+2. Before streaming data, open Hardware settings
+3. set Gain to 8x, 12x, or 16x, then hit ‘send’
+
+By default, it's set to 24. Select a lower gain that suits your use and you can see better data from the Time Series and FFT widgets.
+The default gain 24x may be too high for most. The optimal gain will vary depending on the individual user’s skin impedance. 
+
+
 ## Something Doesn't Look Right...
 
 1.  Take a screenshot using tools provided by your operating system. Alternatively, you can turn on Expert Mode in the GUI and take a screenshot by pressing 'm' on your keyboard.
