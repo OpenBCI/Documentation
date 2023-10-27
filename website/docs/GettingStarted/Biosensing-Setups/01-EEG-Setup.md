@@ -8,10 +8,10 @@ This page will explain the most basic setup to process EEG Data using your OpenB
 
 To learn more about specific OpenBCI Headware and how to set them up for EEG, follow the links below.
 
--   [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
 -   [Ultracortex Mark IV](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md)
--   [Ultracortex Mark III](../../Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md)
--   [Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md)
+-   [Gel Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md)
+-   [Gelfree (Saline) Electrode Cap](../../AddOns/Headwear/Gelfree_Electrode_Cap_Tutorial.md)
+-   [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
 
 ## What you will need
 
