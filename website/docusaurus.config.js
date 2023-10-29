@@ -35,6 +35,9 @@ module.exports={
         },
         "gtag": {
           "trackingID": "G-HVMLC0ZWWS"
+        },
+        "googleTagManager": {
+          "containerId": 'GTM-5MNP6L3Q'
         }
       }
     ]
