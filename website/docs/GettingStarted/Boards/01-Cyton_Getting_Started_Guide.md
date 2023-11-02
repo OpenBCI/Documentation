@@ -34,13 +34,15 @@ The OpenBCI USB Dongle has an integrated RFDuino that communicates with the RFDu
 If you ordered an OpenBCI Gold Cup Electrodes and Ten20 Paste you should have:
 
 - 10 passive, gold cup electrodes on a color-coded ribbon cable
-- 3 2oz Jars of Ten20 conductive electrode paste
+- A jar of Ten20 conductive electrode paste
 
 If you plan to work with your own electrodes, the [touch-proof adapter](https://shop.openbci.com/products/touch-proof-electrode-cable-adapter) may come in handy:
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/touch_proof.jpg?raw=true" width="70%" />
 
 It will convert any electrode that terminates in the industry-standard touch-proof design to an electrode that can be plugged into any OpenBCI Board!
+
+For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
 
 ### 4. Your 6V AA Battery Pack & 4 AA Batteries
 
