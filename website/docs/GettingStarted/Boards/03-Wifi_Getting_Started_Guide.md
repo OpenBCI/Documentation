@@ -1,6 +1,6 @@
 ---
 id: WiFiGS
-title: WiFi Shield Getting Started Guide
+title: WiFi Shield Getting Started Guide (Deprecated)
 ---
 ## Overview
 
