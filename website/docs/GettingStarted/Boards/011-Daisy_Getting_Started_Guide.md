@@ -35,7 +35,7 @@ Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI
 
 #### OPTION A) Attach Wifi Shield before attaching Daisy
 
-If you purchased a Wifi Shield, attach it to the Cyton board, then attach the Daisy module on top of the Wifi Shield, shown below.
+If you purchased a Wifi Shield (deprecated), attach it to the Cyton board, then attach the Daisy module on top of the Wifi Shield, shown below.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Cyton_Daisy_Wifi.JPG?raw=true" width="60%" />
 
@@ -67,7 +67,8 @@ The Y-Splitter connects the bottom `SRB` pin of the Daisy Board to the bottom `S
 
 Use the 16 of the color coded cables that came with your Ultracortex MarkIV headset.
 
-Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. Color order does not matter.
+Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. the cable colors should be in this order: gray, purple, blue, green, yellow, orange, red, and brown.
+For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
 
 Refer to the Ultracortex Mark IV [tutorial](AddOns/Headwear/01-Ultracortex-Mark-IV.md) to learn how to connect the male terminations of the color coded cables to the electrodes on the headset.
 
