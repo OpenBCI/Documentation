@@ -54,11 +54,13 @@ Your OpenBCI kit comes with 4 plastic feet that can be snapped into the holes of
 If you ordered OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) and [Electrode Paste](http://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars), it should come with:
 
 -   10 passive, gold cup electrodes on a color-coded ribbon cable
--   3 2oz Jars of Ten20 conductive electrode paste
+-   Jar of Ten20 conductive electrode paste
 
 ![TouchProof Adapter](../../assets/GettingStartedImages/touch_proof.jpg)
 
 If you plan to work with your own electrodes, the [Touch-Proof Adapter](http://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) will come in handy. It will convert any electrode that terminates in the industry-standard touch-proof design to an electrode that can be plugged into any OpenBCI Board!
+
+For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
 
 ## Download/Install/Run the OpenBCI GUI
 
