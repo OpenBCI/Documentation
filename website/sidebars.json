@@ -1,6 +1,31 @@
 {
   "docs": {
       "Welcome to OpenBCI": ["Welcome"],
+    "FAQ": [
+          {
+            "type": "category",
+            "label": "FAQ",
+            "items": [
+                "FAQ/FAQLanding",
+                "FAQ/GenFAQ",
+                "FAQ/HowProductsGoTogether",
+                "FAQ/HardFAQ",
+                "FAQ/PaymentFAQ",
+                "FAQ/ShippingFAQ",
+                "FAQ/DocsUpdate"
+            ]
+          }, {
+            "type": "category",
+            "label": "Policies",
+            "items": [
+                "FAQ/Cookie",
+                "FAQ/Privacy",
+                "FAQ/Returns",
+                "FAQ/Liability",
+                "FAQ/Conduct"
+            ]
+          }
+      ],
       "Getting Started": [
             "GettingStarted/GettingStartedLanding",
             {
@@ -197,31 +222,7 @@
               "Examples/EEGProjects/MotorImagery"
             ]
           }
-        ],
-        "FAQ": [
-          {
-            "type": "category",
-            "label": "FAQ",
-            "items": [
-                "FAQ/FAQLanding",
-                "FAQ/GenFAQ",
-                "FAQ/HowProductsGoTogether",
-                "FAQ/HardFAQ",
-                "FAQ/PaymentFAQ",
-                "FAQ/ShippingFAQ",
-                "FAQ/DocsUpdate"
-            ]
-          }, {
-            "type": "category",
-            "label": "Policies",
-            "items": [
-                "FAQ/Cookie",
-                "FAQ/Privacy",
-                "FAQ/Returns",
-                "FAQ/Liability",
-                "FAQ/Conduct"
-            ]
-          }
-      ]
+        ]
+        
     }
   }
