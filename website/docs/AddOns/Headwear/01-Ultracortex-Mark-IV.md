@@ -428,7 +428,7 @@ If you have a Cyton Daisy extension, you can expand your headset from 8 electrod
 
 From the front of the frame remove the two Comfort Nodes and replace them with spiky electrodes. Add 6 more spiky electrode units in the locations shown below:
 
-![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-16channel-adding-electodes.jpg)
+![image](../../assets/HeadwareImages/ucm4_2022/ultracortex-16channel-adding-electodes.png)
 
 ### Wiring Electrodes
 
