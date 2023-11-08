@@ -89,7 +89,7 @@ module.exports={
       }
     },
     "algolia": {
-      "appId": "T4RYDUBT8W",
+      "appId": "BH4D9OD16A",
       "apiKey": "19411ba246745c95db0bff87cfed97b0",
       "indexName": "openbci",
       "placeholder": "Search Docs",
