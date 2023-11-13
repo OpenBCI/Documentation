@@ -33,8 +33,8 @@ module.exports={
         "theme": {
           "customCss": [require.resolve('./src/css/customTheme.css')],
         },
-        "gtag": {
-          "trackingID": "G-HVMLC0ZWWS"
+        "googleTagManager": {
+          "containerId": 'GTM-5MNP6L3Q'
         }
       }
     ]
