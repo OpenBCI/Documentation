@@ -85,7 +85,7 @@ module.exports={
       "links": [],
       "copyright": "Copyright © 2023 OpenBCI",
       "logo": {
-        "src": "img/open-bci-gear-blue.svg"
+        "src": "img/open-bci-gear-blue.png"
       }
     },
     "algolia": {
