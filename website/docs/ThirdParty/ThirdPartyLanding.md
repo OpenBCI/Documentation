@@ -14,14 +14,6 @@ EmotiBit is a wearable sensor module for capturing high-quality emotional, physi
 
 **Tutorial Coming Soon!**
 
-## HEGduino
-
-The "HEG" in HEGduino stands for HemoEncephaloGraphy, a non-invasive biofeedback method. HEG detects regional changes in the brain’s energy consumption via changes in blood-oxygen. HEGduino enables you to see in real time how your brain blood-oxygen levels respond to your thoughts and actions, resulting in a simple and elegant biofeedback system. You can easily affect and eventually control regional blood flow in your head by focusing, breathing, and relaxing, and watching the response on your screen. With the biofeedback provided by HEGduino, you can exercise your brain and make it healthier with mindful practice.
-
-We're partnering with HEGduino to bring you low-cost at-home HEG technology. Brain blood-flow biofeedback meets open-source IoT technology!  These kits are hand-assembled and tested by their team to run out-of-the box. No firmware tinkering or wire soldering needed!
-
-The open-source, extensively documented HEGduino Kit is now available at the [OpenBCI Shop](https://shop.openbci.com/products/hegduino-kit).
-
 ## IDUN Dryode
 
 Introducing research-validated dry electrodes for sampling frontal cortex EEG and facial/body EMG, compatible with OpenBCI boards and standard snap cables!
