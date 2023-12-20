@@ -3,7 +3,7 @@ id: WiFiLanding
 title: OpenBCI WiFi
 ---
 
-::: warning
+::: info
 This product is no longer offered for sale due to reliability issues. Documentation is kept here for devices in-the-wild that are still in use.
 :::
 
