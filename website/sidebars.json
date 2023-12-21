@@ -109,6 +109,12 @@
               "ThirdParty/IDUN_Dryode/Dryode"
             ]
           }, {
+            "type": "category",
+            "label": "cEEGrid Kit",
+            "items": [
+              "ThirdParty/cEEGrid_Kit/cEEGrid_Kit"
+            ]
+          }, {
           "type": "category",
           "label": "Myoware",
           "items": [
