@@ -21,7 +21,7 @@ If you received a damaged item, we will send a replacement at no additional char
 
 #### If You’re Requesting a Refund
 
-*We reserve the right to deduct restocking fees based on the date of return (if after 30 days) and the condition of the returned product.* The fee is subtracted from the amount of the refund. Shipping costs are not refunded.
+*We reserve the right to deduct up to 20% in restocking fees based on the date of return (if after 30 days) and the condition of the returned product.* The fee is subtracted from the amount of the refund. Shipping costs are not refunded.
 
 When the returned item is received, your original method of payment will be credited as soon as we have completed processing your return (usually within 2 weeks).
 
