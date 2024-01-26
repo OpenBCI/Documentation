@@ -1,6 +1,6 @@
 ---
 id: ElectrodeCap
-title: Electrode Cap Getting Started Guide
+title: Gel Electrode Cap Guide
 ---
 This is a guide to setting up and cleaning your OpenBCI Electrode Cap. Please consult the [Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
 Product Page and review this guide in its entirety before starting.
