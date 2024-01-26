@@ -133,53 +133,36 @@ Find it all overwhelming? Don't know where to start? Questions, comments, sugges
 ## Electrode Cap Care and Cleaning Guide
 
 A routine schedule for cleaning and disinfecting the Electrode
-Cap helps assure accurate EEG signals and the reuse of
-electrodes between different participants. Furthermore, you will
+Cap helps ensure accurate EEG signals and the reuse of electrodes between different participants. Furthermore, you will
 preserve the excellent characteristics of your electrodes and will
 ensure a long product life.
 
 #### Cleaning Method:
 
-1.  Clean the residual gel off the Sintered Ag-AgCl Electrodes immediately after use.
-
-2.  Soak the cap for about 15 minutes in warm water (up to 50
-    degrees Celsius), so that the remaining gel can dissolves off
-    quickly into the water. Use a cotton ball for removing gel residues
-    from the electrodes only if absolutely necessary.
-
-3.  In case the gel stays on the surface of the electrodes or the cap
-    shell, then soak the cap in diluted detergent for a few hours.
-
-4.  Rinse the cap in tap water thoroughly. Finish rinsing with deionized water or distilled water, if available. Air dry the cap and store the cap in a dark dry place.
+1. Immediately after use, clean the residual gel off the cap's electrodes.
+2. Soak the cap for about 15 minutes in warm water, so that the remaining gel dissolves quickly.
+3. Use a cotton ball for removing gel residue from the electrodes if necessary.
+4. Rinse the cap in clean water thoroughly. Finish rinsing with deionized water or distilled water, if available.
+5. Hang the cap until completely dry and store the cap away from sunlight.
 
 Cleaning frequency-after each use.
 
 #### Disinfecting Method:
 
-1.  Clean the residual gel off the Sintered Ag-AgCl Electrodes immediately after use.
+Disinfection must be done on a cleaned cap. 
+1. Soak the cap for up to 30 minutes in diluted bleach solution of about 100 ppm sodium hypochlorite. Household bleach has a concentration of 5.25% of available
+    chlorine (5.25% Sodium Hypochlorite). A 1:500 dilution of household bleach provides the 100ppm sodium hypochlorite required).
+2. Rinse the cap in clean water thoroughly. Finish rinsing with deionized water or distilled water, if available.
+3. Hang the cap until completely dry and store the cap away from sunlight.
 
-2.  Soak the cap for about 15 minutes in warm water (up to 50
-    degrees Celsius), so that the remaining gel can dissolves off
-    quickly into the water. Use a cotton ball for removing gel residues
-    from the electrodes only if absolutely necessary.
-
-3.  Then soak the cap for up to 30 minutes in 1% diluted bleach solution
-    (100 ppm sodium hypochlorite).
-    Household bleach has a concentration of 52,500ppm of available
-    chlorine (5.25% Sodium Hypochlorite). A 1:500 dilution of household
-    bleach provides the 100ppm concentration required)
-
-4.  Rinse the cap in tap water thoroughly. Finish rinsing with deionized water or distilled water, if available. Air dry the cap and store the cap in a dark dry place.
-
-Disinfecting frequency-every two weeks.
+Gas sterilization with ethylene oxide is an acceptable alternative.
 
 Caution:
 
 1.  Gently handle the connection point where the electrodes attach to the lead wire.
 2.  Don’t touch other metals.
 3.  Don’t leave residual gel on any part of the electrodes or wire.
-4.  Keep the electrodes and the wire away from any corrosive
-    liquid.
+4.  Keep the electrodes and the wire away from any corrosive liquid.
 5.  Keep the touch-proof adapter ends away from water.
 
 ## Electrode Cap FAQ
@@ -239,3 +222,8 @@ Caution:
 
 17. Can I buy multiple caps (for different head sizes) with this kit?
     - **The electrode cap kits come in different sizes. Choose from small, medium, and large in the [product page](https://shop.openbci.com/products/openbci-eeg-electrocap).**
+
+
+### Technical Specifications
+
+![Gel Electrode Cap Tech Specs](../../assets/HeadwareImages/gel_electrode_cap_tech_specs.png)
