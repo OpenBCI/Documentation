@@ -123,10 +123,10 @@ Head over to the OpenBCI GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.
 ### The set-up
 
 1.  Place the Electrode Cap on the subject's head and apply electrode gel with the included syringe.
-2.  Connect the Electrode Cap to your bioamplifier using the marked guides on the cap. The electrodes on the cap are labeled "GND", "REF", "C3", etc.
-3.  Follow the manufacturer's instructions for your bioamplifier
+2.  Connect the Electrode Cap to your bioamplifier using the 10-20 labels on the cap. The electrodes on the cap are labeled "GND", "REF", "C3", etc.
+3.  Follow the manufacturer's instructions for your bioamplifier.
 
-If you're using a third-party bioamplifier, you'll need the software that is compatible with that particular bioamplifier. The OpenBCI GUI is intended to be used with OpenBCI biosensing boards (Cyton, CytonDaisy, and Ganglion), not third-party bioamplifiers such as g.tec devices.
+If you're using a third-party bioamplifier, you'll need the software that is compatible with that particular bioamplifier. The OpenBCI GUI is developed for use with OpenBCI-brand biosensing boards (Cyton, CytonDaisy, and Ganglion).
 
 Find it all overwhelming? Don't know where to start? Questions, comments, suggestions? Email [support@openbci.com](mailto:support@openbci.com)
 
@@ -190,7 +190,7 @@ Caution:
     - **Yes. Many OpenBCI customers are citizen scientists, hackers, artists, and casual at-home users of EEG hardware.**
 
 2.  Are these items comfortable enough for people to sleep in for multiple days?
-    - **I would say that the electrode cap is most comfortable option. It is the same type of equipment used in professional and diagnostic sleep labs.**
+    - **The gel-based electrode cap is the most comfortable option. It is the same type of equipment used in professional and diagnostic sleep labs.**
 
 3.  Is it durable enough to be used for multiple days?
     - **Yes. The electrode is a medical-grade product at a "kickstarter" price and is scientifically validated. It includes designs such as the durable cable sleeve to prevent tangled cables. The sintered cap is especially durable, given its sintered electrode design which is hardy to corrosion.**
@@ -205,7 +205,7 @@ Caution:
     - **Our customers have compared OpenBCI products favorably to medical equipment at many times the cost. Please contact OpenBCI for the PDF on independent evaluation and scientific verification of OpenBCI hardware or head to the [Research Collection](https://openbci.com/citations).**
 
 7.  Are the devices easy to learn and handle?
-    - **I have personally worked with customers who have zero previous experience with EEG and were able to follow the guides at docs.openbci.com to see their raw EEG data in live-time, as well as store the data for later analysis.**
+    - **I have personally worked with customers who have no previous experience with EEG and were able to follow the guides at docs.openbci.com to see their raw EEG data in live-time, as well as store the data for later analysis.**
 
 8.  Would the hardware and data be messed up and skewed if the participants move around too much in their sleep?
     - **Subject movement will nearly always introduce noise into the system. This is true of all EEG equipment, no matter the brand or type. The cap's design in conjunction with the use of electrode gel (sold separately in the OpenBCI store) ensures good contact between the electrode and scalp, helping to reduce noise artifacts.**
@@ -220,7 +220,7 @@ Caution:
     - **The electrode gel is water-based and can easily be washed off with shampoo.**
 
 12. My team is also looking into using the EEG Headband Kit and we wanted to know would this EEG be durable and accurate enough for a multiple day sleep study?
-    - **The EEG headband is a starter kit for those new to EEG. It has not been tested for applications like sleep studies. The EEG electrode cap is a more suitable product.**
+    - **The EEG headband is a starter kit for those new to EEG. It has not been tested for applications like sleep studies. The EEG electrode cap a more suitable product.**
 
 13. We want to be able to use the EEG data for sleep scoring, and I was wondering whether the output file can be saved in edf format, so that is readable with some sleep scoring softwares such as RemLogic?
     - **The files are saved to .csv or bdf format. For information on the software, head to the [GUI Widget Guide](../../../Software/OpenBCISoftware/GUIWidgets).**
@@ -230,7 +230,7 @@ Caution:
 
 15. What is the difference between coated and sintered electrode and which one you think would be better for us?
     - **You can find details on the difference between the two at the electrode cap product [page](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap).
-    The sintered cap lasts longer and offers more consistent signal due to the unique manufacturing process.**
+    The sintered cap's electrodes last longer due to the unique manufacturing process.**
 
 16. I also would like to capture the EOG signal. Can I modify the amplification factor of the biosensing board for each different type of signals? Do you also suggest the best filter specifications for EEG/EOG/EMG recording?
     - By pairing electrodes to the OpenBCI Cytondaisy, you can obtain up to 16 channels from different data sources simultaneously.
@@ -238,4 +238,4 @@ Caution:
     Using the gold cup electrodes, ten20 paste, and medical tape, you can capture EOG signals. You would connect both the gold cup electrodes and the electrode cap connections to the CytonDaisy.**
 
 17. Can I buy multiple caps (for different head sizes) with this kit?
-    - **The electrode cap kits come in different sizes. Choose from small, medium, and large in the [product page](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap-kit?variant=16456863776840).**
+    - **The electrode cap kits come in different sizes. Choose from small, medium, and large in the [product page](https://shop.openbci.com/products/openbci-eeg-electrocap).**
