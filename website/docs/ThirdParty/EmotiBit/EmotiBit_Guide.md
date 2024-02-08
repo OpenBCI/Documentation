@@ -33,7 +33,7 @@ Get inspired by the example projects in the product images.
 
 ![](https://cdn.shopify.com/s/files/1/0613/9353/files/EmotiBit_a_la_carte_01_480x480.jpg?v=1643667558)
 
-###EmotiBit Options: 
+### EmotiBit Options: 
 You can **select from different EmotiBit options** to get the one that’s right for you. Fully open-source, cross-platform [data visualizer](https://github.com/EmotiBit/ofxEmotiBit/releases) software (Windows, Mac, Linux) is included with all options.
 
 
@@ -46,7 +46,7 @@ What is the difference between the EmotiBit Emo and MD Boards?
 | EmotiBit Emo            | <ul><li>PPG Sensor (3-wavelength) </li><li>EDA / GSR sensor (+AgCl snap electrodes)</li><li>9-axis IMU (Accel, Gyro, Mag)</li><li>Temperature sensor (standard-grade)</li><li>Numerous derivative biometric streams</li><li>Finger strap      </li></ul>| $249.99   |
 | EmotiBit MD   |  <ul><li>**Everything** on EmotiBit Emo</li><li>**PLUS** a medical-grade temperature sensor (thermopile) for sensing even more accurate body temperature  </li></ul>     | $349.99      |
 
-###Do I need a kit?
+### Do I need a kit?
 You need several items in the Essentials Kit to use EmotiBit, including:
 
 * Adafruit Feather M0 WiFi
