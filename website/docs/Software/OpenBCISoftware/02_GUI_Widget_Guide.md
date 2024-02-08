@@ -195,6 +195,8 @@ The band power widget shows the relative voltages of the various brain wave cate
 | Theta |      4-8       | Signifies deep relaxation, creativity, insight, reduced consciousness. They are picked up during day dreaming and deep meditation.                                                        |
 | Delta |     0.5-4      | Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.                                                                                                       |
 
+Example of how data is displayed in the [Band Power Widget.](../../assets/SoftwareImages/OpenBCISoftware/bandpower_widget.png)
+
 ## EMG
 
 In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1.
