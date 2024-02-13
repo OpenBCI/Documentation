@@ -10,9 +10,10 @@ title: EmotiBit Guide
 
 EmotiBit is a wearable sensor module for capturing high-quality emotional, physiological, and movement data. Easy-to-use and scientifically-validated sensing lets you enjoy wireless data streaming to any platform or direct data recording to the built-in SD card.
 
-It is a scientifically validated, open-source alternative to research devices (e.g. Brain products, Empatica, Shimmer, BIOPAC):
-$500 EmotiBit vs. a $20,000 gold standard Brain Products device - [validation study](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4700861)
-Published and ongoing research studies - [link](https://mailchi.mp/e84c45c6588b/emotibit-update-get-beta-access-5426115?e=922d75e5e6)
+### Scientific validation
+#### Open-source alternative to research devices (e.g. Brain products, Empatica, Shimmer, BIOPAC.
+#### $500 EmotiBit vs. a $20,000 gold standard Brain Products device - [validation study](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4700861)
+#### Published and ongoing research studies - [link](https://mailchi.mp/e84c45c6588b/emotibit-update-get-beta-access-5426115?e=922d75e5e6)
 
 #### Purchase the [All-in-One EmotiBit Bundle](https://shop.openbci.com/collections/frontpage/products/all-in-one-emotibit-bundle) or the [EmotiBit + Kit](https://shop.openbci.com/collections/frontpage/products/emotibit) to get started!
 
