@@ -195,7 +195,7 @@ The band power widget shows the relative voltages of the various brain wave cate
 | Theta |      4-8       | Signifies deep relaxation, creativity, insight, reduced consciousness. They are picked up during day dreaming and deep meditation.                                                        |
 | Delta |     0.5-4      | Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.                                                                                                       |
 
-Example of how data is displayed in the [Band Power Widget.](../../assets/SoftwareImages/OpenBCISoftware/bandpower_widget.png)
+Example of how data is displayed in the ![Band Power Widget.](../../assets/SoftwareImages/OpenBCISoftware/bandpower_widget.png)
 
 ## EMG
 
