@@ -39,12 +39,7 @@ The Ganglion board supports four channels of EEG/EMG/EEG input and can stream da
 
 #### Battery
 
-All OpenBCI boards ship with a free 2-pin standard JST compatible 4-AA battery holder. For the best user experience, we recommend purchasing the LiPo battery and charger linked below.
-
-1.  [Lithium ion battery](https://www.adafruit.com/product/1578) and
-2.  [USB charger](https://www.adafruit.com/product/1304)
-
-We recommend this battery for its long battery life, compact size, and compatibility with all OpenBCI boards.
+All OpenBCI boards ship with a 2-pin standard JST compatible 4-AA battery holder OR a compact, rechargeable lithium polymer 3.7V battery and USB charger.
 
 #### Hardware
 
@@ -112,10 +107,7 @@ The Cyton board supports eight channels of EEG/EMG/EEG input and can stream data
 
 #### Battery
 
-All OpenBCI boards ship with a free 2-pin standard JST compatible 4-AA battery holder. For the best user experience, we recommend purchasing the LiPo battery and charger linked below.
-
-1.  [Lithium ion battery](https://www.adafruit.com/product/1578) and
-2.  [USB charger](https://www.adafruit.com/product/1304)
+All OpenBCI boards ship with a 2-pin standard JST compatible 4-AA battery holder OR a compact, rechargeable lithium polymer 3.7V battery and USB charger.
 
 #### Hardware
 
