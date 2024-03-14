@@ -14,7 +14,7 @@ The data saved to SD card is sampled at 250 Hz, even if you use a CytonDaisy 16-
 ![SD_Class](../assets/CytonImages/SDclass.jpg)
 ![SD_Cards](../assets/CytonImages/MicroSDcards.jpg)
 
-First thing to know is that low-cost cards and slow speed cards are **not** recommended. When shopping for SD cards, make sure to look for high quality (Scan Disk, eg) and high speed (class 10 minimum). Look for the symbols to the right to know you are getting the right kind of card. You will also want to look for a card that has 8, 16, or 32 GB of storage.  OpenBCI will generate about 1 mega bye of data per minute when it is recording 8 channels at the default rate of 250Hz. That's a lot of data!
+First thing to know is that low-cost cards and slow speed cards are **not** recommended. When shopping for SD cards, make sure to look for high quality (Scan Disk, eg) and high speed (class 10 minimum). Look for the symbols to the right to know you are getting the right kind of card. You will also want to look for a card that has 8 or 16 GB of storage.  OpenBCI will generate about 1 mega bye of data per minute when it is recording 8 channels at the default rate of 250Hz. That's a lot of data!
 
 We've used these two cards in the OpenBCI lab, and they both work great.
 
@@ -23,7 +23,7 @@ People have reported issues with _Transcend_ and _Samsung_ Class 10 cards.
 ### Formatting
 
 :::info Important
-If you are using a new card, or one that you've had around, you MUST format it to FAT32 or FAT. We recommend a card that stores no more than 32GB, due to the older FAT32 formatting mentioned below.
+If you are using a new card, or one that you've had around, you MUST format it to FAT32 or FAT. We recommend a card that stores no more than 16GB.
 
 We've found that the most successful formatting method is one that overwrites the card, not just 'erasing' it which can leave old data intact. The Mac OS provides this option in the Disk Utility. Click the Erase tab, open Security Options, and slide the slider to the 'single pass of zeros' option. There are more comprehensive secure erase options, but they take longer.
 
