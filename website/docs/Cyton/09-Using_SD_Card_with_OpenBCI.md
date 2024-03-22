@@ -18,6 +18,9 @@ First thing to know is that low-cost cards and slow speed cards are **not** reco
 
 We've used these two cards in the OpenBCI lab, and they both work great.
 
+**2024 Update**
+We recommend this newer [16GB SanDisk microsd card](https://www.amazon.com/gp/product/B07CV344WJ/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1).
+
 People have reported issues with _Transcend_ and _Samsung_ Class 10 cards.
 
 ### Formatting
