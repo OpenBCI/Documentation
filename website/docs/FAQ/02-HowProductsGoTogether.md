@@ -6,7 +6,9 @@ title: How OpenBCI products go together?
 
 ## What products should I get?
 
-If you are new to OpenBCI or you are just curious about our products don’t fret! Watch our tutorial of [How OpenBCI Products Go Together](https://youtu.be/QIWswAOFp8w) to get a crash course on your first set-up!
+If you are new to OpenBCI or you are just curious about our products don’t fret! Watch our tutorial of [How OpenBCI Products Go Together](https://youtu.be/QIWswAOFp8w) to get a crash course on your first set-up! 
+
+<br> If you have any questions after reviewing this guide, email support@openbci.com. We can help you find the right hardware combination!
 
 ## The type of OpenBCI equipment you will need for your project mainly depends on the following 5 factors: 
 (Click through the drop-down menus below)
