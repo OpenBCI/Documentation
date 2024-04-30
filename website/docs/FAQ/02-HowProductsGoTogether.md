@@ -6,51 +6,83 @@ title: How OpenBCI products go together?
 
 ## What products should I get?
 
-If you are new to OpenBCI or you are just curious about our products don’t fret! Watch our tutorial of [How OpenBCI Products Go Together](https://youtu.be/QIWswAOFp8w) to get a crash course on your first set-up! 
+If you are new to OpenBCI or you are just curious about our products, don’t fret! Watch our tutorial of [How OpenBCI Products Go Together](https://youtu.be/QIWswAOFp8w) to get a crash course on your first set-up! 
 
-<br> If you have any questions after reviewing this guide, email support@openbci.com. We can help you find the right hardware combination!
+If you have any questions after reviewing this guide, email support@openbci.com. We can help you find the right hardware combination!
 
-## The type of OpenBCI equipment you will need for your project mainly depends on the following 5 factors: 
-(Click through the drop-down menus below)
+## Things to consider
+
+The type of OpenBCI equipment you will need for your project mainly depends on a few factors.
+
 <details>
-<summary>Data type requirements</summary>
-<ul><li>Are you looking to sample <a href="https://docs.openbci.com/GettingStarted/Biosensing-Setups/EEGSetup/">EEG (brain)</a>, <a href="https://docs.openbci.com/GettingStarted/Biosensing-Setups/ECGSetup/">ECG (heart)</a>, <a href="https://docs.openbci.com/GettingStarted/Biosensing-Setups/EMGSetup/">EMG (muscle)</a>, EDA (Electrodermal activity), movement, etc? </li>
+  <summary>Data type requirements</summary>
+  <ul>
+    <li>What kind(s) of data do you want to sample?</li>
+      <ul>
+        <li><a href="https://docs.openbci.com/GettingStarted/Biosensing-Setups/EEGSetup/">EEG (brain)</a></li>
+        <li><a href="https://docs.openbci.com/GettingStarted/Biosensing-Setups/ECGSetup/">ECG (heart)</a></li>
+        <li><a href="https://docs.openbci.com/GettingStarted/Biosensing-Setups/EMGSetup/">EMG (muscle)</a></li>
+        <li><a href="https://bioelecmed.biomedcentral.com/articles/10.1186/s42234-021-00074-8">EGG (gut)</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Electrodermal_activity">EDA (Electrodermal activity)</a></li>
+        <li>Note: All OpenBCI boards also include an <a href="https://en.wikipedia.org/wiki/Accelerometer">accelerometer</a>.</li>
+      </ul>
+  </ul>
 </details>
 
 <details>
-<summary>Location of sensors needed</summary>
-<ul><li>This factor is directly related to the <b>data type</b> you are collecting. For example, you would not purchase a cap/headset if you are looking to gather EMG (muscle) data from the legs. </li>
-<li>For a more specific example, if you want sensor locations on the midline (top of the head) to measure brain data (EEG), then a good product option would be an EEG cap or the Ultracortex EEG Headset. </li></ul>
+  <summary>Location of sensors</summary>
+  <ul>
+    <li>This factor is directly related to the <b>data type</b> you are collecting. For example, you would not purchase a cap/headset if you are looking to gather EMG (muscle) data from the legs.</li>
+    <li>If you want sensor locations on the midline (top of the head) to measure brain data (EEG), then a good product option would be an EEG cap or the Ultracortex EEG Headset. </li>
+  </ul>
 </details>
 
 <details>
-<summary>Number of channels needed</summary>
-<ul><li>i.e. number of sensor locations. OpenBCI hardware offers up to 16 channels / sensors. 
-  <br> These include the Ganglion (4-channels), Cyton (8-channels), Cyton + Daisy (16-channels)</li>
-<li>For some research there is a minimum channel count needed. We recommend a minimum of 8 channels for SSVEP, P300, and motor imagery. In the <a href="https://docs.google.com/spreadsheets/d/1WvolD2-QJ5aUJy5o0Dq5wdFQtLMkMtppZT8s_ihYyA4/edit?usp=sharing">OpenBCI research collection</a>, the Cyton 8-channel and CytonDaisy 16-channel boards are most commonly used. For QEEG / ERP / P300 / VEP, the 16-channel gel electrode cap will perform the best.</li>
-<li><a href="https://mentalab.com/number-of-eeg-channels/#soler-ref">Why more EEG channels is not always better</a></li>
-<li><a href="https://www.mdpi.com/1424-8220/22/23/9156">14-channel EEG shown to be comparable to 32 channels</a></li>
-<li><a href="https://openbci.com/forum/index.php?p=/discussion/3104/are-large-numbers-of-channels-superior-to-smaller-numbers-resolved">Why as few as 4 channels is sufficient for neurofeedback</a></li></ul>
+  <summary>Number of channels</summary>
+  <ul>
+    <li>How many sensors would you like to use? OpenBCI hardware offers up to 16 channels / sensors. 
+    These include the Ganglion (4-channels), Cyton (8-channels), Cyton + Daisy (16-channels)</li>
+    <li>For some research there is a minimum channel count needed. We recommend a minimum of 8 channels for SSVEP, P300, and motor imagery. In the <a href="https://docs.google.com/spreadsheets/d/1WvolD2-QJ5aUJy5o0Dq5wdFQtLMkMtppZT8s_ihYyA4/edit?usp=sharing">OpenBCI research collection</a>, the Cyton 8-channel and CytonDaisy 16-channel boards are most commonly used. For QEEG / ERP / P300 / VEP, the 16-channel gel electrode cap will perform the best.</li>
+    <li>Related articles and links</li>
+      <ul>
+        <li><a href="https://mentalab.com/number-of-eeg-channels/#soler-ref">Why more EEG channels is not always better</a></li>
+        <li><a href="https://www.mdpi.com/1424-8220/22/23/9156">14-channel EEG shown to be comparable to 32 channels</a></li>
+        <li><a href="https://openbci.com/forum/index.php?p=/discussion/3104/are-large-numbers-of-channels-superior-to-smaller-numbers-resolved">Why as few as 4 channels are sufficient for neurofeedback</a></li>
+      </ul>
+    </ul>
 </details>
 
 <details>
-<summary>Budgetary restrictions</summary>
-<ul><li>If budget is a significant consideration, I would recommend the gold cup electrodes or the Ag-AgCl snap electrodes as they both offer excellent signal quality for the lowest price and can be used for EEG, ECG, EMG, EOG, and EGG.</li>
+  <summary>Budget</summary>
+  If budget is a significant consideration, we recommend the gold cup electrodes or the Ag-AgCl snap electrodes. Both options offer excellent signal quality for the lowest price and can be used for EEG, ECG, EMG, EOG, and electrogastrography (EGG).
+  <ul>
+    <li><a href="https://shop.openbci.com/products/openbci-gold-cup-electrodes">Gold cup electrodes</a></li>
+    <li><a href="https://mentalab.com/number-of-eeg-channels/#soler-ref">Why more EEG channels is not always better</a></li>
+  </ul> 
 </details>
 
 <details>
-<summary>Sampling rate requirements</summary>
-<ul><li>Ganglion: 200 hz</li>
-<li>Cyton: 250 hz</li>
-<li>Cyton + daisy: 125 hz</li></ul>
+  <summary>Sampling Rate</summary>
+  <ul>
+    <li>How many data points would you like per second?</li>
+    <li>OpenBCI boards have slightly different sampling rates. These have been tested and verified by independent researchers around the world.</li>
+    <ul>
+      <li>Ganglion: 200 hz</li>
+      <li>Cyton: 250 hz</li>
+      <li>Cyton + Daisy: 125 hz</li>
+    </ul>
+  </ul>
 </details>
-<br>
+
 
 Here is a detailed explanation of what you need to get started:
 
-The first component you would need is one of our 3 Biosensing Boards. You will select a board depending on how many electrodes you want to analyze data from. In general, with additional channels, you have additional spatial resolution that enables more diverse types of research. We offer three different boards, the [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) (4 channels at a sample rate of 200Hz), the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) (8 channels at a sample rate of 250Hz), and the [Cyton + Daisy Boards](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526) (16 channels at a sample rate of 125Hz). Each channel lets you plug one electrode into them, so the more channels you have the more electrodes you can play with. If you are purchasing the Ganglion board you will need the [Ganglion Dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768). 
+The first component you need is a biosensing board. Select a board depending on how many electrodes you want to analyze data from. In general, with additional channels, you have additional spatial resolution that enables more diverse types of research. We offer three different boards:
+- [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) (4 channels at a sample rate of 200Hz)
+- [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) (8 channels at a sample rate of 250Hz)
+- [Cyton + Daisy Boards](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526) (16 channels at a sample rate of 125Hz)
 
-The boards sample rate is limited by the bluetooth bandwidth. 
+If you are purchasing the Ganglion board, you will need the [Ganglion Dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768). 
 
 Now that you have the board, the second thing you need to get started is a set of electrodes (or a headset, we’ll talk about it after). Our Boards have male header connectors, so you would need to get electrodes that are compatible. If you are interested in mainly doing EMG or ECG, we recommend you use our [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) with [EMG/ECG Foam Solid Gel Electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) (30/pack), these electrodes are a ready to go solution and plug in directly into our Biosensing boards. If you want to be able to do EEG as well as EMG and ECG, we recommend you get our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) with [Ten 20 Paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198). You can affix these electrodes (almost) everywhere with some medical tape, which allows you to measure EEG, EMG, and ECG. If you already have your own electrodes, or have an electrode cap with touch proof connectors, you can still use them with our Biosensing Boards, by purchasing our [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
 
