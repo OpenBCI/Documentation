@@ -23,5 +23,5 @@ This section details the various OpenBCI-specific software and SDKs. Included he
 
 ## Sample Live Data
 
- Video of the OpenBCI GUI posted on [Youtube](https://www.youtube.com/watch?v=XktF8OhHH4A), showing the [8-channel Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) Board paired with a 5-channel [EEG Headband Kit](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit).
+ Video of the OpenBCI GUI posted on [Youtube](https://www.youtube.com/watch?v=XktF8OhHH4A), showing the [8-channel Cyton](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) Board paired with a [EEG Headband Kit](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-headband-kit) that offers up to 8 channels.
  
