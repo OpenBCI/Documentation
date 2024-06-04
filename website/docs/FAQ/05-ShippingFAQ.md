@@ -9,7 +9,7 @@ title: Shipping & Taxes
 ## What are the shipping rates?
 
 | ship method | delivery estimate |
-| --- | --- |
+| :---------------------------------------- | :------ |
 | U.S. Domestic Ground (FedEx or UPS) | 3-7 days |
 | International Economy (FedEx, UPS, or DHL) | 7-14 days |
 | International Express | 2-5 days |
