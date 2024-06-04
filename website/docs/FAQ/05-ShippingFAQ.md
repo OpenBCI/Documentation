@@ -8,9 +8,17 @@ title: Shipping & Taxes
 
 ## What are the shipping rates?
 
+| ship method | delivery estimate |
+| --- | --- |
+| U.S. Domestic Ground (FedEx or UPS) | 3-7 days |
+| International Economy (FedEx, UPS, or DHL) | 7-14 days |
+| International Express | 2-5 days |
+
+Orders are shipped 1-2 business days after payment. **ALL** orders include tracking number emailed automatically to an email you provide. This tracking number is usually made available within 2-3 business days.
+
 Shipping is calculated based on a number of factors including the size of the package, the postage carrier selected, and the destination. Shipping charges and delivery methods are shown at checkout. Note that shipping charges shown at checkout do not include unforeseen delivery costs such as import duty and customs taxes.
 
-Generally, orders to US addresses are delivered within one week. If using FedEx International Economy (the recommended courier), allow up to 1-2 weeks for your order to arrive at customs clearance. **ALL** orders include tracking number emailed automatically to an email you provide. This tracking number is usually made available within 2-3 business days.
+Generally, orders to US addresses are delivered within one week. If using FedEx International Economy (the recommended courier), allow up to 1-2 weeks for your order to arrive at customs clearance. 
 
 ## Sales Tax
 
