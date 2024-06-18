@@ -180,7 +180,7 @@ When worn, the headband strap should fit quite snugly around the head, with the 
 
 #### OpenBCI Software
 
-Now that you've finished with the hardware set-up, the next step is to set up the software! Download the [OpenBCI GUI](openbci.com/downloads) to prepare your computer to communicate with your Cyton.
+Now that you've finished with the hardware set-up, the next step is to set up the software! Download the [OpenBCI GUI](https://www.openbci.com/downloads) to prepare your computer to communicate with your Cyton.
 
 Once you've installed the GUI, fire it up [as shown in this YouTube video!](http://www.youtube.com/watch?v=XktF8OhHH4A)
 
