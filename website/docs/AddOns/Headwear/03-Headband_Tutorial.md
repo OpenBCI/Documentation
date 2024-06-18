@@ -49,7 +49,7 @@ Fully charge the Lithium Polymer Battery, until the charger's indicator LED turn
 
 #### Hardware
 
-Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. After you've peeled the protective layer off, and flipped the switches to **down** position, they will look like the image below.
+Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. After you've peeled the protective layer off, and flipped the switches to **down** position, the Ganglion board will be in EEG mode (shown below).
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="30%" />
 
