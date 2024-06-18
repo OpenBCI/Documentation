@@ -72,7 +72,7 @@ Here is an example of what your data stream should look like as you flex and rel
 The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on the drop down menu in the top left of any widget and select "EMG".
 Each circle and box represents a channel. The circle and box fill up as the amplitude of the signal on that channel increases (unit in voltage).
 
-Check out the gif above to see how this widget behaves when flexing and relaxing your muscle. Refer to the [GUI Widget Guide](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
+Check out the gif above to see how this widget behaves when flexing and relaxing your muscle. Refer to the [GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
 
 ## Obtain EMG Data with OpenBCI Ganglion Board
 
@@ -112,7 +112,7 @@ if you are sampling EMG from a leg muscle, use the kneecap as a reference instea
 
 Once you have the GUI open, turn off any channels that you have not connected to muscle sensors, toggling the number next to the channel, in the Time Series widget.
 
-When you are running the GUI, data from top/bottom pin 1 will be displayed on Channel 1 within the [Time Series Widget](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#time-series). Data from top/bottom pin 2 will be displayed on Channel 2, and so on and so forth.
+When you are running the GUI, data from top/bottom pin 1 will be displayed on Channel 1 within the [Time Series Widget](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#time-series). Data from top/bottom pin 2 will be displayed on Channel 2, and so on and so forth.
 
 Once you are happy with your software and hardware settings, press "BEGIN DATA STREAM."
 Here is an example of what your data stream should look like as you flex and relax your muscle:
@@ -124,11 +124,11 @@ Here is an example of what your data stream should look like as you flex and rel
 The OpenBCI GUI also has a widget for visualizing EMG data. To view it, click on the drop down menu in the top left of any widget and select "EMG".
 Each circle and box represents a channel. The circle and box fill up as the amplitude of the signal on that channel increases (unit in voltage).
 
-Check out the gif above to see how this widget behaves when flexing and relaxing your muscle. Refer to the [GUI Widget Guide](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
+Check out the gif above to see how this widget behaves when flexing and relaxing your muscle. Refer to the [GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#emg) for more information on this and all other GUI widgets.
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EMG signals, check out [this document](Troubleshooting/01-MinimizingNoise.md).
+For help minimizing noise and improving the quality of your EMG signals, check out [this document](../../Troubleshooting/01-MinimizingNoise.md).
 
 For troubleshooting or technical support, please visit the [OpenBCI Technical Forum](https://www.openbci.com/forum).
 
