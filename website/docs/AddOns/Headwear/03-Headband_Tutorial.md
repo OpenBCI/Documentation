@@ -34,7 +34,7 @@ The flat snap electrodes facilitate multiple frontal cortex measurements (F7, AF
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Headband_Ganglion_Front.JPG?raw=true" width="30%" />
 
-The Ganglion board supports four channels of EEG/EMG/EEG input and streams data over [bluetooth](Ganglion/08-Ganglion_Data_Format.md). In this tutorial we will show you how to obtain two frontal lobe measurements and two temporal lobe measurements using the four channels of the Ganglion and stream the data over bluetooth!
+The Ganglion board supports four channels of EEG/EMG/EEG input and streams data over bluetooth. In this tutorial we will show you how to obtain two frontal lobe measurements and two temporal lobe measurements using the four channels of the Ganglion and stream the data over bluetooth!
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion.JPG?raw=true" width="30%" />
 
@@ -53,7 +53,7 @@ Your Ganglion may have shipped with orange protective cellophane over switches s
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="30%" />
 
-Optional: see the [Ganglion Hardware page](Ganglion/02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
+Optional: see the [Ganglion Hardware page](../../02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Headband_Pins.JPG?raw=true" width="30%" />
 
