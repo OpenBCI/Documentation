@@ -14,7 +14,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 1.  OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 2.  An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
-3.  Lithium battery and charger OR 6V battery pack (AA batteries not included)
+3.  Lithium battery and USB charger OR 6V battery pack (AA batteries not included)
 4.  (x4) plastic feet for board stabilization
 5.  EEG electrodes: OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) 
 6.  or EMG electrodes: [Snap Electrode Cables](http://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and [Snap Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack).
@@ -24,28 +24,42 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
 ![OpenBCI 8-bit Top](../../assets/GettingStartedImages/ganglion_head_shot.jpg)
 
-The battery connector on the back can accept 3V to 12V DC power input. The pushbutton is a reset button. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion](Ganglion/01-GanglionBoard.md) page in the Hardware section.
+The battery connector on the back can accept 3V to 12V DC power input. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion](Ganglion/01-GanglionBoard.md) page in the Hardware section.
 
 ### 2. OpenBCI Ganglion Dongle
 
 ![Ganglion Dongle](../../assets/GettingStartedImages/Ganglion_dongle.jpeg)
 
-Plug the OpenBCI Ganglion Dongle into your computer before launching the GUI. Additional dongles can be found in the [OpenBCI Shop](https://shop.openbci.com/products/ganglion-dongle).
+Plug the OpenBCI Ganglion Dongle into your computer before launching the GUI.
 
-### 3. Your 6V AA Battery Pack & 4 AA Batteries
+### 3. Your Lithium Polymer Battery and USB Charger (or 6V Battery Pack & 4 AA Batteries, pre-2023)
 
-Install 4 AA batteries in your battery pack, plug in your Ganglion board and turn on the power switch. You should see the BLUE LED blink gently. Blinking means that the BLE radio is not connected or paired with any computer or phone/tablet. Once the Ganglion is connected, the LED stays steady on.
+Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green.
+
+![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery_and_charger.png)
+
+Pre-2023: 
+Install 4 AA batteries in your battery pack
 
 ![Battery Connection](../../assets/GettingStartedImages/ganglion_batteryConnection.png)
 
-**Important note**
-If you are using a non-OpenBCI battery holder, please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
+Both power source types can be plugged into the 2-pin JST, on the underside of your Ganglion board.
 
-### 4. (x4) Plastic Feet
+Turn on the power switch. You should see the BLUE LED blink gently.
+Blinking means that the BLE radio is not connected or paired with any computer or phone/tablet. Once the Ganglion is connected, the LED stays steady on.
+
+
+**Important note**
+If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
+
+### 4. Clear Board Case or (x4) Plastic Feet
+
+![board case and lithium battery](../../assets/GettingStartedImages/board_case_with_lithium_battery.png)
+
+If you do not have a board case, your Cyton kit comes with 4 plastic feet that can be snapped into the holes of your board to provide extra stability while working.
+The case and plastic feet cannot be used at the same time.
 
 ![Plastic Feet](../../assets/GettingStartedImages/ganglion_wPlasticFeet.png)
-
-Your OpenBCI kit comes with 4 plastic feet that can be snapped into the holes of your board to provide extra stability while working.
 
 ### 5. Gold Cup Electrodes and Paste
 
