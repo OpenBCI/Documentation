@@ -78,7 +78,7 @@ For best results, when plugging female header pins onto the OpenBCI board, orien
 
 ## Download/Install/Run the OpenBCI GUI
 
-Please [follow the step by step guide](Software/OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application.
+Please [follow the step by step guide](../../OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application.
 
 Come back to this guide when your GUI is running!
 
