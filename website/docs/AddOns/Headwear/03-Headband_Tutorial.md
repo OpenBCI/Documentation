@@ -53,7 +53,7 @@ Your Ganglion may have shipped with orange protective cellophane over switches s
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="30%" />
 
-Optional: see the [Ganglion Hardware page](../../02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
+Optional: see the [Ganglion Hardware page](../../Ganglion/02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Headband_Pins.JPG?raw=true" width="30%" />
 
@@ -99,7 +99,7 @@ When worn, the headband strap should fit quite snugly around the head, with the 
 
 #### OpenBCI Software
 
-Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md#download-install-run-the-openbci-gui) to prepare your computer to communicate with your Ganglion.
+Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](../../GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md#downloadinstallrun-the-openbci-gui) to prepare your computer to communicate with your Ganglion.
 
 Once you've downloaded the GUI zip file per tutorial instructions, fire up the GUI [as shown in this YouTube video!](http://www.youtube.com/watch?v=NAM6eOA4a8Y)
 
@@ -119,7 +119,7 @@ Another widget shown in the picture above is the Focus widget. When the alpha wa
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Headband_Cyton_Front.JPG?raw=true" width="30%" />
 
-The Cyton board supports eight channels of EEG/EMG/EEG input and streams data over [bluetooth](Cyton/03-Cyton_Data_Format.md). In this tutorial we will show you how to obtain three frontal lobe measurements and five temporal lobe measurements and stream the data over bluetooth!
+The Cyton board supports eight channels of EEG/EMG/EEG input and streams data over [bluetooth](../../Cyton/03-Cyton_Data_Format.md). In this tutorial we will show you how to obtain three frontal lobe measurements and five temporal lobe measurements and stream the data over bluetooth!
 
 #### Battery
 
@@ -180,9 +180,9 @@ When worn, the headband strap should fit quite snugly around the head, with the 
 
 #### OpenBCI Software
 
-Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to prepare your computer to communicate with your Cyton.
+Now that you've finished with the hardware set-up, the next step is to set up the software! Download the [OpenBCI GUI](openbci.com/downloads) to prepare your computer to communicate with your Cyton.
 
-Once you've installed the GUI by following the tutorial, fire it up [as shown in this YouTube video!](http://www.youtube.com/watch?v=XktF8OhHH4A)
+Once you've installed the GUI, fire it up [as shown in this YouTube video!](http://www.youtube.com/watch?v=XktF8OhHH4A)
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/headband_gui_cyton.jpeg?raw=true" width="30%" />
 
@@ -225,14 +225,14 @@ If you are seeing RAILED error, the default gain 24x may be too high for you. Th
 
 -   Visualize data from every OpenBCI device: Ganglion, Cyton, CytonDaisy.
 -   Playback files using GUI.
--   [Download](openbci.com/downloads) as a native application on macOS, Windows, and Linux.
--   Apply [filters](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#filters) and other data processing tools to quickly clean raw data in real time.
--   Use the GUI as a [networking system](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
--   Send data to [MATLAB](Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](Software/SoftwareLanding.md)
--   Analyze data with [Python and Brainflow](ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
--   [Create a widget framework](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
--   Output data into a saved file (file fomat .txt, .csv, .bd/.edf) for later offline processing.
--   [Customize the layout](Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
+-   [Download](https://www.openbci.com/downloads) as a native application on macOS, Windows, and Linux.
+-   Apply [filters](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#filters) and other data processing tools to quickly clean raw data in real time.
+-   Use the GUI as a [networking system](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
+-   Send data to [MATLAB](../../Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](../../Software/SoftwareLanding.md)
+-   Analyze data with [Python and Brainflow](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
+-   [Create a widget framework](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
+-   Output data into a saved file (file format .txt, .csv, .bd/.edf) for later offline processing.
+-   [Customize the layout](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
 -   Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
 
 As always, don't hesitate to email us at [support@openbci.com](mailto:support@openbci.com) for assistance!
