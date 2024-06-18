@@ -5,36 +5,28 @@ title: The OpenBCI GUI
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
-The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt format, as well as streamed in live-time to third-party software such as MATLAB.
+The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt or .bdf/.edf format, as well as streamed in live-time to third-party software such as MATLAB.
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
 ## Hardware/Driver Setup for OpenBCI_GUI
 
-Shown below are the three OpenBCI Boards that can be used with the OpenBCI GUI.
+The Ganglion, Cyton, and CytonDaisy Boards are compatible with the OpenBCI GUI.
 
-![image](../../assets/SoftwareImages/OpenBCISoftware/labelledBoards.jpg)
 
-### Cyton and Cyton+Daisy Drivers
+#### Ganglion on macOS/Windows/Linux
+
+The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0). In order to use the Ganglion, you need the **[Ganglion USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
+
+
+**important MacOS BLE Workaround
+If you are running MacOS 11+ and having issues streaming your Ganglion, see the [MacOS BLE workaround](../../Troubleshooting/MacOS_Ganglion_BLE_Workaround.md).**
+
+#### Cyton and Cyton+Daisy Drivers
 
 If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system.
 
-:::important
-**The FTDI driver is only necessary for Windows 8, Windows 10, and Mac OS X 10.9 through 10.15. If you are running a Mac that is mid 2015 or newer, you do not need to install the FTDI driver!**
-:::
+**The FTDI driver is only necessary for Windows 8, Windows 10, and Mac OS X 10.9 through 10.15. If you are running a Mac that is mid 2015 or newer, you do not need to install the FTDI driver.**
 
-### Ganglion on macOS/Windows/Linux
-
-**The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0). In order to use the Ganglion, you need a [small USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
-
-_Note: The [CSR Dongle](https://github.com/openbci-archive/Docs/blob/master/Deprecated%20Docs/Setup_CSR_Dongle.md) is no longer supported._ We recommend using the [newer Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle).
-
-:::important MacOS BLE Workaround
-If you are running MacOS 11+ and having issues streaming your Ganglion, see the [MacOS BLE workaround](Troubleshooting/MacOS_Ganglion_BLE_Workaround.md).
-:::
-
-### WiFi Shield
-
-There are no prerequisites for running the WiFi Shield with Cyton or Ganglion on macOS/Windows/Linux, move on to the installation section below.
 
 ### Linux Users: Serial Port Permissions
 
@@ -57,7 +49,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 
 ### Download the Appropriate Application For Your OS
 
-The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the [Downloads](http://openbci.com/donation) page of the OpenBCI website, and click the download link that correlates to your OS and machine.
+The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the [Downloads](https://openbci.com/downloads) page of the OpenBCI website, and click the download link that correlates to your OS and machine.
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/DownloadsUpdated.png)
 
@@ -146,7 +138,7 @@ This will launch the OpenBCI_GUI. **If you experience issues, try running with o
 
 ### BrainFlow Java Library
 
-**Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware!** In the background, we are using the included [BrainFlow Java library](http://docs.openbci.com/docs/ForDevelopers/SoftwareDevelopment#brainflow---java) to handle communications with the boards.
+**Starting with GUI v5, simply run the GUI and connect to all OpenBCI hardware!** In the background, we are using the included [BrainFlow Java library](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---java) to handle communications with the boards.
 
 ### Tutorial
 
@@ -168,7 +160,7 @@ Starting with GUI 5.1.0, you can save data simultaneously to the BrainFlow CSV f
 
 ![BrainFlow Streamer Control Panel - Save to File](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-BrainFlowStreamerCP_Screenshot.png)
 
-Cyton users can save data to an SD card. To playback these files using the GUI, copy the files to your computer from the SD card. This works better than reading files from the SD card. With GUI v5, it is no longer necessary to convert SD files for playback in the GUI. A few users may still want to [convert large SD file recordings](#converting-large-sd-card-recordings).
+Cyton users can save data to an SD card. To playback these files using the GUI, copy the files to your computer from the SD card. This works better than reading files from the SD card. With GUI v5, it is no longer necessary to convert SD files for playback in the GUI. A few users may still want to [convert large SD file recordings](01-OpenBCI-GUI.md#converting-large-sd-card-recordings).
 
 ### Customize Your Layout
 
@@ -286,7 +278,7 @@ Expert Mode Keyboard Shortcuts:
 
 ## Running the OpenBCI GUI from the Processing IDE
 
-**Most users should start by [running the standalone OpenBCI GUI](#running-the-openbci_gui). The Processing IDE is for adding features, modifying existing code, or testing development versions.**
+**Most users should start by downloading the [standalone GUI](https://www.openbci.com/downloads). The Processing IDE is for adding features, modifying existing code, or testing development versions.**
 
 The OpenBCI GUI is built using [Processing 4](https://processing.org/), a popular, Java-based creative coding framework. If you are interested in adding features or modifying the existing code, it is really easy to do so if you are familiar with Java. If you're not familiar with Java, don't fret! Processing is one of the easiest software packages to pick up as a beginner coder.
 
