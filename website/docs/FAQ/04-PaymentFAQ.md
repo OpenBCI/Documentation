@@ -6,34 +6,14 @@ Please note all orders ship **after** full payment. Orders cannot be split betwe
 
 ## How do I request a quotation or an invoice?
 
-There are two methods of getting a quotation. The first and faster method is to make a customer [account](https://shop.openbci.com/account/register) with your email and shipping address. Then, email [sales@openbci.com](mailto:sales@openbci.com) with a list of products wanted. We will then quickly follow up with a PDF quote.
+To receive a quote, please make a [customer account](https://shop.openbci.com/account/register) and add your shipping address to your account. You can add your address by clicking “view addresses” on the right hand side of the screen. Then click “Add a new address”. 
 
-The second method-
-Please email us at [contact@openbci.com](mailto:contact@openbci.com), with the items you want in the quotation and the shipping address in the format below to give you an accurate shipping rate.
+After this step is complete, please email us at [sales@openbci.com](mailto:sales@openbci.com) and provide the following info:
+1. The email address associated with your OpenBCI account
+2. The full list of products and quantities you’d like on your quote
+  
+You can find all of our products listed on our online store: shop.openbci.com 
 
-First name:
-
-Last name:
-
-Email:
-
-Company:
-
-Phone number:
-
-Address:
-
-Address con't:
-
-City:
-
-Country:
-
-Region/State/Province:
-
-Postal/zip code\*:
-
-Tax ID or VAT:
 
 ## When will my credit card be charged?
 
