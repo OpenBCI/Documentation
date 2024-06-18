@@ -35,7 +35,7 @@ Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dyn
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0-FiltersUI.png)
 
-The GUI contains several built-in filters that can be applied to the data in real-time. These can be accessed by clicking on the `Filters` button. This will open a menu that allows you to toggle the filters on/off, choose the frequency range, type, and order of the filters. On the top right you will find the notch filter, which can be used to [reduce AC noise](Troubleshooting/01-MinimizingNoise.md#get-rid-of-ac-noise) by filtering out 50Hz or 60Hz noise. To the left of the notch filter, there is a dropdown menu to choose between applying a bandpass or bandstop filter to your data. The bandpass filter allows a specific range of frequencies to pass through while attenuating frequencies outside of that range. On the other hand, the bandstop attenuates a specific range of frequencies while allowing frequencies outside of that range to pass through.
+The GUI contains several built-in filters that can be applied to the data in real-time. These can be accessed by clicking on the `Filters` button. This will open a menu that allows you to toggle the filters on/off, choose the frequency range, type, and order of the filters. On the top right you will find the notch filter, which can be used to [reduce AC noise](../../Troubleshooting/01-MinimizingNoise.md#get-rid-of-ac-noise) by filtering out 50Hz or 60Hz noise. To the left of the notch filter, there is a dropdown menu to choose between applying a bandpass or bandstop filter to your data. The bandpass filter allows a specific range of frequencies to pass through while attenuating frequencies outside of that range. On the other hand, the bandstop attenuates a specific range of frequencies while allowing frequencies outside of that range to pass through.
 
 The filter parameters specify the start and stop frequencies, the filter type (Butterworth, Chebyshev, Bessel), and order of the filter. You can also toggle the filter on/off by clicking on the circle under the 'Channel' header (you will see the circle turn black if turned off). If you want to apply different filter settings to a specific channel, you can click on the 'Show Channels' dropdown to edit the parameters for each individual channel. The picture above shows the expanded filter menu.
 
@@ -56,7 +56,7 @@ _Window_ — Controls the amount of time that is shown in the series.
 These warnings show that there is no or poor signal and that you need to check the electrodes to ensure that they are making good contact with your body.
 
 :::info
-As of GUI 5.0.9, use the new [Cyton Signal Widget](#cyton-signal-widget) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
+As of GUI 5.0.9, use the new [Cyton Signal Widget](../OpenBCISoftware/02_GUI_Widget_Guide.md#cyton-signal-widget) to check the impedance on individual channels. While in Live mode, you can check the "Railed Percentage" to check the status of all electrodes at once.
 :::
 
 ## FFT Plot
@@ -107,7 +107,7 @@ Next, let's look closely at the FFT Plot widget in the top right. Though we have
 
 ![Channel Select Feature Screenshot](../../assets/SoftwareImages/OpenBCISoftware/GUI_5.1.0-ChannelSelectFeature_SyntheticData.png)
 
-While this example is not a realistic setup, it shows the level of control and customization that is possible across all widgets that have the Channel Select UI. Find your perfect layout and then remember to [save your Settings using the `Settings` tab in the top right of the GUI!](Software/OpenBCISoftware/01-OpenBCI_GUI.md#decrease-setup-time-by-savingloading-settings) Have fun!
+While this example is not a realistic setup, it shows the level of control and customization that is possible across all widgets that have the Channel Select UI. Find your perfect layout and then remember to [save your Settings using the `Settings` tab in the top right of the GUI!](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#decrease-setup-time-by-savingloading-settings) Have fun!
 
 ## Head Plot
 
@@ -227,13 +227,13 @@ The joystick indicator moves in the direction of the activated EMG channels. Thi
 
 ### EMG Settings
 
-At the top of the EMG joystick widget there is a settings tab which opens up a tunable set of parameters to adjust the joystick sensitivity. A full description of the parameters can be found in the **[NeuroFly toolkit documentation](../NeuroFly_Toolkit)**.
+At the top of the EMG joystick widget there is a settings tab which opens up a tunable set of parameters to adjust the joystick sensitivity. A full description of the parameters can be found in the **[NeuroFly toolkit documentation](../OpenBCISoftware/NeuroFly_Toolkit.md)**.
 
 ![EMG Settings Screenshot](../../assets/TutorialImages/EMG_settings.png)
 
 ## Networking
 
-The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](Software/SoftwareLanding.md).
+The networking widget allows the streaming of data to other apps. Keep scrolling for an explanation of the four data types: Serial, UDP, OSC, and LSL. To see how it can be used with our different apps, check out our [Software page](../SoftwareLanding.md).
 
 With the networking widget, you can send Time Series, FFT, EMG, Band Power, Accel/Aux, and Pulse data. The Accel/Aux option allows you to send Accelerometer, Analog Read, or Digital Read data.
 
@@ -255,7 +255,7 @@ User Datagram Protocol is used primarily for establishing low-latency and loss-t
 
 ### LSL
 
-Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](Software/CompatibleThirdPartySoftware/01-Matlab.md).
+Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](../../Software/CompatibleThirdPartySoftware/01-Matlab.md).
 
 FFT data can now be sent over LSL, starting with [GUI v.4.1.5-beta.3.](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
@@ -330,7 +330,7 @@ This tutorial shows you how to create custom widgets for the [OpenBCI GUI](https
 #### Helpful Background Skills
 
 - Knowledge of [Processing](https://processing.org/) or Java-based programming
-- Experience with [running the OpenBCI GUI from the Processing IDE](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
+- Experience with [running the OpenBCI GUI from the Processing IDE](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide)
 - [Developer Setup using Visual Studio Code or Processing](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup)
 - Alternatively, you can edit using [Atom with Processing packages](https://atom.io)
 
