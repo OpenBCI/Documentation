@@ -24,7 +24,7 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 -   x4 AA batteries
 -   x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
-Before applying ten20 paste on subjects with long hair, refer to this [guide](https://www.aset.org/files/public/10-20_System_Demonstration.pdf) on parting the hair for 10-20 international standard electrode positions.
+Before applying ten20 paste on subjects with long hair, part the hair at 10-20 international standard electrode positions.
 
 If you are using an OpenBCI electrode starter kit, use the following electrodes so as to be consistent with the GUI's color-coding protocol:
 
@@ -139,4 +139,4 @@ You'll notice that the strongest alpha wave signals should be appearing in chann
 
 ## Improving Signal Quality
 
-For help minimizing noise and improving the quality of your EEG signals, check out [this document](Troubleshooting/01-MinimizingNoise.md)
+For help minimizing noise and improving the quality of your EEG signals, check out [this document](../../Troubleshooting/01-MinimizingNoise.md)
