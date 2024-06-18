@@ -44,7 +44,12 @@ It will convert any electrode that terminates in the industry-standard touch-pro
 
 For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
 
-### 4. Your 6V AA Battery Pack & 4 AA Batteries
+### 4. Your Lithium Polymer Battery and USB Charger (or 6V AA Battery Pack & 4 AA Batteries, pre-2024)
+
+Fully charge the Lithium Polymer Battery, until the charge indicator LED turns green.
+![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery.png)
+
+Pre-2024:
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/batteryConnection.png?raw=true" width="70%" />
 
