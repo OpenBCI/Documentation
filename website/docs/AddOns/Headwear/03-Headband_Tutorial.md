@@ -18,10 +18,11 @@ This tutorial will guide you through setting up your headband kit! Please read t
 3.  Dry flat snap silver-silver chloride coated EEG electrodes
 4.  Pack of snap electrode cables 
 5.  One adjustable headband strap
+6.  clip to attach your board case to the headband strap (in headband kit 0.5 meter variant)
 
 The comb and flat snap electrodes snap in and out of the cables easily. No tools needed. 
 
-All electrode wires end in a female header termination compatible with OpenBCI biosensing boards (Ganglion, Cyton, and CytonDaisy).
+All electrode wires end in a 0.1" female header termination compatible with OpenBCI biosensing boards (Ganglion, Cyton, and CytonDaisy).
 
 #### 10-20 Internationally Accepted EEG Node Placement
 
@@ -39,15 +40,20 @@ The Ganglion board supports four channels of EEG/EMG/EEG input and can stream da
 
 #### Battery
 
-All OpenBCI boards ship with a 2-pin standard JST compatible 4-AA battery holder OR a compact, rechargeable lithium polymer 3.7V battery and USB charger.
+All OpenBCI boards ship with a compact, rechargeable lithium polymer 3.7V battery and USB charger (or a 2-pin standard JST compatible 4-AA battery holder, pre-2023).
+
+![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery_and_charger.png)
+
+Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green
+
 
 #### Hardware
 
-Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. After you've peeled the protective layer off, and flipped the switches to **down** position, they will look like the image below. Please do not skip this step.
+Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. After you've peeled the protective layer off, and flipped the switches to **down** position, they will look like the image below.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="30%" />
 
-See the [Ganglion Hardware page](Ganglion/02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
+Optional: see the [Ganglion Hardware page](Ganglion/02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Headband_Pins.JPG?raw=true" width="30%" />
 
@@ -81,6 +87,16 @@ To attach the electrodes to the headband:
 2.  Place the electrode on the soft side of the velcro
 3.  Snap the two pieces together, with the velcro in between, to secure them.
 
+
+To attach the OpenBCI board onto the headband (for 0.5 meter variants):
+
+1. Snap the clip on the back of the clear board case (bottom half)
+2. Plug the compact lithium battery into the 2-pin JST on the back of the OpenBCI Board.
+3. Place your board and battery into the bottom half of the clear case, taking care to position the battery into the compartment
+4. Snap the top half of the board case onto the bottom, then "hook" the clip on the velcro strap
+
+When worn, the headband strap should fit quite snugly around the head, with the OpenBCI board positioned at the back of the head.
+
 #### OpenBCI Software
 
 Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md#download-install-run-the-openbci-gui) to prepare your computer to communicate with your Ganglion.
@@ -107,7 +123,11 @@ The Cyton board supports eight channels of EEG/EMG/EEG input and can stream data
 
 #### Battery
 
-All OpenBCI boards ship with a 2-pin standard JST compatible 4-AA battery holder OR a compact, rechargeable lithium polymer 3.7V battery and USB charger.
+All OpenBCI boards ship with a compact, rechargeable lithium polymer 3.7V battery and USB charger (or a 2-pin standard JST compatible 4-AA battery holder, pre-2023).
+
+![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery_and_charger.png)
+
+Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green.
 
 #### Hardware
 
@@ -147,6 +167,16 @@ To attach the electrodes to the headband:
 1.  Place the cable head on the rough side of the velcro
 2.  Place the electrode on the soft side of the velcro
 3.  Snap the two pieces together, with the velcro in between, to secure them.
+
+   
+To attach the OpenBCI board onto the headband (for 0.5 meter variants):
+
+1. Snap the clip on the back of the clear board case (bottom half)
+2. Plug the compact lithium battery into the 2-pin JST on the back of the OpenBCI Board.
+3. Place your board and battery into the bottom half of the clear case, taking care to position the battery into the compartment
+4. Snap the top half of the board case onto the bottom, then "hook" the clip on the velcro strap
+
+When worn, the headband strap should fit quite snugly around the head, with the OpenBCI board positioned at the back of the head.
 
 #### OpenBCI Software
 
