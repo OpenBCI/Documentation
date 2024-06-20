@@ -10,15 +10,15 @@ The **OpenBCI Community** interface is our latest project. It consists of:
 
 -   [The People](http://openbci.com/community/people/) - you! The people making posts and creating challenges
 -   [The Feed](http://openbci.com/community/) - where new community posts end up
--   [Join](http://openbci.com/community/wp-login.php?action=register) - the way to register (send this to your friends)!
+-   [Join](https://openbci.com/community/login-main/?action=register) - the way to register (send this to your friends)!
 
-After you [register](http://openbci.com/community/wp-login.php?action=register) and are verified (we must approve your application), your account will be switched from **subscriber** to **contributor**. After this, you'll be able to create posts and challenges! Posts appear in the [Community Feed](http://openbci.com/community/), and challenges appear on the Challenges Page. More on this below.
+After you [register](https://openbci.com/community/login-main/?action=register) and are verified (we must approve your application), your account will be switched from **subscriber** to **contributor**. After this, you'll be able to create posts and challenges! Posts appear in the [Community Feed](http://openbci.com/community/), and challenges appear on the Challenges Page. More on this below.
 
 ### Editing Your Profile
 
 Upon registering, you should have received an email with your Login/Password. If you did not, reach out to me and I’ll help you recover it. To edit your profile:
 
-1.  Go to the [OpenBCI Wordpress login](http://openbci.com/community/wp-login.php) & enter your Login/Password
+1.  Go to the [OpenBCI Wordpress login](http://openbci.com/community/login-main/) & enter your Login/Password
 
 -   Navigate to “Profile” on the left-hand side of the admin page
 -   Add any missing information
