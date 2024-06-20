@@ -33,19 +33,10 @@ Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI
 
 ### 1) Attaching the Daisy
 
-#### OPTION A) Attach Wifi Shield before attaching Daisy
 
-If you purchased a Wifi Shield (deprecated), attach it to the Cyton board, then attach the Daisy module on top of the Wifi Shield, shown below.
+####  Add the Daisy extension directly onto the Cyton Board
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Cyton_Daisy_Wifi.JPG?raw=true" width="60%" />
-
-The leads are connected to the pins in the same way as if you did not have the Wifi Shield. Skip to step 3 to connect Y-splitter cable.
-
-For more information on powering the Wifi shield, check out the [Wifi Getting Started Guide](03-Wifi_Getting_Started_Guide.md).
-
-#### OPTION B) Add the Daisy extension directly onto the Cyton Board
-
-If you are using the OpenBCI USB Dongle, attach the Daisy module on top of the Cyton Board, shown below.
+Carefully stack the Daisy module on top of the Cyton Board, as shown below.
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Cyton%2BDaisy%20Front%20Image.JPG?raw=true" width="60%" />
 
