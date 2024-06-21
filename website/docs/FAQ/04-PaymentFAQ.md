@@ -17,4 +17,4 @@ You can find all of our products listed on our online store: shop.openbci.com
 
 ## When will my credit card be charged?
 
-Our store system will authorize your card the moment you place your order and a settlement (debit) will likely occur within 48 hours.
+Our store system will authorize your card when the order is submitted and a settlement (debit) would occur within 48 hours.
