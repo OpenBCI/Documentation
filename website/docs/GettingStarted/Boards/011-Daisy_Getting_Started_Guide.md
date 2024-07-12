@@ -7,7 +7,7 @@ This guide will walk you through getting 16-channel input on your Cyton+Daisy Mo
 ## I. SET UP YOUR CYTON BOARD
 
 Refer to the Cyton Tutorial page:
-[Cyton Getting Started Guide](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md).
+[Cyton Getting Started Guide](../Boards/01-Cyton_Getting_Started_Guide.md).
 
 Follow the guide through the end of Step V. CONNECT YOURSELF TO OPENBCI
 
@@ -44,23 +44,23 @@ Carefully stack the Daisy module on top of the Cyton Board, as shown below.
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/GettingStartedImages/cytonDaisy_ySplitter_on_SRBpins.jpg?raw=true" width="60%" />
 
-The Y-Splitter connects the bottom `SRB` pin of the Daisy Board to the bottom `SRB` pin of the Cyton Board. The single end of the Y-Splitter connects to a reference point i.e. the earlobe or mastoid.
+The Y-Splitter connects the bottom `SRB` pin of the Daisy Board to the bottom `SRB` pin of the Cyton Board. The single end of the Y-Splitter connects to a reference point i.e. the earlobe or mastoid bone.
 
 ### 3) Connect the bottom `BIAS` pin of the Cyton to a second reference point
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Cyton_Daisy_BIAS.jpg?raw=true" width="60%" />
 
-**Usually, the earlobe is used as the reference point, because it has no muscle or neurons and therefore very low electrical signals.**
+**Usually, the earlobe or mastoid is used as the reference point, because it has no muscle or neurons and therefore low electrical signals.**
 
 ### 4) Connect Cyton bottom pins `N1P-N8P` and Daisy bottom pins `N1P-N8P` to leads
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/MarkIV/Cyton_Daisy_Setup.JPG?raw=true" width="80%" />
 
-Use the 16 of the color coded cables that came with your Ultracortex MarkIV headset.
+Use the 16 of the color coded cables that came with your Ultracortex MarkIV headset. Alternatively, you can use 16 of our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958), or [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
 
 Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. the cable colors should be in this order: gray, purple, blue, green, yellow, orange, red, and brown.
-For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
+For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' facing toward you since that side is a tiny bit wider than 0.1".
 
-Refer to the Ultracortex Mark IV [tutorial](AddOns/Headwear/01-Ultracortex-Mark-IV.md) to learn how to connect the male terminations of the color coded cables to the electrodes on the headset.
+Refer to the Ultracortex Mark IV [tutorial](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md) to learn how to connect the male terminations of the color coded cables to the electrodes on the headset.
 
-If you did not purchase a headset, you can use 16 of our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958), or [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
+
