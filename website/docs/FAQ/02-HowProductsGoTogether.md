@@ -33,8 +33,7 @@ The type of OpenBCI equipment you will need for your project mainly depends on a
   <summary>Location of sensors</summary>
   <ul>
     <li>This factor is directly related to the <b>data type</b> you are collecting. For example, you would purchase an EEG cap/headset if you are looking to sample data from the visual cortex (back of the head)</li>
-    <li>If you want sensor locations on the midline (top of the head) to measure brain data (EEG), then a good product option would be an EEG cap (https://shop.openbci.com/products/openbci-eeg-electrocap) or the
-      Ultracortex EEG Headset (https://shop.openbci.com/products/ultracortex-mark-iv).</li>
+    <li>If you want sensor locations on the midline (top of the head) to measure brain data (EEG), then a good product option would be an OpenBCI EEG cap or Ultracortex EEG Headset.</li>
     <li>If you want to focus on data from the temporal or frontal cortex, the [EEG headband kit](https://shop.openbci.com/products/openbci-eeg-headband-kit) is a good budget-friendly option.</li>
   </ul>
 </details>
