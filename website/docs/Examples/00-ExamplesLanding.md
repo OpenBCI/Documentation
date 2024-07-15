@@ -11,7 +11,17 @@ Whether you're new to neurotechnology or conducting research, OpenBCI makes it e
 
 ### P300 Example
 
+
+These projects linked below used the OpenBCI Cyton / CytonDaisy board to sample P300 data.
+
 [P300 Speller by UCLA](https://github.com/DarrenVawter/P300_BCI/) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) and [Gel Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
+ 
+[Student Club Competition winners, judged on quality of step-by-step documentation and technical output](https://openbci.com/community/2022-neurotechx-student-club-competition-winners/)
+ 
+[Older tutorial from 2015](https://blog.jfrey.info/2015/02/04/openbci-p300-coadapt/)
+ 
+[Other relevant links about P300, including datasets](https://openbci.com/community/publicly-available-eeg-datasets/)
+
 
 ### SSVEP Examples
 
