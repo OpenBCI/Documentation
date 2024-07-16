@@ -6,7 +6,7 @@ title: GUI Troubleshooting
 
 -   Want to know what's happening "under the hood" in the GUI?
     -   Click the Console Log button in the top right (pictured below).
-        ![gui console log button](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogButton.png)<br />
+    -   ![gui console log button](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogButton.png)<br />
 -   Need even more information to debug a problem?
     -   [Run GUI from Processing IDE](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci-gui-from-the-processing-ide) or [Visual Studio Code (Preferred)](https://github.com/OpenBCI/OpenBCI_GUI/wiki/Developer-Setup).
     -   Go to Debugging.pde and change `boolean isVerbose = false;` to `boolean isVerbose = true;`.
@@ -48,6 +48,14 @@ The default gain 24x may be too high for most. The optimal gain will vary depend
 -   [On Windows](Software/OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-windows)
 -   [On Linux](Software/OpenBCISoftware/01-OpenBCI_GUI.md#install-openbci_gui-on-linux)
 
+## Data on all channels without electrodes connected
+ 
+When electrodes/ground/reference electrodes are not attached to the Ganglion, Cyton, or CytonDaisy board, the device essentially acts as an un-tuned radio, picking up any/all background electromagnetic frequency (EMF).
+ 
+Turn off un-used channels by toggling the channel number icon in the GUI Time Series widget (to the left of each channel). Un-connected pins should be toggled off so that they don't influence the BIAS pin (noise-cancelling pin) of the Cyton/CytonDaisy board or the REF pin of the Ganglion board.
+For noise when electrodes ARE connected, see [Noise Reduction Guide](../Troubleshooting/01-MinimizingNoise.md).
+
+
 ## Troubleshooting Packet Loss
 
 ### Cyton
@@ -70,4 +78,4 @@ The default gain 24x may be too high for most. The optimal gain will vary depend
 
 ## Further troubleshooting
 
-If you're still having problems, search through the [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
+If you're still having problems, search through the [OpenBCI Technical Forum](openbci.com/forum), [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
