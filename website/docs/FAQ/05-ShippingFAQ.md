@@ -4,7 +4,7 @@ title: Shipping & Taxes
 ---
 ## Where do you ship to?
 
-**ALL** OpenBCI orders ship from the US. We ship worldwide!
+**ALL** OpenBCI orders ship from the US. We ship to all countries worldwide, excluding Russia.
 
 ## What are the shipping rates?
 
