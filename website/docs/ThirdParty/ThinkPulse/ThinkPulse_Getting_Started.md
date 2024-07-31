@@ -18,16 +18,13 @@ This kit has been designed and its compatibility tested for the 8 and 16 channel
 <br />
 <br />
 
-## ThinkPulse Starter Kit $349.99 Contents
+## ThinkPulse Starter Kit Contents
 
 <br />
 
 ![ThinkPulse contents](../../assets/ThirdPartyImages/ThinkPulse_starter_kit_contents.png)
 
 <br />
-
-Note, the replacement set $99.99 is just for those who want backup electrode tips. The Starter Kit $349.99 includes the necessary electrodes and electrode tips.
-
 <br />
 <br />
 
@@ -50,7 +47,6 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 The assembly video shows how to install the power supply board to a post-2018 Cyton and a pre-2018 Cyton.
 
 Some early ThinkPulse units have a hardware bug. The fix is a straightforward, quick solder job. The first minute of the video explains how to do it.
-
 ThinkPulse kits that shipped post-January 2021 are fixed and do not require soldering.
 If you need help or have any questions, email [support@openbci.com](mailto:support@openbci.com)
 
@@ -65,7 +61,7 @@ If you need help or have any questions, email [support@openbci.com](mailto:suppo
 
 [![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/J2ZVDfayahs)
 
-## Using the ThinkPulse™ sensors with OpenBCI Cyton Board
+## Troubleshooting the ThinkPulse™ sensors with OpenBCI Cyton Board
 
 The following information applies specifically to Cyton and Cyton+Daisy Boards. If you are seeing `RAILED` in the GUI, try the following tips:
 
@@ -78,6 +74,12 @@ The following information applies specifically to Cyton and Cyton+Daisy Boards. 
 7. Next time you want to use the Cyton with ThinkPulse Electrodes, open Hardware Settings to `Load` and then `Send` channel settings. If you are using BrainFlow outside of the GUI, simply send these commands after instantiating the Board.
 
 ![ThinkPulse and Cyton Channel Setting Example](../../assets/ThirdPartyImages/ThinkPulse_Cyton_HardwareChannelSetting.png)
+
+## How to replace ThinkPulse™ electrode prongs
+
+Removal: Insert a small flat screwdriver where the electrode prongs seat into the electrode body. Gently pull/twist until the prongs loosen.
+<br>
+Installation: To install replacement prongs, insert into the electrode body and twist until secure.
 
 ## Technical Specs and Data Sheet
 
