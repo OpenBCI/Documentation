@@ -10,6 +10,7 @@ module.exports = {
   customFields: {
     gaGtag: true,
   },
+  noIndex: false,
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "log",
   trailingSlash: true,
@@ -101,4 +102,4 @@ module.exports = {
       algoliaOptions: {},
     },
   },
-};
+}
