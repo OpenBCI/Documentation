@@ -2,6 +2,7 @@
 id: ThinkPulse
 title: "ThinkPulse Getting Started Guide"
 ---
+
 Available exclusively worldwide only on the [OpenBCI® store](https://shop.openbci.com/products/thinkpulse-active-electrode-kit).
 
 ## About Conscious Labs
@@ -78,7 +79,7 @@ The following information applies specifically to Cyton and Cyton+Daisy Boards. 
 ## How to replace ThinkPulse™ electrode prongs
 
 Removal: Insert a small flat screwdriver where the electrode prongs seat into the electrode body. Gently pull/twist until the prongs loosen.
-<br>
+<br />
 Installation: To install replacement prongs, insert into the electrode body and twist until secure.
 
 ## Technical Specs and Data Sheet
@@ -87,22 +88,23 @@ Installation: To install replacement prongs, insert into the electrode body and 
 
 <br />
 
-| Parameters | Specs |
-|---|---|
-| Electrode Height | 7 mm |
-| External Diameter | 19 mm |
-| Bio-contact Area Diameter | 15 mm |
-| Material | Conductive polymer |
-| Polymer Dielectric Resistivity | 3.6 Ohm.cm |
-| Through Polymer Resistance | &lt;70 Ohm |
-| Typical Consumption | 5 mW |
-| Active amplification Gain | 0 dB |
-| Electrode Noise | &lt;10nV |
-| Bandwidth | >10KHz |
+| Parameters                     | Specs              |
+| ------------------------------ | ------------------ |
+| Electrode Height               | 7 mm               |
+| External Diameter              | 19 mm              |
+| Bio-contact Area Diameter      | 15 mm              |
+| Material                       | Conductive polymer |
+| Polymer Dielectric Resistivity | 3.6 Ohm.cm         |
+| Through Polymer Resistance     | &lt;70 Ohm         |
+| Typical Consumption            | 5 mW               |
+| Active amplification Gain      | 0 dB               |
+| Electrode Noise                | &lt;10nV           |
+| Bandwidth                      | >10KHz             |
 
 <br />
 
 ## Additional Troubleshooting
+
 When using the ThinkPulse Active Electrodes with Cyton, make sure to set the [correct channel settings](#using-the-thinkpulse-sensors-with-openbci-cyton-board). This should resolve most issues. If you still have issues, you can reach out on the [OpenBCI Forum](https://openbci.com/forum) or send us an email at [contact@openbci.com](mailto:contact@openbci.com).
 
 You can also refer to [this resolved troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Forum.
