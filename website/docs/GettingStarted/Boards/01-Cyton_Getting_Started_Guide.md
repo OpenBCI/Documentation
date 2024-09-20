@@ -142,7 +142,9 @@ The CHANNEL COUNT setting is defaulted to 8. If you are working with an OpenBCI 
 
 ### 5. Optional Settings
 
-<details><summary>If you're comfortable using the GUI, use the optional settings in this dropdown section. Otherwise, skip to step 7!</summary><br />
+<details>
+
+<summary>If you're comfortable using the GUI, use the optional settings in this dropdown section. Otherwise, skip to step 7!</summary><br />
 
 #### Check Status or Change Radio Channel
 
