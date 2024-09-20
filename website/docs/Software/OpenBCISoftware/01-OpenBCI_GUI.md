@@ -30,7 +30,9 @@ If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Da
 
 ### Linux Users: Serial Port Permissions
 
-<p /><details><summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</i></b></summary><br />
+<p /><details>
+
+<summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</i></b></summary><br />
 
 Before trying to connect to any OpenBCI boards on Linux, you need to make sure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or similar. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [full explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br /><br />
 
@@ -63,7 +65,9 @@ Drag and drop the `OpenBCI_GUI` application to you `Applications` folder.
 
 Move the `OpenBCI_GUI` directory anywhere you like.
 
-<details><summary><i>Windows Users: How to run the GUI with High DPI Screens</i></summary>
+<details>
+
+<summary><i>Windows Users: How to run the GUI with High DPI Screens</i></summary>
 
 <br />If you have a high DPI screen and are running Windows 10, you may notice that the GUI is hard to see, and nothing seems to scale correctly.<br />
 
@@ -89,7 +93,9 @@ Move the `OpenBCI_GUI` directory anywhere you like.
 
 <p>Unzip the downloaded application and place in desired location.</p><br />
 
-<p /><details><summary><i>Linux Users: How to run the GUI with High DPI Screens</i></summary>
+<p /><details>
+
+<summary><i>Linux Users: How to run the GUI with High DPI Screens</i></summary>
 
 On Linux, there is no way to force scaling. However, here is a <a href="https://github.com/kaueraal/run_scaled">link to a script that should work</a>.
 

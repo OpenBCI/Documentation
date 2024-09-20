@@ -140,7 +140,9 @@ Before starting the session, expand the dropdown in the "Write to SD Card?" sect
 
 ### Converting Hex files in OpenBCI GUI
 
-<details><summary><b>DEPRECATED -- Expand this dropdown for instructions to convert SD files using GUI v4.2.0</b></summary>
+<details>
+
+<summary><b>DEPRECATED -- Expand this dropdown for instructions to convert SD files using GUI v4.2.0</b></summary>
 
 <br />Note: To convert very large recordings, you must run the OpenBCI_GUI Sketch in Processing after changing "Increase Maximum Available Memory to: " at least 9000 MB aka 9GB.<br />
 
