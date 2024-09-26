@@ -7,7 +7,11 @@ Please note all orders ship **after** full payment. Orders cannot be split betwe
 ## How do I request a quotation or an invoice?
 There are two methods of getting a quotation. 
 
-The first and faster method is to use the self-service quote tool on our [website](https://shop.openbci.com). Select the product you'd like a quote for and use the "Add to Quote" button (below the "Add to cart" button.) You can add multiple items to the quote by clicking "Continue Browsing". Once you have all items required added to the quote, click "Show Quote Cart" to finalize the quote. You will receive an email with the PDF quote. 
+### Request a quote using the self service tool
+
+The first and faster method is to use the self-service quote tool on our [website](https://shop.openbci.com). Select the product you'd like a quote for and use the "Add to Quote" button (below the "Add to cart" button). You can add multiple items to the quote by clicking "Continue Browsing". Once you have all items required added to the quote, click "Show Quote Cart" to finalize the quote. You will receive an email with the PDF quote. 
+
+### Request a quote via email
 
 The second method-
  First, make a customer [account](https://shop.openbci.com/account/register) with your email and shipping address. 
