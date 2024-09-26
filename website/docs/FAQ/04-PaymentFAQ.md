@@ -13,7 +13,6 @@ The first and faster method is to use the self-service quote tool on our [websit
 
 ### Request a quote via email
 
-The second method-
  First, make a customer [account](https://shop.openbci.com/account/register) with your email and shipping address. 
 
 After this step is complete, please email us at [sales@openbci.com](mailto:sales@openbci.com) and provide the following info:
