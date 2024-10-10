@@ -14,8 +14,6 @@ This tutorial will cover a couple of ways to add an external trigger to the Open
 
 Follow the official [OpenBCI GUI guide](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
 
-Be sure that your Cyton firmware is later than [v3.1.0](https://github.com/OpenBCI/OpenBCI_32bit_Library/releases/tag/v3.1.0) by following the [**tutorial here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
-
 Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui) (remember to [run your OpenBCIHub application](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-on-windows) first windows users!).
 
 Once the GUI has launched, follow the guide to [connect to your Cyton from the OpenBCI GUI](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
@@ -26,7 +24,6 @@ You can verify the digital read widget is working by pressing the "PROG" button 
 
 When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](Troubleshooting/03-FTDI_Fix_Linux.md)!
 
-When you use a Cyton over [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550), you get up to 3 digital IO pins to read from: D11, D12 and D17! There should be no noticeable delay from when you touch the button and when the digital read widget in the GUI shows the button pressed.
 
 ### Programmatically Setting Board Mode
 
@@ -186,4 +183,4 @@ triggerValue = digitalRead(triggerPin);    // feel the trigger pin
 
 ```
 
-Have fun, be safe, and, as always, we're [here to help](http://openbci.com/index.php/forum/)
+As always, help can be found at support@openbci.com and [openbci.com/forum](openbci.com/forum).
