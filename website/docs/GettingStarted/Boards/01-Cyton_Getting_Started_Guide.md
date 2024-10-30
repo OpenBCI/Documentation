@@ -11,7 +11,7 @@ This guide will walk you through setting up your computer to use the Cyton and U
 
 1.  OpenBCI Cyton Board
 2.  OpenBCI Dongle
-3.  OpenBCI Gold Cup Electrodes and Ten20 Paste
+3.  Electrodes and cables, such as OpenBCI Gold Cup Electrodes and Ten20 Paste
 4.  Lithium battery and charger OR 6V battery pack (AA batteries not included)
 5.  Optional: (x4) plastic feet for board stabilization. Not needed if you have a board case
 
