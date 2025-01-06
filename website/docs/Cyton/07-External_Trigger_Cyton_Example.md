@@ -2,6 +2,7 @@
 id: CytonExternal
 title: External Trigger on OpenBCI Cyton Board
 ---
+
 Sometimes, when studying EEG or other biopotential signals, you will want to have precise timing between external events or stimulus and the data stream. For example, if you are working with P300 waves it is necessary to know the exact time that the signal was presented to the subject in order to look for the tell-tale brain wave that happens about 300mS after the stimulus.
 
 This tutorial will cover a couple of ways to add an external trigger to the OpenBCI data stream on our 32bit Board. Normally, the Cyton board reads from the Accelerometer at 25 Hz. When we change board mode to `Analog` or `Digital` mode, we read from the external pins at same rate as the signal pins (e.g. 250 Hz)! This is what allows for the precise timing needed for external triggers.
@@ -24,7 +25,6 @@ You can verify the digital read widget is working by pressing the "PROG" button 
 
 When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](Troubleshooting/03-FTDI_Fix_Linux.md)!
 
-
 ### Programmatically Setting Board Mode
 
 Firmware 3.x.x brings a long requested out-of-the-box ability to read from analog or digital inputs with the default firmware. Allowing you to simply read from the analog input (sending `/2`) or digital input (sending `/3`) with the type of two ascii commands. The default board is activated by default, and can always be achieved again by sending a `/0`.
@@ -33,7 +33,7 @@ Learn more about board modes in the [Cyton SDK](Cyton/04-OpenBCI_Cyton_SDK.md#fi
 
 ### External Triggering The Easy Way (Firmware 2.x.x)
 
-Update to firmware version 3.x.x using the tutorial [**here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!  
+Update to firmware version 3.x.x using the tutorial [**here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
 
 ### Sample Code Links
 
@@ -67,12 +67,12 @@ void setup(){
 
 ```
 
-  		// you can set EITHER useAccel or useAux to true
-  		// if you want both, you MUST set and clear one of the variables every sample
-		OBCI.useAccel = false;  // option to add/remove accelerometer data to stream
-  		OBCI.useAux = true;     // option to add/remove auxiliary data to stream
-		// more stuff...
-	{"}"}
+// you can set EITHER useAccel or useAux to true
+// if you want both, you MUST set and clear one of the variables every sample
+OBCI.useAccel = false; // option to add/remove accelerometer data to stream
+OBCI.useAux = true; // option to add/remove auxiliary data to stream
+// more stuff...
+{"}"}
 
 Then, in the loop, we want to check for the rising edge of the button press, make note of it in the auxData array, and set the write-to-SD flag (if you like). Finally, we want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet anatomy) There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
 
@@ -82,7 +82,7 @@ pushButtonValue = digitalRead(pushButton);    // feel the PROG button
 if (pushButtonValue != lastPushButtonValue){  // if it's changed,
     	if (pushButtonValue == HIGH){    // if it's gone from LOW to HIGH
       		// 0x6220 converts to PI in GUI
-      		OBCI.auxData[0] = OBCI.auxData[1] = OBCI.auxData[2] = 0x6220;  
+      		OBCI.auxData[0] = OBCI.auxData[1] = OBCI.auxData[2] = 0x6220;
       		addAuxToSD = true;       // add Aux Data to the SD card if it's there
       		state = !state;		// toggle the state variable
       		digitalWrite(LED,state);	// toggle the LED for user useability
@@ -155,12 +155,12 @@ void setup(){
 
 ```
 
-  		// you can set EITHER useAccel or useAux to true
-  		// if you want both, you MUST set and clear one of the variables every sample
-		OBCI.useAccel = false;  // option to add/remove accelerometer data to stream
-  		OBCI.useAux = true;     // option to add/remove auxiliary data to stream
-		// more stuff...
-	{"}"}
+// you can set EITHER useAccel or useAux to true
+// if you want both, you MUST set and clear one of the variables every sample
+OBCI.useAccel = false; // option to add/remove accelerometer data to stream
+OBCI.useAux = true; // option to add/remove auxiliary data to stream
+// more stuff...
+{"}"}
 
 ```
 
@@ -183,4 +183,4 @@ triggerValue = digitalRead(triggerPin);    // feel the trigger pin
 
 ```
 
-As always, help can be found at support@openbci.com and [openbci.com/forum](openbci.com/forum).
+As always, help can be found at support@openbci.com and [openbci.com/forum](https://www.openbci.com/forum).
