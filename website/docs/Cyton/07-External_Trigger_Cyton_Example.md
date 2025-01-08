@@ -29,7 +29,7 @@ When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D
 
 Firmware 3.x.x brings a long requested out-of-the-box ability to read from analog or digital inputs with the default firmware. Allowing you to simply read from the analog input (sending `/2`) or digital input (sending `/3`) with the type of two ascii commands. The default board is activated by default, and can always be achieved again by sending a `/0`.
 
-Learn more about board modes in the [Cyton SDK](Cyton/04-OpenBCI_Cyton_SDK.md#firmware-v300-new-commands-board-mode).
+Learn more about board modes in the [Cyton SDK](Cyton/04-OpenBCI_Cyton_SDK.md#board-mode).
 
 ### External Triggering The Easy Way (Firmware 2.x.x)
 

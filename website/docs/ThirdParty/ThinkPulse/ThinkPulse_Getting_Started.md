@@ -105,7 +105,7 @@ Installation: To install replacement prongs, insert into the electrode body and 
 
 ## Additional Troubleshooting
 
-When using the ThinkPulse Active Electrodes with Cyton, make sure to set the [correct channel settings](#using-the-thinkpulse-sensors-with-openbci-cyton-board). This should resolve most issues. If you still have issues, you can reach out on the [OpenBCI Forum](https://openbci.com/forum) or send us an email at [contact@openbci.com](mailto:contact@openbci.com).
+When using the ThinkPulse Active Electrodes with Cyton, make sure to set the [correct channel settings](#troubleshooting-the-thinkpulse-sensors-with-openbci-cyton-board). This should resolve most issues. If you still have issues, you can reach out on the [OpenBCI Forum](https://openbci.com/forum) or send us an email at [contact@openbci.com](mailto:contact@openbci.com).
 
 You can also refer to [this resolved troubleshooting thread](https://openbci.com/forum/index.php?p=/discussion/2869/thinkpulse-active-electrodes-q-a-resolved) in the OpenBCI Technical Forum.
 

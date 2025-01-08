@@ -2,6 +2,7 @@
 id: WiFiAPI
 title: OpenBCI WiFi Shield API
 ---
+
 The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.
 
 ## Overview
@@ -10,7 +11,7 @@ One of the coolest parts of the WiFi Shield is its HTTP web server. For develope
 
 ## Prerequisites
 
-Follow the [WiFi Getting Started Guide](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#wifi-getting-started-guide-prerequisites) to get your WiFi Shield on your Wireless Network.
+Follow the [WiFi Getting Started Guide](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md) to get your WiFi Shield on your Wireless Network.
 
 ## Get Wifi Shield on Local Wireless Network
 
@@ -102,7 +103,7 @@ Refer to [http server description](https://app.swaggerhub.com/apis/pushtheworld/
 
 Refer to [http server description](https://app.swaggerhub.com/apis/pushtheworld/openbci-wifi-server/1.3.0) swagger.io page as the single source of truth in regards to the OpenBCI Wifi Server.
 
-The time in micro seconds (us) between packet sends. The higher the OpenBCI sample rate, the higher the latency needed. Default is 1000us, minimum stable is 50us. For upper limit sample rates such as 4kHz/8kHz/16kHz, latency around 20ms seems to really stabilize the system.  
+The time in micro seconds (us) between packet sends. The higher the OpenBCI sample rate, the higher the latency needed. Default is 1000us, minimum stable is 50us. For upper limit sample rates such as 4kHz/8kHz/16kHz, latency around 20ms seems to really stabilize the system.
 
 ## Parsing Data from Wifi Shield
 
@@ -114,7 +115,7 @@ The first byte to send is the control byte. For streaming data, that goes on the
 
 ```
 
-/*  
+/*
  * @description Writes channel data and axisData array to serial port in
  *  the correct stream packet format.
  */
