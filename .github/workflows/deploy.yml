@@ -30,13 +30,16 @@ jobs:
       - name: Build website
         run: npm run build
       - name: List files in build directory
-        run: cd build && ls
+        run: cd build && ls && cd ..
+      - name: List files in website directory
+        run: ls
 
       - name: Upload Build Artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
+          retention-days: 1
 
   deploy:
     name: Deploy to GitHub Pages
