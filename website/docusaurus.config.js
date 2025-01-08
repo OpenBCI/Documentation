@@ -5,6 +5,7 @@ module.exports = {
   baseUrl: "/",
   organizationName: "OpenBCI",
   projectName: "Documentation",
+  deploymentBranch: "gh-pages",
   scripts: ["https://buttons.github.io/buttons.js"],
   favicon: "img/favicon_large.ico",
   customFields: {
