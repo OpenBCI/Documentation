@@ -450,9 +450,9 @@ Here is a table of the column headers and descriptions for the **Cyton + Daisy**
 :::info Cyton Aux Channels
 In Digital Read mode, the 4th "Other" channel is connected to the D17 pin by default. This pin can be triggered by pressing the "PROG" button. This is useful for adding manual timestamps to your data.
 
-You can also attach your own button to another pin, as shown in [the Puppies and Kittens Experiment](../../Examples/Video_Experiment.md/#step-2-breadboard-setup).
+You can also attach your own button to another pin, as shown in [the Puppies and Kittens Experiment](../../Examples/Video_Experiment.md#step-2-breadboard-setup).
 
-Depending on the [Cyton board mode](../../Cyton/04-OpenBCI_Cyton_SDK.md/#board-mode), the other channels will not display meaningful data. There are three modes currently used by the OpenBCI GUI: default (with Accelerometer), Analog Mode, and Digital Mode. These can be toggled within the appropriate widget during live recording sessions, and data will be displayed when using Playback Mode in the corresponding widgets. We recommend changing your board more _before_ starting your recordings.
+Depending on the [Cyton board mode](../../Cyton/04-OpenBCI_Cyton_SDK.md#board-mode), the other channels will not display meaningful data. There are three modes currently used by the OpenBCI GUI: default (with Accelerometer), Analog Mode, and Digital Mode. These can be toggled within the appropriate widget during live recording sessions, and data will be displayed when using Playback Mode in the corresponding widgets. We recommend changing your board more _before_ starting your recordings.
 :::
 
 ### Ganglion

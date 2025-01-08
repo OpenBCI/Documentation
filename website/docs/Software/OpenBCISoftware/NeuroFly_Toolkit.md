@@ -35,7 +35,7 @@ The most complex part of this tutorial will be finding the right placement for e
 
 ## Step 2: GUI Setup
 
-Start by streaming data using the GUI. Follow this [getting started tutorial](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md/#using-the-openbci-gui) to get the board streaming. You will need to open the EMG Joystick and EMG Settings widgets.
+Start by streaming data using the GUI. Follow this [getting started tutorial](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#using-the-openbci-gui) to get the board streaming. You will need to open the EMG Joystick and EMG Settings widgets.
 
 ### EMG Settings
 
@@ -68,7 +68,7 @@ This widget has an indicator that moves in the direction of the activated EMG ch
 
 ## Step 3: Stream Data Using Networking Widget
 
-Follow the [Networking Tutorial](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md/#networking) to learn how to stream data using UDP from the GUI. For this project, you will need to stream the EMG channel data from the Networking Widget. **Make sure your EMG joystick widget is open when streaming**. Your Networking settings should look as follows:
+Follow the [Networking Tutorial](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to learn how to stream data using UDP from the GUI. For this project, you will need to stream the EMG channel data from the Networking Widget. **Make sure your EMG joystick widget is open when streaming**. Your Networking settings should look as follows:
 
 ![UDP Networking Widget Screenshot](../../assets/TutorialImages/UDP_drone.png)
 
