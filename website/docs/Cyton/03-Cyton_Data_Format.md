@@ -196,7 +196,7 @@ Accelerometer Scale Factor = 0.002 / 2^4;
 
 **As of January 2021, these constants and equations are included in BrainFlow for Cyton users!** This means users can pick any supported language and the data will already be scaled appropriately. These equations are still necessary if you plan to use data stored to SD card using a Cyton.
 
-## 16 Channel Data with Daisy Mdule
+## 16 Channel Data with Cyton+Daisy
 
 Our 16 channel system allows for control of individual settings for all 16 channels, and data is retrieved from both ADS1299 IC at a rate of 250SPS. The current bandwith limitations on our serial radio links limit the number of packets we can send. To solve for this, we are sending data packet at the same rate of 250SPS, and alternating sample packets between the on Board ADS1299 and the on Daisy ADS1299. The method takes an average of the current and most recent channel values before sending to the radio. The first sample sent will be invalid because there is no previous sample to average it with.  After this, on **odd** sample numbers, the Board ADS1299 values are sent, and on **even** sample numbers, the Daisy ADS1299 samples are sent. When running the system with 16 channels, it is highly recommended that you use an SD card to store the raw (un-averaged) data for post processing.
 
