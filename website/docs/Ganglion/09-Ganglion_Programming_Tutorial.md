@@ -151,7 +151,7 @@ chmod u+x /Users/$USER/Library/Arduino15/packages/OpenBCI/hardware/Simblee/1.1.4
 
 On Linux, open a terminal and paste in:
 ```
-chmod u+x /Users/$USER/Library/Arduino15/packages/OpenBCI/hardware/Simblee/1.1.4/nrfutil_linux
+chmod u+x ~/.arduino15/packages/OpenBCI/hardware/Simblee/1.1.4/nrfutil_linux
 ```
 
 To create the OTA files, first ensure your sketch is saved. Arduino may notify you that your sketch is read-only in which case you will need to select a new location to save it. Next, select `Sketch -> Export compiled Binary`. The Arduino IDE will take a few moments, and the IDE will create the `.zip` file you need for OTA in the sketch folder right beside where you saved your sketch.
