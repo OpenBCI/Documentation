@@ -422,7 +422,7 @@ Supporting all v1.0.0 and v2.0.0, the v3.0.0 firmware extends the OpenBCI system
 **~(COMMAND)**  
 This works similar to the Channel Settings commands, however, there is no latching character. Power cycling the OpenBCI board will cause the sample rate to reset back to default of 250Hz.
 
-**IMPORTANT!** The Cyton with USB Dongle cannot and will not stream data over 250SPS. Plug in the [WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550) to get speeds over 250SPS streaming. You may still write to an SD card though, the firmware will not send EEG data over the Bluetooth radios.
+**IMPORTANT!** The Cyton with USB Dongle cannot and will not stream data over 250SPS.
 
 **COMMAND**
 
