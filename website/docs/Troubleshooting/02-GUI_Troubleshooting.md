@@ -16,6 +16,18 @@ title: GUI Troubleshooting
 
 ![gui troubleshooting console window](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogWindow.png)<br />
 
+## Cyton-GUI Manual Connection Steps
+1. check that the Dongle's switch is set to 'GPIO6'
+2. unplug and re-plug the Dongle. You should see the Dongle's red LED flicker, then a blue LED turn on
+3. set Cyton board power switch to 'PC'. Do not at any point, press Cyton board's RST buttons
+4. in the GUI window, select CYTON (live)
+5. under 'PICK TRANSFER PROTOCOL', select Serial (from Dongle)
+6. under 'SERIAL CONNECT', select 'Manual' , NOT 'Auto'
+7. click on the Serial port number so that the number is highlighted green
+8. under 'Radio Configuration', select 'SYSTEM STATUS'
+9. you should see 'Success! Channel 20'
+10. hit ‘Start Session’
+
 ## Issues Connecting & Starting Session
 
 1.  If you receive an error in red at the bottom of the GUI while trying to connect to an OpenBCI board, try turning the board Off and back On.
