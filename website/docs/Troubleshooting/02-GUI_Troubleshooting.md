@@ -74,7 +74,7 @@ Please, be advised that packet loss can occur in noisy environments, especially 
 
 To fix this:
 
-- Use a USB extension cable or hub to make sure Cyton and Dongle are closer together.
+- Use a long USB extension cable, such as this [model](https://a.co/d/dwsweYF), to make sure Cyton and Dongle are closer together.
 
 - Go to Manual Radio Configuration and try `CHANGE CHAN.` or `AUTOSCAN` as shown in the picture below. You can hover over these buttons with your mouse for a brief description. The Auto Connect button is disabled when using Manual Radio Config.
 
