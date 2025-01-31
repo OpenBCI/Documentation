@@ -40,7 +40,7 @@ Every so often, an error will occur with the wireless communication between your
 8. Hit "START SESSION"
  
 #### General tips for reducing noise (Cyton and Ganglion boards):
-* Plug the dongle into a USB hub or USB extension cord. This limits radio interference caused by computers.
+* Plug the dongle into a USB hub or USB extension cord, such this [model](https://a.co/d/dwsweYF). This limits radio interference caused by computers.
 * Toggle on the filters in the OpenBCI GUI
 * Use the feet that came with the board
 * Use a fully charged battery
