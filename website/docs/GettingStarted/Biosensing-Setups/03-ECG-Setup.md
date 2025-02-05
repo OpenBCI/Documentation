@@ -34,8 +34,20 @@ After making these connections, snap the sticky electrodes into the snap electro
 
 ### Connect the electrodes to your body
 
-1.  Stick the ground electrode to a bony part of the chest, such as the sternum.
-2.  Connect top and bottom N1P pin on the Cyton (if using Ganglion, connect +1 and -1 pins) to opposite sides of your chest.
+The standard placement of leads for a 3-lead ECG is shown below:
+
+![3 Lead ECG Setup](../../assets/TutorialImages/3-lead-ecg-placement.jpg)
+
+<br />
+| Diagram | Body      |
+| ------- | --------- |
+| LA      | Left Arm  |
+| RA      | Right Arm |
+| LL      | Left Leg  |
+<br />
+
+1.  Connect the BIAS (if using the Ganglion then the D_G) electrode to the LL position as shown in the diagram. The LL electrode needs to stick to a bony part of your body so the sternum can also be used as an LL position.
+2.  Connect top and bottom N1P pin on the Cyton (if using Ganglion, connect +1 and -1 pins) to the LA and RA position as shown in the diagram.
 
 By doing this, we are instructing the data to measure the electric potential difference across your chest, which will in turn display your heart signals.
 
@@ -51,7 +63,7 @@ In the Cyton image above, note how the positive and negative terminals (yellow a
 
 ## 5-Lead ECG with Cyton Board
 
-This step by step 5-Lead ECG guide will show you how to get 4 channels of live ECG data.
+This step by step 5-Lead ECG guide will show you how to get 3 channels of live ECG data.
 It builds on the above guide to 3-Lead ECG and adds only a few additional steps, so be sure to review the above sections in their entirety before getting started on the 5-Lead ECG.
 
 ## Materials Needed
