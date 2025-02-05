@@ -11,4 +11,3 @@ The guides below offer tips on common hardware and software issues and how to fi
 - [FTDI Buffer Fix on OS X](Troubleshooting/05-FTDI_Driver_Fix_Mac.md)
 - [FTDI Buffer Fix on Windows](Troubleshooting/04-FTDI_Fix_Windows.md)
 - [MacOS Ganglion BLE Workaround](Troubleshooting/MacOS_Ganglion_BLE_Workaround.md)
-- [Using Multiple Cytons in The Same Room](Troubleshooting/Change_Radio_Channel_Cyton.md)
