@@ -246,7 +246,7 @@ Make sure to have the corresponding widget open, depending on the data type you 
 ### Serial
 
 :::warning
-Arduino isn't ideal for advanced digital signal processing on time series data, so we don't recommend using raw time series data for serial output. If you're using an Arduino, we suggest working with BandPower data instead for better performance.
+Arduino isn't ideal for advanced digital signal processing on raw time series data, so we don't recommend using raw time series data for serial output. If you're using an Arduino, we suggest working with BandPower data instead for better performance.
 :::
 
 Able to stream one data type. The data is sent sequentially, bit by bit, in consecutive packets. Serial is the main networking protocol that can be used when using OpenBCI with Arduino.
