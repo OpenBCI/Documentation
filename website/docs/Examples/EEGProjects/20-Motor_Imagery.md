@@ -2,6 +2,8 @@
 id: MotorImagery
 title: Motor Imagery
 ---
+**NOTEe** There are known stumbling blocks with this tutorial. The author is not available for questions.
+
 This tutorial was made by Rakesh C Jakati.
 
 Motor imagery (MI)–based brain-computer interface (BCI) is one of the standard concepts of BCI, in that the user can generate induced activity from the motor cortex by imagining motor movements without any limb movement or external stimulus.
