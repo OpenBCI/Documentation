@@ -255,6 +255,75 @@ Able to stream one data type. The data is sent sequentially, bit by bit, in cons
 
 User Datagram Protocol is used primarily for establishing low-latency and loss-tolerating connections between applications on the internet. The UDP protocol allows for up to three different data sets to be sent to three different applications.
 
+#### Running sample Python UDP scripts
+
+##### Sample scripts overview
+> 📌 **Repository URL**: [OpenBCI GUI Networking-Test-Kit - UDP](https://github.com/OpenBCI/OpenBCI_GUI/tree/master/Networking-Test-Kit/UDP)
+
+This section explains how to test **UDP marker reception** in OpenBCI GUI using the **Networking-Test-Kit**. The test consists of two Python scripts:
+
+- **`udp_receive_marker.py`** - Starts a UDP listener to receive marker packets.
+- **`udp_send_marker.py`** - Sends test UDP marker packets to the listener.
+
+
+##### Prerequisites
+
+Before running the test, ensure the following:
+
+- **Python 3** is installed (`python3 --version`).
+- You are inside the **Networking-Test-Kit/UDP** directory:
+
+  ```sh
+  cd path/to/OpenBCI_GUI/Networking-Test-Kit/UDP
+  ```
+
+##### Running the UDP Test
+> ⚠ **Important:** 
+> The **receiver must start before the sender**, otherwise the UDP packets will be lost.
+
+Open **Terminal 1** and run:
+
+```sh
+  python3 -m udp_receive_marker --ip 127.0.0.1 --port 12345 --option print
+```
+
+Open **Terminal 2** and run:
+
+```sh
+  python3 -m udp_send_marker --ip 127.0.0.1 --port 12345
+```
+
+##### Expected Sender Output
+```sh
+---------------------
+-- UDP MARKER SEND --
+---------------------
+IP: 127.0.0.1
+PORT: 12345
+--------------------=
+```
+
+##### Expected Receiver Output
+```sh
+--------------------
+-- UDP LISTENER --
+--------------------
+IP: 127.0.0.1
+PORT: 12345
+--------------------
+print option selected
+Listening for UDP packets...
+Received Marker: 2.506424330049714
+Received Marker: 1.5585284066901215
+Received Marker: 2.8304827346407384
+<continued...>
+```
+
+:::tip
+[The Marker Widget supports receiving UDP packets for marking timestamps in data via external hardware](#external-marking-via-udp)
+:::
+---
+
 ### LSL
 
 Lab Streaming Layer is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as [Matlab](../../Software/CompatibleThirdPartySoftware/01-Matlab.md).
@@ -317,11 +386,72 @@ In the picture below, you will see an example of some acceptable impedance value
 
 ## Playback Widget
 
-This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
+This widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
 
 ## Pulse Widget
 
 This widget will only show for Cyton in Live mode. It uses the Analog Read mode to get data from the pin marked D11 on the Cyton. Using this data, the widget will calculate the Beats per minute (BPM) and the Interbeat Interval (IBI). When using the Networking widget, this data type will send BPM, Raw Signal, and IBI.
+
+## Marker Widget
+
+This widget provides a method for marking timestamps during a live session in realtime with values ranging from 1 to 8. These markers appear on the time-series graph, where the bar height corresponds to the selected marker value. When a marker input button is pressed, a bar is placed at the corresponding timestamp in the graph. The marker data is saved in the output data under the "Marker" column. The graph progresses forward over time and displays past time data, allowing users to see the history of marker inputs.
+
+Additionally, users can configure:
+- Vertical Scale (Vert scale): Adjusts the height of the graph so that only values less than the specified height are displayed.
+- Time Window (Window): Defines how many seconds backwards the time-series graph displays data.
+- IP address input: Defines the target IP for receiving external markers.
+- Port input: Specifies the port for receiving UDP marker data.
+
+![Marker Widget Live Mode with Data](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-MarkerWidget.png)
+
+### Inputs
+
+#### UI Buttons
+The GUI features 8 dedicated buttons, each representing a unique marker value:
+- Pressing a button inserts the corresponding marker into the time-series data.
+- The height of the bar in the graph represents the marker value at a given timestamp.
+- A bar is placed at the corresponding timestamp when a marker input button is pressed.
+- The marker data is recorded in the output data under the "Marker" column.
+
+#### Keyboard Inputs
+Users can input markers using specific keyboard keys:
+
+| Key Press | Marker Value |
+|-----------|-------------|
+| `z`       | 1           |
+| `x`       | 2           |
+| `c`       | 3           |
+| `v`       | 4           |
+| `Z`       | 5           |
+| `X`       | 6           |
+| `C`       | 7           |
+| `V`       | 8           |
+:::note
+Previous functionalities associated with these keys have been removed.
+:::
+
+#### Graph Configuration
+
+| Setting       | Description |
+|--------------|-------------|
+| **Vert scale** | Adjusts the height of the graph so that only values less than the specified height are displayed. |
+| **Window** | Defines how many seconds backwards the time-series graph displays data. |
+
+
+### External Marking via UDP
+
+This method can be used to mark timestamps in live sessions with external hardware. Users can set the IP Address and Port to their external hardware configurations. The UDP Receiver starts listening upon GUI startup.
+
+The UDP receiver expects a single floating-point value, which represents the marker. The UDP packet data containing the single floating-point value must be formatted as 4 bytes of raw binary data.
+- The receiver **decodes the float** using:
+  ```java
+  ByteBuffer.wrap(data).getFloat();
+  ```
+When a valid UDP packet is received, the corresponding marker is added to the time-series data. The marker data is recorded in the output data under the "Marker" column.
+
+:::info
+[More about UDP can be learned here](#udp)
+:::
 
 ---
 

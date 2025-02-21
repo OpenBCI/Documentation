@@ -2,7 +2,7 @@
 id: MotorImagery
 title: Motor Imagery
 ---
-**NOTEe** There are known stumbling blocks with this tutorial. The author is not available for questions.
+**NOTE** There are known stumbling blocks with this tutorial. The author is not available for questions.
 
 This tutorial was made by Rakesh C Jakati.
 
