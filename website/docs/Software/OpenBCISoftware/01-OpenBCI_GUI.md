@@ -3,6 +3,13 @@ id: GUIDocs
 title: The OpenBCI GUI
 ---
 
+<img src="https://cdn.sanity.io/images/qs7k8l6f/production/7a7d6d98d55922d2ed0b1f395453ec1d9ca184a4-725x725.png" width="18" height="18"></img>&nbsp;
+<big><big><strong><a href="https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v6.0.0-beta.1/openbcigui_v6.0.0-beta.1_macosx.dmg">Download Mac version here</a></strong></big></big><br></br>
+<img src="https://cdn.sanity.io/images/qs7k8l6f/production/c8eaf6cbf6788dc901cbc0ccb503ef9fe3a17e7c-725x725.png" width="18" height="18"></img>&nbsp;
+<big><big><strong><a href="https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v6.0.0-beta.1/openbcigui_v6.0.0-beta.1_macosx.dmg">Download Windows version here</a></strong></big></big><br></br>
+<img src="https://cdn.sanity.io/images/qs7k8l6f/production/2f38b71ce97a140c2fc90a3e27f727240523b59d-100x100.png" width="18" height="18"></img>&nbsp;
+<big><big><strong><a href="https://github.com/OpenBCI/OpenBCI_GUI/releases/download/v6.0.0-beta.1/openbcigui_v6.0.0-beta.1_macosx.dmg">Download Linux version here</a></strong></big></big><br></br>
+
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt or .bdf/.edf format, as well as streamed in live-time to third-party software such as MATLAB.
