@@ -2,29 +2,29 @@
 id: LSL
 title: Lab Streaming Layer (LSL)
 ---
-[Lab streaming layer](https://github.com/sccn/labstreaminglayer)  is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as Matlab (see our Matlab tutorial for using LSL in this context).
+
+[Lab streaming layer](https://github.com/sccn/labstreaminglayer) is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as Matlab (see our Matlab tutorial for using LSL in this context).
 
 This tutorial will show you how to set up LSL using the OpenBCI Python API and then explain the various ways you can use LSL to perform experiments or record data.
 
 ## Setup
 
-1.  **Download or clone the [OpenBCI_LSL](https://github.com/openbci-archive/OpenBCI_LSL) repo from Github.**
+1.  **Download or clone the [OpenBCI_GUI](https://github.com/OpenBCI/OpenBCI_GUI) repo from Github.**
 2.  **Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3).**
     Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed.
 3.  **Install Python requirements**
     To use this program, you need the following Python packages installed:
 
--   pylsl (version 1.10.5 or greater)
--   pyserial (version 3.1.1 or greater)
--   numpy (version 1.11.1 or greater)
--   pyqtgraph (version 0.9.10 or greater) (optional: needded for GUI functionality only)
--   scipy (version 0.17.1 or greater) (optional: needed for GUI functionality only)
+- pylsl (version 1.10.5 or greater)
+- pyserial (version 3.1.1 or greater)
+- numpy (version 1.11.1 or greater)
+- brainflow (version 5.10.0 or greater)
 
-To automatically install using pip, navigate to the "OpenBCI_LSL" folder on your command line and terminal, and type:
+To automatically install using pip, navigate to the "Networking-Test-Kit/LSL/" folder on your command line and terminal, and type:
 
 ```
 
-pip install -r requirements.txt
+pip install --upgrade numpy brainflow pylsl
 
 ```
 
@@ -32,49 +32,27 @@ Note: pip may have issues install numpy and scipy for some users. Install these 
 
 Note: If you get the message "pip: command not found", you need to install pip: sudo easy_install pip. Then retry the command above.
 
-To use the GUI features of this application, you must separately install PyQt4 using these instructions: Install PyQt4. The command line version of this program is still functional if PyQt4 is not installed.
-
 ## Usage
 
 ### Simple Stream
 
-First, make sure your dongle is plugged in and board is powered on. Then go the the "OpenBCI_LSL" folder and type the following command:
+First, make sure your dongle is plugged in and board is powered on. Then type the following command:
+
+Windows:
 
 ```
+python3 Networking-Test-Kit/LSL/brainflow_lsl.py --board-id 2 --serial-port COM3 --name test --data-type EXG --channel-names 1,2,3,4,5,6,7,8 --uid brainflow
+```
 
-python openbci_lsl.py --stream
+Mac:
 
+```
+python3 Networking-Test-Kit/LSL/brainflow_lsl.py --board-id 2 --serial-port /dev/cu.usbserial-DM00D7TW --name test --data-type EXG --channel-names 1,2,3,4,5,6,7,8 --uid brainflow
 ```
 
 After a few moments, you should see this output:
 
-<img src="https://raw.githubusercontent.com/gabrielibagon/OpenBCI_LSL/master/images/CLI.jpg?raw=true" width="80%" />
-
-If an error is raised about not being able to find your the board or serial port, you can override the automatic board detection by specifying the serial port in a command line argument before "--stream". The format is as follows:
-
-```
-
-python openbci_lsl.py [PORT] --stream
-
-```
-
-For example:
-
-```
-
-python openbci_lsl.py /dev/ttyUSB0 --stream
-
-```
-
-After board initialization, you are now ready to start streaming.
-
-To begin streaming, type /start
-
-To stop streaming, type /stop
-
-To disconnect from the serial port, type /exit
-
-Remember to use /exit to disconnect the board as you end the program, to ensure that the serial port is safely closed.
+![CLI LSL](../../assets/ThirdPartyImages/cli_LSL.png)
 
 ### Configuring the board from the command line interface
 
@@ -104,28 +82,6 @@ To change the channel location metadata of the stream, type /loc followed by a s
 ```
 
 This can only be done while the board is not currently streaming.
-
-## GUI
-
-If you would like the ability to configure the board and LSL stream with advanced settings, you can do so by running the GUI. The GUI comes up by default if you run the program with no flags:
-
-python openbci_lsl.py
-
-If you plug in your board and dongle before running the above command, the program should have already detected the appropriate settings for your board (port and daisy). If not, you can enter those yourself in the appropriate fields.
-
-<img src="https://raw.githubusercontent.com/gabrielibagon/OpenBCI_LSL/master/images/GUI.jpg?raw=true" width="60%" />
-
-### Streaming
-
-To stream data, make sure the appropriate Port, Daisy, and LSL Stream fields are filled in correctly. Then, press "Connect" and then "Start Streaming". To pause streaming, click "Stop Streaming". To disconnect the board, press "Disconnect".
-
-The board must be disconnected to change LSL settings. Once you "Connect" again, your current settings are saved until the next time you disconnect.
-
-For consistent performance, pause streaming before you disconnect the board.
-
-### Configuring the board from the GUI
-
-To change the channel settings, click on "Board Config". Note: this must be done BEFORE you press "Connect".
 
 ## Troubleshooting
 
