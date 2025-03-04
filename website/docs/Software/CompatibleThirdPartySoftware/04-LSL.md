@@ -83,6 +83,10 @@ To change the channel location metadata of the stream, type /loc followed by a s
 
 This can only be done while the board is not currently streaming.
 
+## Advanced Settings in LSL
+
+If you would like to modify your LSL streams you can use the files in Networking-Test-Kit/LSL/. Files include different LSL test streams including bandpower for all channels, 3 data streams, fft plot stream, and more.
+
 ## Troubleshooting
 
 Note: Many issues with board connectivity can simply be resolved by restarting the program and your board. Unplug your dongle, turn off the board, plug in the dongle, and turn on the board, in that order. This method works the most consistently.
