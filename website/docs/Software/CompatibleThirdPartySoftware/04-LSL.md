@@ -28,15 +28,17 @@ pip install --upgrade numpy brainflow pylsl
 
 ```
 
-Note: pip may have issues install numpy and scipy for some users. Install these manually if you have issues.
+:::note
+`pip` may have issues installing `numpy` and `scipy` for some users. Install these manually if you have issues.
 
-Note: If you get the message "pip: command not found", you need to install pip: sudo easy_install pip. Then retry the command above.
+If you get the message `pip: command not found`, you need to install pip using `sudo easy_install pip`. Then, retry the command above.
+:::
 
 ## Usage
 
 ### Simple Stream
 
-First, make sure your dongle is plugged in and board is powered on. Then type the following command:
+First, make sure your dongle is plugged in and board is powered on. Then, type the following command:
 
 Windows:
 
@@ -85,18 +87,14 @@ This can only be done while the board is not currently streaming.
 
 ## Advanced Settings in LSL
 
-If you would like to modify your LSL streams you can use the files in Networking-Test-Kit/LSL/. Files include different LSL test streams including bandpower for all channels, 3 data streams, fft plot stream, and more.
+If you would like to modify your LSL streams, you can use the files in Networking-Test-Kit/LSL/. Files include different LSL test streams including band power for all channels, 3 data streams, FFT plot stream, and more.
 
 ## Troubleshooting
 
-Note: Many issues with board connectivity can simply be resolved by restarting the program and your board. Unplug your dongle, turn off the board, plug in the dongle, and turn on the board, in that order. This method works the most consistently.
+ADD INFO ABOUT DOUBLE CHECKING LSL NAME OR TYPE WHEN RECEIVING
 
 ## Next Steps
 
 Once you have the Lab Streaming Layer set up with your OpenBCI board, check out these other tutorials to view the stream in a variety of different programs:
 
 [Matlab tutorial](Software/CompatibleThirdPartySoftware/01-Matlab.md)
-
-## Credit
-
-Thanks to Winslow Strong for posting the original tutorial on the OpenBCI forums!
