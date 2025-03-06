@@ -1,220 +1,220 @@
 {
-	"docs": {
-		"Welcome to OpenBCI": ["Welcome"],
+  "docs": {
+    "Welcome to OpenBCI": ["Welcome"],
 
-		"Getting Started": [
-			"GettingStarted/GettingStartedLanding",
-			{
-				"type": "category",
-				"label": "Boards",
-				"items": [
-					"GettingStarted/Boards/CytonGS",
-					"GettingStarted/Boards/DaisyGS",
-					"GettingStarted/Boards/GanglionGS"
-				]
-			},
-			{
-				"type": "category",
-				"label": "Biosensing Setups",
-				"items": [
-					"GettingStarted/Biosensing-Setups/EEGSetup",
-					"GettingStarted/Biosensing-Setups/ECGSetup",
-					"GettingStarted/Biosensing-Setups/EMGSetup",
-					"GettingStarted/Biosensing-Setups/ExGSetup"
-				]
-			},
-			{
-				"type": "category",
-				"label": "Community",
-				"items": ["GettingStarted/Community/Community"]
-			},
-			{
-				"type": "category",
-				"label": "Documentation",
-				"items": ["GettingStarted/Documentation/DocEdits"]
-			}
-		],
-		"Cyton Board": [
-			"Cyton/CytonLanding",
-			"Cyton/CytonSpecs",
-			"Cyton/CytonDataFormat",
-			"Cyton/CytonSDK",
-			"Cyton/CytonProgram",
-			"Cyton/CytonRadios",
-			"Cyton/CytonExternal",
-			"Cyton/CytonSDCard"
-		],
-		"Ganglion Board": [
-			"Ganglion/GanglionLanding",
-			"Ganglion/GanglionSpecs",
-			"Ganglion/GanglionDataFormat",
-			"Ganglion/GanglionSDK",
-			"Ganglion/GanglionProgram"
-		],
-		"Headwear & Electrodes": [
-			"AddOns/AddOnLanding",
-			{
-				"type": "category",
-				"label": "Headwear",
-				"items": [
-					"AddOns/Headwear/MarkIV",
-					"AddOns/Headwear/HeadBand",
-					"AddOns/Headwear/ElectrodeCap",
-					"AddOns/Headwear/GelfreeElectrodeCap"
-				]
-			},
-			{
-				"type": "category",
-				"label": "Electrodes",
-				"items": ["AddOns/Electrodes/ElectrodesLanding"]
-			}
-		],
-		"Third-Party Hardware": [
-			"ThirdParty/ThirdPartyLanding",
-			{
-				"type": "category",
-				"label": "EmotiBit",
-				"items": ["ThirdParty/EmotiBit/EmotiBit_Guide"]
-			},
-			{
-				"type": "category",
-				"label": "IDUN Dryode",
-				"items": ["ThirdParty/IDUN_Dryode/Dryode"]
-			},
-			{
-				"type": "category",
-				"label": "cEEGrid Kit",
-				"items": ["ThirdParty/cEEGrid_Kit/cEEGrid_Kit"]
-			},
-			{
-				"type": "category",
-				"label": "Myoware",
-				"items": ["ThirdParty/Myoware/MyoWareCyton"]
-			},
-			{
-				"type": "category",
-				"label": "Pulse Sensor",
-				"items": ["ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"]
-			},
-			{
-				"type": "category",
-				"label": "ThinkPulse",
-				"items": ["ThirdParty/ThinkPulse/ThinkPulse"]
-			},
-			{
-				"type": "category",
-				"label": "WiFi Shield",
-				"items": [
-					"ThirdParty/WiFiShield/WiFiLanding",
-					"ThirdParty/WiFiShield/WiFiProgam",
-					"ThirdParty/WiFiShield/WiFiAPI",
-					"ThirdParty/WiFiShield/WiFiSDK"
-				]
-			}
-		],
-		"Software": [
-			"Software/SoftwareLanding",
-			{
-				"type": "category",
-				"label": "Developed By OpenBCI",
-				"items": [
-					"Software/OpenBCISoftware/GUIDocs",
-					"Software/OpenBCISoftware/GUIWidgets",
-					"Software/OpenBCISoftware/NeuroFly_Toolkit"
-				]
-			},
-			{
-				"type": "category",
-				"label": "Compatible Third Party Software",
-				"items": [
-					"Software/CompatibleThirdPartySoftware/Matlab",
-					"Software/CompatibleThirdPartySoftware/Neuromore",
-					"Software/CompatibleThirdPartySoftware/OpenVibe",
-					"Software/CompatibleThirdPartySoftware/LSL",
-					"Software/CompatibleThirdPartySoftware/BrainBay",
-					"Software/CompatibleThirdPartySoftware/BioEra",
-					"Software/CompatibleThirdPartySoftware/VirtualBox"
-				]
-			}
-		],
-		"For Developers": [
-			"ForDevelopers/ForDevelopersLanding",
-			"ForDevelopers/SoftwareDevelopment",
-			"ForDevelopers/FirmwareDevelopment",
-			"ForDevelopers/HardwareDevelopment"
-		],
-		"Deprecated Documents": [
-			"Deprecated/DeprecatedLanding",
-			"Deprecated/SpiderclawDep",
-			"Deprecated/8bitBoardDep",
-			"Deprecated/UltracortexMark1Dep",
-			"Deprecated/UltracortexMark2Dep",
-			"Deprecated/UltracortexMark2Dep",
-			"Deprecated/UltracortexMark3_NovaDep",
-			"Deprecated/MarkIII",
-			"Deprecated/Python",
-			"Deprecated/Hub",
-			"Deprecated/MyoCyton",
-			"Deprecated/MyoGanglion"
-		],
-		"Troubleshooting": [
-			"Troubleshooting/TroubleshootingLanding",
-			"Troubleshooting/minimizingNoise",
-			"Troubleshooting/GUI_Troubleshooting",
-			"Troubleshooting/FTDI_Fix_Linux",
-			"Troubleshooting/FTDI_Fix_Mac",
-			"Troubleshooting/FTDI_Fix_Windows",
-			"Troubleshooting/MacOSGanglionBLEWorkaround"
-		],
-		"Example Projects": [
-			"Examples/ExamplesLanding",
-			{
-				"type": "category",
-				"label": "Experiments",
-				"items": ["Examples/VideoExperiment"]
-			},
-			{
-				"type": "category",
-				"label": "Community Page Projects",
-				"items": ["Examples/CommunityPageProjects"]
-			},
-			{
-				"type": "category",
-				"label": "EMG Projects and Tutorials",
-				"items": [
-					"Examples/EMGProjects/EMGscrolling",
-					"Examples/EMGProjects/EMGmusic",
-					"Examples/EMGProjects/EMGslideshow",
-					"Examples/EMGProjects/EMG_LED",
-					"Examples/EMGProjects/EMG_Chrome_Dino_Game",
-					"Examples/EMGProjects/EMG_Tetris",
-					"Examples/EMGProjects/EMGpiano"
-				]
-			},
-			{
-				"type": "category",
-				"label": "EEG Projects and Tutorials",
-				"items": [
-					"Examples/EEGProjects/FocusArduino",
-					"Examples/EEGProjects/MotorImagery"
-				]
-			}
-		],
-		"FAQ": [
-			"FAQ/FAQLanding",
-			"FAQ/GenFAQ",
-			"FAQ/HowProductsGoTogether",
-			"FAQ/HardFAQ",
-			"FAQ/PaymentFAQ",
-			"FAQ/ShippingFAQ",
-			"FAQ/DocsUpdate"
-		],
-		"Policies": [
-			"FAQ/Cookie",
-			"FAQ/Privacy",
-			"FAQ/Returns",
-			"FAQ/Liability",
-			"FAQ/Conduct"
-		]
-	}
+    "Getting Started": [
+      "GettingStarted/GettingStartedLanding",
+      {
+        "type": "category",
+        "label": "Boards",
+        "items": [
+          "GettingStarted/Boards/CytonGS",
+          "GettingStarted/Boards/DaisyGS",
+          "GettingStarted/Boards/GanglionGS"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Biosensing Setups",
+        "items": [
+          "GettingStarted/Biosensing-Setups/EEGSetup",
+          "GettingStarted/Biosensing-Setups/ECGSetup",
+          "GettingStarted/Biosensing-Setups/EMGSetup",
+          "GettingStarted/Biosensing-Setups/ExGSetup"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Community",
+        "items": ["GettingStarted/Community/Community"]
+      },
+      {
+        "type": "category",
+        "label": "Documentation",
+        "items": ["GettingStarted/Documentation/DocEdits"]
+      }
+    ],
+    "Cyton Board": [
+      "Cyton/CytonLanding",
+      "Cyton/CytonSpecs",
+      "Cyton/CytonDataFormat",
+      "Cyton/CytonSDK",
+      "Cyton/CytonProgram",
+      "Cyton/CytonRadios",
+      "Cyton/CytonExternal",
+      "Cyton/CytonSDCard"
+    ],
+    "Ganglion Board": [
+      "Ganglion/GanglionLanding",
+      "Ganglion/GanglionSpecs",
+      "Ganglion/GanglionDataFormat",
+      "Ganglion/GanglionSDK",
+      "Ganglion/GanglionProgram"
+    ],
+    "Headwear & Electrodes": [
+      "AddOns/AddOnLanding",
+      {
+        "type": "category",
+        "label": "Headwear",
+        "items": [
+          "AddOns/Headwear/MarkIV",
+          "AddOns/Headwear/HeadBand",
+          "AddOns/Headwear/ElectrodeCap",
+          "AddOns/Headwear/GelfreeElectrodeCap"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Electrodes",
+        "items": ["AddOns/Electrodes/ElectrodesLanding"]
+      }
+    ],
+    "Third-Party Hardware": [
+      "ThirdParty/ThirdPartyLanding",
+      {
+        "type": "category",
+        "label": "EmotiBit",
+        "items": ["ThirdParty/EmotiBit/EmotiBit_Guide"]
+      },
+      {
+        "type": "category",
+        "label": "IDUN Dryode",
+        "items": ["ThirdParty/IDUN_Dryode/Dryode"]
+      },
+      {
+        "type": "category",
+        "label": "cEEGrid Kit",
+        "items": ["ThirdParty/cEEGrid_Kit/cEEGrid_Kit"]
+      },
+      {
+        "type": "category",
+        "label": "Myoware",
+        "items": ["ThirdParty/Myoware/MyoWareCyton"]
+      },
+      {
+        "type": "category",
+        "label": "Pulse Sensor",
+        "items": ["ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"]
+      },
+      {
+        "type": "category",
+        "label": "ThinkPulse",
+        "items": ["ThirdParty/ThinkPulse/ThinkPulse"]
+      },
+      {
+        "type": "category",
+        "label": "WiFi Shield",
+        "items": [
+          "ThirdParty/WiFiShield/WiFiLanding",
+          "ThirdParty/WiFiShield/WiFiProgam",
+          "ThirdParty/WiFiShield/WiFiAPI",
+          "ThirdParty/WiFiShield/WiFiSDK"
+        ]
+      }
+    ],
+    "Software": [
+      "Software/SoftwareLanding",
+      {
+        "type": "category",
+        "label": "Developed By OpenBCI",
+        "items": [
+          "Software/OpenBCISoftware/GUIDocs",
+          "Software/OpenBCISoftware/GUIWidgets",
+          "Software/OpenBCISoftware/NeuroFly_Toolkit"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Compatible Third Party Software",
+        "items": [
+          "Software/CompatibleThirdPartySoftware/Matlab",
+          "Software/CompatibleThirdPartySoftware/Neuromore",
+          "Software/CompatibleThirdPartySoftware/OpenVibe",
+          "Software/CompatibleThirdPartySoftware/LSL",
+          "Software/CompatibleThirdPartySoftware/BrainBay",
+          "Software/CompatibleThirdPartySoftware/BioEra",
+          "Software/CompatibleThirdPartySoftware/VirtualBox"
+        ]
+      }
+    ],
+    "For Developers": [
+      "ForDevelopers/ForDevelopersLanding",
+      "ForDevelopers/SoftwareDevelopment",
+      "ForDevelopers/FirmwareDevelopment",
+      "ForDevelopers/HardwareDevelopment"
+    ],
+    "Deprecated Documents": [
+      "Deprecated/DeprecatedLanding",
+      "Deprecated/SpiderclawDep",
+      "Deprecated/8bitBoardDep",
+      "Deprecated/UltracortexMark1Dep",
+      "Deprecated/UltracortexMark2Dep",
+      "Deprecated/UltracortexMark2Dep",
+      "Deprecated/UltracortexMark3_NovaDep",
+      "Deprecated/MarkIII",
+      "Deprecated/Python",
+      "Deprecated/Hub",
+      "Deprecated/MyoCyton",
+      "Deprecated/MyoGanglion",
+      "Deprecated/FTDI_Fix_Mac_Deprecated"
+    ],
+    "Troubleshooting": [
+      "Troubleshooting/TroubleshootingLanding",
+      "Troubleshooting/minimizingNoise",
+      "Troubleshooting/GUI_Troubleshooting",
+      "Troubleshooting/FTDI_Fix_Linux",
+      "Troubleshooting/FTDI_Fix_Windows",
+      "Troubleshooting/MacOSGanglionBLEWorkaround"
+    ],
+    "Example Projects": [
+      "Examples/ExamplesLanding",
+      {
+        "type": "category",
+        "label": "Experiments",
+        "items": ["Examples/VideoExperiment"]
+      },
+      {
+        "type": "category",
+        "label": "Community Page Projects",
+        "items": ["Examples/CommunityPageProjects"]
+      },
+      {
+        "type": "category",
+        "label": "EMG Projects and Tutorials",
+        "items": [
+          "Examples/EMGProjects/EMGscrolling",
+          "Examples/EMGProjects/EMGmusic",
+          "Examples/EMGProjects/EMGslideshow",
+          "Examples/EMGProjects/EMG_LED",
+          "Examples/EMGProjects/EMG_Chrome_Dino_Game",
+          "Examples/EMGProjects/EMG_Tetris",
+          "Examples/EMGProjects/EMGpiano"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "EEG Projects and Tutorials",
+        "items": [
+          "Examples/EEGProjects/FocusArduino",
+          "Examples/EEGProjects/MotorImagery"
+        ]
+      }
+    ],
+    "FAQ": [
+      "FAQ/FAQLanding",
+      "FAQ/GenFAQ",
+      "FAQ/HowProductsGoTogether",
+      "FAQ/HardFAQ",
+      "FAQ/PaymentFAQ",
+      "FAQ/ShippingFAQ",
+      "FAQ/DocsUpdate"
+    ],
+    "Policies": [
+      "FAQ/Cookie",
+      "FAQ/Privacy",
+      "FAQ/Returns",
+      "FAQ/Liability",
+      "FAQ/Conduct"
+    ]
+  }
 }
