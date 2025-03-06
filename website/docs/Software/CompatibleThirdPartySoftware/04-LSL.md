@@ -10,9 +10,12 @@ This tutorial will show you how to set up LSL using the OpenBCI Python API and t
 ## Setup
 
 1.  **Download or clone the [OpenBCI_GUI](https://github.com/OpenBCI/OpenBCI_GUI) repo from Github.**
-2.  **Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3).**
+
+2.  **Download or clone the [Lab Streaming Layer (LSL)](https://github.com/labstreaminglayer/App-LabRecorder) repo from Github.**
+
+3.  **Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3).**
     Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed.
-3.  **Install Python requirements**
+4.  **Install Python requirements**
     To use this program, you need the following Python packages installed:
 
 - pylsl (version 1.10.5 or greater)
@@ -38,23 +41,15 @@ If you get the message `pip: command not found`, you need to install pip using `
 
 ### Simple Stream
 
-First, make sure your dongle is plugged in and board is powered on. Then, type the following command:
+Open the OpenBCI GUI and click on the Networking widget. Below is the Networking Widget, you can select LSL protocol and have three data streams:
 
-Windows:
+<div align="center">
+    ![Networking Widget LSL](../../assets/SoftwareImages/OpenBCISoftware/GUIv6.0.0_Networking_LSL.png)
+</div>
 
-```
-python3 Networking-Test-Kit/LSL/brainflow_lsl.py --board-id 2 --serial-port COM3 --name test --data-type EXG --channel-names 1,2,3,4,5,6,7,8 --uid brainflow
-```
+Open your lab recorder from the LSL repo. Once you click on Start LSL Stream you will be able to see the three data streams in the Lab Recorder application.
 
-Mac:
-
-```
-python3 Networking-Test-Kit/LSL/brainflow_lsl.py --board-id 2 --serial-port /dev/cu.usbserial-DM00D7TW --name test --data-type EXG --channel-names 1,2,3,4,5,6,7,8 --uid brainflow
-```
-
-After a few moments, you should see this output:
-
-![CLI LSL](../../assets/ThirdPartyImages/cli_LSL.png)
+![Lab Recorder](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/LabRecorder_Networking.png)
 
 ### Configuring the board from the command line interface
 
@@ -91,6 +86,7 @@ If you would like to modify your LSL streams, you can use the files in Networkin
 
 ## Troubleshooting
 
+To confirm 
 ADD INFO ABOUT DOUBLE CHECKING LSL NAME OR TYPE WHEN RECEIVING
 
 ## Next Steps
