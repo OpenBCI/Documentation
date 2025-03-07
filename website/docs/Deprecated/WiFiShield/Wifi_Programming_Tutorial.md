@@ -1,7 +1,8 @@
 ---
-id: WiFiProgam
+id: WiFiProgram
 title: Wifi Shield Programming Tutorial
 ---
+
 ## Overview
 
 The easiest way to update your OpenBCI Wifi Shield Firmware is Over-The-Air (OTA). You can also update firmware through a direct connection to the serial port on the WiFi Shield itself. For the wired programming, you can use the USB dongle that comes with the Cyton as a pass through or you can use a standard [FTDI UART to USB Breakout board](#program-openbci-wifi-with-ftdi-boards).
@@ -28,7 +29,7 @@ Plug a battery into the WiFi Shield and power the Shield by turning the power sw
 
 ### Get WiFi Shield on Your Wireless Network
 
-Then [get your WiFi Shield on your local wireless network](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#get-the-wifi-shield-on-your-wireless-network) if it's not already.
+Then [get your WiFi Shield on your local wireless network](Wifi_Getting_Started_Guide.md#get-the-wifi-shield-on-your-wireless-network) if it's not already.
 
 ### Get Address of WiFi Shield
 
@@ -36,7 +37,7 @@ Find the IP Address of your WiFi Shield by clicking the `>` button in the WiFi s
 
 ![image](../../assets/ThirdPartyImages/IPfind.png)
 
-If you're having issues with that step, here's a more in-depth tutorial on using the OpenBCI_GUI to get [your shields ip address](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address).
+If you're having issues with that step, here's a more in-depth tutorial on using the OpenBCI_GUI to get [your shields ip address](Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address).
 
 ### Go to /update Page of WiFi Shield
 
@@ -91,7 +92,7 @@ Another example would be the [FTDI Friend](http://www.adafruit.com/products/284)
 ![FTDI BasicFront](../../assets/ThirdPartyImages/FTDI_BASICfront.jpg)
 ![FTDI BasicBack](../../assets/ThirdPartyImages/FTDI_BASICback.jpg)
 
-Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!  
+Sparkfun makes an FTDI breakout as well, and they come in a couple of flavors. 5V and 3V. By now, you know that you want the [3V Version](https://www.sparkfun.com/products/9873). [pic coming soon] Also, if you have a version of this board with a voltage selection on the back, make sure that it has the 3.3V pads connected and the 5V pads cut!
 
 ### OpenBCI Cyton Dongle
 
@@ -216,24 +217,24 @@ $ esptool.py --port COM4 write_flash 0x000000 Downloads\DefaultWifiShield.bin
 
 **You will need:**
 
--   Computer (Windows or Mac or Other)
--   [Arduino IDE Version 1.8.3](http://www.arduino.cc/en/main/software)
--   OpenBCI WiFi Shield
+- Computer (Windows or Mac or Other)
+- [Arduino IDE Version 1.8.3](http://www.arduino.cc/en/main/software)
+- OpenBCI WiFi Shield
 
 **You will need:**
 
--   Computer running [Arduino v1.8.0](https://www.arduino.cc/en/Main/Software) or later
--   [ESP8266 libraries with SPISlave](https://github.com/esp8266/Arduino)
--   OpenBCI Dongle or FTDI USB to UART (friend) connected to USB port
--   OpenBCI WiFi Shield with battery power
--   OpenBCI WiFi Firmware (follow guide below to download)
--   Various other WiFi Dependencies
--   OpenBCI Cyton SD Firmware (follow guide below to download)
--   OpenBCI WiFi Master Firmware (follow guide below to download)
+- Computer running [Arduino v1.8.0](https://www.arduino.cc/en/Main/Software) or later
+- [ESP8266 libraries with SPISlave](https://github.com/esp8266/Arduino)
+- OpenBCI Dongle or FTDI USB to UART (friend) connected to USB port
+- OpenBCI WiFi Shield with battery power
+- OpenBCI WiFi Firmware (follow guide below to download)
+- Various other WiFi Dependencies
+- OpenBCI Cyton SD Firmware (follow guide below to download)
+- OpenBCI WiFi Master Firmware (follow guide below to download)
 
 ### Download Latest Arduino
 
--   If your computer does not have Arduino v1.8.0 (or later), install the latest Arduino IDE which can be found here: 
+- If your computer does not have Arduino v1.8.0 (or later), install the latest Arduino IDE which can be found here:
 
 ### Install Firmware From Arduino Library Manager (easiest!)
 
@@ -259,12 +260,12 @@ Open the _Library Manager_ and then
 
 1.  Download the latest zips for the following libraries:
 
-    -   [OpenBCI_Wifi](http://www.arduinolibraries.info/libraries/open-bci_wifi)
-    -   [WiFiManager](http://www.arduinolibraries.info/libraries/wi-fi-manager)
-    -   [ArduinoJson](http://www.arduinolibraries.info/libraries/arduino-json)
-    -   [PubSubClient](http://www.arduinolibraries.info/libraries/pub-sub-client)
-    -   [Time](http://www.arduinolibraries.info/libraries/time)
-    -   [NtpClientLib](http://www.arduinolibraries.info/libraries/ntp-client-lib)
+    - [OpenBCI_Wifi](http://www.arduinolibraries.info/libraries/open-bci_wifi)
+    - [WiFiManager](http://www.arduinolibraries.info/libraries/wi-fi-manager)
+    - [ArduinoJson](http://www.arduinolibraries.info/libraries/arduino-json)
+    - [PubSubClient](http://www.arduinolibraries.info/libraries/pub-sub-client)
+    - [Time](http://www.arduinolibraries.info/libraries/time)
+    - [NtpClientLib](http://www.arduinolibraries.info/libraries/ntp-client-lib)
 
 2.  Unzip the folders and change the names to:
 
@@ -284,7 +285,7 @@ On Mac: /Documents/Arduino/libraries
 On Windows: C:\Users\username\Documents\Arduino\libraries
 ```
 
-If you don't have a `libraries` folder there, go ahead and make one.  
+If you don't have a `libraries` folder there, go ahead and make one.
 
 If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
@@ -294,17 +295,17 @@ Developers looking to contribute or write custom firmware can clone the firmware
 
 ```
 
-On Mac: `/Documents/Arduino/libraries`  
+On Mac: `/Documents/Arduino/libraries`
 On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 ```
 
--   [OpenBCI_Wifi](https://github.com/OpenBCI/OpenBCI_Wifi)
--   [WifiManager](https://github.com/tzapu/WiFiManager)
--   [ArduinoJSON](https://bblanchon.github.io/ArduinoJson/)
--   [PubSubClient](https://pubsubclient.knolleary.net)
--   [Time](https://github.com/PaulStoffregen/Time)
--   [NtpClient](https://github.com/arduino-libraries/NTPClient)
+- [OpenBCI_Wifi](https://github.com/OpenBCI/OpenBCI_Wifi)
+- [WifiManager](https://github.com/tzapu/WiFiManager)
+- [ArduinoJSON](https://bblanchon.github.io/ArduinoJson/)
+- [PubSubClient](https://pubsubclient.knolleary.net)
+- [Time](https://github.com/PaulStoffregen/Time)
+- [NtpClient](https://github.com/arduino-libraries/NTPClient)
 
 ### Install ESP8266 Core Firmware
 

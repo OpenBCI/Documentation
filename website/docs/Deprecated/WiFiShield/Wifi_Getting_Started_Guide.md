@@ -236,7 +236,7 @@ There is a multitude of ways to erase stored wireless network configurations:
 1.  Press "ERASE CREDENTIALS" of the WiFi Shield from the WIFI SHIELDS configuration inside the OpenBCI GUI. Make sure your WiFi Shield is not connected to an OpenBCI Board, or if Cyton, `EXT PWR` is OFF.
 2.  On macOS/iPhone, go to your WiFi Shields home page in a web browser such as http://OpenBCI-A4AD.local (`OpenBCI-A4AD` is the name of the WiFi Shield) and tap "Click to Erase WiFi Credentials".
 3.  On macOS/iOS, in a web browser go to http://OpenBCI-A4AD.local/wifi/delete (`OpenBCI-A4AD` is the name of the WiFi Shield).
-4.  In any web browser on any device you can use the IP Address ([OpenBCI GUI tutorial to get IP address](GettingStarted/Boards/03-Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address)) of the WiFi Shield and navigate to where the `192.168.1.100` is substituted for the WiFi Shield's IP Address to trigger the erase.
+4.  In any web browser on any device you can use the IP Address ([OpenBCI GUI tutorial to get IP address](Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address)) of the WiFi Shield and navigate to where the `192.168.1.100` is substituted for the WiFi Shield's IP Address to trigger the erase.
 
 - Send an HTTP DELETE request to `192.168.1.100/wifi` where the `192.168.1.100` is the WiFi Shield's IP Address
 
@@ -488,7 +488,7 @@ The GUI will automatically detach from the WiFi Shield. Your WiFi Shield should 
 
 Before we jump into setting up your WiFi Shield, here are some helpful links:
 
-- [Learn to update your WiFi Shield](ThirdParty/WiFiShield/12-Wifi_Programming_Tutorial.md) to the [latest firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
-- Learn about the physical hardware on the WiFi Shield checkout the [OpenBCI Wifi Hardware docs](ThirdParty/WiFiShield/01-Wifi.md)
+- [Learn to update your WiFi Shield](Wifi_Programming_Tutorial.md) to the [latest firmware](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
+- Learn about the physical hardware on the WiFi Shield checkout the [OpenBCI Wifi Hardware docs](Wifi.md)
 - Lookup the commands for the HTTP rest server on the WiFi Shield at the [swaggerhub.io](https://app.swaggerhub.com/apis/pushtheworld/openbci-wifi-server/1.3.0)
 - Checkout the firmware that powers the WiFi Shield at [on Github](http://github.com/OpenBCI/OpenBCI_WIFI)
