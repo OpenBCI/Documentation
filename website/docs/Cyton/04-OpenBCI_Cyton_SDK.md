@@ -422,7 +422,9 @@ Supporting all v1.0.0 and v2.0.0, the v3.0.0 firmware extends the OpenBCI system
 **~(COMMAND)**
 This works similar to the Channel Settings commands, however, there is no latching character. Power cycling the OpenBCI board will cause the sample rate to reset back to default of 250Hz.
 
-**IMPORTANT!** The Cyton with USB Dongle cannot and will not stream data over 250SPS.
+:::important
+**The Cyton cannot stream data over 250Hz.** These commands were created with anticipation for future capabilities, but due to radio restrictions, they cannot currently be utilized.
+:::
 
 **COMMAND**
 
