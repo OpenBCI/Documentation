@@ -86,8 +86,7 @@ If you would like to modify your LSL streams, you can use the files in Networkin
 
 ## Troubleshooting
 
-To confirm 
-ADD INFO ABOUT DOUBLE CHECKING LSL NAME OR TYPE WHEN RECEIVING
+To double check if you are receiving the correct streams run the script [lslStreamTest](https://github.com/OpenBCI/OpenBCI_GUI/blob/master/Networking-Test-Kit/LSL/lslStreamTest.py). The script will allow you to read multi-channel time series from LSL.
 
 ## Next Steps
 
