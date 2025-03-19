@@ -11,27 +11,21 @@ Whether you're new to neurotechnology or conducting research, OpenBCI makes it e
 
 ### P300 Example
 
-
 These projects linked below used the OpenBCI Cyton / CytonDaisy board to sample P300 data.
 
 [P300 Speller by UCLA](https://github.com/DarrenVawter/P300_BCI/) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) and [Gel Electrode Cap](https://shop.openbci.com/products/openbci-eeg-electrocap)
- 
-[Student Club Competition winners, judged on quality of step-by-step documentation and technical output](https://openbci.com/community/2022-neurotechx-student-club-competition-winners/)
- 
-[Older tutorial from 2015](https://blog.jfrey.info/2015/02/04/openbci-p300-coadapt/)
- 
-[Other relevant links about P300, including datasets](https://openbci.com/community/publicly-available-eeg-datasets/)
 
+[Student Club Competition winners, judged on quality of step-by-step documentation and technical output](https://openbci.com/community/2022-neurotechx-student-club-competition-winners/)
+
+[Older tutorial from 2015](https://blog.jfrey.info/2015/02/04/openbci-p300-coadapt/)
+
+[Other relevant links about P300, including datasets](https://openbci.com/community/publicly-available-eeg-datasets/)
 
 ### SSVEP Examples
 
 [SSVEP-based BCI speller by McGill University](https://github.com/NTX-McGill/NeuroTechX-McGill-2021) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) and [Gold Cup Electrodes](https://shop.openbci.com/products/openbci-gold-cup-electrodes)
 
 [SSVEP-based communicator by University of Waterloo](https://github.com/WATOLINK/mind-speech-interface-ssvep) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) + Customized [Ultracortex](https://shop.openbci.com/products/ultracortex-mark-iv)
-
-### Motor Imagery Controlled Car
-
-[Tutorial](Examples/EEGProjects/20-Motor_Imagery.md) to control a robotic car using motor imagery - Uses [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) and [Ultracortex EEG headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) or [EEG cap](https://shop.openbci.com/collections/frontpage/products/openbci-eeg-electrocap-kit)
 
 ## EMG Projects and Tutorials
 
