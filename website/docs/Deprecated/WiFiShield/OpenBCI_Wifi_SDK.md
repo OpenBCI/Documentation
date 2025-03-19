@@ -2,6 +2,7 @@
 id: WiFiSDK
 title: OpenBCI Wifi SDK
 ---
+
 The purpose of this doc is to describe what's required to interface another micro-controller with the WiFi Shield.
 
 ## Prerequisites
@@ -43,7 +44,7 @@ The first byte to send is the control byte. For streaming data, that goes on the
 
 ```
 
-/*  
+/*
  * @description Writes channel data and axisData array to serial port in
  *  the correct stream packet format.
  */
@@ -67,3 +68,53 @@ void OpenBCI_32bit_Library::sendChannelDataWifi(void)  {
 
 This code writes 32 bytes of data in the correct format and therefore as soon as it arrives at the WiFi Shield. The WiFi Shield will convert the 32 byte packet to the standard 33 byte [binary format](Cyton/03-Cyton_Data_Format.md#binary-format) by moving the control byte `0xCn`, where `n` is `0-F` (hex), to the stop position and add add `0xA0` to the start position. This allows for a seamless integration with the tried and tested parsing systems already built for the Cyton.
 **Important** if you want to only send `20` bytes of data per packet, you still must send this `32` bytes with the proper start and stop bytes.
+
+## Deprecated Commands
+
+### Cyton + WiFi Shield Commands
+
+**{"{"}**
+
+Try to attach a Wifi Shield
+
+**returns** Success will send response `Success: Wifi attached$$$` on failure response will be `Failure: Wifi not attached$$$`. Failure happens when the wifi shield is not powered up or the wifi shield does not power correctly. Try power cycling the system if failure continues.
+
+**{"}"}**
+
+Remove an attached wifi shield.
+
+**returns** Success will send response `Success: Wifi removed$$$` on failure response will be `Failure: Wifi not removed$$$`. Failure occurs when no wifi shield is present to remove.
+
+**:**
+
+Get the status of the wifi shield, will either be connected or not connected.
+
+**returns** With wifi shield successfully attached will send response `Wifi present$$$`. If there is no OpenBCI board attached, will send `Wifi not present, send { to attach the shield$$$`.
+
+**;**
+
+Perform a soft reset of the Wifi shield. Will do a power on reset of just the wifi shield.
+
+### Ganglion + WiFi Shield Commands
+
+**{"{"}**
+
+Try to attach a Wifi Shield
+
+**returns** Success will send response `Success: Wifi attached$$$` on failure response will be `Failure: Wifi not attached$$$`. Failure happens when the wifi shield is not powered up or the wifi shield does not power correctly. Try power cycling the system if failure continues.
+
+**{"}"}**
+
+Remove an attached wifi shield.
+
+**returns** Success will send response `Success: Wifi removed$$$` on failure response will be `Failure: Wifi not removed$$$`. Failure occurs when no wifi shield is present to remove.
+
+**:**
+
+Get the status of the wifi shield, will either be connected or not connected.
+
+**returns** With wifi shield successfully attached will send response `Wifi present$$$`. If there is no OpenBCI board attached, will send `Wifi not present, send { to attach the shield$$$`.
+
+**;**
+
+Perform a soft reset of the Wifi shield. Will do a power on reset of just the wifi shield.

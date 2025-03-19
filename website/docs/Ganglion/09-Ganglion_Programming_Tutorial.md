@@ -3,7 +3,7 @@ id: GanglionProgram
 title: Ganglion Programming Tutorial
 ---
 
-import FTDIBreakout from '../assets/ThirdPartyImages/FTDI_Friend.jpg';
+import FTDIBreakout from '../assets/CytonImages/FTDI_Friend.jpg';
 import Capacitor from '../assets/GanglionImages/caps.jpg';
 import GanglionPinsConnection from '../assets/GanglionImages/ganglion_ftdi-connection.jpeg';
 
@@ -15,7 +15,7 @@ This guide will walk you through how to update your Ganglion firmware. Downloadi
 
 ## Download The Latest Builds
 
-- [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases)  
+- [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 - [Ganglion Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library/releases)
 
 ## Ganglion OTA Firmware Programming
@@ -32,27 +32,27 @@ Install both of the applications listed below for your mobile device's operating
 
 #### iOS
 
--   [Lightblue Explorer App](https://apps.apple.com/us/app/lightblue/id557428110)
--   [nRF Connect App](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
+- [Lightblue Explorer App](https://apps.apple.com/us/app/lightblue/id557428110)
+- [nRF Connect App](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
 
 #### Android
 
--   [nRF Toolbox App](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox)
--   [nRF Connect App](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp)
+- [nRF Toolbox App](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox)
+- [nRF Connect App](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp)
 
 ### Verify Ganglion Version
 
-Turn on your Ganglion and turn on your phone's Bluetooth. Next, open the Lightblue (iOS) / nRF Connect (Android) app. The app will show you what Bluetooth peripherals are nearby. Your Ganglion may show up as either `Ganglion`, `Simblee`, or `DfuTarg` depending on your OS and firmware version. Tap the Ganglion peripheral, and the app will connect to and interrogate it.  
+Turn on your Ganglion and turn on your phone's Bluetooth. Next, open the Lightblue (iOS) / nRF Connect (Android) app. The app will show you what Bluetooth peripherals are nearby. Your Ganglion may show up as either `Ganglion`, `Simblee`, or `DfuTarg` depending on your OS and firmware version. Tap the Ganglion peripheral, and the app will connect to and interrogate it.
 
 In the Device Information, you will find the following:
 
--   Manufacturer Name String
--   Model Number String
--   Hardware Revision String
--   Firmware Revision String
--   Software Revision String
+- Manufacturer Name String
+- Model Number String
+- Hardware Revision String
+- Firmware Revision String
+- Software Revision String
 
-You should see `openbci.com` as the Manufacturer, `Ganglion` as the Model Number, and `x.x.x` as the **Software Revision String**. 
+You should see `openbci.com` as the Manufacturer, `Ganglion` as the Model Number, and `x.x.x` as the **Software Revision String**.
 
 :::important
 If the Software Revision String is earlier than `1.1.1`, then you cannot perform OTA updates until you follow the instructions in the [Ganglion Hardware Programming](#ganglion-hardware-programming) section.
@@ -74,7 +74,7 @@ Transfer this `.zip` file to your phone (e.g. via email, Dropbox, or Google Driv
 
 #### Android
 
-1. Start the nRF Toolbox app and select the `Device Firmware Update` tool. 
+1. Start the nRF Toolbox app and select the `Device Firmware Update` tool.
 2. Tap the `Select` button, and select the file `.zip` file you moved to your Android device.
 3. Select the Ganglion device identified [above](#verify-ganglion-version).
 4. Start the upload.
@@ -89,15 +89,15 @@ Older Ganglions (pre-2017) must be programmed using hardware before OTA updates 
 
 ### What You Need
 
--   FTDI Breakout or OpenBCI Cyton Dongle
--   0.1uF Capacitor
--   Jumper Wires
+- FTDI Breakout or OpenBCI Cyton Dongle
+- 0.1uF Capacitor
+- Jumper Wires
 
 <img src={FTDIBreakout} height="200"/>&emsp;
 <img src={Capacitor} height="200"/>
 <br/><br/>
 
-In this example, we use the [Adafruit FTDI Friend](https://www.adafruit.com/products/284). You can use any FTDI breakout, as long as it uses **only 3V for logic levels**. If you go to Adafruit to purchase one, you can also pick up some [jumper wires](https://www.adafruit.com/products/758), and [0.1uF Capacitors](https://www.adafruit.com/products/753) as well.  
+In this example, we use the [Adafruit FTDI Friend](https://www.adafruit.com/products/284). You can use any FTDI breakout, as long as it uses **only 3V for logic levels**. If you go to Adafruit to purchase one, you can also pick up some [jumper wires](https://www.adafruit.com/products/758), and [0.1uF Capacitors](https://www.adafruit.com/products/753) as well.
 
 ### Wiring
 
@@ -115,9 +115,9 @@ The following instructions will get your computer and the Arduino IDE set up to 
 
 ### What You Need
 
--   [Arduino IDE v1.8.x](https://www.arduino.cc/en/software)
--   [Ganglion Library Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
--   [Wifi Master Library Firmware](https://github.com/OpenBCI/OpenBCI_Wifi_Master_Library)
+- [Arduino IDE v1.8.x](https://www.arduino.cc/en/software)
+- [Ganglion Library Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
+- [Wifi Master Library Firmware](https://github.com/OpenBCI/OpenBCI_Wifi_Master_Library)
 
 :::info
 Be sure to clone the repositories directly to your [Arduino libraries folder](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries#manual-installation). Alternatively, add the zipped libraries by navigating to `Sketch -> Include Library -> Add .ZIP Library...` and selecting the downloaded archives.
@@ -145,11 +145,13 @@ In the Arduino IDE go to `File -> Examples -> OpenBCI_Ganglion_Library -> Defaul
 If you are using MacOS or Linux, you will need to make the `nrfutil` tool used by the Arduino buildchain executable.
 
 On MacOS, open a terminal and paste in:
+
 ```
 chmod u+x /Users/$USER/Library/Arduino15/packages/OpenBCI/hardware/Simblee/1.1.4/nrfutil_macosx
 ```
 
 On Linux, open a terminal and paste in:
+
 ```
 chmod u+x ~/.arduino15/packages/OpenBCI/hardware/Simblee/1.1.4/nrfutil_linux
 ```

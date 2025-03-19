@@ -2,6 +2,7 @@
 id: ThirdPartyLanding
 title: Third-Party Hardware
 ---
+
 The directory to the left contains documents to explain the integration between OpenBCI and compatible third-party hardware. This landing page summarizes the variety of sampling modalities!
 
 ## EmotiBit
@@ -24,7 +25,7 @@ Introducing research-validated dry electrodes for sampling frontal cortex EEG an
 
 The MyoWare muscle sensor v2 can be integrated with the [OpenBCI Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel). To find out how, check out these tutorials:
 
--   [Cyton + MyoWare](ThirdParty/Myoware/MyoWare_Cyton_Tutorial.md)
+- [Cyton + MyoWare](ThirdParty/Myoware/MyoWare_Cyton_Tutorial.md)
 
 ## Pulse Sensor
 
@@ -37,14 +38,3 @@ It can be connected to the [Ganglion](https://shop.openbci.com/collections/front
 ## ThinkPulse Active Electrodes
 
 We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry, active electrode EEG sensors at an unprecedented price point and comfort level.
-
-## Wifi Shield
-
-![wifi shield](../assets/ThirdPartyImages/wifi_shield.jpg)
-The Wifi Shield is an add-on module that allows you to connect an OpenBCI Board to the GUI and send data over Wifi rather than Radio/BLE.
-To learn more about it, see these documents:
-
--   [Wifi Shield](ThirdParty/WiFiShield/01-Wifi.md)
--   [OpenBCI Wifi Server](ThirdParty/WiFiShield/03-OpenBCI_Wifi_Server.md)
--   [OpenBCI Wifi SDK](ThirdParty/WiFiShield/08-OpenBCI_Wifi_SDK.md)
--   [Wifi Programming Tutorial](ThirdParty/WiFiShield/12-Wifi_Programming_Tutorial.md)
