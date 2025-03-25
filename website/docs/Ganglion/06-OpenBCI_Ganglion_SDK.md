@@ -109,8 +109,6 @@ Then, user sends **~5**
 
 **returns** `Sample rate set to 800Hz$$$`
 
-### Wifi Shield Commands
-
 ## Unused ASCII Characters
 
 These are currently unused (and user available) characters in the OpenBCI Ganglion platform:

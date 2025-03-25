@@ -117,7 +117,6 @@ The following instructions will get your computer and the Arduino IDE set up to 
 
 - [Arduino IDE v1.8.x](https://www.arduino.cc/en/software)
 - [Ganglion Library Firmware](https://github.com/OpenBCI/OpenBCI_Ganglion_Library)
-- [Wifi Master Library Firmware](https://github.com/OpenBCI/OpenBCI_Wifi_Master_Library)
 
 :::info
 Be sure to clone the repositories directly to your [Arduino libraries folder](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries#manual-installation). Alternatively, add the zipped libraries by navigating to `Sketch -> Include Library -> Add .ZIP Library...` and selecting the downloaded archives.
