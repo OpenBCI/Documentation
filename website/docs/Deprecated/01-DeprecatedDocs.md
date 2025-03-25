@@ -21,3 +21,4 @@ Deprecated Software:
 
 - [Python and OpenBCI](Deprecated/08-OpenBCI_Python.md)
 - [OpenBCI Hub](Deprecated/OpenBCI_Hub.md)
+- [NeuroPype Motor Imagery Example](Deprecated/Motor_Imagery.md)
