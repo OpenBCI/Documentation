@@ -3,7 +3,7 @@ id: WiFiLanding
 title: WiFi Shield Landing Page
 ---
 
-::: info
+:::info
 This product is no longer offered for sale due to reliability issues. Documentation is kept here for devices in-the-wild that are still in use.
 :::
 
