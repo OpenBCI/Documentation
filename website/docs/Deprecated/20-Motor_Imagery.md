@@ -132,8 +132,9 @@ You can configure the number of trials per class and other parameters in motorim
 
 You need to edit a few nodes in this pipeline. You should delete these three nodes (Import SET, Stream Data, LSL Output) at the bottom of the pipeline design as we will use our own recorded calibration data.
 
+Delete these nodes from the Pipeline Design:
+
 ![Calibration Data](../assets/DepImages/neuropype-motor-imagery/Calibration_Data.png)
-Delete these nodes from the Pipeline Design
 
 Delete the Import Set node that is connected to Inject Calibration Data and replace it with Import XDF as the calibration data is recorded in .xdf format.
 To delete a node select it and press 'delete' key. To add a new node, right click and type 'import xdf'. You can connect a new node to next node by dragging the outer semicircle to the next node.
