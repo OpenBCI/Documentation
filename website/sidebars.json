@@ -147,6 +147,7 @@
       "Deprecated/MyoCyton",
       "Deprecated/MyoGanglion",
       "Deprecated/FTDI_Fix_Mac_Deprecated",
+      "Deprecated/MotorImagery",
       {
         "type": "category",
         "label": "WiFi Shield",
@@ -195,10 +196,7 @@
       {
         "type": "category",
         "label": "EEG Projects and Tutorials",
-        "items": [
-          "Examples/EEGProjects/FocusArduino",
-          "Examples/EEGProjects/MotorImagery"
-        ]
+        "items": ["Examples/EEGProjects/FocusArduino"]
       }
     ],
     "FAQ": [
