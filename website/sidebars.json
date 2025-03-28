@@ -100,16 +100,6 @@
         "type": "category",
         "label": "ThinkPulse",
         "items": ["ThirdParty/ThinkPulse/ThinkPulse"]
-      },
-      {
-        "type": "category",
-        "label": "WiFi Shield",
-        "items": [
-          "ThirdParty/WiFiShield/WiFiLanding",
-          "ThirdParty/WiFiShield/WiFiProgam",
-          "ThirdParty/WiFiShield/WiFiAPI",
-          "ThirdParty/WiFiShield/WiFiSDK"
-        ]
       }
     ],
     "Software": [
@@ -156,7 +146,18 @@
       "Deprecated/Hub",
       "Deprecated/MyoCyton",
       "Deprecated/MyoGanglion",
-      "Deprecated/FTDI_Fix_Mac_Deprecated"
+      "Deprecated/FTDI_Fix_Mac_Deprecated",
+      {
+        "type": "category",
+        "label": "WiFi Shield",
+        "items": [
+          "Deprecated/WiFiShield/WiFiLanding",
+          "Deprecated/WiFiShield/WiFiProgram",
+          "Deprecated/WiFiShield/WiFiAPI",
+          "Deprecated/WiFiShield/WiFiSDK",
+          "Deprecated/WiFiShield/WiFiGS"
+        ]
+      }
     ],
     "Troubleshooting": [
       "Troubleshooting/TroubleshootingLanding",
