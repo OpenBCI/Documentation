@@ -62,7 +62,7 @@ Each channel in the ADS1299 chip has a multiplexer that allows for the testing, 
 
 :::note
 
-Temp, BIAS_DRP and BIAS_DRN are advanced features that are not normally used during the Normal operation of the Cyton and Cyton+Daisy. An explanation for these channel modes can be found in [Page 50](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet.
+Temp, BIAS_DRP and BIAS_DRN are advanced features that are not normally used during the Normal operation of the Cyton and Cyton+Daisy. An explanation for these channel modes can be found in [Page 50 of the ADS1299 datasheet](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299).
 
 :::
 
