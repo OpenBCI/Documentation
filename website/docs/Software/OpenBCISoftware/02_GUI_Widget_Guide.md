@@ -23,14 +23,65 @@ Each Ultracortex comes with wires that are color-coded to match the GUI, which c
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUIv5.0.9_TimeSeries_HWSC_Screenshot_UnappliedSetting.png)
 
-For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, and other hardware settings for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. As an example, you can see Channel 1 has been highlighted in the above screenshot. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
+For Cyton users, clicking the Hardware Settings button opens a menu that allows you to fine-tune the PGA Gain, Bias, Input Type, SRB1 and SRB2 for each channel. After updating these settings, the channel will be highlighted in blue to show that there are unapplied settings. As an example, you can see Channel 1 has been highlighted in the above screenshot. Next, click `Send` to send the updated settings to the board. Then, click the `Time Series` button again to view the data.
 
 :::tip
 To change the gain of a channel, you can click a dropdown and then scroll to view more options.
 :::
 
-Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings. Also, users will need to stop the data stream in order to access the Hardware Settings UI inside the Time Series Widget. An explanation of the various Hardware Settings available for use with the Cyton, Cyton+Daisy and Ganglion are listed below:
+Starting with GUI v5.0.2, all ADS1299 boards (Cyton, Cyton+Daisy) will use a dynamic scaler. This ensures that the scale factor, set in the Hardware Settings view, is always in sync with the numbers shown on user interface displays and recordings. Also, users will need to stop the data stream in order to access the Hardware Settings UI inside the Time Series Widget. An explanation of the various Hardware Settings available for use with the Cyton and Cyton+Daisy are listed below:
 
+#### PGA Gain
+
+The PGA Gain has seven options: x1, x2, x4, x6, x8, x12, and x24.
+The PGA Gain refers to the amplification factor that can be adjusted programmatically to amplify the input signal before it is converted from analog to digital.
+In the context of the ADS1299 board or any similar analog front-end with programmable gain amplifiers (PGAs), increasing the gain amplifies the input signal before it is digitized by the Analog-to-Digital Converter (ADC). Here’s what happens when you increase the gain:
+
+1. **Signal Amplification**: The primary purpose of increasing the gain is to amplify weak signals to a measurable level. Biopotential signals, such as EEG (electroencephalography) or ECG (electrocardiography), are often very small in amplitude. Increasing the gain allows these weak signals to be more easily detected and measured.
+
+2. **Improved Signal-to-Noise Ratio (SNR)**: By amplifying the signal, the desired signal (such as EEG or ECG) becomes more prominent relative to any background noise present in the signal. This improves the SNR, which is crucial for accurate signal analysis and interpretation.
+
+3. **Dynamic Range Utilization**: Analog-to-digital converters (ADCs) have a finite range within which they can accurately measure signals. Increasing the gain ensures that the input signal amplitude falls within this range optimally. This prevents the signal from being too weak (underutilizing the ADC’s resolution) or too strong (risking saturation or clipping).
+
+4. **Adjustment for Different Signal Levels**: Different applications or measurement scenarios may require different gain settings to ensure that the signal amplitude is appropriate for accurate digitization and subsequent analysis.
+
+#### Input Type
+
+Each channel in the ADS1299 chip has a multiplexer that allows for the testing, calibration or measurement of biosignals for each channel. Below is a table with all the different input types and what they can be used for. By default, the Input Type "Normal" must be selected to record biosignals using the Cyton and Cyton+Daisy.
+
+| Mode                | Description                                     | When to Use                          |
+|-------------------- |-------------------------------------------------|--------------------------------------|
+| **Normal**          | Measures biopotentials (EEG, ECG, EMG, EOG)         | Default for all channels            |
+| **Shorted**         | INxP is shorted to INxN                        | Measure ADC noise floor and PGA gain noise |
+| **MVDD**            | INxP = INxN = AVDD/2                            | Measure ADC offset           |
+| **Test**            | Injects square wave into the ADS1299 channel    | Calibration & debugging              |
+| **BIAS Meas**       | Measures BIAS output                           | Checking BIAS drive                 |
+| **Temp**       | Measures BIAS output                                | Measure internal temperature of the ADS1299 chip |
+| **BIAS_DRP**       | Measures BIAS output                           | Set positive electrode as the BIAS driver           |
+| **BIAS_DRN**       | Measures BIAS output                           | Set negative electrode as the BIAS driver                 |
+
+:::note
+
+Temp, BIAS_DRP and BIAS_DRN are advanced features that are not normally used during the Normal operation of the Cyton and Cyton+Daisy. An explanation for these channel modes can be found in [Page 50](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet. 
+
+:::
+
+
+#### Bias Include
+
+The Bias Include option is a Yes or No setting that determines whether the bias is included.
+
+When the bias is included, the system applies a common-mode bias voltage to the input signals. This helps to stabilize the signals and improve the signal-to-noise ratio (SNR) by reducing common-mode interference and ensuring the signals are within the optimal range for accurate measurement.
+
+When the bias is not included, the input signals are measured without the application of the common-mode bias voltage. This mode might be used for specific types of measurements or diagnostics where the biasing is not necessary or could interfere with the signals being measured.
+
+#### SRB1 (Single Reference Buffer 1)
+
+SRB1 or Single Reference Buffer 1 allows all the Negative inputs (INxN) to be set as the reference for the Positive Input (INxP) of a channel. This allows for all negative inputs to be connected to the same electrode, commonly an earclip electrode. SRB1 can be used for an EEG setup but it is a binary input. But, please note that SRB1 is a binary register bit in that either all negative inputs are connected to SRB1 when enabled or they are all disconnected from SRB1 when disabled. This is the reason that we recommend to use the Negative Input as electrode input and SRB2 as the reference in case differential and referential setup are to be used together. More information on this can be found in [Page 59](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet.
+
+#### SRB2 (Single Reference Buffer 2)
+
+SRB2 or Single Reference Buffer 2 allows any Positive Input (INxP) to be set as the reference for the Negative Input (INxN) of a channel. If SRB2 is set to "On", then the Negative Input of that channel will reference the SRB2 electrode, commonly an earclip electrode. If SRB2 is set to "Off", then the Negative Input will reference the Positive Input of that channel. The flexibility of SRB2 allows for differential and referential setups to be used with the same ADS1299 chip. That means, some channels can be used in a differential setup like EMG, ECG or EOG and the other channels can be used to measure referential signals like EEG. More information on this can be found in the Channel Specific Settings starting at [Page 50](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet.
 
 
 ### Filters
