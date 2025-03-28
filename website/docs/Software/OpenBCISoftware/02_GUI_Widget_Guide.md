@@ -13,7 +13,7 @@ The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Downlo
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/Cyton_TimeSeries_EyeBlink.jpg)
 
-The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signal in real-time, with each graph representing the voltage detected at one point in time by an electrode.
+The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signals in real-time, with each graph representing the voltage detected at one point in time by an electrode.
 
 It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared). In the above photo, we can clearly see three eye blinks on channels one and two.
 
@@ -49,23 +49,22 @@ In the context of the ADS1299 board or any similar analog front-end with program
 
 Each channel in the ADS1299 chip has a multiplexer that allows for the testing, calibration or measurement of biosignals for each channel. Below is a table with all the different input types and what they can be used for. By default, the Input Type "Normal" must be selected to record biosignals using the Cyton and Cyton+Daisy.
 
-| Mode                | Description                                     | When to Use                          |
-|-------------------- |-------------------------------------------------|--------------------------------------|
-| **Normal**          | Measures biopotentials (EEG, ECG, EMG, EOG)         | Default for all channels            |
-| **Shorted**         | INxP is shorted to INxN                        | Measure ADC noise floor and PGA gain noise |
-| **MVDD**            | INxP = INxN = AVDD/2                            | Measure ADC offset           |
-| **Test**            | Injects square wave into the ADS1299 channel    | Calibration & debugging              |
-| **BIAS Meas**       | Measures BIAS output                           | Checking BIAS drive                 |
-| **Temp**       | Measures BIAS output                                | Measure internal temperature of the ADS1299 chip |
-| **BIAS_DRP**       | Measures BIAS output                           | Set positive electrode as the BIAS driver           |
-| **BIAS_DRN**       | Measures BIAS output                           | Set negative electrode as the BIAS driver                 |
+| Mode          | Description                                  | When to Use                                      |
+| ------------- | -------------------------------------------- | ------------------------------------------------ |
+| **Normal**    | Measures biopotentials (EEG, ECG, EMG, EOG)  | Default for all channels                         |
+| **Shorted**   | INxP is shorted to INxN                      | Measure ADC noise floor and PGA gain noise       |
+| **MVDD**      | INxP = INxN = AVDD/2                         | Measure ADC offset                               |
+| **Test**      | Injects square wave into the ADS1299 channel | Calibration & debugging                          |
+| **BIAS Meas** | Measures BIAS output                         | Checking BIAS drive                              |
+| **Temp**      | Measures BIAS output                         | Measure internal temperature of the ADS1299 chip |
+| **BIAS_DRP**  | Measures BIAS output                         | Set positive electrode as the BIAS driver        |
+| **BIAS_DRN**  | Measures BIAS output                         | Set negative electrode as the BIAS driver        |
 
 :::note
 
-Temp, BIAS_DRP and BIAS_DRN are advanced features that are not normally used during the Normal operation of the Cyton and Cyton+Daisy. An explanation for these channel modes can be found in [Page 50](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet. 
+Temp, BIAS_DRP and BIAS_DRN are advanced features that are not normally used during the Normal operation of the Cyton and Cyton+Daisy. An explanation for these channel modes can be found in [Page 50](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet.
 
 :::
-
 
 #### Bias Include
 
@@ -82,7 +81,6 @@ SRB1 or Single Reference Buffer 1 allows all the Negative inputs (INxN) to be se
 #### SRB2 (Single Reference Buffer 2)
 
 SRB2 or Single Reference Buffer 2 allows any Positive Input (INxP) to be set as the reference for the Negative Input (INxN) of a channel. If SRB2 is set to "On", then the Negative Input of that channel will reference the SRB2 electrode, commonly an earclip electrode. If SRB2 is set to "Off", then the Negative Input will reference the Positive Input of that channel. The flexibility of SRB2 allows for differential and referential setups to be used with the same ADS1299 chip. That means, some channels can be used in a differential setup like EMG, ECG or EOG and the other channels can be used to measure referential signals like EEG. More information on this can be found in the Channel Specific Settings starting at [Page 50](https://www.ti.com/lit/ds/symlink/ads1299.pdf?ts=1740583903941&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1299) of the ADS1299 datasheet.
-
 
 ### Filters
 
@@ -119,7 +117,7 @@ As of GUI 5.0.9, use the new [Cyton Signal Widget](../OpenBCISoftware/02_GUI_Wid
 This is a standard data visualization feature of biosensing tools. The x-axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV. These amplitudes are displayed logarithmically by default — a recommended setting — but you can alter this in the "Log/Lin" dropdown.
 
 :::note
-Each color in the FFT Plot is color-coded to match the channels in the time series.\_
+Each color in the FFT Plot is color-coded to match the channels in the time series.
 :::
 
 :::tip
@@ -240,13 +238,13 @@ The band power widget shows the relative voltages of the various brain wave cate
 
 ### Types of Waves
 
-| Wave  | Frequency (Hz) | Description                                                                                                                                                                               |
-| :---: | :------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gamma |     32-100     | Signifies heightened perception, learning and problem solving tasks, as well as alertness. It occurs when there is simueltaneous information processing from multiple parts of the brain. |
-| Beta  |     13-32      | Signfies normal alert consciousness and active thinking. It occurs when one is focusing on work, solving a problem, learning a new concept, or engaging in active conversation.           |
-| Alpha |      8-13      | Signifies physical and mental relaxation. They occur when your eyes are closed, when one is being artistic, and during yoga.                                                              |
-| Theta |      4-8       | Signifies deep relaxation, creativity, insight, reduced consciousness. They are picked up during day dreaming and deep meditation.                                                        |
-| Delta |     0.5-4      | Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.                                                                                                       |
+| Wave  | Frequency (Hz) | Description                                                                                                                                                                              |
+| :---: | :------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Gamma |     32-100     | Signifies heightened perception, learning and problem solving tasks, as well as alertness. It occurs when there is simultaneous information processing from multiple parts of the brain. |
+| Beta  |     13-32      | Signifies normal alert consciousness and active thinking. It occurs when one is focusing on work, solving a problem, learning a new concept, or engaging in active conversation.         |
+| Alpha |      8-13      | Signifies physical and mental relaxation. They occur when your eyes are closed, when one is being artistic, and during yoga.                                                             |
+| Theta |      4-8       | Signifies deep relaxation, creativity, insight, reduced consciousness. They are picked up during day dreaming and deep meditation.                                                       |
+| Delta |     0.5-4      | Signifies sleep, dreaming. Occurs when we enjoy restorative, deep, dreamless sleep.                                                                                                      |
 
 Example data in the Band Power Widget:
 
@@ -274,7 +272,7 @@ The drop-downs of the widget are designed to allow you to tweak the various para
 
 ## EMG Joystick
 
-This widget enables control of a joystick using EMG data. You can use up to 4 channels of EMG to have full control of each axis. Each channel is mapped to an axis direction: **+x, -x, +y, -y**. You can change which channel controls which direction using the dropdown menus at the top of the widget.
+This widget enables you to control a joystick using EMG data. You can use up to 4 channels of EMG to have full control of each axis. Each channel is mapped to an axis direction: **+x, -x, +y, -y**. You can change which channel controls which direction using the dropdown menus at the top of the widget.
 
 ![EMG Joystick Screenshot](../../assets/TutorialImages/EMG_joystick.png)
 
@@ -314,7 +312,7 @@ Lab Streaming Layer is a system for synchronizing streaming data for live analys
 
 FFT data can now be sent over LSL, starting with [GUI v.4.1.5-beta.3.](https://github.com/OpenBCI/OpenBCI_GUI/releases)
 
-As of GUI v5.0.5, the `# Chan` textfield has been removed.As an example, here's a screenshot streaming 3 data types to Python:
+As of GUI v5.0.5, the `# Chan` textfield has been removed. As an example, here's a screenshot streaming 3 data types to Python:
 
 ![gui windows override high dpi scaling](../../assets/SoftwareImages/OpenBCISoftware/gui_lslStreaming_Example.png)
 
