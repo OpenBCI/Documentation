@@ -12,16 +12,7 @@ import Link from '@docusaurus/Link';
     className="button button--primary button--lg"
     style={{ 
       paddingTop: '20px',  
-      paddingBottom: '5px', 
-      paddingLeft: '24px',
-      paddingRight: '24px',
-      fontSize: '18px',
-      fontWeight: 'bold',
-      borderRadius: '6px',
-      lineHeight: '1.2',
-      textAlign: 'center',
-      whiteSpace: 'nowrap',
-      display: 'inline-block'
+      paddingBottom: '5px'
     }}
   >
     Download OpenBCI GUI
