@@ -330,6 +330,8 @@ OSC works with MaxMSP, PureData, and Resolume.
 
 ## Marker
 
+![marker widget image](../../assets/SoftwareImages/OpenBCISoftware/GUI_6.0.0_MarkerWidget.png)
+
 The marker widget allows users to insert event markers into their data stream while recording in the OpenBCI GUI. These markers are useful for tracking specific events or experimental triggers during EEG, EMG, or ECG data collection.
 
 ### How to Add Markers
@@ -338,19 +340,32 @@ There are three ways to insert a marker into the data stream:
 
 1. **UI Buttons:** Click one of the marker buttons within the GUI to insert a marker manually. You can adjust the vertical scale inside the widget to increase or decrease the number of available marker buttons.
 2. **Keyboard Shortcuts:** Use the following predefined keyboard shortcuts to add markers quickly:
-      * Z, X, C, V → Insert markers 1, 2, 3, and 4.
-      * Shift + Z, Shift + X, Shift + C, Shift + V → Insert markers 5, 6, 7, and 8.
+
+      | Key | Marker Number | Key | Marker Number |
+      |-----|---------------|-----|---------------|
+      | Z   | 1             | Shift + Z | 5       |
+      | X   | 2             | Shift + X | 6       |
+      | C   | 3             | Shift + C | 7       |
+      | V   | 4             | Shift + V | 8       |
 3. **UDP Input:** The GUI can receive markers from an external program over a network using UDP (User Datagram Protocol). This allows markers to be inserted remotely from another application.
 
 ### Using UDP to Send Markers
 
-The GUI listens for **single float values** sent over UDP. These values will be recorded as markers in both the **GUI CSV file** and **BrainFlow CSV file**.
+The GUI listens for **single float values** sent over UDP.
 
 - The UDP receiver listens for data on the specified IP address and port. These can be adjusted using the **Receive IP** and **Receive Port** fields inside the Marker Widget.
 - When an external application sends a single float value, the GUI records that value as a marker.
 - Updating the IP address or port in the GUI will automatically restart the UDP listener.
 
 Here is an **[example Python script in the GUI Networking Test Kit](https://github.com/OpenBCI/OpenBCI_GUI/blob/db1cbc580980f725c85f6d46ec98e2f7cefb9851/Networking-Test-Kit/UDP/udp_send_marker.py)** that sends markers over UDP to the OpenBCI GUI.
+
+### Viewing and Accessing Markers
+
+Markers that you add through any method (UI buttons, keyboard shortcuts, or UDP) are both:
+
+1. **Displayed in real-time** on the Marker Widget as vertical lines scaled to their marker values.
+
+2. **Saved in the recording files** when you record data in the GUI. You will find a dedicated "Marker Channel" column in both the **GUI CSV file** and **BrainFlow CSV file**. As a reminder these files are, by default, stored in `User/Documents/OpenBCI_GUI/Recordings` on all operating systems. 
 
 ## Cyton Signal Widget
 
