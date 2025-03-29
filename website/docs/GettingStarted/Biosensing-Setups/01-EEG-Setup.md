@@ -69,7 +69,7 @@ a) We're going to start with the electrodes on your head. Begin by scooping Ten2
 
 ![SRB2](../../assets/GettingStartedImages/earlobe.JPG)
 
-b) Now apply this electrode to either one of your earlobes (either A1 or A2 as seen on the 10-20 system image  below). You can use some medical tape (or electric tape!) to give this electrode some extra stability, ensuring that it does not fall off. This electrode is the reference that all of the EEG electrodes on your head will be measured in comparison to. The uV reading that will appear in the GUI's EEG DATA montage is a measure of the potential difference between each electrode and this reference electrode (SRB2). SRB1 (the top SRB pin) can also be used as a reference pin, but we won't discuss that here. Check out the other docs on how to maximize the usage of the other pins!
+b) Now apply this electrode to either one of your earlobes (either A1 or A2 as seen on the 10-20 system image  below). You can use some medical tape (or electric tape!) to give this electrode some extra stability, ensuring that it does not fall off. This electrode is the reference that all of the EEG electrodes on your head will be measured in comparison to. The uV reading that will appear in the GUI's EEG DATA montage is a measure of the potential difference between each electrode and this reference electrode (SRB2). Check out the other docs on how to maximize the usage of the other pins!
 
 ![Fp2](../../assets/GettingStartedImages/Fp2.JPG)
 
@@ -90,6 +90,14 @@ d) Now follow the same procedure for the red electrode and place it on the back 
 e) Now follow the same procedure as step 2 above to apply the black electrode to your other earlobe (either A1 or A2 from the 10-20 system). The black electrode is connected to the BIAS pin, which is used for noise cancelling. It is similar to a GROUND pin, which establishes a common ground between the Cyton board and your body, but it has some extra destructive interference noise cancelling techniques built in!
 
 You're now done connecting electrodes to your noggin! I like to use a cheap cotton hairband to add extra stability to all of the electrodes connected to my head, by placing it gently on top of all of the electrodes.
+
+:::info
+
+Due to the fact that the electrodes collecting EEG data are connected to the Negative inputs of the ADS1299 and the common reference is connected to the Positive Input through SRB2, the saved raw data from the OpenBCI GUI will appear inverted when processed in another application. 
+
+If you would like to reverse this polarity, it is recommended to do so through software and not change the hardware setup of OpenBCI. This is because SRB2 offers much more flexibility as compared to SRB1 when used as a common reference connection. To reverse the polarity of the data through software, you will have to pass the raw data through a band pass filter between 0.5Hz and 45Hz (to remove the DC offset) and then multiply by -1.
+
+:::
 
 ## 3. Launch the GUI and adjust your channel settings
 

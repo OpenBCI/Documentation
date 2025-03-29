@@ -110,7 +110,7 @@ board = OpenBCIWifi(shield_name='OpenBCI-2254', sample_rate=200)
 
 ### Sending commands
 
-Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](Cyton/04-OpenBCI_Cyton_SDK.md), [Wifi Shield](ThirdParty/WiFiShield/08-OpenBCI_Wifi_SDK.md)) to send commands to the board using python (make sure your commands are strings).
+Once you initialize the board you can use the commands on the OpenBCI SDKs ([Ganglion](Ganglion/06-OpenBCI_Ganglion_SDK.md), [Cyton](Cyton/04-OpenBCI_Cyton_SDK.md), [Wifi Shield](Deprecated/WiFiShield/Wifi.md)) to send commands to the board using python (make sure your commands are strings).
 
 ```python
 
