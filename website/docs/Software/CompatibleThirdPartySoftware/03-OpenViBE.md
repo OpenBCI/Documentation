@@ -2,6 +2,7 @@
 id: OpenVibe
 title: OpenViBE
 ---
+
 ## Overview
 
 **There are two primary methods of connecting from OpenBCI tech to OpenViBE:**
@@ -37,9 +38,9 @@ Start the OpenViBE Signal Acquisition Server (SAS). **C: &gt; Program Files &gt;
 2.  Then open **Driver Properties**. In the Device option, select the COM port number your OBCI board was connected to.
 3.  In the SAS Preference menu, change the drift tolerance from 2ms (default) to 10ms.
 4.  Press Connect. If error, troubleshoot:
-    -   Look at the terminal window that the SAS opens up. It has a verbose report on the SAS's condition.
-    -   Often, pressing the restart button on the OBCI board, or Disconnecting/Connecting the Dongle will fix any connection issues.
-    -   If the error reports that it cannot open the selected port, make sure the COM port selected in the driver options is the same as your board.
+    - Look at the terminal window that the SAS opens up. It has a verbose report on the SAS's condition.
+    - Often, pressing the restart button on the OBCI board, or Disconnecting/Connecting the Dongle will fix any connection issues.
+    - If the error reports that it cannot open the selected port, make sure the COM port selected in the driver options is the same as your board.
 
 ### Configure OpenViBE Designer
 
@@ -67,9 +68,9 @@ You're now streaming data from your OpenBCI board to OpenViBE! Feel free to expl
 
 ## Method 2: Stream from the OpenBCI GUI to OpenViBE
 
-Please, refer to the following screenshot, YouTube video and/or steps below. For example, you can stream Ganglion+WiFi at 1600Hz from the OpenBCI GUI to OpenVibe, as seen in the screenshot. **Here is a [YouTube Video to document this method in detail.](https://www.youtube.com/watch?v=97rNewfbTKA)**
+Please, refer to the following screenshot, YouTube video and/or steps below. For example, you can stream Ganglion from the OpenBCI GUI to OpenVibe, as seen in the screenshot. Here is a [YouTube Video to document this method in detail.](https://www.youtube.com/watch?v=97rNewfbTKA)
 
-**[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/openbci-archive/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)** This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions. 
+**[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/openbci-archive/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)** This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
 
 _We do not need the objects on the right to handle AUX channels. Sever the connection to the Aux data processing, since we will be sending just four channels TimeSeries data over LSL._
 

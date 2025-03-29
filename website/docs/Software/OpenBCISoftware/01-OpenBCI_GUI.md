@@ -218,10 +218,6 @@ This feature allows more advanced users to connect to OpenBCI boards using an ex
 
 Similarly, you can reverse this process by using the BrainFlow Streamer set to "Network" and specifying the IP address and port there. The data sent out from the GUI is unfiltered. Here is the [official BrainFlow Documentation for Streaming Board](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html?highlight=streaming%20board#streaming-board).
 
-:::tip Recommendation
-This method can be more reliable and quicker to implement than sending Time Series data out from the Networking Widget over UDP, LSL, or OSC!
-:::
-
 ![BrainFlow Streamer over Network Option](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-BrainFlowStreamerNetworkSetting_Screenshot.png)
 
 #### GUI To GUI Data Streaming
@@ -255,29 +251,23 @@ To receive this stream on a different machine:
 
 ![Expert Mode Button](../../assets/SoftwareImages/OpenBCISoftware/expertModeToggleHelpText.png)
 
-Expert Mode Keyboard Shortcuts:
-
-- Other than spacebar, you can press 's' to stop data stream, and 'b' to begin, or start the data stream.
-
-- You can _use lowercase 'k' to set "Bias Don't Include"_ on all channels, or _lowercase 'l' to set "Bias Include"_ on all channels.
-
-- **Press lowercase 'd' to set all channels settings to default.**
-
 - Using an _English keyboard_, you can deactivate channels 1-16 using:
 
-  - 1,2,3,4,5,6,7,8
-  - q,w,e,r,t,y,u,i
+  - `1, 2, 3, 4, 5, 6, 7, 8`
+  - `q, w, e, r, t, y, u, i`
 
 - Similarly, activate channels 1-16 using:
 
-  - !, @, #, $, %, ^, &, \*
-  - Q,W,E,R,T,Y,U,I
+  - `!, @, #, $, %, ^, &, \*`
+  - `Q, W, E, R, T, Y, U, I`
 
-- **Take a screenshot of the GUI using lowercase 'm'!** It will be saved to _/Documents/OpenBCI_GUI/Settings/_.
+- **Take a screenshot of the GUI using lowercase `m`!** It will be saved to _/Documents/OpenBCI_GUI/Screenshots/_.
 
-- **Enter presentation mode using Enter (Win), or Return (Mac).**
+- To change to the alternate color scheme, use `{`.
 
-- To change to the alternate color scheme, use '{"{"}'.
+- Enable synthetic square waves on Ganglion or Cyton using `[` (slow pulse) or `]` (fast pulse).
+
+- Enabling expert mode will also allow the "Custom Command" textbox at the bottom of the Hardware Settings Controller for _Cyton only_. Here you can send any commands to the Cyton following the [Cyton SDK](../../Cyton/04-OpenBCI_Cyton_SDK.md).
 
 ## Running the OpenBCI GUI from the Processing IDE
 
