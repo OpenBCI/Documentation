@@ -10,3 +10,4 @@ The guides below offer tips on common hardware and software issues and how to fi
 - [FTDI Buffer Fix on Linux](Troubleshooting/03-FTDI_Fix_Linux.md)
 - [FTDI Buffer Fix on Windows](Troubleshooting/04-FTDI_Fix_Windows.md)
 - [MacOS Ganglion BLE Workaround](Troubleshooting/MacOS_Ganglion_BLE_Workaround.md)
+- [Reset Button Press](Troubleshooting/Reset_Button_Press.md)
