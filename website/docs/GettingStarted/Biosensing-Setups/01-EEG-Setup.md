@@ -2,16 +2,17 @@
 id: EEGSetup
 title: Setting up for EEG
 ---
-This page will explain the most basic setup to process EEG Data using your OpenBCI board, using our gold cup electrodes.
+
+This page will explain the most basic setup to process EEG Data using your OpenBCI board, using our headband kit.
 
 ## Related Headware
 
 To learn more about specific OpenBCI Headware and how to set them up for EEG, follow the links below.
 
--   [Ultracortex Mark IV](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md)
--   [Gel Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md)
--   [Gelfree (Saline) Electrode Cap](../../AddOns/Headwear/Gelfree_Electrode_Cap_Tutorial.md)
--   [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
+- [Ultracortex Mark IV](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md)
+- [Gel Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md)
+- [Gelfree (Saline) Electrode Cap](../../AddOns/Headwear/Gelfree_Electrode_Cap_Tutorial.md)
+- [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
 
 ## What you will need
 
@@ -19,12 +20,7 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 
 #### Necessary:
 
--   [Ten20 conductive electrode paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) (or other conductive electrode gel)
--   [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
--   x4 AA batteries
--   x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
-
-Before applying ten20 paste on subjects with long hair, part the hair at 10-20 international standard electrode positions.
+- [Cyton board, USB Dongle, and battery pack](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) OR [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 
 If you are using an OpenBCI electrode starter kit, use the following electrodes so as to be consistent with the GUI's color-coding protocol:
 
@@ -35,12 +31,6 @@ If you are using an OpenBCI electrode starter kit, use the following electrodes 
 5.  Blue
 6.  Red
 
-#### Optional:
-
--   Paper towels for cleaning excess Ten20 paste
--   Medical tape (or other tape) for adding extra stability to electrodes
--   Ear swabs for cleaning paste from electrodes, once you're finished
-
 ## 1. Connect your electrodes to OpenBCI
 
 Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well. You can see in the image below pins N1P through N8P on the Cyton. These correspond to the 8 channels available for data.
@@ -48,32 +38,28 @@ Connect the electrode wires to your Cyton board as shown below. The proper wire 
 On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to _'DOWN'_ for EEG.
 Explanation in detail [here](../../Ganglion/02-Ganglion.md#inverting-input-select-switches).
 
-![eegGoldCupSetup](../../assets/GettingStartedImages/eeg_cytonSetup.JPG)
+![eegheadbandkit setup](../../assets/GettingStartedImages/eeg_cytonSetup.JPG)
 
 | Electrode Wire Color | Cyton Board Pin       | Ganglion Board Pin | Function             |
 | -------------------- | --------------------- | ------------------ | -------------------- |
-| white                | SRB2 (bottom SRB pin) | REF (top pin)      | Reference Pin        |
+| black                | SRB2 (bottom SRB pin) | REF (top pin)      | Reference Pin        |
 | black                | bottom BIAS pin       | D_G (top pin)      | Noise-cancelling Pin |
-| purple               | 2N (bottom N2P pin)   | +2 (on top row)    | Analog input         |
-| red                  | 7N (bottom N7P pin)   | +4 (on top row)    | Analog input         |
+| green                | 4N (bottom N4P pin)   | +2 (on top row)    | Analog input         |
+| purple               | 3N (bottom N3P pin)   | +4 (on top row)    | Analog input         |
+| grey                 | 2N (bottom N2P pin)   | +4 (on top row)    | Analog input         |
+| blue                 | 1N (bottom N1P pin)   | +4 (on top row)    | Analog input         |
 
-The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or pins 1 through 4 in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
+The two black earclip electrodes must always connect to the SRB2 pin and the BIAS pin, but the green,purple,grey, and blue electrodes can be connected to any of N1P through N8P channels (or pins 1 through 4 in the case of the Ganglion). We decided to use channels 1 and 4 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
 
 ## 2. Connect your electrodes to your head and body
 
-![Electrode Paste](../../assets/GettingStartedImages/electrodePaste.png)
+![Earclip on person](../../assets/GettingStartedImages/person-w-earclip.png)
 
-a) We're going to start with the electrodes on your head. Begin by scooping Ten20 electrode paste into your white gold cup electrode. This is going to be your reference (or SRB2) electrode for the other electrodes on your head. Fill the electrode so there is a little extra electrode paste spilling over the top of the gold cup, as seen in the picture to the right.
-
-**Note:** Use a paper towel or napkin to remove excess electrode paste as you are applying your electrodes.
-
-![SRB2](../../assets/GettingStartedImages/earlobe.JPG)
-
-b) Now apply this electrode to either one of your earlobes (either A1 or A2 as seen on the 10-20 system image  below). You can use some medical tape (or electric tape!) to give this electrode some extra stability, ensuring that it does not fall off. This electrode is the reference that all of the EEG electrodes on your head will be measured in comparison to. The uV reading that will appear in the GUI's EEG DATA montage is a measure of the potential difference between each electrode and this reference electrode (SRB2). Check out the other docs on how to maximize the usage of the other pins!
+a) Apply the earclip electrodes to both of your earlobes ( A1 and A2 as seen on the 10-20 system image below). This electrode is the reference that all of the EEG electrodes on your head will be measured in comparison to. The uV reading that will appear in the GUI's EEG DATA montage is a measure of the potential difference between each electrode and this reference electrode (SRB2). Check out the other docs on how to maximize the usage of the other pins!
 
 ![Fp2](../../assets/GettingStartedImages/Fp2.JPG)
 
-c) Follow the same procedure for the purple electrode and apply it to your forehead 1 inch above your left eyebrow (as if you were looking at yourself) and an inch to the left of your forehead's centerline.
+b) Follow the same procedure for the purple electrode and apply it to your forehead 1 inch above your left eyebrow (as if you were looking at yourself) and an inch to the left of your forehead's centerline.
 
 ![1020](../../assets/GettingStartedImages/1020.jpg)
 
@@ -93,7 +79,7 @@ You're now done connecting electrodes to your noggin! I like to use a cheap cott
 
 :::info
 
-Due to the fact that the electrodes collecting EEG data are connected to the Negative inputs of the ADS1299 and the common reference is connected to the Positive Input through SRB2, the saved raw data from the OpenBCI GUI will appear inverted when processed in another application. 
+Due to the fact that the electrodes collecting EEG data are connected to the Negative inputs of the ADS1299 and the common reference is connected to the Positive Input through SRB2, the saved raw data from the OpenBCI GUI will appear inverted when processed in another application.
 
 If you would like to reverse this polarity, it is recommended to do so through software and not change the hardware setup of OpenBCI. This is because SRB2 offers much more flexibility as compared to SRB1 when used as a common reference connection. To reverse the polarity of the data through software, you will have to pass the raw data through a band pass filter between 0.5Hz and 45Hz (to remove the DC offset) and then multiply by -1.
 
