@@ -9,22 +9,11 @@ The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, 
 
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
 
-<!-- Download button at top makes it easy for user to find download page link -->
+```mdx-code-block
+import GuiDownloadButton from '@site/src/components/GuiDownloadButton'
+```
 
-import Link from '@docusaurus/Link';
-
-<div align="center" style={{ marginTop: '28px', marginBottom: '36px' }}>
-  <Link
-    to="https://openbci.com/downloads"
-    className="button button--primary button--lg"
-    style={{ 
-      paddingTop: '20px',  
-      paddingBottom: '5px'
-    }}
-  >
-    Download OpenBCI GUI
-  </Link>
-</div>
+<GuiDownloadButton/>
 
 ## Hardware/Driver Setup for OpenBCI_GUI
 
