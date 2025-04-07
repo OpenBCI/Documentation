@@ -5,8 +5,15 @@ title: The OpenBCI GUI
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
-The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt or .bdf/.edf format, as well as streamed in live-time to third-party software such as MATLAB.
+The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in real-time, played back, saved to your computer in CSV or BDF+ format, as well as streamed in live-time to third-party software such as MATLAB.
+
 It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
+
+```mdx-code-block
+import GuiDownloadButton from '@site/src/components/GuiDownloadButton'
+```
+
+<GuiDownloadButton/>
 
 ## Hardware/Driver Setup for OpenBCI_GUI
 
@@ -31,7 +38,7 @@ If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Da
 
 <summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</i></b></summary><br />
 
-Before trying to connect to any OpenBCI boards on Linux, you need to make sure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or similar. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [full explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br /><br />
+Before trying to connect to any OpenBCI boards on Linux, ensure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or a similar message. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [detailed explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br /><br />
 
 1.  First, verify if the user does belong to the "dialout" group using the “id” command.<br />
         - Type `id -Gn <username>` in terminal and check if it prints `dialout` as one of the options.<br />
@@ -39,28 +46,28 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 2.  Next, add the user to the “dialout” supplementary group.
         - Type `sudo usermod -a -G dialout <username>` in terminal.
         - Example: `sudo usermod -a -G dialout susieQ`
-3.  Restart Ubuntu
-4.  Try "id" command again - Repeat step one
+3.  Restart Ubuntu.
+4.  Repeat step one. Try "id" command again.
 
 </details><p />
 
 ## Installing the OpenBCI GUI as a "Standalone" Application
 
-### Download the Appropriate Application For Your OS
+### Download the Standalone App
 
-The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the [Downloads](https://openbci.com/downloads) page of the OpenBCI website, and click the download link that correlates to your OS and machine.
+The fastest way to run the GUI is to download the standalone app. To do this, head to the **[Downloads](https://openbci.com/downloads)** page of the OpenBCI website, and click the download link that correlates to your operating system and machine.
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/DownloadsUpdated.png)
 
 ### Install OpenBCI_GUI On macOS
 
-Drag and drop the `OpenBCI_GUI` application to you `Applications` folder.
+Drag and drop the `OpenBCI_GUI` application to your `Applications` folder.
 
 ![Drag and drop application](../../assets/SoftwareImages/OpenBCISoftware/gui_drag_and_drop.png)
 
 ### Install OpenBCI_GUI On Windows
 
-Move the `OpenBCI_GUI` directory anywhere you like.
+Move the `OpenBCI_GUI` directory to any location you prefer.
 
 <details>
 
@@ -88,26 +95,25 @@ Move the `OpenBCI_GUI` directory anywhere you like.
 
 ### Install OpenBCI_GUI On Linux
 
-<p>Unzip the downloaded application and place in desired location.</p><br />
+<p>Unzip the downloaded application and place in desired location.</p>
 
-<p /><details>
-
-<summary><i>Linux Users: How to run the GUI with High DPI Screens</i></summary>
-
-On Linux, there is no way to force scaling. However, here is a <a href="https://github.com/kaueraal/run_scaled">link to a script that should work</a>.
-
-</details><p />
+<p />
+  <details>
+  <summary><i>Linux Users: How to run the GUI with High DPI Screens</i></summary>
+  On Linux, there is currently no way to force scaling. However, here is a [link to a script that should work](https://github.com/kaueraal/run_scaled).
+  </details>
+<p />
 
 ## Running the OpenBCI_GUI
 
 **Important Notes:**
 
 - In some cases, there may be issues with the way your machine handles the BLE application that enables communication with the Ganglion Board.
-- If you run into additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum
+- If you encounter additional issues, please visit the [OpenBCI_GUI Section](https://openbci.com/forum/index.php?p=/categories/openbci_gui) of our Forum.
 
 ### Running on macOS
 
-Navigate to your `Applications` folder and double click the `OpenBCI_GUI` You may see a message pop up asking you if you're sure you want to open it. Click Open and the app will launch.
+Navigate to your `Applications` folder and double-click the `OpenBCI_GUI`. You may see a message pop up asking if you're sure you want to open it. Click `Open` and the app will launch.
 
 ![allow GUI to run](../../assets/SoftwareImages/OpenBCISoftware/ganglion_permissions.png)
 
@@ -176,7 +182,7 @@ The OpenBCI GUI displays up to six customizable windows in twelve layouts! You c
 The impedance widget is a valuable tool for evaluating electrode contact before data acquisition.
 Press `Test` to start impedance test on an individual channel.
 
-The impedance value is in colored font as a visual guide to the pre-set thresholds. A red impedance value means you should adjust your electrodes, part your hair, add gel, use paste, or such measures as appropriate for the electrode you’re using. Experienced users can also adjust these thresholds in the bracket-field beneath the table.
+The impedance value is in colored font as a visual guide to the pre-set thresholds. A red impedance value means you should adjust your electrodes, part your hair, add gel, use paste, or such measures as appropriate for the electrode you’re using. Experienced users can also adjust these thresholds in the textfield beneath the table.
 
 :::info
 During the impedance test, the board sends a small current through the selected channel to obtain the impedance value.
@@ -275,7 +281,7 @@ To receive this stream on a different machine:
 
 The OpenBCI GUI is built using [Processing 4](https://processing.org/), a popular, Java-based creative coding framework. If you are interested in adding features or modifying the existing code, it is really easy to do so if you are familiar with Java. If you're not familiar with Java, don't fret! Processing is one of the easiest software packages to pick up as a beginner coder.
 
-The things you will need to run the OpenBCI GUI in Processing are:
+The requirements for running the OpenBCI GUI in Processing are:
 
 - [Processing App](https://processing.org/download)
 - [OpenBCI GUI Sketch](https://github.com/OpenBCI/OpenBCI_GUI)
@@ -299,7 +305,7 @@ Linux Users
 :::info
 Mac Users
 
-Please use the **Intel 64-bit** version of Processing 4 on all Mac computers. This will still run great on Apple Silicon. This allows us to continue using libraries that may not have a build for Arm64 architecture.
+Please use the **Intel 64-bit** version of Processing 4 on all Mac computers. This will still run great on Apple Silicon. This ensures compatibility with libraries that may not have a build for the Arm64 architecture.
 :::
 
 ### Downloading the code for the OpenBCI GUI
@@ -331,7 +337,7 @@ When you get Processing running again, you will see a window open up. This is th
 ![GUI Folder structure screenshot](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI_processing_windows_folder_structure.PNG)
 ![GUI code window](../../assets/SoftwareImages/OpenBCISoftware/GUI_code_window.PNG)
 
-If you don't know anything about coding, don't edit these files. If you like to dig in to the meat of what makes things work, by all means. have at it. You are looking at the program code that makes the OpenBCI GUI work it's magic. Now, it's time to run it!
+If you don't know anything about coding, don't edit these files. If you enjoy exploring the inner workings of the software, feel free to dive in. You are looking at the program code that makes the OpenBCI GUI work it's magic. Now, it's time to run it!
 
 ![Processing RUN](../../assets/SoftwareImages/OpenBCISoftware/ganglion_processing-RUN.png)
 
