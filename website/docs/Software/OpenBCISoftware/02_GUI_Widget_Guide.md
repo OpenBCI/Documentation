@@ -341,12 +341,17 @@ There are three ways to insert a marker into the data stream:
 1. **UI Buttons:** Click one of the marker buttons within the GUI to insert a marker manually. You can adjust the vertical scale inside the widget to increase or decrease the number of available marker buttons.
 2. **Keyboard Shortcuts:** Use the following predefined keyboard shortcuts to add markers quickly:
 
-      | Key | Marker Number | Key | Marker Number |
-      |-----|---------------|-----|---------------|
-      | Z   | 1             | Shift + Z | 5       |
-      | X   | 2             | Shift + X | 6       |
-      | C   | 3             | Shift + C | 7       |
-      | V   | 4             | Shift + V | 8       |
+   | Key       | Marker Number |
+   | --------- | ------------- |
+   | Z         | 1             |
+   | X         | 2             |
+   | C         | 3             |
+   | V         | 4             |
+   | Shift + Z | 5             |
+   | Shift + X | 6             |
+   | Shift + C | 7             |
+   | Shift + V | 8             |
+
 3. **UDP Input:** The GUI can receive markers from an external program over a network using UDP (User Datagram Protocol). This allows markers to be inserted remotely from another application.
 
 ### Using UDP to Send Markers
@@ -365,7 +370,7 @@ Markers that you add through any method (UI buttons, keyboard shortcuts, or UDP)
 
 1. **Displayed in real-time** on the Marker Widget as vertical lines scaled to their marker values.
 
-2. **Saved in the recording files** when you record data in the GUI. You will find a dedicated "Marker Channel" column in both the **GUI CSV file** and **BrainFlow CSV file**. As a reminder these files are, by default, stored in `User/Documents/OpenBCI_GUI/Recordings` on all operating systems. 
+2. **Saved in the recording files** when you record data in the GUI. You will find a dedicated "Marker Channel" column in both the **GUI CSV file** and **BrainFlow CSV file**. As a reminder these files are, by default, stored in `[USER]/Documents/OpenBCI_GUI/Recordings` on all operating systems.
 
 ## Cyton Signal Widget
 
