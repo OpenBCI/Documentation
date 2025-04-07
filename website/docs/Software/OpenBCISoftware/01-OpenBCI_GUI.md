@@ -3,6 +3,23 @@ id: GUIDocs
 title: The OpenBCI GUI
 ---
 
+<!-- Download button at top makes it easy for user to find download page link -->
+import Link from '@docusaurus/Link';
+
+<div align="center" style={{ marginTop: '28px', marginBottom: '36px' }}>
+  <Link
+    to="https://openbci.com/downloads"
+    className="button button--primary button--lg"
+    style={{ 
+      paddingTop: '20px',  
+      paddingBottom: '5px'
+    }}
+  >
+    Download OpenBCI GUI
+  </Link>
+</div>
+
+
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
 The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in live-time, played back, saved to your computer in .txt or .bdf/.edf format, as well as streamed in live-time to third-party software such as MATLAB.
@@ -48,7 +65,7 @@ Before trying to connect to any OpenBCI boards on Linux, you need to make sure y
 
 ### Download the Appropriate Application For Your OS
 
-The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the [Downloads](https://openbci.com/downloads) page of the OpenBCI website, and click the download link that correlates to your OS and machine.
+The fastest way is to download the standalone .exe/.app for your machine and operating system. To do this, head to the **[Downloads](https://openbci.com/downloads)** page of the OpenBCI website, and click the download link that correlates to your OS and machine.
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/DownloadsUpdated.png)
 
