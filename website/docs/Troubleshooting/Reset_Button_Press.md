@@ -1,6 +1,6 @@
 ---
-id: MacOSGanglionBLEWorkaround
-title: MacOS Ganglion BLE Workaround
+id: ResetButtonPress
+title: Did you Press the Reset Button?
 ---
 
 The Cyton has a Reset button labelled RST that was mainly used for 

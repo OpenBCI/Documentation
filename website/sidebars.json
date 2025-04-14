@@ -166,7 +166,8 @@
       "Troubleshooting/GUI_Troubleshooting",
       "Troubleshooting/FTDI_Fix_Linux",
       "Troubleshooting/FTDI_Fix_Windows",
-      "Troubleshooting/MacOSGanglionBLEWorkaround"
+      "Troubleshooting/MacOSGanglionBLEWorkaround",
+      "Troubleshooting/ResetButtonPress"
     ],
     "Example Projects": [
       "Examples/ExamplesLanding",
