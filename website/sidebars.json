@@ -42,7 +42,8 @@
 		"Cyton/CytonProgram",
 		"Cyton/CytonRadios",
 		"Cyton/CytonExternal",
-		"Cyton/CytonSDCard"
+		"Cyton/CytonSDCard",
+		"Cyton/CytonRadioChannel"
 	  ],
 	  "Ganglion Board": [
 		"Ganglion/GanglionLanding",
