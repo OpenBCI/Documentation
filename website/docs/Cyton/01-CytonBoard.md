@@ -18,3 +18,4 @@ Included will be:
 -   [**OpenBCI Radio Programming Tutorial**](Cyton/06-Cyton_Radios_Programming_Tutorial.md) — Learn how to manually program the Radios on the Cyton and Dongle. _Not needed if you wish to use the board out-of-box_
 -   [**External Trigger on OpenBCI Cyton Board**](Cyton/07-External_Trigger_Cyton_Example.md) — Shows how to add an external trigger to the OpenBCI data stream to allow for precise timing between external events and the data stream.
 -   [**Using SD Card with OpenBCI**](Cyton/09-Using_SD_Card_with_OpenBCI.md) — Covers how to add an SD card for local storage to OpenBCI.
+-   [**Run Multiple Cytons Simultaneously**](Cyton/Change_Cyton_Radio_Channel.md) - Learn how to change the radio channel for the Cyton and it's associated Dongle so that multiple Cytons can be used in close proximity
