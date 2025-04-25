@@ -10,7 +10,7 @@ Open Brain Computer Interface. We believe that science advancements will only—
 
 People working with OpenBCI regularly post about their projects on our [Community Page](http://openbci.com/community).
 
-See our weekly-updated searchable [Citation List](openbci.com/citations), a collection of innovative OpenBCI-based research.
+See our weekly-updated searchable [Citation List](https://www.openbci.com/citations), a collection of innovative OpenBCI-based research.
 
 We've been featured in publications such as [Nature](https://www.nature.com/articles/s41598-019-41895-7)!
 
