@@ -5,7 +5,15 @@ title: RETURNS & REFUNDS
 
 #### Returns
 
-To initiate a return, contact us at [support@openbci.com.](mailto:support@openbci.com.) Refunds and exchanges can be requested within 30 days of the delivery date.
+To initiate a return, contact us at [support@openbci.com.](mailto:support@openbci.com.) 
+
+| Time of Request | Eligibility |
+| ---------------- | --------------- |
+| 0-30 days after delivery | Full refund for unopened* products returned to OpenBCI.<br/> 15% restocking fee deducted for opened OpenBCI board kits.<br/>Nonworking boards eligible for free repair/replacement. |
+
+
+
+Refunds and exchanges can be requested within 30 days of the delivery date.
 
 Please note, all returns are contingent on the resale-able condition of the items. The customer is responsible for the cost of return shipping.
 
