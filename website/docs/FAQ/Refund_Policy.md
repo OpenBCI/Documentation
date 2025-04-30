@@ -8,7 +8,7 @@ title: RETURNS & REFUNDS
 
 | Time of Request | Eligibility | 
 | ---------------- | --------------- |
-| 0-30 days after delivery | - Full refund for unopened products returned to OpenBCI <br/> - 15% restocking fee deducted for opened OpenBCI board kits <br/> - Certain opened/used consumable products are **not** eligible for refund* <br/>  - Nonworking boards eligible for free repair/replacement |
+| 0-30 days after delivery | - Full refund for unopened products returned to OpenBCI <br/> - 15% restocking fee deducted for headsets and opened OpenBCI board kits <br/> - Certain opened/used consumable products are **not** eligible for refund* <br/>  - Nonworking boards eligible for free repair/replacement |
 | 30-90 days after delivery | - All returns/exchanges are subject to a restocking fee of up to 20% <br/> - Nonworking boards eligible for free repair/replacement |
 | Beyond 90 days | -OpenBCI orders are not eligible for return, refund, exchange, or replacement |
 
