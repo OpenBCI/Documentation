@@ -7,17 +7,25 @@ Please note all orders ship **after** full payment. Orders cannot be split betwe
 ## How do I request a quotation or an invoice?
 There are two methods of getting a quotation. 
 
-### Request a quote using the self service tool
+The first and fastest method is to use the **self-service quote tool** on our [online store](https://shop.openbci.com). 
 
-The first and faster method is to use the self-service quote tool on our [website](https://shop.openbci.com). Select the product you'd like a quote for and use the "Add to Quote" button (below the "Add to cart" button). You can add multiple items to the quote by clicking "Continue Browsing". Once you have all items required added to the quote, click "Show Quote Cart" to finalize the quote. You will receive an email with the PDF quote. 
+### How to request a quote using the self-service tool: 
+1. Go to [shop.openbci.com](https://shop.openbci.com) and navigate to the product page of the OpenBCI product you need a quote for. Click the "**Request Quote**" button (below the "Add to cart" button). 
+2. Select the required quantity and product variations, if applicable. Then click “**Add to quote**”. If you need to add more products to your quote, click “**Add products**”. 
+3. Once all required products are added, click “**Next step**” and complete the required fields.  Finally, click “**Review Information**” and then “**Submit Quote Request**” if all information is correct. 
+
+You will receive a PDF quote to the email provided. If you require an invoice to complete the payment, please email us at [sales@openbci.com](mailto:sales@openbci.com) with "**Invoice Request**" PLUS the **quote number** you received in the SUBJECT LINE of the email. A team member will then get back to you with an invoice version of the quote you requested. If you have any other questions about your quote, please email us at [sales@openbci.com](mailto:sales@openbci.com) and include your quote number in the subject line. 
+
+If you have issues completing this quote request process, please follow the instructions in the next section to receive a quote. 
+
 
 ### Request a quote via email
 
- First, make a customer [account](https://shop.openbci.com/account/register) with your email and shipping address. 
+If the self-service quote tool does not work for you, please follow these instructions. First, make a customer [account](https://shop.openbci.com/account/register) with your email and shipping address. Please be sure to add your shipping address to your account so we may accurately estimate shipping costs. 
 
 After this step is complete, please email us at [sales@openbci.com](mailto:sales@openbci.com) and provide the following info:
 1. The email address associated with your OpenBCI account
-2. The full list of products and quantities you’d like on your quote
+2. The full list of products and quantities you’d like in your quote
 
 We will then follow up in 1-2 business days with a PDF quote.
   
