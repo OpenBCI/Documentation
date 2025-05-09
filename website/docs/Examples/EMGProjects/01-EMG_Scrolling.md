@@ -2,6 +2,7 @@
 id: EMGscrolling
 title: EMG Scrolling
 ---
+
 In this tutorial, we will show you how to scroll up and down on your computer screen without touching the keyboard. For that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them to scroll.
 
 Check out an example video of this tutorial being put into action!
@@ -25,14 +26,14 @@ Follow the EMG Getting Started [tutorial](GettingStarted/Biosensing-Setups/02-EM
 
 Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3). Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
 
--   **pylsl** : use `python -m pip install pylsl` from the Python folder in the command line to install it.
--   **pyautogui** : use `python -m pip install pyautogui` to install it.
+- **pylsl** : use `python -m pip install pylsl` from the Python folder in the command line to install it.
+- **pyautogui** : use `python -m pip install pyautogui` to install it.
 
 ## Step 3: Data Stream using the GUI.
 
 Follow the networking [tutorial](Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to learn how to stream data using LSL from the GUI. For this project, you will need to stream the EMG data using the Networking Widget. Your Networking settings should look as follows:
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/TutorialImages/EMG_Scrolling_GUI.png?raw=true" width="100%" />
+<img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/TutorialImages/EMG_Scrolling_GUI.png" width="100%" />
 
 :::info
 **Important:** Make sure your EMG widget is open before you start streaming.

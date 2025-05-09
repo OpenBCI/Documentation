@@ -112,7 +112,7 @@ As of GUI 5.0.9, use the new [Cyton Signal Widget](../OpenBCISoftware/02_GUI_Wid
 
 ## FFT Plot
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_FTT.jpg?raw=true" width="100%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/refs/heads/master/assets/images/GUI_FTT.jpg" width="100%" />
 
 This is a standard data visualization feature of biosensing tools. The x-axis displays various frequencies, and the y-axis shows each frequency’s respective amplitudes in μV. These amplitudes are displayed logarithmically by default — a recommended setting — but you can alter this in the "Log/Lin" dropdown.
 
@@ -128,7 +128,7 @@ In the picture below, you can see great Alpha Waves centered around 10 Hz using 
 
 ## Accelerometer
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Accel.jpg?raw=true" width="100%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/refs/heads/master/assets/images/GUI_Accel.jpg" width="100%" />
 
 Each OpenBCI board is fitted with a three-axis accelerometer, the data from which is streamed to this widget. This accelerometer measures the acceleration of the board itself on an XYZ-axis.
 
@@ -187,11 +187,11 @@ Based off of 10-20 model
 
 When compared to a reference, the pin inputs can produce a positive or negative value. Choosing "+/-" will display the true value as measured from the reference. So if the voltage is measured as lower than the reference, your value will appear negative (or blue), and if the voltage is measured to be higher the value will be positive.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_both.jpg?raw=true" width="50%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/refs/heads/master/assets/images/GUI_Headplot_both.jpg" width="50%" />
 
 Alternatively, "+" will display only an absolute value, without regard to whether the signal was positive or negative.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/GUI_Headplot_pos.jpg?raw=true" width="50%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/refs/heads/master/assets/images/GUI_Headplot_pos.jpg" width="50%" />
 
 ## Spectrogram Widget
 
