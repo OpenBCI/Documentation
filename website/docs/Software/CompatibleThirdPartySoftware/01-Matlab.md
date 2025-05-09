@@ -2,6 +2,7 @@
 id: Matlab
 title: MATLAB
 ---
+
 [MATLAB](https://en.wikipedia.org/wiki/MATLAB) is a powerful numerical computing language and environment that is widely used in a wide variety of academic, research, and industrial applications.
 
 A few MATLAB toolboxes have been created specifically for working with EEG and BCI. [EEGLAB](http://sccn.ucsd.edu/eeglab/), [BCILAB](http://sccn.ucsd.edu/wiki/BCILAB), [ERPLAB](http://erpinfo.org/erplab), and [FieldTrip](http://www.fieldtriptoolbox.org/) are a few toolboxes that have helped OpenBCI users work in MATLAB.
@@ -51,7 +52,7 @@ This method is not the same as using OpenBCI CSV files. In BrainFlow CSV files, 
 
 - BrainFlow CSV File Example: `BrainFlow-RAW_2022-03-11_15-41-42_0.csv`
 - OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
-:::
+  :::
 
 #### Use BrainFlow Python Script to Read/Write BrainFlow CSV File
 
@@ -68,15 +69,15 @@ This method is not the same as using BrainFlow CSV files. In OpenBCI CSV files, 
 
 - BrainFlow CSV File Example: `BrainFlow-RAW_2022-03-11_15-41-42_0.csv`
 - OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
-:::
+  :::
 
 Import the CSV file into MATLAB as a matrix by using the "Import Data" wizard:
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/matlab_import_data.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/matlab_tutorial/matlab_import_data.png" width="80%" />
 
 Select a saved OpenBCI data file. Once the data import screen is open, select the "Numeric Matrix" import option. Deselect all of the header rows. Also deselect the final column, the timestamp values, since the import wizard can only parse numeric values. Feel free to give your matrix a convenient name, like "eeg_data":
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/matlab_import_screen.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/matlab_tutorial/matlab_import_screen.png" width="80%" />
 
 Click "Import Selection". Your matrix should now appear as an object in your workspace! Keep reading to learn more about processing your data with MATLAB toolboxes.
 
@@ -155,11 +156,11 @@ bcilab
 
 To start running BCILAB. After some console output, you should see the text "Welcome to the BCILAB toolbox!" and then a new GUI with the BCILAB menu should appear.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/bcilab_menu.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/Matlab/bcilab_menu.png" width="80%" />
 
 Once a stream has been started on your computer, open BCILAB within MATLAB (>> cd your/path/to/bcilab; bcilab) and from the menu, select **Online Analysis > Read input from... > Lab streaming layer...**
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/bcilab_lsl.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/Matlab/bcilab_lsl.png" width="80%" />
 
 ## Analyzing OpenBCI data
 
@@ -184,7 +185,7 @@ If the toolkit is not yet correctly implemented, the console should output:
 
 If it is set up correctly, a pop-up window should appear with the EEGLAB GUI.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/eeglab_gui.jpg?raw=true" width="70%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/Matlab/eeglab_gui.jpg" width="70%" />
 
 #### Preparing OpenBCI Datasets for EEGLAB Use
 
@@ -202,7 +203,7 @@ Your data matrix is now ready to use with EEGLAB.
 
 If EEGLAB isn't already running, enter "eeglab" into the MATLAB command line to start the program. Import your matrix into EEGLAB using the EEGLAB GUI: File -> Import Data -> Using EEGLAB functions and plugins -> From ASCII/float file or MATLAB array
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/eeglab_dataimport.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/Matlab/eeglab_dataimport.png" width="80%" />
 
 In the pop-up window that appears, enter information about the data set. Select "MATLAB variable", and enter the name of the variable where your matrix is stored. Enter the Data Sampling rate (it should be commented in at the top of the text file - usually 250 Hz by default in the OpenBCI GUI). The other fields can be left at default, and EEGLAB will automatically fill in the information from the data set.
 
@@ -214,11 +215,11 @@ The data is now imported into EEGLAB and ready to use!
 
 To double-check your data is imported correctly, and to get familiar with EEGLAB's interface, try plotting your data. Select Plot -> Channel data (scroll) from the EEGLAB pop-up window.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/EEGLAB_plot.png?raw=true" width="50%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/matlab_tutorial/EEGLAB_plot.png" width="50%" />
 
 Your data should appear in a window like the image below:
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/matlab_tutorial/EEGLAB_plot_image.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/matlab_tutorial/EEGLAB_plot_image.png" width="80%" />
 
 Check out the links in the Further Reading section to learn more about processing data with EEGLAB!
 
@@ -228,7 +229,7 @@ From what we can tell, EEGLAB seems to work primarily with datasets and recorded
 
 ### ERPLAB
 
-From the [ERPLAB homepage](http://erpinfo.org/erplab): "ERPLAB Toolbox is a free, open-source MATLAB package for analyzing ERP data.  It is tightly integrated with EEGLAB Toolbox, extending EEGLAB’s capabilities to provide robust, industrial-strength tools for ERP processing, visualization, and analysis.  A graphical user interface makes it easy for beginners to learn, and MATLAB scripting provides enormous power for intermediate and advanced users."
+From the [ERPLAB homepage](http://erpinfo.org/erplab): "ERPLAB Toolbox is a free, open-source MATLAB package for analyzing ERP data. It is tightly integrated with EEGLAB Toolbox, extending EEGLAB’s capabilities to provide robust, industrial-strength tools for ERP processing, visualization, and analysis. A graphical user interface makes it easy for beginners to learn, and MATLAB scripting provides enormous power for intermediate and advanced users."
 
 #### Setup
 
@@ -236,7 +237,7 @@ From the [ERPLAB homepage](http://erpinfo.org/erplab): "ERPLAB Toolbox is a free
 
 Next time your launch EEGLAB, the ERPLAB menu should appear in the EEGLAB GUI:
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/Matlab/erplab.png?raw=true" width="70%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/Matlab/erplab.png" width="70%" />
 
 #### Analyzing EEG Data Sets
 

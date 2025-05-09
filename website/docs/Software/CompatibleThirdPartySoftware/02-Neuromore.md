@@ -2,6 +2,7 @@
 id: Neuromore
 title: Neuromore
 ---
+
 Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, it provides a visual designer that can be used to process signals real-time.
 
 ## Setting Up Your Environment
@@ -20,7 +21,7 @@ Download the latest verison of Neuromore Studio for your operating system from t
 
 Open the Neuromore Studio application. A demo will begin playing that displays example EEG data.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/Neruomore_opening_screen.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/Neruomore_opening_screen.png" width="80%" />
 
 ## Livestream from OpenBCI to Neuromore
 
@@ -39,7 +40,7 @@ Rodrigos-MacBook-Pro:~ rodrigo$ ls /dev/tty.*
 
 Now, to connect to your OpenBCI board from within Neuromore, click the magnifying glass under "Devices" in the top right corner. This will prompt Neuromore to search for new devices. You should see an OpenBCI logo pop up, and data from your board will start streaming in the top of the Neuromore window.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/neuromore_openBCI_connected.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/neuromore_openBCI_connected.png" width="80%" />
 
 #### Troubleshooting
 
@@ -57,41 +58,41 @@ NOTE: If your board is connected properly, neuromore should have no trouble conn
 
 To get started with Neuromore, open the "Getting Started" classifier in the OpenBCI folder of the "Back-End File System" pane:
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/obci_gs_loc.png?raw=true" width="50%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/obci_gs_loc.png" width="50%" />
 
 An example of Neuromore's visual programming language will appear. Click the wrench-and-screwdriver icon to hide the Node Palette pane if necessary.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/neuromore_getting_started.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/neuromore_getting_started.png" width="80%" />
 
 Neuromore calls these graphs of interconnected processing units "Classifiers". The basic structure of a classifer consists of a input device (such as OpenBCI V3) connected to processing nodes that end in some sort of output node.
 
 Some of the output nodes produce visual output, like graphs in the time or frequency domain. However, the default Neuromore Studio layout doesn't have windows open for those outputs. To add a window for time-domain outputs, click on the View tab of the toolbar, then Add -&gt; Signal View.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/neuromore_adding_signal_view.png?raw=true" width="50%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/neuromore_adding_signal_view.png" width="50%" />
 
 A new window will appear. Click and drag the window to a convenient place in the Neuromore Studio Layout - it should snap into place, like below.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/neuromore_signal_view.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/neuromore_signal_view.png" width="80%" />
 
 If you look at the Classifier window, you will notice there are three "output" nodes (nodes with an eye symbol): Filtered Raw, Filtered FFT, and Viewer. The Filtered Raw and View symbols are time-domain, and are the two symbols in the Signal View.
 
 To add a window for frequency-domain outputs, click on View -&gt; Add -&gt; Spectrum View. Reposition the new window to a convenient place. You should see one signal, the Filtered FFT node.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/neuromore_spectrum_view.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/neuromore_spectrum_view.png" width="80%" />
 
 Want to double-check which signal corresponds to which output? Double click on one of the output nodes in the Classifier window. This should expand the Node Palette window. Display the Attributes tab and select "Custom Color". Double click on the block of color that appears to choose the color of your signal.
 
 In the example below, I selected the "Filtered Raw" node, and set the color to bright green. The corresponding signal is now bright green in the Signal View window.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/Third_party_software/neuromore_color_coded_signals.png?raw=true" width="80%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/Third_party_software/neuromore_color_coded_signals.png" width="80%" />
 
 Now you're able to view the signals from your output nodes in your Classifier!
 
-This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX](https://en.wikipedia.org/wiki/Max_(software)/) for more general purposes and [OpenViBE](Software/CompatibleThirdPartySoftware/03-OpenViBE.md) and of course neuromore for EEG specific processing.
+This sort of graphical programming (or [visual programming](https://en.wikipedia.org/wiki/Visual_programming_language)) also appears in very popular programs like [PureData](https://puredata.info/) and [MAX](<https://en.wikipedia.org/wiki/Max_(software)>) for more general purposes and [OpenViBE](Software/CompatibleThirdPartySoftware/03-OpenViBE.md) and of course neuromore for EEG specific processing.
 
 The basic idea is that a stream of data that originates at the input device can then be mapped, processed and transformed into outputs that are useful, informative or just plain cool.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/alpha-detect-gs.png?raw=true" width="100%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/alpha-detect-gs.png" width="100%" />
 
 The getting started example for OpenBCI in the neuromore Studio explores these areas and how to properly use the graphical programming interface.
 
@@ -107,8 +108,8 @@ From this example we can see the power of statistics and simple logic that can e
 
 ## Documentation and Resources
 
--   [neuromore.com](http://www.neuromore.com/)
--   [Video tutorials](https://www.youtube.com/channel/UCAOU6SsvwCwC30hJaFLhWgw)
--   [Graphical Programming](http://c2.com/cgi/wiki?GraphicalProgrammingLanguage)
+- [neuromore.com](http://www.neuromore.com/)
+- [Video tutorials](https://www.youtube.com/channel/UCAOU6SsvwCwC30hJaFLhWgw)
+- [Graphical Programming](http://c2.com/cgi/wiki?GraphicalProgrammingLanguage)
 
 Did you use Neuromore and OpenBCI to build something new? Post about it on our [forum!](https://openbci.com/forum/)

@@ -11,32 +11,32 @@ This tutorial will guide you through setting up your headband kit! Please read t
 
 #### Each kit includes:
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/headband-images/headband_kit_full.png?raw=true" width="30%" />
+![Headband Kit](../../assets/headband-images/headband_kit_full.png)
 
 1.  Pair of Ear-clip electrodes
 2.  Dry comb snap silver-silver chloride coated EEG electrodes
 3.  Dry flat snap silver-silver chloride coated EEG electrodes
-4.  Pack of snap electrode cables 
+4.  Pack of snap electrode cables
 5.  One adjustable headband strap
 6.  clip to attach your board case to the headband strap (in headband kit 0.5 meter variant)
 
-The comb and flat snap electrodes snap in and out of the cables easily. No tools needed. 
+The comb and flat snap electrodes snap in and out of the cables easily. No tools needed.
 
 All electrode wires end in a 0.1" female header termination compatible with OpenBCI biosensing boards (Ganglion, Cyton, and CytonDaisy).
 
 #### 10-20 Internationally Accepted EEG Node Placement
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/10-20%20Placement.jpg?raw=true" width="30%" />
+![10-20 Placement ](../../assets/headband-images/10-20%20Placement.jpg)
 
 The flat snap electrodes facilitate multiple frontal cortex measurements (F7, AF7, Fp1, Fpz, Fp2, AF8, F8). The comb snap electrodes will allow measurement at the FT7/FT8, T7/T8, TP7/TP8, P7/P8, PO7/PO8, O1/O2, and Oz nodes, depending where on the adjustable strap you place the electrodes. This kit is intended to provide up to eight channels of EEG data when paired with the Cyton 8-channel board. If you want 16-channels, purchase two headband kits and pair them with the CytonDaisy 16-channel board.
 
 ## Headband-Ganglion Tutorial
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Headband_Ganglion_Front.JPG?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/Headband_Ganglion_Front.JPG" width="30%" />
 
 The Ganglion board supports four channels of EEG/EMG/EEG input and streams data over bluetooth. In this tutorial we will show you how to obtain two frontal lobe measurements and two temporal lobe measurements using the four channels of the Ganglion and stream the data over bluetooth!
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion.JPG?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/Ganglion.JPG" width="30%" />
 
 #### Battery
 
@@ -46,16 +46,15 @@ All OpenBCI boards ship with a compact, rechargeable lithium polymer 3.7V batter
 
 Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green
 
-
 #### Hardware
 
 Your Ganglion may have shipped with orange protective cellophane over switches sw1 - sw4. After you've peeled the protective layer off, and flipped the switches to **down** position, the Ganglion board will be in EEG mode (shown below).
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Switch.JPG?raw=true" width="30%" />
+![Ganglion Switch](../../assets/headband-images/Ganglion_Switch.JPG)
 
 Optional: see the [Ganglion Hardware page](../../Ganglion/02-Ganglion.md#inverting-input-select-switches) for a detailed explanation of why we flip the four channel switches to **down**.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Ganglion_Headband_Pins.JPG?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/Ganglion_Headband_Pins.JPG" width="30%" />
 
 **Steps**
 
@@ -77,7 +76,7 @@ Optional: see the [Ganglion Hardware page](../../Ganglion/02-Ganglion.md#inverti
 
 The placement of nodes on the headband is best represented in the following image:
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Ganglion.png?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/EEG%20Nodes_Updated_Ganglion.png" width="30%" />
 
 In this diagram, the red circles represent areas where flat electrodes can be placed, and the blue circles represent areas where comb electrodes can be placed. This placement is ultimately up to you, and the areas that you wish to record. However, a general suggestion for standard electrode placement is outlined in yellow.
 
@@ -86,7 +85,6 @@ To attach the electrodes to the headband:
 1.  Place the cable head on the rough side of the velcro
 2.  Place the electrode on the soft side of the velcro
 3.  Snap the two pieces together, with the velcro in between, to secure them.
-
 
 To attach the OpenBCI board onto the headband (for 0.5 meter variants):
 
@@ -103,13 +101,13 @@ Now that you've finished with the hardware set-up, the next step is to set up th
 
 Once you've downloaded the GUI zip file per tutorial instructions, fire up the GUI [as shown in this YouTube video!](http://www.youtube.com/watch?v=NAM6eOA4a8Y)
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/headband_gui_ganglion.jpeg?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/headband_gui_ganglion.jpeg" width="30%" />
 
 Notice the sharp peak-trough-peak wave behavior in the upper left time series window of the GUI. The first peak corresponds with the initiation of an eye blink, the trough immediately after shows a dip in alpha brain waves that syncs to the eye's closing for a fraction of a second! The peak immediately **after** the trough corresponds to the brain signals to the eyelid to reopen, thus concluding the blink cycle.
 
 The band power window in the lower right of the GUI shows the relative strengths of the user's alpha, beta, gamma, delta, and theta brain waves. The GUI and Ganglion work together to separate and categorize brain waves based on characteristics like frequency and amplitude.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/GUI_Ganglion.png?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/GUI_Ganglion.png" width="30%" />
 
 In the picture above, you can see the Ganglion Signal window in the lower left of the GUI. This widget helps users establish a quality connection for each electrode. For most bioelectrical measurements, you want the skin-electrode contact surface impedance to be low. Two of the four channels show lower impedance (these happen to be the flat snap electrodes that are touching the skin over the frontal cortex). This connection must be good, hence the green light to the left of the impedance value. If the impedance light in the GUI is red, you can improve the connection by making sure the electrodes are secured against the skin and making good contact. You may find it helpful to add a little [electrode paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) to boost conductivity of the Ag-AgCl coating on the electrodes.
 
@@ -117,7 +115,7 @@ Another widget shown in the picture above is the Focus widget. When the alpha wa
 
 ## Headband-Cyton Tutorial
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Headband_Cyton_Front.JPG?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/Headband_Cyton_Front.JPG" width="30%" />
 
 The Cyton board supports eight channels of EEG/EMG/EEG input and streams data over [bluetooth](../../Cyton/03-Cyton_Data_Format.md). In this tutorial we will show you how to obtain three frontal lobe measurements and five temporal lobe measurements and stream the data over bluetooth!
 
@@ -131,7 +129,7 @@ Fully charge the Lithium Polymer Battery, until the charger's indicator LED turn
 
 #### Hardware
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/Cyton_Headband_Pins.JPG?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/Cyton_Headband_Pins.JPG" width="30%" />
 
 As shown above:
 
@@ -158,7 +156,7 @@ As shown above:
 
 The placement of nodes on the headband is best represented in the following image:
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/EEG%20Nodes_Updated_Cyton.png?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/EEG%20Nodes_Updated_Cyton.png" width="30%" />
 
 In this diagram, the red circles represent areas where flat electrodes can be placed, and the blue circles represent areas where comb electrodes can be placed. This placement is ultimately up to you, and the areas that you wish to record. However, a general suggestion for standard electrode placement is outlined in yellow.
 
@@ -168,7 +166,6 @@ To attach the electrodes to the headband:
 2.  Place the electrode on the soft side of the velcro
 3.  Snap the two pieces together, with the velcro in between, to secure them.
 
-   
 To attach the OpenBCI board onto the headband (for 0.5 meter variants):
 
 1. Snap the clip on the back of the clear board case (bottom half)
@@ -184,11 +181,11 @@ Now that you've finished with the hardware set-up, the next step is to set up th
 
 Once you've installed the GUI, fire it up [as shown in this YouTube video!](http://www.youtube.com/watch?v=XktF8OhHH4A)
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/headband_gui_cyton.jpeg?raw=true" width="30%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/headband_gui_cyton.jpeg" width="30%" />
 
 Play around with the vertical scale, filter, frequency range to see the effect on the raw data. The following screenshot shows an example of what your live-streamed brain data might look like.
 
-<img src="https://github.com/openbci-archive/Docs/blob/master/assets/headband-images/GUI_Cyton_B.png?raw=true" width="50%" />
+<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/headband-images/GUI_Cyton_B.png" width="50%" />
 
 For more details on the various GUI functions, scroll up to the OpenBCI Software section of the Headband-Ganglion Tutorial above.
 
@@ -196,14 +193,13 @@ For cool project ideas, head over to the [**Example Projects**](https://docs.ope
 
 ## Use Cases for OpenBCI GUI
 
--   OpenBCI device owners want to visualize their brainwaves!
--   Many of the researchers, hackers and students alike who purchase OpenBCI devices want to use them to acquire data as soon as their device arrives.
--   Users use macOS, Windows and Linux to acquire data
--   Users want to filter incoming data in real time
--   Users want to make their own experiments to test their awesome theories or duplicate state of the art research at home!
--   Users struggle to get prerequisites properly installed to get data on their own from OpenBCI Cyton and Ganglion.
--   Users want to stream data into their own custom applications such as MATLAB.
-
+- OpenBCI device owners want to visualize their brainwaves!
+- Many of the researchers, hackers and students alike who purchase OpenBCI devices want to use them to acquire data as soon as their device arrives.
+- Users use macOS, Windows and Linux to acquire data
+- Users want to filter incoming data in real time
+- Users want to make their own experiments to test their awesome theories or duplicate state of the art research at home!
+- Users struggle to get prerequisites properly installed to get data on their own from OpenBCI Cyton and Ganglion.
+- Users want to stream data into their own custom applications such as MATLAB.
 
 ## Headband Tips and Signal Troubleshooting
 
@@ -217,22 +213,23 @@ Steps to fix RAILED error in the GUI Time Series widget:
 If you are seeing RAILED error, the default gain 24x may be too high for you. The optimal gain will vary depending on the individual user’s skin impedance.
 
 #### General suggestions
--   Moisten	a	Q-Tip	in	rubbing	alcohol,	and	scrub	the	surface	of	the	head	directly	underneath	the	contact	point	for	each	electrode.	This	will	remove	oil/debris	from	the	skin,	resulting	in	a	better	signal.		Then	place	the	headband	on	the	head,	with	the	center	electrode in	the	center	of	the	forehead.	
--   *Optional* - The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel). Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
--   We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver.
-  
+
+- Moisten a Q-Tip in rubbing alcohol, and scrub the surface of the head directly underneath the contact point for each electrode. This will remove oil/debris from the skin, resulting in a better signal. Then place the headband on the head, with the center electrode in the center of the forehead.
+- _Optional_ - The flat and snap electrodes can be used with [electrode gel](https://shop.openbci.com/collections/frontpage/products/electrodegel). Inject electrode gel into the contact area using any standard small syringe. This will improve signal quality by lowering the skin-electrode impedance.
+- We recommend using a thin, flat tool to remove the flat snap electrodes. Un-snap it with the help of a thin screwdriver.
+
 ## What You Can Do with OpenBCI GUI and Software Stack
 
--   Visualize data from every OpenBCI device: Ganglion, Cyton, CytonDaisy.
--   Playback files using GUI.
--   [Download](https://www.openbci.com/downloads) as a native application on macOS, Windows, and Linux.
--   Apply [filters](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#filters) and other data processing tools to quickly clean raw data in real time.
--   Use the GUI as a [networking system](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
--   Send data to [MATLAB](../../Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](../../Software/SoftwareLanding.md)
--   Analyze data with [Python and Brainflow](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
--   [Create a widget framework](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
--   Output data into a saved file (file format .txt, .csv, .bd/.edf) for later offline processing.
--   [Customize the layout](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
--   Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
+- Visualize data from every OpenBCI device: Ganglion, Cyton, CytonDaisy.
+- Playback files using GUI.
+- [Download](https://www.openbci.com/downloads) as a native application on macOS, Windows, and Linux.
+- Apply [filters](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#filters) and other data processing tools to quickly clean raw data in real time.
+- Use the GUI as a [networking system](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#networking) to move data out of GUI into other apps over UDP, OSC, LSL, and Serial.
+- Send data to [MATLAB](../../Software/CompatibleThirdPartySoftware/01-Matlab.md), Neuropype (using LSL), and other [third-party softwares.](../../Software/SoftwareLanding.md)
+- Analyze data with [Python and Brainflow](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---python)
+- [Create a widget framework](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#custom-widget) that allows users to create their own experiments.
+- Output data into a saved file (file format .txt, .csv, .bd/.edf) for later offline processing.
+- [Customize the layout](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#customize-your-layout), change the gain, toggle on/off, check impedance of individual channels of the CytonDaisy board (or any connected OpenBCI board) directly in the GUI!
+- Access built-in widgets such as Focus Widget, Band Power, Accelerometer, EEG Head Plot, and MUCH more
 
 As always, don't hesitate to email us at [support@openbci.com](mailto:support@openbci.com) for assistance!
