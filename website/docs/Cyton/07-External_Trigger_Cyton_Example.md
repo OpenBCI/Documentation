@@ -21,7 +21,7 @@ You can verify the digital read widget is working by pressing the "PROG" button 
 
 When you use a Cyton dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
 
-## External Triggering on The Cyton Board
+## Trigger Methods on the Cyton Board
 
 ### Utilize the on device push button
 
@@ -67,12 +67,12 @@ DF,FFFCDE,FFFC00,FFFC49,FFFAC3,FFFBD0,FFFC91,FFFB03,FFFCB0
 
 ```
 
-### External Triggering The Harder Way (Firmware 1.x.x)
+### Adding Trigger Markers from External Sources
 
 Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the OpenBCI 32bit Board with the external signal generating system using a few low-cost components.
 Our goal with the OpenBCI board is to make biosensing safe and fun. The biggest part of the safety part is making sure that you can't plug yourself accidentally into the mains electrical supply (yikes!). If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
 
-### Optoisolation
+#### Isolating the Cyton from an External Voltage
 
 ![Optoisolator Schematic](../assets/CytonImages/ExternalTriggerCNY17.jpg)
 ![Breadboard CNY17](../assets/CytonImages/CNY17_Breadboard.jpg)
