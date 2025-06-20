@@ -79,6 +79,4 @@ Our goal with the OpenBCI board is to make biosensing safe and fun. The biggest 
 
 The simplest trick is to isolate the OpenBCI circuit from the trigger signal generating circuit. For this purpose, we picked an Optoisolator with 5000 Volts isolation between the input and the output. [CNY17](http://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d) family from Vishay is a great example of a low-cost high isolation optoisolator. It's usually available, and costs under a dollar (USD) in singles. In the circuit to the right, when an external trigger of 3.3V to 5V is applied to the Anode of the input (pin 1), the output (pin 5) will go from HIGH to LOW.
 
-The code to read this trigger input is quite similar to the previous button code. In this case, we need to use a different pin (pin 18) and watch for the **falling** edge of the trigger.
-
 As always, help can be found at support@openbci.com and [openbci.com/forum](https://www.openbci.com/forum).
