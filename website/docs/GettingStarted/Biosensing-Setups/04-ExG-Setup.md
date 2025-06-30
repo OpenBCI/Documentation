@@ -96,21 +96,21 @@ Open the [OpenBCI GUI](../../../Software/OpenBCISoftware/GUIDocs), select CYTON 
 
 If you are using just the Cyton, select the 8 Channel option. Since we are using both the Cyton and the Daisy for this tutorial, we select 16 Channel Mode. We also do not need all 16 Channels. Therefore, before starting a data stream, turn off the channels that are not being used by clicking on the Channel number and hide them from the Time Series Widget as shown below.
 
-### INSERT GIF HERE OF TURNING OFF CHANNELS AND HIDING THEM FROM WIDGET
+![How to Turn Off and Hide Channels for ExG](../../assets/GettingStartedImages/ExGSetupTurnOffChannels.gif)
 
-Also, before starting a data stream, remember that you need to select SRB2 for those channels that are EEG and deselect SRB2 for those channels that are EMG or ECG as shown below. For channels that are turned off, this does not matter as they will not be collecting data. But, if you change the channel configurations you must also select and deselect SRB2 accordingly. If you do not, then the data will not look right because the reference is wrong.
+Also, before starting a data stream, remember that you need to select SRB2 for those channels that are EEG and deselect SRB2 for those channels that are EMG or ECG as shown below. For channels that are turned off, this does not matter as they will not be collecting data. But, if you change the channel configurations you must also select and deselect SRB2 accordingly. If you do not, then the data will not look right because the reference is wrong. After you are done changing the HW Settings, send these settings to the board by pressing "Send".
 
-### INSERT PICTURE OF HARDWARE SETTINGS HERE
+![HW Settings Required for ExG](../../assets/GettingStartedImages/ExGSetupHWSettings.png)
 
-Now click "Start Stream" and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below.
+Now click "Start Stream" and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below. In the example, you will first see an EMG activation then followed by Alpha waves in EEG channels. The ECG is present in Channel 9.
 
-### INSERT PICTURE OF CORRECT DATA
+![ExG Stream from Cyton+Daisy](../../assets/GettingStartedImages/ExGCytonStream.gif)
 
 ## ExG Measurement with Ganglion boards
 
 The Ganglion board uses the MCP3912 ADC chip and does not have the flexibility that the ADS1299 chip has to change configurations through software. But, you can still change the Ganglion board input pins to act as referential or differential inputs based on hardware select switches present on the board. For more information on how to use the select switches, refer to this [guide](https://docs.openbci.com/Ganglion/GanglionSpecs/#inverting-input-select-switches). 
 
-The Ganglion board is a 4 channel board and so, for this tutorial, we will measure 2 channels of EEG, 1 channel of ECG and 1 channel of EMG at the same time. For this tutorial, you will need the following materials as shown below:
+The Ganglion board is a 4 channel board and so, for this tutorial, we will measure 2 channels of EEG, 1 channel of ECG and 1 channel of EMG at the same time. For this tutorial, you will need the following materials. 
 
 1.  EEG hardware, can be one of the following Ultracortex
     [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
@@ -121,33 +121,40 @@ The Ganglion board is a 4 channel board and so, for this tutorial, we will measu
 2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
     and [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 3.  OpenBCI [Ganglion board](https://shop.openbci.com/products/ganglion-board?_pos=2&_sid=5c75c7cc7&_ss=r).
-4. [Ganglion Bluetooth Dongle](https://shop.openbci.com/products/ganglion-dongle).
+4. [Ganglion Bluetooth Dongle](https://shop.openbci.com/products/ganglion-dongle) (if using an older version of MacOS).
 5.  Computer with [OpenBCI GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
-
-### INSERT PICTURE OF MATERIALS NEEDED
-
+ 
 ### Setting up EEG, ECG and EMG
 
 For this tutorial, we will use Channels 1 and 2 as EEG, Channel 3 as ECG and Channel 4 as EMG. So, push the input select switches for Channels 1 and 2 to the DOWN position and push the input select switches for Channels 3 and 4 to the UP position. If you are having trouble pushing the switches, use a pair of tweezers to help you. After configuring the channels, the switches should be in the positions as shown below.
 
-### INSERT PICTURE OF SELECT SWITCHES
+![Ganglion Input Switches for ExG](../../assets/GettingStartedImages/ExGSetupGanglionSwitches.jpg)
 
-The Ganglion board also has a REF and D_G pin which act exactly as the SRB2 and BIAS pins in the Cyton and Cyton+Daisy. The REF pin acts as a common reference when measuring EEG and the D_G pin acts as the BIAS pin for cancelling common-mode noise and 50/60 Hz noise. Although there is a top and bottom pin for REF and D_G, these are the same pins are can be used for any setup. For ease of use, we will use the bottom pins of REF and D_G.
+The Ganglion board also has a REF and D_G pin which act exactly as the SRB2 and BIAS pins in the Cyton and Cyton+Daisy. The REF pin acts as a common reference when measuring EEG and the D_G pin acts as the BIAS pin for cancelling common-mode noise and 50/60 Hz noise. Although there is a top and bottom pin for REF and D_G, these are the same pins are can be used for any setup. For ease of use, we will use the top pins of REF and D_G.
 
-For **EEG**, connect the bottom pins of +1- and +2- headers to the EEG electrodes and the bottom pins of the REF and D_G pins to the earclips. For **ECG** and **EMG**, connect the top and bottom pins of the +3- and +4- headers to the Snap electrode cables and connect them to [ECG electrode locations](../../GettingStarted/Biosensing-Setups/ECGSetup/#connect-the-electrodes-to-your-body) and [EMG electrode locations](../../GettingStarted/Biosensing-Setups/EMGSetup/#obtain-emg-data-with-openbci-ganglion-board). The final pin connections should be as shown below.
+For **EEG**, connect the top pins of +1- and +2- headers to the EEG electrodes and the top pins of the REF and D_G pins to the earclips. For **ECG** and **EMG**, connect the top and bottom pins of the +3- and +4- headers to the Snap electrode cables and connect them to [ECG electrode locations](../../GettingStarted/Biosensing-Setups/ECGSetup/#connect-the-electrodes-to-your-body) and [EMG electrode locations](../../GettingStarted/Biosensing-Setups/EMGSetup/#obtain-emg-data-with-openbci-ganglion-board). The final pin connections should be as shown below.
 
-### INSERT PICTURE OF CONNECTED PINS
+| Front View | Top View |
+|---|---|
+| ![Ganglion Pins Front View](../../assets/GettingStartedImages/ExGSetupGanglionFrontView.jpg) | ![Ganglion Pins Top View](../../assets/GettingStartedImages/ExGSetupGanglionTopView.jpg)|
+
 
 :::note
-When using EEG with another differential signal, the earlobe location can be used as a BIAS for a differential signal. But, if are facing signal quality issues with the differential signal, you can connect a sticky electrode to the top D_G pin.
+When using EEG with another differential signal, the earlobe location can be used as a BIAS for a differential signal. But, if are facing signal quality issues with the differential signal, you can connect a sticky electrode at a bony part near the differential signal to the other D_G pin.
 :::
 
 ### Visualize the data in the OpenBCI GUI
 
 If you don't have the GUI installed, please refer to [this guide](../../../Software/OpenBCISoftware/GUIDocs) to learn about how to set up the OpenBCI GUI for your operating system. Connect the battery to the Ganglion board, power on the board and connect the Ganglion USB dongle to your computer.
 
-Refer to this guide to [connect the Ganglion board to the OpenBCI GUI](../../GettingStarted/Boards/GanglionGS/#connect-the-gui-to-your-ganglion-board). You do not need to change any hardware settings through software for the Ganglion and you are using all 4 channels which means you do not need to turn off or hide any channel. Make sure that the input select switches are in the right position because an incorrect position will cause data issues and you will not see biopotential measurements in the GUI.
+Open the [OpenBCI GUI](../../../Software/OpenBCISoftware/GUIDocs), select Ganglion (live) -&gt; Bluetooth (Native) -&gt; Ganglion. Click AUTO-CONNECT and the board should be connected to the GUI. 
 
-Now click "Start Stream" and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below.
+![Connect to Ganglion from GUI](../../assets/GettingStartedImages/ExGSetupConnectToGanglion.png)
 
-### INSERT PICTURE OF CORRECT DATA
+:::note
+You do not need to change any hardware settings through software for the Ganglion and you are using all 4 channels which means you do not need to turn off or hide any channel. Make sure that the input select switches are in the right position because an incorrect position will cause data issues and you will not see biopotential measurements in the GUI. Also, for some older versions of Mac, you will need to use the Ganglion Dongle to connect to the Ganglion Board. If you require the dongle, just use the BLED112 Dongle option instead.
+:::
+
+Now click Start Session -&gt; Start Data Stream and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below. You can see the ECG signal in Channel 3, the EMG activations in Channel 4 and Alpha waves in Channel 1 and 2.`
+
+![ExG Stream from Ganglion](../../assets/GettingStartedImages/ExGSetupGanglionVideo.gif)
