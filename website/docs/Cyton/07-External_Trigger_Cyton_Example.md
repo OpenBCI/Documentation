@@ -7,7 +7,7 @@ import D17PushButton from "../assets/CytonImages/D17PushButton.jpg";
 
 In a lot of EEG experiments, there is a requirement for precise timing between external stimuli and the data stream. For example, with in an experiment collecting P300 data, it is necessary to know the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
 
-This tutorial will cover a couple of ways to add an external trigger to the OpenBCI data stream on othe Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI and opened and enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This is what allows for the precise timing required for external triggers.
+This tutorial will cover the methods to add an external trigger to the OpenBCI data stream on othe Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI and opened and enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This is what allows for the precise timing required for external triggers.
 
 ## Access the Digital Read Widget
 
@@ -17,9 +17,9 @@ Once the GUI has launched, follow the guide to [connect to the Cyton board from 
 
 After connecting the board to the GUI, open and enable the "Digital Read" for one of your widgets. Then select start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your Cyton. Note that the accelerometer will no long be turned on because the trigger data is now sent instead.
 
-You can verify the digital read widget is working by pressing the "PROG" button which is hooked up to the D17 pin.
+### INSERT PICTURE HERE TO ENABLE DIGITAL READ
 
-When you use a Cyton dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
+When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Output) pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
 
 ## Trigger Methods on the Cyton Board
 
@@ -31,10 +31,10 @@ The OpenBCI Cyton Board comes with a user accessible pushbutton already on the b
     <img src={D17PushButton} width="300"/>
 </div>
 
+### INSERT PICTURE SIDE BY SIDE TO SHOW WHAT HAPPENS PROG BUTTON IS PRESSED
+
 :::caution
-
 The PROG button when used along with the RST button can put the board into programming mode which will affect its normal operation. The blue LED will start blinking blue if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide.
-
 :::
 
 We want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet format). There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
@@ -69,8 +69,8 @@ DF,FFFCDE,FFFC00,FFFC49,FFFAC3,FFFBD0,FFFC91,FFFB03,FFFCB0
 
 ### Adding Trigger Markers from External Sources
 
-Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the OpenBCI 32bit Board with the external signal generating system using a few low-cost components.
-Our goal with the OpenBCI board is to make biosensing safe and fun. The biggest part of the safety part is making sure that you can't plug yourself accidentally into the mains electrical supply (yikes!). If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
+Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the Cyton Board with the external signal generating system using a few low-cost components.
+Our goal with OpenBCI is to make biosensing safe and fun. The most important thing is making sure that you can't plug yourself accidentally into the mains electrical supply. If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
 
 #### Isolating the Cyton from an External Voltage
 
