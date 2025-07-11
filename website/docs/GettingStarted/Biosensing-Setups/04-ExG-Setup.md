@@ -2,6 +2,13 @@
 id: ExGSetup
 title: Setting up for EEG, EMG, and ECG at the same time
 ---
+
+import CytonDaisyAttached from "../../assets/GettingStartedImages/CytonDaisyAttached.jpg";
+import ExG3ChannelEEG from "../../assets/GettingStartedImages/ExG3ChannelEEG.jpg";
+import ExGCompleteSetup from "../../assets/GettingStartedImages/ExGCompleteSetup.jpg";
+import ExGSetupGanglionSwitches from "../../assets/GettingStartedImages/ExGSetupGanglionSwitches.jpg";
+
+
 The OpenBCI Cyton, Cyton+Daisy and Ganglion boards offer a wide range of flexibility to collect ExG signals. ExG is meant to represent any referential or differential biosignal as a single term. This includes EEG, EMG, EOG, ECG etc. This tutorial will show you how to measure EEG, ECG and EMG at the same time using the Cyton, Cyton+Daisy and Ganglion boards.
 
 After going through this tutorial, you will learn how to configure the OpenBCI boards to measure multiple ExG recordings at the same time. You could apply the same principle to build channel layouts to fit your application (i.e., 3-lead ECG vs. 5-lead ECG; eight or more EEG channels etc).
@@ -61,7 +68,9 @@ Here's a list of material you will need for this tutorial:
 
 In this tutorial, we will use the Cyton to measure EEG, and the Daisy to measure EMG and ECG. First, attach the Daisy the Cyton board if they are not already attached. Be sure to attach them correctly as shown below
 
-![Cyton and Daisy Attached](../../assets/GettingStartedImages/CytonDaisyAttached.jpg)
+<div style={{textAlign: 'center'}}>
+    <img src={CytonDaisyAttached} width="300"/>
+</div>
 
 ### Setting up 3-channel EEG
 
@@ -69,7 +78,10 @@ In this section, we will show you how to connect the EEG electrodes to the Cyton
 
 As shown in the below image, connect the EEG electrodes to Channels 1, 2 and 3 of the Cyton by connecting them to the bottom row of the N1P, N2P and N3P pins. Then, connect an earclip electrode to the **bottom BIAS pin** and a Y-jumper to the **bottom SRB pin**. 
 
-![Three Channel EEG Setup](../../assets/GettingStartedImages/ExG3ChannelEEG.jpg)
+
+<div style={{textAlign: 'center'}}>
+    <img src={ExG3ChannelEEG} width="300"/>
+</div>
 
 ### Setting up EMG and ECG
 
@@ -86,7 +98,10 @@ Please refer to the [ECG tutorial](03-ECG-Setup.md) for alternative 5-lead ECG s
 
 The complete setup should look like this
 
-![Complete Setup](../../assets/GettingStartedImages/ExGCompleteSetup.jpg)
+<div style={{textAlign: 'center'}}>
+    <img src={ExGCompleteSetup} width="300"/>
+</div>
+
 
 ### Visualize the data in OpenBCI GUI
 
@@ -128,7 +143,10 @@ The Ganglion board is a 4 channel board and so, for this tutorial, we will measu
 
 For this tutorial, we will use Channels 1 and 2 as EEG, Channel 3 as ECG and Channel 4 as EMG. So, push the input select switches for Channels 1 and 2 to the DOWN position and push the input select switches for Channels 3 and 4 to the UP position. If you are having trouble pushing the switches, use a pair of tweezers to help you. After configuring the channels, the switches should be in the positions as shown below.
 
-![Ganglion Input Switches for ExG](../../assets/GettingStartedImages/ExGSetupGanglionSwitches.jpg)
+
+<div style={{textAlign: 'center'}}>
+    <img src={ExGSetupGanglionSwitches} width="300"/>
+</div>
 
 The Ganglion board also has a REF and D_G pin which act exactly as the SRB2 and BIAS pins in the Cyton and Cyton+Daisy. The REF pin acts as a common reference when measuring EEG and the D_G pin acts as the BIAS pin for cancelling common-mode noise and 50/60 Hz noise. Although there is a top and bottom pin for REF and D_G, these are the same pins are can be used for any setup. For ease of use, we will use the top pins of REF and D_G.
 
