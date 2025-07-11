@@ -15,9 +15,13 @@ Launch the OpenBCI GUI for your operating system following the tutorial for the 
 
 Once the GUI has launched, follow the guide to [connect to the Cyton board from the OpenBCI GUI](../GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
 
-After connecting the board to the GUI, open and enable the "Digital Read" for one of your widgets. Then select start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your Cyton. Note that the accelerometer will no long be turned on because the trigger data is now sent instead.
+After connecting the board to the GUI, open and enable the "Digital Read" for one of your widgets. 
 
-### INSERT PICTURE HERE TO ENABLE DIGITAL READ
+![Digital Read Widget](../assets/CytonImages/DigitalReadWidget.png)
+
+Then select start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your Cyton. Note that the accelerometer will no long be turned on because the trigger data is now sent instead.
+
+![Turn on Digital Read Widget](../assets/CytonImages/EnableDigitalRead.png)
 
 When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Output) pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
 
@@ -25,13 +29,15 @@ When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Out
 
 ### Utilize the on device push button
 
-The OpenBCI Cyton Board comes with a user accessible pushbutton already on the board. This is the PROG button and it's attached to pin D17 with a 470K pulldown resistor. When you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgement of a stimulus (for example) into the data stream.
+The OpenBCI Cyton Board comes with a user accessible pushbutton already on the board. This is the PROG button and it's attached to pin D17 with a 470K pulldown resistor. When you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgement of a stimulus into the data stream.
 
 <div style={{textAlign: 'center'}}>
     <img src={D17PushButton} width="300"/>
 </div>
 
-### INSERT PICTURE SIDE BY SIDE TO SHOW WHAT HAPPENS PROG BUTTON IS PRESSED
+Shown below is an example of what happens when the PROG button is pressed.
+
+![PROG Button Working](../assets/CytonImages/PROGButtonWorking.gif)
 
 :::caution
 The PROG button when used along with the RST button can put the board into programming mode which will affect its normal operation. The blue LED will start blinking blue if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide.
@@ -77,6 +83,6 @@ Our goal with OpenBCI is to make biosensing safe and fun. The most important thi
 ![Optoisolator Schematic](../assets/CytonImages/ExternalTriggerCNY17.jpg)
 ![Breadboard CNY17](../assets/CytonImages/CNY17_Breadboard.jpg)
 
-The simplest trick is to isolate the OpenBCI circuit from the trigger signal generating circuit. For this purpose, we picked an Optoisolator with 5000 Volts isolation between the input and the output. [CNY17](http://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d) family from Vishay is a great example of a low-cost high isolation optoisolator. It's usually available, and costs under a dollar (USD) in singles. In the circuit to the right, when an external trigger of 3.3V to 5V is applied to the Anode of the input (pin 1), the output (pin 5) will go from HIGH to LOW.
+The simplest trick is to isolate the OpenBCI circuit from the trigger signal generating circuit. For this purpose, we picked an Optoisolator with 5000 Volts isolation between the input and the output. [CNY17](http://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d) family from Vishay is a great example of a low-cost high isolation optoisolator. It's usually available, and costs under a dollar (USD) in singles. In the circuit to the right, when an external trigger of 3.3V applied to the Anode of the input (pin 1), the output (pin 5) will go from HIGH to LOW.
 
 As always, help can be found at support@openbci.com and [openbci.com/forum](https://www.openbci.com/forum).
