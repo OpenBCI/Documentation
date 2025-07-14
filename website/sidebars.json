@@ -149,6 +149,7 @@
       "Deprecated/MyoGanglion",
       "Deprecated/FTDI_Fix_Mac_Deprecated",
       "Deprecated/MotorImagery",
+      "Deprecated/DeprecatedDongleProgramming",
       {
         "type": "category",
         "label": "WiFi Shield",
