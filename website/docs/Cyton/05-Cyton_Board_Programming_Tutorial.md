@@ -12,7 +12,7 @@ If you're curious about how we do it, keep reading! If you want to start streami
 
 ## Overview
 
-The OpenBCI Cyton boards have powerful microcontrollers on them which ship with the latest OpenBCI firmware to interface with the on-board ADS1299, Accelerometer, and SD card. This tutorial explains how to program the firmware using the OpenBCI Dongle and you PC. If we come out with a firmware upgrade, or if you or someone comes up with a custom program that you want to implement, you should use the following method. We made major changes to the Cyton firmware in 2016 with v2.x and again in 2017 with v3.x. This tutorial covers the v2 and v3. The v1 firmware has been deprecated and is not longer in production. Happy Hacking!
+The OpenBCI Cyton boards have powerful microcontrollers on them which ship with the latest OpenBCI firmware to interface with the on-board ADS1299, accelerometer, and SD card. This tutorial explains how to program the firmware using the OpenBCI Dongle and your PC. If we release a firmware upgrade, or if you or someone else comes up with a custom program that you want to implement, you should use the following method. We made major changes to the Cyton firmware in 2016 with v2.x and again in 2017 with v3.x. This tutorial covers v2 and v3. The v1 firmware has been deprecated and is no longer in production. Happy hacking!
 
 ## Firmware Versions 2.x.x & 3.x.x (Fall 2016 - present)
 
@@ -34,7 +34,7 @@ These instructions apply to programming the Cyton with firmware versions 2.x.x, 
 
 -   Arduino IDE v1.8.19. You can find this in the legacy page of the [Arduino Downloads section](https://www.arduino.cc/en/software/)
 
-**Note for Windows users** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in control panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list, select yes. Then install 1.8.0 as normal. Navigate to back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.0`. Now drag and drop the `Arduino_1.5.8` back into `Program Files` folder.
+**Note for Windows users:** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in Control Panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list; select yes. Then install 1.8.0 as normal. Navigate back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.0`. Now drag and drop the `Arduino_1.5.8` folder back into the `Program Files` folder.
 
 ### Install Firmware From Arduino Library Manager (easiest!)
 
@@ -53,7 +53,7 @@ Now jump down to the section [install ChipKit Core](#install-chipkit-core-firmwa
     On Mac: `/Documents/Arduino/libraries`  
     On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
-If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
+If you're having trouble or want to learn more, check out the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Manual Installation of Cyton SD Library
 
@@ -64,7 +64,7 @@ If you're have trouble or want to learn more checkout the [Official Arduino Guid
     On Mac: `/Documents/Arduino/libraries`  
     On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
-If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
+If you're having trouble or want to learn more, check out the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Manual Installation of WiFi Master Firmware
 
@@ -75,7 +75,7 @@ If you're have trouble or want to learn more checkout the [Official Arduino Guid
     On Mac: `/Documents/Arduino/libraries`  
     On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
-If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
+If you're having trouble or want to learn more, check out the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Clone The Repos From Github
 
@@ -100,7 +100,7 @@ On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
 ### Select 'OpenBCI 32' as Board
 
-If you followed the process in the previous link, and you will be able to select the _OpenBCI 32_ board from the Tools >> Board >> dropdown menu!
+If you followed the process in the previous link, you will be able to select the _OpenBCI 32_ board from the Tools >> Board >> dropdown menu!
 
 ![board_dropdown](../assets/CytonImages/OBCI32_Board_Dropdown.png)
 
@@ -114,19 +114,19 @@ If you followed the process in the previous link, and you will be able to select
 
 ### Plug in Dongle and Select Serial Port
 
-Now is a good time to plug your Dongle in and power down the Board.
+Now is a good time to plug your Dongle in and power down the board.
 
 ![serial_port](../assets/CytonImages/PortSelect.png)
 
 -   Select the correct serial port for your OpenBCI Dongle.
 
-    -   On Macs, this will be named **/dev/tty.usbserial-DN00nnnn** where the nnnn is a combination of numbers and letters specific to your openBCI Dongle.
+    -   On Macs, this will be named **/dev/tty.usbserial-DN00nnnn** where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
 
     -   On Windows, the serial port will be listed as a numbered COM port.
 
     -   On Linux, it will be different.
 
-### Put Cyton in Bootloaded Mode
+### Put Cyton in Bootloader Mode
 
 -   When you are happy with the code, you will have to put the 32bit board into bootloader mode. We don't have a way to remotely reset the chipKIT compatible IC, so you have to do it manually with the procedure that follows:
 
@@ -235,10 +235,10 @@ void sendLEDStatus() {
 
 ```
 
-As you can see above, we only really want to send 1 byte, but if we want to do it fast, at this 100Hz rate, we must wrap it in the start byte and stop byte to tell the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) to send the packet as soon as it get's the stop byte.
+As you can see above, we only really want to send 1 byte, but if we want to do it fast, at this 100Hz rate, we must wrap it in the start byte and stop byte to tell the [`Device`](https://github.com/OpenBCI/OpenBCI_Radios/blob/master/examples/RadioDevice32bit/RadioDevice32bit.ino) to send the packet as soon as it gets the stop byte.
 
 ### Adopting the new Pic32 code paradigm
 
-We drastically reduced the complexity of the `.ino` files in order to make custom device programming more approachable for new programmers but also add a suite of features to give great power to great programmers. We have created an environment to drive contribution to the main project in the form of examples. If you want to contribute code the main library for others to use, now you can simply do a pull request. Joel was able to adapt his [pulse sensor code](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino) to the new firmware in about 20 minutes! Now anyone who downloads the firmware, will get the pulse sensor code versus having to dig through all the OpenBCI repos to find an example of [how to use a pulse sensor](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino), [have external triggers](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWith2ButtonExternalTriggers/BoardWith2ButtonExternalTriggers.ino), [read an analog input](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithAnalogSensor/BoardWithAnalogSensor.ino), etc...
+We drastically reduced the complexity of the `.ino` files in order to make custom device programming more approachable for new programmers, but also added a suite of features to give great power to experienced programmers. We have created an environment to drive contribution to the main project in the form of examples. If you want to contribute code to the main library for others to use, now you can simply do a pull request. Joel was able to adapt his [pulse sensor code](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino) to the new firmware in about 20 minutes! Now anyone who downloads the firmware will get the pulse sensor code, instead of having to dig through all the OpenBCI repos to find an example of [how to use a pulse sensor](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithPulseSensor/BoardWithPulseSensor.ino), [have external triggers](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWith2ButtonExternalTriggers/BoardWith2ButtonExternalTriggers.ino), [read an analog input](https://github.com/OpenBCI/OpenBCI_32bit_Library/blob/master/examples/BoardWithAnalogSensor/BoardWithAnalogSensor.ino), etc...
 
 Please dig through the [`examples`](https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/master/examples) folder on the [`OpenBCI_32bit_Library`](https://github.com/OpenBCI/OpenBCI_32bit_Library/tree/master) for a deep dive into all the possibilities with the new code. Remember if you have new code you want to share, please do!! [Make a pull request](https://help.github.com/articles/creating-a-pull-request/)!
