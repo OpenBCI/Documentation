@@ -90,15 +90,15 @@ AZ1-AZ0: Data value for accelerometer channel Z
 
 The following table is sorted by `Stop Byte`. Drivers should use the `Stop Byte` to determine how to parse the six `AUX` bytes.
 
-| Stop Byte | Byte 27 | Byte 28 | Byte 29 | Byte 30 | Byte 31 | Byte 32 | Name                                |
-| :-------: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | ----------------------------------- |
-|   0xC0    |   AX1   |   AX0   |   AY1   |   AY0   |   AZ1   |   AZ0   | Standard with accel                 |
-|   0xC1    |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   | Standard with raw aux               |
-|   0xC2    |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   | User defined                        |
-|   0xC3    |   AC    |   AV    |   T3    |   T2    |   T1    |   T0    | Time stamped **_set_** with accel   |
-|   0xC4    |   AC    |   AV    |   T3    |   T2    |   T1    |   T0    | Time stamped with accel             |
-|   0xC5    |   UDF   |   UDF   |   T3    |   T2    |   T1    |   T0    | Time stamped **_set_** with raw aux |
-|   0xC6    |   UDF   |   UDF   |   T3    |   T2    |   T1    |   T0    | Time stamped with raw aux           |
+| Stop Byte | Byte 27 | Byte 28 | Byte 29 | Byte 30 | Byte 31 | Byte 32 | Name                              |
+| :-------: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | --------------------------------- |
+|   0xC0    |   AX1   |   AX0   |   AY1   |   AY0   |   AZ1   |   AZ0   | Standard with accel               |
+|   0xC1    |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   | Standard with raw aux             |
+|   0xC2    |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   |   UDF   | User defined                      |
+|   0xC3    |   AC    |   AV    |   T3    |   T2    |   T1    |   T0    | Time stamped **set** with accel   |
+|   0xC4    |   AC    |   AV    |   T3    |   T2    |   T1    |   T0    | Time stamped with accel           |
+|   0xC5    |   UDF   |   UDF   |   T3    |   T2    |   T1    |   T0    | Time stamped **set** with raw aux |
+|   0xC6    |   UDF   |   UDF   |   T3    |   T2    |   T1    |   T0    | Time stamped with raw aux         |
 
 AX1-AX0: Data value for accelerometer channel X
 AY1-AY0: Data value for accelerometer channel Y
