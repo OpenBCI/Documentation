@@ -150,6 +150,7 @@
       "Deprecated/FTDI_Fix_Mac_Deprecated",
       "Deprecated/MotorImagery",
       "Deprecated/DeprecatedCytonProgram",
+      "Deprecated/DeprecatedDongleProgramming",
       {
         "type": "category",
         "label": "WiFi Shield",
