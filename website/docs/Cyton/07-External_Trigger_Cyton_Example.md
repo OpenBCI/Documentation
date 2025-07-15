@@ -3,98 +3,49 @@ id: CytonExternal
 title: External Trigger on OpenBCI Cyton Board
 ---
 
-Sometimes, when studying EEG or other biopotential signals, you will want to have precise timing between external events or stimulus and the data stream. For example, if you are working with P300 waves it is necessary to know the exact time that the signal was presented to the subject in order to look for the tell-tale brain wave that happens about 300mS after the stimulus.
+import D17PushButton from "../assets/CytonImages/D17PushButton.jpg";
 
-This tutorial will cover a couple of ways to add an external trigger to the OpenBCI data stream on our 32bit Board. Normally, the Cyton board reads from the Accelerometer at 25 Hz. When we change board mode to `Analog` or `Digital` mode, we read from the external pins at same rate as the signal pins (e.g. 250 Hz)! This is what allows for the precise timing needed for external triggers.
+In a lot of EEG experiments, there is a requirement for precise timing between external stimuli and the data stream. For example, with in an experiment collecting P300 data, it is necessary to know the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
 
-**Note:** As of 3.x.x Cyton firmware, the Cyton is able to switch board modes, now you don't have to upload new code to the board just to read from an input!
+This tutorial will cover the methods to add an external trigger to the OpenBCI data stream on othe Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI and opened and enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This is what allows for the precise timing required for external triggers.
 
-## External Triggering The Easy Way (Firmware 3.x.x)
+## Access the Digital Read Widget
 
-### Using the OpenBCI GUI
+Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui).
 
-Follow the official [OpenBCI GUI guide](Software/OpenBCISoftware/01-OpenBCI_GUI.md) to download version 3.2.0 or later [from our website](http://openbci.com/index.php/downloads).
+Once the GUI has launched, follow the guide to [connect to the Cyton board from the OpenBCI GUI](../GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
 
-Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui) (remember to [run your OpenBCIHub application](Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-on-windows) first windows users!).
+After connecting the board to the GUI, open and enable the "Digital Read" for one of your widgets. 
 
-Once the GUI has launched, follow the guide to [connect to your Cyton from the OpenBCI GUI](GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
+![Digital Read Widget](../assets/CytonImages/DigitalReadWidget.png)
 
-Once you have connected, you may selected the "Digital Read" for one of your widgets. Then select start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your Cyton. Note that the accelerometer will no long be turned on because the trigger data is now sent instead.
+Then select the start digital read mode button in the top left of the newly populated widget. This will activate and send the proper commands to your Cyton. Note that the accelerometer will no longer be turned on because the trigger data is now sent instead.
 
-You can verify the digital read widget is working by pressing the "PROG" button which is hooked up to the D17 pin.
+![Turn on Digital Read Widget](../assets/CytonImages/EnableDigitalRead.png)
 
-When you use a Cyton USB dongle, you get up to 5 digital IO pins to read from: D11, D12, D13, D17 and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Checkout the guides for lowering serial port latency [Windows](Troubleshooting/04-FTDI_Fix_Windows.md) and [macOS](Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](Troubleshooting/03-FTDI_Fix_Linux.md)!
+When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Output) pins to read from: D11, D12, D13, D17, and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Check out the guides for lowering serial port latency for [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md), [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
 
-### Programmatically Setting Board Mode
+## Trigger Methods on the Cyton Board
 
-Firmware 3.x.x brings a long requested out-of-the-box ability to read from analog or digital inputs with the default firmware. Allowing you to simply read from the analog input (sending `/2`) or digital input (sending `/3`) with the type of two ascii commands. The default board is activated by default, and can always be achieved again by sending a `/0`.
+### Utilize the on-device push button
 
-Learn more about board modes in the [Cyton SDK](Cyton/04-OpenBCI_Cyton_SDK.md#board-mode).
+The OpenBCI Cyton Board comes with a user-accessible pushbutton already on the board. This is the PROG button and it's attached to pin D17 with a 470K pulldown resistor. When you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgment of a stimulus into the data stream.
 
-### External Triggering The Easy Way (Firmware 2.x.x)
+<div style={{textAlign: 'center'}}>
+    <img src={D17PushButton} width="300"/>
+</div>
 
-Update to firmware version 3.x.x using the tutorial [**here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)! May all your troubles disappear!
+Shown below is an example of what happens when the PROG button is pressed.
 
-### Sample Code Links
+![PROG Button Working](../assets/CytonImages/PROGButtonWorking.gif)
 
-The code used in this example is located [**here**](https://github.com/OpenBCI/OpenBCI_Button_Trigger) for those of you who want to play along at home. There's a tutorial for how to program the 32bit Board [**here**](Cyton/05-Cyton_Board_Programming_Tutorial.md)
+:::caution
+The PROG button, when used along with the RST button, can put the board into programming mode, which will affect its normal operation. The blue LED will start blinking if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide.
+:::
 
-### Utilize the on device push button
+We want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet format.) There are 6 bytes available in each data packet, and the default format is to read them as three 16-bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4ms resolution on external trigger events like the rising edge of the PROG button press.
 
-The OpenBCI 32bit Board comes with a user accessible pushbutton switch already on the board, wired right to the PIC32 microcontroller. Brilliant! It is the PROG button, and it is used to put the PIC into bootloader mode when uploading new firmware. When it's not doing that it's attached to pin D17 with a 470K pulldown resistor, so when you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgement of a stimulus (for example) into the data stream. You will likely want to note the rising edge (pushed state) of the button press, so that's the example code that we'll work with.
-
-```
-
-int pushButton = 17;		// the button is on pin D17
-int pushButtonValue;		// used to hold the latest button reading
-int lastPushButtonValue;	// used to remember the last button state
-boolean addAuxToSD = false;	// use this to write auxiliary data to SD if you like
-boolean state = HIGH;		// used to toggle the on-board LED
-
-```
-
-First thing is to establish the variables we need to read the pushbutton switch, and a flag to let the rest of the program know we got new data. The OpenBCI library already has a variable array for auxiliary data, called auxData, which we will use for logging. I've also added a flag for writing data to an SD card (if you like that kind of thing) and a boolean to toggle the on-board blue LED for user feedback, which is always nice.
-
-In the setup function, we set the pin direction and prime the button variables. The startFromScratch() function resets the board peripheral devices and does some general housekeeping, along with making initial serial contact with any controlling program. the useAccel and useAux variables are inside the OpenBCI_32_Daisy library (hence the **OBCI.**) and it's important to decide and select which kind of data you want to log. It is possible to do both, but you will need to manually operate the useAux or useAcel variables (tutorial on that coming sooooon).
-
-```
-
-void setup(){
-	// stuff here...
-	pinMode(pushButton, INPUT);		// set the button pin direction
-	pushButtonValue = lastPushButtonValue = digitalRead(pushButton); // seed
-	startFromScratch();     // initialize OpenBCI, read device IDS
-
-```
-
-// you can set EITHER useAccel or useAux to true
-// if you want both, you MUST set and clear one of the variables every sample
-OBCI.useAccel = false; // option to add/remove accelerometer data to stream
-OBCI.useAux = true; // option to add/remove auxiliary data to stream
-// more stuff...
-{"}"}
-
-Then, in the loop, we want to check for the rising edge of the button press, make note of it in the auxData array, and set the write-to-SD flag (if you like). Finally, we want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet anatomy) There are 6 bytes available in each data packet, and the default format is to read them as three 16bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4mS resolution on external trigger events like the rising edge of the PROG button press.
-
-```
-
-pushButtonValue = digitalRead(pushButton);    // feel the PROG button
-if (pushButtonValue != lastPushButtonValue){  // if it's changed,
-    	if (pushButtonValue == HIGH){    // if it's gone from LOW to HIGH
-      		// 0x6220 converts to PI in GUI
-      		OBCI.auxData[0] = OBCI.auxData[1] = OBCI.auxData[2] = 0x6220;
-      		addAuxToSD = true;       // add Aux Data to the SD card if it's there
-      		state = !state;		// toggle the state variable
-      		digitalWrite(LED,state);	// toggle the LED for user useability
-    	}
-    	lastPushButtonValue = pushButtonValue; // keep track of the changes!
-}
-
-```
-
-You can do the button feeling at any point in the loop() function. In our sample code linked above, I'm putting it outside of the if(is-running) conditional so that I can see the LED toggle even when the board is not streaming data. That's a nice way to know that you've got everything set up and working before starting a data logging session.
-
-Here's an example of what the data looks like after it's been logged by our GUI.
+Here's an example of what the data looks like after it's been logged by our GUI:
 
 ```
 
@@ -108,7 +59,7 @@ Here's an example of what the data looks like after it's been logged by our GUI.
 
 ```
 
-And here's an example of what the data looks like after it's been logged to the SD card.
+And here's an example of what the data looks like after it's been logged to the SD card:
 
 ```
 
@@ -122,65 +73,16 @@ DF,FFFCDE,FFFC00,FFFC49,FFFAC3,FFFBD0,FFFC91,FFFB03,FFFCB0
 
 ```
 
-### External Triggering The Harder Way (Firmware 1.x.x)
+### Adding Trigger Markers from External Sources
 
-Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the OpenBCI 32bit Board with the external signal generating system using a few low-cost components.
-Our goal with the OpenBCI board is to make biosensing safe and fun. The biggest part of the safety part is making sure that you can't plug yourself accidentally into the mains electrical supply (yikes!). If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
+Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example, an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the Cyton Board with the external signal-generating system using a few low-cost components.
+Our goal with OpenBCI is to make biosensing safe and fun. The most important thing is making sure that you can't accidentally plug yourself into the mains electrical supply. If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
 
-### Optoisolation
+#### Isolating the Cyton from an External Voltage
 
 ![Optoisolator Schematic](../assets/CytonImages/ExternalTriggerCNY17.jpg)
 ![Breadboard CNY17](../assets/CytonImages/CNY17_Breadboard.jpg)
 
-The simplest trick is to isolate the OpenBCI circuit from the trigger signal generating circuit. For this purpose, we picked an Optoisolator with 5000 Volts isolation between the input and the output. [CNY17](http://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d) family from Vishay is a great example of a low-cost high isolation optoisolator. It's usually available, and costs under a dollar (USD) in singles. In the circuit to the right, when an external trigger of 3.3V to 5V is applied to the Anode of the input (pin 1), the output (pin 5) will go from HIGH to LOW.
-
-```
-
-int triggerPin = 18;		// the CNY17 Collector is on pin 18
-int triggerValue;		// used to hold the latest trigger reading
-int lastTriggerValue;	// used to remember the latest trigger state
-boolean addAuxToSD;        // option to add the aux data to the SD card
-
-```
-
-The code to read this trigger input is quite similar to the previous button code. In this case, we need to use a different pin (pin 18) and watch for the **falling** edge of the trigger.
-
-```
-
-void setup(){
-	// stuff here...
-	pinMode(triggerPin, INPUT);		// set the button pin direction
-	triggerValue = lastTriggerValue = digitalRead(triggerPin); // seed
-	startFromScratch();     // initialize OpenBCI, read device IDS
-
-```
-
-// you can set EITHER useAccel or useAux to true
-// if you want both, you MUST set and clear one of the variables every sample
-OBCI.useAccel = false; // option to add/remove accelerometer data to stream
-OBCI.useAux = true; // option to add/remove auxiliary data to stream
-// more stuff...
-{"}"}
-
-```
-
-void loop(){
-// do stuff
-triggerValue = digitalRead(triggerPin);    // feel the trigger pin
-	if (triggerValue != lastTriggerValue){  // if it's changed,
-		if (triggerValue == LOW){    // if it's gone from HIGH to LOW
-   			// 0x6220 converts to PI in GUI
-   			OBCI.auxData[0] = OBCI.auxData[1] = OBCI.auxData[2] = 0x6220;
-    		addAuxToSD = true;           // add Aux Data to the SD card if it's there
-    		state = !state;		// toggle the state variable
-      		digitalWrite(LED,state);	// toggle the LED for user useability
-	}
-	lastTriggerValue = triggerValue; // keep track of the changes
-	}
-
-	// do other stuff
-	}
-
-```
+The simplest trick is to isolate the OpenBCI circuit from the trigger signal-generating circuit. For this purpose, we picked an optoisolator with 5000 volts isolation between the input and the output. The [CNY17](http://www.mouser.ee/ProductDetail/Vishay-Semiconductors/CNY17F-2X006/?qs=sGAEpiMZZMteimceiIVCB7Uit3aMEvQQFLjPtOr%2f870%3d) family from Vishay is a great example of a low-cost, high-isolation optoisolator. It's usually available and costs under a dollar (USD) in singles. In the circuit to the right, when an external trigger of 3.3V is applied to the anode of the input (pin 1), the output (pin 5) will go from HIGH to LOW.
 
 As always, help can be found at support@openbci.com and [openbci.com/forum](https://www.openbci.com/forum).
