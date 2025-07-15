@@ -2,55 +2,56 @@
 id: CytonSpecs
 title: Cyton Specs
 ---
+
 ## [BUY IT!](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
 
-The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture program. You can find a link to download Design Spark in our [V3 design files repository](https://github.com/OpenBCI/V3_Hardware_Design_Files) where you will find all of the .sch and .pcb files. There are parts in the BOMs below that are not explicitly specified. For example, the passives (Rs and Cs) are all standard easy to find components. Thin film for the Rs, and MLCC X7R for the Cs. The battery connector is a standard JST type two position (with polarity key at the **TOP**), and the SD card holder that we are using is [ST-TF-003A](https://octopart.com/st-tf-003a-suntech-29424852).
+The OpenBCI Cyton PCBs were designed with Design Spark, a free PCB capture program. You can find a link to download Design Spark in our [V3 design files repository](https://github.com/OpenBCI/V3_Hardware_Design_Files), where you will find all of the .sch and .pcb files. There are parts in the BOMs below that are not explicitly specified. For example, the passives (Rs and Cs) are all standard, easy-to-find components: thin film for the Rs, and MLCC X7R for the Cs. The battery connector is a standard JST type two-position (with polarity key at the **TOP**), and the SD card holder that we are using is [ST-TF-003A](https://octopart.com/st-tf-003a-suntech-29424852).
 
 ## OpenBCI Cyton Board
 
 ### Cyton Board Specs:
 
--   Power with 3-6V DC Battery ONLY
--   PIC32MX250F128B Microcontroller with chipKIT UDB32-MX2-DIP bootloader
--   ADS1299 Analog Front End
--   LIS3DH 3 axis Accelerometer
--   RFduino BLE radio
--   Micro SD card slot
--   Voltage Regulation (3.3V, +2.5V, -2.5V)
--   Board Dimensions 2.41" x 2.41" (octogon has 1" edges)
--   Mount holes are 1/16" ID, 0.8" x 2.166" on center
--   Input voltage range: +2.5 to -2.5V
--   Signal-Noise-Ratio: 121 dB
--   Voltage resolution = 0.298 microvolt/bit (5V/16777216). Resolution = Voltage level / 2^n where n is the bit-level of ADC
+- Power with 3-6V DC Battery ONLY
+- PIC32MX250F128B Microcontroller with chipKIT UDB32-MX2-DIP bootloader
+- ADS1299 Analog Front End
+- LIS3DH 3 axis Accelerometer
+- RFduino BLE radio
+- Micro SD card slot
+- Voltage Regulation (3.3V, +2.5V, -2.5V)
+- Board Dimensions 2.41" x 2.41" (octagon has 1" edges)
+- Mount holes are 1/16" ID, 0.8" x 2.166" on center
+- Input voltage range: +2.5 to -2.5V
+- Signal-Noise-Ratio: 121 dB
+- Voltage resolution = 0.298 microvolt/bit (5V/16777216). Resolution = Voltage level / 2^n where n is the bit-level of ADC
 
 ### Breakout pins:
 
--   Program pins for bootloading PIC
-    -   PGC, PGD, VDD, MCLR, GND
--   Serial pins for programming RFduino
-    -   RFTX, RFRX, RFRST, GND
--   SPI bus pins on the 3V side for Daisy Module expansion
-    -   DVDD, GND, MISO, MOSI, SCK, CS, CLK, RST
--   Unused PIC32 pins
-    -   D11 , D12 (A6), D13 (A7), D17, D18
+- Program pins for bootloading PIC
+  - PGC, PGD, VDD, MCLR, GND
+- Serial pins for programming RFduino
+  - RFTX, RFRX, RFRST, GND
+- SPI bus pins on the 3V side for Daisy Module expansion
+  - DVDD, GND, MISO, MOSI, SCK, CS, CLK, RST
+- Unused PIC32 pins
+  - D11 , D12 (A6), D13 (A7), D17, D18
 
-The SPI bus pins on 3V side include CLK, which is tied to the ADS1299 CLK pin for timing the Daisy Module, and a RST pin which is tied to the ADS1299 MCLR pin for hardware reset of the ADS chips. We use a PICkit 3 to bootload the PIC chips. Pins D12, and D13 can be digital or analog (called by their A number above for analog purposes). D11 is a Digital I/O and the PGD , and has the blue LED in series with a 1K resistor connected to AGND. D12 is PGC, for bootloading purposes. D17 and D18 are digital I|O only. D17 is connected to the PROG pushbutton. The PROG button can be used as an input by setting it's MODE direction and doing digitalRead on it (there is a 470K pulldown on D17, pressing PROG pulls pin D17 up to DVDD).
+The SPI bus pins on the 3V side include CLK, which is tied to the ADS1299 CLK pin for timing the Daisy Module, and an RST pin which is tied to the ADS1299 MCLR pin for hardware reset of the ADS chips. We use a PICkit 3 to bootload the PIC chips. Pins D12 and D13 can be digital or analog (called by their A number above for analog purposes). D11 is a Digital I/O and the PGD, and has the blue LED in series with a 1K resistor connected to AGND. D12 is PGC, for bootloading purposes. D17 and D18 are digital I/O only. D17 is connected to the PROG pushbutton. The PROG button can be used as an input by setting its MODE direction and doing digitalRead on it (there is a 470K pulldown on D17; pressing PROG pulls pin D17 up to DVDD).
 
 ### Push Buttons
 
-The RST pushbutton is connected to MCLR on the PIC. Pressing it will reset the PIC. To put the PIC into bootloader mode so that it can be re-programmed, press the RST button and hold it down. Then press the PROG button. Then release the RST button, and the blue LED will blink pleasantly, announcing that the PIC is ready to accept new code.
+The RST pushbutton is connected to MCLR on the PIC. Pressing it will reset the PIC. To put the PIC into bootloader mode so that it can be reprogrammed, press the RST button and hold it down. Then press the PROG button. Then release the RST button, and the blue LED will blink pleasantly, announcing that the PIC is ready to accept new code.
 
 ### Slide Switch
 
 Slide switch is power for the board. The slide switch has three positions:
 
--   BLE activates a pull-up on RFduino pin 4
--   OFF disconnects the battery input
--   PC does NOT activate pull-up on RFduino pin 4
+- BLE activates a pull-up on RFduino pin 4
+- OFF disconnects the battery input
+- PC does NOT activate pull-up on RFduino pin 4
 
-      **NOTE: BLE|PC selection is NOT implemented!**
+  **NOTE: BLE|PC selection is NOT implemented!**
 
-Swtiching either BLE or PC will produce the same result. The option is available for future development...
+Switching either BLE or PC will produce the same result. The option is available for future development...
 
 ### OpenBCI Cyton Board Circuit Schematic
 
@@ -73,10 +74,10 @@ The OpenBCI USB Dongle is used to connect your computer to the Cyton Board.
 
 ### Dongle Specs
 
--   Power via USB connector ONLY
--   RFduino BLE radio module
--   FTDI USB&lt;&gt;Serial IC (FT231XQ-R)
--   Resettable fuse
+- Power via USB connector ONLY
+- RFduino BLE radio module
+- FTDI USB&lt;&gt;Serial IC (FT231XQ-R)
+- Resettable fuse
 
 ### Breakout Pins
 
@@ -84,7 +85,7 @@ RFduio pins are broken out in the same order and layout as the RFduino radio and
 
 ### Slide Switch
 
-The slide switch on the Dongle has two positions (noted on the bottom  silkscreen). When the switch is on the GPIO6 side, the FTDI DTR pin is routed to RFduino pin 6 and it is ready to pass data to-from the Cyton board. This configuration is 'normal' mode, and also allows for programming the Cyton board over air. When the switch is on the RESET side, the FTDI DTR pin is routed to the RFduino RESET pin. This mode allows for re-programming the RFduino on the Dongle.
+The slide switch on the Dongle has two positions (noted on the bottom silkscreen). When the switch is on the GPIO6 side, the FTDI DTR pin is routed to RFduino pin 6 and it is ready to pass data to-from the Cyton board. This configuration is 'normal' mode, and also allows for programming the Cyton board over air. When the switch is on the RESET side, the FTDI DTR pin is routed to the RFduino RESET pin. This mode allows for re-programming the RFduino on the Dongle.
 
 ### OpenBCI Dongle Circuit Schematic
 
@@ -105,15 +106,15 @@ The OpenBCI Daisy Module is a daughter card to the Cyton Board, and expands the 
 
 ### Daisy Module Specs:
 
--   Power via pass-thru from Cyton Board pins ONLY
--   ADS1299 Analog Front End
+- Power via pass-thru from Cyton Board pins ONLY
+- ADS1299 Analog Front End
 
 ### Breakout pins:
 
--   SPI bus pins for communication with OpenBCI Board
-    -   DVDD, GND, MISO, MOSI, SCK, CS, CLK, RST
--   Analog Power and BIAS pins
-    -   AVDD, AVSS, AGND, BIAS
+- SPI bus pins for communication with OpenBCI Board
+  - DVDD, GND, MISO, MOSI, SCK, CS, CLK, RST
+- Analog Power and BIAS pins
+  - AVDD, AVSS, AGND, BIAS
 
 The OpenBCI Daisy Module should be used as an expansion card for the OpenBCI Board ONLY. Daisy Module requires an external clock signal (2.048MHz) to be applied to the CLK pin.
 
