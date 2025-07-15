@@ -1,18 +1,19 @@
 ---
 id: HowProductsGoTogether
-title: How OpenBCI products go together?
+title: How do OpenBCI products go together?
 ---
+
 ![image](../assets/GettingStartedImages/How_products_go_together.png)
 
 ## What products should I get?
 
-If you are new to OpenBCI or you are just curious about our products, don’t fret! Watch our tutorial of [How OpenBCI Products Go Together](https://youtu.be/QIWswAOFp8w) to get a crash course on your first set-up! 
+If you are new to OpenBCI or just curious about our products, don’t fret! Watch our tutorial, [How OpenBCI Products Go Together](https://youtu.be/QIWswAOFp8w), to get a crash course on your first setup!
 
 If you have any questions after reviewing this guide, email support@openbci.com. We can help you find the right hardware combination!
 
 ## Things to consider
 
-The type of OpenBCI equipment you will need for your project mainly depends on a few factors.
+The type of OpenBCI equipment you will need for your project mainly depends on a few factors:
 
 <details>
   <summary>Data type requirements</summary>
@@ -32,7 +33,7 @@ The type of OpenBCI equipment you will need for your project mainly depends on a
 <details>
   <summary>Location of sensors</summary>
   <ul>
-    <li>This factor is directly related to the <b>data type</b> you are collecting. For example, you would purchase an EEG cap/headset if you are looking to sample data from the visual cortex (back of the head)</li>
+    <li>This factor is directly related to the <b>data type</b> you are collecting. For example, you would purchase an EEG cap/headset if you are looking to sample data from the visual cortex (back of the head).</li>
     <li>If you want sensor locations on the midline (top of the head) to measure brain data (EEG), then a good product option would be an OpenBCI EEG cap or Ultracortex EEG Headset.</li>
     <li>If you want to focus on data from the temporal or frontal cortex, the [EEG headband kit](https://shop.openbci.com/products/openbci-eeg-headband-kit) is a good budget-friendly option.</li>
   </ul>
@@ -41,9 +42,9 @@ The type of OpenBCI equipment you will need for your project mainly depends on a
 <details>
   <summary>Number of channels</summary>
   <ul>
-    <li>How many sensors would you like to use? OpenBCI hardware offers up to 16 channels / sensors. 
-    These include the Ganglion (4-channels), Cyton (8-channels), Cyton + Daisy (16-channels)</li>
-    <li>For some research there is a minimum channel count needed. We recommend a minimum of 8 channels for SSVEP, P300, and motor imagery. In the <a href="https://docs.google.com/spreadsheets/d/1WvolD2-QJ5aUJy5o0Dq5wdFQtLMkMtppZT8s_ihYyA4/edit?usp=sharing">OpenBCI research collection</a>, the Cyton 8-channel and CytonDaisy 16-channel boards are most commonly used. For QEEG / ERP / P300 / VEP, the 16-channel gel electrode cap will perform the best.</li>
+    <li>How many sensors would you like to use? OpenBCI hardware offers up to 16 channels/sensors. 
+    These include the Ganglion (4 channels), Cyton (8 channels), and Cyton + Daisy (16 channels).</li>
+    <li>For some research, there is a minimum channel count needed. We recommend a minimum of 8 channels for SSVEP, P300, and motor imagery. In the <a href="https://docs.google.com/spreadsheets/d/1WvolD2-QJ5aUJy5o0Dq5wdFQtLMkMtppZT8s_ihYyA4/edit?usp=sharing">OpenBCI research collection</a>, the Cyton 8-channel and CytonDaisy 16-channel boards are most commonly used. For QEEG / ERP / P300 / VEP, the 16-channel gel electrode cap will perform the best.</li>
     <li>Related articles and links</li>
       <ul>
         <li><a href="https://mentalab.com/number-of-eeg-channels/#soler-ref">Why more EEG channels is not always better</a></li>
@@ -75,15 +76,15 @@ The type of OpenBCI equipment you will need for your project mainly depends on a
   </ul>
 </details>
 
-
 Here is a detailed explanation of what you need to get started:
 
 The first component you need is a biosensing board. Select a board depending on how many electrodes you want to analyze data from. In general, with additional channels, you have additional spatial resolution that enables more diverse types of research. We offer three different boards:
+
 - [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) (4 channels at a sample rate of 200Hz)
 - [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) (8 channels at a sample rate of 250Hz)
 - [Cyton + Daisy Boards](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526) (16 channels at a sample rate of 125Hz)
 
-If you are purchasing the Ganglion board, you will need the [Ganglion Dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768). 
+If you are purchasing the Ganglion board, you will need the [Ganglion Dongle](https://shop.openbci.com/collections/frontpage/products/ganglion-dongle?variant=15473352605768).
 
 Now that you have the board, the second thing you need to get started is a set of electrodes (or a headset, we’ll talk about it after). Our Boards have male header connectors, so you would need to get electrodes that are compatible. If you are interested in mainly doing EMG or ECG, we recommend you use our [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) with [EMG/ECG Foam Solid Gel Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack), these electrodes are a ready to go solution and plug in directly into our Biosensing boards. If you want to be able to do EEG as well as EMG and ECG, we recommend you get our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) with [Ten 20 Paste](https://shop.openbci.com/collections/frontpage/products/ten20-conductive-paste-2oz-jars?variant=31373533198). You can affix these electrodes (almost) everywhere with some medical tape, which allows you to measure EEG, EMG, and ECG. If you already have your own electrodes, or have an electrode cap with touch proof connectors, you can still use them with our Biosensing Boards, by purchasing our [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
 
@@ -99,15 +100,15 @@ You can use both the Cyton and the Ganglion with the OpenBCI GUI to get started 
 
 Regarding third party software, the Cyton board is compatible with:
 
--   [OpenViBE](http://openvibe.inria.fr/drivers-openbci/)
--   [neuromore studio](https://doc.neuromore.com/?cat=0&page=2) (Bio-data acquisition, processing and visualization software)
--   [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application, OpenBCI tutorial [here](https://sites.google.com/site/biofeedbackpages/brainbay-openbci) and another [here](http://www.autodidacts.io/use-openbci-with-brainbay-on-ubuntu-linux-and-wine/)
--   [BioEra](http://www.proatech.com/be/manual.html#_OpenBCI) (Visual designer useful for analyzing signals in real time)
+- [OpenViBE](http://openvibe.inria.fr/drivers-openbci/)
+- [neuromore studio](https://doc.neuromore.com/?cat=0&page=2) (Bio-data acquisition, processing and visualization software)
+- [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application, OpenBCI tutorial [here](https://sites.google.com/site/biofeedbackpages/brainbay-openbci) and another [here](http://www.autodidacts.io/use-openbci-with-brainbay-on-ubuntu-linux-and-wine/)
+- [BioEra](http://www.proatech.com/be/manual.html#_OpenBCI) (Visual designer useful for analyzing signals in real time)
 
 The Ganglion board is currently compatible with:
 
--   [BioEra](http://www.proatech.com/be/manual.html#_Toc477624700)
--   [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application)
+- [BioEra](http://www.proatech.com/be/manual.html#_Toc477624700)
+- [BrainBay](http://www.shifz.org/brainbay/) (Open-source neurofeedback application)
 
 Currently new drivers are being developed to add OpenBCI compatibility to Bioexplorer (tbd), BCI2000 (tbd), etc.
 

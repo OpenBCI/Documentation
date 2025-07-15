@@ -2,6 +2,7 @@
 id: HardFAQ
 title: Hardware & Software
 ---
+
 ## What do I need to get started?
 
 To get started, all you need is an [OpenBCI Board](http://shop.openbci.com/collections/frontpage/boards) (Ganglion or Cyton), some electrodes, and a computer! Note that you do not need an Ultracortex. In fact, you can use any standard EEG electrode cap with the OpenBCI Boards.
@@ -20,7 +21,7 @@ The boards sample rate is limited by the bluetooth bandwidth.
 
 ## How do I choose between 4, 8, or 16 channels for my research?
 
-With additional channels, you have additional spatial resolution. The Ganglion (the 4-channel board) is great for low-cost research and education. The Cyton (8-16 channels) provides additional spatial resolution, enabling more diverse types of research requiring higher channel counts.
+With additional channels, you have greater spatial resolution. The Ganglion (the 4-channel board) is great for low-cost research and education. The Cyton (8-16 channels) provides additional spatial resolution, enabling more diverse types of research requiring higher channel counts.
 
 ## Where do I download the OpenBCI software?
 

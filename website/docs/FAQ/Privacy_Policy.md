@@ -2,6 +2,7 @@
 id: Privacy
 title: Privacy & Security
 ---
+
 Effective June 26, 2018
 
 OpenBCI collects customer information in an effort to improve our customers’ shopping experiences and to communicate with our customers about our products, services and promotions. OpenBCI recognizes that it must maintain and use customer information responsibly.
@@ -91,7 +92,7 @@ VII. Corporate Changes. We may transfer information, including your Personal Dat
 
 ### 10. HOW DO WE STORE AND PROTECT YOUR INFORMATION?
 
-Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.  We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful access, destruction, theft, or accidental damage.
+Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible. We implement appropriate technical and organizational measures to protect your personal data against unauthorized or unlawful access, destruction, theft, or accidental damage.
 
 We use regular malware scanning and your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.
 
