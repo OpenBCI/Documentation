@@ -5,7 +5,7 @@ title: Cyton Radios Programming Tutorial
 
 :::caution
 
-Note, you do not need to do any board programming if you want to use the Cyton and Dongle out-of-the-box. All OpenBCI boards ship already programmed, i.e. with firmware uploaded. Email support@openbci.com before attempting to update or alter board firmware, or if you think there is an issue with your board. DO NOT attempt to upload firmware to your Cyton board or dongle unless specifically instructed to do so.
+You do not need to do any board programming if you want to use the Cyton and Dongle out-of-the-box. All OpenBCI boards ship already programmed, i.e., with firmware uploaded. Email support@openbci.com before attempting to update or alter board firmware, or if you think there is an issue with your board. DO NOT attempt to upload firmware to your Cyton board or dongle unless specifically instructed to do so.
 
 If you're curious about how we do it, keep reading! If you want to start streaming EEG/EMG/ECG data right away, head over to Getting Started. Happy bio-sensing!
 
@@ -13,14 +13,14 @@ If you're curious about how we do it, keep reading! If you want to start streami
 
 ## Overview
 
-The OpenBCI Cyton Boards come with a USB dongle that allows for communication between the Board and your computer. There is a BLE radio module (actually an [RFduino 22301](http://www.rfduino.com/product/rfd22301-rfduino-ble-smt/index.html)) on the Dongle and Board that make the communication happen. Here's some terms that are important to note:
+The OpenBCI Cyton boards come with a USB dongle that allows for communication between the board and your computer. There is a BLE radio module (actually an [RFduino 22301](http://www.rfduino.com/product/rfd22301-rfduino-ble-smt/index.html)) on the dongle and board that makes the communication happen. Here are some terms that are important to note:
 
-- The radio module on the Dongle is called the **HOST**
-- The radio module on the Cyton Board is called the **DEVICE**
-- Host-Device pairs can be programmed to transmit on up to **25** discreet channels
+- The radio module on the dongle is called the **HOST**
+- The radio module on the Cyton board is called the **DEVICE**
+- Host-Device pairs can be programmed to transmit on up to **25** discrete channels
 - There are _important_ differences in the firmware for 8-bit and 32-bit systems
 
-This page covers how the radio link works, and how to upload new firmware to the Dongle radio and the Board radio.
+This page covers how the radio link works, and how to upload new firmware to the dongle radio and the board radio.
 
 ## Setting up your system to program OpenBCI Radios
 
