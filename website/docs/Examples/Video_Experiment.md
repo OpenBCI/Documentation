@@ -4,11 +4,14 @@ title: Puppies and Kittens Experiment
 ---
 # OpenBCI Experiment
 
-Welcome to the OpenBCI Puppies and Kittens Experiment designed by Fan Li.
+
+Welcome to the OpenBCI Puppies and Kittens Experiment, designed by Fan Li.
+
 
 During this experiment, you will watch a video containing images of puppies and kittens, and press a button every time you see a puppy in the image.
 
-Below are the instructions on how to do it. The full information on this experiment can be found on [the OpenBCI Repository](https://github.com/OpenBCI/OpenBCI_Experiment). Once you're comfortable with how the experiment works, you can modify the script to create your own experiments.
+
+Below are the instructions on how to do it. Full information on this experiment can be found in [the OpenBCI Repository](https://github.com/OpenBCI/OpenBCI_Experiment). Once you're comfortable with how the experiment works, you can modify the script to create your own experiments.
 
 ## Equipment Required
 
@@ -31,31 +34,37 @@ Below are the instructions on how to do it. The full information on this experim
 
 ## Step 1: Headwear, Board and Software Setup
 
-First, connect the headwear to yourself and the Cyton board, and read from it using the GUI. If you are using the Ultracortex, follow [this tutorial](AddOns/Headwear/01-Ultracortex-Mark-IV.md). If you're using the gold cup electrodes, follow [this guide](GettingStarted/Biosensing-Setups/01-EEG-Setup.md) to learn how to connect each electrode, and connect them in the positions you would like to measure EEG from. A good guide to the 8 positions commonly used can be found in the Ultracortex tutorial. If you're using an electrode cap, follow [this tutorial](AddOns/Headwear/04-Electrode_Cap_Tutorial.md) to connect it.
+
+First, connect the headwear to yourself and the Cyton board, and read from it using the GUI. If you are using the Ultracortex, follow [this tutorial](AddOns/Headwear/01-Ultracortex-Mark-IV.md). If you're using the gold cup electrodes, follow [this guide](GettingStarted/Biosensing-Setups/01-EEG-Setup.md) to learn how to connect each electrode, and connect them in the positions you would like to measure EEG from. A good guide to the eight positions commonly used can be found in the Ultracortex tutorial. If you're using an electrode cap, follow [this tutorial](AddOns/Headwear/04-Electrode_Cap_Tutorial.md) to connect it.
 
 ## Step 2: Breadboard Setup
 
-The diagram for the circuit with the photocell and the button can be found below. 
+
+The diagram for the circuit with the photocell and the button can be found below.
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/Circuit_Diagram.png?raw=true" width="70%" />
 
-Using the components listed above, assemble the breadboard. You can find an example of how to assemble a button circuit using Arduino [here](https://www.arduino.cc/en/tutorial/button) and an example of how to assemble a photocell circuit [here](https://openbci.com/community/measuring-stimulus-timing-with-a-photoresistor/). The final breadboard should look similar to the pictures.
+
+Using the components listed above, assemble the breadboard. You can find an example of how to assemble a button circuit using Arduino [here](https://www.arduino.cc/en/tutorial/button) and an example of how to assemble a photocell circuit [here](https://openbci.com/community/measuring-stimulus-timing-with-a-photoresistor/). The final breadboard should look similar to the pictures below.
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/Full_Breadboard_Setup.jpeg?raw=true" width="70%" />
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/Breadboard_Setup.jpeg?raw=true" width="70%" />
 
-Next, connect the breadboard to the Cyton board as shown below. Place the breadboard beside your computer such that the photocell points to the lower-left corner of your screen, which is where the video trigger will be located.
+
+Next, connect the breadboard to the Cyton board as shown below. Place the breadboard beside your computer so that the photocell points to the lower-left corner of your screen, which is where the video trigger will be located.
 
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/ExamplesImages/connect.jpeg?raw=true" width="70%" />
 
 ## Step 4: Run Experiment
 
-Download [this video](https://github.com/evaesteban/OpenBCI_Experiment/blob/master/video.mp4). Once you're ready to start, press `Start Data Stream` in the GUI. Then, open the video and make it Full-Screen. Every time a puppy appears in the video, press the button. The video is around 3 minutes long. You're now ready to press play!
+
+Download [this video](https://github.com/evaesteban/OpenBCI_Experiment/blob/master/video.mp4). Once you're ready to start, press `Start Data Stream` in the GUI. Then, open the video and make it full-screen. Every time a puppy appears in the video, press the button. The video is around 3 minutes long. You're now ready to press play!
 
 ## Step 5: Retrieve Data
 
-Once you've finished watching the video, press `Stop Data Stream`. In your /Documents/OpenBCI_GUI/Recordings folder you should find the recorded data for that session. 
+
+Once you've finished watching the video, press `Stop Data Stream`. In your /Documents/OpenBCI_GUI/Recordings folder, you should find the recorded data for that session.
 
 ## Step 6: Process Data
 

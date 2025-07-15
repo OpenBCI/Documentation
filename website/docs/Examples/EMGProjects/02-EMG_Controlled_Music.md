@@ -3,13 +3,13 @@ id: EMGmusic
 title: EMG-controlled Music
 ---
 
-In this tutorial, we will show you how to pause and unpause your music without pressing any keys on your laptop keyboard. To do that, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them as a trigger for pausing the music played via Youtube through your computer. Feel free to connect your laptop to a Bluetooth speaker to make the music louder!
+In this tutorial, we will show you how to pause and unpause your music without pressing any keys on your laptop keyboard. To do this, we will read the peaks in EMG signals your arm muscles produce when you flex them and use them as a trigger for pausing the music played via YouTube through your computer. Feel free to connect your laptop to a Bluetooth speaker to make the music louder!
 
 Check out an example video of this tutorial being put into action!
 
 ![EMGmusicgif](https://media.giphy.com/media/RfdkPj7SjWbURyFlXC/giphy.gif)
 
-The following instructions have been written for use with Windows 10.
+The following instructions are written for use with Windows 10.
 
 ## Materials Required
 
@@ -24,7 +24,7 @@ Follow the EMG Getting Started [Tutorial](GettingStarted/Biosensing-Setups/02-EM
 
 ## Step 2: Software Setup.
 
-Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3). Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
+Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3). Python might already be installed on your computer. Type `python --version` to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
 
 - **pylsl**: use `python -m pip install pylsl` from the Python folder in the command line to install it.
 - **pyautogui** : use `python -m pip install pyautogui` to install.
@@ -45,6 +45,6 @@ The Python script will search for an EMG data stream. Once it finds the stream i
 
 Get the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/EMG_Controlled_Music) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the folder that you stored the script in from your command line, and run it using `python.exe <script_name>.py`.
 
-Open Youtube and play some music. Every time you flex your arm as shown in the example video, the music will pause or start playing if paused already. By modifying the time_thres and flex_thres parameters in the code you can adjust the time to wait between flexes and the flex strength to your needs.
+Open YouTube and play some music. Every time you flex your arm as shown in the example video, the music will pause or start playing if already paused. By modifying the `time_thres` and `flex_thres` parameters in the code, you can adjust the time to wait between flexes and the flex strength to your needs.
 
 Try it out and send us a video of your final prototype!
