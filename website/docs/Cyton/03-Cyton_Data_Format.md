@@ -119,7 +119,7 @@ Where _AC_ stands for accelerometer code and is an ASCII character. An uppercase
 
 T3-T0: 32 bit unsigned integer OpenBCI board time representing time since the board was started in ms. Simply store as an unsigned integer.
 
-`0xC3` and `0xC5` are special in that they contain the exact same data as their counterparts `0xC4` and `0xC6`. However, `0xC3` and `0xC5` are only sent after the timestamp/sync (**<**) command is issued from the PC/Driver to the Board. When the Board parses a **<**, it sets a flag high to send on the next sample a different end byte to allow for the PC/Driver to calculate a round-trip response time.
+`0xC3` and `0xC5` are special in that they contain the exact same data as their counterparts `0xC4` and `0xC6`. However, `0xC3` and `0xC5` are only sent after the timestamp/sync (**&lt;**) command is issued from the PC/Driver to the Board. When the Board parses a **&lt;**, it sets a flag high to send on the next sample a different end byte to allow for the PC/Driver to calculate a round-trip response time.
 
 UDF stands for User Defined, and from a general driver perspective, should be left alone and sent up to the user.
 
@@ -131,8 +131,8 @@ For the EEG data values, you will note that we are transferring the data as a 24
 
 int interpret24bitAsInt32(byte[] byteArray) {
     int newInt = (
-     ((0xFF & byteArray[0]) <! 16) |
-     ((0xFF & byteArray[1]) <! 8) |
+     ((0xFF & byteArray[0]) << 16) |
+     ((0xFF & byteArray[1]) << 8) |
      (0xFF & byteArray[2])
     );
     if ((newInt & 0x00800000) > 0) {
@@ -153,7 +153,7 @@ The accelerometer data, if used, is sent as a 16-bit signed value. We're using a
 
 int interpret16bitAsInt32(byte[] byteArray) {
   int newInt = (
-    ((0xFF & byteArray[0]) <! 8) |
+    ((0xFF & byteArray[0]) << 8) |
     (0xFF & byteArray[1])
     );
   if ((newInt & 0x00008000) > 0) {

@@ -4,7 +4,7 @@ title: OpenBCI Hub
 ---
 **THIS SOFTWARE HAS BEEN DEPRECATED AND IS NO LONGER IN ACTIVE DEVELOPMENT.**
 
-Middleware Software used to communicate with OpenBCI boards through TCP/IP command protocol. This Doc covers the OpenBCI Hub for Cyton, Ganglion, and WiFi Shield.
+Middleware software used to communicate with OpenBCI boards through the TCP/IP command protocol. This doc covers the OpenBCI Hub for Cyton, Ganglion, and WiFi Shield.
 
 Last used with GUI v4.2.0 from January 2020.
 
@@ -18,12 +18,12 @@ Version `v1.0.0` released January 3rd, 2017.
 
 ## OpenBCI Electron Hub Overview
 
-The OpenBCI Electron Hub (or just "Hub") is a TCP/IP server that listens for clients on port `10996` on `localhost` aka `127.0.0.1`. Broadcast/multicast is never used for transmitting information to clients. Outgoing data is only transmitted to the requesting client. We use [semantic versioning](http://www.semver.org) the protocol is always listed first and foremost in all documentation. Please follow the rules of [semantic versioning](http://www.semver.org) to avoid breaking changes.
+The OpenBCI Electron Hub (or just "Hub") is a TCP/IP server that listens for clients on port `10996` on `localhost` (aka `127.0.0.1`). Broadcast/multicast is never used for transmitting information to clients. Outgoing data is only transmitted to the requesting client. We use [semantic versioning](http://www.semver.org); the protocol is always listed first and foremost in all documentation. Please follow the rules of [semantic versioning](http://www.semver.org) to avoid breaking changes.
 
-The hub is designed for either two use cases:
+The hub is designed for two use cases:
 
 1.  An owning application, such as OpenBCI's processing app, starts and stops the Hub.
-2.  The Hub runs continuously and 3rd party applications can simply connect as clients, use OpenBCI boards, disconnect and go on their way without closing the Hub.
+2.  The Hub runs continuously and third-party applications can simply connect as clients, use OpenBCI boards, disconnect, and go on their way without closing the Hub.
 
 A unique port, `10996`, is critical because applications must be able to hit a known port number on a local machine. This Specification shall [be available here](https://github.com/OpenBCI/OpenBCI_Ganglion_Electron/blob/master/ganglion-api-spec.yaml) in the [source code of the Hub](https://github.com/OpenBCI/OpenBCI_Ganglion_Electron).
 

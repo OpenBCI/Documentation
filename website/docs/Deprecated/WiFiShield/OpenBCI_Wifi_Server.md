@@ -3,7 +3,7 @@ id: WiFiAPI
 title: OpenBCI WiFi Shield API
 ---
 
-The OpenBCI Wifi Shield seeks to offer a plug and play Wifi solution for the OpenBCI Cyton and Ganglion.
+The OpenBCI WiFi Shield seeks to offer a plug-and-play WiFi solution for the OpenBCI Cyton and Ganglion.
 
 ## Overview
 
@@ -11,37 +11,37 @@ One of the coolest parts of the WiFi Shield is its HTTP web server. For develope
 
 ## Prerequisites
 
-Follow the [WiFi Getting Started Guide](Wifi_Getting_Started_Guide.md) to get your WiFi Shield on your Wireless Network.
+Follow the [WiFi Getting Started Guide](Wifi_Getting_Started_Guide.md) to get your WiFi Shield on your wireless network.
 
 ## Get Wifi Shield on Local Wireless Network
 
 Be sure that your WiFi Shield is on your local network.
 
-The steps for connecting to the Wifi Shield and streaming over TCP:
+The steps for connecting to the WiFi Shield and streaming over TCP:
 
-1.  Get IP Address of the Wifi Shield
-2.  Open a TCP Socket on Host Computer
-3.  Send `POST` `/tcp` http request with open socket IP/Port number, can include options (i.e. output format of JSON or RAW output, use delimiters between packets, adjust latency)
+1.  Get the IP address of the WiFi Shield
+2.  Open a TCP socket on the host computer
+3.  Send a `POST` `/tcp` HTTP request with the open socket IP/Port number; can include options (i.e., output format of JSON or RAW output, use delimiters between packets, adjust latency)
 4.  Send `GET` `/stream/start` or `GET` `/stream/stop`
 
-The steps for connecting to the Wifi Shield and streaming over MQTT:
+The steps for connecting to the WiFi Shield and streaming over MQTT:
 
-1.  Find IP Address of Wifi Shield
-2.  Set up MQTT broker
-3.  Send `POST` `/mqtt` http request with broker address with optional username and password
+1.  Find the IP address of the WiFi Shield
+2.  Set up an MQTT broker
+3.  Send a `POST` `/mqtt` HTTP request with the broker address and optional username and password
 4.  Send `GET` `/stream/start` or `GET` `/stream/stop`
 
 ## Get IP Address of Wifi Shield
 
-To programmatically discover WiFi Shields on your local network use [Simple Service Discovery Protocol](https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol) (SSDP) to find the device on your local network.
+To programmatically discover WiFi Shields on your local network, use [Simple Service Discovery Protocol](https://en.wikipedia.org/wiki/Simple_Service_Discovery_Protocol) (SSDP) to find the device on your local network.
 
 [Node.js OpenBCI WiFi Driver](https://github.com/aj-ptw/OpenBCI_NodeJS/blob/wifi/examples/getStreamingWifi/getStreamingWifi.js) will implement SSDP for you.
 
-Use the [OpenBCI WiFi GUI](Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address) which will use the [OpenBCI Electron Hub](Deprecated/OpenBCI_Hub.md#scan) to find WiFi Shields IP Address. **THE OPENBCI_HUB HAS BEEN DEPRECATED, TO ACCESS THIS FEATURE USE [GUI V4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).** You can also get the IP address in GUI v5 by selecting the WiFi shield from the list. Depending on your network configuration, it may not show automatically.
+Use the [OpenBCI WiFi GUI](Wifi_Getting_Started_Guide.md#get-wifi-shield-ip-address), which will use the [OpenBCI Electron Hub](Deprecated/OpenBCI_Hub.md#scan) to find the WiFi Shield's IP address. **THE OPENBCI_HUB HAS BEEN DEPRECATED. TO ACCESS THIS FEATURE USE [GUI V4.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/tag/v4.2.0).** You can also get the IP address in GUI v5 by selecting the WiFi Shield from the list. Depending on your network configuration, it may not show automatically.
 
 Use a graphical user interface [Mac - Lan Scan](https://itunes.apple.com/us/app/lanscan/id472226235?mt=12)
 
-We are still hashing out the best ways to discover the Wifi shield on the networks (home vs. enterprise and beyond) so [please contribute ides if you have any on this github issue](https://github.com/OpenBCI/OpenBCI_WIFI/issues/8) and we can add it in! [Wifi Direct Feature Request (researcher frequently requested feature)](https://github.com/OpenBCI/OpenBCI_WIFI/issues/9)
+We are still working out the best ways to discover the WiFi Shield on networks (home vs. enterprise and beyond), so [please contribute ideas if you have any on this GitHub issue](https://github.com/OpenBCI/OpenBCI_WIFI/issues/8) and we can add it in! [WiFi Direct Feature Request (researcher frequently requested feature)](https://github.com/OpenBCI/OpenBCI_WIFI/issues/9)
 
 ## Open a TCP Socket on Host Computer
 
