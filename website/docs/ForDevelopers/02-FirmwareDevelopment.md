@@ -5,11 +5,11 @@ title: Firmware Development
 
 # Overview
 
-Welcome all Firmware Developers! In this document, you can find a list of firmware resources for current boards. This is a great starting point if you are interested in how a board works at the firmware level or an expert user interested in modifying the firmware.
+Welcome, Firmware Developers! In this document, you will find a list of firmware resources for current boards. This is a great starting point if you are interested in how a board works at the firmware level or are an expert user interested in modifying the firmware.
 
 All firmware provided here is licensed under the [MIT License](https://opensource.org/licenses/MIT)! Enjoy!
 
-**CAUTION:** Please be careful when uploading firmware. If not done properly, one could "brick" the hardware and it may no longer work! This is only recommended for experienced users, or at the request of OpenBCI support.
+**CAUTION:** Please be careful when uploading firmware. If not done properly, you could "brick" the hardware and it may no longer work! This is only recommended for experienced users or at the request of OpenBCI support.
 
 ## OpenBCI Supported Firmware
 

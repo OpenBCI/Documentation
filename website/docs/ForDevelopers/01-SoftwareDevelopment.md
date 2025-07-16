@@ -21,7 +21,7 @@ GUI v5.0+ uses the BrainFlow-Java package. When starting a new project with Open
 
 We recommend using the GUI to start your project and check signals before moving towards full integration. Furthermore, we recommend using the [Brainflow Streamer](https://docs.openbci.com/Software/OpenBCISoftware/GUIDocs/#gui-to-external-process) in the GUI to stream data for proof-of-concept. This allows you to visualize real-time and playback data in the GUI while modifying your application in a separate IDE.
 
-Once proof-of-concept is achieved, it's appopriate to consider integrating the OpenBCI board directly into your project using one of the BrainFlow bindings, found below. The GUI can still be used at any time to check signals, make recordings, and stream live data.
+Once proof-of-concept is achieved, it's appropriate to consider integrating the OpenBCI board directly into your project using one of the BrainFlow bindings, found below. The GUI can still be used at any time to check signals, make recordings, and stream live data.
 
 ## Supported Boards
 
