@@ -5,19 +5,19 @@ title: GUI Widget Guide
 
 ## What is a GUI Widget?
 
-GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, the FFT widget, the Networking widget, and so on. In the upper left-hand corner of every widget, there is a dropdown menu that lists all of the available widgets. If you click the dropdown and select a new widget from the dropdown, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
+GUI widgets are the mini tools that fit into the OpenBCI GUI’s interface panes. Examples of GUI widgets include the Time Series, FFT widget, Networking widget, and more. In the upper left-hand corner of every widget, there is a dropdown menu that lists all available widgets. If you click the dropdown and select a new widget, it will replace the current widget in that window. You can rearrange the layout of the widgets by clicking the “Layout” button in the upper right-hand side of the GUI.
 
-The OpenBCI GUI software is compatible with MacOS, Windows 10, and Linux. Download the stand-alone GUI directly from the [OpenBCI GitHub](https://github.com/OpenBCI/OpenBCI_GUI/releases/latest).
+The OpenBCI GUI software is compatible with macOS, Windows 10, and Linux. Download the standalone GUI directly from the [OpenBCI GitHub](https://github.com/OpenBCI/OpenBCI_GUI/releases/latest).
 
 ## Time Series
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/Cyton_TimeSeries_EyeBlink.jpg)
 
-The time series is the main widget for displaying biosensing data. It processes and displays the electrophysiological signals in real-time, with each graph representing the voltage detected at one point in time by an electrode.
+The Time Series is the main widget for displaying biosensing data. It processes and displays electrophysiological signals in real time, with each graph representing the voltage detected at one point in time by an electrode.
 
-It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared). In the above photo, we can clearly see three eye blinks on channels one and two.
+It measures the absolute amplitude of the signal in voltage, in units of μVrms (microvolts, root mean squared). In the above photo, you can clearly see three eye blinks on channels one and two.
 
-Each Ultracortex comes with wires that are color-coded to match the GUI, which can be a useful way of keeping track of which electrode maps to which channel.
+Each Ultracortex comes with wires that are color-coded to match the GUI, which can be a useful way to keep track of which electrode maps to which channel.
 
 ### Hardware Settings
 

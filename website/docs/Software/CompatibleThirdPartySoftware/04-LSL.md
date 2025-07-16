@@ -3,9 +3,9 @@ id: LSL
 title: Lab Streaming Layer (LSL)
 ---
 
-[Lab streaming layer](https://github.com/sccn/labstreaminglayer) is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as Matlab (see our Matlab tutorial for using LSL in this context).
+[Lab Streaming Layer](https://github.com/sccn/labstreaminglayer) (LSL) is a system for synchronizing streaming data for live analysis or recording. LSL is a good way to send your OpenBCI stream to applications that can record or manipulate the data, such as MATLAB (see our MATLAB tutorial for using LSL in this context).
 
-This tutorial will show you how to set up LSL using the OpenBCI Python API and then explain the various ways you can use LSL to perform experiments or record data.
+This tutorial will show you how to set up LSL using the OpenBCI Python API and explain the various ways you can use LSL to perform experiments or record data.
 
 ## Setup
 
@@ -14,7 +14,7 @@ This tutorial will show you how to set up LSL using the OpenBCI Python API and t
 2.  **Download or clone the [Lab Streaming Layer (LSL)](https://github.com/labstreaminglayer/App-LabRecorder) repo from Github.**
 
 3.  **Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3).**
-    Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed.
+    Python might already be installed on your computer. Type `python --version` to check if you have Python version 2 or 3 installed.
 4.  **Install Python requirements**
     To use this program, you need the following Python packages installed:
 
@@ -23,7 +23,7 @@ This tutorial will show you how to set up LSL using the OpenBCI Python API and t
 - numpy (version 1.11.1 or greater)
 - brainflow (version 5.10.0 or greater)
 
-To automatically install using pip, navigate to the "Networking-Test-Kit/LSL/" folder on your command line and terminal, and type:
+To automatically install the required packages using pip, navigate to the "Networking-Test-Kit/LSL/" folder in your command line or terminal, and type:
 
 ```
 
@@ -32,7 +32,8 @@ pip install --upgrade numpy brainflow pylsl
 ```
 
 :::note
-`pip` may have issues installing `numpy` and `scipy` for some users. Install these manually if you have issues.
+
+`pip` may have issues installing `numpy` and `scipy` for some users. Install these manually if you encounter problems.
 
 If you get the message `pip: command not found`, you need to install pip using `sudo easy_install pip`. Then, retry the command above.
 :::
@@ -41,13 +42,13 @@ If you get the message `pip: command not found`, you need to install pip using `
 
 ### Simple Stream
 
-Open the OpenBCI GUI and click on the Networking widget. Below is the Networking Widget, you can select LSL protocol and have three data streams:
+Open the OpenBCI GUI and click on the Networking widget. In the Networking Widget, you can select the LSL protocol and have three data streams:
 
 <div align="center">
     ![Networking Widget LSL](../../assets/SoftwareImages/OpenBCISoftware/GUIv6.0.0_Networking_LSL.png)
 </div>
 
-Open your lab recorder from the LSL repo. Once you click on Start LSL Stream you will be able to see the three data streams in the Lab Recorder application.
+Open your Lab Recorder from the LSL repo. Once you click on "Start LSL Stream," you will be able to see the three data streams in the Lab Recorder application.
 
 ![Lab Recorder](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/LabRecorder_Networking.png)
 
@@ -55,7 +56,7 @@ Open your lab recorder from the LSL repo. Once you click on Start LSL Stream you
 
 You can also configure board settings from this interface. For full information regarding board settings and commands, see the [Cyton board programming tutorial](Cyton/05-Cyton_Board_Programming_Tutorial.md).
 
-To enter Channel Settings mode, you would need to enter an "x", followed by certain channel settings, followed by an "X". For example:
+To enter Channel Settings mode, you need to enter an "x", followed by certain channel settings, and then an "X". For example:
 
 ```
 

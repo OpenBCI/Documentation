@@ -5,9 +5,9 @@ title: The OpenBCI GUI
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/GUI-V4-Screenshot.jpg)
 
-The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from the OpenBCI Boards. Data can be displayed in real-time, played back, saved to your computer in CSV or BDF+ format, as well as streamed in live-time to third-party software such as MATLAB.
+The OpenBCI GUI is OpenBCI's powerful software tool for visualizing, recording, and streaming data from OpenBCI Boards. Data can be displayed in real time, played back, saved to your computer in CSV or BDF+ format, and streamed live to third-party software such as MATLAB.
 
-It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we will cover both scenarios.
+It can be launched as a standalone application or as a sketch from Processing (a Java-based programming language). In this guide, we cover both scenarios.
 
 ```mdx-code-block
 import GuiDownloadButton from '@site/src/components/GuiDownloadButton'
@@ -17,20 +17,20 @@ import GuiDownloadButton from '@site/src/components/GuiDownloadButton'
 
 ## Hardware/Driver Setup for OpenBCI_GUI
 
-The Ganglion, Cyton, and CytonDaisy Boards are compatible with the OpenBCI GUI.
+The Ganglion, Cyton, and CytonDaisy boards are compatible with the OpenBCI GUI.
 
 #### Ganglion on macOS/Windows/Linux
 
-The OpenBCI Ganglion uses Bluetooth LE (aka Bluetooth Smart, Bluetooth 4.0). In order to use the Ganglion, you need the **[Ganglion USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
+The OpenBCI Ganglion uses Bluetooth LE (also known as Bluetooth Smart or Bluetooth 4.0). To use the Ganglion, you need the **[Ganglion USB Dongle](https://shop.openbci.com/products/ganglion-dongle).**
 
-**important MacOS BLE Workaround
-If you are running MacOS 11+ and having issues streaming your Ganglion, see the [MacOS BLE workaround](../../Troubleshooting/MacOS_Ganglion_BLE_Workaround.md).**
+**Important MacOS BLE Workaround:**
+If you are running MacOS 11+ and having issues streaming your Ganglion, see the [MacOS BLE workaround](../../Troubleshooting/MacOS_Ganglion_BLE_Workaround.md).
 
 #### Cyton and Cyton+Daisy Drivers
 
 If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Daisy, [make sure to install the latest FTDI driver](https://www.ftdichip.com/Drivers/VCP.htm) for your operating system.
 
-**The FTDI driver is only necessary for Windows 8, Windows 10, and Mac OS X 10.9 through 10.15. If you are running a Mac that is mid 2015 or newer, you do not need to install the FTDI driver.**
+**The FTDI driver is only necessary for Windows 8, Windows 10, and Mac OS X 10.9 through 10.15. If you are running a Mac from mid-2015 or newer, you do not need to install the FTDI driver.**
 
 ### Linux Users: Serial Port Permissions
 
@@ -38,16 +38,16 @@ If it’s your first time working with OpenBCI and you own the Cyton or Cyton+Da
 
 <summary><b><i>Attention Linux Users: Expand this dropdown for important details. This fix affects all communications between Ganglion/Cyton and your computer via serial ports.</i></b></summary><br />
 
-Before trying to connect to any OpenBCI boards on Linux, ensure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or a similar message. This can be fixed by adding the user to the `dialout` group in Ubuntu. Here is a [detailed explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br /><br />
+Before trying to connect to any OpenBCI boards on Linux, ensure you have permission to access the serial ports on your machine. Otherwise, you will get the error `Failed to connect using /dev/ttyUSB0` or a similar message. This can be fixed by adding your user to the `dialout` group in Ubuntu. Here is a [detailed explanation and fix](https://websistent.com/fix-serial-port-permission-denied-errors-linux/). Here is the short version:<br /><br />
 
-1.  First, verify if the user does belong to the "dialout" group using the “id” command.<br />
-        - Type `id -Gn <username>` in terminal and check if it prints `dialout` as one of the options.<br />
-        - Replace username with your Linux username. Example: `id -Gn susieQ`
-2.  Next, add the user to the “dialout” supplementary group.
-        - Type `sudo usermod -a -G dialout <username>` in terminal.
-        - Example: `sudo usermod -a -G dialout susieQ`
+1.  First, verify if your user belongs to the "dialout" group using the `id` command.<br />
+    - Type `id -Gn <username>` in the terminal and check if it prints `dialout` as one of the options.<br />
+    - Replace `<username>` with your Linux username. Example: `id -Gn susieQ`<br />
+2.  Next, add your user to the `dialout` supplementary group.<br />
+    - Type `sudo usermod -a -G dialout <username>` in the terminal.<br />
+    - Example: `sudo usermod -a -G dialout susieQ`<br />
 3.  Restart Ubuntu.
-4.  Repeat step one. Try "id" command again.
+4.  Repeat step one. Try the `id` command again.
 
 </details><p />
 
@@ -55,7 +55,7 @@ Before trying to connect to any OpenBCI boards on Linux, ensure you have permiss
 
 ### Download the Standalone App
 
-The fastest way to run the GUI is to download the standalone app. To do this, head to the **[Downloads](https://openbci.com/downloads)** page of the OpenBCI website, and click the download link that correlates to your operating system and machine.
+The fastest way to run the GUI is to download the standalone app. To do this, go to the **[Downloads](https://openbci.com/downloads)** page of the OpenBCI website, and click the download link that matches your operating system and machine.
 
 ![image](../../assets/SoftwareImages/OpenBCISoftware/DownloadsUpdated.png)
 
