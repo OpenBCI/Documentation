@@ -2,7 +2,8 @@
 id: ElectrodesLanding
 title: Electrode Guide
 ---
-OpenBCI Boards are compatible with a variety of different electrodes.
+
+OpenBCI boards are compatible with a variety of different electrodes.
 
 ## Gold Cup Electrodes
 
@@ -12,7 +13,7 @@ OpenBCI Boards are compatible with a variety of different electrodes.
 
 [**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/5-mm-spike-electrode-pack-of-30?variant=8120433606670)
 
-## Header Pin to Touch Proof Electrode Adaptor
+## Header Pin to Touch Proof Electrode Adapter
 
 [**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715)
 

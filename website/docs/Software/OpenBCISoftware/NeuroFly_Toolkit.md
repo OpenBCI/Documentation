@@ -13,8 +13,8 @@ This tutorial will show you how to control a joystick using EMG data with the Op
 4.  Computer with downloaded [OpenBCI GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md). **Be sure to use [OpenBCI GUI v5.2.0](https://github.com/OpenBCI/OpenBCI_GUI/releases/latest) or later**.
 
 ## Video Walkthrough
-[NeuroFly by OpenBCI - How it works](https://www.youtube.com/watch?v=fYHwCLIIkJY)
 
+[NeuroFly by OpenBCI - How it works](https://www.youtube.com/watch?v=fYHwCLIIkJY)
 
 ## Step 1: Hardware Assembly
 
@@ -39,21 +39,21 @@ Start by streaming data using the GUI. Follow this [getting started tutorial](..
 
 ### EMG Settings
 
-This widget contains the tuneable parameters used for the threshold algorithm that determines how active each channel is. The output value is a normalized value, from 0 to 1, mapped between the lower threshold and upper threshold.
+This widget contains the tunable parameters used for the threshold algorithm that determines how active each channel is. The output value is a normalized value, from 0 to 1, mapped between the lower and upper thresholds.
 
 ![EMG Settings Screenshot](../../assets/TutorialImages/EMG_settings.png)
 
-| Parameter | Definition                                                                                             |
-| --------- | ------------------------------------------------------------------------------------------------------ |
-| Smooth    | This is the size of the window. If we set this value at the smallest setting of 0.01 seconds (ie., lowering the smooth value), our data will be very jittery but responsive. Alternatively, if we increase the smooth and set our window to 2.0 seconds, the output will be very smooth but much less responsive. This reduces the effect of outliers in the dataset. |
-| uV Limit  | This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues. |
-| Creep+    | This value indicates how quickly the upper μV threshold creeps downward. Notice that adjusting this value will affect how fast the the upper threshold decreases if not triggered. We generally recommend this to be slow. If this is too fast and we wait too long between muscle activations, the upper threshold will have crept too close to the lower threshold and the system will be hypersensitive. |
-| Creep-    | This value indicates how quickly the lower μV threshold creeps upward. Notice that adjusting this value will affect how fast the lower threshold increases if it is less than the current uV. A higher value enables easier activation, but the signal is more prone to noise. A lower value is the opposite. It is harder to activate, but the signal will be less prone to noise. |
-| Min ΔuV   | This value sets the minimum voltage range between the upper threshold and the lower threshold. The upper threshold and lower threshold cannot get any closer than this. Increasing this value will result in you having to create a larger EMG signal to go from 0 to 100% activation. This is useful when your EMG signal is strong, but can make it difficult to reach 100% if your EMG signal is weak. Decreasing the value will make it easier to reach 100% activation with a weak signal, but may result in false activations when the signal is strong. |
-| Low Limit | This is the minimum value the lower threshold can be. In general, this value should be set just above the noise floor so that environmental noise does not trigger false activations. |
+| Parameter | Definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Smooth    | This is the size of the window. If you set this value at the smallest setting of 0.01 seconds (i.e., lowering the smooth value), your data will be very jittery but responsive. Alternatively, if you increase the smooth and set your window to 2.0 seconds, the output will be very smooth but much less responsive. This reduces the effect of outliers in the dataset.                                                                                                                                                      |
+| uV Limit  | This is a cutoff point for an allowable μV value in any individual data block. Any μV values above this number will be chopped off and set to this upper μV limit. This is to prevent erratic blips in the data from substantially distorting the average. Sometimes dropped packets and rapid body movements can create large spikes that don’t correlate to muscle activity. This helps account for those issues.                                                                                                             |
+| Creep+    | This value indicates how quickly the upper μV threshold creeps downward. Notice that adjusting this value will affect how fast the upper threshold decreases if not triggered. We generally recommend this to be slow. If this is too fast and you wait too long between muscle activations, the upper threshold will have crept too close to the lower threshold and the system will be hypersensitive.                                                                                                                        |
+| Creep-    | This value indicates how quickly the lower μV threshold creeps upward. Notice that adjusting this value will affect how fast the lower threshold increases if it is less than the current μV. A higher value enables easier activation, but the signal is more prone to noise. A lower value is the opposite: it is harder to activate, but the signal will be less prone to noise.                                                                                                                                             |
+| Min ΔuV   | This value sets the minimum voltage range between the upper and lower thresholds. The upper and lower thresholds cannot get any closer than this. Increasing this value will require you to create a larger EMG signal to go from 0 to 100% activation. This is useful when your EMG signal is strong, but can make it difficult to reach 100% if your EMG signal is weak. Decreasing the value will make it easier to reach 100% activation with a weak signal, but may result in false activations when the signal is strong. |
+| Low Limit | This is the minimum value the lower threshold can be. In general, this value should be set just above the noise floor so that environmental noise does not trigger false activations.                                                                                                                                                                                                                                                                                                                                           |
 
 :::tip
-It is important to note **higher creep values adjust thresholds slower and lower creep values adjust faster**. For example, if we compare creep = 0.9 and creep = 0.999 with a previous threshold value = 100: 
+It is important to note that **higher creep values adjust thresholds slower, and lower creep values adjust faster**. For example, if we compare creep = 0.9 and creep = 0.999 with a previous threshold value = 100:
 
 (0.9 x 100 = 90) < (0.999 x 100 = 99)
 
@@ -73,11 +73,15 @@ Follow the [Networking Tutorial](../../Software/OpenBCISoftware/02_GUI_Widget_Gu
 ![UDP Networking Widget Screenshot](../../assets/TutorialImages/UDP_drone.png)
 
 The EMG Joystick UDP stream will be sent to the IP address and port specified in the Networking Widget. The JSON packets will look like this:
+
 <!-- #### Packet Example -->
+
 ```json
-{"type":"emgJoystick","data":[0.664,-0.749]}
+{ "type": "emgJoystick", "data": [0.664, -0.749] }
 ```
+
 Here is an example of how we use the deserialized JSON messages in our NeuroFly Unity application.
+
 ```C#
 EMGJoystickX = packet.data[0];
 EMGJoystickY = packet.data[1];

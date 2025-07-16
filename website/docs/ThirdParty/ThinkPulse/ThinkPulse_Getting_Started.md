@@ -3,18 +3,19 @@ id: ThinkPulse
 title: "ThinkPulse Getting Started Guide"
 ---
 
-Available exclusively worldwide only on the [OpenBCI® store](https://shop.openbci.com/products/thinkpulse-active-electrode-kit).
+Available exclusively worldwide on the [OpenBCI® store](https://shop.openbci.com/products/thinkpulse-active-electrode-kit).
 
 ## About Conscious Labs
 
-Conscious Labs has been working since 2014 on taking neuroscience out of the lab and into the wild. They bring the technology, the team and the expertise to integrate EEG sensors into head wearables and hearables.
+Conscious Labs has been working since 2014 to take neuroscience out of the lab and into the wild. They bring the technology, team, and expertise to integrate EEG sensors into head wearables and hearables.
 
 We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry, active electrode EEG sensors at an unprecedented price point and comfort level.
 
 ThinkPulse™ is a product of Conscious Labs (France). Patents issued and pending. Made in France.
 
 The ThinkPulse™ system is an _add-on_ to the [Ultracortex EEG Headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) plus [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
-This kit has been designed and its compatibility tested for the 8 and 16 channel Ultracortex with OpenBCI Cyton/CytonDaisy boards. For more compatibility and customization options as well as general product questions, please contact us [support@openbci.com.](mailto:support@openbci.com.).
+
+This kit has been designed and its compatibility tested for the 8- and 16-channel Ultracortex with OpenBCI Cyton/CytonDaisy boards. For more compatibility and customization options, as well as general product questions, please contact us at [support@openbci.com.](mailto:support@openbci.com.).
 
 <br />
 <br />
@@ -45,11 +46,11 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 
 [![assemble power supply](../../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/SeceMtiUo40)
 
-The assembly video shows how to install the power supply board to a post-2018 Cyton and a pre-2018 Cyton.
+The assembly video shows how to install the power supply board to both post-2018 and pre-2018 Cyton boards.
 
 Some early ThinkPulse units have a hardware bug. The fix is a straightforward, quick solder job. The first minute of the video explains how to do it.
 ThinkPulse kits that shipped post-January 2021 are fixed and do not require soldering.
-If you need help or have any questions, email [support@openbci.com](mailto:support@openbci.com)
+If you need help or have any questions, email [support@openbci.com](mailto:support@openbci.com).
 
 ### Step 4: Connect and organize the cables
 

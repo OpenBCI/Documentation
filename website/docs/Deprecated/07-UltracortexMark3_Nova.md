@@ -6,9 +6,9 @@ _Development Period: June 2016_
 
 ![image](../assets/DepImages/m3_upgrade_1000.jpg)
 
-#### Complete Ultracortex Mark 3 kits are not longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
+#### Complete Ultracortex Mark 3 kits are no longer available for sale in the OpenBCI Online Store. We have phased out production. You can find the latest headset [here](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv).
 
-The Ultracortex is an open-source, 3D-printable headset intended to work with the [OpenBCI system](http://openbci.com/). It is capable of recording research-grade brain activity (EEG), muscle activity (EMG), and heart activity (ECG). The Ultracortex is under constant iteration. If you print/assemble your own Ultracortex, we would love to hear your feedback. Send us an email at [contact@openbci.com](mailto:contact@openbci.com) or Tweet at us ([@Ultracortex](https://twitter.com/Ultracortex) & [@OpenBCI](https://twitter.com/OpenBCI))!
+The Ultracortex is an open-source, 3D-printable headset intended to work with the [OpenBCI system](http://openbci.com/). It is capable of recording research-grade brain activity (EEG), muscle activity (EMG), and heart activity (ECG). The Ultracortex is under constant iteration. If you print or assemble your own Ultracortex, we would love to hear your feedback. Send us an email at [contact@openbci.com](mailto:contact@openbci.com) or tweet at us ([@Ultracortex](https://twitter.com/Ultracortex) & [@OpenBCI](https://twitter.com/OpenBCI))!
 
 Designers & Engineers:
 
@@ -18,7 +18,7 @@ Designers & Engineers:
 
 ## THE COMPLETE ULTRACORTEX
 
-**Note:** the part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](Cyton/01-CytonBoard.md) (8 channels) or the [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
+**Note:** The part quantities listed below assume you are making an electrode holder for all 21 nodes of the Ultracortex Mark 3. In reality, you will likely have only 8 or 16 electrodes, depending on whether you are working with the [OpenBCI 32bit Board](Cyton/01-CytonBoard.md) (8 channels) or the [OpenBCI 16-channel R&D Kit](GettingStarted/Boards/011-Daisy_Getting_Started_Guide.md) (16 channels). You may only want to create as many electrode units as you have channels, and then add more as necessary. In general, more electrodes will distribute the downward scalp pressure, increasing comfort.
 
 \###3D-printed Parts:
 

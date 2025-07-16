@@ -3,7 +3,7 @@ id: DeprecatedLanding
 title: Deprecated Docs
 ---
 
-This directory houses all deprecated documentation.
+This directory contains all deprecated documentation.
 
 Deprecated Hardware:
 

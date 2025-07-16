@@ -2,18 +2,18 @@
 id: EEGSetup
 title: Setting up for EEG
 ---
-This page will explain the most basic setup to process EEG Data using your OpenBCI board, using our gold cup electrodes.
+This page explains the most basic setup for processing EEG data using your OpenBCI board and gold cup electrodes.
 
 ## Related Headware
 
-To learn more about specific OpenBCI Headware and how to set them up for EEG, follow the links below.
+To learn more about specific OpenBCI headwear and how to set them up for EEG, follow the links below.
 
 -   [Ultracortex Mark IV](../../AddOns/Headwear/01-Ultracortex-Mark-IV.md)
 -   [Gel Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md)
 -   [Gelfree (Saline) Electrode Cap](../../AddOns/Headwear/Gelfree_Electrode_Cap_Tutorial.md)
 -   [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md)
 
-## What you will need
+## What You Will Need
 
 ![What You Need](../../assets/GettingStartedImages/whatYouNeed.JPG)
 
@@ -24,9 +24,9 @@ To learn more about specific OpenBCI Headware and how to set them up for EEG, fo
 -   x4 AA batteries
 -   x6 [gold cup electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163)
 
-Before applying ten20 paste on subjects with long hair, part the hair at 10-20 international standard electrode positions.
+Before applying Ten20 paste on subjects with long hair, part the hair at 10-20 international standard electrode positions.
 
-If you are using an OpenBCI electrode starter kit, use the following electrodes so as to be consistent with the GUI's color-coding protocol:
+If you are using an OpenBCI electrode starter kit, use the following electrodes to be consistent with the GUI's color-coding protocol:
 
 1.  Black
 2.  White
@@ -43,9 +43,9 @@ If you are using an OpenBCI electrode starter kit, use the following electrodes 
 
 ## 1. Connect your electrodes to OpenBCI
 
-Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in table form as well. You can see in the image below pins N1P through N8P on the Cyton. These correspond to the 8 channels available for data.
+Connect the electrode wires to your Cyton board as shown below. The proper wire connections are shown in the table as well. In the image below, you can see pins N1P through N8P on the Cyton. These correspond to the 8 channels available for data.
 
-On the Ganglion you have pins 1 through 4, corresponding to Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to _'DOWN'_ for EEG.
+On the Ganglion, you have pins 1 through 4, corresponding to the Ganglion's 4 channels available for data. Please note, the four switches on the Ganglion should be set to _'DOWN'_ for EEG.
 Explanation in detail [here](../../Ganglion/02-Ganglion.md#inverting-input-select-switches).
 
 ![eegGoldCupSetup](../../assets/GettingStartedImages/eeg_cytonSetup.JPG)
@@ -57,7 +57,7 @@ Explanation in detail [here](../../Ganglion/02-Ganglion.md#inverting-input-selec
 | purple               | 2N (bottom N2P pin)   | +2 (on top row)    | Analog input         |
 | red                  | 7N (bottom N7P pin)   | +4 (on top row)    | Analog input         |
 
-The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple, and red electrodes can be connected to any of N1P through N8P channels (or pins 1 through 4 in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
+The white and black electrodes must always connect to the SRB2 pin and the bottom BIAS pin, but the purple and red electrodes can be connected to any of the N1P through N8P channels (or pins 1 through 4 in the case of the Ganglion). We decided to use channels 2 and 7 for this tutorial. The results with Ganglion should be the same, but signals will show up on channels 2 and 4.
 
 ## 2. Connect your electrodes to your head and body
 

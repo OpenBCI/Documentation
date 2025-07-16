@@ -5,21 +5,21 @@ title: Ganglion Specs
 
 ## [BUY IT!](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 
-The OpenBCI Ganglion PCBs were designed with KiCAD, an Open Source PCB capture software. You can find a link to download KiCAD in our [Ganglion design files repository](https://github.com/OpenBCI/Ganglion_Hardware_Design_Files) where you will find design files and component library files to load into KiCAD and edit, if you like, along with the full BOM for this maiden production run.
+The OpenBCI Ganglion PCBs were designed with KiCAD, an open-source PCB capture software. You can find a link to download KiCAD in our [Ganglion design files repository](https://github.com/OpenBCI/Ganglion_Hardware_Design_Files), where you will find design files and component library files to load into KiCAD and edit, if you like, along with the full BOM for this maiden production run.
 
 ## OpenBCI Ganglion Board
 
 ### Ganglion Board Specs
 
-- Voltage resolution = 0.1788microvolt/bit (3V/16777216)
-- Resolution = Voltage level / 2^n where n is the bit-level of ADC
+- Voltage resolution = 0.1788 microvolt/bit (3V/16777216)
+- Resolution = Voltage level / 2^n, where n is the bit-level of the ADC
 - Power with 3.3V to 12V DC battery ONLY
-- Current Draw: 14mA when idle, 15mA connected and streaming data
-- [Simblee](http://www.simblee.com) BLE Radio module (Arduino Compatible)
-- [MCP3912](http://www.microchip.com/wwwproducts/en/MCP3912) Analog Front End
-- [LIS2DH](http://www.st.com/en/mems-and-sensors/lis2dh.html) 3 axis Accelerometer
-- MicroSD Card Slot -- **Not supported**
-- Board Dimensions 2.41" x 2.41" (octagon has 1" edges)
+- Current Draw: 14mA when idle, 15mA when connected and streaming data
+- [Simblee](http://www.simblee.com) BLE radio module (Arduino compatible)
+- [MCP3912](http://www.microchip.com/wwwproducts/en/MCP3912) analog front end
+- [LIS2DH](http://www.st.com/en/mems-and-sensors/lis2dh.html) 3-axis accelerometer
+- MicroSD card slot -- **Not supported**
+- Board dimensions: 2.41" x 2.41" (octagon has 1" edges)
 - Mount holes are 1/16" ID, 0.8" x 2.166" on center
 - Switches to manually connect/disconnect inputs to the REF pin
 
@@ -34,7 +34,7 @@ The OpenBCI Ganglion PCBs were designed with KiCAD, an Open Source PCB capture s
 - Other Pins:
   - Simblee Reset, VDD, GND
 
-The SPI pins are available for user access. The blue LED on the board is connected to pin D23. Note that the Analog pins are shared with Digital I/Os. VDD is 3.0V.
+The SPI pins are available for user access. The blue LED on the board is connected to pin D23. Note that the analog pins are shared with digital I/Os. VDD is 3.0V.
 
 ### Push Button
 

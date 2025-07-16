@@ -3,7 +3,7 @@ id: TroubleshootingLanding
 title: Troubleshooting Landing
 ---
 
-The guides below offer tips on common hardware and software issues and how to fix them.
+The guides below offer tips on common hardware and software issues, and how to fix them.
 
 - [Minimizing Noise](Troubleshooting/01-MinimizingNoise.md)
 - [GUI Troubleshooting](Troubleshooting/02-GUI_Troubleshooting.md)

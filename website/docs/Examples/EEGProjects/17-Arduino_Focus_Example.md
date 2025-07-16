@@ -3,8 +3,8 @@ id: FocusArduino
 title: Send Focus Data from GUI to Arduino
 ---
 
-This tutorial shows you how to get started streaming data from the OpenBCI_GUI's Focus Widget via Serial connection to an [Arduino UNO Rev3](https://store.arduino.cc/usa/arduino-uno-rev3).
-Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GUI-to-Arduino/) to find the OpenBCI/Arduino Focus Data tutorial in the updated Instructable format!
+This tutorial shows you how to get started streaming data from the OpenBCI_GUI's Focus Widget via serial connection to an [Arduino UNO Rev3](https://store.arduino.cc/usa/arduino-uno-rev3).
+Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GUI-to-Arduino/) to find the OpenBCI/Arduino Focus Data tutorial in the updated Instructables format!
 
 ## What do I need?
 
@@ -22,13 +22,13 @@ Head [**HERE**](https://www.instructables.com/id/Send-Focus-Data-From-OpenBCI-GU
 
 The [OpenBCI_GUI-FocusArduino.ino](https://github.com/OpenBCI/Documentation/blob/master/OpenBCI_files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino) file is designed to serve as a simple starting point for creating your own Arduino project using data from the GUI over serial.
 
-You can copy/paste the code from Github into the Arduino IDE or [download the Docs](https://github.com/OpenBCI/Documentation/archive/master.zip) and navigate to the example `/OpenBCI_files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino`.
+You can copy/paste the code from GitHub into the Arduino IDE or [download the Docs](https://github.com/OpenBCI/Documentation/archive/master.zip) and navigate to the example `/OpenBCI_files/OpenBCI_GUI-FocusArduino/OpenBCI_GUI-FocusArduino.ino`.
 
 ### Step 2 - Upload the Arduino sketch
 
 ![Upload Arduino Sketch](../../assets/ExamplesImages/gui_arduino_uploadArduinoSketchIDE.png)
 
-After uploading the sketch, you can close or minimize the Arduino IDE, but keep the Arduino connected to the computer. The sketch we just uploaded is running!
+After uploading the sketch, you can close or minimize the Arduino IDE, but keep the Arduino connected to the computer. The sketch you just uploaded is now running!
 
 ### Step 3 - Open OpenBCI_GUI in Synthetic Mode
 
@@ -44,7 +44,7 @@ After uploading the sketch, you can close or minimize the Arduino IDE, but keep 
 
 ![OpenBCI Serial Not Focused](../../assets/ExamplesImages/GUI_ArduinoFocus_Serial_NotRelaxed.png)
 
-#### Next, turn off channels 5 through 8 to simulate Relaxed state.
+#### Next, turn off channels 5 through 8 to simulate a relaxed state.
 
 The Arduino's built-in LED should blink when the Focus Widget reads `Relaxing`.
 

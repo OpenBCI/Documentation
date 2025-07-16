@@ -7,7 +7,7 @@ title: Hardware Development
 
 Welcome all Hardware Developers! Are you interested in how an OpenBCI board is made? Do you want to make one yourself or incorporate one into a project? This is the place for you! Here you will find resources, including full schematics, for current and past hardware.
 
-All information provided here is licensed under the [MIT License](https://opensource.org/licenses/MIT)!
+All information provided here is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 

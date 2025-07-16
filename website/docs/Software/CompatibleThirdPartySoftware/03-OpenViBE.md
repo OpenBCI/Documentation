@@ -5,48 +5,47 @@ title: OpenViBE
 
 ## Overview
 
-**There are two primary methods of connecting from OpenBCI tech to OpenViBE:**
+**There are two primary methods for connecting OpenBCI devices to OpenViBE:**
 
-1.  You can connect the Cyton and Cyton+Daisy using an OpenViBE driver. This method is described below.
-
-2.  Connect any OpenBCI Board to the OpenBCI GUI, then use the Networking Widget to stream data using LSL protocol to OpenViBE Acquisition Server. Start streaming from the GUI first. Select LSL in OpenViBE Acquisition Server. You should see an option in Driver Properties to select the data stream from the GUI, its typically auto-detected.
+1.  Connect the Cyton or Cyton+Daisy using an OpenViBE driver. This method is described below.
+2.  Connect any OpenBCI Board to the OpenBCI GUI, then use the Networking Widget to stream data using the LSL protocol to the OpenViBE Acquisition Server. Start streaming from the GUI first. Select LSL in the OpenViBE Acquisition Server. You should see an option in Driver Properties to select the data stream from the GUI; it is typically auto-detected.
 
 ## Setting Up Your Environment
 
-**Windows**: Follow [OpenBCI on Windows](Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OBCI board on Windows. Then, continue this tutorial.
+**Windows**: Follow the [OpenBCI on Windows](Troubleshooting/04-FTDI_Fix_Windows.md) tutorial to properly connect your OpenBCI board on Windows. Then, continue with this tutorial.
 
-**OS X**: Visit the [Windows Virtual Box installation tutorial](Software/CompatibleThirdPartySoftware/07-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
+**OS X**: Visit the [Windows VirtualBox installation tutorial](Software/CompatibleThirdPartySoftware/07-VirtualBox.md) first, then follow these instructions. Note: you may have difficulty streaming live from your OpenBCI board to OpenViBE within a VM.
 
-**Linux**: [Linux builds](http://openvibe.inria.fr/downloads/) of OpenViBE also work. Some linux users might find this guide useful but keep in mind it is meant primarily for mac + win7.
+**Linux**: [Linux builds](http://openvibe.inria.fr/downloads/) of OpenViBE also work. Some Linux users might find this guide useful, but keep in mind it is meant primarily for Mac and Windows 7.
 
 ## Installation
 
-Make sure you have a running Windows 7, 8.1, or 10 Machine (be it either a VM or native).
+Make sure you have a running Windows 7, 8.1, or 10 machine (either a VM or native).
 Download the latest OpenViBE software from their [website](http://openvibe.inria.fr/downloads/).
 
 ## Method 1: Connect Directly to Cyton or Cyton+Daisy using Dongle
 
 ### Getting Started
 
-Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. To troubleshoot, read our [OpenBCI on Windows tutorial.](Troubleshooting/04-FTDI_Fix_Windows.md)
+Connect your OpenBCI board and make sure it is recognized as a COM port and its latency is set to 1 ms. For troubleshooting, read our [OpenBCI on Windows tutorial](Troubleshooting/04-FTDI_Fix_Windows.md).
 
 Start the OpenViBE Signal Acquisition Server (SAS). **C: &gt; Program Files &gt; openvibe &gt; openvibe-acquisition-server** (normally shows up when searching “openvibe” in start menu).
 
 ![COM Selection](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/com-select.jpg)
 
-1.  In the SAS select the OpenBCI (unstable means not throughly tested) option from the drop down list.
-2.  Then open **Driver Properties**. In the Device option, select the COM port number your OBCI board was connected to.
-3.  In the SAS Preference menu, change the drift tolerance from 2ms (default) to 10ms.
-4.  Press Connect. If error, troubleshoot:
-    - Look at the terminal window that the SAS opens up. It has a verbose report on the SAS's condition.
-    - Often, pressing the restart button on the OBCI board, or Disconnecting/Connecting the Dongle will fix any connection issues.
-    - If the error reports that it cannot open the selected port, make sure the COM port selected in the driver options is the same as your board.
+1.  In the SAS, select the OpenBCI option ("unstable" means not thoroughly tested) from the drop-down list.
+2.  Then open **Driver Properties**. In the Device option, select the COM port number your OpenBCI board is connected to.
+3.  In the SAS Preference menu, change the drift tolerance from 2 ms (default) to 10 ms.
+4.  Press Connect. If you encounter an error, troubleshoot as follows:
+    - Look at the terminal window that the SAS opens up. It provides a verbose report on the SAS's condition.
+    - Often, pressing the restart button on the OpenBCI board, or disconnecting/reconnecting the dongle, will fix connection issues.
+    - If the error reports that it cannot open the selected port, make sure the COM port selected in the driver options matches your board.
 
 ### Configure OpenViBE Designer
 
 **[Click here to download the OpenBCI-OpenViBE example XML File.](https://github.com/openbci-archive/Docs/blob/master/assets/files/Start_OBCI_Cyton.xml)** This file is a pre-made graph that will display both the EEG channels and the AUX channels. For the V3 board, the AUX channels correspond to accelerometer values in the three cardinal directions.
 
-Open the OpenViBE Designer GUI. If you are not using the example xml file, a blank page should open like below:
+Open the OpenViBE Designer GUI. If you are not using the example XML file, a blank page should open as shown below:
 
 ![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_designer.JPG)
 
@@ -54,7 +53,7 @@ In the toolbar on the right, expand the "Acquisition and IO" folder and select "
 
 ![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_acquision_client.JPG)
 
-From the same toolbar, expand the "Visualization" folder, then the "Basic" folder, and select "Signal display." Click and drag the Signal display box into the design space. Connect the similarly-colored triangles of the two boxes.
+From the same toolbar, expand the "Visualization" folder, then the "Basic" folder, and select "Signal display." Click and drag the Signal display box into the design space. Connect the similarly colored triangles of the two boxes.
 
 ![image](../../assets/SoftwareImages/CompatibleThirdPartySoftwareImages/OpenViBE_signal_display.JPG)
 

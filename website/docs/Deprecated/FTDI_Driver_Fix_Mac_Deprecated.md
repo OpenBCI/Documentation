@@ -9,14 +9,14 @@ title: FTDI Buffer Fix on OS X 10
 
 **THIS DOC IS NOW DEPRECATED. MACS NO LONGER REQUIRE THIS FIX.**
 
-The FTDI driver is only necessary for Mac OS X 10.9 through 10.15. If you are running a Mac that is mid 2015 or newer, you do not need to install the FTDI driver! The included drivers with OS X 11, 12, 13, 14, and 15 can handle communications with Cyton and Dongle out of the box.
+The FTDI driver is only necessary for Mac OS X 10.9 through 10.15. If you are running a Mac that is mid-2015 or newer, you do not need to install the FTDI driver! The included drivers with OS X 11, 12, 13, 14, and 15 can handle communications with Cyton and Dongle out of the box.
 :::
 
 On some Macs, you may have noticed that the data coming from your board is very choppy.
 
-This is a result of the FTDI virtual com port (VCP) driver's default settings for macOS. For more info on FTDI VCP drivers, see [this forum thread](http://openbci.com/forum/index.php?p=/discussion/196/os-x-and-virtual-com-ports-mavericks-yosemite-note) and the [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm).
+This is a result of the FTDI virtual COM port (VCP) driver's default settings for macOS. For more info on FTDI VCP drivers, see [this forum thread](http://openbci.com/forum/index.php?p=/discussion/196/os-x-and-virtual-com-ports-mavericks-yosemite-note) and the [FTDI VCP web page](http://www.ftdichip.com/Drivers/VCP.htm).
 
-This document details how to edit the config data of the **Info.plist** file of your FTDI VCP driver, so that the choppiness is significantly reduced, and you are able to process the data in real-time, with minimal latency!
+This document details how to edit the config data of the **Info.plist** file of your FTDI VCP driver, so that the choppiness is significantly reduced and you are able to process the data in real time, with minimal latency!
 
 This tutorial has been verified to work with the following macOS versions:
 
@@ -37,7 +37,7 @@ All of the lines of code you see below you will run from the Terminal command li
 
 **_!!! WARNING !!!_**
 
-Be very careful when using the **sudo rm** command. It is used to remove files from your system. Never EVER enter the following command by itself, without specifying a filepath. That will wipe your hard drive.
+Be very careful when using the **sudo rm** command. It is used to remove files from your system. Never EVER enter the following command by itself, without specifying a file path. That will wipe your hard drive.
 
 If you are new to Terminal, it is best to simply copy and paste the lines of code below into your terminal window.
 
@@ -145,7 +145,7 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
 <key>FT X Series</key>
 <dict>
        <key>CFBundleIdentifier</key>
- 	   <string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+     <string>com.FTDI.driver.FTDIUSBSerialDriver</string>
        <key>IOClass</key>
        <string>FTDIUSBSerialDriver</string>
        <key>IOProviderClass</key>
@@ -170,29 +170,29 @@ Now add the new config data for the "FT X Series" as seen below. The "FT X Serie
 
 <key>FT X Series</key>
 <dict>
-      	<key>CFBundleIdentifier</key>
-    	<string>com.FTDI.driver.FTDIUSBSerialDriver</string>
-     	<key>IOClass</key>
-        <string>FTDIUSBSerialDriver</string>
-        <key>IOProviderClass</key>
-        <string>IOUSBInterface</string>
-        <key>bConfigurationValue</key>
-        <integer>1</integer>
-        <key>bInterfaceNumber</key>
-        <integer>0</integer>
-        <key>bcdDevice</key>
-        <integer>4096</integer>
-        <key>idProduct</key>
-        <integer>24597</integer>
-        <key>idVendor</key>
-        <integer>1027</integer>
-        <key>ConfigData</key>
-        <dict>
-          <key>PortName</key>
-          <string>OpenBCI</string>
-          <key>InBufferSize</key>
-          <integer>64</integer>
-        </dict>
+  <key>CFBundleIdentifier</key>
+  <string>com.FTDI.driver.FTDIUSBSerialDriver</string>
+  <key>IOClass</key>
+  <string>FTDIUSBSerialDriver</string>
+  <key>IOProviderClass</key>
+  <string>IOUSBInterface</string>
+  <key>bConfigurationValue</key>
+  <integer>1</integer>
+  <key>bInterfaceNumber</key>
+  <integer>0</integer>
+  <key>bcdDevice</key>
+  <integer>4096</integer>
+  <key>idProduct</key>
+  <integer>24597</integer>
+  <key>idVendor</key>
+  <integer>1027</integer>
+  <key>ConfigData</key>
+  <dict>
+    <key>PortName</key>
+    <string>OpenBCI</string>
+    <key>InBufferSize</key>
+    <integer>64</integer>
+  </dict>
 </dict>
 
 ```

@@ -2,13 +2,14 @@
 id: EMGslideshow
 title: EMG-controlled Slideshow
 ---
-In this tutorial, we will show you how to scroll through a presentation using your eyes. To do that, we will read EMG data from the muscles around your eyes and find the peaks which correspond to blinking, using them as a trigger to scroll to the next slide. Even though we are using eye blinks in this example, any EMG signals such as those produced by your jaw when you clench it or your arms when you move them can be used.
 
- Check out an example video of this tutorial being put into action!
+In this tutorial, we will show you how to scroll through a presentation using your eyes. To do this, we will read EMG data from the muscles around your eyes and find the peaks that correspond to blinking, using them as a trigger to scroll to the next slide. Even though we are using eye blinks in this example, any EMG signals—such as those produced by your jaw when you clench it or your arms when you move them—can be used.
 
-  ![EMGslideshowgif](https://media.giphy.com/media/ZdgAlXPlhKSMCYgKQU/giphy.gif)
+Check out an example video of this tutorial being put into action!
 
- The following instructions have been written for use with Windows 10.
+![EMGslideshowgif](https://media.giphy.com/media/ZdgAlXPlhKSMCYgKQU/giphy.gif)
+
+The following instructions are written for use with Windows 10.
 
 ## Materials Required
 
@@ -24,10 +25,10 @@ Follow the [tutorial](AddOns/Headwear/03-Headband_Tutorial.md) to assemble the E
 
 ## Step 2: Software Setup
 
-Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3). Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
+Download and install [Python](https://www.python.org/downloads/) (either version 2 or 3). Python might already be installed on your computer. Type `python --version` to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
 
--   **pylsl**: use `python -m pip install pylsl` from the Python folder in the command line to install it.
--   **pyautogui** : use `python -m pip install pyautogui` to install.
+- **pylsl**: use `python -m pip install pylsl` from the Python folder in the command line to install it.
+- **pyautogui** : use `python -m pip install pyautogui` to install.
 
 ## Step 3: Stream data using the OpenBCI GUI
 
@@ -37,7 +38,7 @@ Follow the networking [tutorial](Software/OpenBCISoftware/02_GUI_Widget_Guide.md
 
 :::info
 
- **Important**: Make sure your EMG widget is open before you start streaming.
+**Important**: Make sure your EMG widget is open before you start streaming.
 
 :::
 
@@ -47,6 +48,6 @@ The Python script will search for an EMG data stream. Once it finds the stream i
 
 Get the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/EMG_Controlled_Slideshow) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the Python folder from your command line by using the cd command, and run it using `python.exe <script_name>.py`
 
-Open your slideshow in Presentation mode. Every time you blink, it will go to the next slide. By modifying the time_thres and blink_thres parameters in the code you can adjust the time to wait between binks and the blink strength to your needs.
+Open your slideshow in Presentation mode. Every time you blink, it will go to the next slide. By modifying the `time_thres` and `blink_thres` parameters in the code, you can adjust the time to wait between blinks and the blink strength to your needs.
 
 Try it out and send us a video of your final prototype!

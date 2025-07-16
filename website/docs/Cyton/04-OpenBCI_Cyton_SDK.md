@@ -3,11 +3,11 @@ id: CytonSDK
 title: Cyton Board SDK
 ---
 
-The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This Doc covers command use for the OpenBCI Cyton and 8bit boards. Some of the commands are board specific, where noted. Further this Doc covers the commands needed in order to alter the radio system. There have been several iterations of the firmware, the 8bit board runs `v0`, while the Cyton runs `v1` and Boards shipped as of Fall 2016 run `v2.0.0`. `v3.0.0` will begin shipping with boards in August of 2017.
+The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This document covers command usage for the OpenBCI Cyton and 8-bit boards. Some of the commands are board-specific, where noted. Further, this document covers the commands needed to alter the radio system. There have been several iterations of the firmware: the 8-bit board runs `v0`, the Cyton runs `v1`, and boards shipped as of Fall 2016 run `v2.0.0`. `v3.0.0` began shipping with boards in August of 2017.
 
 ## Cyton Command Protocol Overview
 
-Cyton boards have two powerful microcontrollers on board, and come pre-programmed with the firmware. The RFduino radio link uses the Nordic Gazelle stack and library. The Board mounted RFduino is configured as a DEVICE. The microcontroller (PIC32MX250F128B or ATmega328P) has been programmed with firmware that interfaces between the ADS1299 (Analog Front End), LIS3DH (Accelerometer), micro SD (if installed), and RFduino (Radio module). The user, or application, controls the board by sending commands over wireless serial connection. You should have received a Dongle with the OpenBCI board. The Dongle has an RFduino running the Gazelle library configured as a HOST, and interfaces your computer through a Virtual Com Port (FTDI).
+Cyton boards have two powerful microcontrollers onboard and come pre-programmed with firmware. The RFduino radio link uses the Nordic Gazelle stack and library. The board-mounted RFduino is configured as a DEVICE. The microcontroller (PIC32MX250F128B or ATmega328P) has been programmed with firmware that interfaces between the ADS1299 (Analog Front End), LIS3DH (Accelerometer), micro SD (if installed), and RFduino (Radio module). The user or application controls the board by sending commands over a wireless serial connection. You should have received a Dongle with the OpenBCI board. The Dongle has an RFduino running the Gazelle library configured as a HOST and interfaces with your computer through a Virtual Com Port (FTDI).
 
 On startup, the OpenBCI 8bit board (`v0`) sends the following text over the radio:
 
@@ -44,30 +44,33 @@ $$$
 
 ```
 
-Device ID info is useful for general board health confirmation. The $$$ is clear indication to the controlling application that the message is complete and the Cyton board is ready to receive commands. As of `v2.0.0`, there is an additional printout to indicate the exact firmware version.
+Device ID info is useful for general board health confirmation. The $$$ is a clear indication to the controlling application that the message is complete and the Cyton board is ready to receive commands. As of `v2.0.0`, there is an additional printout to indicate the exact firmware version.
 
-Pay attention to timing when sending commands when using `v0` and `v1` firmware. There must be some delay before and after sending a command character from the PC (controlling program or user running a terminal). As of `v2.0.0`, this is no longer the case, send as fast as you can!
+Pay attention to timing when sending commands using `v0` and `v1` firmware. There must be some delay before and after sending a command character from the PC (controlling program or user running a terminal). As of `v2.0.0`, this is no longer the case—send as fast as you can!
 
 ## Command Set
 
 ### Turn Channels OFF
 
-**1 2 3 4 5 6 7 8**  
-These ASCII characters turn the respective channels [1-8] off. The channel will read 0.00 when off during streamData mode. These commands work in and out of streamData mode.
+**1 2 3 4 5 6 7 8**
 
-**returns** none, there is no confirmation.
+These ASCII characters turn the respective channels [1-8] off. The channel will read 0.00 when off during streamData mode. These commands work both in and out of streamData mode.
+
+**returns** None; there is no confirmation.
 
 ### Turn Channels ON
 
-**! @ # $ % ^ & \* **  
-These ASCII characters turn the respective channels [1-8] on. The channel will read ADC output values during streamData mode. These commands work in and out of streamData mode.
+**! @ # $ % ^ & \* **
 
-**returns** none, there is no confirmation.
+These ASCII characters turn the respective channels [1-8] on. The channel will read ADC output values during streamData mode. These commands work both in and out of streamData mode.
+
+**returns** None; there is no confirmation.
 
 ### Test Signal Control Commands
 
-**0 - = p [ ]**  
-Turn **all** available channels on, and connect them to internal test signal. These are useful for self test and calibration. For example, you can measure the internal noise by sending **0** which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
+**0 - = p [ ]**
+
+Turn **all** available channels on and connect them to the internal test signal. These are useful for self-test and calibration. For example, you can measure the internal noise by sending **0**, which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
 
 - **0** Connect to internal GND (VDD - VSS)
 - **-** Connect to test signal 1xAmplitude, slow pulse
@@ -76,14 +79,15 @@ Turn **all** available channels on, and connect them to internal test signal. Th
 - **\[** Connect to test signal 2xAmplitude, slow pulse
 - **]** Connect to test signal 2xAmplitude, fast pulse
 
-  **Note: Not all possible internal test connections are implemented here **
+  **Note: Not all possible internal test connections are implemented here.**
 
-**returns** If not streaming, returns `Success: Configured internal test signal.$$$`, if streaming, there is no confirmation.
+**returns** If not streaming, returns `Success: Configured internal test signal.$$$`; if streaming, there is no confirmation.
 
 ### Channel Setting Commands
 
-** x (CHANNEL, POWER_DOWN, GAIN_SET, INPUT_TYPE_SET, BIAS_SET, SRB2_SET, SRB1_SET) X **  
-Channel Settings commands have six parameters for each ADS channel. To access Channel Settings, first send **x**. The OpenBCI board will then expect the next 7 bytes to be channel settings specific commands. The first byte is the channel number. (If you have the Daisy Module, you can select up to 16 channels to set). The following six ASCII characters are accepted as parameters to set. Lastly, sending **X** will latch the settings to the ADS channel.
+** x (CHANNEL, POWER_DOWN, GAIN_SET, INPUT_TYPE_SET, BIAS_SET, SRB2_SET, SRB1_SET) X **
+
+Channel Settings commands have six parameters for each ADS channel. To access Channel Settings, first send **x**. The OpenBCI board will then expect the next 7 bytes to be channel settings-specific commands. The first byte is the channel number. (If you have the Daisy Module, you can select up to 16 channels to set.) The following six ASCII characters are accepted as parameters to set. Lastly, sending **X** will latch the settings to the ADS channel.
 
 **CHANNEL**
 
@@ -139,9 +143,9 @@ Select to connect all channels' N inputs to SRB1. This effects all pins, and dis
 
 User sends **x 3 0 2 0 0 0 0 X**
 
-'x' enters Channel Settings mode. Channel 3 is set up to be powered up, with gain of 2, normal input, removed from BIAS generation, removed from SRB2, removed from SRB1. The final 'X' latches the settings to the ADS1299 channel settings register.
+'x' enters Channel Settings mode. Channel 3 is set up to be powered up, with a gain of 2, normal input, removed from BIAS generation, removed from SRB2, and removed from SRB1. The final 'X' latches the settings to the ADS1299 channel settings register.
 
-For firmware `v0` and `v1` it is required that you allow a time delay (&gt;10mS) when setting the channel and parameters. As of `v2.0.0`, you may stack multiple channel settings together such as:
+For firmware `v0` and `v1`, it is required that you allow a time delay (>10ms) when setting the channel and parameters. As of `v2.0.0`, you may stack multiple channel settings together, such as:
 
 **EXAMPLE**
 
@@ -159,10 +163,10 @@ On success:
 On failure:
 
 - If not streaming:
-  - Not enough characters received, `Failure: too few chars$$$` (**example** user sends x102000X)
-  - 9th character is not the upper case 'X', `Failure: 9th char not X$$$` (**example** user sends x1020000V)
-  - Too many characters or some other issue, `Failure: Err: too many chars$$$`
-- If not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
+  - Not enough characters received: `Failure: too few chars$$$` (**example:** user sends x102000X)
+  - 9th character is not the uppercase 'X': `Failure: 9th char not X$$$` (**example:** user sends x1020000V)
+  - Too many characters or some other issue: `Failure: Err: too many chars$$$`
+- If not all commands are received within 1 second: `Timeout processing multi byte message - please send all commands at once as of v2$$$`
 
 ### Default Channel Settings
 
@@ -178,8 +182,9 @@ _Note: Users can change the default channel settings in the initialization funct
 
 ### LeadOff Impedance Commands
 
-**z (CHANNEL, PCHAN, NCHAN) Z**  
-This works similar to the Channel Settings commands. For firmware `v0` and `v1` care must be taken to delay between sending characters, as of `v2.0.0`, you may send as fast as possible in a byte stream. Impedance settings have two parameters for each ADS channel. Impedance is measurable by applying a small 31.5Hz AC signal to the given channel.
+**z (CHANNEL, PCHAN, NCHAN) Z**
+
+This works similarly to the Channel Settings commands. For firmware `v0` and `v1`, care must be taken to delay between sending characters; as of `v2.0.0`, you may send as fast as possible in a byte stream. Impedance settings have two parameters for each ADS channel. Impedance is measurable by applying a small 31.5Hz AC signal to the given channel.
 
 - 0 = Test Signal Not Applied (default)
 - 1 = Test Signal Applied
@@ -207,8 +212,9 @@ On failure:
 
 ### SD card Commands
 
-**A S F G H J K L**  
-Send to initiate SD card data logging for specified time
+**A S F G H J K L**
+
+Send to initiate SD card data logging for the specified time
 
 - A = 5MIN
 - S = 15MIN
@@ -220,32 +226,36 @@ Send to initiate SD card data logging for specified time
 - L = 24HR
 - a = about 14 seconds for testing
 
-**j**  
-Stop logging data and close SD file
+**j**
+
+Stop logging data and close the SD file
 
 ### Stream Data Commands
 
-**b**  
+**b**
+
 Start streaming data
 
-**returns** none, there is no confirmation.
+**returns** None; there is no confirmation.
 
-**s**  
-Stop Streaming data
+**s**
 
-**returns** none, there is no confirmation.
+Stop streaming data
+
+**returns** None; there is no confirmation.
 
 ### Miscellaneous
 
-**?**  
+**?**
+
 Query register settings
 
-**returns** Read and report all register settings for the ADS1299 and the LIS3DH. Expect to get a verbose serial output from the OpenBCI Board, followed by **$$$**
+**returns** Reads and reports all register settings for the ADS1299 and the LIS3DH. Expect to get a verbose serial output from the OpenBCI Board, followed by **$$$**
 
 **v**
 
 Soft reset for the Board peripherals  
-The 8bit board gets a reset signal from the Dongle any time an application opens the serial port, just like a arduino. The Cyton board doesn't have this feature. So, if you want to soft-reset the Cyton board (`v1` or `v2.0.0`), send it a **v**.
+The 8-bit board gets a reset signal from the Dongle any time an application opens the serial port, just like an Arduino. The Cyton board doesn't have this feature. So, if you want to soft-reset the Cyton board (`v1` or `v2.0.0`), send it a **v**.
 
 **returns**
 OpenBCI V3 8-16 channel
@@ -261,46 +271,53 @@ Currently, the Daisy Module is implemented only on the Cyton board. The Daisy Mo
 
 ### Turn Channels OFF
 
-**q w e r t y u i**
-These ASCII characters turn the respective channels [9-16] off. The channel will read 0.00 during streamData mode. These commands work in and out of streamData mode.
 
-**returns** none, there is no confirmation.
+**q w e r t y u i**
+These ASCII characters turn the respective channels [9-16] off. The channel will read 0.00 during streamData mode. These commands work both in and out of streamData mode.
+
+**returns** None; there is no confirmation.
 
 ### Turn Channels ON
 
-**Q W E R T Y U I**
-These ASCII characters turn the respective channels [9-16] on. The channel will contain ADC values during streamData mode. These commands work in and out of streamData mode.
 
-**returns** none, there is no confirmation.
+**Q W E R T Y U I**
+These ASCII characters turn the respective channels [9-16] on. The channel will contain ADC values during streamData mode. These commands work both in and out of streamData mode.
+
+**returns** None; there is no confirmation.
 
 ### Select maximum channel number
 
+
 **c**
 
-Use 8 channels only. If the Daisy Module is attached, it will be unattached, and access to only channels 1-8 are available.
+Use 8 channels only. If the Daisy Module is attached, it will be unattached, and access to only channels 1-8 will be available.
 
 **returns**
 
-- If daisy is not present, no confirmation is sent because the board is already in the 8 channel mode.
-- If a daisy is present, returns `daisy removed$$$`.
+- If the Daisy is not present, no confirmation is sent because the board is already in 8-channel mode.
+- If a Daisy is present, returns `daisy removed$$$`.
+
 
 **C**
 Use 16 channels.
 
 **returns**
 
-- If daisy already attached, returns `16$$$`.
-- If the daisy is not currently attached and is **not** able to be attached, then `no daisy to attach!8$$$` is returned.
-- If the daisy is not currently attached and is able to be attached, then `daisy attached16$$$` is returned.
+- If the Daisy is already attached, returns `16$$$`.
+- If the Daisy is not currently attached and is **not** able to be attached, then `no daisy to attach!8$$$` is returned.
+- If the Daisy is not currently attached and is able to be attached, then `daisy attached16$$$` is returned.
 
-_Note: On reset, the OpenBCI Cyton board will 'sniff' for the Daisy Module, and if it is present, it will default to 16 channel capability._
+
+_Note: On reset, the OpenBCI Cyton board will 'sniff' for the Daisy Module, and if it is present, it will default to 16-channel capability._
 
 ## Firmware v2.0.0 New Commands
 
 Firmware v2.0.0 was the first overhaul from Push The World which stabilized the core code and added several key new features to improve the user experience. As of firmware version `v2.0.0`, a set of commands has been implemented to change the radio system and improve over-the-air programming of the main Cyton board.
-In order to use the commands you must keep to the form of **key**-**code**-**(payload)** where **key** is`0xF0`, **code** is defined below and **payload** is optional and dependent on the **code**. For example, to get system status send `0xF0` then send `0x07`.
 
-If the RFDuinos cannot speak to each other, you will see a `Failure: Communications timeout - Device failed to poll host` which means the Device RFDuino (on the Cyton) has stopped polling the Host RFDuino on the Dongle.
+In order to use the commands, you must keep to the form of **key**-**code**-**(payload)** where **key** is `0xF0`, **code** is defined below, and **payload** is optional and dependent on the **code**. For example, to get system status, send `0xF0` then send `0x07`.
+
+
+If the RFDuinos cannot communicate with each other, you will see a `Failure: Communications timeout - Device failed to poll host`, which means the Device RFDuino (on the Cyton) has stopped polling the Host RFDuino on the Dongle.
 
 ### Time Stamping
 
@@ -420,10 +437,12 @@ Supporting all v1.0.0 and v2.0.0, the v3.0.0 firmware extends the OpenBCI system
 ### Sample Rate
 
 **~(COMMAND)**
-This works similar to the Channel Settings commands, however, there is no latching character. Power cycling the OpenBCI board will cause the sample rate to reset back to default of 250Hz.
+
+This works similarly to the Channel Settings commands; however, there is no latching character. Power cycling the OpenBCI board will cause the sample rate to reset back to the default of 250Hz.
 
 :::important
-**The Cyton cannot stream data over 250Hz.** These commands were created with anticipation for future capabilities, but due to radio restrictions, they cannot currently be utilized.
+
+**The Cyton cannot stream data over 250Hz.** These commands were created in anticipation of future capabilities, but due to radio restrictions, they cannot currently be utilized.
 :::
 
 **COMMAND**
@@ -439,11 +458,13 @@ This works similar to the Channel Settings commands, however, there is no latchi
 
 **EXAMPLE**
 
-First, user sends **\~~**
+
+First, the user sends **\~~**
 
 **returns** `Sample rate is 250Hz$$$`
 
-Then, user sends **~5**
+
+Then, the user sends **~5**
 
 **returns** `Sample rate set to 500Hz$$$`
 
@@ -452,7 +473,8 @@ NOTE: if not all commands are not received within 1 second, `Timeout processing 
 ### Board Mode
 
 **/(COMMAND)**
-This works similar to the sample rate. Power cycling the OpenBCI board will cause the board mode to return to default mode with accelerometer in the aux bytes.
+
+This works similarly to the sample rate. Power cycling the OpenBCI board will cause the board mode to return to default mode with the accelerometer in the aux bytes.
 
 **COMMAND**
 
@@ -465,11 +487,13 @@ This works similar to the sample rate. Power cycling the OpenBCI board will caus
 
 **EXAMPLE**
 
-First, user sends **//**
+
+First, the user sends **//**
 
 **returns** `Board mode is default$$$`
 
-Then, user sends **/2**
+
+Then, the user sends **/2**
 
 **returns** `Board mode set to analog$$$`
 

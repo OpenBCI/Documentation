@@ -7,7 +7,7 @@ title: Wifi Shield Programming Tutorial
 
 The easiest way to update your OpenBCI Wifi Shield Firmware is Over-The-Air (OTA). You can also update firmware through a direct connection to the serial port on the WiFi Shield itself. For the wired programming, you can use the USB dongle that comes with the Cyton as a pass through or you can use a standard [FTDI UART to USB Breakout board](#program-openbci-wifi-with-ftdi-boards).
 
-## Program WiFi Shield Over The Air
+## Program WiFi Shield Over the Air
 
 ### Use Any Web Browser
 
@@ -16,7 +16,7 @@ Pick your default web browser
 
 ### Download the WiFi Shield Firmware
 
-First, download the file called `DefaultWifiShield.bin` from the latest release [OpenBCI_WiFi Github repository](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
+First, download the file called `DefaultWifiShield.bin` from the latest release [OpenBCI_WiFi GitHub repository](https://github.com/OpenBCI/OpenBCI_WIFI/releases/latest).
 
 Save to your downloads folder.
 ![download the latest binary](../../assets/DepImages/WiFiShield/wifi_firmware_update_download.png)
@@ -51,7 +51,7 @@ On Mac, you may use your shields unique name instead of the ip address; i.e. `ht
 
 ### Select Binary File to Upload
 
-Now select the `Choose File` button and from the drop down selected the `DefaultWifiShield.bin` which you downloaded earlier
+Now select the `Choose File` button and from the drop-down select the `DefaultWifiShield.bin` file you downloaded earlier.
 ![select choose file](../../assets/DepImages/WiFiShield/wifi_firmware_update_select_binary.png)
 
 ### Update the Firmware

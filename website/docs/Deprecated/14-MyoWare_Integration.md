@@ -25,7 +25,7 @@ This tutorial will show you how to read EMG data (electrical signals from muscle
 5.  Soldering iron and materials
 6.  Two male-male jumper wires (like [these](https://www.adafruit.com/product/266)), and three male-female jumper wires (like [these](https://www.adafruit.com/product/826))
 
-Note: jumper wires aren't sold on the OpenBCI website, but we used some from Adafruit (linked above) for this tutorial
+Note: Jumper wires aren't sold on the OpenBCI website, but we used some from Adafruit (linked above) for this tutorial.
 
 ### 1. Soldering the MyoWare Headers
 

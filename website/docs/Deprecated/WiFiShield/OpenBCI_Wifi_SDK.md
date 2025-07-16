@@ -3,7 +3,7 @@ id: WiFiSDK
 title: OpenBCI Wifi SDK
 ---
 
-The purpose of this doc is to describe what's required to interface another micro-controller with the WiFi Shield.
+The purpose of this doc is to describe what's required to interface another microcontroller with the WiFi Shield.
 
 ## Prerequisites
 
@@ -11,11 +11,11 @@ Please have the [latest Arduino](https://www.arduino.cc/en/Main/Software) versio
 
 ## Install OpenBCI Wifi Master
 
-There are many options for downloading the OpenBCI Wifi Master.
+There are many options for downloading the OpenBCI WiFi Master.
 
 ### From Arduino Library Manager (easiest!)
 
-Simply search for _OpenBCI Wifi Master_ in the Arduino Library Manager. For help using the Library manager please checkout the well maintained [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc3).
+Simply search for _OpenBCI WiFi Master_ in the Arduino Library Manager. For help using the Library Manager, please check out the well-maintained [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc3).
 
 ### Manual Installation
 
@@ -26,7 +26,7 @@ Simply search for _OpenBCI Wifi Master_ in the Arduino Library Manager. For help
     On Mac: `/Documents/Arduino/libraries`  
     On Windows: `C:\Users\username\Documents\Arduino\libraries`
 
-If you're have trouble or want to learn more checkout the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
+If you have trouble or want to learn more, check out the [Official Arduino Guide](https://www.arduino.cc/en/Guide/Libraries#toc5) for manual installation.
 
 ### Clone From Github
 

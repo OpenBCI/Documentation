@@ -32,7 +32,7 @@ For this project you will need five gold cup electrodes. Connect the first elect
 
 <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/TutorialImages/Facial_EMG_Cyton.png" width="70%" />
 
-Now it’s time to connect the electrodes to your body. To connect a gold cup electrode to your skip, apply some Ten20 paste on it like shown on the picture below, and stick it to your skin. To secure the connection, you can put some medical tape over it.
+Now it’s time to connect the electrodes to your body. To connect a gold cup electrode to your skin, apply some Ten20 paste on it as shown in the picture below, and stick it to your skin. To secure the connection, you can put some medical tape over it.
 
 <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/TutorialImages/Ten20.png" width="70%" />
 
@@ -79,7 +79,7 @@ Once the code has been loaded into the Arduino, open the Serial Monitor in the A
 
 ## Step 3: Software Setup
 
-Download and install Python (either version 2 or 3). Python might already be installed on your computer. Type python --version to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
+Download and install Python (either version 2 or 3). Python might already be installed on your computer. Type `python --version` to check if you have Python version 2 or 3 installed. To use this program, you need the following Python packages installed:
 
 - **pylsl**: use `python -m pip install pylsl` from the Python folder in the command line to install it.
 - **serial**: use `python -m pip install serial` to install it.
@@ -100,6 +100,6 @@ The Python script will search for the EMG data streams. Once it finds them it wi
 
 Get the Python script from [here](https://github.com/OpenBCI/OpenBCI_Tutorials/tree/master/Facial_EMG_Multiple_LEDs) by clicking on ‘Raw’ and copying it to a .py file in your Python folder. Once you’re streaming data from the GUI, go to the folder that you stored the script in from your command line, and run it using `python.exe <script_name>.py`
 
-Hold the breadboard with LEDs towards your face in a dark environment and check how the color changes when you smile and frown. By modifying the time_thres and flex_thres parameters in the code you can adjust the time to wait between flexes and the flex strength to your needs.
+Hold the breadboard with LEDs towards your face in a dark environment and check how the color changes when you smile and frown. By modifying the `time_thres` and `flex_thres` parameters in the code, you can adjust the time to wait between flexes and the flex strength to your needs.
 
 Try it out and send us a video of your final prototype!

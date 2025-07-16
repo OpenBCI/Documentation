@@ -7,7 +7,7 @@ The Examples directory to the left contains example projects contributed by memb
 
 ## EEG Projects and Tutorials
 
-Whether you're new to neurotechnology or conducting research, OpenBCI makes it easy and fun to work with EEG signals. OpenBCI hardware can be used to replicate and expand upon existing EEG paradigms. Below, you will find a few examples from our worldwide Community of scientists and enthusiasts to help you get started controlling computers and robots using the power of your mind.
+Whether you're new to neurotechnology or conducting research, OpenBCI makes it easy and fun to work with EEG signals. OpenBCI hardware can be used to replicate and expand upon existing EEG paradigms. Below, you will find a few examples from our worldwide community of scientists and enthusiasts to help you get started controlling computers and robots using the power of your mind.
 
 ### P300 Example
 
@@ -29,9 +29,9 @@ These projects linked below used the OpenBCI Cyton / CytonDaisy board to sample 
 
 ## EMG Projects and Tutorials
 
-We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](GettingStarted/Biosensing-Setups/03-ECG-Setup.md) and stand-alone [EMG](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration.  We look forward to seeing what you create!
+We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](GettingStarted/Biosensing-Setups/03-ECG-Setup.md) and stand-alone [EMG](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration. We look forward to seeing what you create!
 
-Note, the example projects below are written for the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) but can be applied to [Ganglion board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) as well.
+Note: The example projects below are written for the [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) but can be applied to the [Ganglion board](https://shop.openbci.com/collections/frontpage/products/ganglion-board) as well.
 
 ### EMG Scrolling
 

@@ -3,11 +3,12 @@ id: Matlab
 title: MATLAB
 ---
 
-[MATLAB](https://en.wikipedia.org/wiki/MATLAB) is a powerful numerical computing language and environment that is widely used in a wide variety of academic, research, and industrial applications.
 
-A few MATLAB toolboxes have been created specifically for working with EEG and BCI. [EEGLAB](http://sccn.ucsd.edu/eeglab/), [BCILAB](http://sccn.ucsd.edu/wiki/BCILAB), [ERPLAB](http://erpinfo.org/erplab), and [FieldTrip](http://www.fieldtriptoolbox.org/) are a few toolboxes that have helped OpenBCI users work in MATLAB.
+[MATLAB](https://en.wikipedia.org/wiki/MATLAB) is a powerful numerical computing language and environment that is widely used in academic, research, and industrial applications.
 
-This tutorial will walk through setting up your MATLAB environment for use with OpenBCI hardware, as well as some basic uses and functionalities that MATLAB offers for working with brain-computer interfaces.
+Several MATLAB toolboxes have been created specifically for working with EEG and BCI data. [EEGLAB](http://sccn.ucsd.edu/eeglab/), [BCILAB](http://sccn.ucsd.edu/wiki/BCILAB), [ERPLAB](http://erpinfo.org/erplab), and [FieldTrip](http://www.fieldtriptoolbox.org/) are a few toolboxes that have helped OpenBCI users work in MATLAB.
+
+This tutorial will walk you through setting up your MATLAB environment for use with OpenBCI hardware, as well as some basic uses and functionalities that MATLAB offers for working with brain-computer interfaces.
 
 ## Installation
 
@@ -17,11 +18,13 @@ Go to the [MathWorks website](http://www.mathworks.com/help/install/ug/install-m
 Please note that MATLAB is commercial software. Licenses must either be purchased or acquired through academic or professional institutions.
 :::
 
-Several useful MATLAB toolkits (EEGLAB, BCILAB, FieldTrip, etc) have been created for collecting and analyzing EEG data, so this tutorial will focus on using MATLAB through these toolkits.
+
+Several useful MATLAB toolkits (EEGLAB, BCILAB, FieldTrip, etc.) have been created for collecting and analyzing EEG data. This tutorial will focus on using MATLAB through these toolkits.
 
 ## Using BrainFlow (Recommended)
 
-There are two main ways to get your OpenBCI data while leveraging BrainFlow. The first method is to connect directly using the BrainFlow MATLAB Binding to get live data, and the second is to use a BrainFlow CSV file and BrainFlow Playback Board for offline playback or analysis.
+
+There are two main ways to access your OpenBCI data using BrainFlow. The first method is to connect directly using the BrainFlow MATLAB Binding to get live data. The second is to use a BrainFlow CSV file and the BrainFlow Playback Board for offline playback or analysis.
 
 :::tip BrainFlow Slack
 For more in-depth questions and assistance with BrainFlow, please visit the [official BrainFlow Slack](https://c6ber255cc.execute-api.eu-west-1.amazonaws.com/Express/).
@@ -29,7 +32,8 @@ For more in-depth questions and assistance with BrainFlow, please visit the [off
 
 ### Method 1: Live Data Directly from OpenBCI Board using BrainFlow
 
-Now that we can connect to OpenBCI boards using [BrainFlow](https://brainflow.org), we can utilize the [MATLAB binding to get direct access](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---matlab) **without using LSL**.
+
+Now that you can connect to OpenBCI boards using [BrainFlow](https://brainflow.org), you can utilize the [MATLAB binding to get direct access](../../ForDevelopers/01-SoftwareDevelopment.md#brainflow---matlab) **without using LSL**.
 
 :::tip Code Examples
 Here are the [official code examples](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab) of how to connect to OpenBCI boards directly in MATLAB.
@@ -37,18 +41,21 @@ Here are the [official code examples](https://brainflow.readthedocs.io/en/stable
 
 ### Method 2: Offline data playback using BrainFlow CSV file and Playback Board
 
-- Connect to your OpenBCI Board using the OpenBCI GUI or directly with any BrainFlow API. See GUI and Python methods below.
-- Save data to file in the BrainFlow CSV format.
-- Then, you would load this file in MATLAB using **[the BrainFlow Playback Board feature](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#playback-file-board)** in [BrainFlow MATLAB binding](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab).
+
+- Connect to your OpenBCI Board using the OpenBCI GUI or directly with any BrainFlow API. See the GUI and Python methods below.
+- Save data to a file in the BrainFlow CSV format.
+- Then, load this file in MATLAB using the **[BrainFlow Playback Board feature](https://brainflow.readthedocs.io/en/stable/SupportedBoards.html#playback-file-board)** in the [BrainFlow MATLAB binding](https://brainflow.readthedocs.io/en/stable/Examples.html#matlab).
 
 #### Use OpenBCI GUI to create BrainFlow CSV File
 
-See the screenshot below to see where the option is to save data to BrainFlow CSV file. This is enabled by default and is saved simultaneously alongside OpenBCI CSV data in `[USER]/Documents/OpenBCI_GUI/Recordings`. You can then load this file into MATLAB.
+
+See the screenshot below for the option to save data to a BrainFlow CSV file. This is enabled by default and is saved simultaneously alongside OpenBCI CSV data in `[USER]/Documents/OpenBCI_GUI/Recordings`. You can then load this file into MATLAB.
 
 ![BrainFlow Streamer Control Panel - Save to File](../../assets/SoftwareImages/OpenBCISoftware/OpenBCI_GUI-BrainFlowStreamerCP_Screenshot.png)
 
 :::caution OpenBCI vs. BrainFlow CSV
-This method is not the same as using OpenBCI CSV files. In BrainFlow CSV files, data stored is in a slightly different order and configuration.
+
+This method is not the same as using OpenBCI CSV files. In BrainFlow CSV files, the data is stored in a slightly different order and configuration.
 
 - BrainFlow CSV File Example: `BrainFlow-RAW_2022-03-11_15-41-42_0.csv`
 - OpenBCI CSV File Example: `OpenBCI-RAW-2022-03-11_15-44-27.txt`
@@ -56,7 +63,8 @@ This method is not the same as using OpenBCI CSV files. In BrainFlow CSV files, 
 
 #### Use BrainFlow Python Script to Read/Write BrainFlow CSV File
 
-Here is the [code sample to read/write BrainFlow CSV file using BrainFlow Python Binding](https://brainflow.readthedocs.io/en/stable/Examples.html#python-read-write-file)
+
+Here is a [code sample to read/write BrainFlow CSV files using the BrainFlow Python Binding](https://brainflow.readthedocs.io/en/stable/Examples.html#python-read-write-file):
 
 ## Using the OpenBCI GUI
 

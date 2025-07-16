@@ -6,8 +6,9 @@ title: WiFi Shield Getting Started Guide (Deprecated)
 ## Overview
 
 The [OpenBCI WiFi Shield](https://shop.openbci.com/collections/frontpage/products/wifi-shield?variant=44534009550) is a hardware product, intended to work with the OpenBCI GUI software and be paired with any OpenBCI board, that enables biodata streaming over wifi.
-The advantage of wifi over bluetooth is increased sampling rate.
-The WiFi Shield increases the sample rate by transmitting the data via WiFi as opposed to Bluetooth. The WiFi Shield can be controlled through HTTP requests and can send JSON objects with data in nano volts. With the WiFi Shield connected:
+
+The advantage of WiFi over Bluetooth is increased sampling rate.
+The WiFi Shield increases the sample rate by transmitting the data via WiFi as opposed to Bluetooth. The WiFi Shield can be controlled through HTTP requests and can send JSON objects with data in nanovolts. With the WiFi Shield connected:
 
 - The Cyton can stream data at 50Hz, 500Hz, 1000Hz, 2000Hz, 4000Hz, 8000Hz and 16000Hz.
 
@@ -15,7 +16,7 @@ The WiFi Shield increases the sample rate by transmitting the data via WiFi as o
 
 - The Ganglion can stream data at 200Hz, 400Hz, 800Hz, 1600Hz, 3200Hz, 6400Hz, and 12800Hz
 
-**IMPORTANT NOTE:** This product is in beta mode. The WiFi shield is known to have reliability issues ([packet loss](https://github.com/OpenBCI/OpenBCI_WIFI/issues/82) and [cyclical noise spikes](https://github.com/OpenBCI/OpenBCI_GUI/issues/231)) when used with Cyton and CytonDaisy boards. Using it effectively requires advanced technical skills and programming knowledge. Please proceed at your own risk. OpenBCI cannot guarantee that the device will work with your configuration.
+**IMPORTANT NOTE:** This product is in beta mode. The WiFi Shield is known to have reliability issues ([packet loss](https://github.com/OpenBCI/OpenBCI_WIFI/issues/82) and [cyclical noise spikes](https://github.com/OpenBCI/OpenBCI_GUI/issues/231)) when used with Cyton and CytonDaisy boards. Using it effectively requires advanced technical skills and programming knowledge. Please proceed at your own risk. OpenBCI cannot guarantee that the device will work with your configuration.
 
 When connecting to Cyton+WiFi or Cyton+Daisy+WiFi using the OpenBCI GUI, you have the option of using TCP, UDP, or UDPx3. **We recommend trying to connect using UDPx3 protocol.**
 

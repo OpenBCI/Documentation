@@ -131,7 +131,7 @@ Your USB Dongle's port name will likely be at the top of the list. If you don't 
 1.  Make sure your dongle is plugged in and switched to GPIO 6 (not RESET)
 2.  Click the REFRESH LIST button in the SERIAL/COM PORT section of the sub-panel
 
-If you're still having trouble finding your USB Dongle's port name, refer to the [Forum](https://openbci.com/forum/index.php?p=/categories/cyton) about debugging your hardware connection.
+If you're still having trouble finding your USB Dongle's port name, refer to the [Forum](https://openbci.com/forum/index.php?p=/categories/cyton) for help debugging your hardware connection.
 
 ### 4. Select your channel count (8 or 16)
 
@@ -158,12 +158,15 @@ Click on the `STATUS` button to check the status of your Cyton system. This may 
 <img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/cyton_radio-get-channel.png" width="50%" />
 
 Click the `GET CHANNEL` button to know the channel that your Cyton system is communicating on. If the system is up, you will get the message `Success: Host and Device on Channel number: X`. If the system is down, you will get the message `Failure: Host on Channel number: X`.  
-**NOTE** the Host radio is on the Dongle, and the Device radio is on the Cyton board.
+**NOTE:** The Host radio is on the Dongle, and the Device radio is on the Cyton board.
 
 <img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/cyton_change-channel.png" width="50%" />
 
-Click on the `CHANGE CHANNEL` button to change the channel that your Cyton system is communicating on. This can be really useful if you have multiple Cyton systems in the same space. When you click the button, a menu will open up with the channels. When you click on the channel you want, it will take just a second, and you should get the message `Success: Host and Device on Channel number: X`.  
-**IMPORTANT** Make sure that there are not other Cytons active in the neighborhood when you change the channel!
+Click on the `CHANGE CHANNEL` button to change the channel that your Cyton system is communicating on. This can be really useful if you have multiple Cyton systems in the same space. When you click the button, a menu will open up with the channels. When you click on the channel you want, it will take just a second, and you should get the message `Success: Host and Device on Channel number: X`.
+
+:::tip
+**IMPORTANT:** Make sure that there are no other Cyton boards active in the immediate area when you change the channel!
+:::
 
 <img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/cyton_override-dongle.png" width="50%" />
 
@@ -186,7 +189,7 @@ In the DATA LOG FIlE section of the LIVE (from Cyton) sub-panel you can specify 
 
 **\\Documents\\OpenBCI_GUI\\OpenBCI-RAW- + date/time**
 
-You can edit the the name of this file by clicking in the "File Name" text field.
+You can edit the name of this file by clicking in the "File Name" text field.
 
 **Playback files and user data are stored in _/Documents/OpenBCI_GUI/_ on all OS.** OpenBCI Playback Files use [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) formatting and plain text.
 
@@ -198,7 +201,7 @@ After creating a Playback file, it can be replayed by running Playback File data
 
 If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE TO SD (Y/N)? sub-panel section you can select the maximum recording time of the file. This setting is defaulted to "Do not write to SD…" and will automatically switch to this if you do not have a MicroSD card properly inserted into your Cyton board.
 
-**Note:** be sure to select a file size that is larger than your planned recording time. The Cyton writes to the local SD in a way that enables us to write lots of data very quickly. As a result, however, we must specify how large the file will be before we begin. The technique is known as block writing.
+**Note:** Be sure to select a file size that is larger than your planned recording time. The Cyton writes to the local SD in a way that enables us to write lots of data very quickly. As a result, however, we must specify how large the file will be before we begin. The technique is known as block writing.
 
 </details>
 
@@ -206,7 +209,7 @@ If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE
 
 ![START SYSTEM](../../assets/GettingStartedImages/serial_cyton_start_system.png)
 
-Now you're ready to start the system! Press the START SYSTEM button and wait for the OpenBCI GUI to establish a connection with your Cyton board. This usually takes ~5 seconds.
+Now you're ready to start the system! Press the START SYSTEM button and wait for the OpenBCI GUI to establish a connection with your Cyton board. This usually takes about 5 seconds.
 
 ![Initializing](../../assets/GettingStartedImages/serial_cyton_initializing_gui.png)
 
@@ -229,11 +232,11 @@ Now that the OpenBCI_GUI is connected to your Cyton you may press `Start Data St
 
 ![cyton serial data stream start](../../assets/GettingStartedImages/serial_cyton_data_stream_start.png)
 
-You should see data streaming into the GUI, try running your fingers along the electrode pins at the top of your board.
+You should see data streaming into the GUI. Try running your fingers along the electrode pins at the top of your board.
 
 ![Touch](../../assets/GettingStartedImages/touch.JPG)
 
-You should see the 8 (or 16 if you're using a Daisy module) channels on the _Time Series_ widget behave chaotically in response to you touching the pins and all the traces of the FFT graph on the upper right should instantly shift upwards.
+You should see the 8 (or 16 if you're using a Daisy module) channels on the _Time Series_ widget behave chaotically in response to you touching the pins, and all the traces of the FFT graph on the upper right should instantly shift upwards.
 
 ![cyton serial chaos](../../assets/GettingStartedImages/serial_cyton_chaos.png)
 
@@ -244,7 +247,7 @@ Learn about the _Time Series_ and other built-in widgets in the [GUI Widget Guid
 **By default, the GUI stores all user data and raw EEG recordings in `[USER]/Documents/OpenBCI_GUI` and names each session with an autogenerated timestamp by default.**
 :::
 
-Experts and those interested in communicating directly with the board can refer to the [Cyton Data Format Guide](../../Cyton/03-Cyton_Data_Format.md#binary-format) to learn how to interpret the raw data coming straight from the device. However this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
+Experts and those interested in communicating directly with the board can refer to the [Cyton Data Format Guide](../../Cyton/03-Cyton_Data_Format.md#binary-format) to learn how to interpret the raw data coming straight from the device. However, this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
 
 ## V. Connect yourself to OpenBCI
 
@@ -258,13 +261,13 @@ In the above setups, you may need to adjust the Hardware Settings of the ADS1299
 
 ## VI. Fixing FTDI Buffering on Mac OS
 
-On some Macs, you may have noticed that the data coming from your Cyton board is very choppy. Newer Macs (mid 2015 - present) may not have this issue and can connect flawlessly to the Cyton using the Dongle sold with each Cyton.
+On some Macs, you may have noticed that the data coming from your Cyton board is very choppy. Newer Macs (mid-2015 and later) may not have this issue and can connect flawlessly to the Cyton using the Dongle sold with each Cyton.
 
 This is a result of the FTDI virtual com port (VCP) driver's default settings for macOS. Head over to the [FTDI Driver Fix Guide](../../Troubleshooting/05-FTDI_Driver_Fix_Mac.md) to see how to adjust the settings.
 
 ## VII. Fixing FTDI Buffering on Windows
 
-The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if its accumulating packets for about a full second before releasing them all at the same time into the serial stream.
+The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if it's accumulating packets for about a full second before releasing them all at the same time into the serial stream.
 Head over to the [FTDI Driver Fix Guide for Windows](../../Troubleshooting/04-FTDI_Fix_Windows.md) to see how to adjust the settings.
 
 ## VIII. Fixing FTDI Latency on Linux
