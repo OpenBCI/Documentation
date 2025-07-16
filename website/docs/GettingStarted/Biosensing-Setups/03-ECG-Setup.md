@@ -2,11 +2,11 @@
 id: ECGSetup
 title: Setting up for ECG
 ---
-This document will show you how to read ECG data (electrical signals from  the heart) using OpenBCI hardware and GUI.
+This document will show you how to read ECG data (electrical signals from the heart) using OpenBCI hardware and the GUI.
 
 ## 3-Lead ECG with Cyton or Ganglion Boards
 
-This step by step for 3-Lead ECG will show you how to get one channel of live ECG data.
+This step-by-step guide for 3-Lead ECG will show you how to get one channel of live ECG data.
 
 ### Materials Needed
 
@@ -22,7 +22,7 @@ This step by step for 3-Lead ECG will show you how to get one channel of live EC
 
 <img src="https://github.com/openbci-archive/Docs/blob/master/assets/images/EMG_Cyton_Setup.jpg?raw=true" width="60%" />
 
-If using the **Ganglion board**, please refer to the following steps A to C, noting that on the Ganglion board there are up to 4 channels available, but in this 3-Lead ECG tutorial we will show you how to use one channel (to start off with!).
+If using the **Ganglion board**, please refer to the following steps A to C. The Ganglion board has up to 4 channels available, but in this 3-Lead ECG tutorial we will show you how to use one channel (to start off with!).
 
 A) The four switches on the Ganglion should be in the default UP position.
 
@@ -53,11 +53,11 @@ By doing this, we are instructing the data to measure the electric potential dif
 
 ### Streaming ECG Data with the OpenBCI GUI
 
-Once you have the GUI open, turn off all channels that are not connected to electrodes by toggling the numbered data streams in the Time Series widget. If using the Cyton board, additionally go to hardware settings and turn SRB2 **OFF** for all of the channels that you are streaming data from.
+Once you have the GUI open, use the Time Series widget to turn off any channels that are not connected to electrodes by toggling their numbers. If you are using the Cyton board, also open the hardware settings and set SRB2 **OFF** for every channel you are streaming data from.
 
-_Note: This is because ordinarily SRB2 is the reference point from which potentials are measured, however we are now having cardiac locations reference themselves, so we do not want it to look at this pin._
+_Note: This is because ordinarily SRB2 is the reference point from which potentials are measured. However, we are now having cardiac locations reference themselves, so we do not want it to look at this pin._
 
-Once all of your settings have been adjusted, press 'begin data stream.'
+Once all of your settings have been adjusted, press 'Begin Data Stream.'
 
 In the Cyton image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, raw data from N1P pin will be displayed on Channel 1 within the Time Series Widget. If you are using the Ganglion, Channel 1 will show raw data from Pin 1 on the Ganglion.
 

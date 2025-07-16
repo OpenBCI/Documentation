@@ -120,7 +120,7 @@ When the GUI connects, it opens up to the default window layout. For a more in-d
 
 ![select layout](../../assets/GettingStartedImages/ganglion_select-layout.png)
 
-If the Accelerometer is off, turn on the Accelerometer by clicking the `Turn Accel. On` button.
+If the accelerometer is off, turn on the accelerometer by clicking the `Turn Accel. On` button.
 
 ![Accel ON!](../../assets/GettingStartedImages/ganglion_accel-ON.jpg)
 ![Accel ON!](../../assets/GettingStartedImages/ganglion_accel-ON.png)
@@ -149,7 +149,7 @@ Pick up your board, and move it around. You should see the data in the `Accelero
 -   hit 'AUTOSCAN' a couple of times
 -   exit the GUI and restart the computer to reboot your USB port
 
-Now that you've got your computer connected to the Ganglion, it's time to connect your _self!_
+Now that you've got your computer connected to the Ganglion, it's time to connect yourself!
 
 ## Connect yourself to OpenBCI
 
