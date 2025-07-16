@@ -38,15 +38,15 @@ If the board is labeled as "Unidentified", follow the troubleshoot below:
 
 If everything went well, your OpenBCI Board should be showing up with a COM port number. If the number is not displayed next to the port name it should be visible in the properties of the port.
 
-To check it is, in fact, the OBCI board; connecting and disconnecting the Dongle should connect and disconnect the COM port.
+To check if it is, in fact, the OBCI board, connecting and disconnecting the Dongle should connect and disconnect the COM port.
 
 ### II. Latency Settings Fix
 
 ![Latency Fix](../assets/DepImages/latency.jpg)
 
-The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if its accumulating packets for about a full second before releasing them all at the same time into the serial stream.
+The default FTDI latency is too large for EEG applications, making the incoming signal "choppy" and seem as if it's accumulating packets for about a full second before releasing them all at the same time into the serial stream.
 
-The fix is easy. Simply right click the USB Serial Port of the OBCI board and go to **Properties &gt; Port Settings &gt; Advanced** and change the **Latency Timer** from the default 16 ms to 1 ms.
+The fix is easy. Simply right-click the USB Serial Port of the OBCI board and go to **Properties &gt; Port Settings &gt; Advanced** and change the **Latency Timer** from the default 16 ms to 1 ms.
 
 Fixing this issue should make the incoming signal much more consistent in terms of packet time intervals.
 

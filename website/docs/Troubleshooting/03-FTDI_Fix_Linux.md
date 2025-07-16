@@ -24,10 +24,10 @@ Using file manager, open the `latency_timer` file. Found at:
 
 where `ttyUSB0` is the serial port name for the OpenBCI dongle.
 
-### Step 2: Change 16 to 1
+### Step 3: Change 16 to 1
 
 The `latency_timer` should contain `16` by default. Change this to `1`, and you're done!
 
-### Step 3: Test OpenBCI GUI or BrainFlow
+### Step 4: Test OpenBCI GUI or BrainFlow
 
 Run the OpenBCI GUI or a BrainFlow binding, and you should see smoother data.

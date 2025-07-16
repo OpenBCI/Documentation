@@ -13,13 +13,13 @@ Use the OpenBCI GUI’s built-in notch filter to remove 60 Hz (or 50 Hz, dependi
 
 #### Stabilize your electrodes
 
-Make sure your electrode cables are steady. If you shake the electrodes that are dangling from your head or body, you'll notice that it severely affects the signals. This movement noise can be greatly improved with active electrodes. When using the passive electrodes that come with the OpenBCI electrode starter kit, you have to be very careful to remain steady while using the system to produce the best signal. As a quick fix, binding all of the electrode cables together with a piece of electrical tape secures them and minimizes cable movement. It is not as important to include any EMG/ECG channels in the bundle, since movement noise doesn't affect their signal as significantly.
+Make sure your electrode cables are steady. If you shake the electrodes that are dangling from your head or body, you'll notice that it severely affects the signals. This movement noise can be greatly improved with active electrodes. When using the passive electrodes that come with the OpenBCI electrode starter kit, you have to be very careful to remain steady while using the system to produce the best signal. As a quick fix, binding all of the electrode cables together with a piece of electrical tape secures them and minimizes cable movement. It is not as important to include any EMG/ECG channels in the bundle, since movement noise doesn't affect their signals as significantly.
 
 ![Stabilize Your Cables w/ Tape](../assets/GettingStartedImages/secureCables.JPG)
 
 #### Ensure that your electrodes are securely connected
 
-Ensure that your electrodes are connected securely (especially your reference)!
+Ensure that your electrodes are connected securely (especially your reference electrode)!
 
 #### Make sure your OpenBCI hardware is streaming data properly
 
@@ -40,9 +40,9 @@ Occasionally, an error will occur with the wireless communication between your O
 7. Press "SYSTEM STATUS" and you should see "SUCCESS - HOST AND DEVICE ON CHANNEL 20".
 8. Hit "START SESSION".
 
-#### General tips for reducing noise (Cyton and Ganglion boards):
+#### General Tips for Reducing Noise (Cyton and Ganglion boards):
 
-- Plug the dongle into a USB hub or USB extension cord, such this [model](https://a.co/d/dwsweYF). This limits radio interference caused by computers.
+- Plug the dongle into a USB hub or USB extension cord, such as this [model](https://a.co/d/dwsweYF). This limits radio interference caused by computers.
 - Toggle on the filters in the OpenBCI GUI
 - Use the feet that came with the board
 - Use a fully charged battery
@@ -53,13 +53,13 @@ Occasionally, an error will occur with the wireless communication between your O
 :::caution Additional Sources of Noise
 
 - AC power or extension cables on the floor
-- Conduits inside walls, floors or ceilings
-- Nearby wifi or cellular equipment
+- Conduits inside walls, floors, or ceilings
+- Nearby Wi-Fi or cellular equipment
 - Laptop and desktop computers that have certain 'ground loop' or AC noise characteristics
 - Metal desks or other large metal objects nearby
-- LED, CFL or fluorescent lighting
+- LED, CFL, or fluorescent lighting
   :::
 
-#### Further troubleshooting
+#### Further Troubleshooting
 
 If you are still having issues, refer to the [Forum](https://openbci.com/forum/) for further troubleshooting techniques.

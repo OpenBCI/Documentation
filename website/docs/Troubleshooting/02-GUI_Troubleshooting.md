@@ -17,37 +17,38 @@ title: GUI Troubleshooting
 ![gui troubleshooting console window](../assets/SoftwareImages/OpenBCISoftware/gui_troubleshooting_consoleLogWindow.png)<br />
 
 ## Cyton-GUI Manual Connection Steps
-1. check that the Dongle's switch is set to 'GPIO6'
-2. unplug and re-plug the Dongle. You should see the Dongle's red LED flicker, then a blue LED turn on
-3. set Cyton board power switch to 'PC'. Do not at any point, press Cyton board's RST buttons
-4. in the GUI window, select CYTON (live)
-5. under 'PICK TRANSFER PROTOCOL', select Serial (from Dongle)
-6. under 'SERIAL CONNECT', select 'Manual' , NOT 'Auto'
-7. click on the Serial port number so that the number is highlighted green
-8. under 'Radio Configuration', select 'SYSTEM STATUS'
-9. you should see 'Success! Channel 20'
-10. hit ‘Start Session’
+
+1. Check that the Dongle's switch is set to 'GPIO6'.
+2. Unplug and re-plug the Dongle. You should see the Dongle's red LED flicker, then a blue LED turn on.
+3. Set the Cyton board power switch to 'PC'. Do not, at any point, press the Cyton board's RST buttons.
+4. In the GUI window, select CYTON (live).
+5. Under 'PICK TRANSFER PROTOCOL', select Serial (from Dongle).
+6. Under 'SERIAL CONNECT', select 'Manual', NOT 'Auto'.
+7. Click on the Serial port number so that the number is highlighted green.
+8. Under 'Radio Configuration', select 'SYSTEM STATUS'.
+9. You should see 'Success! Channel 20'.
+10. Hit ‘Start Session’.
 
 ## Issues Connecting & Starting Session
 
-1.  If you receive an error in red at the bottom of the GUI while trying to connect to an OpenBCI board, try turning the board Off and back On.
-2.  Also, unplug and plug the USB dongle for Cyton or BLED112 for Ganglion.
+1.  If you receive an error in red at the bottom of the GUI while trying to connect to an OpenBCI board, try turning the board off and back on.
+2.  Also, unplug and plug in the USB dongle for Cyton or BLED112 for Ganglion.
 3.  Try to start a session again.
     - Cyton: If you still can't connect, try pressing the "AUTOSCAN" button again, or selecting channel 20 within the "OVERRIDE DONGLE" dropdown.
     - Ganglion: The Ganglion board usually has fewer issues. If you can't get the Ganglion to connect to the GUI after trying the previous steps, you can email us at [support@openbci.com](mailto:support@openbci.com) or check [GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues).
 4.  If your Cyton firmware is older than v3.0.0, you will need to [update the firmware as outlined here](Cyton/05-Cyton_Board_Programming_Tutorial.md#overview). The latest Cyton firmware as of 2019 is v3.1.2.
 5.  If nothing in the Docs, GitHub, or Forums are helpful, it's a good idea to email [support@openbci.com](mailto:support@openbci.com) or make a [new issue on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
 
-## Cyton Board _RAILED_ error in GUI Time Series
+## Cyton Board _RAILED_ Error in GUI Time Series
 
-To fix 100% 'RAIL' error, select a smaller gain on Cyton channels. Access the gain settings through Hardware Settings, in the OpenBCI GUI software:
+To fix a 100% 'RAIL' error, select a smaller gain on Cyton channels. Access the gain settings through Hardware Settings in the OpenBCI GUI software:
 
 1. Open the GUI and hit ‘Start Session’
 2. Before streaming data, open Hardware settings
-3. set Gain to 8x, 12x, or 16x, then hit ‘send’
+3. Set Gain to 8x, 12x, or 16x, then hit ‘Send’.
 
-By default, it's set to 24. Select a lower gain that suits your use and you can see better data from the Time Series and FFT widgets.
-The default gain 24x may be too high for most. The optimal gain will vary depending on the individual user’s skin impedance.
+By default, it's set to 24. Select a lower gain that suits your use, and you can see better data from the Time Series and FFT widgets.
+The default gain of 24x may be too high for most. The optimal gain will vary depending on the individual user’s skin impedance.
 
 ## Something Doesn't Look Right...
 
@@ -61,16 +62,16 @@ The default gain 24x may be too high for most. The optimal gain will vary depend
 
 ## Data on all channels without electrodes connected
 
-When electrodes/ground/reference electrodes are not attached to the Ganglion, Cyton, or CytonDaisy board, the device essentially acts as an un-tuned radio, picking up any/all background electromagnetic frequency (EMF).
+When electrodes, ground, or reference electrodes are not attached to the Ganglion, Cyton, or CytonDaisy board, the device essentially acts as an untuned radio, picking up any and all background electromagnetic frequency (EMF).
 
-Turn off un-used channels by toggling the channel number icon in the GUI Time Series widget (to the left of each channel). Un-connected pins should be toggled off so that they don't influence the BIAS pin (noise-cancelling pin) of the Cyton/CytonDaisy board or the REF pin of the Ganglion board.
-For noise when electrodes ARE connected, see [Noise Reduction Guide](../Troubleshooting/01-MinimizingNoise.md).
+Turn off unused channels by toggling the channel number icon in the GUI Time Series widget (to the left of each channel). Unconnected pins should be toggled off so that they don't influence the BIAS pin (noise-cancelling pin) of the Cyton/CytonDaisy board or the REF pin of the Ganglion board.
+For noise when electrodes ARE connected, see the [Noise Reduction Guide](../Troubleshooting/01-MinimizingNoise.md).
 
 ## Troubleshooting Packet Loss
 
 ### Cyton
 
-Please, be advised that packet loss can occur in noisy environments, especially in university lab environments with multiple Cytons running. If you think you are experiencing packet loss, you can open the [Console Log Window](#the-gui-console-log) to confirm or deny packet loss and assess severity. Also, boards with low battery power may show packet loss and excessive noise.
+Please be advised that packet loss can occur in noisy environments, especially in university lab environments with multiple Cytons running. If you think you are experiencing packet loss, you can open the [Console Log Window](#the-gui-console-log) to confirm or deny packet loss and assess severity. Also, boards with low battery power may show packet loss and excessive noise.
 
 To fix this:
 
@@ -88,4 +89,4 @@ Ganglion connections using the [BLED 112 Dongle](https://shop.openbci.com/collec
 
 ## Further troubleshooting
 
-If you're still having problems, search through the [OpenBCI Technical Forum](https://openbci.com/forum), [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues) or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
+If you're still having problems, search through the [OpenBCI Technical Forum](https://openbci.com/forum), [issues on GitHub](https://github.com/OpenBCI/OpenBCI_GUI/issues), or [make a new issue](https://github.com/OpenBCI/OpenBCI_GUI/issues/new/choose).
