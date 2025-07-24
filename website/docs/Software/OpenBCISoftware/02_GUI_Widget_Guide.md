@@ -250,6 +250,11 @@ Example data in the Band Power Widget:
 
 ![Band Power Widget.](../../assets/SoftwareImages/OpenBCISoftware/bandpower_widget.png)
 
+:::note
+Changing the settings for `Smooth` or `Filters?` in one of `FFT Plot` or `Band Power` will affect these settings for both widgets.
+:::
+![Smooth and Filters?.](../../assets/SoftwareImages/OpenBCISoftware/Smooth_Filters_FFT_Bandpower.png)
+
 ## EMG
 
 In a nutshell, we are trying to map the current flex of a muscle into the “comfortable flex range” of said muscle, and then represent that as a decimal between 0 and 1. In theory, if you relax, the value will be 0, and if you flex, the value will go to 1.
