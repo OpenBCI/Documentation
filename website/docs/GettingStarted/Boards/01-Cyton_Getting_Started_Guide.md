@@ -12,20 +12,20 @@ This guide will walk you through setting up your computer to use the Cyton and U
 1.  OpenBCI Cyton Board
 2.  OpenBCI Dongle
 3.  Electrodes and cables, such as OpenBCI Gold Cup Electrodes and Ten20 Paste
-4.  Lithium battery and charger OR 6V battery pack (AA batteries not included)
+4.  Lithium battery and charger
 5.  Optional: (x4) plastic feet for board stabilization. Not needed if you have a board case
 
 ### 1. Your Board
 
 <img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/8.jpg" width="70%" />
 
-This tutorial can be followed if you are working with any Cyton board (8-bit, Cyton, or Cyton with Daisy). I'll be working with the 8-bit board.
+This tutorial can be followed if you are working with any Cyton board Cyton+Daisy board
 
 ### 2. Your OpenBCI USB Dongle
 
 <img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/dongle.png" width="70%" />
 
-The OpenBCI USB Dongle has an integrated RFDuino that communicates with the RFDuino on the Cyton board. The dongle establishes a serial connection with your computer's on-board FTDI chip. The serial port is called /dev/tty\* (if you're using Linux or Mac) or COM\* (if you're using Windows). You'll be connecting to this serial port from the OpenBCI GUI or whatever other software you want to end up using to interface your Cyton board.
+The OpenBCI USB Dongle has an RFDuino that communicates with the RFDuino on the Cyton board. The dongle establishes a serial connection with your computer's on-board FTDI chip. The serial port is called /dev/tty\* (if you're using Linux or Mac) or COM\* (if you're using Windows). You'll be connecting to this serial port from the OpenBCI GUI or whatever other software you want to end up using to interface your Cyton board.
 
 ### 3. OpenBCI Gold Cup Electrodes and Electrode Paste
 
@@ -44,15 +44,11 @@ It will convert any electrode that terminates in the industry-standard touch-pro
 
 For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
 
-### 4. Your Lithium Polymer Battery and USB Charger (or 6V Battery Pack & 4 AA Batteries, pre-2023)
+### 4. Your Lithium Polymer Battery and USB Charger
 
-Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green.
+Fully charge the Lithium Polymer (LiPo) Battery, until the charger's indicator LED turns green.
 
 ![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery_and_charger.png)
-
-Pre-2023:
-
-<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/batteryConnection.png" width="70%" />
 
 Cyton boards have specific input voltage ranges. These input voltage ranges can be found on the back-side of the board, next to the power supply. **BE VERY CAREFUL** to not supply your board with voltages above these ranges, or else you will damage your board's power supply. For this reason, we recommend that you always use the battery pack that came with your OpenBCI kit.
 
