@@ -370,7 +370,7 @@ Markers that you add through any method (UI buttons, keyboard shortcuts, or UDP)
 
 1. **Displayed in real-time** on the Marker Widget as vertical lines scaled to their marker values.
 
-2. **Saved in the recording files** when you record data in the GUI. You will find a dedicated "Marker Channel" column in both the **GUI CSV file** and **BrainFlow CSV file**. As a reminder these files are, by default, stored in `[USER]/Documents/OpenBCI_GUI/Recordings` on all operating systems.
+2. **Saved in the recording files** when you record data in the GUI. You will find a dedicated "Marker Channel" column in both the **GUI CSV file** (`OpenBCI-RAW-yyyy-MM-dd-hh-mm-ss.txt`) and **BrainFlow CSV file**. As a reminder these files are, by default, stored in `[USER]/Documents/OpenBCI_GUI/Recordings` on all operating systems.
 
 ## Cyton Signal Widget
 
@@ -416,7 +416,7 @@ In the picture below, you will see an example of some acceptable impedance value
 
 ## Playback Widget
 
-This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (.txt or .csv). Selecting other types of files may cause an error.
+This Widget only appears when in playback mode. It allows you to select a different playback without having to “Stop System”. There is a button in the top right of the Widget that allows you to select any OpenBCI playback file (`.txt`). Selecting other types of files may cause an error.
 
 ## Pulse Widget
 
