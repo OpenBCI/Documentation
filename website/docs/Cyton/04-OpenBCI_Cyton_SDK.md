@@ -3,36 +3,19 @@ id: CytonSDK
 title: Cyton Board SDK
 ---
 
-The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This document covers command usage for the OpenBCI Cyton and 8-bit boards. Some of the commands are board-specific, where noted. Further, this document covers the commands needed to alter the radio system. There have been several iterations of the firmware: the 8-bit board runs `v0`, the Cyton runs `v1`, and boards shipped as of Fall 2016 run `v2.0.0`. `v3.0.0` began shipping with boards in August of 2017.
+The OpenBCI Cyton boards communicate using a byte string (mostly ASCII) command protocol. This document covers command usage for the OpenBCI Cyton boards. Some of the commands are board-specific, where noted. Further, this document covers the commands needed to alter the radio system. There have been several iterations of the firmware: the 8-bit board runs `v0`, the Cyton runs `v1`, and boards shipped as of Fall 2016 run `v2.0.0`. `v3.0.0` began shipping with boards in August of 2017.
+
+:::info
+
+The Cyton 8-bit boards have been deprecated and so has `v0` and `v1` of the Cyton firmware. It is recommended to use the `v3.0.0` or later of the Cyton firmware. To update your Cyton firmware, follow the steps [here](../Cyton/05-Cyton_Board_Programming_Tutorial.md)
+
+:::
 
 ## Cyton Command Protocol Overview
 
 Cyton boards have two powerful microcontrollers onboard and come pre-programmed with firmware. The RFduino radio link uses the Nordic Gazelle stack and library. The board-mounted RFduino is configured as a DEVICE. The microcontroller (PIC32MX250F128B or ATmega328P) has been programmed with firmware that interfaces between the ADS1299 (Analog Front End), LIS3DH (Accelerometer), micro SD (if installed), and RFduino (Radio module). The user or application controls the board by sending commands over a wireless serial connection. You should have received a Dongle with the OpenBCI board. The Dongle has an RFduino running the Gazelle library configured as a HOST and interfaces with your computer through a Virtual Com Port (FTDI).
 
-On startup, the OpenBCI 8bit board (`v0`) sends the following text over the radio:
-
-```
-
-OpenBCI V3 8bit Board
-Setting ADS1299 Channel Values
-ADS1299 Device ID: 0x3E
-LIS3DH Device ID: 0x33
-$$$
-
-```
-
-the OpenBCI Cyton board with firmware `v1` sends the following text over the radio:
-
-```
-
-OpenBCI V3 16 channel
-ADS1299 Device ID: 0x3E
-LIS3DH Device ID: 0x33
-$$$
-
-```
-
-the OpenBCI Cyton board with firmware `v2.0.0` sends the following text over the radio:
+On startup, the OpenBCI Cyton board with firmware `v2.0.0` and later sends the following text over the radio:
 
 ```
 
@@ -46,9 +29,15 @@ $$$
 
 Device ID info is useful for general board health confirmation. The $$$ is a clear indication to the controlling application that the message is complete and the Cyton board is ready to receive commands. As of `v2.0.0`, there is an additional printout to indicate the exact firmware version.
 
-Pay attention to timing when sending commands using `v0` and `v1` firmware. There must be some delay before and after sending a command character from the PC (controlling program or user running a terminal). As of `v2.0.0`, this is no longer the case—send as fast as you can!
-
 ## Command Set
+
+To send a command to the Cyton board through the dongle wirelessly, you can use the Hardware Settings panel. But, you must turn on the Expert Mode in the OpenBCI GUI. To do this, connect to the Cyton board and then click on the Settings -> Turn Expert Mode On button as shown below.
+
+![Turn on Expert Mode](../assets/CytonImages/TurnOnExpertModeSDK.png)
+
+In the Hardware Settings panel, the Custom Commands box can be used to send SDK commands to the board. If successful, you will see a GUI message that the command was sent successfully. 
+
+![Send commands with Custom Commands Box](../assets/CytonImages/CustomCommandsBox.png)
 
 ### Turn Channels OFF
 
@@ -70,16 +59,37 @@ These ASCII characters turn the respective channels [1-8] on. The channel will r
 
 **0 - = p [ ]**
 
-Turn **all** available channels on and connect them to the internal test signal. These are useful for self-test and calibration. For example, you can measure the internal noise by sending **0**, which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
+These commands are useful for self-test and calibration. If you feel like your Cyton or Daisy boards are malfunctiorning, these commands are a great way to make sure the ADS1299 is not damaged. For example, you can measure the internal noise by sending **0**, which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
 
-- **0** Connect to internal GND (VDD - VSS)
-- **-** Connect to test signal 1xAmplitude, slow pulse
-- **=** Connect to test signal 1xAmplitude, fast pulse
-- **p** Connect to DC signal
-- **\[** Connect to test signal 2xAmplitude, slow pulse
-- **]** Connect to test signal 2xAmplitude, fast pulse
+- `0` Connect to internal GND (VDD - VSS)
 
-  **Note: Not all possible internal test connections are implemented here.**
+  When connected to Internal GND, the ADS1299 inputs are essentially shorted and measuring the internal or system noise. A normal working board will report 0.01% railed and 0.09-0.14 uVrms.
+  ![Connect to Internal GND](../assets/CytonImages/ConnectToInternalGND.gif)
+
+- `-` Connect to test signal 1xAmplitude, slow pulse
+
+  A working Cyton or Daisy board will output square waves that are between 1855 - 1865 uVrms and 1.01% railed as shown below. To view the square waves properly, you will have to turn off all filters and set the scale to "Auto". 
+  ![Slow Pulse, Square Wave, 1x Amplitude](../assets/CytonImages/TestSignal1xAmplitude.gif)
+
+- `=` Connect to test signal 1xAmplitude, fast pulse
+
+  A working Cyton or Daisy board will output square waves that are between 1855 - 1865 uVrms and 1.01% railed as shown below. To view the square waves properly, you will have to turn off all filters and set the scale to "Auto". 
+  ![Fast Pulse, Square Wave, 1x Amplitude](../assets/CytonImages/TestSignal1xAmplitudeFastPulse.gif)
+
+- `p` Connect to DC signal
+
+  When connected to DC signal, the ADS1299 inputs are essentially measuring the DC Bias. A normal working board will report 2.01% railed and 0.13-0.16 uVrms.
+  ![Connect To DC Signal](../assets/CytonImages/ConnectToDCSignal.gif)
+
+- `[` Connect to test signal 2xAmplitude, slow pulse
+
+  A working Cyton or Daisy board will output square waves that are between 3680 - 3715 uVrms and 2.01% railed as shown below. To view the square waves properly, you will have to turn off all filters and set the scale to "Auto". 
+  ![Connect To DC Signal](../assets/CytonImages/TestSignalSlowPulse2xAmplitude.gif)
+
+- `]` Connect to test signal 2xAmplitude, fast pulse
+
+  A working Cyton or Daisy board will output square waves that are between 3680 - 3715 uVrms and 2.01% railed as shown below. To view the square waves properly, you will have to turn off all filters and set the scale to "Auto".
+  ![Connect To DC Signal](../assets/CytonImages/TestSignal2xAmplitudeFastPulse.gif)
 
 **returns** If not streaming, returns `Success: Configured internal test signal.$$$`; if streaming, there is no confirmation.
 
