@@ -25,6 +25,8 @@ Customers are responsible for return shipping costs. Returns requested more than
 
 We do **not** accept returns for the following items if they have been opened or used:
 
+- EEG Electrode Cap
+- Gelfree BCI Electrode Cap
 - Ten20 Conductive Paste
 - Electrode Cap Gel
 - Gold Cup Electrodes
@@ -33,7 +35,7 @@ We do **not** accept returns for the following items if they have been opened or
 - Kendall EMG/ECG Foam Solid Gel Electrodes
 - Hydro-link Replacements
 
-These items may only be returned if they are unused and in their original **sealed** packaging.
+These items may only be returned if they are unused and in their original **sealed** packaging. Opened or used soft caps are not eligible for a return/refund due to hygiene reasons.
 
 Additionally, returned OpenBCI boards that have been opened, tested, or used are subject to a 15% restocking and retesting fee, regardless of the return date.
 
