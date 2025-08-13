@@ -13,7 +13,7 @@ If you're curious about how we do it, keep reading! If you want to start streami
 
 ## Overview
 
-The OpenBCI Cyton boards come with a USB dongle that allows for communication between the board and your computer. There is an [RFD22301](https://docs.rs-online.com/32f2/0900766b8138299e.pdf) BLE radio modulE on the dongle and board that enables the communication. Here are some terms that are important to note:
+The OpenBCI Cyton boards come with a USB dongle that allows for communication between the board and your computer. There is an [RFD22301](https://docs.rs-online.com/32f2/0900766b8138299e.pdf) BLE radio module on the dongle and board that enables the communication. Here are some terms that are important to note:
 
 - The radio module on the dongle is called the **HOST**
 - The radio module on the Cyton board is called the **DEVICE**
