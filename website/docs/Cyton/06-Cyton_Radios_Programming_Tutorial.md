@@ -13,12 +13,11 @@ If you're curious about how we do it, keep reading! If you want to start streami
 
 ## Overview
 
-The OpenBCI Cyton boards come with a USB dongle that allows for communication between the board and your computer. There is a BLE radio module (actually an [RFduino 22301](http://www.rfduino.com/product/rfd22301-rfduino-ble-smt/index.html)) on the dongle and board that enables the communication. Here are some terms that are important to note:
+The OpenBCI Cyton boards come with a USB dongle that allows for communication between the board and your computer. There is an [RFD22301](https://docs.rs-online.com/32f2/0900766b8138299e.pdf) BLE radio module on the dongle and board that enables the communication. Here are some terms that are important to note:
 
 - The radio module on the dongle is called the **HOST**
 - The radio module on the Cyton board is called the **DEVICE**
 - Host-Device pairs can be programmed to transmit on up to **25** discrete channels
-- There are _important_ differences in the firmware for 8-bit and 32-bit systems
 
 This page covers how the radio link works and how to upload new firmware to the dongle radio and the board radio.
 
@@ -27,17 +26,13 @@ This page covers how the radio link works and how to upload new firmware to the 
 **You will need:**
 
 - Computer (Windows or Mac or Other)
-- Arduino IDE Version 1.5.8 BETA
+- Arduino IDE v1.8.19
 - Custom [RFduino libraries for OpenBCI](https://github.com/OpenBCI/OpenBCI_RFduino/archive/master.zip)
 - A 0.1uF capacitor (see Device section below)
 
 **Steps:**
 
-1.  Download and install the [Arduino IDE Version 1.5.8 BETA](http://www.arduino.cc/en/Main/OldSoftwareReleases#1.5.x).
-
-    On Windows be sure to download the file marked `Windows Installer`.
-
-    On Mac, download the `MAC OS X` version, unzip the app, move it into the Applications folder, and then install Java 6 if prompted.
+1.  Download and install the [Arduino IDE v1.8.19](https://www.arduino.cc/en/software/).
 
 2.  Download the [OpenBCI_RFduino](https://github.com/OpenBCI/OpenBCI_RFduino/archive/master.zip) repo from our GitHub.
 
@@ -50,6 +45,8 @@ This page covers how the radio link works and how to upload new firmware to the 
     On a Windows `C:\Program Files (x86)\Arduino-1.5.8\hardware\arduino`
 
     On Linux, put the RFduino folder and everything it contains in `arduino-1.5.8/hardware/arduino`
+
+5. If you haven't already, then [install the ChipKit Core](../Cyton/05-Cyton_Board_Programming_Tutorial.md#install-chipkit-core-firmware) as well
 
 **NOTE FOR LINUX USERS**  
 Linux users will need to have the program [wine](https://www.winehq.org/) installed in order to continue. There is a dependency for the Arduino code that requires running `RFDLoader.exe`.
