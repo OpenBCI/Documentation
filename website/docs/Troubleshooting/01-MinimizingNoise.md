@@ -44,9 +44,7 @@ Occasionally, an error will occur with the wireless communication between your O
 
 - Plug the dongle into a USB hub or USB extension cord, such as this [model](https://a.co/d/dwsweYF). This limits radio interference caused by computers.
 - Toggle on the filters in the OpenBCI GUI
-- Use the feet that came with the board
 - Use a fully charged battery
-- Turn off bluetooth devices in the room
 - Sit slightly away from the computer
 - Use the FTDI fix for [Windows](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Windows/) or [Mac](https://docs.openbci.com/Troubleshooting/FTDI_Fix_Mac/)
 
@@ -63,3 +61,4 @@ Occasionally, an error will occur with the wireless communication between your O
 #### Further Troubleshooting
 
 If you are still having issues, refer to the [Forum](https://openbci.com/forum/) for further troubleshooting techniques.
+
