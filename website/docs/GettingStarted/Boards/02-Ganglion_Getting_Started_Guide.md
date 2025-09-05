@@ -15,7 +15,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 1.  OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
 2.  An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
 3.  Lithium battery and USB charger OR 6V battery pack (AA batteries not included)
-4.  (x4) plastic feet for board stabilization
+4.  Board Case
 5.  EEG electrodes: OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) 
 6.  or EMG electrodes: [Snap Electrode Cables](http://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958) and [Snap Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack).
 7.  A computer connected to the internet
@@ -52,14 +52,10 @@ Blinking means that the BLE radio is not connected or paired with any computer o
 **Important note**
 If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
 
-### 4. Clear Board Case or (x4) Plastic Feet
+### 4. Clear Board Case
 
 ![board case and lithium battery](../../assets/GettingStartedImages/board_case_with_lithium_battery.png)
 
-If you do not have a board case, your Cyton kit comes with 4 plastic feet that can be snapped into the holes of your board to provide extra stability while working.
-The case and plastic feet cannot be used at the same time.
-
-![Plastic Feet](../../assets/GettingStartedImages/ganglion_wPlasticFeet.png)
 
 ### 5. Gold Cup Electrodes and Paste
 
