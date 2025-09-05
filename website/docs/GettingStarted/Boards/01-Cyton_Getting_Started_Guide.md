@@ -13,7 +13,7 @@ This guide will walk you through setting up your computer to use the Cyton and U
 2.  OpenBCI Dongle
 3.  Electrodes and cables, such as OpenBCI Gold Cup Electrodes and Ten20 Paste
 4.  Lithium battery and charger OR 6V battery pack (AA batteries not included)
-5.  Optional: (x4) plastic feet for board stabilization. Not needed if you have a board case
+5.  Board Case
 
 ### 1. Your Board
 
@@ -59,16 +59,11 @@ Cyton boards have specific input voltage ranges. These input voltage ranges can 
 **Important note**
 If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
 
-### 5. Clear Board Case and (x4) Plastic Feet
+### 5. Clear Board Case
 
 Recommended: use the clear case that comes with your board.
 
 ![board case and lithium battery](../../assets/GettingStartedImages/board_case_with_lithium_battery.png)
-
-If you do not have a board case, your Cyton kit comes with 4 plastic feet that can be snapped into the holes of your board to provide extra stability while working.
-The case and plastic feet cannot be used at the same time.
-
-<img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/8bitboard_wPlasticFeet.png" width="70%" />
 
 ## II. Download/Install/Run the OpenBCI GUI
 
