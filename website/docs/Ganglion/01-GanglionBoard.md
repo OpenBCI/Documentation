@@ -7,7 +7,7 @@ title: Ganglion Board
 
 This set of tutorials will show you everything you need to know about the OpenBCI 4-channel Ganglion Biosensing Board.
 
-<img src="https://i.ibb.co/x5PpvCc/Screen-Shot-2019-07-23-at-1-30-32-PM.png" border={0} width="50%" /><br />
+![Ganglion Board powered ON](../assets/GanglionImages/Ganglion_Front_LED_1024.png)<br />
 
 #### Included will be:
 
