@@ -40,4 +40,6 @@ If shipping to European countries, please expect the **total** import cost to be
 The import cost will be calculated by your customs office at the time of delivery and passed on to you.
 Due to the nature of international trade, OpenBCI has no control over these charges and can give only a rough estimate from historical purchase data. Because of varied customs policies, we are unable to provide exact predictions. Please contact your local customs office if you need exact import cost information.
 
+Please note: duties, tariffs, and/or VAT fees may be NON-REFUNDABLE in case of a returned or lost order/shipment. OpenBCI cannot refund these costs. Customers must inquire with the customs office or shipment carrier about the possibility of a VAT refund in case of returned or failed shipment. For return eligibity for OpenBCI orders, please review our return policy [here](https://docs.openbci.com/FAQ/Returns/). 
+
 _For international customers, if you are purchasing on behalf of an academic or tax-exempt organization, your purchase may be exempt from some import costs. Please verify with the purchasing department of your organization before placing the order._
