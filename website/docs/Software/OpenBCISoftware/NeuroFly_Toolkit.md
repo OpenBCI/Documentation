@@ -3,7 +3,7 @@ id: NeuroFly_Toolkit
 title: NeuroFly Toolkit
 ---
 
-This tutorial will show you how to control a joystick using EMG data with the OpenBCI GUI. You can then use this customizable, muscle-activated joystick for any purpose of your choosing! OpenBCI used this to control a drone in the 2023 OpenBCI TED Talk.
+This tutorial will show you how to control a joystick using EMG data with the OpenBCI GUI. You can then use this customizable, muscle-activated joystick for any purpose of your choosing! OpenBCI used this to control a drone in the [2023 OpenBCI TED Talk](https://www.ted.com/talks/conor_russomanno_a_powerful_new_neurotech_tool_for_augmenting_your_mind).
 
 ## Materials Required
 
