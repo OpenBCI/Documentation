@@ -59,7 +59,7 @@ These ASCII characters turn the respective channels [1-8] on. The channel will r
 
 **0 - = p [ ]**
 
-These commands are useful for self-test and calibration. If you feel like your Cyton or Daisy boards are malfunctiorning, these commands are a great way to make sure the ADS1299 is not damaged. For example, you can measure the internal noise by sending **0**, which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
+These commands are useful for self-test and calibration. If you feel like your Cyton or Daisy boards are malfunctioning, these commands are a great way to make sure the ADS1299 is not damaged. For example, you can measure the internal noise by sending **0**, which connects all inputs to an internal GND. If streaming, the stream will be stopped, the proper registers set on the ADS1299, and the stream will be resumed.
 
 - `0` Connect to internal GND (VDD - VSS)
 
