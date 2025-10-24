@@ -9,13 +9,13 @@ _Development Period: January 2016 Through the Present_
 
 #### Complete Ultracortex Mark 4 kits are [available for sale](http://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) in the OpenBCI Online Store!
 
-The Ultracortex is an open-source, 3D-printable headset designed to work with the [OpenBCI system](http://openbci.com/). It is a tool for recording research-grade brain activity (EEG). The Ultracortex is under constant iteration.
+The Ultracortex is an open-source, 3D-printable headset designed to work with OpenBCI Biosensing Boards. It is a tool for recording research-grade brain activity (EEG). The Ultracortex is under constant iteration.
 
 [Step-by-step Assembly Tutorial Video](https://youtu.be/S87FV-Q59F8)
 
 Designers & Engineers:
 
-- [Tangible Creative NYC)](https://tangiblecreative.com/)
+- [Tangible Creative NYC](https://tangiblecreative.com/)
 - [Aaron Trocola (aka Threeform)](http://threeformfashion.com/)
 - [Conor Russomanno](https://www.linkedin.com/in/conorrussomanno/)
 - [Joel Murphy (aka SafeForRobots)](https://twitter.com/safeforrobots)
@@ -29,7 +29,7 @@ For those who want to modify the headset design and need CAD files, go to the [U
 _IMPORTANT_ - **PLEASE NOTE before adjusting/twisting the blue electrode mounts, you must disconnect them from their colored cable.
 Before turning the blue electrode mount in the Ultracortex printed frame, it is NECESSARY to ensure that the white cable end of the electrode mount is free, i.e. not connected to anything. Otherwise, a broken wire is almost guaranteed after repeated turn adjustments. This is not covered by warranty.**
 
-### 3D-printed Parts:
+### 3D-printed Parts
 
 The following parts are included in the Unassembled version of the Mark IV:
 
