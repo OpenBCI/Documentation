@@ -9,15 +9,15 @@ _Development Period: January 2016 Through the Present_
 
 #### Complete Ultracortex Mark 4 kits are [available for sale](http://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) in the OpenBCI Online Store!
 
-The Ultracortex is an open-source, 3D-printable headset designed to work with the [OpenBCI system](http://openbci.com/). It is a tool for recording research-grade brain activity (EEG). The Ultracortex is under constant iteration. If you print/assemble your own Ultracortex, we would love to hear your feedback. Send us an email at [contact@openbci.com](mailto:contact@openbci.com) or Tweet at us ([@Ultracortex](https://twitter.com/Ultracortex) & [@OpenBCI](https://twitter.com/OpenBCI))!
+The Ultracortex is an open-source, 3D-printable headset designed to work with the [OpenBCI system](http://openbci.com/). It is a tool for recording research-grade brain activity (EEG). The Ultracortex is under constant iteration.
 
 [Step-by-step Assembly Tutorial Video](https://youtu.be/S87FV-Q59F8)
 
 Designers & Engineers:
 
-- [Aaron Lehr (aka Tangible NYC)](https://www.hubs.com/3d-printing/new-york/manhattan/)
+- [Tangible Creative NYC)](https://tangiblecreative.com/)
 - [Aaron Trocola (aka Threeform)](http://threeformfashion.com/)
-- [Conor Russomanno](https://twitter.com/russomanno15)
+- [Conor Russomanno](https://www.linkedin.com/in/conorrussomanno/)
 - [Joel Murphy (aka SafeForRobots)](https://twitter.com/safeforrobots)
 
 For those who want to modify the headset design and need CAD files, go to the [Ultracortex Mark IV Dev Kit](https://github.com/OpenBCI/Ultracortex/tree/master/Mark_IV/DevKit).
@@ -85,7 +85,7 @@ The following parts are not included with the purchase of any configuration of t
 
 #### (1x) FRAME
 
-The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer like [Prusa i3](https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html) with a build area of 250 mm by 250 mm. The absolute minimum build area needed to print the frame in halves is 130 mm by 210 mm square.
+The Ultracortex Mark IV frame is designed to be printed one half at a time (front and back halves), with the flat side on the 3-D printer's build plate. [Prusa](https://www.prusa3d.com/) and [Lulzbot](https://www.lulzbot.com/) make 3-D printers that are suitable for printing the Mark IV frame in halves or quarters. Because printing requires margin for support material, we recommend a printer with a build area of 250 mm by 250 mm. The absolute minimum build area needed to print the frame in halves is 130 mm by 210 mm square.
 
 - FRAME (head circumference: small = 42-50cm, medium = 48-58cm, large = 58-65cm)
   - FRAME_FRONT (**x1**) — .STLs ([small](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Small_Front.stl) / [medium](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Medium_Front.stl) / [large](https://github.com/openbci-archive/Docs/raw/master/assets/MarkIV/STL_Directory/M4_Large_Front.stl) )
@@ -476,7 +476,7 @@ Put the Ultracortex Mark IV onto your head and gradually tighten the electrode u
 
 ### Examine your brain waves!
 
-Place your UltraCortex on your head so that the back center node is roughly the same distance above your inion (bump on the back of your skull) as the front center node is above the bridge of your nose. As you place the UltraCortex on your head, the springs should adjust to the shape and size of your head.
+Place your Ultracortex on your head so that the back center node is roughly the same distance above your inion (bump on the back of your skull) as the front center node is above the bridge of your nose. As you place the Ultracortex on your head, the springs should adjust to the shape and size of your head.
 
 Now that you have your Ultracortex assembled and comfortably adjusted to your head size and shape, it's brain wave time!
 
