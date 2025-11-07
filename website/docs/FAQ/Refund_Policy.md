@@ -47,6 +47,12 @@ If your item arrives damaged or defective, please notify us at [support@openbci.
 
 ---
 
+### Discount Policy
+
+Discounts must be applied before checkout. OpenBCI cannot add a code after an order is placed or paid for. Return requests submitted for the purpose of reordering with a discount will be declined. 
+
+---
+
 ### Policy Limitation
 
 This return policy applies only to purchases made directly through [shop.openbci.com](https://shop.openbci.com/collections/frontpage).
