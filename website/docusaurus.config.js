@@ -90,7 +90,7 @@ module.exports = {
     ],
     footer: {
       links: [],
-      copyright: "Copyright © 2025 OpenBCI",
+      copyright: "Copyright © 2026 OpenBCI",
       logo: {
         src: "img/open-bci-gear-blue.png",
       },
