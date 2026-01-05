@@ -20,8 +20,7 @@ The OpenBCI Cyton boards have powerful microcontrollers that ship with the lates
 These instructions apply to programming the Cyton with firmware versions 2.x.x, 3.x.x, and onwards! The radio firmware (the firmware for the dongle and the radio module on your Cyton Board) has not been updated since prior to Fall 2016, so as long as you purchased your Cyton Board after that date, you do not need to worry about reprogramming your radios.
 
 **You will need:**
-
-- Computer running [Arduino v1.8.0](https://www.arduino.cc/en/Main/Software) or later
+- Arduino IDE v1.8.19. You can find this in the legacy page of the [Arduino Downloads section](https://www.arduino.cc/en/software/). Do not use Arduino v2 or later. Only v1.8.19 works with this tutorial
 
 - OpenBCI Dongle connected to USB port
 
@@ -33,9 +32,7 @@ These instructions apply to programming the Cyton with firmware versions 2.x.x, 
 
 - OpenBCI WiFi Master Firmware (follow guide below to download)
 
-- Arduino IDE v1.8.19. You can find this in the legacy page of the [Arduino Downloads section](https://www.arduino.cc/en/software/)
-
-**Note for Windows users:** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in Control Panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list; select yes. Then install 1.8.0 as normal. Navigate back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.0`. Now drag and drop the `Arduino_1.5.8` folder back into the `Program Files` folder.
+**Note for Windows users:** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in Control Panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list; select yes. Then install `1.8.19` as normal. Navigate back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.19`. Now drag and drop the `Arduino_1.5.8` folder back into the `Program Files` folder.
 
 ### Install Firmware From Arduino Library Manager (easiest!)
 
@@ -109,21 +106,19 @@ If you followed the process in the previous link, you will be able to select the
 
 - In the Arduino IDE, go to `File > Examples > OpenBCI_32bit_Library > DefaultBoard` to launch the Cyton firmware. **NOTE: You must upload ONLY the `DefaultBoard` Sketch!**
 
-### Pre-upload Hardware Setting
+### Dongle Switch Selection
 
-- Make sure that the slide switch on the OpenBCI Dongle is switched to the GPIO6 selection. If it's on the other side, it will try to program the Dongle-mounted RFduino!
+- Make sure that the slide switch on the OpenBCI Dongle is switched to GPIO6. If it's on RESET, it will try to program the Dongle-mounted RFduino!
 
 ### Plug in Dongle and Select Serial Port
 
-Now is a good time to plug your Dongle in and power down the board.
-
-![serial_port](../assets/CytonImages/PortSelect.png)
-
-- Select the correct serial port for your OpenBCI Dongle.
-
-  - On Macs, this will be named **/dev/tty.usbserial-DN00nnnn**, where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
+Plug in the Dongle to your computer and select the Serial port as shown below.
+  
+  - On MacOS, this will be named **/dev/tty.usbserial-DN00nnnn**, where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
   - On Windows, the serial port will be listed as a numbered COM port.
   - On Linux, it will be different.
+
+  ![serial_port](../assets/CytonImages/PortSelect.png)
 
 ### Put Cyton in Bootloader Mode
 
@@ -136,16 +131,20 @@ Now is a good time to plug your Dongle in and power down the board.
 3.  Power ON the OpenBCI Board.
 4.  Release the RST button while still holding down the PROG button.
 5.  Release the PROG button.
+6.  Verify that you see the blue LED on the 32-bit board blinking pleasantly as shown below
 
-![Upload32](../assets/CytonImages/Upload32.png)
-
-- Verify that you see the blue LED on the 32-bit board blinking pleasantly.
+  ![Programming Mode](../assets/CytonImages/BlinkingBlueLED.gif)
 
 ### Upload the Firmware
 
 - Press the upload button on the Arduino IDE.
 
-That's it! You will see some blinky lights on the Dongle, and after a short while, the Arduino IDE will tell you that it's done. Happy hacking!
+![Upload32](../assets/CytonImages/Upload32.png)
+
+- The Arduino IDE will first compile your code and then upload the compiled hex file.
+
+- Once the upload is done and if successful, the Arduino IDE will display a success message as shown below,
+  ![Cyton Programming Success](../assets/CytonImages/CytonProgrammingSuccess.png)
 
 ## Troubleshooting
 
@@ -163,11 +162,9 @@ If the upload fails with `Program Flash Failed` it's due to the Arduino IDE not 
 
 - Keep the Board and Dongle physically close to each other during the upload.
 - Keep the Arduino IDE open, front and center and don't use any other programs during the upload.
-- Close all open programs such as (Google Chrome, MS Word, etc...) and only have the Arduino 1.6.5 IDE open during upload.
+- Close all open programs such as (Google Chrome, MS Word, etc...) and only have the Arduino IDE open during upload.
 - Restart your computer and don't open any other programs other than the Arduino IDE used for programming.
-- If all else fails, find a friend with a more powerful computer and do the uploading from their computer.
-
-In extreme conditions, if you have tried all five of the above methods and still can't upload, then you can try to change the Device's polling time. The Poll Time can be adjusted using the OpenBCI Radio Config Utility software.
+- If all else fails, try a different computer or Operating System.
 
 ## Notes On Updating and Using v2.0.0 Cyton Firmware
 
