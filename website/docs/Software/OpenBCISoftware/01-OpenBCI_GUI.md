@@ -288,7 +288,11 @@ The requirements for running the OpenBCI GUI in Processing are:
 
 ### Installing Processing 4
 
-First, go to Processing's website and [download the latest version of Processing](https://processing.org/download). For more information on Processing, you can review the official [Processing Getting Started Guide](https://processing.org/tutorials/gettingstarted) or the [Processing Documentation](https://processing.org/environment).
+First, go to GitHub and [download Processing v4.2](https://github.com/processing/processing4/releases/tag/processing-1292-4.2). For more information on Processing, you can review the official [Processing Getting Started Guide](https://processing.org/tutorials/gettingstarted) or the [Processing Documentation](https://processing.org/environment).
+
+:::info
+**The OpenBCI GUI is still built using [Processing v4.2](https://github.com/processing/processing4/releases/tag/processing-1292-4.2).** It has not been tested or developed using later versions as there are fundamental changes to backend methods starting in 4.3.
+:::
 
 Go ahead and install the Processing application as you normally would for your operating system. If this is the first time that you are running Processing, it will create what it calls it's `Sketch` folder in the following locations:
 
