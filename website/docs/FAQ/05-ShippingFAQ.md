@@ -12,7 +12,7 @@ title: Shipping & Taxes
 | ship method                                | delivery estimate |
 | :----------------------------------------- | :---------------- |
 | U.S. Domestic Ground (FedEx or UPS)        | 3-7 days          |
-| International Economy (FedEx, UPS, or DHL) | 7-14 days         |
+| International Economy (FedEx, UPS, or DHL) | 7-20 days         |
 | International Express                      | 2-5 days          |
 
 Most orders are shipped 1-2 business days after payment. **Please allow an ADDITIONAL 2-5 business days for international orders valued over $2,500 USD to ship out.**
