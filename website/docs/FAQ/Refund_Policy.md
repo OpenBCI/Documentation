@@ -5,11 +5,11 @@ title: RETURNS & REFUNDS
 
 ### Policy Eligibility Outlined:
 
-| Time of Request           | Eligibility                                                                                                                                                                                                                                                                             |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0-30 days after delivery  | - Full refund for unopened products returned to OpenBCI <br/> - 15% restocking fee deducted for headsets and opened OpenBCI board kits <br/> - Certain opened/used consumable products are **not** eligible for refund\* <br/> - Nonworking boards eligible for free repair/replacement |
-| 30-90 days after delivery | - All returns/exchanges are subject to a restocking fee of up to 20% <br/> - Nonworking boards eligible for free repair/replacement                                                                                                                                                     |
-| Beyond 90 days            | -OpenBCI orders are not eligible for return, refund, exchange, or replacement                                                                                                                                                                                                           |
+| Time of Request                  | Eligibility                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0-30 days after order is placed  | - Full refund (**minus** the 5% nonrefundable credit card payment fee, if applicable) for unopened products returned to OpenBCI <br/> - 15% restocking fee deducted for headsets and **opened** OpenBCI board kits <br/> - Certain opened/used consumable products are **not** eligible for refund\* <br/> - Nonworking boards eligible for free repair/replacement |
+| 30-90 days after order is placed | - All returns/exchanges are subject to a restocking fee of up to 20% <br/> - Nonworking boards eligible for free repair/replacement                                                                                                                                                                                                                                 |
+| Beyond 90 days                   | - OpenBCI orders are not eligible for return, refund, exchange, or replacement                                                                                                                                                                                                                                                                                       |
 
 ### How to Request a Return (for a Refund)
 
@@ -20,6 +20,8 @@ To qualify for a full refund, return requests must be submitted within 30 days o
 Please note that all returns are subject to inspection and must be in a resellable condition. Returns requested after 30 days may be subject to a restocking fee of up to 20%, depending on the condition of the returned items. This fee will be deducted from the total refund amount.
 
 Customers are responsible for return shipping costs. Returns requested more than 30 days after delivery are not guaranteed and will be evaluated on a case-by-case basis. Orders delivered more than 90 days ago are not eligible for return or refund.
+
+**PLEASE NOTE:** Our automated fulfillment system starts right after confirmation, so we can't always stop a shipment once it’s processed. If your order ships before we can cancel it, you're welcome to return the unopened items for a refund (minus a 5% nonrefundable payment fee). The shipping cost for the return is the customer's responsibility.
 
 #### Non-Returnable Items
 
