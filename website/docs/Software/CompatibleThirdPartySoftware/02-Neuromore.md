@@ -3,19 +3,20 @@ id: Neuromore
 title: Neuromore
 ---
 
-Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, it provides a visual designer that can be used to process signals in real time.
+Neuromore is an EEG streaming and processing studio. Like BrainBay and BioEra, it is a visual environment used to process signals in real time.
 
 ## Setting Up Your Environment
 
-**Windows**: Neuromore Studio is available for Windows (but only as a 64-bit application).
+**Windows**: Neuromore Studio is available for Windows 10 and 11.
 
-**OS X**: Neuromore Studio is available for MacOS, but see the [FTDI OS X fix](Troubleshooting/05-FTDI_Driver_Fix_Mac.md) before using it.
+**MacOS**: Neuromore Studio is available for MacOS, but see the [FTDI OS X fix](Troubleshooting/05-FTDI_Driver_Fix_Mac.md) before using it.
 
 **Linux**: If you have Linux, you can use Neuromore through a virtual machine program like VirtualBox. Check out our VirtualBox tutorial [here!](Software/CompatibleThirdPartySoftware/07-VirtualBox.md) See [FTDI Linux Fix](Troubleshooting/03-FTDI_Fix_Linux.md).
 
 ## Installation
 
 Download the latest version of Neuromore Studio for your operating system from their [website](http://neuromore.com/). After installation, the application will be in the folder `neuromore -> Studio`.
+To view software specifications of current _and_ older releases, head to the Neuromore Studio [Github repo](https://github.com/neuromore/studio/releases/).
 
 ## Getting Started
 
@@ -29,11 +30,11 @@ First, connect your OpenBCI board to your computer. Make sure to follow these st
 
 **Windows**: Make sure your board is recognized as a COM port and that its latency is set to 1 ms. For troubleshooting, read our [OpenBCI on Windows tutorial](Troubleshooting/04-FTDI_Fix_Windows.md).
 
-**OS X**: Make sure your board is connected and visible as a device. To check, you can type `ls /dev/tty.*` in your terminal. An example of a connected OpenBCI board should look like this:
+**MacOS**: Make sure your board is connected and visible as a device. To check, you can type `ls /dev/tty.*` in your terminal. An example of a connected OpenBCI board should look like this:
 
 ```
 
-Rodrigos-MacBook-Pro:~ rodrigo$ ls /dev/tty.*
+YourName-MacBook-Pro:~ YourName$ ls /dev/tty.*
 		/dev/tty.OpenBCI-DN00959R
 
 ```
@@ -44,14 +45,13 @@ Now, to connect to your OpenBCI board from within Neuromore, click the magnifyin
 
 #### Troubleshooting
 
-Neuromore is pretty awesome in terms of board connectivity. If you open up the studio and connect your board, 9 out of 10 times it'll automatically connect.
+If your OBCI Board doesn't show up in Neuromore Studio, try the following steps:
 
-If it doesn't, try the following steps:
-
-1.  Reset OBCI Board (Press Reset Button).
-2.  Turn OBCI Board OFF, disconnect dongle, reconnect dongle, turn board back ON.
-
-3.  Close Neuromore and disconnect the board and dongle. Reconnect the dongle and board, then open Neuromore Studio again.
+1.  Check dongle's underside switch is set to GPIO6.
+2.  Check that your OBCI Board battery is fully charged. Use the USB battery charger included with your board kit.
+3.  Close Neuromore, turn OBCI Board OFF, unplug dongle.
+4.  Replug dongle, and reconnect OBCI board and dongle via [these steps](https://docs.openbci.com/Troubleshooting/minimizingNoise/#check-cyton---gui-connection).
+5.  Open Neuromore Studio again.
 
 **NOTE:** If your board is connected properly, Neuromore should have no trouble connecting to it.
 
@@ -109,7 +109,7 @@ From this example we can see the power of statistics and simple logic that can e
 
 ## Documentation and Resources
 
-- [neuromore.com](http://www.neuromore.com/)
+- [neuromore.com](https://doc.neuromore.com/?cat=0&page=3#device-details-openbci)
 - [Video tutorials](https://www.youtube.com/channel/UCAOU6SsvwCwC30hJaFLhWgw)
 - [Graphical Programming](http://c2.com/cgi/wiki?GraphicalProgrammingLanguage)
 
