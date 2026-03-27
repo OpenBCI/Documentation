@@ -143,7 +143,7 @@ Plug in the Dongle to your computer and select the Serial port as shown below.
 
 - The Arduino IDE will first compile your code and then upload the compiled hex file.
 
-- Once the upload is done and if successful, the Arduino IDE will display a success message as shown below,
+- Once the upload is complete and successful, the Arduino IDE will display a success message as shown below.
   ![Screenshot of Arduino IDE showing successful upload message for Cyton board](../assets/CytonImages/CytonProgrammingSuccess.png)
 
 ## Troubleshooting
