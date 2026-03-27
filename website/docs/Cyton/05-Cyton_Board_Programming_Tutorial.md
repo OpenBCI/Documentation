@@ -32,7 +32,7 @@ These instructions apply to programming the Cyton with firmware versions 2.x.x, 
 
 - OpenBCI WiFi Master Firmware (follow guide below to download)
 
-**Note for Windows users:** While installing Arduino 1.8, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in Control Panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list; select yes. Then install `1.8.19` as normal. Navigate back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.19`. Now drag and drop the `Arduino_1.5.8` folder back into the `Program Files` folder.
+**Note for Windows users:** While installing Arduino IDE 1.8.19, if the installer instructs you to uninstall 1.5.8, move the Arduino folder containing 1.5.8 from `Program Files` to your desktop or another folder. Rename this folder to `Arduino_1.5.8`. Open the `Change or remove program` app in Control Panel and uninstall the Arduino application. There will be a popup indicating that the files do not exist and asking if you want to remove the program from the files list; select yes. Then install Arduino IDE 1.8.19 as normal. Navigate back to your `Program Files` folder and locate the Arduino folder. Rename this folder to `Arduino_1.8.19`. Now drag and drop the `Arduino_1.5.8` folder back into the `Program Files` folder.
 
 ### Install Firmware From Arduino Library Manager (easiest!)
 
