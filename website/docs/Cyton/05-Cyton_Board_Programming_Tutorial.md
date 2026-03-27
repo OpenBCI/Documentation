@@ -20,7 +20,7 @@ The OpenBCI Cyton boards have powerful microcontrollers that ship with the lates
 These instructions apply to programming the Cyton with firmware versions 2.x.x, 3.x.x, and onwards! The radio firmware (the firmware for the dongle and the radio module on your Cyton Board) has not been updated since prior to Fall 2016, so as long as you purchased your Cyton Board after that date, you do not need to worry about reprogramming your radios.
 
 **You will need:**
-- Arduino IDE v1.8.19. You can find this in the legacy page of the [Arduino Downloads section](https://www.arduino.cc/en/software/). Do not use Arduino v2 or later. Only v1.8.19 works with this tutorial
+- Arduino IDE 1.8.x (1.8.19 recommended). You can find this in the legacy page of the [Arduino Downloads section](https://www.arduino.cc/en/software/). Arduino IDE 2.x is not supported for this tutorial.
 
 - OpenBCI Dongle connected to USB port
 
