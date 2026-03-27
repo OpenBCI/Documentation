@@ -165,6 +165,7 @@ If the upload fails with `Program Flash Failed` it's due to the Arduino IDE not 
 - Close all open programs such as (Google Chrome, MS Word, etc...) and only have the Arduino IDE open during upload.
 - Restart your computer and don't open any other programs other than the Arduino IDE used for programming.
 - If all else fails, try a different computer or Operating System.
+- **Advanced:** If you continue to experience persistent `Program Flash Failed` errors, you may try adjusting the Radio Poll Time using the Radio Config Utility. Increasing the poll time can sometimes help the Arduino IDE communicate more reliably with the Cyton board during programming. Refer to the [Cyton Radios Programming Tutorial](Cyton/06-Cyton_Radios_Programming_Tutorial.md) for instructions on using the Radio Config Utility to adjust Radio Poll Time. Only attempt this if you are comfortable with advanced configuration steps.
 
 ## Notes On Updating and Using v2.0.0 Cyton Firmware
 
