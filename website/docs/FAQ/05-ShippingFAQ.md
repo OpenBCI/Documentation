@@ -15,7 +15,7 @@ title: Shipping & Taxes
 | International Economy (FedEx, UPS, or DHL) | 7-20 days         |
 | International Express                      | 2-5 days          |
 
-Most orders are shipped 1-3 business days after payment. **Please allow an ADDITIONAL 2-7 business days for international orders valued over $2,500 USD to ship out.**
+Most orders are shipped 1-3 business days after payment. 
 
 **ALL** orders include a tracking number, which is automatically emailed to the address you provide. This tracking number is usually made available within 2-3 business days.  
 
