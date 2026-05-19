@@ -49,7 +49,7 @@ These ASCII characters turn the respective channels [1-8] off. The channel will 
 
 ### Turn Channels ON
 
-**! @ # $ % ^ & \* **
+**! @ # $ % ^ & \***
 
 These ASCII characters turn the respective channels [1-8] on. The channel will read ADC output values during streamData mode. These commands work both in and out of streamData mode.
 
