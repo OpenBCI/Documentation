@@ -138,7 +138,7 @@ The CHANNEL COUNT setting is defaulted to 8. If you are working with an OpenBCI 
 
 <details>
 
-<summary>If you're comfortable using the GUI, use the optional settings in this dropdown section. Otherwise, skip to step 7!</summary><br />
+<summary>If you're comfortable using the GUI, use the optional settings in this dropdown section. Otherwise, skip to step 6!</summary><br />
 
 #### Check Status or Change Radio Channel
 
@@ -200,7 +200,7 @@ If you want to log data to a MicroSD inserted into the Cyton Board, in the WRITE
 
 </details>
 
-### 7. Press "START SYSTEM"
+### 6. Press "START SYSTEM"
 
 ![START SYSTEM](../../assets/GettingStartedImages/serial_cyton_start_system.png)
 
@@ -221,7 +221,7 @@ If the initialization fails, try the following steps in order:
 5.  If the channel number is not being displayed, select "AUTOSCAN" from the RADIO CONFIGURATION settings.
 6.  If you are still having troubles connecting to your Cyton board, refer to the [Forum](https://openbci.com/forum/index.php?p=/categories/cyton) for extra troubleshooting advice.
 
-### 8. Your Cyton is now live!
+### 7. Your Cyton is now live!
 
 Now that the OpenBCI_GUI is connected to your Cyton you may press `Start Data Stream` in the upper left hand corner.
 
