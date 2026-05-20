@@ -34,7 +34,7 @@ Plug the OpenBCI Ganglion Dongle into your computer before launching the GUI.
 
 ### 3. Your Lithium Polymer Battery and USB Charger (or 6V Battery Pack & 4 AA Batteries, pre-2023)
 
-Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green.
+Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green. To do this, insert the battery's white plug into the matching slot on the USB charger (shown on the right), and connect the charger into a USB port.
 
 ![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery_and_charger.png)
 
