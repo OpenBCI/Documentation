@@ -42,6 +42,8 @@ module.exports = {
   ],
   plugins: [
     [
+      // This will only work locally when running `npm run build` and `npm run serve` because the redirects are only generated during the build step.
+      // It will not work when running `npm run start` because the development server does not generate the redirect files.
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
