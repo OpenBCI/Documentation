@@ -40,7 +40,39 @@ module.exports = {
       },
     ],
   ],
-  plugins: [],
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/FAQ/Cookie",
+            to: "/Policies/Cookie",
+          },
+          {
+            from: "/FAQ/Privacy",
+            to: "/Policies/Privacy",
+          },
+          {
+            from: "/FAQ/Returns",
+            to: "/Policies/Returns",
+          },
+          {
+            from: "/FAQ/Liability",
+            to: "/Policies/Liability",
+          },
+          {
+            from: "/FAQ/Conduct",
+            to: "/Policies/Conduct",
+          },
+          {
+            from: "/FAQ/FCOI",
+            to: "/Policies/FCOI",
+          },
+        ],
+      },
+    ],
+  ],
   themeConfig: {
     navbar: {
       title: "OpenBCI Documentation",
