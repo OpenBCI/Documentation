@@ -213,12 +213,12 @@
       "FAQ/DocsUpdate"
     ],
     "Policies": [
-      "FAQ/Cookie",
-      "FAQ/Privacy",
-      "FAQ/Returns",
-      "FAQ/Liability",
-      "FAQ/Conduct",
-      "FAQ/FCOI"
+      "Policies/Cookie",
+      "Policies/Privacy",
+      "Policies/Returns",
+      "Policies/Liability",
+      "Policies/Conduct",
+      "Policies/FCOI"
     ]
   }
 }

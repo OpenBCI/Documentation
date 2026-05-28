@@ -40,7 +40,41 @@ module.exports = {
       },
     ],
   ],
-  plugins: [],
+  plugins: [
+    [
+      // This will only work locally when running `npm run build` and `npm run serve` because the redirects are only generated during the build step.
+      // It will not work when running `npm run start` because the development server does not generate the redirect files.
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            from: "/FAQ/Cookie",
+            to: "/Policies/Cookie",
+          },
+          {
+            from: "/FAQ/Privacy",
+            to: "/Policies/Privacy",
+          },
+          {
+            from: "/FAQ/Returns",
+            to: "/Policies/Returns",
+          },
+          {
+            from: "/FAQ/Liability",
+            to: "/Policies/Liability",
+          },
+          {
+            from: "/FAQ/Conduct",
+            to: "/Policies/Conduct",
+          },
+          {
+            from: "/FAQ/FCOI",
+            to: "/Policies/FCOI",
+          },
+        ],
+      },
+    ],
+  ],
   themeConfig: {
     navbar: {
       title: "OpenBCI Documentation",
