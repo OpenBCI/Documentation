@@ -114,7 +114,7 @@ If you followed the process in the previous link, you will be able to select the
 
 Plug in the Dongle to your computer and select the Serial port as shown below.
   
-  - On MacOS, this will be named **/dev/tty.usbserial-DN00nnnn**, where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
+  - On MacOS, this will be named **/dev/cu.usbserial-DN00nnnn**, where the nnnn is a combination of numbers and letters specific to your OpenBCI Dongle.
   - On Windows, the serial port will be listed as a numbered COM port.
   - On Linux, it will be different.
 
