@@ -39,7 +39,7 @@ Here are the reference channels needed for EEG, EMG, and ECG, respectively.
 
 The BIAS and SRB are functions of the ADS1299 and this functionality provides the flexibility to measure differential and referential signals at the same time. SRB stands for Stimulus, Reference and Bias and acts as a common point for referential signals like EEG to compare against. SRB has two different pins on the ADS1299 - SRB1 and SRB2. 
 
-SRB1 acts as a common reference for all the Positive inputs (meaning that it connects all the Negative inputs interally to the SRB1 pin) and SRB2 acts as a common reference for all Negative inputs (meaning that it connects all the Positive inputs internally to the SRB2 pin). To measure EEG with the Cyton and Cyton+Daisy, we use SRB2 as the common reference because it has the flexibility to be used individually for each channel instead of SRB1 which does not provide individual control. Therefore, the EEG measurements will look like (SRB2 - Negative Input) which is why the EEG signals might look inverted.
+SRB1 acts as a common reference for all the Positive inputs (meaning that it connects all the Negative inputs internally to the SRB1 pin) and SRB2 acts as a common reference for all Negative inputs (meaning that it connects all the Positive inputs internally to the SRB2 pin). To measure EEG with the Cyton and Cyton+Daisy, we use SRB2 as the common reference because it has the flexibility to be used individually for each channel instead of SRB1 which does not provide individual control. Therefore, the EEG measurements will look like (SRB2 - Negative Input) which is why the EEG signals might look inverted.
 
 BIAS on the other hand is used for noise-canceling due to connecting all Positive inputs to a common reference point. When doing this, a phenomenon called "Common Mode Noise" leaks into the board because multiple inputs are connected to the same point. Therefore, a BIAS connection to the body helps the ADS1299 account for this and a common mode voltage is subtracted from all measurements. It also helps in filtering out 50/60 Hz mains noise which is why we use it in all our referential and differential biosensing setups. 
 
@@ -62,11 +62,11 @@ Here's a list of material you will need for this tutorial:
     and [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 3.  OpenBCI [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel?_pos=1&_sid=77582f260&_ss=r), [Cyton + Daisy](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526)
 4. [Y-Jumper Cable](https://shop.openbci.com/products/y-splitter-cable). This is required only when using a Daisy board with the Cyton and is usually included when you buy a Cyton+Daisy Kit.
-4. [Cyton Bluetooth Dongle](https://shop.openbci.com/products/dongle)
-5.  Computer with [OpenBCI GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
+5. [Cyton Bluetooth Dongle](https://shop.openbci.com/products/dongle)
+6.  Computer with [OpenBCI GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 
 
-In this tutorial, we will use the Cyton to measure EEG, and the Daisy to measure EMG and ECG. First, attach the Daisy the Cyton board if they are not already attached. Be sure to attach them correctly as shown below
+In this tutorial, we will use the Cyton to measure EEG, and the Daisy to measure EMG and ECG. First, attach the Daisy to the Cyton board if they are not already attached. Be sure to attach them correctly as shown below
 
 <div style={{textAlign: 'center'}}>
     <img src={CytonDaisyAttached} width="300"/>
@@ -87,7 +87,7 @@ As shown in the below image, connect the EEG electrodes to Channels 1, 2 and 3 o
 
 For EMG and ECG, we set this up on the Daisy board. Since EMG and ECG are differential signals, both the top and bottom input header pins are required. For this tutorial, we will use 1 channel for EMG and another one for ECG.
 
-For **ECG**, connect two cables to **N1P** top and bottom pin and connect the other end of the Y-Jumper cable to bottom pin of **SRBU**. Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](03-ECG-Setup.md). For note on ECG signal quality, you can refer to the section _Improving Signal Quality_ in the [ECG tutorial](03-ECG-Setup.md).
+For **ECG**, connect two cables to **N1P** top and bottom pin and connect the other end of the Y-Jumper cable to bottom pin of **SRB**. Attach the electrodes to your chest, the recommended layout is described in the [ECG tutorial](03-ECG-Setup.md). For note on ECG signal quality, you can refer to the section _Improving Signal Quality_ in the [ECG tutorial](03-ECG-Setup.md).
 
 For **EMG**, connect two cables to **N2P** top and bottom pin. Attach the electrodes to your arm, the recommended layout is described in the [EMG tutorial](02-EMG-Setup.md).
 
@@ -158,7 +158,7 @@ For **EEG**, connect the top pins of +1- and +2- headers to the EEG electrodes a
 
 
 :::note
-When using EEG with another differential signal, the earlobe location can be used as a BIAS for a differential signal. But, if are facing signal quality issues with the differential signal, you can connect a sticky electrode at a bony part near the differential signal to the other D_G pin.
+When using EEG with another differential signal, the earlobe location can be used as a BIAS for a differential signal. But, if you are facing signal quality issues with the differential signal, you can connect a sticky electrode at a bony part near the differential signal to the other D_G pin.
 :::
 
 ### Visualize the data in the OpenBCI GUI
@@ -173,6 +173,6 @@ Open the [OpenBCI GUI](../../../Software/OpenBCISoftware/GUIDocs), select Gangli
 You do not need to change any hardware settings through software for the Ganglion and you are using all 4 channels which means you do not need to turn off or hide any channel. Make sure that the input select switches are in the right position because an incorrect position will cause data issues and you will not see biopotential measurements in the GUI. Also, for some older versions of Mac, you will need to use the Ganglion Dongle to connect to the Ganglion Board. If you require the dongle, just use the BLED112 Dongle option instead.
 :::
 
-Now click Start Session -&gt; Start Data Stream and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below. You can see the ECG signal in Channel 3, the EMG activations in Channel 4 and Alpha waves in Channel 1 and 2.`
+Now click Start Session -&gt; Start Data Stream and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below. You can see the ECG signal in Channel 3, the EMG activations in Channel 4 and Alpha waves in Channel 1 and 2.
 
 ![ExG Stream from Ganglion](../../assets/GettingStartedImages/ExGSetupGanglionVideo.gif)
