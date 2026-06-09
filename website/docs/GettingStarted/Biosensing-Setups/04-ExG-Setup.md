@@ -58,7 +58,7 @@ Here's a list of material you will need for this tutorial:
     , [Ultracortex Mark III](../../Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md)
     , [Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md); we will be using
     the [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md) in this tutorial.
-2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
+2.  EMG/ECG hardware including [Solid Gel Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
     and [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 3.  OpenBCI [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel?_pos=1&_sid=77582f260&_ss=r), [Cyton + Daisy](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526)
 4.  [Y-Jumper Cable](https://shop.openbci.com/products/y-splitter-cable). This is required only when using a Daisy board with the Cyton and is usually included when you buy a Cyton+Daisy Kit.
@@ -134,7 +134,7 @@ The Ganglion board is a 4 channel board and so, for this tutorial, we will measu
     , [Ultracortex Mark III](../../Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md)
     , [Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md); we will be using
     the [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md) in this tutorial.
-2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
+2.  EMG/ECG hardware including [Solid Gel Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
     and [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 3.  OpenBCI [Ganglion board](https://shop.openbci.com/products/ganglion-board?_pos=2&_sid=5c75c7cc7&_ss=r).
 4.  [Ganglion Bluetooth Dongle](https://shop.openbci.com/products/ganglion-dongle) (if using an older version of MacOS).

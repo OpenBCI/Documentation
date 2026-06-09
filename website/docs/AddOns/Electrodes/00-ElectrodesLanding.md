@@ -18,7 +18,7 @@ OpenBCI Boards are compatible with a variety of different electrodes.
 
 ## EMG/ECG Foam Solid Gel Electrodes
 
-[**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
+[**Buy Here!**](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack)
 
 ## EMG/ECG Snap Electrode Cables
 
