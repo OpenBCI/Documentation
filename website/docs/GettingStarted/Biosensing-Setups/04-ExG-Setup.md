@@ -177,6 +177,6 @@ Next, open the [OpenBCI GUI](../../../Software/OpenBCISoftware/GUIDocs) and clic
 You do not need to change any hardware settings through software for the Ganglion and you are using all 4 channels which means you do not need to turn off or hide any channel. Make sure that the input select switches are in the right position because an incorrect position will cause data issues and you will not see biopotential measurements in the GUI. Also, for some older versions of Mac, you will need to use the Ganglion Dongle to connect to the Ganglion Board. If you require the dongle, just use the BLED112 Dongle option instead.
 :::
 
-Now click Start Session -&gt; Start Data Stream and you should see EEG, EMG and ECG signals on the channels that have been configured so as shown below. You can see the ECG signal in Channel 3, the EMG activations in Channel 4 and Alpha waves in Channel 1 and 2.
+Now click Start Session, and then Start Data Stream. You should see EEG, EMG and ECG signals on the channels that have been configured so as shown below. You can see the ECG signal in Channel 3, the EMG activations in Channel 4 and Alpha waves in Channel 1 and 2.
 
 ![ExG Stream from Ganglion](../../assets/GettingStartedImages/ExGSetupGanglionVideo.gif)
