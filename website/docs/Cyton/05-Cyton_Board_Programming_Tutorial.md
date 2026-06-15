@@ -131,7 +131,7 @@ Plug in the Dongle to your computer and select the Serial port as shown below.
 3.  Power ON the OpenBCI Board.
 4.  Release the RST button while still holding down the PROG button.
 5.  Release the PROG button.
-6.  Verify that you see the blue LED on the 32-bit board blinking pleasantly as shown below
+6.  Verify that you see the blue LED on the 32-bit board blinking as shown below
 
   ![Programming Mode](../assets/CytonImages/BlinkingBlueLED.gif)
 
@@ -152,17 +152,17 @@ If you're having an issue with `Board_Defs.h` and you're uploading using Linux, 
 
 If the upload fails with `No Target Found`:
 
-1.  Unplug the Dongle and Device.
+1.  Unplug the Dongle and power OFF the Cyton Board.
 2.  Plug the Dongle into your computer.
-3.  Plug the Device into your computer.
-4.  Put the device into bootloader mode.
+3.  Power ON the OpenBCI Board.
+4.  Put the Cyton into bootloader mode.
 5.  Try upload again.
 
 If the upload fails with `Program Flash Failed` it's due to the Arduino IDE not being able to read from the serial port fast enough possibly do to resource starvation or overall computer power. We recommend taking the following actions:
 
 - Keep the Board and Dongle physically close to each other during the upload.
 - Keep the Arduino IDE open, front and center and don't use any other programs during the upload.
-- Close all open programs such as (Google Chrome, MS Word, etc...) and only have the Arduino IDE open during upload.
+- Close all open programs and only have the Arduino IDE open during upload.
 - Restart your computer and don't open any other programs other than the Arduino IDE used for programming.
 - If all else fails, try a different computer or Operating System.
 - **Advanced:** If you continue to experience persistent `Program Flash Failed` errors, you may try adjusting the Radio Poll Time using the Radio Config Utility. Increasing the poll time can sometimes help the Arduino IDE communicate more reliably with the Cyton board during programming. Refer to the [Cyton Radios Programming Tutorial](Cyton/06-Cyton_Radios_Programming_Tutorial.md) for instructions on using the Radio Config Utility to adjust Radio Poll Time. Only attempt this if you are comfortable with advanced configuration steps.
