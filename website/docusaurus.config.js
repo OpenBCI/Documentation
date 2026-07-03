@@ -13,8 +13,12 @@ module.exports = {
   },
   noIndex: false,
   onBrokenLinks: "log",
-  onBrokenMarkdownLinks: "log",
   trailingSlash: true,
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "log",
+    },
+  },
   presets: [
     [
       "@docusaurus/preset-classic",
