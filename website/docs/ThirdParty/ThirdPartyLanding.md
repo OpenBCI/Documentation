@@ -15,10 +15,6 @@ EmotiBit is a wearable sensor module for capturing high-quality emotional, physi
 
 **Tutorial Coming Soon!**
 
-## IDUN Dryode
-
-Introducing research-validated dry electrodes for sampling frontal cortex EEG and facial/body EMG, compatible with OpenBCI boards and standard snap cables.
-
 ## MyoWare
 
 ![myoware](../assets/ThirdPartyImages/myoware.jpg)

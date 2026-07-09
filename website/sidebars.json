@@ -79,11 +79,6 @@
       },
       {
         "type": "category",
-        "label": "IDUN Dryode",
-        "items": ["ThirdParty/IDUN_Dryode/Dryode"]
-      },
-      {
-        "type": "category",
         "label": "cEEGrid Kit",
         "items": ["ThirdParty/cEEGrid_Kit/cEEGrid_Kit"]
       },
@@ -151,6 +146,7 @@
       "Deprecated/MotorImagery",
       "Deprecated/DeprecatedCytonProgram",
       "Deprecated/DeprecatedDongleProgramming",
+      "Deprecated/DeprecatedDryode",
       {
         "type": "category",
         "label": "WiFi Shield",
