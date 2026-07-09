@@ -79,11 +79,6 @@
       },
       {
         "type": "category",
-        "label": "IDUN Dryode",
-        "items": ["ThirdParty/IDUN_Dryode/Dryode"]
-      },
-      {
-        "type": "category",
         "label": "cEEGrid Kit",
         "items": ["ThirdParty/cEEGrid_Kit/cEEGrid_Kit"]
       },
@@ -124,7 +119,8 @@
           "Software/CompatibleThirdPartySoftware/LSL",
           "Software/CompatibleThirdPartySoftware/BrainBay",
           "Software/CompatibleThirdPartySoftware/BioEra",
-          "Software/CompatibleThirdPartySoftware/VirtualBox"
+          "Software/CompatibleThirdPartySoftware/VirtualBox",
+          "Software/CompatibleThirdPartySoftware/BrainFlow"
         ]
       }
     ],
@@ -151,6 +147,7 @@
       "Deprecated/MotorImagery",
       "Deprecated/DeprecatedCytonProgram",
       "Deprecated/DeprecatedDongleProgramming",
+      "Deprecated/DeprecatedDryode",
       {
         "type": "category",
         "label": "WiFi Shield",

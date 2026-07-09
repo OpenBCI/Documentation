@@ -16,6 +16,7 @@ Deprecated Hardware:
 - [Myoware v1.0 Cyton Integration](Deprecated/14-MyoWare_Integration.md)
 - [Myoware v1.0 Ganglion Integration](Deprecated/15-MyoWare_Integration_Ganglion.md)
 - [WiFi Shield](Deprecated/WiFiShield/Wifi.md)
+- [IDUN Dryode](Deprecated/16-Dryode_Guide.md)
 
 Deprecated Software:
 
