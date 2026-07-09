@@ -83,9 +83,9 @@ Once proof-of-concept is achieved, it's appropriate to consider integrating the 
 
 ## Notebooks
 
-- [BrainFlow to MNE Python Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/brainflow_mne.html)
-- [Denoising Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/denoising.html)
-- [BrainFlow Band Power Notebook](https://brainflow.readthedocs.io/en/stable/notebooks/band_power.html)
+- [BrainFlow to MNE Python Notebook](https://brainflow.readthedocs.io/en/stable/Examples.html#python-mne-integration)
+- [Denoising Notebook](https://brainflow.readthedocs.io/en/stable/Examples.html#python-denoising)
+- [Band Power Notebook](https://brainflow.readthedocs.io/en/stable/Examples.html#python-band-power)
 
 ---
 

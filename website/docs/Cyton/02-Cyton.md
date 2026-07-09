@@ -81,7 +81,7 @@ The OpenBCI USB Dongle is used to connect your computer to the Cyton Board.
 
 ### Breakout Pins
 
-RFduio pins are broken out in the same order and layout as the RFduino radio and shields. That makes the OpenBCI USB Dongle compatible with the RFduino shields, if you like. The TXD (red) and RXD (greed) LEDs are connected to outputs from the FTDI chip. The blue LED is connected to RFduino GPIO2.
+RFduio pins are broken out in the same order and layout as the RFduino radio and shields. That makes the OpenBCI USB Dongle compatible with the RFduino shields, if you like. The TXD (red) and RXD (green) LEDs are connected to outputs from the FTDI chip. The blue LED is connected to RFduino GPIO2.
 
 ### Slide Switch
 

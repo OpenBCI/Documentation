@@ -56,7 +56,7 @@ Each channel in the ADS1299 chip has a multiplexer that allows for the testing, 
 | **MVDD**      | INxP = INxN = AVDD/2                         | Measure ADC offset                               |
 | **Test**      | Injects square wave into the ADS1299 channel | Calibration & debugging                          |
 | **BIAS Meas** | Measures BIAS output                         | Checking BIAS drive                              |
-| **Temp**      | Measures BIAS output                         | Measure internal temperature of the ADS1299 chip |
+| **Temp**      | Measures internal temperature sensor output  | Measure internal temperature of the ADS1299 chip |
 | **BIAS_DRP**  | Measures BIAS output                         | Set positive electrode as the BIAS driver        |
 | **BIAS_DRN**  | Measures BIAS output                         | Set negative electrode as the BIAS driver        |
 

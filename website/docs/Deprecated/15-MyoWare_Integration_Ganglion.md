@@ -19,7 +19,7 @@ This tutorial will show you how to read EMG data (electrical signals from muscle
 
 1.  MyoWare board
 2.  OpenBCI Ganglion board, with power source
-3.  Skintact sticky electrodes (for using the MyoWare board)
+3.  Solid Gel Electrodes (for using the MyoWare board)
 4.  Soldering iron and materials
 5.  Two male-male jumper wires (like [these](https://www.adafruit.com/product/266)), and three male-female jumper wires (like [these](https://www.adafruit.com/product/826))
 
@@ -63,7 +63,7 @@ When you have everything wired up, set the power switch on the MyoWare board to 
 
 ### 4. Streaming EMG Data with the OpenBCI GUI
 
-Attach three Skintact electrodes to the three electrodes on the MyoWare board, and then stick the board on a muscle you'd like to monitor. The Adafruit MyoWare tutorial has good guidelines for MyoWare board placement: (https:).
+Attach three Solid Gel Electrodes to the three electrodes on the MyoWare board, and then stick the board on a muscle you'd like to monitor. The Adafruit MyoWare tutorial has good guidelines for MyoWare board placement: (https:).
 
 You'll be able to see signals from the MyoWare electrodes in the OpenBCI GUI. If you connected E and M to the 1- and 1+ pins on the OpenBCI Ganglion board, then the MyoWare data will appear in channel 1.
 
