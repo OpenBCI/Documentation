@@ -35,7 +35,7 @@ Here's a list of material you will need for this tutorial:
     , [Ultracortex Mark III](../../Deprecated/02-Ultracortex-Mark-III-Nova-Revised.md)
     , [Electrode Cap](../../AddOns/Headwear/04-Electrode_Cap_Tutorial.md); we will be using
        the [Headband kit](../../AddOns/Headwear/03-Headband_Tutorial.md) in this tutorial.
-2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
+2.  EMG/ECG hardware including [Skintact sticky electrodes](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
     and [EMG/ECG Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
 3.  OpenBCI [Cyton Board + Daisy Board](https://shop.openbci.com/collections/frontpage/products/cyton-daisy-biosensing-boards-16-channel?variant=38959256526)
     and the Cyton bluetooth USB dongle
