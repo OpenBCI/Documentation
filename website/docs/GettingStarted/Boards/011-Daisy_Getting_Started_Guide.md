@@ -56,7 +56,7 @@ The Y-Splitter connects the bottom `SRB` pin of the Daisy Board to the bottom `S
 
 <img src="https://raw.githubusercontent.com/openbci-archive/Docs/master/assets/images/MarkIV/Cyton_Daisy_Setup.JPG" width="80%" />
 
-Use the 16 of the color coded cables that came with your Ultracortex MarkIV headset. Alternatively, you can use 16 of our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958), or [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
+Use the 16 of the color coded cables that came with your Ultracortex MarkIV headset. Alternatively, you can use 16 of our [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958), or [Header Pin to Touch Proof Electrode Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715).
 
 Connect Cyton bottom pins `N1P` through `N8P` to the cables, shown above. Then, connect the remaining 8 cables to Daisy bottom pins `N1P` through `N8P`. the cable colors should be in this order: gray, purple, blue, green, yellow, orange, red, and brown.
 For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' facing toward you since that side is a tiny bit wider than 0.1".

@@ -21,6 +21,6 @@ OpenBCI boards are compatible with a variety of different electrodes.
 
 [**Buy Here!**](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack)
 
-## EMG/ECG Snap Electrode Cables
+## Snap Electrode Cables (EMG/ECG/EEG)
 
-[**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
+[**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958)

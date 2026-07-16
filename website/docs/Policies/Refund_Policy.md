@@ -33,7 +33,7 @@ We do **not** accept returns for the following items if they have been opened or
 - Electrode Cap Gel
 - Gold Cup Electrodes
 - Header Pin to Touch Proof Electrode Adapter
-- EMG/ECG Snap Electrode Cables
+- Snap Electrode Cables (EMG/ECG/EEG)
 - Kendall EMG/ECG Foam Solid Gel Electrodes
 - Hydro-link Replacements
 
