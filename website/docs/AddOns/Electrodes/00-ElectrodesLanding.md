@@ -23,4 +23,4 @@ OpenBCI boards are compatible with a variety of different electrodes.
 
 ## EMG/ECG Snap Electrode Cables
 
-[**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/emg-ecg-snap-electrode-cables?variant=32372786958)
+[**Buy Here!**](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958)
