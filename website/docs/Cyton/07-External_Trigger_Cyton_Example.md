@@ -15,7 +15,7 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE CYTON AND DAMAGE/HARM/BRICK THE PIC32 MCU AND RFDUINO. 
 
 
-## Cyton External Trigger Kit Guide
+# Cyton External Trigger Kit Guide
 
 
 [Purchase the official kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) from OpenBCI Shop
@@ -47,7 +47,7 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 
 
 
-## DIY Cyton External Trigger Tutorial
+# DIY Cyton External Trigger Tutorial
 This tutorial is for those who don't want to purchase the Cyton External Trigger Kit and want to learn some Electrical Engineering through hands-on challenge.
 
 ### Access the Digital Read Widget
