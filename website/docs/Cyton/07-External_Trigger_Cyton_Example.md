@@ -3,20 +3,19 @@ id: CytonExternal
 title: External Trigger on OpenBCI Cyton Board
 ---
 
-EEG experiments require precise timing between external stimuli and the data stream. For example, with P300 experiments, the researcher needs the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
-
 The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. It allows users to synchronize:
 - Physiological Data: EEG or EMG
 - Stimulus Timing: Event Markers/Trigger Signal
 - Behavioral Data: Subject Response (button press)
 
+EEG experiments require precise timing between external stimuli and the data stream. For example, with P300 experiments, the researcher needs the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
 
 This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.
 
 NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE CYTON AND DAMAGE/HARM/BRICK THE PIC32 MCU AND RFDUINO. 
 
 
-## August 2026 Cyton External Trigger Kit Guide
+## Cyton External Trigger Kit Guide
 
 
 [Purchase the official kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) from OpenBCI Shop
@@ -48,7 +47,9 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 
 
 
-## Pre-August 2026 Cyton External Trigger Tutorial
+## DIY Cyton External Trigger Tutorial
+This tutorial is for those who don't want to purchase the Cyton External Trigger Kit and want to learn some Electrical Engineering through hands-on challenge.
+
 ### Access the Digital Read Widget
 
 Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui).
