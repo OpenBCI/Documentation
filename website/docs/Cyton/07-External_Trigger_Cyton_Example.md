@@ -7,9 +7,10 @@ import D17PushButton from "../assets/CytonImages/D17PushButton.jpg";
 
 In a lot of EEG experiments, there is a requirement for precise timing between external stimuli and the data stream. For example, with in an experiment collecting P300 data, it is necessary to know the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
 
-This tutorial will cover the methods to add an external trigger to the OpenBCI data stream on othe Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI and opened and enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This is what allows for the precise timing required for external triggers.
+This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.
 
-## Access the Digital Read Widget
+## Pre-August 2026 Cyton External Trigger Tutorial
+### Access the Digital Read Widget
 
 Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui).
 
@@ -25,9 +26,9 @@ Then select the start digital read mode button in the top left of the newly popu
 
 When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Output) pins to read from: D11, D12, D13, D17, and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Check out the guides for lowering serial port latency for [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md), [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
 
-## Trigger Methods on the Cyton Board
+### Trigger Methods on the Cyton Board
 
-### Utilize the on-device push button
+#### Utilize the on-device push button
 
 The OpenBCI Cyton Board comes with a user-accessible pushbutton already on the board. This is the PROG button and it's attached to pin D17 with a 470K pulldown resistor. When you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgment of a stimulus into the data stream.
 
@@ -73,12 +74,12 @@ DF,FFFCDE,FFFC00,FFFC49,FFFAC3,FFFBD0,FFFC91,FFFB03,FFFCB0
 
 ```
 
-### Adding Trigger Markers from External Sources
+#### Adding Trigger Markers from External Sources
 
 Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example, an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the Cyton Board with the external signal-generating system using a few low-cost components.
 Our goal with OpenBCI is to make biosensing safe and fun. The most important thing is making sure that you can't accidentally plug yourself into the mains electrical supply. If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
 
-#### Isolating the Cyton from an External Voltage
+##### Isolating the Cyton from an External Voltage
 
 ![Optoisolator Schematic](../assets/CytonImages/ExternalTriggerCNY17.jpg)
 ![Breadboard CNY17](../assets/CytonImages/CNY17_Breadboard.jpg)
