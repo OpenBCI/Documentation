@@ -3,11 +3,50 @@ id: CytonExternal
 title: External Trigger on OpenBCI Cyton Board
 ---
 
-import D17PushButton from "../assets/CytonImages/D17PushButton.jpg";
+EEG experiments require precise timing between external stimuli and the data stream. For example, with P300 experiments, the researcher needs the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
 
-In a lot of EEG experiments, there is a requirement for precise timing between external stimuli and the data stream. For example, with in an experiment collecting P300 data, it is necessary to know the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
+The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. It allows users to synchronize:
+- Physiological Data: EEG or EMG
+- Stimulus Timing: Event Markers/Trigger Signal
+- Behavioral Data: Subject Response (button press)
+
 
 This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.
+
+NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE CYTON AND DAMAGE/HARM/BRICK THE PIC32 MCU AND RFDUINO. 
+
+
+## August 2026 Cyton External Trigger Kit Guide
+
+
+[Purchase the official kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) from OpenBCI Shop
+
+### Kit Contents:
+
+- Short Jumper Wires
+- Long Jumper Wires
+- Photoresistor Module (to detect light flashes)
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="300">
+- Button Module (to detect button presses)
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="200">
+- Trigger Module
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="300">
+
+
+
+
+
+
+| Trigger Module Header Pin | Use      |
+| ---------- | :-------|
+| D12 | photoresistor module input |
+| D13 | button module input |
+| D18 | input for external signals |
+| D11 | input for Myoware or Pulse Sensor |
+| 3V3 | 3.3V source pin for external sensors |
+| GND | electrical rround - connect this to GND of external sensors |
+
+
 
 ## Pre-August 2026 Cyton External Trigger Tutorial
 ### Access the Digital Read Widget
