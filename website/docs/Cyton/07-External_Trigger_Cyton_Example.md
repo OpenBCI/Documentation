@@ -26,7 +26,7 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 - Long Jumper Wires
 - Photoresistor Module (to detect light flashes)
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="300">
-- Button Module (to detect button presses)
+- Button Module (to register button presses)
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="200">
 - Trigger Module
 <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="300">
@@ -36,14 +36,14 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 
 
 
-| Trigger Module Header Pin | Use      |
+| Trigger Module Header Pin | Use |
 | ---------- | :-------|
 | D12 | photoresistor module input |
 | D13 | button module input |
 | D18 | input for external signals |
 | D11 | input for Myoware or Pulse Sensor |
 | 3V3 | 3.3V source pin for external sensors |
-| GND | electrical rround - connect this to GND of external sensors |
+| Up to 5 GND | one electrical ground per sensor GND pin |
 
 
 
