@@ -25,11 +25,11 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 - Short Jumper Wires
 - Long Jumper Wires
 - Photoresistor Module (to detect light flashes)
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="300">
+<img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="300" />
 - Button Module (to register button presses)
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="200">
+<img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="200" />
 - Trigger Module
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="300">
+<img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="300" />
 
 
 
@@ -73,8 +73,8 @@ When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Out
 The OpenBCI Cyton Board comes with a user-accessible pushbutton already on the board. This is the PROG button and it's attached to pin D17 with a 470K pulldown resistor. When you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgment of a stimulus into the data stream.
 
 <div style={{textAlign: 'left'}}>
-    <img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/D17PushButton.jpg" width="300">
-
+    <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/D17PushButton.jpg" width="300" />
+</div>
 
 Shown below is an example of what happens when the PROG button is pressed.
 
