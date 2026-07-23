@@ -33,7 +33,7 @@ You'll need the [Trigger Kit](https://shop.openbci.com/products/external-trigger
 1. Plug lithium polymer battery into the back of OFF-power Cyton board
 2. Plug USB dongle into computer USB port
 3. Place Cyton Board into clear case, then seat Trigger Module as shown below <div><img src="https://raw.githubusercontent.com/OpenBCI/Documentation/refs/heads/master/website/docs/assets/CytonImages/Trigger_PCB_On_Cyton.png" width="400" /></div>
-4. Connect Button + Photoresistor to Trigger Module with Jumper Cables, as shown below. Make sure the pinout lines up with the trigger module. Reverse polarity will damage the system. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Connections.png?raw=true" width="400" /></div>
+4. Connect Button + Photoresistor to Trigger Module with Jumper Cables, as shown below. Make sure the pinout lines up with the trigger module. Reverse polarity will damage the system. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Connections.png?raw=true" width="500" /></div>
 
 | Trigger Module Header Pin | Use                                      |
 | ------------------------- | :--------------------------------------- |
