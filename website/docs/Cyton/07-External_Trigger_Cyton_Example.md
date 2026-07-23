@@ -21,8 +21,8 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 
 | Description                | Use                                     | Image |
 | :------------------------- | :-------------------------------------- | :---- |
-| 3-pin Jumper Wires 25cm    | Connect Sensors to Trigger Module       |       |
-| 3-pin Jumper Wires 100cm   | Connect Sensors to Trigger Module       |       |
+| 3-pin Jumper Cables 25cm   | Connect Sensors to Trigger Module       |       |
+| 3-pin Jumper Cables 100cm  | Connect Sensors to Trigger Module       |       |
 | Photoresistor Module       | Sensor to detect light stimulus         | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="150" /> |
 | Button Module              | Sensor to register subject's response   | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="150" /> |
 | Trigger Module             | PCB that collects Sensor data       | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="150" /> |
@@ -45,7 +45,8 @@ You'll need the [Trigger Kit](https://shop.openbci.com/products/external-trigger
 | Up to 5 GND               | One electrical ground per sensor         |
 
 :::caution
-NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher than 3.3V will render the board permanently nonfunctional, and void the warranty. :::
+NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher than 3.3V will render the board permanently nonfunctional, and void the warranty.
+:::
 
 5. Flip Cyton Board power switch to 'PC'
 6. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
