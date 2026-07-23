@@ -32,7 +32,7 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 You'll need the [Trigger Kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) + [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) or [CytonDaisy](https://shop.openbci.com/products/cyton-daisy-biosensing-boards-16-channel) Board Kit.
 1. Plug lithium polymer battery into the back of OFF-power Cyton board
 2. Plug USB dongle into computer USB port
-3. Place Cyton Board into clear case, then seat Trigger Module as shown below <br><img src="https://raw.githubusercontent.com/OpenBCI/Documentation/refs/heads/master/website/docs/assets/CytonImages/Trigger_PCB_On_Cyton.png" width="400" /><br>
+3. Place Cyton Board into clear case, then seat Trigger Module as shown below <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/refs/heads/master/website/docs/assets/CytonImages/Trigger_PCB_On_Cyton.png" width="400" />
 4. Connect Button + Photoresistor to Trigger Module with Jumper Cables, as shown below. Make sure the pinout lines up with the trigger module. Reverse polarity will damage the system. <br><br><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Connections.png?raw=true" width="400" /><br><br>
 
 | Trigger Module Header Pin | Use                                      |
