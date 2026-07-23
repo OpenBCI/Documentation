@@ -9,7 +9,7 @@ The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. 
 - Stimulus Timing: Event Markers/Trigger Signal
 - Behavioral Data: Subject Response (button press)
 
-EEG experiments require precise timing between external stimuli and the data stream. For example, with P300 experiments, the researcher needs the stimulus's timestamp in order to look for the EEG signal that occurs about 300ms after the stimulus.
+EEG experiments require precise timing between external stimuli and the data stream. For example, P300 experiments require the stimulus timestamp in order to pinpoint the EEG signal that occurs about 300ms after the stimulus.
 
 This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.
 
@@ -21,32 +21,41 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 
 | Description                | Use                                     | Image |
 | :------------------------- | :-------------------------------------- | :---- |
-| 3-pin Jumper Wires 25cm    | Connect sensors to Trigger Module       |       |
-| 3-pin Jumper Wires 100cm   | Connect sensors to Trigger Module       |       |
+| 3-pin Jumper Wires 25cm    | Connect Sensors to Trigger Module       |       |
+| 3-pin Jumper Wires 100cm   | Connect Sensors to Trigger Module       |       |
 | Photoresistor Module       | Sensor to detect light stimulus         | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="150" /> |
 | Button Module              | Sensor to register subject's response   | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="150" /> |
-| Trigger Module             | PCB that collects the sensor data       | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="150" /> |
+| Trigger Module             | PCB that collects Sensor data       | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="150" /> |
 
- 
-  
+### Kit Assembly 
+
+You'll need the [Trigger Kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) + [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) or [CytonDaisy](https://shop.openbci.com/products/cyton-daisy-biosensing-boards-16-channel) Board Kit.
+1. Plug lithium polymer battery into the back of OFF-power Cyton board
+2. Plug USB dongle into computer USB port
+3. Place Cyton Board into clear case, then seat Trigger Module as shown below <br><img src="https://raw.githubusercontent.com/OpenBCI/Documentation/refs/heads/master/website/docs/assets/CytonImages/Trigger_PCB_On_Cyton.png" width="400" />
+4. Connect Button + Photoresistor to Trigger Module with Jumper Cables, as shown below. Make sure the pinout lines up with the trigger module. Reverse polarity will damage the system. <br><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Connections.png?raw=true" width="400" />
 
 | Trigger Module Header Pin | Use                                      |
 | ------------------------- | :--------------------------------------- |
-| D12                       | photoresistor module input               |
-| D13                       | button module input                      |
-| D18                       | input for external signals               |
-| D11                       | input for Myoware or Pulse Sensor        |
+| D12                       | Photoresistor Module input               |
+| D13                       | Button Module input                      |
+| D18                       | Input for external signals               |
+| D11                       | Input for Myoware or Pulse Sensor        |
 | 3V3                       | 3.3V source pin for external sensors     |
-| Up to 5 GND               | one electrical ground per sensor GND pin |
+| Up to 5 GND               | One electrical ground per sensor         |
 
-> [!WARNING]
-> NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher than 3.3V will render the board permanently nonfunctional, and void the warranty.
+:::caution
+NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher than 3.3V will render the board permanently nonfunctional, and void the warranty. :::
 
-<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Connections.png" width="500" />
+5. Flip Cyton Board power switch to 'PC'
+6. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
+7. Open the Analog Read widget. The sensor(s) data appears here.<br><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/SoftwareImages/OpenBCISoftware/GUI_Analog_Read.png" width="400" />
+8. Flash a light at the photoresistor module and confirm two LEDs light up, and data appears in Analog Read window D12
+9. Press the button module and confirm the button press is logged in Analog Read D13
 
-## DIY Cyton External Trigger Tutorial
+## DIY Trigger Guide
 
-This tutorial is for those who can't or don't wish to purchase the Cyton External Trigger Kit and want to learn some Electrical Engineering through hands-on challenge.
+Sections below are for those who can't or don't wish to purchase the Cyton External Trigger Kit and want to learn some Electrical Engineering through hands-on challenge.
 
 ### Access the Digital Read Widget
 
@@ -64,9 +73,7 @@ Then select the start digital read mode button in the top left of the newly popu
 
 When you use a Cyton dongle, you get up to 5 GPIO (General Purpose Input and Output) pins to read from: D11, D12, D13, D17, and D18! If there appears to be a delay between when you press the button and when the digital read widget in the GUI shows the button pressed, then you may want to lower your serial port latency. Check out the guides for lowering serial port latency for [Windows](../Troubleshooting/04-FTDI_Fix_Windows.md), [macOS](../Troubleshooting/05-FTDI_Driver_Fix_Mac.md), and [Linux](../Troubleshooting/03-FTDI_Fix_Linux.md)!
 
-### Trigger Methods on the Cyton Board
-
-#### Utilize the on-device push button
+### Trigger Option 1: Cyton push button
 
 The OpenBCI Cyton Board comes with a user-accessible pushbutton already on the board. This is the PROG button and it's attached to pin D17 with a 470K pulldown resistor. When you press the PROG button, D17 goes from LOW to HIGH. The PROG pushbutton is a great way to get user acknowledgment of a stimulus into the data stream.
 
@@ -79,8 +86,7 @@ Shown below is an example of what happens when the PROG button is pressed.
 ![PROG Button Working](../assets/CytonImages/PROGButtonWorking.gif)
 
 :::caution
-The PROG button, when used along with the RST button, can put the board into programming mode, which will affect its normal operation. The blue LED will start blinking if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide.
-:::
+The PROG button, when used along with the RST button, can put the board into programming mode, which will affect its normal operation. The blue LED will start blinking if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide. :::
 
 We want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet format.) There are 6 bytes available in each data packet, and the default format is to read them as three 16-bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4ms resolution on external trigger events like the rising edge of the PROG button press.
 
@@ -112,7 +118,7 @@ DF,FFFCDE,FFFC00,FFFC49,FFFAC3,FFFBD0,FFFC91,FFFB03,FFFCB0
 
 ```
 
-#### Adding Trigger Markers from External Sources
+### Trigger Option 2: External Sources
 
 Sometimes a situation may arise where you need to interface OpenBCI with an existing system, for example, an audio or visual event-related potential (ERP). In such a case, it is most desirable to have the onset of the signal tightly bound, temporally, with the EEG data. It is possible to interface the Cyton Board with the external signal-generating system using a few low-cost components.
 Our goal with OpenBCI is to make biosensing safe and fun. The most important thing is making sure that you can't accidentally plug yourself into the mains electrical supply. If you are interfacing an external trigger that is **NOT** operating under a battery supply, we recommend thinking twice about incorporating it into your system/protocol. If you have thought through it twice, here's how we do it when we need to.
