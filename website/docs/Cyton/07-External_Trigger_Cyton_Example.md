@@ -9,11 +9,9 @@ The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. 
 - Stimulus Timing: Event Markers/Trigger Signal
 - Behavioral Data: Subject Response (button press)
 
-EEG experiments require precise timing between external stimuli and the data stream. For example, with P300 experiments, the researcher needs the exact time that the signal was presented to the subject in order to look for the recorded EEG signal that occurs about 300ms after the stimulus.
+EEG experiments require precise timing between external stimuli and the data stream. For example, with P300 experiments, the researcher needs the stimulus's timestamp in order to look for the EEG signal that occurs about 300ms after the stimulus.
 
 This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.
-
-NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE CYTON AND DAMAGE/HARM/BRICK THE PIC32 MCU AND RFDUINO.
 
 ## Cyton External Trigger Kit Guide
 
@@ -21,14 +19,16 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 
 ### Kit Contents
 
-- Short Jumper Wires
-- Long Jumper Wires
-- Photoresistor Module (to detect light flashes)
-  <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="300" />
-- Button Module (to register button presses)
-  <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="200" />
-- Trigger Module
-  <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="300" />
+| Description                | Use                                     | Image |
+| :------------------------- | :-------------------------------------- | :---- |
+| 3-pin Jumper Wires 25cm    | Connect sensors to Trigger Module       |       |
+| 3-pin Jumper Wires 100cm   | Connect sensors to Trigger Module       |       |
+| Photoresistor Module       | Sensor to detect light stimulus         | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Photoresistor.png" width="150" /> |
+| Button Module              | Sensor to register subject's response   | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="150" /> |
+| Trigger Module             | PCB that collects the sensor data       | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="150" /> |
+
+ 
+  
 
 | Trigger Module Header Pin | Use                                      |
 | ------------------------- | :--------------------------------------- |
@@ -39,9 +39,14 @@ NOTE: ALL SIGNAL AMPLITUDE MUST BE LESS THAN 3.3V. ANYTHING HIGHER WILL BURN THE
 | 3V3                       | 3.3V source pin for external sensors     |
 | Up to 5 GND               | one electrical ground per sensor GND pin |
 
+> [!WARNING]
+> NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher than 3.3V will render the board permanently nonfunctional, and void the warranty.
+
+<img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Trigger_Kit_Connections.png" width="500" />
+
 ## DIY Cyton External Trigger Tutorial
 
-This tutorial is for those who don't want to purchase the Cyton External Trigger Kit and want to learn some Electrical Engineering through hands-on challenge.
+This tutorial is for those who can't or don't wish to purchase the Cyton External Trigger Kit and want to learn some Electrical Engineering through hands-on challenge.
 
 ### Access the Digital Read Widget
 
