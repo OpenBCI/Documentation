@@ -49,10 +49,13 @@ NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher tha
 :::
 
 5. Flip Cyton Board power switch to 'PC'
-6. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
-7. Open the Analog Read widget. The sensor(s) data appears here. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/SoftwareImages/OpenBCISoftware/GUI_Analog_Read.png" width="400" /></div>
-8. Flash a light at the photoresistor module and confirm two LEDs light up, and data appears in Analog Read window D12
-9. Press the button module and confirm the button press is logged in Analog Read D13
+
+### Data Guide
+
+1. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
+2. Open the Analog Read widget. The sensor(s) data appears here. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/SoftwareImages/OpenBCISoftware/GUI_Analog_Read.png" width="400" /></div>
+3. Flash a light at the photoresistor module and confirm two LEDs light up, and data appears in Analog Read D12
+4. Press the button module and confirm the button press is logged in Analog Read D13
 
 ## DIY Trigger Guide
 
@@ -87,7 +90,8 @@ Shown below is an example of what happens when the PROG button is pressed.
 ![PROG Button Working](../assets/CytonImages/PROGButtonWorking.gif)
 
 :::caution
-The PROG button, when used along with the RST button, can put the board into programming mode, which will affect its normal operation. The blue LED will start blinking if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide. :::
+The PROG button, when used along with the RST button, can put the board into programming mode, which will affect its normal operation. The blue LED will start blinking if it is in programming mode. To get the board out of programming mode and back to normal operation, refer to the ["Did you Press the Reset Button?"](../Troubleshooting/Reset_Button_Press.md) guide.
+:::
 
 We want to get the button press event into the data stream. (Reference the [OpenBCI Data Format Doc](03-Cyton_Data_Format.md) for data packet format.) There are 6 bytes available in each data packet, and the default format is to read them as three 16-bit integers (aka 'words' or 'shorts'). You can decide to add your flags into the auxData array any way you choose. In this example, we are setting each short to the value 0x6620. That's because our [OpenBCI GUI](https://github.com/OpenBCI/OpenBCI_Processing) converts these variables to Gs (the GUI is expecting accelerometer data) and 0x6620 converts to PI (3.14). Our sample rate of 250SPS gives us a 4ms resolution on external trigger events like the rising edge of the PROG button press.
 
