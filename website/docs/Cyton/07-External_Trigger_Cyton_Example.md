@@ -53,7 +53,7 @@ NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher tha
 ### Data
 
 1. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
-2. Open the Analog Read widget. The sensor(s) data appears here. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/SoftwareImages/OpenBCISoftware/GUI_Analog_Read.png" width="400" /></div>
+2. Open the Analog Read widget. The sensor(s) data appears here. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Analog_Read.png?raw=true" width="400" /></div>
 3. Flash a light at the photoresistor module and confirm two LEDs light up, and data appears in Analog Read D12
 4. Press the button module and confirm the button press is logged in Analog Read D13
 
