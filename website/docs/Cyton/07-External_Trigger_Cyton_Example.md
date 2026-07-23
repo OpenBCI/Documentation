@@ -17,7 +17,7 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 
 [Purchase the official kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) from OpenBCI Shop
 
-### Kit Contents
+### Contents
 
 | Description                | Use                                     | Image |
 | :------------------------- | :-------------------------------------- | :---- |
@@ -27,7 +27,7 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 | Button Module              | Sensor to register subject's response   | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_Kit_Button.png" width="150" /> |
 | Trigger Module             | PCB that collects Sensor data       | <img src="https://raw.githubusercontent.com/OpenBCI/Documentation/master/website/docs/assets/CytonImages/Trigger_PCB.png" width="150" /> |
 
-### Kit Assembly 
+### Assembly 
 
 You'll need the [Trigger Kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) + [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) or [CytonDaisy](https://shop.openbci.com/products/cyton-daisy-biosensing-boards-16-channel) Board Kit.
 1. Plug lithium polymer battery into the back of OFF-power Cyton board
@@ -50,7 +50,7 @@ NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher tha
 
 5. Flip Cyton Board power switch to 'PC'
 
-### Data Guide
+### Data
 
 1. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
 2. Open the Analog Read widget. The sensor(s) data appears here. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/SoftwareImages/OpenBCISoftware/GUI_Analog_Read.png" width="400" /></div>
