@@ -14,15 +14,15 @@ If you run into issues or have additional questions, head to our [Forum](https:/
 - [Getting Started](GettingStarted/00-GettingStartedLanding.md) - Everything you need to know to set up your OpenBCI equipment for the first time.
 - [Cyton Board](Cyton/01-CytonBoard.md) - Explanations, tutorials, and examples for working with the Cyton board and Cyton+Daisy board.
 - [Ganglion Board](Ganglion/01-GanglionBoard.md) - Explanations, tutorials, and examples for working with the Ganglion board.
-- [Headwear & Electrodes](AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
-- [Third-Party Hardware](ThirdParty/ThirdPartyLanding.md) - Here you will find information about OpenBCI-compatible accessories.
+- [Headwear & Electrodes](AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands,  electrode caps, and the different types of electrodes available.
+- [Third-Party Hardware](ThirdParty/ThirdPartyLanding.md) - Here you will find information about non-OpenBCI accessories that are compatible with OpenBCI hardware.
 - [Software](Software/SoftwareLanding.md) - This section includes guides on how to connect to OpenBCI hardware using software developed by OpenBCI and commonly used third-party software such as MATLAB, OpenVIBE, and more!
 - [For Developers](ForDevelopers/00-ForDevelopersLanding.md) - The information in this directory will help you start developing with OpenBCI technology.
 - [Troubleshooting](Troubleshooting/00-TroubleshootingLanding.md) - Find fixes for common hardware and software issues here.
 - [Examples](Examples/00-ExamplesLanding.md) - This section includes projects that members of our community have worked on.
 - [FAQ](FAQ/00-FAQ.md) - Frequently Asked Questions
 
-### Research Published With OpenBCI
+### Research Published with OpenBCI
 
 We put together [The OpenBCI Citation List](https://openbci.com/citations), a collection of recently published peer-reviewed research using OpenBCI products. We're proud of how many OpenBCI-based research reports are out there!
 
