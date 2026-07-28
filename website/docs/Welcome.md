@@ -11,7 +11,7 @@ If you run into issues or have additional questions, head to our [Forum](https:/
 
 ### The Learning Pages are separated into the following sections:
 
-- [Getting Started](GettingStarted/00-GettingStartedLanding.md) — Everything you need to know to set up your OpenBCI equipment for the first time.
+- [Getting Started](GettingStarted/00-GettingStartedLanding.md) - Everything you need to know to set up your OpenBCI equipment for the first time.
 - [Cyton Board](Cyton/01-CytonBoard.md) - Explanations, tutorials, and examples for working with the Cyton board and Cyton+Daisy board.
 - [Ganglion Board](Ganglion/01-GanglionBoard.md) - Explanations, tutorials, and examples for working with the Ganglion board.
 - [Headwear & Electrodes](AddOns/00-AddOnLanding.md) - Here you will find guides for using board attachments such as headsets, headbands, and the electrode cap.
