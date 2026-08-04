@@ -17,6 +17,8 @@ This tutorial explains how to add an external trigger to the OpenBCI data stream
 
 [Purchase the official kit](https://shop.openbci.com/products/external-trigger-add-on-for-cyton-board) from OpenBCI Shop
 
+<img src="https://raw.githubusercontent.com/OpenBCI/Documentation/refs/heads/master/website/docs/assets/CytonImages/Trigger_Kit_Contents.png" width="250" />
+
 ### Contents
 
 | Description                | Use                                     | Image |
