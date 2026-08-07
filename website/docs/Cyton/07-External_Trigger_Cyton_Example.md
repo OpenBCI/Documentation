@@ -3,15 +3,13 @@ id: CytonExternal
 title: External Trigger on OpenBCI Cyton Board
 ---
 
-The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. It allows users to synchronize:
+The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards.
+ 
+This kit enables you to insert event data into the same data stream as your biosignal, at the same sample rate, thereby synchronizing:
 
 - Physiological Data: EEG or EMG
 - Stimulus Timing: Event Markers/Trigger Signal
 - Behavioral Data: Subject Response (button press)
-
-EEG experiments require precise timing between external stimuli and the data stream. For example, P300 experiments require the stimulus timestamp in order to pinpoint the EEG signal that occurs about 300ms after the stimulus.
-
-This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards.
 
 <!--Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.-->
 
