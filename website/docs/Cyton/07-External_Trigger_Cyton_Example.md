@@ -11,7 +11,9 @@ The Trigger Module Kit is an add-on to the OpenBCI Cyton and CytonDaisy Boards. 
 
 EEG experiments require precise timing between external stimuli and the data stream. For example, P300 experiments require the stimulus timestamp in order to pinpoint the EEG signal that occurs about 300ms after the stimulus.
 
-This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards. Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.
+This tutorial explains how to add an external trigger to the OpenBCI data stream on the Cyton and Cyton+Daisy boards.
+
+<!--Normally, the Cyton reads from the Accelerometer at 25 Hz. When the "Digital Read" or "Analog Read" widgets in the GUI are opened/enabled, signals are read from the GPIO pins at same rate as the NxP input headers. This allows for the precise timing required for external triggers.-->
 
 ## Cyton External Trigger Kit Guide
 
@@ -56,8 +58,9 @@ NOTE: Do not use sensor signal with >3.3V amplitude. Signal amplitude higher tha
 
 1. Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui)
 2. Open the Analog Read widget. The sensor(s) data appears here. <div><img src="https://github.com/OpenBCI/Documentation/blob/master/website/docs/assets/CytonImages/Analog_Read.png?raw=true" width="400" /></div>
-3. Flash a light at the photoresistor module and confirm two LEDs light up, and data appears in Analog Read D12
+3. Flash a light at the photoresistor module and confirm two LEDs light up, and data appears in Analog Read D12. In experimental set-up, place the sensor over a small region of the display that changes brightness when a stimulus is presented.
 4. Press the button module and confirm the button press is logged in Analog Read D13
+
 
 ## DIY Trigger Guide
 
