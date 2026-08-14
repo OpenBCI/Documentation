@@ -12,7 +12,7 @@ Check out an example video of this tutorial being put into action!
 ## Materials Required
 
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
-2.  [Solid Gel Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
+2.  [Solid Gel Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack)
 3.  [Snap Electrode Cables (EMG/ECG/EEG)](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958)
 4.  Computer with downloaded OpenBCI [GUI](Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 
