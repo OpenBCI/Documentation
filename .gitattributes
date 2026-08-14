@@ -1,0 +1,78 @@
+# ----------------------------------------------------------------------------
+# Line endings
+#
+# This repo is already LF in the index (137 of 144 text files at the time this
+# was added). Prettier's endOfLine also defaults to "lf". Normalizing to LF
+# everywhere stops Windows editors from silently rewriting whole files as CRLF,
+# which produces diffs where every line looks changed and hides the real edit.
+#
+# eol=lf checks files out as LF on every platform, so the working tree and the
+# index agree regardless of a contributor's core.autocrlf setting.
+# ----------------------------------------------------------------------------
+
+* text=auto eol=lf
+
+# Docs
+*.md            text eol=lf
+*.markdown      text eol=lf
+*.txt           text eol=lf
+
+# Web source
+*.js            text eol=lf
+*.jsx           text eol=lf
+*.ts            text eol=lf
+*.tsx           text eol=lf
+*.css           text eol=lf
+*.scss          text eol=lf
+*.html          text eol=lf
+*.json          text eol=lf
+*.svg           text eol=lf
+*.xml           text eol=lf
+
+# Config / CI
+*.yml           text eol=lf
+*.yaml          text eol=lf
+Dockerfile      text eol=lf
+.dockerignore   text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
+.prettierrc     text eol=lf
+
+# Sketches, scripts and data files that are plain text despite the extension
+*.ino           text eol=lf
+*.py            text eol=lf
+*.sfp           text eol=lf
+
+# Shell scripts must stay LF or they break when run on Linux/macOS
+*.sh            text eol=lf
+
+# ----------------------------------------------------------------------------
+# Binary assets — never EOL-converted, never line-diffed
+# ----------------------------------------------------------------------------
+
+# Images (both cases: the repo tracks .jpg/.JPG and .png/.PNG)
+*.png           binary
+*.PNG           binary
+*.jpg           binary
+*.JPG           binary
+*.jpeg          binary
+*.JPEG          binary
+*.gif           binary
+*.GIF           binary
+*.ico           binary
+*.psd           binary
+
+# Video
+*.mp4           binary
+*.MP4           binary
+*.mov           binary
+*.MOV           binary
+
+# Windows Explorer thumbnail cache (should not be tracked at all)
+*.db            binary
+
+# ----------------------------------------------------------------------------
+# Generated files — collapse in GitHub diffs and exclude from language stats
+# ----------------------------------------------------------------------------
+
+website/package-lock.json  linguist-generated=true
