@@ -7,7 +7,7 @@ This document will show you how to read EMG data (electrical signals from muscle
 ## Materials Needed
 
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
-2.  [Gel-based snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack) or [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit)
+2.  [Gel-based snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack)
 3.  [Snap Electrode Cables (EMG/ECG/EEG)](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958)
 4.  Computer with downloaded OpenBCI [GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 
@@ -34,7 +34,7 @@ _for reference, "bottom" pins means the row of pins closer to the table when the
 
 In the image above, note how the positive and negative terminals (yellow and green) are connected to the top and bottom N1P pins. When you are running the GUI, data from N1P pins will be displayed on Channel 1 within the [Time Series Widget](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md#time-series).
 
-After making these pin connections, snap the sticky electrodes (or the [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit) if you are using that) into the electrode cable _prior to applying the electrodes to the skin._
+After making these pin connections, snap the sticky electrodes into the electrode cable _prior to applying the electrodes to the skin._
 
 **2. Electrode-Muscle Connection**
 
@@ -90,11 +90,11 @@ After you have done this, connect one snap electrode cable to the bottom D_G pin
 
 _for reference, "bottom" pins means the row of pins closer to the table when the board is laid flat._
 
-After making these pin connections, connect one sticky electrode (or the [IDUN Dryode](https://shop.openbci.com/collections/frontpage/products/idun-dryode-kit) if you are using that) to each snap electrode cable _before applying the electrodes to the skin._
+After making these pin connections, connect one sticky electrode to each snap electrode cable _before applying the electrodes to the skin._
 
 **2. Electrode-Muscle Connection**
 
-Choose muscle groups that can be flexed and relaxed easily. Place one sticky electrode (or IDUN Dryode) at the base of the muscle, and the other electrode at the opposite end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the reference electrode on a bony part of the body with as few muscles as possible (e.g., elbow or kneecap).
+Choose muscle groups that can be flexed and relaxed easily. Place one sticky electrode at the base of the muscle, and the other electrode at the opposite end of the muscle. The order of these doesn’t matter, as long as they are both linked to the same channel number. Place the reference electrode on a bony part of the body with as few muscles as possible (e.g., elbow or kneecap).
 
 Each muscle should have two electrodes: one electrode connected to the Ganglion top pin, one electrode to the Ganglion bottom pin. You can connect up to four muscles to the analog input channels 1 through 4. Thus, nine cables, including the reference electrode, are needed to get 4 channels of EMG data with the Ganglion Board.
 
