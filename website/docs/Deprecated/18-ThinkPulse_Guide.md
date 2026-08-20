@@ -1,17 +1,21 @@
 ---
-id: ThinkPulse
-title: "ThinkPulse Getting Started Guide"
+id: DeprecatedThinkPulse
+title: "ThinkPulse Guide"
 ---
 
-Available exclusively worldwide on the [OpenBCI® store](https://shop.openbci.com/products/thinkpulse-active-electrode-kit).
+:::note
+
+**THIS PRODUCT HAS BEEN DISCONTINUED AND IS NO LONGER SOLD BY OPENBCI.**
+
+The ThinkPulse™ Active Electrode Kit is no longer available in the OpenBCI store. This guide is kept for historical/reference purposes only and is no longer maintained.
+
+:::
 
 ## About Conscious Labs
 
-Conscious Labs has been working since 2014 to take neuroscience out of the lab and into the wild. They bring the technology, team, and expertise to integrate EEG sensors into head wearables and hearables.
+ThinkPulse™ is a product of Conscious Labs (France). Conscious Labs has been working since 2014 to take neuroscience out of the lab and into the wild. They bring the technology, team, and expertise to integrate EEG sensors into head wearables and hearables.
 
-We are very excited to partner with Conscious Labs to offer this affordable, high-quality biosensing kit to our community. The ThinkPulse™ kit offers research-grade dry, active electrode EEG sensors at an unprecedented price point and comfort level.
-
-ThinkPulse™ is a product of Conscious Labs (France). Patents issued and pending. Made in France.
+The ThinkPulse™ kit offers research-grade dry, active electrode EEG sensors. 
 
 The ThinkPulse™ system is an _add-on_ to the [Ultracortex EEG Headset](https://shop.openbci.com/collections/frontpage/products/ultracortex-mark-iv) plus [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel)
 
@@ -24,7 +28,7 @@ This kit has been designed and its compatibility tested for the 8- and 16-channe
 
 <br />
 
-![ThinkPulse contents](../../assets/ThirdPartyImages/ThinkPulse_starter_kit_contents.png)
+![ThinkPulse contents](../assets/ThirdPartyImages/ThinkPulse_starter_kit_contents.png)
 
 <br />
 <br />
@@ -36,15 +40,15 @@ Below is the step-by-step tutorial by Conscious Labs on how to install the Think
 
 ### Step 1: Prep Your Ultracortex Mark IV EEG Headset
 
-[![Ultracortex prep](../../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
+[![Ultracortex prep](../assets/ThirdPartyImages/ThinkPulse_assembly_step1.png)](https://youtu.be/cKDDvFaZy6s)
 
 ### Step 2: Install the ThinkPulse™ sensors on the Ultracortex
 
-[![install sensors](../../assets/ThirdPartyImages/ThinkPulse_assembly_step2.png)](https://youtu.be/KNyI0c5DYu8)
+[![install sensors](../assets/ThirdPartyImages/ThinkPulse_assembly_step2.png)](https://youtu.be/KNyI0c5DYu8)
 
 ### Step 3: Assemble the ThinkPulse™ Power Supply Board
 
-[![assemble power supply](../../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/SeceMtiUo40)
+[![assemble power supply](../assets/ThirdPartyImages/ThinkPulse_assembly_step3.png)](https://youtu.be/SeceMtiUo40)
 
 The assembly video shows how to install the power supply board to both post-2018 and pre-2018 Cyton boards.
 
@@ -54,14 +58,14 @@ If you need help or have any questions, email [support@openbci.com](mailto:suppo
 
 ### Step 4: Connect and organize the cables
 
-[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/GtcfUNvZlZ0)
+[![cable management](../assets/ThirdPartyImages/ThinkPulse_assembly_step4.png)](https://youtu.be/GtcfUNvZlZ0)
 
 <br />
 <br />
 
 ### Step 5 (For 16-channel kit) Connect and organize the cables
 
-[![cable management](../../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/J2ZVDfayahs)
+[![cable management](../assets/ThirdPartyImages/ThinkPulse_assembly_step5.png)](https://youtu.be/J2ZVDfayahs)
 
 ## Troubleshooting the ThinkPulse™ sensors with OpenBCI Cyton Board
 
@@ -75,7 +79,7 @@ The following information applies specifically to Cyton and Cyton+Daisy Boards. 
 6. Pressing the `Save` button at the bottom of the Hardware Settings will allow you to store this configuration as a file.
 7. Next time you want to use the Cyton with ThinkPulse Electrodes, open Hardware Settings to `Load` and then `Send` channel settings. If you are using BrainFlow outside of the GUI, simply send these commands after instantiating the Board.
 
-![ThinkPulse and Cyton Channel Setting Example](../../assets/ThirdPartyImages/ThinkPulse_Cyton_HardwareChannelSetting.png)
+![ThinkPulse and Cyton Channel Setting Example](../assets/ThirdPartyImages/ThinkPulse_Cyton_HardwareChannelSetting.png)
 
 ## How to replace ThinkPulse™ electrode prongs
 
