@@ -3,7 +3,7 @@ id: ElectrodesLanding
 title: Electrode Guide
 ---
 
-OpenBCI boards are compatible with a variety of different electrodes depending on your application, signal type (EEG, EMG, or ECG), and comfort requirements. In addition to our [Headwear solutions](https://docs.openbci.com/AddOns/AddOnLanding/#headwear), which provide integrated montages for high-quality EEG data, you can use standalone electrodes for tailored configurations for different biosignals. This guide covers the different electrode types available, as well as the cables and adapters used to connect them to your board.
+OpenBCI boards are compatible with a variety of different electrodes depending on your application, signal type (EEG, EMG, or ECG), and comfort requirements. In addition to our [Headwear solutions](../../AddOns/00-AddOnLanding.md#headwear), which provide integrated montages for high-quality EEG data, you can use standalone electrodes for tailored configurations for different biosignals. This guide covers the different electrode types available, as well as the cables and adapters used to connect them to your board.
 
 ---
 
@@ -17,7 +17,7 @@ Gold cup electrodes are the standard for high-quality, clinical-grade biopotenti
 
 ![Gold Cup Electrodes](../../assets/ElectrodesImages/Gold_cup_electrode.png)
 
-**Usage:** Fill the cup entirely with conductive paste, place it firmly on the scrubbed skin site, and secure it with medical tape to prevent movement artifacts. You can refer to our dedicated [guide for EEG Setup](https://docs.openbci.com/GettingStarted/Biosensing-Setups/EEGSetup/) for more information on how to use them.
+**Usage:** Fill the cup entirely with conductive paste, place it firmly on the scrubbed skin site, and secure it with medical tape to prevent movement artifacts. You can refer to our dedicated [guide for EEG Setup](../../GettingStarted/Biosensing-Setups/EEGSetup/) for more information on how to use them.
 
 ### Dry EEG Comb Electrodes
 
