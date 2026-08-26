@@ -30,8 +30,6 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
     The clear case snaps around the Ganglion board to protect it while keeping the power switch, battery connector, and electrode inputs accessible.
 
-    <!-- TODO: confirm exact case description with hardware team before publishing -->
-
 5.  **EEG electrodes:** OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar)
 
     If you ordered OpenBCI Gold Cup Electrodes and Electrode Paste, it should come with:
@@ -61,8 +59,6 @@ This guide will walk you through setting up your Ganglion, connecting it to your
     **Important note:** If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
 
     Then align the board so the switches face the case's cutout, and press the two halves together until they click into place.
-
-    <!-- TODO: confirm exact assembly steps with hardware team before publishing -->
 
 3.  **Attach your electrodes**
 
@@ -115,8 +111,6 @@ If you're having trouble finding your Ganglion or getting it to start streaming,
 ### Navigating the GUI
 
 When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). For the purposes of this introductory tutorial, you should follow the following steps to setup the GUI.  
-
-<!-- TODO: this screenshot is from GUI v4 (see filename) — replace with a current GUI v5+ screenshot before publishing -->
 
 ![Start Data Stream](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv6.png)
 
