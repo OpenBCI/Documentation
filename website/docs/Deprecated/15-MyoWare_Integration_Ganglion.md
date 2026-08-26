@@ -6,7 +6,7 @@ title: MyoWare 1.0 OpenBCI Integration (Ganglion Board)
 **THIS HARDWARE VERSION HAS BEEN DEPRECATED AND IS NO LONGER IN PRODUCTION.**
 :::
 
-MyoWare v1.0 is obsolete and has been pulled from production. The updated version is Myoware v2.0. This doc covers the integration of MyoWare v1.0 with the Ganglion board.
+MyoWare v1.0 is obsolete and has been pulled from production. Its successor, MyoWare v2.0, has since also been discontinued and is no longer sold by OpenBCI — see the [MyoWare 2.0 integration guide](Deprecated/17-MyoWare_Cyton_Tutorial.md) for details. This doc is kept for historical reference and covers the integration of MyoWare v1.0 with the Ganglion board.
 
 
 ### Overview

@@ -3,7 +3,7 @@ id: ElectrodesLanding
 title: Electrode Guide
 ---
 
-OpenBCI boards are compatible with a variety of different electrodes depending on your application, signal type (EEG, EMG, or ECG), and comfort requirements. In addition to our [Headwear solutions](https://docs.openbci.com/AddOns/AddOnLanding/#headwear), which provide integrated montages for high-quality EEG data, you can use standalone electrodes for tailored configurations for different biosignals. This guide covers the different electrode types available, as well as the cables and adapters used to connect them to your board. This guide covers the different electrode types available, as well as the cables and adapters used to connect them to your board
+OpenBCI boards are compatible with a variety of different electrodes depending on your application, signal type (EEG, EMG, or ECG), and comfort requirements. In addition to our [Headwear solutions](https://docs.openbci.com/AddOns/AddOnLanding/#headwear), which provide integrated montages for high-quality EEG data, you can use standalone electrodes for tailored configurations for different biosignals. This guide covers the different electrode types available, as well as the cables and adapters used to connect them to your board.
 
 ---
 
@@ -58,11 +58,11 @@ These experimental, dry, conductive-polymer electrodes are ideal for long, comfo
 
 [**Buy them here**](https://shop.openbci.com/products/eeg-snap-electrodes)
 
-Designed to offer flexibility for different areas of the scalp, these silver-silver chloride (Ag-AgCl) plated electrodes are available either on their own, a [kit of 5](https://shop.openbci.com/products/eeg-snap-electrodes) letting you choose between a comb or a flat configuration, or as part of the OpenBCI [EEG Headband Kit](https://shop.openbci.com/products/openbci-eeg-headband-kit?_pos=7&_fid=851bedfe7&_ss=c), which includes 8 comb and 4 flat electrodes along with the snap cables, a velcro strap, and a board mounting clip. Their plating ensures good signal transduction, making them a reliable choice for modular or headband-based EEG setups. The comb variant is recommended for hair-covered areas, while the flat option is ideal for bare skin or forehead placements.
+Designed to offer flexibility for different areas of the scalp, these silver-silver chloride (Ag-AgCl) plated electrodes are available either on their own, in a [kit of 5](https://shop.openbci.com/products/eeg-snap-electrodes) letting you choose between a comb or a flat configuration, or as part of the OpenBCI [EEG Headband Kit](https://shop.openbci.com/products/openbci-eeg-headband-kit?_pos=7&_fid=851bedfe7&_ss=c), which includes 8 comb and 4 flat electrodes along with the snap cables, a velcro strap, and a board mounting clip. Their plating ensures good signal transduction, making them a reliable choice for modular or headband-based EEG setups. The comb variant is recommended for hair-covered areas, while the flat option is ideal for bare skin or forehead placements.
 
 ![EEG Snap Electrodes](../../assets/ElectrodesImages/EEG_Snap_Electrodes.png)
 
-**Usage:** To connect them to your OpenBCI board, snap them into an [OpenBCI Snap Cables](https://shop.openbci.com/products/snap-electrode-cables-emg-ecg-eeg) or a standard third-party snap cable. These electrodes are usually held in place with a velcro strap, like the one included in the OpenBCI EEG Headband Kit.
+**Usage:** To connect them to your OpenBCI board, snap them into an [OpenBCI Snap Electrode Cable](https://shop.openbci.com/products/snap-electrode-cables-emg-ecg-eeg) or a standard third-party snap cable. These electrodes are usually held in place with a velcro strap, like the one included in the OpenBCI EEG Headband Kit.
 
 ---
 
