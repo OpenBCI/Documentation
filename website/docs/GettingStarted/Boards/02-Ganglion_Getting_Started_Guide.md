@@ -92,7 +92,7 @@ Open the OpenBCI GUI now that your hardware is set up.
 
 The GUI will automatically start searching for Ganglion devices.
 
-Each Ganglion has its own unique 4 character ID (in HEX), and you will see it listed in the `BLE DEVICES` window. If you don't see any Ganglions, check to make sure your Ganglion has a battery connected, is switched on, and the blue LED is blinking. If there are multiple Ganglions in the room, you can find yours by turning it off, clicking the `REFRESH LIST` button, then turn on your Ganglion again. Make a note of _your_ Ganglion's 4 character ID.  
+Each Ganglion has its own unique 4 character ID (in HEX), and you will see it listed in the `BLE DEVICES` window. If you don't see any Ganglions, check to make sure your Ganglion has a battery connected, is switched on, and the blue LED is blinking. If there are multiple Ganglions in the room, you can find yours by turning it off, clicking the `REFRESH LIST` button, then turning it back on. Make a note of _your_ Ganglion's 4 character ID.  
 
 **Select the desired Ganglion device from the dropdown list.**
 
@@ -110,29 +110,37 @@ If you're having trouble finding your Ganglion or getting it to start streaming,
 
 ### Navigating the GUI
 
-When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). For the purposes of this introductory tutorial, you should follow the following steps to setup the GUI.  
+When the GUI connects, it opens up to the default window layout, shown below.
 
 ![Start Data Stream](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv6.png)
 
-**Click on the `Layout` dropdown menu, and select the one outlined in red.**
+For a more in-depth guide to the GUI interface and functionality, and the different built-in widgets, check out the [OpenBCI GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). Refer to the Ganglion Data Format [guide](../../Ganglion/08-Ganglion_Data_Format.md#binary-format) to learn how to interpret the raw data directly from the device. However this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
+
+For the purposes of this introductory tutorial, you should follow the following steps to setup the GUI.  
+
+**Click on the `Layout` dropdown menu in the top-right corner, and select the one outlined in orange.** 
+
+By default, this layout shows the `Time Series` widget on the left (for all 4 channels), displaying the incoming data in real time; and on the right, `FFT Plot` on top, showing the power level of the signals at different frequencies, and `Accelerometer` on the bottom, displaying the accelerometer data in real time. You can swap any of these for other widgets as you like.
 
 ![select layout](../../assets/GettingStartedImages/ganglion_select-layout.png)
 
-If the accelerometer is off, turn on the accelerometer by clicking the `Turn Accel. On` button.
-
-![Accel ON!](../../assets/GettingStartedImages/ganglion_accel-ON.jpg)
-![Accel ON!](../../assets/GettingStartedImages/ganglion_accel-ON.png)
-
-**Then, click `Start Data Stream` to stream data from your Ganglion board.**
+**Click `Start Data Stream`, in the top-left corner, to stream data from your Ganglion board.**
 
 ![Start Data Stream](../../assets/GettingStartedImages/ganglion_Start.png)
+
+You should see the `Time Series` widget go from a flat line at 0 to plotting your live data across all 4 channels.
+
 ![First Live Ganglion Data](../../assets/GettingStartedImages/ganglion_first-data.png)  
 
-You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.
+You can also touch your input pin header and see this reflected as noise in the channels.
 
-Learn about the `Time Series` and other built-in widgets in the [GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). Refer to the Ganglion Data Format [guide](../../Ganglion/08-Ganglion_Data_Format.md#binary-format) to learn how to interpret the raw data directly from the device. However this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
+Now let's check out another sensor built into the board: the onboard three-axis accelerometer, which measures the acceleration of the board itself on the XYZ axis.
 
-Pick up your board, and move it around. You should see the data in the `Accelerometer` window also move around, and if you're touching the input pin header, you will see some noise in the other windows. Nice!  
+**If the accelerometer is off, click the `Turn Accel. On` button to activate it** (or `Turn Accel. Off` to deactivate it).
+
+![Accel ON!](../../assets/GettingStartedImages/ganglion_accel_on_button.png)
+
+Pick up your board, and move it around. You should see this reflected in the `Accelerometer` widget. Nice!  
 
 ![Accel Moving](../../assets/GettingStartedImages/ganglion_moving-accelerometer.png)
 
