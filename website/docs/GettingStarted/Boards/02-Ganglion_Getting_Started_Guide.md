@@ -30,16 +30,16 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
     The clear case snaps around the Ganglion board to protect it while keeping the power switch, battery connector, and electrode inputs accessible.
 
-5.  **EEG electrodes:** OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar)
+5.  **EEG electrodes:** OpenBCI [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar)
 
     If you ordered OpenBCI Gold Cup Electrodes and Electrode Paste, it should come with:
 
     -   10 passive, gold cup electrodes on a color-coded ribbon cable
     -   Jar of Ten20 conductive electrode paste
 
-    If you plan to work with your own electrode cap or electrodes, the [Touch-Proof Adapter](http://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) will come in handy: it converts any touch-proof style electrode into one that can be plugged into an OpenBCI board.
+    If you plan to work with your own electrode cap or electrodes, the [Touch-Proof Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) will come in handy: it converts any touch-proof style electrode into one that can be plugged into an OpenBCI board.
 
-6.  **Or EMG/ECG electrodes:** disposable [Foam Solid Gel Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack) that snap onto [Snap Electrode Cables](http://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958), which can be plugged directly into the Ganglion's pin headers.
+6.  **Or EMG/ECG electrodes:** disposable [solid gel snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack) that snap onto [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958), which can be plugged directly into the Ganglion's pin headers.
 
 
 7.  **A computer with the OpenBCI GUI installed and with an available USB port for the dongle.**

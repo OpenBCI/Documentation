@@ -11,7 +11,7 @@ This step-by-step guide for 3-Lead ECG will show you how to get one channel of l
 ### Materials Needed
 
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542) or [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
-2.  [Gel-based snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack)
+2.  [Gel-based snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack)
 3.  Three [Snap Electrode Cables (EMG/ECG/EEG)](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958) — one ground and two sensors.
 4.  [OpenBCI GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 
@@ -69,7 +69,7 @@ It builds on the above guide to 3-Lead ECG and adds only a few additional steps,
 ## Materials Needed
 
 1.  OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel?variant=38958638542)
-2.  [Gel snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack)
+2.  [Gel snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack)
 3.  [Snap Electrode Cables (EMG/ECG/EEG)](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958) — 4 individual cables
 4.  [OpenBCI GUI](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md)
 
