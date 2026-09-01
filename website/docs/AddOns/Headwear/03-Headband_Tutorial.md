@@ -97,7 +97,7 @@ When worn, the headband strap should fit quite snugly around the head, with the 
 
 #### OpenBCI Software
 
-Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the GUI [tutorial](../../GettingStarted/Boards/02-Ganglion_Getting_Started_Guide.md#downloadinstallrun-the-openbci-gui) to prepare your computer to communicate with your Ganglion.
+Now that you've finished with the hardware set-up, the next step is to set up the GUI! Follow the [step-by-step guide](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI GUI and prepare your computer to communicate with your Ganglion.
 
 Once you've downloaded the GUI zip file per tutorial instructions, fire up the GUI [as shown in this YouTube video!](http://www.youtube.com/watch?v=NAM6eOA4a8Y)
 

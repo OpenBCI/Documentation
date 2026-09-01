@@ -6,83 +6,83 @@ title: Ganglion Getting Started Guide
 
 This guide will walk you through setting up your Ganglion, connecting it to your computer, and then connecting it to yourself. Please review this guide in its entirety before starting, and consult the [Ganglion Biosensing Tutorial Video](https://youtu.be/l13R_99h0qQ). Have fun!
 
-**Note that the Ganglion is not set to be discoverable out of the box, you need the [GUI](https://openbci.com/downloads).**
-
 ## What You Need
 
 ![OpenBCI Contents](../../assets/GettingStartedImages/ganglion_what_you_need.png)
 
-1.  OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)
-2.  An [OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)
-3.  Lithium battery and USB charger OR 6V battery pack (AA batteries not included)
-4.  Board Case
-5.  EEG electrodes: OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar) 
-6.  or EMG electrodes: [Snap Electrode Cables](http://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958) and [Snap Electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-30-pack).
-7.  A computer connected to the internet
+1.  **OpenBCI [Ganglion Board](https://shop.openbci.com/collections/frontpage/products/ganglion-board)**
 
-### 1. Your Ganglion
+    The Ganglion is OpenBCI's 4-channel bioamplifier — a low-cost biosensing board you can use to measure EEG, EMG, or ECG signals with electrodes. For full specs (power input, switches, pinout, schematics), see the [OpenBCI Ganglion Hardware Doc](../../Ganglion/02-Ganglion.md).
 
-![OpenBCI 8-bit Top](../../assets/GettingStartedImages/ganglion_head_shot.jpg)
+    ![Ganglion top and bottom view](../../assets/GettingStartedImages/ganglion_front_back_view.png)
 
-The battery connector on the back can accept 3V to 12V DC power input. Note the removable orange stickers on the four switches (SW1, SW2, SW3, SW4). For more information on the Ganglion Hardware, visit the [OpenBCI Ganglion Hardware Doc](../../Ganglion/02-Ganglion.md#sensor-input-header).
+2.  **[OpenBCI Ganglion Dongle](https://shop.openbci.com/products/ganglion-dongle)**
 
-### 2. OpenBCI Ganglion Dongle
+    Required on macOS, Windows, and Linux. The Ganglion will pair via Bluetooth with this USB adapter.
 
-![Ganglion Dongle](../../assets/GettingStartedImages/Ganglion_dongle.jpeg)
+3.  **Lithium battery and USB charger**
 
-Plug the OpenBCI Ganglion Dongle into your computer before launching the GUI.
+    :::note Using an older Ganglion? (pre-2023 units)
+    Earlier kits shipped with a 6V battery pack that takes 4 AA batteries (not included) instead of a lithium battery and charger. If you have one of these, install 4 fresh AA batteries and skip the battery-charging step below — everything else in this guide works the same way.
+    :::
 
-### 3. Your Lithium Polymer Battery and USB Charger (or 6V Battery Pack & 4 AA Batteries, pre-2023)
+4.  **Board Case**
 
-Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green. To do this, insert the battery's white plug into the matching slot on the USB charger (shown on the right), and connect the charger into a USB port.
+    The clear case snaps around the Ganglion board to protect it while keeping the power switch, battery connector, and electrode inputs accessible.
 
-![lithium battery and USB charger](../../assets/GettingStartedImages/board_case_with_lithium_battery_and_charger.png)
+5.  **EEG electrodes:** OpenBCI [Gold Cup Electrodes](https://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163), or your own electrodes, and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar)
 
-Pre-2023: 
-Install 4 AA batteries in your battery pack
+    If you ordered OpenBCI Gold Cup Electrodes and Electrode Paste, it should come with:
 
-![Battery Connection](../../assets/GettingStartedImages/ganglion_batteryConnection.png)
+    -   10 passive, gold cup electrodes on a color-coded ribbon cable
+    -   Jar of Ten20 conductive electrode paste
 
-Both power source types can be plugged into the 2-pin JST, on the underside of your Ganglion board.
+    If you plan to work with your own electrode cap or electrodes, the [Touch-Proof Adapter](https://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) will come in handy: it converts any touch-proof style electrode into one that can be plugged into an OpenBCI board.
 
-Turn on the power switch. You should see the BLUE LED blink gently.
-Blinking means that the BLE radio is not connected or paired with any computer or phone/tablet. Once the Ganglion is connected, the LED stays steady on.
+6.  **Or EMG/ECG electrodes:** disposable [solid gel snap electrodes](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack) that snap onto [Snap Electrode Cables](https://shop.openbci.com/collections/frontpage/products/snap-electrode-cables-emg-ecg-eeg?variant=32372786958), which can be plugged directly into the Ganglion's pin headers.
 
 
-**Important note**
-If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
+7.  **A computer with the OpenBCI GUI installed and with an available USB port for the dongle.**
 
-### 4. Clear Board Case
+    Don't have the GUI installed yet? [Follow the step-by-step guide](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application before continuing.
 
-![board case and lithium battery](../../assets/GettingStartedImages/board_case_with_lithium_battery.png)
+## Setting Up Your Hardware
 
+1.  **Charge your battery**
 
-### 5. Gold Cup Electrodes and Paste
+    Fully charge the Lithium Polymer Battery, until the charger's indicator LED turns green. To do this, insert the battery's white plug into the matching slot on the USB charger, and connect the charger into a USB port.
 
-![Electrode Starter Kit](../../assets/GettingStartedImages/electrodeStarterKit.png)
+2.  **Place the battery and the case**
 
-If you ordered OpenBCI [Gold Cup Electrodes](http://shop.openbci.com/collections/frontpage/products/openbci-gold-cup-electrodes?variant=9056028163) and [Electrode Paste](https://shop.openbci.com/products/ten20-conductive-paste-8oz-jar), it should come with:
+    Plug the charged battery into the 2-pin JST connector on the underside of your Ganglion board.
 
--   10 passive, gold cup electrodes on a color-coded ribbon cable
--   Jar of Ten20 conductive electrode paste
+    **Important note:** If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
 
-![TouchProof Adapter](../../assets/GettingStartedImages/touch_proof.jpg)
+    Place the board and battery into the bottom half of the clear case, taking care to position the battery in its compartment so its lead isn't pinched. Then align the board so the switches face the case's cutout, and press the two halves together until they click into place.
 
-If you plan to work with your own electrodes, the [Touch-Proof Adapter](http://shop.openbci.com/collections/frontpage/products/touch-proof-electrode-cable-adapter?variant=31007211715) will come in handy. It will convert any electrode that terminates in the industry-standard touch-proof design to an electrode that can be plugged into any OpenBCI Board!
+3.  **Attach your electrodes**
 
-For best results, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
+    For EEG electrodes, when plugging female header pins onto the OpenBCI board, orient the sides with the 'silver latch bit' face-up since that side is a tiny bit wider than 0.1".
 
-## Download/Install/Run the OpenBCI GUI
+    For EMG/ECG electrodes, plug the snap cables directly into the Ganglion's pin headers, then snap the foam electrodes onto the other end of each cable.
 
-Please [follow the step by step guide](../../Software/OpenBCISoftware/01-OpenBCI_GUI.md#installing-the-openbci-gui-as-a-standalone-application) to install the OpenBCI_GUI as a standalone application.
+    See the [**Connect yourself to OpenBCI**](#connect-yourself-to-openbci) section below for guides on where to place electrodes on the body and how to set up your reference electrodes for different biosensing setups.
 
-Come back to this guide when your GUI is running!
+4.  **Plug in the Ganglion Dongle**
+
+    Plug the OpenBCI Ganglion Dongle into your computer before launching the GUI.
+
+5.  **Power on your Ganglion**
+
+    Turn on the power switch. You should see the BLUE LED blink gently. Blinking means that the BLE radio is not connected or paired with any computer or phone/tablet. Once the Ganglion is connected, the LED stays steady on.
 
 ## Start Using The OpenBCI GUI
 
+Open the OpenBCI GUI now that your hardware is set up.
+
 ### Connect the GUI to your Ganglion board
 
-Make sure your computer's Bluetooth feature is turned on. **Select `LIVE (from Ganglion)` from the first drop down.**
+**Select `GANGLION (live)` from the first drop down.**
 
 ![selecting ganglion from drop down](../../assets/GettingStartedImages/ble112_ganglion_select_ganglion.png)
 
@@ -92,58 +92,57 @@ Make sure your computer's Bluetooth feature is turned on. **Select `LIVE (from G
 
 The GUI will automatically start searching for Ganglion devices.
 
-Each Ganglion has its own unique 4 character ID (in HEX), and you will see it listed in the `BLE DEVICES` window. If you don't see any Ganglions, check to make sure your Ganglion has a battery connected, is switched on, and the blue LED is blinking. If there are multiple Ganglions in the room, you can find yours by turning it off, clicking the `REFRESH LIST` button, then turn on your Ganglion again. Make a note of _your_ Ganglion's 4 character ID.  
+Each Ganglion has its own unique 4 character ID (in HEX), and you will see it listed in the `BLE DEVICES` window. If you don't see any Ganglions, check to make sure your Ganglion has a battery connected, is switched on, and the blue LED is blinking. If there are multiple Ganglions in the room, you can find yours by turning it off, clicking the `REFRESH LIST` button, then turning it back on. Make a note of _your_ Ganglion's 4 character ID.  
 
 **Select the desired Ganglion device from the dropdown list.**
 
 ![selecting your ganglion ble shield](../../assets/GettingStartedImages/ble112_ganglion_select_peripheral.png)
 
-The GUI will automatically generate a recording to a file. You have an option at this point to create your own file name, in the `DATA LOG FILE` window, should you choose to.
+In the `SESSION DATA` panel, `Name` indicates the name of that session's subfolder — it's auto-generated, but you can rename it or click `GENERATE SESSION NAME` for a new one — and you can choose the file format (`OpenBCI` or `BDF+`). Under `BRAINFLOW STREAMER`, `Location` lets you change where that folder is saved: leave it on the default option to use `[USER]/Documents/OpenBCI_GUI/Recordings`, or select `Custom` to open a folder picker and choose your own destination.
 
-![File Name](../../assets/GettingStartedImages/ble112_ganglion_fileName.png)
+![Session Data panel](../../assets/GettingStartedImages/ble112_ganglion_session_data_panel.png)
 
 **Press `START SYSTEM` when you're ready to begin streaming.**
 
 ![ble ganglion start system](../../assets/GettingStartedImages/ble112_ganglion_start_system.png)
 
+If you're having trouble finding your Ganglion or getting it to start streaming, see the [Troubleshooting Connection Issues](#troubleshooting-connection-issues) section below.
+
 ### Navigating the GUI
 
-When the GUI connects, it opens up to the default window layout. For a more in-depth guide to the GUI interface and functionality, check out the [OpenBCI GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). For the purposes of this introductory tutorial, You should follow the following steps to setup the GUI.  
+When the GUI connects, it opens up to the default window layout, shown below.
 
-![Start Data Stream](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv4.png)
+![Default connected window layout](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv6.png)
 
-**Click on the `Layout` dropdown menu, and select the one outlined in red.**
+For a more in-depth guide to the GUI interface and functionality, and the different built-in widgets, check out the [OpenBCI GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). Refer to the Ganglion Data Format [guide](../../Ganglion/08-Ganglion_Data_Format.md#binary-format) to learn how to interpret the raw data directly from the device. However this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
+
+For the purposes of this introductory tutorial, you should follow the following steps to setup the GUI.  
+
+**Click on the `Layout` dropdown menu in the top-right corner, and select the one outlined in orange.** 
+
+By default, this layout shows the `Time Series` widget on the left (for all 4 channels), displaying the incoming data in real time; and on the right, `FFT Plot` on top, showing the power level of the signals at different frequencies, and `Accelerometer` on the bottom, displaying the accelerometer data in real time. You can swap any of these for other widgets as you like.
 
 ![select layout](../../assets/GettingStartedImages/ganglion_select-layout.png)
 
-If the accelerometer is off, turn on the accelerometer by clicking the `Turn Accel. On` button.
-
-![Accel ON!](../../assets/GettingStartedImages/ganglion_accel-ON.jpg)
-![Accel ON!](../../assets/GettingStartedImages/ganglion_accel-ON.png)
-
-**Then, click `Start Data Stream` to stream data from your Ganglion board.**
+**Click `Start Data Stream`, in the top-left corner, to stream data from your Ganglion board.**
 
 ![Start Data Stream](../../assets/GettingStartedImages/ganglion_Start.png)
-![First Live Ganglion Data](../../assets/GettingStartedImages/ganglion_first-data.jpg)  
 
-You should see the `Time Series` window scrolling some data to the left, the `FFT Plot` container will show you the power level of the signals at different frequencies. The `Accelerometer` window will also scroll data.
+You should see the `Time Series` widget go from a flat line at 0 to plotting your live data across all 4 channels.
 
-:::info
-**By default, the GUI stores all user data and raw EEG recordings in `[USER]/Documents/OpenBCI_GUI` and names each session with an autogenerated timestamp by default.**
-:::
+![First Live Ganglion Data](../../assets/GettingStartedImages/ganglion_first-data.png)  
 
-Learn about the `Time Series` and other built-in widgets in the [GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). Refer to the Ganglion Data Format [guide](../../Ganglion/08-Ganglion_Data_Format.md#binary-format) to learn how to interpret the raw data directly from the device. However this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
+You can also touch your input pin header and see this reflected as noise in the channels.
 
-![Accel Moving](../../assets/GettingStartedImages/ganglion_moving-accelerometer.jpg)
+Now let's check out another sensor built into the board: the onboard three-axis accelerometer, which measures the acceleration of the board itself on the XYZ axis.
 
-Pick up your board, and move it around. You should see the data in the `Accelerometer` window also move around, and if you're touching the input pin header, you will see some noise in the other windows. Nice!  
+**If the accelerometer is off, click the `Turn Accel. On` button to activate it** (or `Turn Accel. Off` to deactivate it).
 
-**NOTE: If you're having connection issues, refer to the troubleshooting tips below.**
+![Accel ON!](../../assets/GettingStartedImages/ganglion_accel_on_button.png)
 
--   check that you have fresh batteries
--   move the Ganglion board closer to its dongle
--   hit 'AUTOSCAN' a couple of times
--   exit the GUI and restart the computer to reboot your USB port
+Pick up your board, and move it around. You should see this reflected in the `Accelerometer` widget. Nice!  
+
+![Accel Moving](../../assets/GettingStartedImages/ganglion_moving-accelerometer.png)
 
 Now that you've got your computer connected to the Ganglion, it's time to connect yourself!
 
@@ -154,3 +153,14 @@ To learn how to connect yourself to OpenBCI using your newly set up board, see t
 -   [EEG Setup](../../GettingStarted/Biosensing-Setups/01-EEG-Setup.md)
 -   [EMG Setup](../../GettingStarted/Biosensing-Setups/02-EMG-Setup.md)
 -   [ECG Setup](../../GettingStarted/Biosensing-Setups/03-ECG-Setup.md)
+-   [Multiple ExG Signals Setup](../../GettingStarted/Biosensing-Setups/04-ExG-Setup.md)
+
+## Troubleshooting Connection Issues
+
+If you're having connection issues, try the following:
+
+-   make sure your battery is fully charged (or its AA cells are fresh, for legacy 6V packs)
+-   move the Ganglion board closer to its dongle
+-   turn the Ganglion off, hit 'REFRESH LIST' a couple of times, then turn it back on
+-   exit the GUI and restart the computer to reboot your USB port
+-   on macOS 11+, see the [macOS BLE Workaround](../../Troubleshooting/MacOS_Ganglion_BLE_Workaround.md) if the stream won't start or keeps dropping
