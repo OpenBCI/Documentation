@@ -32,7 +32,7 @@ Designed specifically to penetrate through thick hair without the need for condu
 
 ### EMG/ECG Foam Solid Gel Electrodes
 
-[**Buy them here!**](https://shop.openbci.com/collections/frontpage/products/skintact-f301-pediatric-foam-solid-gel-electrodes-30-pack?variant=29467659395)
+[**Buy them here!**](https://shop.openbci.com/products/kendall-emg-ecg-foam-solid-gel-electrodes-50-pack)
 
 These pre-gelled, disposable foam electrodes are the standard for recording EMG (muscle activity) and ECG (heart activity). They use a silver-silver chloride (Ag/AgCl) coating, the same conductive material found in medical-grade sensors, plus a foam backing that keeps sweat and moisture away from the gel, so recordings stay stable during long sessions. The adhesive gel also picks up a strong signal quickly, even if the skin wasn't perfectly cleaned beforehand.
 
