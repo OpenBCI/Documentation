@@ -23,7 +23,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 3.  **Lithium battery and USB charger**
 
     :::note Using an older Ganglion? (pre-2023 units)
-    Earlier kits shipped with a 6V battery pack that takes 4 AA batteries (not included) instead of a lithium battery and charger. If you have one of these, everything else in this guide works the same way.
+    Earlier kits shipped with a 6V battery pack that takes 4 AA batteries (not included) instead of a lithium battery and charger. If you have one of these, install 4 fresh AA batteries and skip the battery-charging step below — everything else in this guide works the same way.
     :::
 
 4.  **Board Case**
@@ -58,7 +58,7 @@ This guide will walk you through setting up your Ganglion, connecting it to your
 
     **Important note:** If you are using a non-OpenBCI battery holder (not recommended), please check the polarity (red +/black -) BEFORE powering up your OpenBCI board. A reversed polarity will burn out your board.
 
-    Then align the board so the switches face the case's cutout, and press the two halves together until they click into place.
+    Place the board and battery into the bottom half of the clear case, taking care to position the battery in its compartment so its lead isn't pinched. Then align the board so the switches face the case's cutout, and press the two halves together until they click into place.
 
 3.  **Attach your electrodes**
 
@@ -112,7 +112,7 @@ If you're having trouble finding your Ganglion or getting it to start streaming,
 
 When the GUI connects, it opens up to the default window layout, shown below.
 
-![Start Data Stream](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv6.png)
+![Default connected window layout](../../assets/GettingStartedImages/ganglion_connected-idle-GUIv6.png)
 
 For a more in-depth guide to the GUI interface and functionality, and the different built-in widgets, check out the [OpenBCI GUI Widget Guide](../../Software/OpenBCISoftware/02_GUI_Widget_Guide.md). Refer to the Ganglion Data Format [guide](../../Ganglion/08-Ganglion_Data_Format.md#binary-format) to learn how to interpret the raw data directly from the device. However this is already handled gracefully by [BrainFlow](../../ForDevelopers/01-SoftwareDevelopment.md#introducing-brainflow) for a number of programming languages and use cases.
 
@@ -159,8 +159,8 @@ To learn how to connect yourself to OpenBCI using your newly set up board, see t
 
 If you're having connection issues, try the following:
 
--   check that you have fresh batteries
+-   make sure your battery is fully charged (or its AA cells are fresh, for legacy 6V packs)
 -   move the Ganglion board closer to its dongle
--   hit 'AUTOSCAN' a couple of times
+-   turn the Ganglion off, hit 'REFRESH LIST' a couple of times, then turn it back on
 -   exit the GUI and restart the computer to reboot your USB port
 -   on macOS 11+, see the [macOS BLE Workaround](../../Troubleshooting/MacOS_Ganglion_BLE_Workaround.md) if the stream won't start or keeps dropping
