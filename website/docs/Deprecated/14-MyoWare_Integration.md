@@ -1,13 +1,11 @@
 ---
 id: MyoCyton
-title: MyoWare OpenBCI Integration (Cyton Board)
+title: MyoWare 1.0 OpenBCI Integration (Cyton Board)
 ---
 :::note
-**THIS HARDWARE VERSION HAS BEEN DEPRECATED AND IS NO LONGER IN PRODUCTION.**
+**THIS HARDWARE HAS BEEN DISCONTINUED AND IS NO LONGER SOLD BY OPENBCI.**
 
-MyoWare v1.0 is obsolete and has been pulled from production. The updated version is Myoware v2.0. This doc covers the integration of MyoWare v1.0 with the Cyton board.
-
-You can purchase Myoware v2.0 from the [OpenBCI Shop](https://shop.openbci.com/) and [connect to Cyton using the updated tutorial](../ThirdParty/Myoware/MyoWare_Cyton_Tutorial.md).
+MyoWare v1.0 is obsolete and has been pulled from production. This doc covers the integration of MyoWare v1.0 with the Cyton board. MyoWare v2.0 has also been discontinued; see the [MyoWare v2.0 Cyton integration guide](17-MyoWare_Cyton_Tutorial.md) for reference.
 :::
 
 ### Overview

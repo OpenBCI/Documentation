@@ -84,18 +84,8 @@
       },
       {
         "type": "category",
-        "label": "Myoware",
-        "items": ["ThirdParty/Myoware/MyoWareCyton"]
-      },
-      {
-        "type": "category",
         "label": "Pulse Sensor",
         "items": ["ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"]
-      },
-      {
-        "type": "category",
-        "label": "ThinkPulse",
-        "items": ["ThirdParty/ThinkPulse/ThinkPulse"]
       }
     ],
     "Software": [
@@ -142,11 +132,13 @@
       "Deprecated/Hub",
       "Deprecated/MyoCyton",
       "Deprecated/MyoGanglion",
+      "Deprecated/MyoWareCyton",
       "Deprecated/FTDI_Fix_Mac_Deprecated",
       "Deprecated/MotorImagery",
       "Deprecated/DeprecatedCytonProgram",
       "Deprecated/DeprecatedDongleProgramming",
       "Deprecated/DeprecatedDryode",
+      "Deprecated/DeprecatedThinkPulse",
       {
         "type": "category",
         "label": "WiFi Shield",

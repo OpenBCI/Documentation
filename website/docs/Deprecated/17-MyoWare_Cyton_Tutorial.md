@@ -1,11 +1,19 @@
 ---
 id: MyoWareCyton
-title: MyoWare OpenBCI Integration (Cyton Board)
+title: MyoWare 2.0 OpenBCI Integration (Cyton Board)
 ---
+
+:::note
+
+**THIS PRODUCT HAS BEEN DISCONTINUED AND IS NO LONGER SOLD BY OPENBCI.**
+
+The MyoWare muscle sensor is no longer available in the OpenBCI store. This guide is kept for historical/reference purposes only and is no longer maintained.
+
+:::
 
 :::caution
 
-The MyoWare 2.0 board cannot be used with the Ganglion board. If you have purchased a MyoWare 2.0 board with the intention of using it with the Ganglion board, please contact customer support at contact@openbci.com.
+The MyoWare 2.0 board cannot be used with the Ganglion board.
 
 :::
 
@@ -13,7 +21,7 @@ The MyoWare 2.0 board cannot be used with the Ganglion board. If you have purcha
 
 This tutorial will show you how to read EMG data (electrical signals from muscles) using a MyoWare board, an OpenBCI Cyton board, and the OpenBCI GUI.
 
-![MyoWare Pin Side](../../assets/ThirdPartyImages/myoware_pin_side.jpg) | ![MyoWare Snap Side](../../assets/ThirdPartyImages/myoware_snap_side.jpg)
+![MyoWare Pin Side](../assets/ThirdPartyImages/myoware_pin_side.jpg) | ![MyoWare Snap Side](../assets/ThirdPartyImages/myoware_snap_side.jpg)
 
 ### Materials Needed
 
@@ -31,11 +39,11 @@ Note: Jumper wires and header pins aren't sold on the OpenBCI website, but we us
 
 Break the male headers into a set of 2-pin headers and 3-pin headers as shown below
 
-![Header pins for MyoWare](../../assets/ThirdPartyImages/mywoare_headers.jpg)
+![Header pins for MyoWare](../assets/ThirdPartyImages/mywoare_headers.jpg)
 
 Solder the 3-pin header to the VIN, GND, and ENV pads, and solder the 2-pin header to the RECT and RAW pads of the MyoWare board.
 
-![MyoWare Board post-soldering](../../assets/ThirdPartyImages/myoware_soldered.jpg)
+![MyoWare Board post-soldering](../assets/ThirdPartyImages/myoware_soldered.jpg)
 
 The male-female jumper wires can then be used to interface with the Cyton from the MyoWare board. The female part of the jumper wire is plugged into the MyoWare, whereas the male part is plugged into the Cyton.
 
@@ -43,7 +51,7 @@ The male-female jumper wires can then be used to interface with the Cyton from t
 
 Your Cyton board should look like this:
 
-![Board with Headers](../../assets/ThirdPartyImages/Cyton_32bit.jpg)
+![Board with Headers](../assets/ThirdPartyImages/Cyton_32bit.jpg)
 
 If your Cyton board is missing the black, female pin connectors (called "headers") sticking out of the board, you will need to solder them on before continuing.
 
@@ -51,7 +59,7 @@ If your Cyton board is missing the black, female pin connectors (called "headers
 
 Connect the 5 wires from the MyoWare board in step 1 to the OpenBCI board, as shown below:
 
-![Board with MyoWare](../../assets/ThirdPartyImages/myoware_connected.jpg)
+![Board with MyoWare](../assets/ThirdPartyImages/myoware_connected.jpg)
 
 The wires attached to the "VIN" and "GND" pins will be used to supply power to the board. They'll be attached to the DVDD and GND headers on the OpenBCI Cyton board, respectively.
 
@@ -77,8 +85,8 @@ You'll be able to see signals from the MyoWare board in the OpenBCI GUI using th
 
 Here's what the GUI, and pin D12, will look like with the muscle at rest:
 
-![Resting](../../assets/ThirdPartyImages/GUI_myoware_resting.jpg)
+![Resting](../assets/ThirdPartyImages/GUI_myoware_resting.jpg)
 
 Here's what D12 will look like after flexing the muscle:
 
-![Firing](../../assets/ThirdPartyImages/GUI_myoware_flexion.jpg)
+![Firing](../assets/ThirdPartyImages/GUI_myoware_flexion.jpg)

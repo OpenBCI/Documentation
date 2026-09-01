@@ -15,6 +15,8 @@ Deprecated Hardware:
 - [UltracortexMark3_Nova](Deprecated/07-UltracortexMark3_Nova.md)
 - [Myoware v1.0 Cyton Integration](Deprecated/14-MyoWare_Integration.md)
 - [Myoware v1.0 Ganglion Integration](Deprecated/15-MyoWare_Integration_Ganglion.md)
+- [MyoWare v2.0 Cyton Integration](Deprecated/17-MyoWare_Cyton_Tutorial.md)
+- [ThinkPulse Active Electrodes](Deprecated/18-ThinkPulse_Guide.md)
 - [WiFi Shield](Deprecated/WiFiShield/Wifi.md)
 - [IDUN Dryode](Deprecated/16-Dryode_Guide.md)
 
