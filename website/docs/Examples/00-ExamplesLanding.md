@@ -27,6 +27,10 @@ These projects linked below used the OpenBCI Cyton / CytonDaisy board to sample 
 
 [SSVEP-based communicator by University of Waterloo](https://github.com/WATOLINK/mind-speech-interface-ssvep) - Uses [Cyton](https://shop.openbci.com/products/cyton-biosensing-board-8-channel) + Customized [Ultracortex](https://shop.openbci.com/products/ultracortex-mark-iv)
 
+### EEG-controlled Motor
+
+[Tutorial](Examples/EEGProjects/18-EEG_Motor_Control_MATLAB_Arduino.md) for controlling a stepper motor with eye blinks using a Cyton board, MATLAB, and Arduino. Based on work by Shanuj Bansal and Aleksandar Haber.
+
 ## EMG Projects and Tutorials
 
 We added all-new tutorials for facial, ocular, and limb EMG, as well as expanded our [ECG](GettingStarted/Biosensing-Setups/03-ECG-Setup.md) and stand-alone [EMG](GettingStarted/Biosensing-Setups/02-EMG-Setup.md) tutorials! OpenBCI documentation is meant to be an actionable jumping-off point for your BCI and bio-sensing exploration. We look forward to seeing what you create!
