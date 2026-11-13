@@ -105,7 +105,7 @@ The Arduino reads only the first character of that string, which belongs to the 
 ard_str=sprintf('%d123>',converted_signal(end));
 ```
 
-Then place your electrode and ear references and run `final_project.m`. Each blink should reverse the motor's direction. Verify it: blink a few times and confirm the motor reverses on each blink and not otherwise. If it doesn't, check what the Arduino receives in the Serial Monitor, and see the threshold note below.
+Then place your electrode and ear references and run `final_project.m`. Each blink should reverse the motor's direction. Verify it: blink a few times and confirm the motor reverses on each blink and not otherwise. If it doesn't, display `ard_str` in MATLAB immediately before it is sent to check the outgoing commands, and see the threshold note below. To test the Arduino separately in the Serial Monitor, first stop the script and close MATLAB's Arduino serial connection; the two programs cannot use that port simultaneously.
 
 :::caution
 The threshold in `final_project.m` is a fixed value the author picked by eye from the variance plot for their own setup. Expect to adjust it for your electrode placement, skin contact, and environment. Run `matlab_cython.m` first and look at the variance plot while blinking to choose a value.
