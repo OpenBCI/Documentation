@@ -188,7 +188,10 @@
       {
         "type": "category",
         "label": "EEG Projects and Tutorials",
-        "items": ["Examples/EEGProjects/FocusArduino"]
+        "items": [
+          "Examples/EEGProjects/FocusArduino",
+          "Examples/EEGProjects/EEGMotorControl"
+        ]
       }
     ],
     "FAQ": [
