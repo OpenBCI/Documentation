@@ -32,7 +32,9 @@ _Video: Part 1 of the series, which introduces the headset and shows blink detec
 
 - An OpenBCI [Cyton Board](https://shop.openbci.com/collections/frontpage/products/cyton-biosensing-board-8-channel) and its USB dongle
 - A way to wear the electrodes. The author uses the [Ultracortex Mark IV](https://shop.openbci.com/products/ultracortex-mark-iv) headset, with one active electrode on Cyton channel 2 and reference electrodes clipped to the ears. Any setup that holds one electrode and a reference in place will work.
-- [MATLAB](https://www.mathworks.com/products/matlab.html)
+- [MATLAB](https://www.mathworks.com/products/matlab.html) with these add-on toolboxes:
+  - **Communications Toolbox** - both EEG scripts call `de2bi` to decode the Cyton's packets.
+  - **Instrument Control Toolbox** - the scripts use MATLAB's legacy `serial`/`fopen` interface. Use a MATLAB release that still supports it, or port the scripts to the newer `serialport` interface.
 - An [Arduino](https://www.arduino.cc/) board and the [Arduino IDE](https://www.arduino.cc/en/software)
 - A stepper motor, a stepper motor driver, a power supply for the motor, and a breadboard
 - A potentiometer _(optional, used in the video to set motor speed)_
@@ -59,19 +61,23 @@ Download or clone the [author's repository](https://github.com/AleksandarHaber/L
 | `conn_ard.m` | Tests the MATLAB-to-Arduino link by sending a motor command |
 | `matlab_cython.m` | Streams and plots EEG from the Cyton, with no motor control |
 | `final_project.m` | The complete loop: EEG in, motor command out |
-| `sketch_nov26a.ino` | Arduino sketch that receives commands and drives the motor |
+| `sketch_nov26a.ino` | Arduino sketch that receives the commands (see the note below) |
+
+:::caution Check the Arduino sketch before uploading
+At the time of writing, `sketch_nov26a.ino` in the author's repository is a saved GitHub web page (it starts with `<!DOCTYPE html>`), not Arduino code, so the Arduino IDE cannot compile it. A corrected sketch has been proposed to the author's repository. Until that is merged, open the file and confirm it starts with Arduino code (a comment block, then `const int numChar`), not HTML. If it doesn't, use the original sketch from Aleksandar Haber's [matlab_arduino_interface](https://github.com/AleksandarHaber/matlab_arduino_interface) repository. That version overflows its receive buffer when it is sent the long command that `final_project.m` produces, so fix `index<=4` to `index<numChar-1` in `record()`.
+:::
 
 ## Step 2 - Upload the Arduino sketch
 
 Open the sketch in the Arduino IDE, select your board and port under **Tools**, and upload it.
 
-In the video, the sketch listens on the serial port at 9600 baud for short text commands ending in `>`, for example `1123>`:
+The sketch listens on the serial port at 9600 baud for short text commands ending in `>`, for example `1123>`. It reads the command and replies with the step count, followed by a carriage return, so you can check the link from the Serial Monitor (9600 baud, **Carriage return** line ending). Sending `0345>` should return `345`:
 
-- The first character is the direction flag: `1` reverses the motor and `0` leaves it unchanged.
+- The first character is the direction flag. In the video, `1` reverses the motor and `0` leaves it unchanged.
 - The next three characters are meant for a step count, but the author notes this isn't implemented yet. The final project fills them with the placeholder `123`.
 - `>` marks the end of the command.
 
-On the Arduino side, the video wires the motor driver's pulse input to pin 7 and its direction input to pin 6, with an optional potentiometer on `A0` setting the pulse delay (and so the speed). Check these against the sketch in the repository and your own driver's wiring before powering the motor.
+The sketch only parses the command and echoes it back. The code that drives the motor goes in its `execute()` function, where `dir` and `distance` hold the parsed values. In the video, the motor driver's pulse input is wired to pin 7 and its direction input to pin 6, with an optional potentiometer on `A0` setting the pulse delay (and so the speed). Add your own driver code and check the wiring against your driver before powering the motor.
 
 ## Step 3 - Set your serial ports
 
@@ -87,7 +93,19 @@ The example scripts use macOS-style port names. Replace them with your own:
 
 ## Step 5 - Run the full loop
 
-Place your electrode and ear references, then run `final_project.m`. Each blink reverses the motor's direction.
+As published, `final_project.m` sends the Arduino the entire `converted_signal` vector, not just the current decision:
+
+```matlab
+ard_str=[num2str(converted_signal),'123>'];
+```
+
+The Arduino reads only the first character of that string, which belongs to the oldest sample rather than the current one, so the unchanged script does not give per-blink control. Before running it, change that line to send only the latest decision:
+
+```matlab
+ard_str=sprintf('%d123>',converted_signal(end));
+```
+
+Then place your electrode and ear references and run `final_project.m`. Each blink should reverse the motor's direction. Verify it: blink a few times and confirm the motor reverses on each blink and not otherwise. If it doesn't, check what the Arduino receives in the Serial Monitor, and see the threshold note below.
 
 :::caution
 The threshold in `final_project.m` is a fixed value the author picked by eye from the variance plot for their own setup. Expect to adjust it for your electrode placement, skin contact, and environment. Run `matlab_cython.m` first and look at the variance plot while blinking to choose a value.
