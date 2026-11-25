@@ -500,12 +500,16 @@ This works similarly to the sample rate. Power cycling the OpenBCI board will ca
 
 First, the user sends **//**
 
-**returns** `Board mode is default$$$`
+**returns** `Success: default$$$`
 
 
 Then, the user sends **/2**
 
-**returns** `Board mode set to analog$$$`
+**returns** `Success: analog$$$`
+
+:::note
+For tagged Cyton firmware `v3.0.0` and `v3.1.2`, successful board-mode queries and changes return `Success: <mode>$$$`. The current Cyton library implementation uses the same response format.
+:::
 
 NOTE: if not all commands are not received within 1 second, `Timeout processing multi byte message - please send all commands at once as of v2$$$`
 
