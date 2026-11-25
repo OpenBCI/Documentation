@@ -492,7 +492,7 @@ This works similarly to the sample rate. Power cycling the OpenBCI board will ca
 - 1 = Debug mode - Sends serial output over the external serial port which is helpful for debugging.
 - 2 = Analog mode - Reads from analog pins A5(D11), A6(D12), and A7(D13) as well.
 - 3 = Digital mode - Reads from analog pins D11, D12, D13, D17, and D18.
-- 4 = Marker mode - Turns accel off and injects markers into the stream by sending _\`X_ where `X` is any char to add to the first AUX byte.
+- 4 = Marker mode - Turns accel off and injects markers into the stream by sending _\`X_ where the value of `X` is stored in AUX1 (`auxData[0]`), a signed 16-bit integer serialized MSB-first into packet bytes 27–28 (the first two bytes of the six-byte AUX field). For example, a positive marker value of `0x28` is serialized as `00 28`.
 - / = Get current board mode
 
 **EXAMPLE**
