@@ -1,12 +1,30 @@
 {
-  "docs": {
-    "Welcome to OpenBCI": ["Welcome"],
+  "docs": [
+    {
+      "type": "category",
+      "label": "Welcome to OpenBCI",
+      "link": {
+        "type": "doc",
+        "id": "Welcome"
+      },
+      "items": ["Welcome"]
+    },
 
-    "Getting Started": [
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "link": {
+        "type": "doc",
+        "id": "GettingStarted/GettingStartedLanding"
+      },
+      "items": [
       "GettingStarted/GettingStartedLanding",
       {
         "type": "category",
         "label": "Boards",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "GettingStarted/Boards/CytonGS",
           "GettingStarted/Boards/DaisyGS",
@@ -16,6 +34,9 @@
       {
         "type": "category",
         "label": "Biosensing Setups",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "GettingStarted/Biosensing-Setups/EEGSetup",
           "GettingStarted/Biosensing-Setups/ECGSetup",
@@ -26,15 +47,29 @@
       {
         "type": "category",
         "label": "Community",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["GettingStarted/Community/Community"]
       },
       {
         "type": "category",
         "label": "Documentation",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["GettingStarted/Documentation/DocEdits"]
       }
-    ],
-    "Cyton Board": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Cyton Board",
+      "link": {
+        "type": "doc",
+        "id": "Cyton/CytonLanding"
+      },
+      "items": [
       "Cyton/CytonLanding",
       "Cyton/CytonSpecs",
       "Cyton/CytonDataFormat",
@@ -44,19 +79,38 @@
       "Cyton/CytonExternal",
       "Cyton/CytonSDCard",
       "Cyton/CytonRadioChannel"
-    ],
-    "Ganglion Board": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Ganglion Board",
+      "link": {
+        "type": "doc",
+        "id": "Ganglion/GanglionLanding"
+      },
+      "items": [
       "Ganglion/GanglionLanding",
       "Ganglion/GanglionSpecs",
       "Ganglion/GanglionDataFormat",
       "Ganglion/GanglionSDK",
       "Ganglion/GanglionProgram"
-    ],
-    "Headwear & Electrodes": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Headwear & Electrodes",
+      "link": {
+        "type": "doc",
+        "id": "AddOns/AddOnLanding"
+      },
+      "items": [
       "AddOns/AddOnLanding",
       {
         "type": "category",
         "label": "Headwear",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "AddOns/Headwear/MarkIV",
           "AddOns/Headwear/HeadBand",
@@ -67,32 +121,63 @@
       {
         "type": "category",
         "label": "Electrodes",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["AddOns/Electrodes/ElectrodesLanding"]
       }
-    ],
-    "Third-Party Hardware": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Third-Party Hardware",
+      "link": {
+        "type": "doc",
+        "id": "ThirdParty/ThirdPartyLanding"
+      },
+      "items": [
       "ThirdParty/ThirdPartyLanding",
       {
         "type": "category",
         "label": "EmotiBit",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["ThirdParty/EmotiBit/EmotiBit_Guide"]
       },
       {
         "type": "category",
         "label": "cEEGrid Kit",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["ThirdParty/cEEGrid_Kit/cEEGrid_Kit"]
       },
       {
         "type": "category",
         "label": "Pulse Sensor",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["ThirdParty/Pulse_Sensor/Pulse_Sensor_Landing"]
       }
-    ],
-    "Software": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Software",
+      "link": {
+        "type": "doc",
+        "id": "Software/SoftwareLanding"
+      },
+      "items": [
       "Software/SoftwareLanding",
       {
         "type": "category",
         "label": "Developed By OpenBCI",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "Software/OpenBCISoftware/GUIDocs",
           "Software/OpenBCISoftware/GUIWidgets",
@@ -102,6 +187,9 @@
       {
         "type": "category",
         "label": "Compatible Third Party Software",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "Software/CompatibleThirdPartySoftware/Matlab",
           "Software/CompatibleThirdPartySoftware/Neuromore",
@@ -112,14 +200,30 @@
           "Software/CompatibleThirdPartySoftware/VirtualBox"
         ]
       }
-    ],
-    "For Developers": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "For Developers",
+      "link": {
+        "type": "doc",
+        "id": "ForDevelopers/ForDevelopersLanding"
+      },
+      "items": [
       "ForDevelopers/ForDevelopersLanding",
       "ForDevelopers/SoftwareDevelopment",
       "ForDevelopers/FirmwareDevelopment",
       "ForDevelopers/HardwareDevelopment"
-    ],
-    "Deprecated Documents": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Deprecated Documents",
+      "link": {
+        "type": "doc",
+        "id": "Deprecated/DeprecatedLanding"
+      },
+      "items": [
       "Deprecated/DeprecatedLanding",
       "Deprecated/SpiderclawDep",
       "Deprecated/8bitBoardDep",
@@ -142,6 +246,9 @@
       {
         "type": "category",
         "label": "WiFi Shield",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "Deprecated/WiFiShield/WiFiLanding",
           "Deprecated/WiFiShield/WiFiProgram",
@@ -150,8 +257,16 @@
           "Deprecated/WiFiShield/WiFiGS"
         ]
       }
-    ],
-    "Troubleshooting": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Troubleshooting",
+      "link": {
+        "type": "doc",
+        "id": "Troubleshooting/TroubleshootingLanding"
+      },
+      "items": [
       "Troubleshooting/TroubleshootingLanding",
       "Troubleshooting/minimizingNoise",
       "Troubleshooting/GUI_Troubleshooting",
@@ -159,22 +274,39 @@
       "Troubleshooting/FTDI_Fix_Windows",
       "Troubleshooting/MacOSGanglionBLEWorkaround",
       "Troubleshooting/ResetButtonPress"
-    ],
-    "Example Projects": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Example Projects",
+      "link": {
+        "type": "doc",
+        "id": "Examples/ExamplesLanding"
+      },
+      "items": [
       "Examples/ExamplesLanding",
       {
         "type": "category",
         "label": "Experiments",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["Examples/VideoExperiment"]
       },
       {
         "type": "category",
         "label": "Community Page Projects",
+        "link": {
+          "type": "generated-index"
+        },
         "items": ["Examples/CommunityPageProjects"]
       },
       {
         "type": "category",
         "label": "EMG Projects and Tutorials",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "Examples/EMGProjects/EMGscrolling",
           "Examples/EMGProjects/EMGmusic",
@@ -188,14 +320,25 @@
       {
         "type": "category",
         "label": "EEG Projects and Tutorials",
+        "link": {
+          "type": "generated-index"
+        },
         "items": [
           "Examples/EEGProjects/FocusArduino",
           "Examples/EEGProjects/EEGMotorControl",
           "Examples/EEGProjects/SSVEPFlickerImaginedSpeech"
         ]
       }
-    ],
-    "FAQ": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "FAQ",
+      "link": {
+        "type": "doc",
+        "id": "FAQ/FAQLanding"
+      },
+      "items": [
       "FAQ/FAQLanding",
       "FAQ/GenFAQ",
       "FAQ/HowProductsGoTogether",
@@ -203,14 +346,22 @@
       "FAQ/PaymentFAQ",
       "FAQ/ShippingFAQ",
       "FAQ/DocsUpdate"
-    ],
-    "Policies": [
+    ]
+    },
+    {
+      "type": "category",
+      "label": "Policies",
+      "link": {
+        "type": "generated-index"
+      },
+      "items": [
       "Policies/Cookie",
       "Policies/Privacy",
       "Policies/Returns",
       "Policies/Liability",
       "Policies/Conduct",
       "Policies/FCOI"
-    ]
+      ]
+    }
+  ]
   }
-}
