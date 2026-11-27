@@ -72,7 +72,7 @@ Sections below are for those who can't or don't wish to purchase the Cyton Exter
 
 Launch the OpenBCI GUI for your operating system following the tutorial for the [OpenBCI GUI](../Software/OpenBCISoftware/01-OpenBCI_GUI.md#running-the-openbci_gui).
 
-Once the GUI has launched, follow the guide to [connect to the Cyton board from the OpenBCI GUI](../GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#iv-connect-to-your-cyton-board-from-the-gui).
+Once the GUI has launched, follow the guide to [connect to the Cyton board from the OpenBCI GUI](../GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#connect-the-gui-to-your-cyton-board).
 
 After connecting the board to the GUI, open and enable the "Digital Read" for one of your widgets.
 
