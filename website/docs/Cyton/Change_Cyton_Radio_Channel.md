@@ -38,7 +38,7 @@ This tutorial explains how to use any one of the 25 discrete channels with your 
 
 ![COM Port](../assets/CytonImages/ChangeRadioChannelStep3.png)
 
-4. [Select the COM Port](https://docs.openbci.com/GettingStarted/Boards/CytonGS/#3-find-your-usb-dongles-serialcom-port) for the Cyton that requires a Radio channel change.
+4. [Select the COM Port](../GettingStarted/Boards/01-Cyton_Getting_Started_Guide.md#connect-the-gui-to-your-cyton-board) for the Cyton that requires a Radio channel change.
 
 ![Select COM Port](../assets/CytonImages/ChangeRadioChannelStep4.png)
 
